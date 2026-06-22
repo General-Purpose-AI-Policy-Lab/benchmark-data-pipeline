@@ -1,0 +1,50 @@
+benchmark,group,score,note,source
+GPQA Diamond,Domain Expert,0.697,PhD-level experts recruited by OpenAI,EpochAI
+GPQA Diamond,Domain Expert,0.812,experts who have or are pursuing PhDs in the corresponding domains,https://arxiv.org/pdf/2311.12022
+GPQA Diamond,Skilled Generalist,0.219,highly skilled and incentivized non-experts who have or are pursuing PhDs in other domains,https://arxiv.org/pdf/2311.12022
+GPQA Diamond Biology,Domain Expert,0.831,PhD-level in-domain experts,RAND
+GPQA Diamond Chemistry,Domain Expert,0.831,PhD-level in-domain experts,RAND
+GPQA Diamond Biology,Skilled Generalist,0.22,not in-domain PhD,RAND
+GPQA Diamond Chemistry,Skilled Generalist,0.22,not in-domain PhD,RAND
+GPQA Main Biology,Domain Expert,0.667,PhD-level in-domain experts (remark:RAND appears to have mistakenly reported the Extended-set score as the Main-set score),RAND
+GPQA Main Biology,Skilled Generalist,0.43,not in-domain PhD (remark:RAND appears to have mistakenly reported the Extended-set score as the Main-set score),RAND
+GPQA Main Chemistry,Domain Expert,0.72,PhD-level in-domain experts (remark:RAND appears to have mistakenly reported the Extended-set score as the Main-set score),RAND
+GPQA Main Chemistry,Skilled Generalist,0.31,not in-domain PhD (remark:RAND appears to have mistakenly reported the Extended-set score as the Main-set score),RAND
+MMLU,Domain Expert,0.898,score is an estimation from the authors,https://arxiv.org/pdf/2009.03300v3
+MMLU,Average Human,0.345,MTurk,https://arxiv.org/pdf/2009.03300v3
+MMLU Biology,Top Performer,0.9,baseline represent the 95th percentile of human test-takers,RAND
+MMLU Chemistry,Top Performer,0.9,baseline represent the 95th percentile of human test-takers,RAND
+FrontierMath,Committee of Domain Experts,0.35,solved collectively across all teams (40 exceptional math undergraduates and subject-matter experts) in four and a half hours and with internet access,EpochAI
+MATH Level 5,Domain Expert,0.9,a three-time IMO gold medalist university student,https://arxiv.org/pdf/2103.03874v1
+MATH Level 5,Skilled Generalist,0.4,a computer science PhD student who does not especially like mathematics,https://arxiv.org/pdf/2103.03874v1
+WMDP Biology,Domain Expert,0.6,2 PhDs in-domain,RAND
+WMDP Chemistry,Domain Expert,0.43,2 PhDs in-domain,RAND
+LAB-Bench Cloning,Domain Expert,0.6,PhDs in-domain,RAND
+LAB-Bench LitQA2,Domain Expert,0.7,PhDs in-domain,RAND
+LAB-Bench Protocol,Domain Expert,0.79,PhDs in-domain,RAND
+LAB-Bench SeqQA,Domain Expert,0.78,PhDs in-domain,RAND
+BioLP-bench,Domain Expert,0.38,have at least a bachelor degree in a relevant field and hands-on laboratory experience,RAND
+OS World (Screenshot),Skilled Generalist,0.724,individuals not familiar with the software,https://arxiv.org/pdf/2404.07972
+BoolQ,Average Human,0.9,Human annotators,https://arxiv.org/pdf/1905.10044
+SuperGLUE,Average Human,0.898,human performance estimates after training phase,https://arxiv.org/pdf/1905.00537
+TriviaQA,Average Human,0.797,human performance level,https://arxiv.org/pdf/1705.03551v2
+BIG-Bench Hard (BBH),Average Human,0.677,average human raters,https://arxiv.org/pdf/2210.09261
+BIG-Bench Hard (BBH),Top Performer,0.944,max human raters,https://arxiv.org/pdf/2210.09261
+ScienceQA,Average Human,0.884,MTurk with high school or higher degree and who have passed the qualification examples,https://arxiv.org/pdf/2209.09513
+GSM8K,Skilled Generalist,0.9677,qualified human annotators who have passed a qualification exam with at least a bachelor’sdegree,https://aclanthology.org/2024.acl-long.163.pdf
+OTIS Mock AIME 2024-2025,High School Qualifier,0.53,average score by high school students from the OTIS program (percentage from number of questions answered),https://web.evanchen.cc/exams/sols-OTIS-Mock-AIME-2025.pdf
+OTIS Mock AIME 2024-2025,High School Top Performer,0.93,top scorer from the OTIS program (percentage from number of questions answered),https://web.evanchen.cc/exams/sols-OTIS-Mock-AIME-2025.pdf
+MATH Level 5,Top Performer,0.9,Triple IMO gold medalist (article anchor),manually added
+BioLP-bench,Domain Expert,0.384,Bachelor's w/ lab experience,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+LAB-Bench Cloning,Domain Expert,0.6,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+LAB-Bench LitQA2,Domain Expert,0.7,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+LAB-Bench SeqQA,Domain Expert,0.78,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+LAB-Bench Protocol,Domain Expert,0.79,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+GPQA Diamond Biology,Domain Expert,0.831,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+GPQA Main Biology,Domain Expert,0.667,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+MMLU Biology,Domain Expert,0.898,95th percentile test taker,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+WMDP Biology,Domain Expert,0.605,In-domain PhD (RAND),https://www.rand.org/pubs/research_reports/RRA3797-1.html
+GPQA Main Chemistry,Domain Expert,0.72,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+GPQA Diamond Chemistry,Domain Expert,0.831,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+MMLU Chemistry,Domain Expert,0.898,95th percentile test taker,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+WMDP Chemistry,Domain Expert,0.433,In-domain PhD (RAND),https://www.rand.org/pubs/research_reports/RRA3797-1.html

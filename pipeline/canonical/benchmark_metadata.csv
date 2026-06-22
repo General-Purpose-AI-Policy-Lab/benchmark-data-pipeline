@@ -1,0 +1,76 @@
+benchmark,category,lower_bound,notes
+APEX Agents,Core AGI Progress,0.0,
+ARC (AI2),Domain Specific Questions,0.25,
+ARC-AGI,Core AGI Progress,0.0,F. Chollet's ARC abstraction-and-reasoning corpus (program induction); no chance baseline
+ARC-AGI-2,Core AGI Progress,0.0,"ARC-AGI v2; open generation, no chance baseline"
+Adversarial NLI,General Reasoning,0.3329999999999999,
+Aider Polyglot,Autonomous SWE,0.0,
+AudioMultiChallenge,Multimodal Understanding,0.0,
+BALROG,General Reasoning,0.0,
+BIG-Bench Hard (BBH),Domain Specific Questions,0.25,
+BioLP-bench,Biology,0.0,
+BoolQ,General Reasoning,0.5,binary yes/no QA
+CAD-Eval,Multimodal Understanding,0.0,
+CSQA2,General Reasoning,0.5,CommonsenseQA 2.0; binary true/false judgments
+Chess Puzzles,General Reasoning,0.0,
+Cybench,Agentic Computer Use,0.0,
+DeepResearchBench,Agentic Computer Use,0.0,agentic deep-research benchmark; LLM-judge scoring
+EnigmaEval,General Reasoning,0.0,
+Fiction.LiveBench,Advanced Language and Writing,0.0,
+FrontierMath,High End Math Reasoning,0.0,
+FrontierMath Tier 4,High End Math Reasoning,0.0,
+GDPVal,Core AGI Progress,0.0,
+GPQA Diamond,Domain Specific Questions,0.25,
+GPQA Diamond Biology,Biology,0.25,
+GPQA Diamond Chemistry,Chemistry,0.25,
+GPQA Main Biology,Biology,0.25,"GPQA full set, biology subsplit; 4-choice MC"
+GPQA Main Chemistry,Chemistry,0.25,"GPQA full set, chemistry subsplit; 4-choice MC"
+GSM8K,Domain Specific Questions,0.0,
+GSO-Bench,Autonomous SWE,0.0,
+GeoBench,Multimodal Understanding,0.0,
+HellaSwag,General Reasoning,0.25,4-choice sentence-completion commonsense
+Humanity's Last Exam,Domain Specific Questions,0.0,
+LAB-Bench Cloning,Biology,0.2,
+LAB-Bench LitQA2,Biology,0.2,
+LAB-Bench Protocol,Biology,0.2,
+LAB-Bench SeqQA,Biology,0.2,
+LAMBADA,General Reasoning,0.0,next-word prediction over discourse; open generation
+Lech Mazur Writing,Advanced Language and Writing,0.0,
+LiveBench,Core AGI Progress,0.0,
+MATH Level 5,High End Math Reasoning,0.0,
+MCP Atlas,Agentic Computer Use,0.0,
+METR Time Horizons,Autonomous SWE,0.05,
+MMLU,Domain Specific Questions,0.25,
+MMLU Biology,Biology,0.25,MMLU biology subsplit; 4-choice MC
+MMLU Chemistry,Chemistry,0.25,MMLU chemistry subsplit; 4-choice MC
+MMLU Pro Biology,Biology,0.1,
+MMLU Pro Chemistry,Chemistry,0.1,
+MultiChallenge,Advanced Language and Writing,0.0,
+MultiNRC,Advanced Language and Writing,0.0,
+OS World (Screenshot),Agentic Computer Use,0.0,
+OTIS Mock AIME 2024-2025,High End Math Reasoning,0.001,
+OpenBookQA,Domain Specific Questions,0.25,4-choice elementary-science QA
+PIQA,General Reasoning,0.5,binary physical commonsense
+PRBench Finance,Domain Specific Questions,0.0,
+PRBench Legal,Domain Specific Questions,0.0,
+PostTrainBench,Autonomous SWE,0.0,
+Remote Labor Index,Core AGI Progress,0.0,
+SWE-Bench Bash Only,Autonomous SWE,0.0,
+SWE-Bench Pro,Autonomous SWE,0.0,
+SWE-Bench Verified,Autonomous SWE,0.0,
+ScienceQA,Domain Specific Questions,0.3983,
+SimpleBench,General Reasoning,0.0,trick-question benchmark; AVG@5 open generation
+SimpleQA Verified,Domain Specific Questions,0.0,
+SuperGLUE,General Reasoning,0.5,NLU suite; roughly binary-classification weighted average
+TerminalBench,Agentic Computer Use,0.0,
+The Agent Company,Agentic Computer Use,0.0,
+TriviaQA,Domain Specific Questions,0.0,"open-ended factoid QA, exact-match"
+TutorBench,Advanced Language and Writing,0.0,
+VPCT,Multimodal Understanding,0.5,Visual Perceptual Comparison Test; ~binary
+Video-MME,Multimodal Understanding,0.25,video MME 4-choice MC; 'Overall (no subtitles)' column
+Visual Task Assessment (VISTA),Multimodal Understanding,0.0,
+VisualToolBench,Multimodal Understanding,0.0,
+WMDP Biology,Biology,0.25,
+WMDP Chemistry,Chemistry,0.25,
+WeirdML,Autonomous SWE,0.0,
+WinoGrande,General Reasoning,0.5,binary Winograd-style coreference

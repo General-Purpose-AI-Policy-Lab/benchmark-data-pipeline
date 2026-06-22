@@ -1,0 +1,516 @@
+model_version_raw,model_version,benchmark_raw,benchmark,_source_file
+o3,o3-2025-04-16_medium,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,BioLP-bench,BioLP-bench,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,LAB-Bench Cloning,LAB-Bench Cloning,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,LAB-Bench LitQA2,LAB-Bench LitQA2,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,LAB-Bench SeqQA,LAB-Bench SeqQA,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,LAB-Bench Protocol,LAB-Bench Protocol,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,GPQA Diamond Biology,GPQA Diamond Biology,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,GPQA Main Biology,GPQA Main Biology,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,MMLU Biology,MMLU Biology,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,WMDP Biology,WMDP Biology,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,MMLU Pro Biology,MMLU Pro Biology,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Llama 3 8b,Meta-Llama-3-8B-Instruct,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,GPQA Main Chemistry,GPQA Main Chemistry,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Llama 3 8b,Meta-Llama-3-8B-Instruct,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,GPQA Diamond Chemistry,GPQA Diamond Chemistry,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Llama 3 8b,Meta-Llama-3-8B-Instruct,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,MMLU Chemistry,MMLU Chemistry,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Llama 3 8b,Meta-Llama-3-8B-Instruct,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,WMDP Chemistry,WMDP Chemistry,rand_benchmark_scores.csv
+o3,o3-2025-04-16_medium,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+o4 Mini,o4-mini-2025-04-16_medium,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet-20250219_16K,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+o1,o1-2024-12-17_medium,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+o1 Preview,o1-preview-2024-09-12,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+o3 Mini,o3-mini-2025-01-31_medium,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+DeepSeek R1,DeepSeek-R1,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+GPT 4.5 Preview,gpt-4.5-preview-2025-02-27,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Claude 3.7 Sonnet V1,claude-3-7-sonnet-20250219,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet V2,claude-3-5-sonnet-20241022,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+GPT 4o,gpt-4o-2024-08-06,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Claude 3.5 Sonnet,claude-3-5-sonnet-20240620,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+DeepSeek V3,DeepSeek-V3,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Gemini 1.5 Pro,gemini-1.5-pro-001,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Grok 2.0 Beta,grok-2-1212,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+GPT 4 Turbo,gpt-4-turbo-2024-04-09,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Llama 3.1 70b,Llama-3.1-70B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Llama 3.1 405b,Llama-3.1-405B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Mistral Large 2407,mistral-large-2407,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Opus,claude-3-opus-20240229,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Gemini 1.5,gemini-1.5-pro-001,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Mistral Large 2402,mistral-large-2402,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Haiku,claude-3-haiku-20240307,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Claude 3.0 Sonnet,claude-3-sonnet-20240229,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Llama 3.1 8b,Llama-3.1-8B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Gemini 1.0 Pro,gemini-1.0-pro-001,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+GPT 4,gpt-4-0613,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Llama 3 70b,Meta-Llama-3-70B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Llama 3 8b,Meta-Llama-3-8B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv

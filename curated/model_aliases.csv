@@ -1,0 +1,87 @@
+alias,canonical
+DeepSeek R1,DeepSeek-R1
+Deepseek-R1,DeepSeek-R1
+Deepseek-R1-0528,DeepSeek-R1-0528
+deepseek-r1-0528,DeepSeek-R1-0528
+DeepSeek V3,DeepSeek-V3
+Kimi-Audio-7B-Instruct†,Kimi-Audio-7B-Instruct
+kimi-k2-instruct,Kimi-K2-Instruct
+LFM2-Audio-1.5B†,LFM2-Audio-1.5B
+Llama 3-8B,Llama 3 8b
+Llama 3.1-70B,Llama 3.1 70b
+Llama 3.1-8B,Llama 3.1 8b
+Llama 2-13B,Llama-2-13b
+Llama 2-34B,Llama-2-34b
+Llama 2-7B,Llama-2-7b
+Llama 3.1 405b,Llama-3.1-405B
+Llama 3.1-405B,Llama-3.1-405B
+llama3-1-405b-instruct,Llama-3.1-405B-Instruct
+Llama 3.2 11B Vision-Instruct,Llama-3.2-11B-Vision-Instruct
+Llama 3.2 90B Vision Instruct,Llama-3.2-90B-Vision-Instruct
+Mixtral 8x7B,Mixtral 8x7b
+Qwen2.5-Coder (1.5B),Qwen2.5-Coder-1.5B
+Qwen2.5-Coder (32B),Qwen2.5-Coder-32B
+Qwen2.5-Coder (7B),Qwen2.5-Coder-7B
+Qwen3-Omni-30B-A3B-Instruct†,Qwen3-Omni-30B-A3B-Instruct
+Stable Beluga 2,StableBeluga2
+Yi 6B,Yi-6B
+Claude 2.1,claude-2.1
+Claude 3.7 Sonnet (Thinking),claude-37-sonnet-thinking
+Claude-3.7-Sonnet-thinking,claude-37-sonnet-thinking
+claude-3-7-sonnet-thinking,claude-37-sonnet-thinking
+Claude-4-Opus-20250514-thinking,claude-4-opus-20250514-thinking
+claude-opus-4-6 (thinking),claude-opus-4-6-thinking
+Claude Sonnet 4,claude-sonnet-4
+Claude Sonnet 4 (Thinking),claude-sonnet-4-thinking
+Falcon-180B,falcon-180B
+Falcon-40B,falcon-40b
+Falcon-7B,falcon-7b
+Gemini 1.5 Flash 002,gemini-1.5-flash-002
+Gemini-1.5-Pro-002,gemini-1.5-pro-002
+Gemini 2.0 Flash,gemini-2-0-flash
+gemini-2.5-flash-native-audio-preview-12-2025 (non-thinking)†,gemini-2.5-flash-native-audio-preview-12-2025 (non-thinking)
+gemini-2.5-flash-native-audio-preview-12-2025 (thinking)†,gemini-2.5-flash-native-audio-preview-12-2025 (thinking)
+gemini-2-5-pro,gemini-2.5-pro
+Gemini-2.5-Pro-Preview-06-05,gemini-2.5-pro-preview-06-05
+gemini-3.1-flash-live-preview†,gemini-3.1-flash-live-preview
+gemini-3.1-flash-live-preview (Thinking)†,gemini-3.1-flash-live-preview (Thinking)
+Gemma 2 9B,gemma-2-9b
+Gemma 2B,gemma-2b
+Gemma 7B,gemma-7b
+GLM 4.7,glm-4.7
+GPT 4 Turbo,gpt-4-turbo
+GPT-4.1,gpt-4.1
+GPT-4.1 mini,gpt-4.1-mini
+GPT 4o,gpt-4o
+GPT-4o,gpt-4o
+gpt-4o-audio-preview-2025-06-03†,gpt-4o-audio-preview-2025-06-03
+gpt-4o-mini-audio-preview-2024-12-17†,gpt-4o-mini-audio-preview-2024-12-17
+gpt-5-2025-08-07 (High),gpt-5-2025-08-07_high
+gpt-5.2-2025-12-11 (medium),gpt-5.2-2025-12-11_medium
+GPT-J (6B),gpt-j-6b
+GPT-NeoX (20B),gpt-neox-20b
+gpt-realtime-1.5†,gpt-realtime-1.5
+gpt-realtime-2025-08-28†,gpt-realtime-2025-08-28
+gpt-realtime-mini-2025-12-15†,gpt-realtime-mini-2025-12-15
+Kimi K2.5,kimi-k2.5
+Llama 4 Maverick,llama4-maverick
+Llama-4-Maverick,llama4-maverick
+Mistral Large 2402,mistral-large-2402
+Mistral Large 2407,mistral-large-2407
+MPT-30B,mpt-30b
+MPT-7B,mpt-7b
+Muse Spark,muse-spark
+o3-2025-04-16-high,o3-2025-04-16_high
+o3-2025-04-16-medium,o3-2025-04-16_medium
+o3 pro,o3-pro
+o3-pro-2025-06-10-high,o3-pro-2025-06-10_high
+o4 Mini,o4-mini
+Phi-1.5,phi-1_5
+Phi-2,phi-2
+Phi-4,phi-4
+Qwen/Qwen3-235B-A22B-Thinking-2507,qwen/qwen3-235b-a22b-thinking-2507
+Qwen3-235B-A22B,qwen3-235b-a22b
+StarCoder 2 15B,starcoder2-15b
+StarCoder 2 3B,starcoder2-3b
+StarCoder 2 7B,starcoder2-7b
+zai-org/GLM-4.7,zai-org/glm-4.7
