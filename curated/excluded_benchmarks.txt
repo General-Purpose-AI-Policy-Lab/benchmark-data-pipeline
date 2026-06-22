@@ -1,9 +1,9 @@
 # Benchmarks excluded from the index — one name per line, '#' starts a comment.
 # Matches the `benchmark` column of all_normalized_benchmarks_updated.csv exactly.
 #
-# Current list mirrors Barry's published filtering of "intentionally easy
-# for humans" benchmarks — keeping them (even with the scores dropped) would
-# bias both capability estimates and the positioning of other benchmarks.
+# Current list filters out "intentionally easy for humans" benchmarks —
+# keeping them (even with the scores dropped) would bias both capability
+# estimates and the positioning of other benchmarks.
 # TriviaQA is listed for documentation; it is already absent from the source.
 
 ARC-AGI
