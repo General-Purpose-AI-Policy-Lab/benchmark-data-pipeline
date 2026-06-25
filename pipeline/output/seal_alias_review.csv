@@ -1,0 +1,89 @@
+seal_name,proposed_target,target_exists_in_epoch,note
+Claude 3 Sonnet,claude-3-sonnet-20240229,True,verify checkpoint exists in Epoch
+Claude 3.7 Sonnet Thinking (Feb 2025),claude-3-7-sonnet-20250219,True,thinking mode -> which effort suffix?
+Claude 3.7 Sonnet Thinking (February 2025),claude-3-7-sonnet-20250219,True,thinking mode -> which effort suffix?
+Claude Opus 4 (Thinking),claude-opus-4-20250514,True,thinking mode -> which effort suffix?
+Claude Sonnet 4 (Thinking),claude-sonnet-4-20250514,True,thinking mode -> which effort suffix?
+Claude-3.7-Sonnet-thinking,claude-3-7-sonnet-20250219,True,thinking mode -> which effort suffix?
+Claude-4-Opus-20250514-thinking,claude-opus-4-20250514,True,thinking mode -> which effort suffix?
+DeepSeek V3 (March 2025),DeepSeek-V3,True,Epoch has single DeepSeek-V3; this is V3-0324 checkpoint
+DeepSeek-V3 (December 2024),DeepSeek-V3,True,original V3 checkpoint
+Deepseek V3,DeepSeek-V3,True,checkpoint unspecified
+GPT 5.2,gpt-5.2-2025-12-11_unknown,True,effort unspecified -> _unknown?
+GPT-4o mini,gpt-4o-mini-2024-07-18,True,verify
+"Gemini 1.5 Pro (August 27, 2024)",gemini-1.5-pro-002,True,verify Aug-2024 -> 002
+Gemini 1.5 Pro (May 2024),gemini-1.5-pro-001,True,verify May-2024 -> 001
+Gemini 2.0 Flash,gemini-2.0-flash-001,True,verify exists
+Gemini 2.0 Flash (February 2025),gemini-2.0-flash-001,True,verify
+Gemini 2.0 Flash Experimental,gemini-2.0-flash-exp,True,verify
+Gemini 2.0 Flash Experimental (December 2024),gemini-2.0-flash-exp,True,verify
+Gemini 2.0 Flash Lite Preview,gemini-2.0-flash-lite,True,verify
+Gemini 2.0 Flash Lite Preview (February 2025),gemini-2.0-flash-lite,True,verify
+Gemini 2.5 Flash (April 2025),gemini-2.5-flash,True,checkpoint?
+Gemini 2.5 Flash Preview (May 2025) ,gemini-2.5-flash,True,checkpoint?
+Gemini 2.5 Pro Experimental (March 2025),gemini-2.5-pro-exp-03-25,True,verify exp-03-25
+Gemini 2.5 Pro Preview,gemini-2.5-pro,True,checkpoint?
+Gemini 2.5 Pro Preview (May 06 2025),gemini-2.5-pro-preview-05-06,True,verify
+Gemini 3 Pro,gemini-3-pro-preview,True,verify
+Llama 3 70B Instruct,Meta-Llama-3-70B-Instruct,True,verify exact Epoch id
+Mistral Large,mistral-large-2402,True,verify
+Mistral Large 2,mistral-large-2407,True,verify exists in Epoch
+claude-3-7-sonnet-thinking,claude-3-7-sonnet-20250219,True,thinking mode -> which effort suffix?
+claude-37-sonnet-thinking,claude-3-7-sonnet-20250219,True,thinking mode -> which effort suffix?
+claude-4-opus-20250514-thinking,claude-opus-4-20250514,True,thinking mode -> which effort suffix?
+claude-4-opus-thinking,claude-opus-4-20250514,True,thinking mode -> which effort suffix?
+claude-4-sonnet-thinking,claude-sonnet-4-20250514,True,thinking mode -> which effort suffix?
+claude-haiku-4-5-20251001-thinking,claude-haiku-4-5-20251001,True,thinking -> base or _high?
+claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805,True,thinking -> base or _high?
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101,True,thinking -> base or _high?
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6,True,non-thinking -> base?
+claude-opus-4-6 (thinking)*,claude-opus-4-6_high,True,thinking -> _high or _max?
+claude-sonnet-4-5 (thinking),claude-sonnet-4-5-20250929,True,thinking -> base or _high?
+claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929,True,thinking -> base or _high?
+gemini-2-0-flash,gemini-2.0-flash-001,True,verify
+gemini-2-5-pro,gemini-2.5-pro,True,checkpoint?
+gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,True,effort unspecified -> _unknown?
+gpt-5-mini-2025-08-07,gpt-5-mini-2025-08-07_unknown,True,effort unspecified -> _unknown?
+gpt-5-mini-thinking,gpt-5-mini-2025-08-07_high,True,thinking -> which effort?
+gpt-5-pro-2025-10-06,gpt-5-pro-2025-10-06_unknown,True,effort unspecified -> _unknown or _high?
+gpt-5-thinking,gpt-5-2025-08-07_high,True,thinking -> which effort?
+gpt-5.1 (high),gpt-5.1-2025-11-13_high,True,verify
+gpt-5.1-2025-11-13-instant,gpt-5.1-2025-11-13_none,True,instant -> _none/minimal?
+gpt-5.1-2025-11-13-thinking,gpt-5.1-2025-11-13_high,True,thinking -> which effort?
+gpt-5.1-instant,gpt-5.1-2025-11-13_none,True,instant -> _none/minimal?
+gpt-5.1-thinking,gpt-5.1-2025-11-13_high,True,thinking -> which effort?
+gpt-5.2,gpt-5.2-2025-12-11_unknown,True,effort unspecified -> _unknown?
+gpt-5.2 (xhigh),gpt-5.2-2025-12-11_xhigh,True,verify base (not -pro)
+gpt-5.2-2025-12-11,gpt-5.2-2025-12-11_unknown,True,effort unspecified -> _unknown?
+gpt-5.4 (xHigh)*,gpt-5.4-2026-03-05_xhigh,True,base vs pro? '*' marker
+gpt-5.4 (xhigh),gpt-5.4-2026-03-05_xhigh,True,base vs pro?
+gpt-5.4(xHigh)*,gpt-5.4-2026-03-05_xhigh,True,base vs pro? '*' marker
+gpt-5.4-mini (xhigh),gpt-5.4-mini-2026-03-17_xhigh,True,verify
+gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05_unknown,True,effort unspecified -> _unknown?
+o1 (December 2024),o1-2024-12-17_unknown,True,effort unspecified -> _unknown or _high?
+ChatGPT-4o-latest (November 2024),,False,no Nov-2024 chatgpt-4o checkpoint in Epoch
+GPT-4,,False,ambiguous gpt-4 checkpoint
+GPT-4 (November 2024),,False,no Nov-2024 base gpt-4
+GPT-4o,,False,ambiguous gpt-4o checkpoint
+Gemini 2.0 Flash Thinking (January 2025),,False,verify thinking-exp checkpoint
+Gemini 2.0 Flash Thinking Experimental,,False,verify
+Gemini 2.0 Flash Thinking Experimental (January 2025),,False,verify
+Gemini 2.0 Pro Experimental (Feb 2025),,False,verify
+Gemini 2.0 Pro Experimental (February 2025),,False,verify
+Mistral Medium 3,,False,verify Epoch has mistral-medium-3
+OpenAI GPT-4o,,False,ambiguous gpt-4o checkpoint
+OpenAI GPT-5,,False,ambiguous gpt-5 effort
+Pixtral 12B (September 2024),,False,no Epoch Pixtral
+Pixtral Large (November 2024),,False,no Epoch Pixtral
+claude-opus-4-5 (high),claude-opus-4-5-20251101_high,False,verify _high exists
+codestral-2405,,False,"Epoch has codestral-2501, different version"
+deepseek-v3p1,,False,DeepSeek-V3.1 not in Epoch set
+deepseek-v3p2,,False,DeepSeek-V3.2 not in Epoch set
+gemini-3.1-flash-lite (high),gemini-3.1-flash-lite_high,False,verify _high exists
+gemini-3.1-pro (thinking)*,gemini-3.1-pro-preview_high,False,thinking -> which effort?
+gemini-3.1-pro-preview (high),gemini-3.1-pro-preview_high,False,verify _high exists
+gpt-4o,,False,ambiguous gpt-4o checkpoint
+o1 Pro (March 2025),,False,no o1-pro in Epoch
+o1-preview,,False,no o1-preview in Epoch
+o3-pro,,False,effort unspecified; o3-pro only has _high/_low/_medium
+o3-pro-2025-06-10,,False,effort unspecified; o3-pro only has _high/_low/_medium

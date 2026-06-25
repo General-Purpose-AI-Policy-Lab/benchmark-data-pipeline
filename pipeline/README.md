@@ -4,11 +4,11 @@ One notebook (`pipeline.ipynb`) that pulls a dated snapshot of Epoch AI's
 public benchmark ZIP (CC-BY, refreshed ~weekly) and assembles a
 `benchmarks_merged.csv` matching the schema `data.py` already consumes.
 
-The current `data/processed/benchmarks_merged.csv` is built by a separate
-notebook (`process_benchmarks/1_Merge_and_filter.ipynb`) from two
-hand-managed files in `data/raw/`, which go stale immediately when Epoch
-publishes new results. This pipeline replaces that workflow with a
-self-refreshing online fetch.
+This notebook is the authoritative refresh path for
+`data/processed/benchmarks_merged.csv`. It replaces an earlier two-notebook
+workflow (archived under `archive/legacy_pipeline.zip`) that built the
+processed file from a hand-managed snapshot in `data/raw/` — that snapshot
+went stale immediately when Epoch published new results.
 
 ## Refresh workflow
 
@@ -44,7 +44,10 @@ data/pipeline/
 │   └── YYYY-MM-DD/
 │       ├── epoch_benchmark_data.zip
 │       ├── epoch/                       unzipped CSVs
-│       └── provenance.json              {url, fetched_at, sha256, license}
+│       ├── provenance.json              {url, fetched_at, sha256, license}
+│       └── seal/                        Scale SEAL raw HTML + provenance
+│           ├── <slug>.html              cached page per leaderboard
+│           └── seal_provenance.json     {fetched_at, per-slug sha256, n_rows}
 ├── intermediate/                        gitignored; CSV per stage
 │   ├── 02_scores_long.csv
 │   ├── 03_scores_named.csv
@@ -55,9 +58,13 @@ data/pipeline/
     ├── duplicates_report.csv            any (model, benchmark) collisions
     ├── name_changes.csv                 every variant → canonical rename
     ├── missing_models.csv               models not yet in alias map
+    ├── seal_alias_review.csv            proposed (unapplied) SEAL model aliases
     ├── content_diff_vs_current.csv      score deltas vs existing dataset
     └── pipeline_report.md               provenance summary
 ```
+
+Sections run `00 → 09`, with `03b` (RAND) and `03c` (Scale SEAL) between
+the Epoch load (03) and canonicalization (04).
 
 ## Parameters
 
@@ -66,7 +73,7 @@ All at the top of section 00. Change them there.
 | Parameter | Default | Effect |
 |---|---|---|
 | `EPOCH_ZIP_URL` | `https://epoch.ai/data/benchmark_data.zip` | Source URL |
-| `APPLY_CURATED_EXCLUSIONS` | `False` | If `True`, drop benchmarks in `data/curated/excluded_benchmarks.txt`. Off keeps the canonical broad-index config. |
+| `APPLY_CURATED_EXCLUSIONS` | `False` | If `True`, drop benchmarks in `data/curated/excluded_benchmarks.txt` here. Kept **off** — the pipeline emits every benchmark and the exclusion list is applied at *fit time* by `data.py` (`load_eci_data`, default), so the processed file is the complete record. |
 | `DEDUP_POLICY` | `"max"` | Resolution for the rare case of disagreeing duplicates on `(model, benchmark)`. Exact-row dupes are always dropped regardless. |
 | `ECI_EPS` | `1e-3` | Open-interval clip for humans (matches `data.py`). |
 
@@ -124,30 +131,74 @@ The full mapping is in `canonical/model_aliases.csv` — 36 RAND names
 mapped to default Epoch IDs, 3 dropped, with one-line justifications
 in the `note` column.
 
+## Scale SEAL leaderboards (section 03c)
+
+Scale's [SEAL leaderboards](https://labs.scale.com/leaderboard) are scraped
+live. There is **no public CSV/API**: each board is a Next.js page that
+server-renders its rows into `self.__next_f` streaming chunks (the visible
+HTML `<table>` is a stale snapshot, so we parse the chunks, not the table).
+Each board exposes an `entries` array of `{model, score,
+confidenceInterval_upper, company, createdAt, deprecated, ...}`, scores 0–100.
+
+- **`SEAL_SPEC`** (`slug → (benchmark, divisor, status)`) lists the 15 boards
+  ingested. **Slugs come from Scale's Sanity CMS** — query
+  `https://5uhyv5jy.apicdn.sanity.io/v2022-03-07/data/query/production?query=*[_type=="leaderboard"]{"slug":slug.current,title}`
+  for the full, current list. Note hyphens/short forms: `prbench-finance`,
+  `vtb`, `rli`, `audiomc` (not the underscored guesses).
+- **`SEAL_SKIP`** records boards omitted by **score scale**, not fetchability:
+  `coding` and multilingual `arabic/chinese/japanese/spanish` are Elo-rated
+  (~600–1240), and the text-only HLE would collide with Epoch's full HLE.
+- Raw HTML per slug + `seal_provenance.json` (per-slug sha256, row counts,
+  parse method) are cached in `snapshots/<date>/seal/` for reproducibility.
+- `createdAt` is the leaderboard-add date, **not** a model release date, so
+  `release_date` is left null (mirrors RAND); `company` populates `organization`.
+- The ± confidence interval is **not** captured — the long-frame schema carries
+  no `stderr` downstream (Epoch's measured stderr is likewise dropped). Wiring
+  stderr end-to-end is a tracked follow-up.
+
+**SEAL model aliasing.** SEAL uses messy, inconsistent model names
+(`Claude 3.5 Sonnet (October 2024)`, `o3 (high) (April 2025)`,
+`gpt-5.4 (xHigh)*`). They are matched to Epoch IDs in `canonical/model_aliases.csv`:
+
+- date → versioned ID, explicit effort tokens → Epoch's `_high/_medium/_xhigh/_max`
+  suffixes, and effort-less reasoning runs → the `_unknown` (or `_none`) bucket.
+- **"thinking"/"non-thinking" variants are kept as *distinct* test-takers**,
+  consistent with the project's effort-variants-are-distinct convention
+  (`collapse_effort_variants=False`) — they are *not* merged into the base model.
+- Every alias target is validated to exist in the Epoch set before it is
+  applied; genuinely new models (e.g. SEAL audio models, `Muse Spark`) stay as
+  their own test-takers. Proposed-but-unapplied matches are written to
+  `output/seal_alias_review.csv` for manual review.
+
 ## Sources
 
 | Section | Source | License | Benchmarks |
 |---|---|---|---|
-| 01 (Epoch) | `epoch.ai/data/benchmark_data.zip` | CC-BY (Epoch AI) | Reasoning, math, QA, multimodal, agentic — 45 benchmarks |
+| 01 (Epoch) | `epoch.ai/data/benchmark_data.zip` | CC-BY (Epoch AI) | Reasoning, math, QA, multimodal, agentic — ~45 benchmarks |
 | 03b (RAND) | [`benchmark-forecasting`](https://github.com/General-Purpose-AI-Policy-Lab/benchmark-forecasting/blob/main/Data/benchmark_data_RAND/benchmark_scores_RAND.csv) — digitized from RAND **RR-A3797-1** (Dev et al. 2025, *Toward Comprehensive Benchmarking of the Biological Knowledge of Frontier LLMs*) | Citation: [RR-A3797-1](https://www.rand.org/pubs/research_reports/RRA3797-1.html) | Biology + chemistry safety suite (WMDP, LAB-Bench, MMLU/MMLU Pro Bio/Chem, GPQA Diamond/Main Bio/Chem, BioLP-bench) — 15 benchmarks |
+| 03c (Scale SEAL) | `labs.scale.com/leaderboard/<slug>` (scraped from `__next_f`; slugs from Scale's Sanity CMS) | **Not CC-BY** — Scale AI ToS; used as fair-use research aggregation, attribute Scale AI | EnigmaEval, MCP Atlas, MultiChallenge, MultiNRC, VISTA, TutorBench, SEAL Tool Use, SWE-Bench Pro (public+private), SEAL Instruction Following, PRBench Finance/Legal, Remote Labor Index, VisualToolBench, AudioMultiChallenge — 15 benchmarks |
 
-When citing analysis built on this pipeline, credit both Epoch AI and the
-RAND techreport.
+When citing analysis built on this pipeline, credit Epoch AI, the RAND
+techreport, and Scale AI.
 
-## Out of scope for v1 (out-of-band, manual)
+## Out of scope / not ingested
 
-These benchmarks are in the legacy dataset but not yet covered:
-
-- **Scale SEAL** (12 benchmarks: PRBench Finance/Legal, VISTA, EnigmaEval, MultiNRC, MultiChallenge, AudioMultiChallenge, TutorBench, SWE-Bench Pro, VisualToolBench, MCP Atlas, Remote Labor Index). Hosted on `scale.com/leaderboard/...`. No public API — needs an HTML scraper, written as `section 01c` once available.
-- **GeoBench & GDPVal** are in Epoch's ZIP but skipped in `FILE_SKIP` because the score scale is ambiguous (GeoBench is multi-axis, GDPVal is win-rate-vs-other-models). 5-minute fix once you commit to one column.
-- **SWE-Bench Bash Only** — genuinely not in Epoch's ZIP this week.
-- **OSUniverse**, **Lech Mazur Writing** — Lech Mazur is already in via Epoch's `lech_mazur_writing_external.csv`. OSUniverse is on GitHub (`agentsea/osuniverse`), no central leaderboard.
-
-If you have CSVs for any of the Scale benchmarks, drop them into the
-current snapshot folder and add a `FILE_SPEC` entry in section 03 — they'll
-be picked up automatically.
+- **OSUniverse** — `agentsea/osuniverse` on GitHub is a run-it-yourself
+  benchmark *framework* (no published model×score leaderboard); scores exist
+  only in its paper. Not ingestable as a model×score table without manual
+  extraction.
+- **SEAL Elo boards** — `coding` and multilingual `arabic/chinese/japanese/spanish`
+  use Elo-style ratings (~600–1240), incompatible with the `[0,1]` Beta model.
+- **SEAL boards left out of the canonical index** (reachable, not yet added):
+  safety (Fortress, MASK, PropensityBench), Math, Tool Use (Chat), SWE Atlas ×3,
+  SciPredict, HiL-Bench, Korean. One-line additions to `SEAL_SPEC` if wanted.
+- **GeoBench & GDPVal** — in Epoch's ZIP but skipped in `FILE_SKIP`: ambiguous
+  score scale (GeoBench multi-axis, GDPVal win-rate-vs-other-models).
+- **Lech Mazur Writing** — already ingested via Epoch's `lech_mazur_writing_external.csv`.
 
 ## License
 
-Epoch AI benchmark data is **CC-BY**. Cite Epoch AI when publishing analysis
-based on this pipeline's output.
+Epoch AI benchmark data is **CC-BY**. RAND scores are cited under RR-A3797-1.
+**Scale SEAL data carries no open license** — it is aggregated here as fair-use
+research with attribution to Scale AI; confirm terms before publishing derived
+analysis. Cite all three sources when publishing analysis based on this output.

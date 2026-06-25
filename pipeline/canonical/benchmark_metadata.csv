@@ -55,8 +55,11 @@ PRBench Finance,Domain Specific Questions,0.0,
 PRBench Legal,Domain Specific Questions,0.0,
 PostTrainBench,Autonomous SWE,0.0,
 Remote Labor Index,Core AGI Progress,0.0,
+SEAL Instruction Following,Advanced Language and Writing,0.0,"Scale SEAL instruction-following board (deprecated Jan 2025); open generation"
+SEAL Tool Use (Enterprise),Agentic Computer Use,0.0,Scale SEAL enterprise agentic tool-use board
 SWE-Bench Bash Only,Autonomous SWE,0.0,
 SWE-Bench Pro,Autonomous SWE,0.0,
+SWE-Bench Pro (Private),Autonomous SWE,0.0,"Scale SEAL SWE-Bench Pro private dataset; distinct question set from the public board"
 SWE-Bench Verified,Autonomous SWE,0.0,
 ScienceQA,Domain Specific Questions,0.3983,
 SimpleBench,General Reasoning,0.0,trick-question benchmark; AVG@5 open generation

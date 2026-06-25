@@ -170,9 +170,9 @@ claude-opus-4-1-20250805,TerminalBench,4,0.348,0.38,terminalbench_external.csv,0
 LLaMA-7B,WinoGrande,3,0.669,0.701,wino_grande_external.csv,0.03199999999999992
 Megatron-Turing NLG 530B,Adversarial NLI,3,0.366,0.397,adversarial_nli_external.csv,0.031000000000000028
 claude-opus-4-6,SWE-Bench Verified,2,0.756198347107438,0.7871900826446281,swe_bench_verified.csv,0.030991735537190035
+gpt-5-codex,TerminalBench,3,0.413,0.443,terminalbench_external.csv,0.030000000000000027
 LLaMA-33B,BoolQ,3,0.831,0.861,bool_q_external.csv,0.030000000000000027
 gemini-1.5-pro-001,WMDP Biology,2,0.765,0.795,rand_benchmark_scores.csv,0.030000000000000027
-gpt-5-codex,TerminalBench,3,0.413,0.443,terminalbench_external.csv,0.030000000000000027
 LLaMA-7B,GSM8K,3,0.08,0.11,gsm8k_external.csv,0.03
 Yi-6B-Chat,MMLU,2,0.582,0.61,mmlu_external.csv,0.028000000000000025
 falcon-7b,GSM8K,4,0.04,0.068,gsm8k_external.csv,0.028000000000000004
@@ -188,6 +188,7 @@ claude-sonnet-4-20250514_unknown,Humanity's Last Exam,2,0.0552,0.0776,hle_extern
 Megatron-Turing NLG 530B,PIQA,4,0.8096,0.8319,piqa_external.csv,0.022299999999999986
 MiniMax-M2.7,TerminalBench,2,0.429,0.451,terminalbench_external.csv,0.02200000000000002
 Megatron-Turing NLG 530B,HellaSwag,3,0.802,0.824,hella_swag_external.csv,0.02199999999999991
+gemini-2.5-flash,Visual Task Assessment (VISTA),2,0.4697,0.4915,seal/visual_language_understanding.html,0.021799999999999986
 phi-2,MMLU,2,0.563,0.584,mmlu_external.csv,0.02100000000000002
 Llama-2-7b,GSM8K,4,0.146,0.167,gsm8k_external.csv,0.02100000000000002
 mpt-7b,ARC (AI2),3,0.405,0.426,arc_ai2_external.csv,0.020999999999999963
@@ -198,11 +199,11 @@ LLaMA-33B,MMLU,3,0.568,0.587,mmlu_external.csv,0.019000000000000017
 qwen2.5-72b-instruct,MMLU,2,0.834,0.853,mmlu_external.csv,0.019000000000000017
 LLaMA-7B,PIQA,3,0.779,0.798,piqa_external.csv,0.019000000000000017
 text-davinci-001,PIQA,4,0.804,0.823,piqa_external.csv,0.018999999999999906
-LLaMA-65B,BoolQ,3,0.853,0.871,bool_q_external.csv,0.018000000000000016
 text-davinci-001,ARC (AI2),3,0.514,0.532,arc_ai2_external.csv,0.018000000000000016
+LLaMA-65B,BoolQ,3,0.853,0.871,bool_q_external.csv,0.018000000000000016
 internlm-chat-20b,MMLU,2,0.556,0.574,mmlu_external.csv,0.017999999999999905
-Llama-2-7b,BoolQ,3,0.762,0.779,bool_q_external.csv,0.017000000000000015
 Llama-4-Maverick-17B-128E-Instruct,Lech Mazur Writing,2,0.62,0.637,lech_mazur_writing_external.csv,0.017000000000000015
+Llama-2-7b,BoolQ,3,0.762,0.779,bool_q_external.csv,0.017000000000000015
 gemini-2.5-flash,TerminalBench,4,0.154,0.171,terminalbench_external.csv,0.017000000000000015
 gemini-2.5-flash-preview-09-2025,TerminalBench,4,0.154,0.171,terminalbench_external.csv,0.017000000000000015
 mpt-7b,PIQA,3,0.789,0.806,piqa_external.csv,0.017000000000000015
