@@ -1,0 +1,338 @@
+_src_file,source_model,n_obs,canonical,in_db,fuzzy_db_candidate
+helm_classic,Anthropic-LM v4-s3 (52B),23,Anthropic-LM v4-s3 (52B),False,
+helm_classic,Cohere Command beta (52.4B),23,Cohere Command beta (52.4B),False,
+helm_classic,Cohere Command beta (6.1B),23,Cohere Command beta (6.1B),False,
+helm_classic,Cohere large v20220720 (13.1B),23,Cohere large v20220720 (13.1B),False,
+helm_classic,Cohere medium v20220720 (6.1B),23,Cohere medium v20220720 (6.1B),False,
+helm_classic,Cohere medium v20221108 (6.1B),23,Cohere medium v20221108 (6.1B),False,
+helm_classic,Cohere small v20220720 (410M),23,Cohere small v20220720 (410M),False,
+helm_classic,Cohere xlarge v20220609 (52.4B),23,Cohere xlarge v20220609 (52.4B),False,
+helm_classic,Cohere xlarge v20221108 (52.4B),23,Cohere xlarge v20221108 (52.4B),False,
+helm_classic,J1-Grande v1 (17B),23,J1-Grande v1 (17B),False,
+helm_classic,J1-Grande v2 beta (17B),23,J1-Grande v2 beta (17B),False,
+helm_classic,J1-Jumbo v1 (178B),23,J1-Jumbo v1 (178B),False,
+helm_classic,J1-Large v1 (7.5B),23,J1-Large v1 (7.5B),False,
+helm_classic,Jurassic-2 Grande (17B),23,Jurassic-2 Grande (17B),False,
+helm_classic,Jurassic-2 Jumbo (178B),23,Jurassic-2 Jumbo (178B),False,
+helm_classic,TNLG v2 (530B),23,TNLG v2 (530B),False,
+helm_classic,TNLG v2 (6.7B),23,TNLG v2 (6.7B),False,
+helm_classic,Jurassic-2 Large (7.5B),21,Jurassic-2 Large (7.5B),False,
+helm_classic,Alpaca (7B),20,Alpaca (7B),False,Chinchilla (70B)
+helm_classic,Falcon-Instruct (7B),20,Falcon-Instruct (7B),False,falcon-40b-instruct
+helm_classic,GLM (130B),20,GLM (130B),False,GLaM (MoE)
+helm_classic,InstructPalmyra (30B),20,InstructPalmyra (30B),False,
+helm_classic,Luminous Base (13B),20,Luminous Base (13B),False,
+helm_classic,Luminous Extended (30B),20,Luminous Extended (30B),False,
+helm_classic,Luminous Supreme (70B),20,Luminous Supreme (70B),False,
+helm_classic,Pythia (12B),20,Pythia (12B),False,PaLM 62B
+helm_classic,Pythia (6.9B),20,Pythia (6.9B),False,
+helm_classic,RedPajama-INCITE-Base-v1 (3B),20,RedPajama-INCITE-Base-v1 (3B),False,RedPajama-INCITE-7B-Base
+helm_classic,RedPajama-INCITE-Instruct (7B),20,RedPajama-INCITE-Instruct (7B),False,RedPajama-INCITE-7B-Base
+helm_classic,RedPajama-INCITE-Instruct-v1 (3B),20,RedPajama-INCITE-Instruct-v1 (3B),False,RedPajama-INCITE-7B-Base
+helm_classic,UL2 (20B),20,UL2 (20B),False,Gopher (280B)
+helm_classic,Vicuna v1.3 (7B),20,Vicuna v1.3 (7B),False,vicuna-13b-v1.3
+helm_classic,YaLM (100B),20,YaLM (100B),False,PaLM 540B
+helm_classic,gpt-3.5-turbo-0301,20,gpt-3.5-turbo-0301,False,gpt-3.5-turbo-0613
+helm_classic,Palmyra X (43B),19,Palmyra X (43B),False,
+helm_classic,T0pp (11B),18,T0pp (11B),False,T5-11B
+helm_classic,code-cushman-001 (12B),9,code-cushman-001 (12B),False,code-davinci-002
+helm_classic,T0pp (11B)☠,2,T0pp (11B)☠,False,
+helm_classic,Pythia (1B),1,Pythia (1B),False,Chinchilla (70B)
+livebench,arcee-trinity-large-preview,1,arcee-trinity-large-preview,False,gemini-3-flash-preview
+livebench,claude-4-1-opus-20250805-thinking-32k,1,claude-4-1-opus-20250805-thinking-32k,False,claude-4-opus-20250514-thinking
+livebench,claude-4-sonnet-20250514-thinking-64k,1,claude-4-sonnet-20250514-thinking-64k,False,claude-4-opus-20250514-thinking
+livebench,claude-haiku-4-5-20251001-thinking-64k,1,claude-haiku-4-5-20251001-thinking-64k,False,claude-haiku-4-5-20251001-thinking
+livebench,claude-opus-4-5-20251101-high-effort,1,claude-opus-4-5-20251101-high-effort,False,claude-opus-4-5-20251101-thinking
+livebench,claude-opus-4-5-20251101-low-effort,1,claude-opus-4-5-20251101-low-effort,False,claude-opus-4-5-20251101
+livebench,claude-opus-4-5-20251101-medium-effort,1,claude-opus-4-5-20251101-medium-effort,False,claude-opus-4-5-20251101
+livebench,claude-opus-4-5-20251101-thinking-64k-high-effort,1,claude-opus-4-5-20251101-thinking-64k-high-effort,False,claude-opus-4-5-20251101-thinking
+livebench,claude-opus-4-5-20251101-thinking-64k-low-effort,1,claude-opus-4-5-20251101-thinking-64k-low-effort,False,claude-opus-4-5-20251101-thinking
+livebench,claude-opus-4-5-20251101-thinking-64k-medium-effort,1,claude-opus-4-5-20251101-thinking-64k-medium-effort,False,claude-opus-4-5-20251101-thinking
+livebench,claude-opus-4-6-thinking-auto-high-effort,1,claude-opus-4-6-thinking-auto-high-effort,False,claude-opus-4-6-thinking
+livebench,claude-sonnet-4-5-20250929-thinking-64k,1,claude-sonnet-4-5-20250929-thinking-64k,False,claude-sonnet-4-5-20250929-thinking
+livebench,claude-sonnet-4-6-thinking-auto-high-effort,1,claude-sonnet-4-6-thinking-auto-high-effort,False,claude-sonnet-4-thinking
+livebench,claude-sonnet-4-6-thinking-auto-low-effort,1,claude-sonnet-4-6-thinking-auto-low-effort,False,claude-sonnet-4-thinking
+livebench,claude-sonnet-4-6-thinking-auto-medium-effort,1,claude-sonnet-4-6-thinking-auto-medium-effort,False,claude-sonnet-4-thinking
+livebench,claude-sonnet-5-xhigh-effort,1,claude-sonnet-5-xhigh-effort,False,claude-sonnet-4-6_high
+livebench,deepseek-v3.2,1,deepseek-v3.2,False,deepseek-v3p2
+livebench,deepseek-v3.2-thinking,1,deepseek-v3.2-thinking,False,DeepSeek-V3.2-Exp_thinking
+livebench,deepseek-v4-flash,1,deepseek-v4-flash,False,deepseek-v4-flash_max
+livebench,deepseek-v4-pro,1,deepseek-v4-pro,False,deepseek-v4-pro_max
+livebench,devstral-2512,1,devstral-2512,False,codestral-2501
+livebench,elephant-alpha,1,elephant-alpha,False,ml-elephant
+livebench,gemini-2.5-flash-06-05-highthinking,1,gemini-2.5-flash-06-05-highthinking,False,gemini-2.5-flash-lite-preview-06-17-thinking
+livebench,gemini-2.5-flash-lite-highthinking,1,gemini-2.5-flash-lite-highthinking,False,gemini-2.5-flash-lite-preview-06-17-thinking
+livebench,gemini-2.5-flash-lite-preview-09-2025-highthinking,1,gemini-2.5-flash-lite-preview-09-2025-highthinking,False,gemini-2.5-flash-lite-preview-06-17-thinking
+livebench,gemini-2.5-flash-preview-09-2025-highthinking,1,gemini-2.5-flash-preview-09-2025-highthinking,False,gemini-2.5-flash-preview-09-2025
+livebench,gemini-2.5-pro-06-05-highthinking,1,gemini-2.5-pro-06-05-highthinking,False,gemini-2.5-pro (Thinking)*
+livebench,gemini-3-flash-preview-high,1,gemini-3-flash-preview-high,False,gemini-3-flash-preview
+livebench,gemini-3-flash-preview-minimal,1,gemini-3-flash-preview-minimal,False,gemini-3-flash-preview
+livebench,gemini-3-pro-preview-11-2025-high,1,gemini-3-pro-preview-11-2025-high,False,gemini-3.1-pro-preview (high)
+livebench,gemini-3-pro-preview-11-2025-low,1,gemini-3-pro-preview-11-2025-low,False,gemini-3-pro-preview
+livebench,gemini-3.1-flash-lite-preview-high,1,gemini-3.1-flash-lite-preview-high,False,gemini-3.1-flash-live-preview†
+livebench,gemini-3.1-pro-preview-high,1,gemini-3.1-pro-preview-high,False,gemini-3.1-pro-preview (high)
+livebench,glm-4.6v,1,glm-4.6v,False,glm-4.6
+livebench,glm-5.2,1,glm-5.2,False,glm-5.1
+livebench,glm-5v-turbo,1,glm-5v-turbo,False,gpt-4-turbo
+livebench,gpt-5-mini,1,gpt-5-mini,False,gpt-5-thinking
+livebench,gpt-5-mini-high,1,gpt-5-mini-high,False,gpt-5-mini-thinking
+livebench,gpt-5-mini-low,1,gpt-5-mini-low,False,gpt-5-mini-2025-08-07_low
+livebench,gpt-5-mini-minimal,1,gpt-5-mini-minimal,False,gpt-5-mini-2025-08-07_minimal
+livebench,gpt-5-nano,1,gpt-5-nano,False,gpt-5-chat
+livebench,gpt-5-nano-high,1,gpt-5-nano-high,False,gpt-5-nano-2025-08-07_high
+livebench,gpt-5-nano-low,1,gpt-5-nano-low,False,gpt-5-nano-2025-08-07_low
+livebench,gpt-5.1-2025-11-13-nothinking,1,gpt-5.1-2025-11-13-nothinking,False,gpt-5.1-2025-11-13-thinking
+livebench,gpt-5.1-codex-max-high,1,gpt-5.1-codex-max-high,False,gpt-5.1-codex-max
+livebench,gpt-5.2-2025-12-11-nothinking,1,gpt-5.2-2025-12-11-nothinking,False,gpt-5.1-2025-11-13-thinking
+livebench,gpt-5.3-instant,1,gpt-5.3-instant,False,mpt-30b-instruct
+livebench,gpt-5.4-high,1,gpt-5.4-high,False,gpt-5.5_high
+livebench,gpt-5.4-mini,1,gpt-5.4-mini,False,gpt-5.1-codex-mini
+livebench,gpt-5.4-mini-high,1,gpt-5.4-mini-high,False,gpt-5-mini-thinking
+livebench,gpt-5.4-mini-low,1,gpt-5.4-mini-low,False,gpt-5.4-mini-2026-03-17_low
+livebench,gpt-5.4-mini-medium,1,gpt-5.4-mini-medium,False,gpt-5.4-mini-2026-03-17_medium
+livebench,gpt-5.4-mini-xhigh,1,gpt-5.4-mini-xhigh,False,gpt-5.4-mini-2026-03-17_xhigh
+livebench,gpt-5.4-nano,1,gpt-5.4-nano,False,gpt-5.5_unknown
+livebench,gpt-5.4-nano-high,1,gpt-5.4-nano-high,False,gpt-5.4-nano-2026-03-17_high
+livebench,gpt-5.4-nano-low,1,gpt-5.4-nano-low,False,gpt-5.4-nano-2026-03-17_low
+livebench,gpt-5.4-nano-medium,1,gpt-5.4-nano-medium,False,gpt-5.4-nano-2026-03-17_medium
+livebench,gpt-5.4-nano-xhigh,1,gpt-5.4-nano-xhigh,False,gpt-5.4-nano-2026-03-17_xhigh
+livebench,gpt-5.4-xhigh,1,gpt-5.4-xhigh,False,gpt-5.4 (xhigh)
+livebench,grok-4.20-beta-0309-non-reasoning,1,grok-4.20-beta-0309-non-reasoning,False,grok-4-1-fast-non-reasoning
+livebench,grok-4.20-beta-0309-reasoning,1,grok-4.20-beta-0309-reasoning,False,grok-4-1-fast-reasoning
+livebench,grok-4.3,1,grok-4.3,False,grok-4-3
+livebench,grok-build-0.1,1,grok-build-0.1,False,grok-4-1
+livebench,grok-code-fast-1-0825,1,grok-code-fast-1-0825,False,grok-code-fast-1
+livebench,kimi-k2.5-thinking,1,kimi-k2.5-thinking,False,kimi-k2-thinking
+livebench,kimi-k2.6-thinking,1,kimi-k2.6-thinking,False,kimi-k2-thinking
+livebench,mimo-v2-pro,1,mimo-v2-pro,False,gemini-2.5-pro
+livebench,minimax-m3,1,minimax-m3,False,MiniMax-M2
+livebench,nemotron-3-super-120b-a12b,1,nemotron-3-super-120b-a12b,False,nemotron-3-ultra
+livebench,nemotron-3-ultra-550b-a55b,1,nemotron-3-ultra-550b-a55b,False,nemotron-3-ultra
+livebench,qwen3-30b-a3b-thinking,1,qwen3-30b-a3b-thinking,False,qwen/qwen3-235b-a22b-thinking-2507
+livebench,qwen3-32b-thinking,1,qwen3-32b-thinking,False,qwen/qwen3-235b-a22b-thinking-2507
+livebench,qwen3-next-80b-a3b-instruct,1,qwen3-next-80b-a3b-instruct,False,chutes/Qwen3-Next-80B-A3B-Instruct
+livebench,qwen3-next-80b-a3b-thinking,1,qwen3-next-80b-a3b-thinking,False,qwen/qwen3-235b-a22b-thinking-2507
+livebench,qwen3.6-27b,1,qwen3.6-27b,False,qwen3.5-27B
+steel_dev,Claude Opus 4.6,5,Claude Opus 4.6,False,claude-opus-4-6
+steel_dev,Claude Mythos 5,4,Claude Mythos 5,False,
+steel_dev,Claude Mythos Preview,4,Claude Mythos Preview,False,claude-mythos-preview-early
+steel_dev,Claude Opus 4.5,4,Claude Opus 4.5,False,Claude Opus 4 (Thinking)
+steel_dev,Claude Opus 4.8,4,Claude Opus 4.8,False,Claude Opus 4 (Thinking)
+steel_dev,Claude Sonnet 4.6,4,Claude Sonnet 4.6,False,claude-sonnet-4-6
+steel_dev,GPT-5.4,4,GPT-5.4,False,GPT-4
+steel_dev,Claude Opus 4.7,3,Claude Opus 4.7,False,claude-opus-4-7
+steel_dev,Claude Sonnet 4.5,3,Claude Sonnet 4.5,False,Claude Sonnet 4 (Thinking)
+steel_dev,GPT-5.2,3,GPT-5.2,False,GPT-4
+steel_dev,Gemini 3 Flash,3,Gemini 3 Flash,False,gemini-2.5-flash
+steel_dev,Gemini 3.1 Pro,3,Gemini 3.1 Pro,False,gemini-2.5-pro
+steel_dev,Claude Haiku 4.5,2,Claude Haiku 4.5,False,claude-haiku-4-5-20251001
+steel_dev,Claude Sonnet 5,2,Claude Sonnet 5,False,Claude Sonnet 4 (Thinking)
+steel_dev,DeepSeek-V4-Flash-Max,2,DeepSeek-V4-Flash-Max,False,deepseek-v4-flash_max
+steel_dev,DeepSeek-V4-Pro-Max,2,DeepSeek-V4-Pro-Max,False,DeepSeek-V3-Base
+steel_dev,GLM-4.7-Flash,2,GLM-4.7-Flash,False,GLM-4.5-Air
+steel_dev,GLM-5V-Turbo,2,GLM-5V-Turbo,False,GLM-4.5-Air
+steel_dev,MiMo-V2-Flash,2,MiMo-V2-Flash,False,gemini-2.5-flash
+steel_dev,OpenAI Operator,2,OpenAI Operator,False,OpenAI GPT-4o
+steel_dev,Qwen3.5-397B-A17B,2,Qwen3.5-397B-A17B,False,Qwen3-30B-A3B
+steel_dev,Step-3.5-Flash,2,Step-3.5-Flash,False,qwen3.5-flash
+steel_dev,WebChallenger (GLM-4-32B),2,WebChallenger (GLM-4-32B),False,
+steel_dev,A3-Qwen3.5-9B,1,A3-Qwen3.5-9B,False,qwen3.5-9B
+steel_dev,ABP + Claude Opus 4.6,1,ABP + Claude Opus 4.6,False,Claude Opus 4 (Thinking)
+steel_dev,ACT-1-20250703,1,ACT-1-20250703,False,o3-pro-2025-06-10
+steel_dev,ACT-1-20250814,1,ACT-1-20250814,False,gpt-4.1-2025-04-14
+steel_dev,Agent Kura,1,Agent Kura,False,
+steel_dev,Agent S2 + Claude 3.7,1,Agent S2 + Claude 3.7,False,
+steel_dev,Agent Workflow Memory,1,Agent Workflow Memory,False,
+steel_dev,Agent-E,1,Agent-E,False,
+steel_dev,Agent-E (gpt-4o),1,Agent-E (gpt-4o),False,gpt-4o
+steel_dev,Agent-FLAN,1,Agent-FLAN,False,
+steel_dev,AgentFounder-30B,1,AgentFounder-30B,False,Qwen2.5-Coder-3B
+steel_dev,AgentLM-13b,1,AgentLM-13b,False,opt-13b
+steel_dev,AgentLM-70b,1,AgentLM-70b,False,gemma-7b
+steel_dev,AgentLM-7b,1,AgentLM-7b,False,gemma-7b
+steel_dev,AgentOccam-Judge,1,AgentOccam-Judge,False,
+steel_dev,AgentRL w/ GLM-4-9B-0414,1,AgentRL w/ GLM-4-9B-0414,False,
+steel_dev,AgentRL w/ Qwen2.5-14B-Instruct,1,AgentRL w/ Qwen2.5-14B-Instruct,False,Qwen2.5-Coder-14B-Instruct
+steel_dev,AgentRL w/ Qwen2.5-32B-Instruct,1,AgentRL w/ Qwen2.5-32B-Instruct,False,Qwen2.5-VL-72B-Instruct
+steel_dev,AgentRL w/ Qwen2.5-3B-Instruct,1,AgentRL w/ Qwen2.5-3B-Instruct,False,Qwen2.5-Coder-3B-Instruct
+steel_dev,AgentRL w/ Qwen2.5-7B-Instruct,1,AgentRL w/ Qwen2.5-7B-Instruct,False,Qwen2.5-VL-72B-Instruct
+steel_dev,AgentSymbiotic,1,AgentSymbiotic,False,
+steel_dev,AgentTrek-1.0-32B,1,AgentTrek-1.0-32B,False,qwen1.5-32B
+steel_dev,Agents-A1,1,Agents-A1,False,
+steel_dev,Agents-A1-SFT,1,Agents-A1-SFT,False,
+steel_dev,Alumnium,1,Alumnium,False,
+steel_dev,Anthropic Computer Use 3.5,1,Anthropic Computer Use 3.5,False,
+steel_dev,AutoWebGLM,1,AutoWebGLM,False,
+steel_dev,BrowseMaster,1,BrowseMaster,False,
+steel_dev,Browser Use,1,Browser Use,False,
+steel_dev,Browser Use (gpt-4o),1,Browser Use (gpt-4o),False,
+steel_dev,Browser Use Cloud (bu-max),1,Browser Use Cloud (bu-max),False,
+steel_dev,BrowserGym + GPT-4,1,BrowserGym + GPT-4,False,
+steel_dev,Browserable,1,Browserable,False,
+steel_dev,ChatGPT Atlas Agent Mode,1,ChatGPT Atlas Agent Mode,False,ChatGPT agent
+steel_dev,Claude 4.0,1,Claude 4.0,False,claude-2.0
+steel_dev,Claude 4.5,1,Claude 4.5,False,claude-2.1
+steel_dev,Claude Code + GBOX MCP,1,Claude Code + GBOX MCP,False,
+steel_dev,Claude Computer Use 3.5,1,Claude Computer Use 3.5,False,
+steel_dev,Claude Computer Use 3.7 (w/o thinking),1,Claude Computer Use 3.7 (w/o thinking),False,Claude Opus 4 (Thinking)
+steel_dev,Claude Mythos 5 (browser-use),1,Claude Mythos 5 (browser-use),False,
+steel_dev,Claude Mythos Preview (browser-use),1,Claude Mythos Preview (browser-use),False,claude-mythos-preview-early
+steel_dev,Claude Opus 4.1 (Parallel Task API benchmark),1,Claude Opus 4.1 (Parallel Task API benchmark),False,Claude Opus 4 (Thinking)
+steel_dev,Claude Opus 4.6 CUA,1,Claude Opus 4.6 CUA,False,Claude Opus 4 (Thinking)
+steel_dev,Claude Opus 4.8 (browser-use),1,Claude Opus 4.8 (browser-use),False,Claude Opus 4 (Thinking)
+steel_dev,Claude Sonnet 3.7,1,Claude Sonnet 3.7,False,Claude Sonnet 4 (Thinking)
+steel_dev,Claude Sonnet 4.5 Thinking,1,Claude Sonnet 4.5 Thinking,False,Claude Sonnet 4 (Thinking)
+steel_dev,Claude Sonnet 4.6 (browser-use),1,Claude Sonnet 4.6 (browser-use),False,Claude Sonnet 4 (Thinking)
+steel_dev,Co-Sight v2.1.0,1,Co-Sight v2.1.0,False,
+steel_dev,CodeAct Agent,1,CodeAct Agent,False,ChatGPT agent
+steel_dev,CodeLlama-instruct-34b,1,CodeLlama-instruct-34b,False,Meta-Llama-3-8B-Instruct
+steel_dev,CodeLlama-instruct-7b,1,CodeLlama-instruct-7b,False,Meta-Llama-3-8B-Instruct
+steel_dev,ColorBrowserAgent,1,ColorBrowserAgent,False,
+steel_dev,Deep Research (o3),1,Deep Research (o3),False,DeepSeek V3 (March 2025)
+steel_dev,"Deep Research (o3, cons@64)",1,"Deep Research (o3, cons@64)",False,
+steel_dev,DeepDive-32B,1,DeepDive-32B,False,DeepSeek-V3
+steel_dev,DeepMiner-32B,1,DeepMiner-32B,False,DeepSeek-V3
+steel_dev,DeepSeek-V3.2,1,DeepSeek-V3.2,False,DeepSeek-V3.1
+steel_dev,DeepSeek-V3.2 (Thinking),1,DeepSeek-V3.2 (Thinking),False,DeepSeek-V3.1_thinking
+steel_dev,DeepSeek-V3.2-Exp (Reasoner),1,DeepSeek-V3.2-Exp (Reasoner),False,DeepSeek-V3.2-Exp
+steel_dev,DeepSky Agent,1,DeepSky Agent,False,DeepSeek-V3
+steel_dev,Exa + GPT-5.4 harness,1,Exa + GPT-5.4 harness,False,
+steel_dev,Exa Agent High,1,Exa Agent High,False,
+steel_dev,Exa Agent Low,1,Exa Agent Low,False,
+steel_dev,Exa Agent Medium,1,Exa Agent Medium,False,Mistral Medium 3
+steel_dev,Exa Research Pro,1,Exa Research Pro,False,xiaoyi-deepresearch
+steel_dev,FireAct,1,FireAct,False,
+steel_dev,GPT-4 (All Tools),1,GPT-4 (All Tools),False,GPT-4o
+steel_dev,GPT-4 + Auto Eval,1,GPT-4 + Auto Eval,False,GPT-4o
+steel_dev,GPT-4.5,1,GPT-4.5,False,GPT-4
+steel_dev,GPT-4o + Tree Search,1,GPT-4o + Tree Search,False,
+steel_dev,GPT-4o + browsing,1,GPT-4o + browsing,False,GPT-4o
+steel_dev,GPT-5,1,GPT-5,False,GPT-4
+steel_dev,GPT-5.2 Pro,1,GPT-5.2 Pro,False,GPT-4o
+steel_dev,GPT-5.4 CUA,1,GPT-5.4 CUA,False,GPT-4
+steel_dev,GPT-5.4 Native Computer Use,1,GPT-5.4 Native Computer Use,False,GPT-4 (November 2024)
+steel_dev,GPT-5.4 Pro,1,GPT-5.4 Pro,False,GPT-4o
+steel_dev,GPT-5.5,1,GPT-5.5,False,GPT-4
+steel_dev,GPT-5.5 Pro,1,GPT-5.5 Pro,False,GPT-4o
+steel_dev,GUI-API Hybrid Agent,1,GUI-API Hybrid Agent,False,
+steel_dev,Gemini 2.5 Computer Use,1,Gemini 2.5 Computer Use,False,gemini-2.5-pro
+steel_dev,Gemini Deep Research,1,Gemini Deep Research,False,xiaoyi-deepresearch
+steel_dev,Gemini Pro,1,Gemini Pro,False,gemini-2.5-pro
+steel_dev,HALO V1217,1,HALO V1217,False,
+steel_dev,HALO V1217-1,1,HALO V1217-1,False,
+steel_dev,IBM CUGA,1,IBM CUGA,False,
+steel_dev,InfoAgent,1,InfoAgent,False,
+steel_dev,Jace.AI (AWA-1.5),1,Jace.AI (AWA-1.5),False,
+steel_dev,JoinAI V1.1,1,JoinAI V1.1,False,
+steel_dev,JoinAI V2,1,JoinAI V2,False,
+steel_dev,JoinAI V2.1,1,JoinAI V2.1,False,
+steel_dev,JoinAI V2.2,1,JoinAI V2.2,False,
+steel_dev,Kimi K2-Thinking-0905,1,Kimi K2-Thinking-0905,False,kimi-k2-thinking
+steel_dev,Learn-by-Interact,1,Learn-by-Interact,False,qwen2-72b-instruct
+steel_dev,Lemon Agent,1,Lemon Agent,False,
+steel_dev,Lemon Agent v1.0.8,1,Lemon Agent v1.0.8,False,
+steel_dev,Lemur-chat-70b,1,Lemur-chat-70b,False,internlm-chat-20b
+steel_dev,Llama3-chat-70b,1,Llama3-chat-70b,False,Llama-2-7b
+steel_dev,Llama3-chat-8b,1,Llama3-chat-8b,False,Llama-2-13b-chat
+steel_dev,LongCat-Flash-Thinking-2601,1,LongCat-Flash-Thinking-2601,False,gemini-2.0-flash-thinking-exp-01-21
+steel_dev,LongSeeker,1,LongSeeker,False,
+steel_dev,Magnitude,1,Magnitude,False,
+steel_dev,Manus,1,Manus,False,Manus 1.5
+steel_dev,MiMo-V2-Pro,1,MiMo-V2-Pro,False,MiniCPM-o-2_6
+steel_dev,MiniMax M3,1,MiniMax M3,False,MiniMax-M2
+steel_dev,MiroThinker v1.0-72B,1,MiroThinker v1.0-72B,False,
+steel_dev,MiroThinker-H1,1,MiroThinker-H1,False,
+steel_dev,Mixtral-8x7B,1,Mixtral-8x7B,False,Mixtral-8x7B-v0.1
+steel_dev,NNetNav,1,NNetNav,False,
+steel_dev,Narada AI,1,Narada AI,False,ada
+steel_dev,Navigator,1,Navigator,False,
+steel_dev,Nemotron 3 Super (120B A12B),1,Nemotron 3 Super (120B A12B),False,Nemotron-4 15B
+steel_dev,Nemotron-ToolOrchestra,1,Nemotron-ToolOrchestra,False,nemotron-3-ultra
+steel_dev,Notte,1,Notte,False,
+steel_dev,OPS-Agentic-Search,1,OPS-Agentic-Search,False,
+steel_dev,OSAgent,1,OSAgent,False,
+steel_dev,OpAgent,1,OpAgent,False,
+steel_dev,OpenAGI Lux,1,OpenAGI Lux,False,OpenAI GPT-5
+steel_dev,OpenAI Deep Research,1,OpenAI Deep Research,False,xiaoyi-deepresearch
+steel_dev,OpenAI Deep Research (o3),1,OpenAI Deep Research (o3),False,
+steel_dev,OpenAI Deep Research (o4-mini),1,OpenAI Deep Research (o4-mini),False,
+steel_dev,OpenAI Operator (CUA),1,OpenAI Operator (CUA),False,
+steel_dev,OpenAI o1,1,OpenAI o1,False,OpenAI GPT-4o
+steel_dev,OpenSeeker,1,OpenSeeker,False,
+steel_dev,OpenSeeker-v2,1,OpenSeeker-v2,False,DeepSeek-V2
+steel_dev,Operator,1,Operator,False,
+steel_dev,Parallel Advanced + GPT-5.4 harness,1,Parallel Advanced + GPT-5.4 harness,False,
+steel_dev,Parallel Basic + GPT-5.4 harness,1,Parallel Basic + GPT-5.4 harness,False,
+steel_dev,Parallel Ultra,1,Parallel Ultra,False,
+steel_dev,Parallel Ultra2x,1,Parallel Ultra2x,False,
+steel_dev,Parallel Ultra4x,1,Parallel Ultra4x,False,
+steel_dev,Parallel Ultra8x,1,Parallel Ultra8x,False,
+steel_dev,Patel et al. + GPT-4,1,Patel et al. + GPT-4,False,
+steel_dev,Perplexity Agent Advanced,1,Perplexity Agent Advanced,False,
+steel_dev,Perplexity Agent Deep,1,Perplexity Agent Deep,False,
+steel_dev,Perplexity Agent Fast,1,Perplexity Agent Fast,False,
+steel_dev,Perplexity Agent Pro,1,Perplexity Agent Pro,False,
+steel_dev,Perplexity Deep Research (Opus 4.5),1,Perplexity Deep Research (Opus 4.5),False,
+steel_dev,Perplexity Deep Research (Opus 4.6),1,Perplexity Deep Research (Opus 4.6),False,
+steel_dev,Perplexity Sonar Deep Research,1,Perplexity Sonar Deep Research,False,xiaoyi-deepresearch
+steel_dev,Plan-MCTS + GPT-5-mini,1,Plan-MCTS + GPT-5-mini,False,
+steel_dev,Project Mariner,1,Project Mariner,False,
+steel_dev,Qwen 3.5,1,Qwen 3.5,False,qwen3.5-9B
+steel_dev,Qwen-1.5-chat-72b,1,Qwen-1.5-chat-72b,False,qwen1.5-72b-chat
+steel_dev,Qwen2.5 VL 32B Instruct,1,Qwen2.5 VL 32B Instruct,False,Qwen2.5-VL-72B-Instruct
+steel_dev,Qwen3 VL 235B,1,Qwen3 VL 235B,False,Qwen3-235B-A22B
+steel_dev,Qwen3.5-122B-A10B,1,Qwen3.5-122B-A10B,False,Qwen3-235B-A22B
+steel_dev,Qwen3.5-35B-A3B,1,Qwen3.5-35B-A3B,False,Qwen3-30B-A3B
+steel_dev,Runner H 0.1,1,Runner H 0.1,False,
+steel_dev,SMTL,1,SMTL,False,ST-LLM
+steel_dev,SU Zero (Shuqian Pro),1,SU Zero (Shuqian Pro),False,
+steel_dev,Sarvam-105B,1,Sarvam-105B,False,Llama-3.1-405B
+steel_dev,Sarvam-30B,1,Sarvam-30B,False,Meta-Llama-3-70B
+steel_dev,ScribeAgent + GPT-4o,1,ScribeAgent + GPT-4o,False,OpenAI GPT-4o
+steel_dev,SeeAct (gpt-4o),1,SeeAct (gpt-4o),False,gpt-4o
+steel_dev,Seed 2.0 Pro,1,Seed 2.0 Pro,False,
+steel_dev,ShawnAgent v3.0,1,ShawnAgent v3.0,False,
+steel_dev,ShawnAgent v3.1,1,ShawnAgent v3.1,False,
+steel_dev,Skyvern 2.0,1,Skyvern 2.0,False,
+steel_dev,Stagehand (Gemini 2.5 CU),1,Stagehand (Gemini 2.5 CU),False,
+steel_dev,Stagehand (Sonnet 4.5),1,Stagehand (Sonnet 4.5),False,Claude Sonnet 4 (Thinking)
+steel_dev,SteP,1,SteP,False,
+steel_dev,Su Zero + SQ Pro,1,Su Zero + SQ Pro,False,
+steel_dev,Su Zero + Shuqian Lite,1,Su Zero + Shuqian Lite,False,
+steel_dev,Surfer 2,1,Surfer 2,False,
+steel_dev,Surfer-H + Holo1,1,Surfer-H + Holo1,False,
+steel_dev,Synatra-CodeLLama7b,1,Synatra-CodeLLama7b,False,
+steel_dev,TTI,1,TTI,False,
+steel_dev,Tavily + GPT-5.4 harness,1,Tavily + GPT-5.4 harness,False,
+steel_dev,TinyFish,1,TinyFish,False,
+steel_dev,Tongyi DeepResearch,1,Tongyi DeepResearch,False,xiaoyi-deepresearch
+steel_dev,UI-TARS-2,1,UI-TARS-2,False,
+steel_dev,UiPath Screen Agent,1,UiPath Screen Agent,False,
+steel_dev,WILBUR,1,WILBUR,False,
+steel_dev,WebAnchor-30B,1,WebAnchor-30B,False,
+steel_dev,WebExplorer-8B (RL),1,WebExplorer-8B (RL),False,
+steel_dev,WebOperator + GPT-4o,1,WebOperator + GPT-4o,False,OpenAI GPT-4o
+steel_dev,WebPilot,1,WebPilot,False,
+steel_dev,WebSailor-32B,1,WebSailor-32B,False,
+steel_dev,WebSailor-72B,1,WebSailor-72B,False,
+steel_dev,WebSailor-7B,1,WebSailor-7B,False,
+steel_dev,WebSight,1,WebSight,False,
+steel_dev,WebTactix (DeepSeek v3.2),1,WebTactix (DeepSeek v3.2),False,DeepSeek-V3.1
+steel_dev,WebUncertainty + GPT-4-Turbo,1,WebUncertainty + GPT-4-Turbo,False,
+steel_dev,WebVoyager,1,WebVoyager,False,
+steel_dev,claude-opus-4-20250514 (32k thinking),1,claude-opus-4-20250514 (32k thinking),False,claude-4-opus-20250514-thinking
+steel_dev,gemini-2.5-pro-preview-06-05 (32k think),1,gemini-2.5-pro-preview-06-05 (32k think),False,gemini-2.5-pro-preview-06-05_32K
+steel_dev,gemini-2.5-pro-preview-06-05 (default think),1,gemini-2.5-pro-preview-06-05 (default think),False,gemini-2.5-pro-preview-06-05
+steel_dev,gpt-3.5-turbo-16k-0613,1,gpt-3.5-turbo-16k-0613,False,gpt-3.5-turbo-0613
+steel_dev,gpt-4-0613 (no not-achievable hint),1,gpt-4-0613 (no not-achievable hint),False,
+steel_dev,gpt-4-0613 (with not-achievable hint),1,gpt-4-0613 (with not-achievable hint),False,
+steel_dev,gpt-5 (high),1,gpt-5 (high),False,gpt-5.4 (xhigh)
+steel_dev,gpt-5 (low),1,gpt-5 (low),False,gpt-5.5_low
+steel_dev,gpt-5 (medium),1,gpt-5 (medium),False,gpt-5.5_medium
+steel_dev,grok-4 (high),1,grok-4 (high),False,grok-4.3_high
+steel_dev,o3 (high),1,o3 (high),False,gpt-5.4 (xhigh)
+steel_dev,o3 (high) + gpt-4.1,1,o3 (high) + gpt-4.1,False,
+steel_dev,o3-pro (high),1,o3-pro (high),False,o3-pro
+steel_dev,o4-mini (high),1,o4-mini (high),False,o4-mini
+steel_dev,openJiuwen-deepagent,1,openJiuwen-deepagent,False,
+steel_dev,openJiuwen-deepagent (GPT5/Gemini),1,openJiuwen-deepagent (GPT5/Gemini),False,

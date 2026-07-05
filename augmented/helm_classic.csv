@@ -1,0 +1,894 @@
+model_version,score,release_date,organization,benchmark,stderr,source,lower_bound,category
+J1-Jumbo v1 (178B),0.3366666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Large v1 (7.5B),0.2690058479532163,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v1 (17B),0.3333333333333333,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v2 beta (17B),0.7866666666666667,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Jumbo (178B),0.8166666666666668,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Grande (17B),0.79,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Large (7.5B),0.4866666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Base (13B),0.3133333333333333,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Extended (30B),0.4433333333333333,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Supreme (70B),0.5766666666666667,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Anthropic-LM v4-s3 (52B),0.77,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+BLOOM (176B),0.41,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+T0pp (11B),0.6466666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20220609 (52.4B),0.55,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere large v20220720 (13.1B),0.37,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20220720 (6.1B),0.3266666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere small v20220720 (410M),0.3266666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20221108 (52.4B),0.6533333333333333,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20221108 (6.1B),0.2719298245614035,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (6.1B),0.61,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (52.4B),0.77,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-J (6B),0.2966666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-NeoX (20B),0.3187134502923976,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (6.9B),0.2807017543859649,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (12B),0.3,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+T5 (11B),0.3699999999999999,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+UL2 (20B),0.3766666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (175B),0.4666666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (66B),0.3433333333333332,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (7B),0.45,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (13B),0.76,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (30B),0.83,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (65B),0.89,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (7B),0.64,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (13B),0.84,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (70B),0.92,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Alpaca (7B),0.6,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (7B),0.7,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (13B),0.72,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (530B),0.7766666666666667,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (6.7B),0.29,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+davinci (175B),0.6933333333333334,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+curie (6.7B),0.2866666666666667,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+babbage (1.3B),0.3166666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+ada (350M),0.3133333333333333,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-003,0.8433333333333333,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+text-curie-001,0.2660818713450292,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+text-babbage-001,0.3070175438596491,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+text-ada-001,0.3,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0301,0.85,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base-v1 (3B),0.3,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct-v1 (3B),0.29,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base (7B),0.38,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct (7B),0.52,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT (30B),0.68,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT-Instruct (30B),0.64,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (7B),0.39,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (7B),0.34,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (40B),0.79,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (40B),0.82,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+GLM (130B),0.4466666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+InstructPalmyra (30B),0.6666666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+Palmyra X (43B),0.8766666666666666,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+YaLM (100B),0.28,,,MMLU,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Jumbo v1 (178B),0.765,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+J1-Large v1 (7.5B),0.7,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v1 (17B),0.739,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v2 beta (17B),0.764,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Jumbo (178B),0.788,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Grande (17B),0.781,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Large (7.5B),0.729,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Anthropic-LM v4-s3 (52B),0.807,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+BLOOM (176B),0.744,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20220609 (52.4B),0.811,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere large v20220720 (13.1B),0.736,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20220720 (6.1B),0.706,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere small v20220720 (410M),0.483,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20221108 (52.4B),0.81,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20221108 (6.1B),0.726,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (6.1B),0.752,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (52.4B),0.811,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+GPT-J (6B),0.663,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+GPT-NeoX (20B),0.718,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+OPT (175B),0.791,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+OPT (66B),0.745,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (530B),0.799,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (6.7B),0.704,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+davinci (175B)⚠,0.775,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+curie (6.7B)⚠,0.682,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+babbage (1.3B)⚠,0.555,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+ada (350M)⚠,0.435,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-003⚠,0.822,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-002⚠,0.815,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+text-curie-001⚠,0.676,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+text-babbage-001⚠,0.561,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+text-ada-001⚠,0.429,,,HellaSwag,,HELM Classic v0.3.0,,General Reasoning
+J1-Jumbo v1 (178B),0.534,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Large v1 (7.5B),0.514,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v1 (17B),0.52,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v2 beta (17B),0.56,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Jumbo (178B),0.558,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Grande (17B),0.542,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Large (7.5B),0.53,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Anthropic-LM v4-s3 (52B),0.558,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+BLOOM (176B),0.534,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20220609 (52.4B),0.55,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere large v20220720 (13.1B),0.542,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20220720 (6.1B),0.496,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere small v20220720 (410M),0.348,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20221108 (52.4B),0.588,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20221108 (6.1B),0.538,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (6.1B),0.55,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (52.4B),0.582,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-J (6B),0.514,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-NeoX (20B),0.524,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (175B),0.586,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (66B),0.534,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (530B),0.562,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (6.7B),0.478,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+davinci (175B)⚠,0.586,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+curie (6.7B)⚠,0.502,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+babbage (1.3B)⚠,0.438,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+ada (350M)⚠,0.38,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-003⚠,0.646,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-002⚠,0.594,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-curie-001⚠,0.514,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-babbage-001⚠,0.452,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-ada-001⚠,0.346,,,OpenBookQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Jumbo v1 (178B),0.0539999999999999,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+J1-Large v1 (7.5B),0.0136666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+J1-Grande v1 (17B),0.0536666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+J1-Grande v2 beta (17B),0.096,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Jurassic-2 Jumbo (178B),0.2246666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Jurassic-2 Grande (17B),0.1329999999999999,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Jurassic-2 Large (7.5B),0.03,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Luminous Base (13B),0.026,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Luminous Extended (30B),0.0666666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Luminous Supreme (70B),0.1119999999999999,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Anthropic-LM v4-s3 (52B),0.171,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+BLOOM (176B),0.095,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+T0pp (11B),0.0,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere xlarge v20220609 (52.4B),0.0699999999999999,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere large v20220720 (13.1B),0.0176666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere medium v20220720 (6.1B),0.0146666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere small v20220720 (410M),0.004,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere xlarge v20221108 (52.4B),0.0996666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere medium v20221108 (6.1B),0.0173333333333333,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere Command beta (6.1B),0.036,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere Command beta (52.4B),0.138,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+GPT-J (6B),0.036,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+GPT-NeoX (20B),0.0526666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Pythia (6.9B),0.014,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Pythia (12B),0.032,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+T5 (11B),0.0233333333333333,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+UL2 (20B),0.0236666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+OPT (175B),0.0403333333333333,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+OPT (66B),0.018,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (7B),0.08,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (13B),0.154,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (30B),0.32,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (65B),0.466,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Llama 2 (7B),0.133,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Llama 2 (13B),0.245,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Llama 2 (70B),0.484,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Alpaca (7B),0.012,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Vicuna v1.3 (7B),0.134,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Vicuna v1.3 (13B),0.226,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+TNLG v2 (530B),0.1463333333333333,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+TNLG v2 (6.7B),0.018,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+davinci (175B),0.09,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+curie (6.7B),0.0156666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+babbage (1.3B),0.0066666666666666,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+ada (350M),0.0063333333333333,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+code-cushman-001 (12B),0.0489999999999999,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+gpt-3.5-turbo-0301,0.531,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Base-v1 (3B),0.01,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Instruct-v1 (3B),0.011,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Base (7B),0.021,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Instruct (7B),0.016,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+MPT (30B),0.164,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+MPT-Instruct (30B),0.344,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon (7B),0.04,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon-Instruct (7B),0.052,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon (40B),0.25,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon-Instruct (40B),0.338,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+GLM (130B),0.061,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+InstructPalmyra (30B),0.0633333333333333,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+Palmyra X (43B),0.633,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+YaLM (100B),0.0,,,GSM8K,,HELM Classic v0.3.0,,High End Math Reasoning
+J1-Jumbo v1 (178B),0.0666666666666666,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+J1-Large v1 (7.5B),0.0935672514619883,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+J1-Grande v1 (17B),0.1,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+J1-Grande v2 beta (17B),0.0935672514619883,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Jurassic-2 Jumbo (178B),0.1228070175438596,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Jurassic-2 Grande (17B),0.1228070175438596,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Jurassic-2 Large (7.5B),0.0643274853801169,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Luminous Base (13B),0.0409356725146198,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Luminous Extended (30B),0.0701754385964912,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Luminous Supreme (70B),0.1111111111111111,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Anthropic-LM v4-s3 (52B),0.2209302325581395,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+BLOOM (176B),0.0760233918128654,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+T0pp (11B),0.0,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere xlarge v20220609 (52.4B),0.0818713450292397,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere large v20220720 (13.1B),0.0994152046783625,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere medium v20220720 (6.1B),0.0701754385964912,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere small v20220720 (410M),0.0175438596491228,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere xlarge v20221108 (52.4B),0.0930232558139534,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere medium v20221108 (6.1B),0.0333333333333333,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere Command beta (6.1B),0.0777777777777777,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Cohere Command beta (52.4B),0.1196581196581196,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+GPT-J (6B),0.0666666666666666,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+GPT-NeoX (20B),0.1025641025641025,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Pythia (6.9B),0.1,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Pythia (12B),0.1578947368421052,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+T5 (11B),0.0,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+UL2 (20B),0.0,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+OPT (175B),0.0888888888888889,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+OPT (66B),0.0555555555555555,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (7B),0.1052631578947368,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (13B),0.2105263157894736,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (30B),0.2807017543859649,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+LLaMA (65B),0.4592592592592592,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Llama 2 (7B),0.1395348837209302,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Llama 2 (13B),0.2280701754385964,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Llama 2 (70B),0.5,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Alpaca (7B),0.1052631578947368,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Vicuna v1.3 (7B),0.1627906976744186,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Vicuna v1.3 (13B),0.1666666666666666,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+TNLG v2 (530B),0.1705426356589147,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+TNLG v2 (6.7B),0.0333333333333333,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+davinci (175B),0.0614035087719298,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+curie (6.7B),0.0555555555555555,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+babbage (1.3B),0.0292397660818713,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+ada (350M),0.0116959064327485,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+text-davinci-003,0.6124031007751938,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+text-davinci-002,0.508641975308642,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+text-curie-001,0.0555555555555555,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+text-babbage-001,0.0222222222222222,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+text-ada-001,0.0064102564102564,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+code-davinci-002,0.6201550387596898,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+code-cushman-001 (12B),0.1111111111111111,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+gpt-3.5-turbo-0301,0.8888888888888888,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+gpt-3.5-turbo-0613,0.8814814814814815,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Base-v1 (3B),0.1,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Instruct-v1 (3B),0.0175438596491228,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Base (7B),0.1228070175438596,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+RedPajama-INCITE-Instruct (7B),0.1,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+MPT (30B),0.2441860465116279,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+MPT-Instruct (30B),0.2,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon (7B),0.1052631578947368,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon-Instruct (7B),0.0666666666666666,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon (40B),0.2456140350877192,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Falcon-Instruct (40B),0.2441860465116279,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+GLM (130B),0.0777777777777777,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+InstructPalmyra (30B),0.0888888888888888,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+Palmyra X (43B),0.5234567901234567,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+YaLM (100B),0.0,,,MATH,,HELM Classic v0.3.0,,High End Math Reasoning
+code-davinci-002,0.4634146341463415,,,HumanEval,,HELM Classic v0.3.0,,Autonomous SWE
+code-cushman-001 (12B),0.3170731707317073,,,HumanEval,,HELM Classic v0.3.0,,Autonomous SWE
+code-davinci-002,0.2003677830883714,,,APPS,,HELM Classic v0.3.0,,Autonomous SWE
+code-cushman-001 (12B),0.0482157046657046,,,APPS,,HELM Classic v0.3.0,,Autonomous SWE
+J1-Jumbo v1 (178B),0.1748216106014271,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Large v1 (7.5B),0.1967380224260958,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v1 (17B),0.1931702344546381,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v2 beta (17B),0.3058103975535168,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Jumbo (178B),0.437308868501529,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Grande (17B),0.3476044852191641,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Large (7.5B),0.2446483180428134,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Base (13B),0.182466870540265,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Extended (30B),0.2206931702344546,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Supreme (70B),0.2222222222222222,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Anthropic-LM v4-s3 (52B),0.3681192660550459,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+BLOOM (176B),0.2048929663608562,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+T0pp (11B),0.3769113149847095,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20220609 (52.4B),0.1977573904179408,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere large v20220720 (13.1B),0.18144750254842,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20220720 (6.1B),0.1901121304791029,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere small v20220720 (410M),0.2166156982670744,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20221108 (52.4B),0.1692150866462793,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20221108 (6.1B),0.2150866462793068,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (6.1B),0.2033639143730886,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (52.4B),0.2691131498470948,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-J (6B),0.1991590214067278,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-NeoX (20B),0.2159785932721712,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (6.9B),0.2125382262996941,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (12B),0.1773700305810397,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+T5 (11B),0.1330275229357798,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+UL2 (20B),0.1930428134556575,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (175B),0.2503822629969419,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (66B),0.2010703363914373,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (7B),0.2798165137614679,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (13B),0.3241590214067278,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (30B),0.3440366972477064,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (65B),0.5076452599388379,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (7B),0.2721712538226299,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (13B),0.3302752293577982,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (70B),0.5535168195718655,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Alpaca (7B),0.2431192660550458,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (7B),0.2920489296636085,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (13B),0.3853211009174312,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (530B),0.2507645259938838,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (6.7B),0.1666666666666666,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+davinci (175B),0.1936799184505606,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+curie (6.7B),0.2319062181447502,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+babbage (1.3B),0.1875637104994903,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+ada (350M),0.2150866462793068,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-003,0.5932721712538226,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-002,0.6095820591233435,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-curie-001,0.2573904179408766,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-babbage-001,0.2329255861365953,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+text-ada-001,0.2319062181447503,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0301,0.6085626911314985,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0613,0.3394495412844037,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base-v1 (3B),0.2767584097859327,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct-v1 (3B),0.2079510703363914,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base (7B),0.2048929663608562,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct (7B),0.2431192660550458,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT (30B),0.2308868501529052,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT-Instruct (30B),0.2339449541284403,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (7B),0.2339449541284403,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (7B),0.2125382262996941,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (40B),0.3532110091743119,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (40B),0.3837920489296636,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+GLM (130B),0.2182721712538226,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+InstructPalmyra (30B),0.1850152905198776,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+Palmyra X (43B),0.6156982670744139,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+YaLM (100B),0.2018348623853211,,,TruthfulQA,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Jumbo v1 (178B),0.7756666666666666,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Large v1 (7.5B),0.6833333333333332,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v1 (17B),0.7216666666666667,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v2 beta (17B),0.8123333333333332,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Jumbo (178B),0.8290000000000001,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Grande (17B),0.826,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Large (7.5B),0.7423333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Base (13B),0.7186666666666666,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Extended (30B),0.7666666666666666,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Supreme (70B),0.775,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Anthropic-LM v4-s3 (52B),0.8153333333333332,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+BLOOM (176B),0.7040000000000001,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+T0pp (11B)☠,0.0,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20220609 (52.4B),0.7176666666666667,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere large v20220720 (13.1B),0.7253333333333334,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20220720 (6.1B),0.659,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere small v20220720 (410M),0.4573333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20221108 (52.4B),0.7616666666666667,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20221108 (6.1B),0.6999999999999998,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (6.1B),0.798,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (52.4B),0.8563333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-J (6B),0.6486666666666667,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-NeoX (20B),0.6826666666666666,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (6.9B),0.631,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (12B),0.662,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+T5 (11B),0.7610000000000001,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+UL2 (20B),0.7456666666666667,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (175B),0.793,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (66B),0.7603333333333332,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (7B),0.756,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (13B),0.714,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (30B),0.861,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (65B),0.871,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (7B),0.762,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (13B),0.811,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (70B),0.886,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Alpaca (7B),0.778,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (7B),0.76,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (13B),0.808,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (530B),0.8093333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (6.7B),0.6983333333333334,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+davinci (175B)⚠,0.7223333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+curie (6.7B)⚠,0.6563333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+babbage (1.3B)⚠,0.5743333333333334,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+ada (350M)⚠,0.5810000000000001,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-003⚠,0.8813333333333334,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-002⚠,0.8769999999999999,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+text-curie-001⚠,0.6203333333333334,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+text-babbage-001⚠,0.451,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+text-ada-001⚠,0.4639999999999999,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0301,0.74,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base-v1 (3B),0.685,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct-v1 (3B),0.677,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base (7B),0.713,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct (7B),0.705,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT (30B),0.704,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT-Instruct (30B),0.85,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (7B),0.753,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (7B),0.72,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (40B),0.819,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (40B),0.829,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+GLM (130B),0.7836666666666666,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+InstructPalmyra (30B),0.7513333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+Palmyra X (43B),0.8963333333333333,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+YaLM (100B),0.634,,,BoolQ,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Jumbo v1 (178B),0.5434142752023546,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+J1-Large v1 (7.5B),0.4690949227373068,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v1 (17B),0.4576894775570272,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v2 beta (17B),0.5606894022735607,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Jumbo (178B),0.5213392200147167,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Grande (17B),0.4613127979464613,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Large (7.5B),0.504047093451067,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Luminous Base (13B),0.4518027961736571,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Luminous Extended (30B),0.4746136865342163,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Luminous Supreme (70B),0.5036791758646063,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Anthropic-LM v4-s3 (52B),0.5647231389805647,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+BLOOM (176B),0.4466519499632082,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+T0pp (11B),0.0,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20220609 (52.4B),0.4860191317144959,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere large v20220720 (13.1B),0.3601913171449595,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20220720 (6.1B),0.390728476821192,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere small v20220720 (410M),0.3061074319352465,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20221108 (52.4B),0.4392935982339955,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20221108 (6.1B),0.47093451066961,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (6.1B),0.4727740986019131,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (52.4B),0.4970566593083149,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+GPT-J (6B),0.4598459845984599,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+GPT-NeoX (20B),0.4676232523914643,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Pythia (1B),0.3785871964679911,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Pythia (6.9B),0.4790286975717439,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Pythia (12B),0.4911699779249448,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+T5 (11B),0.4124356144223693,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+UL2 (20B),0.5007358351729213,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+OPT (175B),0.5066225165562913,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+OPT (66B),0.4080206033848417,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (7B),0.5309050772626932,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (13B),0.5607064017660044,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (30B),0.6335540838852097,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (65B),0.6766004415011038,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (7B),0.5496688741721855,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (13B),0.5838852097130243,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (70B),0.746974697469747,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Alpaca (7B),0.5033112582781457,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Vicuna v1.3 (7B),0.5099337748344371,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Vicuna v1.3 (13B),0.5331125827814569,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (530B),0.4812362030905077,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (6.7B),0.4105960264900662,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+davinci (175B),0.5071507150715072,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+curie (6.7B),0.4146431199411332,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+babbage (1.3B),0.347682119205298,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+ada (350M),0.3061074319352465,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-003,0.6534216335540839,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-002,0.6181015452538631,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+text-curie-001,0.3844738778513613,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+text-babbage-001,0.2888153053715968,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+text-ada-001,0.2280894756142281,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+code-davinci-002,0.6861662987490802,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+code-cushman-001 (12B),0.4808682855040471,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+gpt-3.5-turbo-0301,0.7403740374037404,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+gpt-3.5-turbo-0613,0.6732673267326733,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Base-v1 (3B),0.4657836644591611,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Instruct-v1 (3B),0.522075055187638,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Base (7B),0.4602649006622517,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Instruct (7B),0.5452538631346578,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+MPT (30B),0.5496688741721855,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+MPT-Instruct (30B),0.5368536853685368,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Falcon (7B),0.4150110375275938,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Falcon-Instruct (7B),0.423841059602649,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Falcon (40B),0.5761589403973509,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Falcon-Instruct (40B),0.6059602649006622,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+GLM (130B),0.4433406916850625,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+InstructPalmyra (30B),0.4679911699779249,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+Palmyra X (43B),0.8151815181518152,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+YaLM (100B),0.3458425312729948,,,bAbI,,HELM Classic v0.3.0,,General Reasoning
+J1-Jumbo v1 (178B),0.927,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Large v1 (7.5B),0.903,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Grande v1 (17B),0.911,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Grande v2 beta (17B),0.927,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Jumbo (178B),0.929,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Grande (17B),0.935,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Large (7.5B),0.927,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Anthropic-LM v4-s3 (52B),0.937,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+BLOOM (176B),0.929,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere xlarge v20220609 (52.4B),0.953,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere large v20220720 (13.1B),0.962,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere medium v20220720 (6.1B),0.953,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere small v20220720 (410M),0.927,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere xlarge v20221108 (52.4B),0.934,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere medium v20221108 (6.1B),0.961,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere Command beta (6.1B),0.904,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere Command beta (52.4B),0.91,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+GPT-J (6B),0.938,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+GPT-NeoX (20B),0.951,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+OPT (175B),0.892,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+OPT (66B),0.882,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+TNLG v2 (530B),0.859,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+TNLG v2 (6.7B),0.96,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+davinci (175B),0.961,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+curie (6.7B),0.943,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+babbage (1.3B),0.979,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+ada (350M),0.973,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-davinci-003,0.951,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-davinci-002,0.89,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-curie-001,0.812,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-babbage-001,0.823,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-ada-001,0.774,,,BLiMP,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Jumbo v1 (178B),0.6047451092974613,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Large v1 (7.5B),0.5579485257371314,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Grande v1 (17B),0.5465802891484147,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Grande v2 beta (17B),0.5943023961718388,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Jumbo (178B),0.6043162042162149,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Grande (17B),0.5825417514790082,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Large (7.5B),0.6384229449479828,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Luminous Base (13B),0.5848097718355686,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Luminous Extended (30B),0.5685402754466783,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Luminous Supreme (70B),0.5904822588705647,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Anthropic-LM v4-s3 (52B),0.6458903163420362,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+BLOOM (176B),0.6744999931646366,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+T0pp (11B),0.351634943875061,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere xlarge v20220609 (52.4B),0.5841364885370955,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere large v20220720 (13.1B),0.5267341329335332,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere medium v20220720 (6.1B),0.5195882912368757,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere small v20220720 (410M),0.5162135771015627,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere xlarge v20221108 (52.4B),0.5693903048475762,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere medium v20221108 (6.1B),0.5077205430012713,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere Command beta (6.1B),0.5666185666185667,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere Command beta (52.4B),0.6405077307960464,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+GPT-J (6B),0.5485413334426992,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+GPT-NeoX (20B),0.5267485667485667,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Pythia (6.9B),0.5600005725245469,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Pythia (12B),0.5676906041094205,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+T5 (11B),0.5245752175714878,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+UL2 (20B),0.543448987682675,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+OPT (175B),0.5168304668304669,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+OPT (66B),0.5219960750261612,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (7B),0.6613643178410795,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (13B),0.6813718140929534,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (30B),0.6900606980273141,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (65B),0.718931900153555,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Llama 2 (7B),0.6557539682539683,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Llama 2 (13B),0.618674786138901,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Llama 2 (70B),0.7123522479734314,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Alpaca (7B),0.6123083298798176,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Vicuna v1.3 (7B),0.6733658170914543,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Vicuna v1.3 (13B),0.7176998892975752,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+TNLG v2 (530B),0.6653816183406471,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+TNLG v2 (6.7B),0.5667849184541142,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+davinci (175B),0.5667633651056776,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+curie (6.7B),0.5821214392803599,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+babbage (1.3B),0.5348648648648648,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+ada (350M),0.5513468013468014,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-davinci-003,0.7241042256216762,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-davinci-002,0.7078428960067807,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-curie-001,0.5914009213298574,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-babbage-001,0.5009208103130754,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-ada-001,0.5154184041196322,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+gpt-3.5-turbo-0301,0.7073063199770332,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+gpt-3.5-turbo-0613,0.7395877061469265,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Base-v1 (3B),0.5975337331334333,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Instruct-v1 (3B),0.5947416538869883,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Base (7B),0.6428485757121439,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Instruct (7B),0.7060759545585038,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+MPT (30B),0.6783883058470765,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+MPT-Instruct (30B),0.6311619190404798,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon (7B),0.5334928229665071,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon-Instruct (7B),0.5273307235029723,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon (40B),0.5823412698412699,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon-Instruct (40B),0.6594516594516595,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+GLM (130B),0.5016666666666666,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+InstructPalmyra (30B),0.6643084662811521,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+Palmyra X (43B),0.065475127664893,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+YaLM (100B),0.5048506707614661,,,CivilComments,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Jumbo v1 (178B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Large v1 (7.5B),0.925,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Grande v1 (17B),0.925,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Grande v2 beta (17B),0.9333333333333332,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Jumbo (178B),0.9666666666666668,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Grande (17B),0.95,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Jurassic-2 Large (7.5B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Luminous Base (13B),0.9666666666666668,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Luminous Extended (30B),0.8333333333333334,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Luminous Supreme (70B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Anthropic-LM v4-s3 (52B),0.9250000000000002,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+BLOOM (176B),0.9583333333333334,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+T0pp (11B),0.425,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere xlarge v20220609 (52.4B),0.9416666666666668,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere large v20220720 (13.1B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere medium v20220720 (6.1B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere small v20220720 (410M),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere xlarge v20221108 (52.4B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere medium v20221108 (6.1B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere Command beta (6.1B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Cohere Command beta (52.4B),0.9666666666666668,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+GPT-J (6B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+GPT-NeoX (20B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Pythia (6.9B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Pythia (12B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+T5 (11B),0.875,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+UL2 (20B),0.9416666666666668,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+OPT (175B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+OPT (66B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (7B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (13B),0.925,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (30B),1.0,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+LLaMA (65B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Llama 2 (7B),0.95,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Llama 2 (13B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Llama 2 (70B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Alpaca (7B),0.9,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Vicuna v1.3 (7B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Vicuna v1.3 (13B),0.9,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+TNLG v2 (530B),0.9583333333333334,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+TNLG v2 (6.7B),0.9666666666666668,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+davinci (175B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+curie (6.7B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+babbage (1.3B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+ada (350M),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-davinci-003,0.925,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-davinci-002,0.9666666666666668,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-curie-001,0.8333333333333334,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-babbage-001,0.8333333333333334,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+text-ada-001,0.9583333333333334,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+gpt-3.5-turbo-0301,0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+gpt-3.5-turbo-0613,0.95,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Base-v1 (3B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Instruct-v1 (3B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Base (7B),0.925,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+RedPajama-INCITE-Instruct (7B),0.925,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+MPT (30B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+MPT-Instruct (30B),0.9,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon (7B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon-Instruct (7B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon (40B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Falcon-Instruct (40B),0.925,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+GLM (130B),0.975,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+InstructPalmyra (30B),0.8666666666666666,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+Palmyra X (43B),0.95,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+YaLM (100B),0.725,,,RAFT,,HELM Classic v0.3.0,,Advanced Language and Writing
+J1-Jumbo v1 (178B),0.8901098901098901,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Large v1 (7.5B),0.868131868131868,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v1 (17B),0.8755916159567275,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v2 beta (17B),0.8901098901098901,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Jumbo (178B),0.8827838827838829,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Grande (17B),0.912087912087912,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Large (7.5B),0.8688302907369844,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Base (13B),0.6886446886446885,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Extended (30B),0.9047619047619048,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Supreme (70B),0.8974358974358974,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Anthropic-LM v4-s3 (52B),0.923076923076923,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+BLOOM (176B),0.8850574712643677,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+T0pp (11B),0.0,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20220609 (52.4B),0.8586883029073699,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere large v20220720 (13.1B),0.7400611620795107,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20220720 (6.1B),0.5934065934065934,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere small v20220720 (410M),0.2477064220183486,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20221108 (52.4B),0.8864468864468864,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20221108 (6.1B),0.746177370030581,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (6.1B),0.861392832995267,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (52.4B),0.8571428571428572,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-J (6B),0.2874617737003058,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-NeoX (20B),0.8735632183908045,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (6.9B),0.8742393509127789,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (12B),0.8397565922920892,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+T5 (11B),0.8315018315018315,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+UL2 (20B),0.8695064232589588,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (175B),0.4220183486238533,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (66B),0.663003663003663,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (7B),0.8791208791208791,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (13B),0.945054945054945,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (30B),0.967032967032967,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (65B),0.967032967032967,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (7B),0.956043956043956,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (13B),0.8351648351648352,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (70B),0.9230769230769232,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Alpaca (7B),0.9230769230769232,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (7B),0.8901098901098901,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (13B),0.9269776876267748,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (530B),0.9157509157509156,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (6.7B),0.7728937728937728,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+davinci (175B),0.816849816849817,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+curie (6.7B),0.6959706959706958,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+babbage (1.3B),0.8461538461538461,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+ada (350M),0.3826910074374577,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-003,0.9663608562691132,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-002,0.9480122324159024,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+text-curie-001,0.8901098901098901,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+text-babbage-001,0.8668018931710616,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+text-ada-001,0.8461538461538461,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0301,0.9634888438133874,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0613,0.949290060851927,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base-v1 (3B),0.7522935779816514,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct-v1 (3B),0.8742393509127789,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base (7B),0.8498985801217038,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct (7B),0.9010989010989012,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT (30B),0.978021978021978,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT-Instruct (30B),0.978021978021978,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (7B),0.8600405679513184,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (7B),0.8742393509127789,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (40B),0.9230769230769232,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (40B),0.945054945054945,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+GLM (130B),0.7362637362637363,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+InstructPalmyra (30B),0.8901098901098901,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+Palmyra X (43B),0.9847094801223242,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+YaLM (100B),0.2477064220183486,,,EntityMatching,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Jumbo v1 (178B),0.8769230769230769,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Large v1 (7.5B),0.841025641025641,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v1 (17B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Grande v2 beta (17B),0.8512820512820514,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Jumbo (178B),0.8564102564102564,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Grande (17B),0.8564102564102565,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Jurassic-2 Large (7.5B),0.8769230769230769,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Base (13B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Extended (30B),0.8358974358974359,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Luminous Supreme (70B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Anthropic-LM v4-s3 (52B),0.8923076923076924,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+BLOOM (176B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+T0pp (11B),0.0077519379844961,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20220609 (52.4B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere large v20220720 (13.1B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20220720 (6.1B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere small v20220720 (410M),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere xlarge v20221108 (52.4B),0.8666666666666667,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere medium v20221108 (6.1B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (6.1B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Cohere Command beta (52.4B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-J (6B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+GPT-NeoX (20B),0.8358974358974359,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (6.9B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Pythia (12B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+T5 (11B),0.8410256410256411,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+UL2 (20B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (175B),0.8512820512820514,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+OPT (66B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (7B),0.8372093023255814,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (13B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (30B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+LLaMA (65B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (7B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (13B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Llama 2 (70B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Alpaca (7B),0.8769230769230769,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (7B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Vicuna v1.3 (13B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (530B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+TNLG v2 (6.7B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+davinci (175B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+curie (6.7B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+babbage (1.3B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+ada (350M),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-003,0.8564102564102565,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+text-davinci-002,0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+text-curie-001,0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+text-babbage-001,0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+text-ada-001,0.841025641025641,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0301,0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+gpt-3.5-turbo-0613,0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base-v1 (3B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct-v1 (3B),0.8769230769230769,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Base (7B),0.8307692307692308,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+RedPajama-INCITE-Instruct (7B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT (30B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+MPT-Instruct (30B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (7B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (7B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon (40B),0.8461538461538461,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Falcon-Instruct (40B),0.8615384615384616,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+GLM (130B),0.8512820512820514,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+InstructPalmyra (30B),0.8358974358974359,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+Palmyra X (43B),0.8333333333333334,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+YaLM (100B),0.7333333333333334,,,EntityDataImputation,,HELM Classic v0.3.0,,Domain Specific Questions
+J1-Jumbo v1 (178B),0.4368932038834952,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+J1-Large v1 (7.5B),0.3100323624595469,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v1 (17B),0.3786407766990291,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v2 beta (17B),0.4666666666666666,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Jumbo (178B),0.6899676375404531,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Grande (17B),0.4394822006472491,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Large (7.5B),0.2763754045307443,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Luminous Base (13B),0.3501618122977346,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Luminous Extended (30B),0.3288025889967638,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Luminous Supreme (70B),0.5035598705501618,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Anthropic-LM v4-s3 (52B),0.7501618122977347,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+BLOOM (176B),0.4258899676375404,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+T0pp (11B),0.0,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20220609 (52.4B),0.288673139158576,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere large v20220720 (13.1B),0.202588996763754,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20220720 (6.1B),0.1896440129449838,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere small v20220720 (410M),0.1928802588996764,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20221108 (52.4B),0.3540453074433656,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20221108 (6.1B),0.1398058252427184,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (6.1B),0.1689320388349514,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (52.4B),0.3553398058252426,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+GPT-J (6B),0.2433656957928802,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+GPT-NeoX (20B),0.2899676375404531,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Pythia (6.9B),0.3339805825242718,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Pythia (12B),0.3592233009708738,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+T5 (11B),0.3961165048543689,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+UL2 (20B),0.4245954692556634,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+OPT (175B),0.4058252427184466,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+OPT (66B),0.3501618122977346,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (7B),0.258252427184466,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (13B),0.4621359223300971,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (30B),0.7087378640776699,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (65B),0.8233009708737864,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (7B),0.4504854368932038,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (13B),0.4718446601941747,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (70B),0.9048543689320389,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Alpaca (7B),0.2388349514563106,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Vicuna v1.3 (7B),0.2504854368932039,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Vicuna v1.3 (13B),0.4699029126213592,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (530B),0.6110032362459547,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (6.7B),0.4466019417475728,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+davinci (175B),0.3339805825242719,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+curie (6.7B),0.4194174757281553,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+babbage (1.3B),0.3055016181229773,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+ada (350M),0.1372168284789644,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-003,0.972168284789644,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-002,0.9294498381877024,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+text-curie-001,0.3372168284789644,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+text-babbage-001,0.1935275080906149,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+text-ada-001,0.0809061488673139,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+code-davinci-002,0.9676375404530744,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+code-cushman-001 (12B),0.5443365695792881,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+gpt-3.5-turbo-0301,0.9436893203883496,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+gpt-3.5-turbo-0613,0.9359223300970874,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Base-v1 (3B),0.3262135922330097,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Instruct-v1 (3B),0.3320388349514563,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Base (7B),0.3320388349514563,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Instruct (7B),0.4019417475728155,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+MPT (30B),0.4679611650485437,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+MPT-Instruct (30B),0.5766990291262136,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Falcon (7B),0.1339805825242718,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Falcon-Instruct (7B),0.0427184466019417,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Falcon (40B),0.3961165048543689,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Falcon-Instruct (40B),0.429126213592233,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+GLM (130B),0.3818770226537216,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+InstructPalmyra (30B),0.3695792880258899,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+Palmyra X (43B),0.8699029126213592,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+YaLM (100B),0.0834951456310679,,,SyntheticReasoning,,HELM Classic v0.3.0,,General Reasoning
+J1-Jumbo v1 (178B),0.2122977346278317,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+J1-Large v1 (7.5B),0.1682847896440129,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v1 (17B),0.1889967637540453,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+J1-Grande v2 beta (17B),0.1743257820927723,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Jumbo (178B),0.2090614886731392,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Grande (17B),0.1941747572815534,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Jurassic-2 Large (7.5B),0.1853290183387271,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Luminous Base (13B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Luminous Extended (30B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Luminous Supreme (70B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Anthropic-LM v4-s3 (52B),0.3210355987055016,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+BLOOM (176B),0.2664509169363538,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+T0pp (11B),0.0019417475728155,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20220609 (52.4B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere large v20220720 (13.1B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20220720 (6.1B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere small v20220720 (410M),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere xlarge v20221108 (52.4B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere medium v20221108 (6.1B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (6.1B),0.2998921251348435,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Cohere Command beta (52.4B),0.2886731391585761,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+GPT-J (6B),0.226537216828479,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+GPT-NeoX (20B),0.186839266450917,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Pythia (6.9B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Pythia (12B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+T5 (11B),0.1190938511326861,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+UL2 (20B),0.2170442286947141,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+OPT (175B),0.3605177993527507,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+OPT (66B),0.2487594390507012,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (7B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (13B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (30B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+LLaMA (65B),0.5864077669902913,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (7B),0.3216828478964401,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (13B),0.3443365695792879,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Llama 2 (70B),0.4996763754045303,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Alpaca (7B),0.2411003236245956,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Vicuna v1.3 (7B),0.2796116504854369,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Vicuna v1.3 (13B),0.3666666666666665,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (530B),0.2970873786407766,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+TNLG v2 (6.7B),0.2867313915857605,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+davinci (175B),0.2008629989212513,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+curie (6.7B),0.1551240560949298,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+babbage (1.3B),0.1239482200647248,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+ada (350M),0.1062567421790722,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-003,0.8257820927723846,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+text-davinci-002,0.7199568500539376,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+text-curie-001,0.267529665587918,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+text-babbage-001,0.2422869471413161,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+text-ada-001,0.2002157497303129,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+code-davinci-002,0.7689320388349516,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+code-cushman-001 (12B),0.2269687162891046,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+gpt-3.5-turbo-0301,0.7300970873786411,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+gpt-3.5-turbo-0613,0.6414239482200647,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Base-v1 (3B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Instruct-v1 (3B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Base (7B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+RedPajama-INCITE-Instruct (7B),0.0,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+MPT (30B),0.2627831715210356,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+MPT-Instruct (30B),0.4284789644012943,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Falcon (7B),0.1572815533980582,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Falcon-Instruct (7B),0.1197411003236245,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Falcon (40B),0.148220064724919,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Falcon-Instruct (40B),0.1870550161812298,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+GLM (130B),0.2770226537216829,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+InstructPalmyra (30B),0.3184466019417475,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+Palmyra X (43B),0.7026968716289107,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning
+YaLM (100B),0.0729234088457389,,,SyntheticReasoningNatural,,HELM Classic v0.3.0,,General Reasoning

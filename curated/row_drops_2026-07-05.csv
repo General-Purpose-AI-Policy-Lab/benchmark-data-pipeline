@@ -1,0 +1,3 @@
+model_version,benchmark,score,source,reason
+gpt-5.2-2025-12-11_unknown,ARC-AGI,0.1233,EpochAI,config-mixture cell (below own _low ladder); user-authorized drop 2026-07-05
+gpt-5.2-2025-12-11_unknown,ARC-AGI-2,0.0083,EpochAI,config-mixture cell (below own _low ladder); user-authorized drop 2026-07-05

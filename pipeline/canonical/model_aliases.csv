@@ -810,3 +810,128 @@ o3-2025-04-16,o3-2025-04-16_unknown,Scale SEAL alias (round 2: new boards)
 gpt-5.2-2025-12-11 (default),gpt-5.2-2025-12-11_unknown,Scale SEAL alias (round 2: new boards)
 qwen.qwen3-235b-a22b-2507-v1:0,Qwen3-235B-A22B-Instruct-2507,Scale SEAL alias (round 2: new boards)
 mistral-medium-latest,mistral-medium-2505,Scale SEAL alias (round 2: new boards)
+BLOOM (176B),bloom,augmented:helm
+Falcon (40B),falcon-40b,augmented:helm
+Falcon (7B),falcon-7b,augmented:helm
+Falcon-Instruct (40B),falcon-40b-instruct,augmented:helm
+GPT-J (6B),gpt-j-6b,augmented:helm
+GPT-NeoX (20B),gpt-neox-20b,augmented:helm
+LLaMA (7B),LLaMA-7B,augmented:helm
+LLaMA (13B),LLaMA-13B,augmented:helm
+LLaMA (30B),LLaMA-33B,augmented:helm
+LLaMA (65B),LLaMA-65B,augmented:helm
+Llama 2 (7B),Llama-2-7b,augmented:helm
+Llama 2 (13B),Llama-2-13b,augmented:helm
+Llama 2 (70B),Llama-2-70b-hf ,augmented:helm
+MPT (30B),mpt-30b,augmented:helm
+MPT-Instruct (30B),mpt-30b-instruct,augmented:helm
+OPT (66B),opt-66b,augmented:helm
+OPT (175B),opt-175b,augmented:helm
+RedPajama-INCITE-Base (7B),RedPajama-INCITE-7B-Base,augmented:helm
+T5 (11B),T5-11B,augmented:helm
+Vicuna v1.3 (13B),vicuna-13b-v1.3,augmented:helm
+davinci (175B),davinci,augmented:helm
+curie (6.7B),curie,augmented:helm
+babbage (1.3B),babbage,augmented:helm
+ada (350M),ada,augmented:helm
+davinci (175B)⚠,davinci,augmented:helm
+curie (6.7B)⚠,curie,augmented:helm
+babbage (1.3B)⚠,babbage,augmented:helm
+ada (350M)⚠,ada,augmented:helm
+text-ada-001⚠,text-ada-001,augmented:helm
+text-babbage-001⚠,text-babbage-001,augmented:helm
+text-curie-001⚠,text-curie-001,augmented:helm
+text-davinci-002⚠,text-davinci-002,augmented:helm
+text-davinci-003⚠,text-davinci-003,augmented:helm
+claude-4-1-opus-20250805-base,claude-opus-4-1-20250805,augmented:livebench
+claude-4-sonnet-20250514-base,claude-sonnet-4-20250514,augmented:livebench
+claude-opus-4-7-high-effort,claude-opus-4-7_high,augmented:livebench
+claude-opus-4-7-low-effort,claude-opus-4-7_low,augmented:livebench
+claude-opus-4-7-medium-effort,claude-opus-4-7_medium,augmented:livebench
+claude-opus-4-8-high-effort,claude-opus-4-8_high,augmented:livebench
+claude-opus-4-8-low-effort,claude-opus-4-8_low,augmented:livebench
+claude-opus-4-8-medium-effort,claude-opus-4-8_medium,augmented:livebench
+gemini-3.5-flash-high,gemini-3.5-flash_high,augmented:livebench
+gpt-5.1-2025-11-13-high,gpt-5.1-2025-11-13_high,augmented:livebench
+gpt-5.1-2025-11-13-low,gpt-5.1-2025-11-13_low,augmented:livebench
+gpt-5.1-2025-11-13-medium,gpt-5.1-2025-11-13_medium,augmented:livebench
+gpt-5.2-2025-12-11-high,gpt-5.2-2025-12-11_high,augmented:livebench
+gpt-5.2-2025-12-11-low,gpt-5.2-2025-12-11_low,augmented:livebench
+gpt-5.2-2025-12-11-medium,gpt-5.2-2025-12-11_medium,augmented:livebench
+gpt-5.3-codex-high,gpt-5.3-codex_high,augmented:livebench
+gpt-5.5-high,gpt-5.5_high,augmented:livebench
+gpt-5.5-medium,gpt-5.5_medium,augmented:livebench
+claude-fable-5-high-effort,claude-fable-5_high,augmented:livebench
+Kimi K2.6,kimi-k2.6,augmented:steel
+GLM-5,glm-5,augmented:steel
+Gemini 3.1 Flash Lite,gemini-3.1-flash-lite,augmented:steel
+Kimi K2.5,kimi-k2.5,augmented:steel
+Qwen3.6 Plus,qwen3.6-plus,augmented:steel
+GLM-5.1,glm-5.1,augmented:steel
+MiniMax M2.5,MiniMax-M2.5,augmented:steel
+GPT-5.3-Codex,gpt-5.3-codex,augmented:steel
+GLM-4.7,glm-4.7,augmented:steel
+MiniMax M2.1,MiniMax-M2.1,augmented:steel
+MiniMax M2,MiniMax-M2,augmented:steel
+GLM-4.6,glm-4.6,augmented:steel
+Grok 4 Fast,grok-4-fast,augmented:steel
+GLM-4.5,glm-4.5,augmented:steel
+Claude Sonnet 4 Thinking,claude-sonnet-4-thinking,augmented:steel
+Gemini 2.5 Pro Preview 05-06,gemini-2.5-pro-preview-05-06,augmented:steel
+Gemini 2.5 Pro Preview 03-25,gemini-2.5-pro-preview-03-25,augmented:steel
+Qwen2.5 VL 72B Instruct,Qwen2.5-VL-72B-Instruct,augmented:steel
+claude-fable-5-xhigh-effort,claude-fable-5_xhigh,augmented:livebench
+claude-opus-4-7-xhigh-effort,claude-opus-4-7_xhigh,augmented:livebench
+claude-opus-4-8-xhigh-effort,claude-opus-4-8_xhigh,augmented:livebench
+deepseek-v3.2-exp,DeepSeek-V3.2-Exp,augmented:livebench
+deepseek-v3.2-exp-thinking,DeepSeek-V3.2-Exp_thinking,augmented:livebench
+gpt-5.3-codex-xhigh,gpt-5.3-codex_xhigh,augmented:livebench
+gpt-5.5-xhigh,gpt-5.5_xhigh,augmented:livebench
+minimax-m2.5,MiniMax-M2.5,augmented:livebench
+minimax-m2.7,MiniMax-M2.7,augmented:livebench
+qwen3-235b-a22b-instruct-2507,Qwen3-235B-A22B-Instruct-2507,augmented:livebench
+qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,augmented:livebench
+Qwen3.5-27B,qwen3.5-27B,augmented:steel
+Claude 3.7 Sonnet Thinking (Feb 2025),claude-3-7-sonnet-20250219_unknown,leaderboard label; thinking w/ unspecified budget -> _unknown effort bucket
+Claude 3.7 Sonnet Thinking (February 2025),claude-3-7-sonnet-20250219_unknown,same as Feb 2025 spelling
+Claude-3.7-Sonnet-thinking,claude-3-7-sonnet-20250219_unknown,spelling variant
+claude-3-7-sonnet-thinking,claude-3-7-sonnet-20250219_unknown,spelling variant
+claude-37-sonnet-thinking,claude-3-7-sonnet-20250219_unknown,spelling variant
+gpt-5.4 (xhigh),gpt-5.4-2026-03-05_xhigh,leaderboard label -> versioned xhigh variant
+gpt-5.4 (xHigh),gpt-5.4-2026-03-05_xhigh,case variant (markers stripped upstream)
+gpt-5.4(xHigh),gpt-5.4-2026-03-05_xhigh,no-space variant
+Deepseek V3,DeepSeek-V3,spelling variant
+DeepSeek-V3 (December 2024),DeepSeek-V3,original Dec-2024 release
+DeepSeek V3 (March 2025),DeepSeek-V3-0324,the 0324 update
+deepseek-v3p1,DeepSeek-V3.1,p-notation spelling
+ChatGPT-4o-latest (November 2024),gpt-4o-2024-11-20,chatgpt-4o-latest at Nov 2024 = the 11-20 snapshot
+gemini-3-flash-preview_minimal,gemini-3-flash-preview_minimal,"Epoch Name-field config label parsed to effort suffix (flash-3 ARC family, 2026-07-05)"
+gemini-3-flash-preview_low,gemini-3-flash-preview_low,"Epoch Name-field config label parsed to effort suffix (flash-3 ARC family, 2026-07-05)"
+gemini-3-flash-preview_medium,gemini-3-flash-preview_medium,"Epoch Name-field config label parsed to effort suffix (flash-3 ARC family, 2026-07-05)"
+gemini-3-flash-preview_high,gemini-3-flash-preview_high,"Epoch Name-field config label parsed to effort suffix (flash-3 ARC family, 2026-07-05)"
+claude-4-1-opus-20250805-thinking-32k,claude-opus-4-1-20250805-thinking,LiveBench reverses opus/4-1 and tags context window; collapse to DB thinking base
+claude-haiku-4-5-20251001-thinking-64k,claude-haiku-4-5-20251001-thinking,LiveBench context-window tag dropped
+claude-sonnet-4-5-20250929-thinking-64k,claude-sonnet-4-5-20250929-thinking,LiveBench context-window tag dropped
+claude-opus-4-5-20251101-low-effort,claude-opus-4-5-20251101,LiveBench effort suffix; DB has no effort split for opus-4-5 base
+claude-opus-4-5-20251101-medium-effort,claude-opus-4-5-20251101,LiveBench effort suffix; DB has no effort split for opus-4-5 base
+claude-opus-4-5-20251101-high-effort,claude-opus-4-5-20251101,LiveBench effort suffix; DB has no effort split for opus-4-5 base
+claude-opus-4-5-20251101-thinking-64k-low-effort,claude-opus-4-5-20251101-thinking,LiveBench effort+context tag; collapse to DB thinking base
+claude-opus-4-5-20251101-thinking-64k-medium-effort,claude-opus-4-5-20251101-thinking,LiveBench effort+context tag; collapse to DB thinking base
+claude-opus-4-5-20251101-thinking-64k-high-effort,claude-opus-4-5-20251101-thinking,LiveBench effort+context tag; collapse to DB thinking base
+claude-opus-4-6-thinking-auto-high-effort,claude-opus-4-6-thinking,LiveBench thinking-auto is DB's thinking; effort tag dropped
+gemini-2.5-flash-preview-09-2025-highthinking,gemini-2.5-flash-preview-09-2025,LiveBench thinking-mode tag; DB has no separate thinking variant for this snapshot
+gemini-2.5-flash-lite-preview-09-2025-highthinking,gemini-2.5-flash-lite-preview-09-2025,LiveBench thinking-mode tag; DB has no separate thinking variant for this snapshot
+qwen3-30b-a3b-thinking,Qwen3-30B-A3B,LiveBench thinking suffix; DB has only base Qwen3-30B-A3B
+qwen3-32b-thinking,Qwen3-32B,LiveBench thinking suffix; DB has only base Qwen3-32B
+grok-code-fast-1-0825,grok-code-fast-1,LiveBench dated snapshot; DB tracks base only
+Claude Opus 4.5,claude-opus-4-5-20251101,Steel.dev display name
+Claude Opus 4.6,claude-opus-4-6,Steel.dev display name
+Claude Opus 4.7,claude-opus-4-7,Steel.dev display name
+Claude Sonnet 4.5,claude-sonnet-4-5-20250929,Steel.dev display name
+Claude Sonnet 4.6,claude-sonnet-4-6,Steel.dev display name
+Claude Haiku 4.5,claude-haiku-4-5-20251001,Steel.dev display name
+Claude Mythos Preview,claude-mythos-preview-early,Steel.dev display name
+Gemini 3 Flash,gemini-3-flash-preview,Steel.dev display name
+Gemini 3.1 Pro,gemini-3.1-pro-preview,Steel.dev display name
+DeepSeek-V4-Flash-Max,deepseek-v4-flash_max,Steel.dev display name (dash→underscore before effort)
+DeepSeek-V4-Pro-Max,deepseek-v4-pro_max,Steel.dev display name (dash→underscore before effort)

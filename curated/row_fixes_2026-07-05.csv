@@ -1,0 +1,6 @@
+model_version,benchmark,score,source,reason
+gemini-3-flash-preview_minimal,ARC-AGI,0.215,EpochAI,"split from bare gemini-3-flash-preview: Epoch Name field carries the config label (Minimal/Low/Medium/High) the Model-version column lost; raw = snapshots/2026-06-24/epoch/arc_agi{,_2}_external.csv"
+gemini-3-flash-preview_minimal,ARC-AGI-2,0.0333,EpochAI,"split from bare gemini-3-flash-preview: Epoch Name field carries the config label (Minimal/Low/Medium/High) the Model-version column lost; raw = snapshots/2026-06-24/epoch/arc_agi{,_2}_external.csv"
+gemini-3-flash-preview_low,ARC-AGI-2,0.0125,EpochAI,"split from bare gemini-3-flash-preview: Epoch Name field carries the config label (Minimal/Low/Medium/High) the Model-version column lost; raw = snapshots/2026-06-24/epoch/arc_agi{,_2}_external.csv"
+gemini-3-flash-preview_medium,ARC-AGI-2,0.1278,EpochAI,"split from bare gemini-3-flash-preview: Epoch Name field carries the config label (Minimal/Low/Medium/High) the Model-version column lost; raw = snapshots/2026-06-24/epoch/arc_agi{,_2}_external.csv"
+gemini-3-flash-preview_high,ARC-AGI-2,0.3361,EpochAI,"split from bare gemini-3-flash-preview: Epoch Name field carries the config label (Minimal/Low/Medium/High) the Model-version column lost; raw = snapshots/2026-06-24/epoch/arc_agi{,_2}_external.csv"
