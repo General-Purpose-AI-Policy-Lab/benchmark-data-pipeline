@@ -24,7 +24,7 @@ went stale immediately when Epoch published new results.
    cp output/benchmarks_merged.csv ../processed/benchmarks_merged.csv
    cp output/human_baselines.csv   ../curated/human_baselines.csv
    ```
-4. Re-run the model: `python run.py` from the repo root.
+4. Re-run the model: `python fit.py --preset canonical` from the repo root.
 
 Re-running the notebook within the same UTC day reuses today's snapshot
 folder (no re-download). To force a refresh, delete `snapshots/YYYY-MM-DD/`
