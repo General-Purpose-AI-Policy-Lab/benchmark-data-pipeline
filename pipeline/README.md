@@ -5,10 +5,7 @@ public benchmark ZIP (CC-BY, refreshed ~weekly) and assembles a
 `benchmarks_merged.csv` matching the schema `data.py` already consumes.
 
 This notebook is the authoritative refresh path for
-`data/processed/benchmarks_merged.csv`. It replaces an earlier two-notebook
-workflow (archived under `archive/legacy_pipeline.zip`) that built the
-processed file from a hand-managed snapshot in `data/raw/` — that snapshot
-went stale immediately when Epoch published new results.
+`data/processed/benchmarks_merged.csv`.
 
 ## Refresh workflow
 
@@ -39,7 +36,8 @@ data/pipeline/
 ├── canonical/                           human-edited, version-controlled
 │   ├── benchmark_names.csv              variant → canonical benchmark name
 │   ├── model_aliases.csv                variant → canonical model_version
-│   └── benchmark_metadata.csv           benchmark → category, lower_bound
+│   ├── benchmark_metadata.csv           benchmark → category, lower_bound
+│   └── reviewed_models.txt              model names already reviewed for aliasing
 ├── snapshots/                           gitignored; one folder per fetch
 │   └── YYYY-MM-DD/
 │       ├── epoch_benchmark_data.zip
@@ -58,8 +56,11 @@ data/pipeline/
     ├── duplicates_report.csv            any (model, benchmark) collisions
     ├── name_changes.csv                 every variant → canonical rename
     ├── missing_models.csv               models not yet in alias map
-    ├── seal_alias_review.csv            proposed (unapplied) SEAL model aliases
+    ├── seal_alias_review.csv            proposed (unapplied) SEAL model aliases;
+    │                                    manual-review artifact, only refreshed when
+    │                                    SEAL names change — may lag the other outputs
     ├── content_diff_vs_current.csv      score deltas vs existing dataset
+    │                                    (header-only = no deltas found)
     └── pipeline_report.md               provenance summary
 ```
 

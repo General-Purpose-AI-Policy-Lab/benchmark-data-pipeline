@@ -1,2 +1,0 @@
-benchmark,group,score,note,source
-GPQA Diamond,Domain Expert,0.697,Independent PhD experts recruited by OpenAI on the fixed Diamond set (out-of-sample); reported via Epoch AI. Parked; the fit uses the GPQA-paper figure (0.812) instead.,https://epoch.ai/benchmarks/gpqa-diamond
