@@ -170,38 +170,6 @@ confidenceInterval_upper, company, createdAt, deprecated, ...}`, scores 0–100.
   their own test-takers. Proposed-but-unapplied matches are written to
   `output/seal_alias_review.csv` for manual review.
 
-## Augmented sources (added post-hoc, fit-time only)
-
-Three supplementary CSVs live in [`data/augmented/`](../augmented/) and were
-added **after** this notebook pipeline. They are **not** produced by any section
-here and are **never** written into `benchmarks_merged.csv` — the processed file
-stays exactly what this notebook emits. They are folded into a fit only on
-demand, via `load_eci_data(augment=True)` (CLI `--augment` on both `run.py` and
-`diagnostics/fit_mirt.py`), by [`augment.py`](../../augment.py):
-
-- **existing-models-only** — a row is kept only if its model (canonicalized
-  through the **same** `canonical/model_aliases.csv` this notebook uses) is
-  already in the database. No new test-takers are added, so the sorted model
-  index — and the lineage / human-tier priors keyed on it — are unchanged;
-  augmentation only *deepens* the evidence for models we already track.
-- **add-only-new-cells** — a row is kept only if its `(model, benchmark)` pair
-  isn't already present, so an augmented score never double-counts.
-- unmatched source models are dropped and logged to
-  `data/augmented/unmatched_models.csv` (`python scripts/build_augment_report.py`)
-  for incremental alias curation — the alias map was extended with ~70 rows
-  tagged `augmented:helm` / `augmented:livebench` / `augmented:steel`.
-
-What each adds (full provenance + per-file preprocessing in
-[`data/augmented/README.md`](../augmented/README.md)):
-
-- **HELM Classic v0.3.0** — back-fills the 2022–2023 legacy fleet (GPT-3 family,
-  GPT-J/NeoX, BLOOM, OPT, LLaMA-1/2, Falcon, MPT, T5) on modern hard benchmarks;
-  fixes the era-confound where old models were only ever scored on easy tasks.
-- **LiveBench** — a contamination-controlled aggregate score, filling models
-  that lacked a LiveBench cell.
-- **Steel.dev** — agentic-axis benchmarks absent from the DB (OSWorld, WebArena,
-  GAIA, WebVoyager, BrowseComp, tau-bench, …) for models we already track.
-
 ## Sources
 
 | Section | Source | License | Benchmarks |
@@ -209,13 +177,9 @@ What each adds (full provenance + per-file preprocessing in
 | 01 (Epoch) | `epoch.ai/data/benchmark_data.zip` | CC-BY (Epoch AI) | Reasoning, math, QA, multimodal, agentic — ~45 benchmarks |
 | 03b (RAND) | [`benchmark-forecasting`](https://github.com/General-Purpose-AI-Policy-Lab/benchmark-forecasting/blob/main/Data/benchmark_data_RAND/benchmark_scores_RAND.csv) — digitized from RAND **RR-A3797-1** (Dev et al. 2025, *Toward Comprehensive Benchmarking of the Biological Knowledge of Frontier LLMs*) | Citation: [RR-A3797-1](https://www.rand.org/pubs/research_reports/RRA3797-1.html) | Biology + chemistry safety suite (WMDP, LAB-Bench, MMLU/MMLU Pro Bio/Chem, GPQA Diamond/Main Bio/Chem, BioLP-bench) — 15 benchmarks |
 | 03c (Scale SEAL) | `labs.scale.com/leaderboard/<slug>` (scraped from `__next_f`; slugs from Scale's Sanity CMS) | **Not CC-BY** — Scale AI ToS; used as fair-use research aggregation, attribute Scale AI | EnigmaEval, MCP Atlas, MultiChallenge, MultiNRC, VISTA, TutorBench, SEAL Tool Use, SWE-Bench Pro (public+private), SEAL Instruction Following, PRBench Finance/Legal, Remote Labor Index, VisualToolBench, AudioMultiChallenge — 15 benchmarks |
-| *augmented* (fit-time) | HELM Classic v0.3.0 — `gs://crfm-helm-public/classic/…` (`scripts/fetch_helm_classic.py`) | Research use (Apache-2.0 code; per-scenario dataset licenses vary) | Legacy fleet on MATH, MMLU, GSM8K, HumanEval, APPS, TruthfulQA, NarrativeQA, … — 25 benchmarks |
-| *augmented* (fit-time) | LiveBench — `github.com/LiveBench/livebench.github.io` `table_*.csv` (`scripts/fetch_livebench.py`) | Public leaderboard (LiveBench) | LiveBench aggregate — 1 benchmark |
-| *augmented* (fit-time) | Steel.dev index — `leaderboard.steel.dev/results/` (`scripts/fetch_steel_dev.py`) | Aggregation by Steel.dev; cite underlying benchmark | OSWorld, WebArena, GAIA, WebVoyager, BrowseComp, tau-bench, Aider, SWE-bench Verified, … — 13 benchmarks |
 
 When citing analysis built on this pipeline, credit Epoch AI, the RAND
-techreport, and Scale AI; augmented fits additionally rest on HELM (Stanford
-CRFM), LiveBench, and the Steel.dev index (and its underlying benchmarks).
+techreport, and Scale AI.
 
 ## Out of scope / not ingested
 
@@ -228,8 +192,17 @@ CRFM), LiveBench, and the Steel.dev index (and its underlying benchmarks).
 - **SEAL boards left out of the canonical index** (reachable, not yet added):
   safety (Fortress, MASK, PropensityBench), Math, Tool Use (Chat), SWE Atlas ×3,
   SciPredict, HiL-Bench, Korean. One-line additions to `SEAL_SPEC` if wanted.
-- **GeoBench & GDPVal** — in Epoch's ZIP but skipped in `FILE_SKIP`: ambiguous
-  score scale (GeoBench multi-axis, GDPVal win-rate-vs-other-models).
+- **GDPVal** — in Epoch's ZIP but skipped in `FILE_SKIP`: win-rate-vs-other-models,
+  not an absolute [0,1] capability.
+- **GeoBench — ingested, but only the `ACW Country %` column.** GeoBench is a
+  multi-axis file (ACW/AVW/Rural/Urban/Photos splits × Avg/Median/Distance/Country%/Refusal).
+  Its headline `ACW Avg Score` is a GeoGuessr *points* score (~0–5000, seen
+  2131–4333) — not a [0,1] proportion, so it can't feed the Beta model. The one
+  clean, full-coverage (n=32) [0,1] column is `ACW Country %` — the fraction of
+  images whose country the model names correctly — so that is what `FILE_SPEC`
+  ingests as benchmark **GeoBench**. It lines up with the curated 0.90
+  "top player" human baseline (best model ≈ 0.88). The other splits are sparse
+  (AVW/Rural/Urban n=3, Photos n=16) and left out.
 - **Lech Mazur Writing** — already ingested via Epoch's `lech_mazur_writing_external.csv`.
 
 ## License

@@ -27,7 +27,7 @@ GPQA Main Biology,Biology,0.25,"GPQA full set, biology subsplit; 4-choice MC"
 GPQA Main Chemistry,Chemistry,0.25,"GPQA full set, chemistry subsplit; 4-choice MC"
 GSM8K,Domain Specific Questions,0.0,
 GSO-Bench,Autonomous SWE,0.0,
-GeoBench,Multimodal Understanding,0.0,
+GeoBench,Multimodal Understanding,0.0,ingested column = 'ACW Country %' (country-identification accuracy); headline ACW Avg Score is GeoGuessr points and is not used
 HellaSwag,General Reasoning,0.25,4-choice sentence-completion commonsense
 Humanity's Last Exam,Domain Specific Questions,0.0,
 LAB-Bench Cloning,Biology,0.2,
@@ -55,11 +55,11 @@ PRBench Finance,Domain Specific Questions,0.0,
 PRBench Legal,Domain Specific Questions,0.0,
 PostTrainBench,Autonomous SWE,0.0,
 Remote Labor Index,Core AGI Progress,0.0,
-SEAL Instruction Following,Advanced Language and Writing,0.0,"Scale SEAL instruction-following board (deprecated Jan 2025); open generation"
+SEAL Instruction Following,Advanced Language and Writing,0.0,Scale SEAL instruction-following board (deprecated Jan 2025); open generation
 SEAL Tool Use (Enterprise),Agentic Computer Use,0.0,Scale SEAL enterprise agentic tool-use board
 SWE-Bench Bash Only,Autonomous SWE,0.0,
 SWE-Bench Pro,Autonomous SWE,0.0,
-SWE-Bench Pro (Private),Autonomous SWE,0.0,"Scale SEAL SWE-Bench Pro private dataset; distinct question set from the public board"
+SWE-Bench Pro (Private),Autonomous SWE,0.0,Scale SEAL SWE-Bench Pro private dataset; distinct question set from the public board
 SWE-Bench Verified,Autonomous SWE,0.0,
 ScienceQA,Domain Specific Questions,0.3983,
 SimpleBench,General Reasoning,0.0,trick-question benchmark; AVG@5 open generation
@@ -77,3 +77,12 @@ WMDP Biology,Biology,0.25,
 WMDP Chemistry,Chemistry,0.25,
 WeirdML,Autonomous SWE,0.0,
 WinoGrande,General Reasoning,0.5,binary Winograd-style coreference
+SciCode,Autonomous SWE,0.0,Scientific/research coding (added 2026-07-08)
+CursorBench,Autonomous SWE,0.0,Agentic coding in Cursor (added 2026-07-08)
+FrontierCode,Autonomous SWE,0.0,Diamond-tier coding subset (added 2026-07-08)
+OS World 2,Agentic Computer Use,0.0,Binary task-success rate; successor to OS World (added 2026-07-08)
+ExploitBench,Agentic Computer Use,0.0,Agentic cyber-exploitation; Mean capability (added 2026-07-08)
+CritPt,Domain Specific Questions,0.0,"Physics research reasoning; open-ended, no chance baseline (added 2026-07-08)"
+CL-Bench,Domain Specific Questions,0.0,Overall proportion (added 2026-07-08)
+CL-Bench Life,Domain Specific Questions,0.0,Overall proportion (added 2026-07-08)
+ForecastBench,General Reasoning,0.0,Forecasting future events; Overall score /100 (added 2026-07-08)

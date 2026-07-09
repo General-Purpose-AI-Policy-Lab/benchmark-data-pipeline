@@ -1,0 +1,27 @@
+glm-5.2_unknown
+kimi-k2.7-code
+claude-opus-4-8_xhigh
+qwen3.7-max
+deepseek-v4-pro_max
+gpt-5.5_high
+gpt-5.5-pro-pre-release_xhigh
+gpt-5.5-codex
+grok-4.3_high
+MiniMax-M2.7
+gemini-3.1-pro-preview (high)
+claude-sonnet-4-6_medium
+claude-opus-4-6_unknown
+gpt-5-pro-2025-10-06_unknown
+gpt-5-2025-08-07_high
+o3-pro-2025-06-10_high
+DeepSeek-R1-0528
+o3-2025-04-16_high
+o3-2025-04-16_medium
+gemini-2.5-pro-exp-03-25
+o3-mini-2025-01-31_high
+o1-2024-12-17_unknown
+Llama-3.3-70B-Instruct
+mistral-large-2411
+o1-mini-2024-09-12_high
+Llama-3.1-405B
+claude-3-5-sonnet-20240620

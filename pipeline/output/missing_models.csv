@@ -1,18 +1,9 @@
 model_version
 ChatGPT agent
-ChatGPT-4o-latest (November 2024)
-Claude 3.7 Sonnet Thinking (Feb 2025)
-Claude 3.7 Sonnet Thinking (February 2025)
 Claude Opus 4 (Thinking)
 Claude Sonnet 4 (Thinking)
-Claude-3.7-Sonnet-thinking
-Claude-4-Opus-20250514-thinking
-DeepSeek V3 (March 2025)
-DeepSeek-V3 (December 2024)
-Deepseek V3
 GPT-4
 GPT-4 (November 2024)
-GPT-4o
 Gemini 2.0 Flash Thinking (January 2025)
 Gemini 2.0 Flash Thinking Experimental
 Gemini 2.0 Flash Thinking Experimental (January 2025)
@@ -26,48 +17,58 @@ Manus 1.5
 Manus_1.6 (Max)
 MiMo-Audio-7B-Instruct (Thinking)*
 MiMo-Audio-7B-Instruct*
+MiniMax-M3
 Mistral Medium 3
 OpenAI GPT-4o
 OpenAI GPT-5
 Phi-4-multimodal-instruct*
 Pixtral 12B (September 2024)
 Pixtral Large (November 2024)
+Pixtral-12B-2409
 Qwen2.5-Omni-7B*
 Qwen3-Omni-30B-A3B-Instruct†
 Voxtral-Small-24B-2507*
-claude-3-7-sonnet-thinking
-claude-37-sonnet-thinking
+claude-3-7-sonnet-20250219_15K
 claude-4-opus-20250514-thinking
 claude-4-opus-thinking
 claude-4-sonnet-thinking
 claude-haiku-4-5-20251001-thinking
+claude-haiku-4-5-20251001_high
 claude-opus-4-1-20250805-thinking
 claude-opus-4-5 (high)
 claude-opus-4-5-20251101-thinking
+claude-opus-4-5-20251101_high
 claude-opus-4-6 (CoWork)
 claude-opus-4-6 (Non-Thinking) 
 claude-opus-4-6 (thinking)*
 claude-opus-4-6-thinking
+claude-opus-4-6_medium
 claude-sonnet-4-5 (thinking)
 claude-sonnet-4-5-20250929-thinking
 claude-sonnet-4-thinking
+claude-sonnet-5_max
+claude-sonnet-5_xhigh
 codestral-2405
-deepseek-v3p1
 deepseek-v3p2
+gemini-2.0-flash-lite-001
 gemini-2.5-flash (Thinking)*
 gemini-2.5-flash-native-audio-preview-12-2025 (non-thinking)†
 gemini-2.5-flash-native-audio-preview-12-2025 (thinking)†
 gemini-2.5-pro (Thinking)*
 gemini-3-pro-preview (Thinking)*
+gemini-3-pro-preview_high
 gemini-3.1-flash-lite (high)
+gemini-3.1-flash-lite_high
 gemini-3.1-flash-live-preview (Thinking)†
 gemini-3.1-flash-live-preview†
 gemini-3.1-pro (thinking)*
 gemini-3.1-pro-preview (high)
+gemini-3.1-pro-preview_high
 gemma-3n-E4B-it*
 gemma-4-26b-a4b
 glm-5.2_high
 glm-5.2_max
+glm-5.2_unknown
 gpt-4o
 gpt-4o-audio-preview-2025-06-03*
 gpt-4o-audio-preview-2025-06-03†
@@ -77,10 +78,13 @@ gpt-5-2025-08-07-thinking
 gpt-5-mini-thinking
 gpt-5-thinking
 gpt-5.1-2025-11-13-thinking
+gpt-5.1-codex_high
 gpt-5.1-thinking
+gpt-5.2-codex_high
 gpt-5.4 (xHigh)*
-gpt-5.4 (xhigh)
 gpt-5.4(xHigh)*
+gpt-5.4-mini-2026-03-17_unknown
+gpt-5.4-nano-2026-03-17_unknown
 "gpt-realtime-1.5*
 "
 gpt-realtime-1.5†
@@ -90,15 +94,26 @@ gpt-realtime-2025-08-28*
 gpt-realtime-2025-08-28†
 gpt-realtime-mini-2025-12-15*
 gpt-realtime-mini-2025-12-15†
+grok-4-20_high
 grok-4.3_high
+kimi-k2.5_high
 mercury-2
+mimo-v2-flash
+mimo-v2-pro
+mimo-v2-pro_high
+mimo-v2.5-pro
 nova-premier
 o1 Pro (March 2025)
 o1-preview
+o3-mini-2025-01-31_unknown
 o3-pro
 o3-pro-2025-06-10
 o4-mini
 o4-mini-2025-04-16
+o4-mini-2025-04-16_unknown
+qwen1.5-110b-chat
 qwen3.5-27B
 qwen3.5-9B
+qwen3.5-plus_high
 tml-interaction-small
+zai-org/glm-4.7_high
