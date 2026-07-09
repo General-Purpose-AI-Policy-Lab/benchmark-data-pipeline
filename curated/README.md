@@ -19,3 +19,22 @@ old one, so the history of manual row surgery stays reconstructible.
 Schema of the row-audit files:
 `model_version, benchmark, score, source, reason` — enough to identify the
 exact offending row and why it was dropped/fixed.
+
+## `_unknown` model variants — expected, not a bug
+
+A model appears as both a bare `X` and an `X_unknown` test-taker when the
+source data records it in more than one run configuration: `_unknown` collects
+thinking-mode or unspecified-effort rows, the bare name is the base config.
+These are kept as **separate test-takers**, matching the `_low`/`_high`
+effort-variant convention — merging them would mix configs.
+
+Two consequences a data reader will notice:
+
+- **Divergent scores** on the same benchmark (e.g. a thinking vs base
+  TerminalBench number) are the point of the split — genuinely different runs.
+- **Identical scores** on a handful of cells (~6 of ~4,000 rows) come from
+  Epoch's own upstream double-logging: Epoch's external CSVs occasionally list
+  the same model twice, once bare and once `_unknown`, with the same score
+  (distinct Airtable record IDs, different evaluation dates). The pipeline
+  mirrors the source faithfully, so these carry through. Benign — identical
+  scores don't move any fit.
