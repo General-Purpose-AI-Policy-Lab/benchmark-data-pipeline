@@ -11,6 +11,8 @@ the table before editing:
 | `lineage_map.csv` | generated draft, then hand-reviewed | `lineage.py` (lineage prior), `diagnostics/compute_sota.py` (flagship chains) | yes — it is the reviewed source of truth; `diagnostics/build_lineage_map.py` drafts new rows |
 | `row_drops_YYYY-MM-DD.csv` | dated audit record | pipeline notebook (anti-join: these rows are removed on every refresh) | append-only — new audit, new dated file |
 | `row_fixes_YYYY-MM-DD.csv` | dated audit record | nothing reads it — it documents fixes that were applied through the notebook's name/config parsing; kept as the audit trail | append-only |
+| `benchmark_lower_bounds.csv` | hand-reviewed, sourced | `data.py` `load_benchmark_floors` for the `--floors` fixed-c 3PL fit (opt-in, exploration only) | yes — `benchmark, lower_bound, reason, source_url`; audit/regenerate via `diagnostics/audit_lower_bounds.py` |
+| `benchmark_score_clips.csv` | generated record | nothing reads it — documents the 36 below-floor scores the `--floors` clip raises (fit-time clipping recomputes from the floors) | no — regenerate with `diagnostics/audit_lower_bounds.py --write` |
 
 The `_YYYY-MM-DD` suffix on the row-audit files is the date of the data audit
 that produced them. Each audit adds a new dated pair rather than editing an
