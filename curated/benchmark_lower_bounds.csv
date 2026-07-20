@@ -21,8 +21,8 @@ Cybench,0.0,CTFs,https://epoch.ai/benchmarks/cybench
 DeepResearchBench,0.0,No single random baseline (heterogeneous/generative/Elo score); Research/agent workflow; heterogeneous formats,https://epoch.ai/benchmarks/deepresearchbench
 EnigmaEval,0.0,Exact string match on open-ended answers,https://scale.com/leaderboard/enigma_eval
 ExploitBench,0.0,Free-form security exploit tasks,https://epoch.ai/benchmarks/exploit-bench
-Fiction.LiveBench,0.0,No single random baseline (heterogeneous/generative/Elo score); Mixed tasks; heterogeneous formats,https://livebench.ai
-ForecastBench,0.0,"Forecasting skill score, no random baseline",https://epoch.ai/benchmarks/forecastbench
+Fiction.LiveBench,0.0,Open-ended long-context comprehension: 36 questions on 30 stories graded fraction-correct (ingested = 120k-token accuracy); no fixed answer options so no chance baseline; data min 0.188 sits below any MCQ chance which corroborates open-ended,https://epoch.ai/benchmarks/fictionlivebench
+ForecastBench,0.5,Brier Index on a 0-100% scale where 50% = uninformed guess (Epoch); floor sets the 3PL zero-ability baseline so a ~0.5 score reads as ~zero forecasting skill not median,https://epoch.ai/benchmarks/forecastbench
 FrontierCode,0.0,Code-generation tasks,https://epoch.ai/benchmarks/frontier-code
 FrontierMath,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
 FrontierMath Tier 4,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
@@ -45,7 +45,7 @@ Lech Mazur Writing,0.0,No single random baseline (heterogeneous/generative/Elo s
 LiveBench,0.0,No single random baseline (heterogeneous/generative/Elo score); Mixed contamination-free tasks,https://epoch.ai/benchmarks/live-bench
 MATH Level 5,0.0,Exact-match numeric/expression answers,https://epoch.ai/benchmarks/math-level-5
 MCP Atlas,0.0,Tool use success rate,https://scale.com/leaderboard/mcp_atlas
-METR Time Horizons,0.05,3 out of 5 families of SWAA (66 over 170 tasks) are multiple-choice,https://openreview.net/pdf/402f09e70f9d9e6a99edbcaaa360692d05eec7ab.pdf
+METR Time Horizons,0.0,Ingested column is average_score: weighted mean success rate over a heterogeneous suite (SWAA/HCAST/RE-Bench); no single clean chance level and MCQ-luck is negligible vs the dominant open-ended tasks so floored at 0 (prior 0.05 was a hand estimate from the 66/170 MCQ subtask share; not stated by the source),https://openreview.net/pdf/402f09e70f9d9e6a99edbcaaa360692d05eec7ab.pdf
 MMLU,0.25,4-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Biology,0.25,4-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Chemistry,0.25,4-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
@@ -74,7 +74,7 @@ SimpleQA Verified,0.0,Freeform response with AI grader,https://epoch.ai/benchmar
 SuperGLUE,0.443,Aggregate of diverse tasks,https://arxiv.org/abs/1905.00537
 TerminalBench,0.0,CLI/agent tasks,https://epoch.ai/benchmarks/terminal-bench
 The Agent Company,0.0,Long-horizon agentic tasks,https://the-agent-company.com/
-TriviaQA,0.127,Random baseline from the paper,https://nlp.cs.washington.edu/triviaqa/
+TriviaQA,0.0,Open-ended exact-match QA; random guess ~0. NB: the paper's 12.7% EM is a 'random entity' baseline (random pick among ~1.8 gold-page entities); not a chance floor,https://nlp.cs.washington.edu/triviaqa/
 TutorBench,0.0,LLM-judged tutoring,https://scale.com/leaderboard/tutorbench
 VPCT,0.333,Three buckets,https://epoch.ai/benchmarks/vpct
 Video-MME,0.25,Multimodal/video QA; 4 choices,https://arxiv.org/pdf/2405.21075

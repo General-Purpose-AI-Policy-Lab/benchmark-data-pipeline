@@ -36,7 +36,7 @@ data/pipeline/
 ├── canonical/                           human-edited, version-controlled
 │   ├── benchmark_names.csv              variant → canonical benchmark name
 │   ├── model_aliases.csv                variant → canonical model_version
-│   ├── benchmark_metadata.csv           benchmark → category, lower_bound
+│   ├── benchmark_metadata.csv           benchmark → category (+ notes)
 │   └── reviewed_models.txt              model names already reviewed for aliasing
 ├── snapshots/                           gitignored; one folder per fetch
 │   └── YYYY-MM-DD/
