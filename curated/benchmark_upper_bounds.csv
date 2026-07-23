@@ -1,0 +1,3 @@
+benchmark,upper_bound,reason,source_url
+ForecastBench,0.685,Superforecaster median Overall Brier Index 68.5 (baseline leaderboard 2026-07-20); irreducible outcome uncertainty caps the scale well below 100%,https://forecastbench.org/leaderboards/
+DeepResearchBench,0.8,Paper-stated noise ceiling: expected score of a perfect agent ~0.8 (task subjectivity + LLM-judge error),https://arxiv.org/abs/2506.06287
