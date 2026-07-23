@@ -53,10 +53,11 @@ LLaMA-65B,BIG-Bench Hard (BBH),2,0.435,0.584,bbh_external.csv,0.1489999999999999
 gpt-5-nano-2025-08-07_unknown,TerminalBench,5,0.07,0.218,terminalbench_external.csv,0.148
 PaLM 540B,OpenBookQA,3,0.534,0.68,open_book_qa_external.csv,0.14600000000000002
 Megatron-Turing NLG 530B,LAMBADA,4,0.7306,0.8715,lambada_external.csv,0.14090000000000003
-text-davinci-001,LAMBADA,3,0.725,0.864,lambada_external.csv,0.139
+gemini-2.5-flash,AudioMultiChallenge,2,0.2611,0.4004,seal/audiomc.html,0.13929999999999998
 o3-2025-04-16_medium,OS World (Screenshot),3,0.091,0.23,os_world_external.csv,0.139
-Llama-2-70b-hf,BIG-Bench Hard (BBH),2,0.512,0.649,bbh_external.csv,0.137
+text-davinci-001,LAMBADA,3,0.725,0.864,lambada_external.csv,0.139
 gpt-5.3-codex,TerminalBench,10,0.647,0.784,terminalbench_external.csv,0.137
+Llama-2-70b-hf,BIG-Bench Hard (BBH),2,0.512,0.649,bbh_external.csv,0.137
 Gopher (280B),TriviaQA,4,0.435,0.572,trivia_qa_external.csv,0.13699999999999996
 LLaMA-65B,ARC (AI2),2,0.56,0.695,arc_ai2_external.csv,0.1349999999999999
 gemini-3-flash-preview,TerminalBench,3,0.51,0.643,terminalbench_external.csv,0.133
@@ -85,8 +86,9 @@ gemini-3.1-pro-preview,ExploitBench,2,0.16,0.26,exploitbench_external.csv,0.1
 claude-opus-4-7_unknown,TerminalBench,2,0.802,0.902,terminalbench_external.csv,0.09999999999999998
 Llama-2-13b,GSM8K,5,0.245,0.343,gsm8k_external.csv,0.09800000000000003
 gpt-5-mini-2025-08-07_medium,TerminalBench,4,0.222,0.319,terminalbench_external.csv,0.097
-Mistral-7B-v0.1,PIQA,2,0.734,0.83,piqa_external.csv,0.09599999999999997
 GLaM (MoE),OpenBookQA,3,0.534,0.63,open_book_qa_external.csv,0.09599999999999997
+Mistral-7B-v0.1,PIQA,2,0.734,0.83,piqa_external.csv,0.09599999999999997
+gemini-3.1-flash-live-preview,AudioMultiChallenge,2,0.2677,0.36060000000000003,seal/audiomc.html,0.09290000000000004
 Chinchilla (70B),TriviaQA,3,0.554,0.646,trivia_qa_external.csv,0.09199999999999997
 LLaMA-7B,ARC (AI2),3,0.385,0.476,arc_ai2_external.csv,0.09099999999999997
 gemma-7b,TriviaQA,2,0.634,0.723,trivia_qa_external.csv,0.08899999999999997
@@ -107,29 +109,29 @@ MiniMax-M2.1,TerminalBench,2,0.292,0.366,terminalbench_external.csv,0.0740000000
 falcon-40b,ARC (AI2),4,0.545,0.6186,arc_ai2_external.csv,0.0736
 LLaMA-13B,BoolQ,3,0.714,0.787,bool_q_external.csv,0.07300000000000006
 Llama-3.3-70B-Instruct,MMLU,2,0.791,0.863,mmlu_external.csv,0.07199999999999995
-text-davinci-001,TriviaQA,3,0.643,0.712,trivia_qa_external.csv,0.06899999999999995
 Mistral-7B-v0.1,BoolQ,2,0.805,0.874,bool_q_external.csv,0.06899999999999995
+text-davinci-001,TriviaQA,3,0.643,0.712,trivia_qa_external.csv,0.06899999999999995
 Megatron-Turing NLG 530B,BoolQ,3,0.782,0.8483,bool_q_external.csv,0.06630000000000003
 gemini-1.5-pro-001,WMDP Chemistry,2,0.647,0.713,rand_benchmark_scores.csv,0.06599999999999995
 Llama-2-7b,BIG-Bench Hard (BBH),2,0.326,0.3916,bbh_external.csv,0.06559999999999999
 Llama-2-13b,TriviaQA,4,0.731,0.796,trivia_qa_external.csv,0.06500000000000006
 gemini-1.5-pro-001,GPQA Main Chemistry,2,0.33899999999999997,0.40399999999999997,rand_benchmark_scores.csv,0.065
-Yi-6B-Chat,GSM8K,2,0.384,0.449,gsm8k_external.csv,0.065
 gemini-1.5-pro-001,LAB-Bench Protocol,2,0.444,0.509,rand_benchmark_scores.csv,0.065
+Yi-6B-Chat,GSM8K,2,0.384,0.449,gsm8k_external.csv,0.065
 claude-sonnet-4-5-20250929_unknown,TerminalBench,7,0.401,0.465,terminalbench_external.csv,0.064
 Llama-3.1-70B-Instruct,The Agent Company,2,0.065,0.128,the_agent_company_external.csv,0.063
 GLaM (MoE),WinoGrande,3,0.73,0.792,wino_grande_external.csv,0.062000000000000055
 claude-sonnet-4-5-20250929_unknown,Humanity's Last Exam,2,0.0752,0.1372,hle_external.csv,0.061999999999999986
 Mistral-7B-v0.1,MMLU,4,0.566,0.625,mmlu_external.csv,0.05900000000000005
-mpt-7b,TriviaQA,4,0.557,0.616,trivia_qa_external.csv,0.05899999999999994
 Yi-34B-Chat,MMLU,2,0.676,0.735,mmlu_external.csv,0.05899999999999994
+mpt-7b,TriviaQA,4,0.557,0.616,trivia_qa_external.csv,0.05899999999999994
 Megatron-Turing NLG 530B,WinoGrande,3,0.7301,0.789,wino_grande_external.csv,0.05890000000000006
-kimi-k2-thinking,CL-Bench,2,0.119,0.176,cl_bench_external.csv,0.056999999999999995
 internlm-chat-20b,BIG-Bench Hard (BBH),2,0.367,0.424,bbh_external.csv,0.056999999999999995
+kimi-k2-thinking,CL-Bench,2,0.119,0.176,cl_bench_external.csv,0.056999999999999995
 mpt-30b,TriviaQA,4,0.68,0.736,trivia_qa_external.csv,0.05599999999999994
 falcon-40b,GSM8K,3,0.196,0.25,gsm8k_external.csv,0.05399999999999999
-Qwen-14B-Chat,BIG-Bench Hard (BBH),2,0.497,0.55,bbh_external.csv,0.05300000000000005
 falcon-40b,TriviaQA,4,0.746,0.799,trivia_qa_external.csv,0.05300000000000005
+Qwen-14B-Chat,BIG-Bench Hard (BBH),2,0.497,0.55,bbh_external.csv,0.05300000000000005
 computer-use-preview-2025-03-11,OS World (Screenshot),3,0.26,0.313,os_world_external.csv,0.05299999999999999
 Llama-2-70b-hf,TriviaQA,4,0.824,0.876,trivia_qa_external.csv,0.052000000000000046
 LLaMA-13B,GSM8K,4,0.154,0.2055,gsm8k_external.csv,0.05149999999999999
@@ -148,8 +150,8 @@ gpt-5-nano-2025-08-07_medium,TerminalBench,4,0.07,0.115,terminalbench_external.c
 PaLM 540B,TriviaQA,2,0.769,0.814,trivia_qa_external.csv,0.04499999999999993
 claude-instant-1.2,MMLU,2,0.688,0.732,mmlu_external.csv,0.04400000000000004
 Yi-34B-Chat,GSM8K,2,0.717,0.76,gsm8k_external.csv,0.04300000000000004
-claude-opus-4-7_max,OS World 2,2,0.139,0.182,osworld_2_external.csv,0.04299999999999998
 gemini-1.5-pro-001,GPQA Diamond Chemistry,2,0.387,0.43,rand_benchmark_scores.csv,0.04299999999999998
+claude-opus-4-7_max,OS World 2,2,0.139,0.182,osworld_2_external.csv,0.04299999999999998
 gemini-1.5-pro-001,MMLU Pro Biology,2,0.841,0.883,rand_benchmark_scores.csv,0.04200000000000004
 xgen-7b-8k-base,MMLU,2,0.321,0.363,mmlu_external.csv,0.04199999999999998
 falcon-180B,ARC (AI2),2,0.637,0.678,arc_ai2_external.csv,0.041000000000000036
@@ -159,28 +161,29 @@ claude-opus-4-20250514_unknown,Humanity's Last Exam,2,0.0668,0.1072,hle_external
 PaLM 540B,WinoGrande,3,0.811,0.851,wino_grande_external.csv,0.039999999999999925
 claude-3-7-sonnet-20250219,The Agent Company,2,0.364,0.402,the_agent_company_external.csv,0.038000000000000034
 Qwen3-235B-A22B-Thinking-2507,WeirdML,3,0.3728,0.4104,weirdml_external.csv,0.03759999999999997
-Llama-2-70b-hf,BoolQ,3,0.85,0.886,bool_q_external.csv,0.03600000000000003
-falcon-7b,PIQA,3,0.767,0.803,piqa_external.csv,0.03600000000000003
 chatglm2-6b,GSM8K,3,0.288,0.324,gsm8k_external.csv,0.03600000000000003
+falcon-7b,PIQA,3,0.767,0.803,piqa_external.csv,0.03600000000000003
 Llama-2-13b-chat,MMLU,2,0.473,0.509,mmlu_external.csv,0.03600000000000003
+Llama-2-70b-hf,BoolQ,3,0.85,0.886,bool_q_external.csv,0.03600000000000003
 claude-opus-4-1-20250805_unknown,Humanity's Last Exam,2,0.0792,0.1152,hle_external.csv,0.03599999999999999
 LLaMA-7B,MMLU,4,0.32,0.356,mmlu_external.csv,0.035999999999999976
 Llama-2-34b,TriviaQA,4,0.81,0.846,trivia_qa_external.csv,0.03599999999999992
 Kimi-Audio-7B-Instruct,AudioMultiChallenge,2,0.10400000000000001,0.13720000000000002,seal/audiomc.html,0.03320000000000001
-text-davinci-003,HellaSwag,2,0.822,0.855,hella_swag_external.csv,0.03300000000000003
 Qwen3-Coder-480B-A35B-Instruct,TerminalBench,3,0.239,0.272,terminalbench_external.csv,0.03300000000000003
 LLaMA-7B,BoolQ,4,0.732,0.765,bool_q_external.csv,0.03300000000000003
+text-davinci-003,HellaSwag,2,0.822,0.855,hella_swag_external.csv,0.03300000000000003
 gemini-3-pro-preview,PostTrainBench,2,0.1486,0.1812,posttrainbench_external.csv,0.03259999999999999
+claude-opus-4-1-20250805_unknown,TerminalBench,4,0.348,0.38,terminalbench_external.csv,0.03200000000000003
 claude-opus-4-1-20250805,TerminalBench,4,0.348,0.38,terminalbench_external.csv,0.03200000000000003
 LLaMA-7B,BIG-Bench Hard (BBH),3,0.303,0.335,bbh_external.csv,0.03200000000000003
-claude-opus-4-1-20250805_unknown,TerminalBench,4,0.348,0.38,terminalbench_external.csv,0.03200000000000003
 LLaMA-7B,WinoGrande,3,0.669,0.701,wino_grande_external.csv,0.03199999999999992
 Megatron-Turing NLG 530B,Adversarial NLI,3,0.366,0.397,adversarial_nli_external.csv,0.031000000000000028
 gpt-realtime-2025-08-28,AudioMultiChallenge,2,0.20350000000000001,0.2345,seal/audiomc.html,0.030999999999999972
 claude-opus-4-6,SWE-Bench Verified,2,0.756198347107438,0.7871900826446281,swe_bench_verified.csv,0.030991735537190035
+gpt-4o-2024-11-20,SEAL Instruction Following,2,0.795,0.8251999999999999,seal/instruction_following.html,0.030199999999999894
+gpt-5-codex,TerminalBench,3,0.413,0.443,terminalbench_external.csv,0.030000000000000027
 gemini-1.5-pro-001,WMDP Biology,2,0.765,0.795,rand_benchmark_scores.csv,0.030000000000000027
 LLaMA-33B,BoolQ,3,0.831,0.861,bool_q_external.csv,0.030000000000000027
-gpt-5-codex,TerminalBench,3,0.413,0.443,terminalbench_external.csv,0.030000000000000027
 claude-opus-4-7_unknown,ExploitBench,2,0.24,0.27,exploitbench_external.csv,0.030000000000000027
 LLaMA-7B,GSM8K,3,0.08,0.11,gsm8k_external.csv,0.03
 Yi-6B-Chat,MMLU,2,0.582,0.61,mmlu_external.csv,0.028000000000000025
@@ -200,28 +203,28 @@ gpt-4o-audio-preview-2025-06-03,AudioMultiChallenge,2,0.2323,0.2544,seal/audiomc
 MiniMax-M2.7,TerminalBench,2,0.429,0.451,terminalbench_external.csv,0.02200000000000002
 Megatron-Turing NLG 530B,HellaSwag,3,0.802,0.824,hella_swag_external.csv,0.02199999999999991
 gemini-2.5-flash,Visual Task Assessment (VISTA),2,0.4697,0.4915,seal/visual_language_understanding.html,0.021799999999999986
-phi-2,MMLU,2,0.563,0.584,mmlu_external.csv,0.02100000000000002
 Llama-2-7b,GSM8K,4,0.146,0.167,gsm8k_external.csv,0.02100000000000002
+phi-2,MMLU,2,0.563,0.584,mmlu_external.csv,0.02100000000000002
 mpt-7b,ARC (AI2),3,0.405,0.426,arc_ai2_external.csv,0.020999999999999963
 claude-opus-4-8_max,OS World 2,2,0.1852,0.206,osworld_2_external.csv,0.020799999999999985
 gpt-5.1-2025-11-13_high,SWE-Bench Verified,2,0.6590909090909091,0.6797520661157025,swe_bench_verified.csv,0.02066115702479343
 gpt-5.2-2025-12-11_medium,TerminalBench,2,0.629,0.649,terminalbench_external.csv,0.020000000000000018
 gemini-1.5-pro-001,BioLP-bench,2,0.048,0.068,rand_benchmark_scores.csv,0.020000000000000004
-kimi-k2.6,ExploitBench,2,0.16,0.18,exploitbench_external.csv,0.01999999999999999
 glm-5.1,ExploitBench,2,0.16,0.18,exploitbench_external.csv,0.01999999999999999
+kimi-k2.6,ExploitBench,2,0.16,0.18,exploitbench_external.csv,0.01999999999999999
+LLaMA-33B,MMLU,3,0.568,0.587,mmlu_external.csv,0.019000000000000017
 qwen2.5-72b-instruct,MMLU,2,0.834,0.853,mmlu_external.csv,0.019000000000000017
 LLaMA-7B,PIQA,3,0.779,0.798,piqa_external.csv,0.019000000000000017
-LLaMA-33B,MMLU,3,0.568,0.587,mmlu_external.csv,0.019000000000000017
 text-davinci-001,PIQA,4,0.804,0.823,piqa_external.csv,0.018999999999999906
 text-davinci-001,ARC (AI2),3,0.514,0.532,arc_ai2_external.csv,0.018000000000000016
 LLaMA-65B,BoolQ,3,0.853,0.871,bool_q_external.csv,0.018000000000000016
 internlm-chat-20b,MMLU,2,0.556,0.574,mmlu_external.csv,0.017999999999999905
 gpt-4o-mini-audio-preview-2024-12-17,AudioMultiChallenge,2,0.1305,0.1482,seal/audiomc.html,0.017699999999999994
-Llama-4-Maverick-17B-128E-Instruct,Lech Mazur Writing,2,0.62,0.637,lech_mazur_writing_external.csv,0.017000000000000015
+gpt-5-2025-08-07_unknown,VisualToolBench,2,0.1696,0.1868,seal/vtb.html,0.017199999999999993
+mpt-7b,PIQA,3,0.789,0.806,piqa_external.csv,0.017000000000000015
+gemini-2.5-flash-preview-09-2025,TerminalBench,4,0.154,0.171,terminalbench_external.csv,0.017000000000000015
 Llama-2-7b,BoolQ,3,0.762,0.779,bool_q_external.csv,0.017000000000000015
 Qwen-14B-Chat,GSM8K,2,0.595,0.612,gsm8k_external.csv,0.017000000000000015
-gemini-2.5-flash-preview-09-2025,TerminalBench,4,0.154,0.171,terminalbench_external.csv,0.017000000000000015
-mpt-7b,PIQA,3,0.789,0.806,piqa_external.csv,0.017000000000000015
 gemini-2.5-flash,TerminalBench,4,0.154,0.171,terminalbench_external.csv,0.017000000000000015
 gemini-1.5-pro-001,MMLU Biology,2,0.703,0.7190000000000001,rand_benchmark_scores.csv,0.016000000000000125
 Cerebras-GPT-13B,MMLU,2,0.246,0.262,mmlu_external.csv,0.016000000000000014
@@ -229,69 +232,70 @@ text-davinci-001,Adversarial NLI,3,0.339,0.354,adversarial_nli_external.csv,0.01
 falcon-40b,MMLU,2,0.554,0.569,mmlu_external.csv,0.014999999999999902
 Llama-2-7b,MMLU,4,0.444,0.458,mmlu_external.csv,0.014000000000000012
 LLaMA-13B,MMLU,3,0.463,0.477,mmlu_external.csv,0.013999999999999957
-open_llama_7b,MMLU,2,0.286,0.299,mmlu_external.csv,0.013000000000000012
 gemini-1.5-pro-001,GPQA Main Biology,2,0.615,0.628,rand_benchmark_scores.csv,0.013000000000000012
+open_llama_7b,MMLU,2,0.286,0.299,mmlu_external.csv,0.013000000000000012
 Llama-2-13b,BoolQ,3,0.811,0.824,bool_q_external.csv,0.0129999999999999
 gpt-5.5_none,SciCode,2,0.47337962962963,0.486111111111111,scicode_external.csv,0.01273148148148101
-Qwen-14B,GSM8K,2,0.601,0.613,gsm8k_external.csv,0.01200000000000001
+mpt-30b,GSM8K,2,0.152,0.164,gsm8k_external.csv,0.01200000000000001
 text-davinci-001,HellaSwag,3,0.781,0.793,hella_swag_external.csv,0.01200000000000001
 falcon-180B,BoolQ,2,0.878,0.89,bool_q_external.csv,0.01200000000000001
 falcon-40b,BoolQ,2,0.819,0.831,bool_q_external.csv,0.01200000000000001
-mpt-30b,GSM8K,2,0.152,0.164,gsm8k_external.csv,0.01200000000000001
-T5-Base,SuperGLUE,2,0.751,0.762,superglue_external.csv,0.01100000000000001
-mpt-7b,BoolQ,3,0.739,0.75,bool_q_external.csv,0.01100000000000001
+Qwen-14B,GSM8K,2,0.601,0.613,gsm8k_external.csv,0.01200000000000001
 Kimi-K2-Instruct,TerminalBench,2,0.267,0.278,terminalbench_external.csv,0.01100000000000001
-Qwen-14B-Chat,MMLU,2,0.64,0.65,mmlu_external.csv,0.010000000000000009
-Llama-2-13b,PIQA,3,0.798,0.808,piqa_external.csv,0.010000000000000009
+mpt-7b,BoolQ,3,0.739,0.75,bool_q_external.csv,0.01100000000000001
+T5-Base,SuperGLUE,2,0.751,0.762,superglue_external.csv,0.01100000000000001
 Llama-2-70b-hf,MMLU,4,0.689,0.699,mmlu_external.csv,0.010000000000000009
+claude-mythos-preview-early,ExploitBench,2,0.68,0.6900000000000001,exploitbench_external.csv,0.010000000000000009
+claude-haiku-4-5-20251001_unknown,ExploitBench,2,0.13,0.14,exploitbench_external.csv,0.010000000000000009
+falcon-7b,WinoGrande,4,0.662,0.672,wino_grande_external.csv,0.010000000000000009
+gemini-1.5-pro-001,LAB-Bench SeqQA,2,0.47,0.48,rand_benchmark_scores.csv,0.010000000000000009
 mpt-30b,MMLU,2,0.469,0.479,mmlu_external.csv,0.010000000000000009
 Qwen-VL-Chat,ScienceQA,2,0.672,0.682,science_qa_external.csv,0.010000000000000009
-falcon-7b,WinoGrande,4,0.662,0.672,wino_grande_external.csv,0.010000000000000009
-claude-haiku-4-5-20251001_unknown,ExploitBench,2,0.13,0.14,exploitbench_external.csv,0.010000000000000009
-gemini-1.5-pro-001,LAB-Bench SeqQA,2,0.47,0.48,rand_benchmark_scores.csv,0.010000000000000009
-claude-mythos-preview-early,ExploitBench,2,0.68,0.6900000000000001,exploitbench_external.csv,0.010000000000000009
+Llama-2-13b,PIQA,3,0.798,0.808,piqa_external.csv,0.010000000000000009
+Qwen-14B-Chat,MMLU,2,0.64,0.65,mmlu_external.csv,0.010000000000000009
 claude-sonnet-4-6_unknown,ExploitBench,2,0.23,0.24,exploitbench_external.csv,0.009999999999999981
 gemini-1.5-pro-001,LAB-Bench LitQA2,2,0.36700000000000005,0.377,rand_benchmark_scores.csv,0.009999999999999953
 gemma-7b,HellaSwag,2,0.812,0.822,hella_swag_external.csv,0.009999999999999898
-Llama-2-7b,PIQA,3,0.779,0.788,piqa_external.csv,0.009000000000000008
 LLaMA-13B,BIG-Bench Hard (BBH),3,0.37,0.379,bbh_external.csv,0.009000000000000008
+Llama-2-7b,PIQA,3,0.779,0.788,piqa_external.csv,0.009000000000000008
 falcon-11b,HellaSwag,2,0.8207,0.8291,hella_swag_external.csv,0.008399999999999963
+gemini-1.5-pro-001-feb24,MMLU,2,0.819,0.827,mmlu_external.csv,0.008000000000000007
 Llama-2-13b,MMLU,4,0.548,0.556,mmlu_external.csv,0.008000000000000007
 dolly-v2-12b,MMLU,2,0.254,0.262,mmlu_external.csv,0.008000000000000007
 Yi-6B,MMLU,2,0.632,0.64,mmlu_external.csv,0.008000000000000007
-gemini-1.5-pro-001-feb24,MMLU,2,0.819,0.827,mmlu_external.csv,0.008000000000000007
 falcon-7b,BIG-Bench Hard (BBH),2,0.28,0.2877,bbh_external.csv,0.007699999999999985
 opt-13b,MMLU,2,0.244,0.251,mmlu_external.csv,0.007000000000000006
 PaLM 540B,BoolQ,2,0.88,0.887,bool_q_external.csv,0.007000000000000006
 falcon-40b,PIQA,2,0.824,0.83,piqa_external.csv,0.006000000000000005
-gpt-j-6b,MMLU,2,0.251,0.257,mmlu_external.csv,0.006000000000000005
 GLaM (MoE),HellaSwag,3,0.766,0.772,hella_swag_external.csv,0.006000000000000005
+gpt-j-6b,MMLU,2,0.251,0.257,mmlu_external.csv,0.006000000000000005
 mpt-7b,WinoGrande,3,0.68,0.686,wino_grande_external.csv,0.006000000000000005
 Qwen2.5-VL-72B-Instruct,OS World (Screenshot),2,0.044000000000000004,0.05,os_world_external.csv,0.005999999999999998
-Phi-3-medium-128k-instruct,MMLU,3,0.775,0.78,mmlu_external.csv,0.0050000000000000044
-falcon-40b,WinoGrande,2,0.764,0.769,wino_grande_external.csv,0.0050000000000000044
-RedPajama-INCITE-7B-Base,MMLU,2,0.258,0.263,mmlu_external.csv,0.0050000000000000044
-Llama-2-70b-chat,MMLU,2,0.594,0.599,mmlu_external.csv,0.0050000000000000044
-llava-v1.6-vicuna-7b,ScienceQA,2,0.701,0.706,science_qa_external.csv,0.0050000000000000044
 MiniMax-M2.5,TerminalBench,2,0.422,0.427,terminalbench_external.csv,0.0050000000000000044
+RedPajama-INCITE-7B-Base,MMLU,2,0.258,0.263,mmlu_external.csv,0.0050000000000000044
+llava-v1.6-vicuna-7b,ScienceQA,2,0.701,0.706,science_qa_external.csv,0.0050000000000000044
+falcon-40b,WinoGrande,2,0.764,0.769,wino_grande_external.csv,0.0050000000000000044
+Llama-2-70b-chat,MMLU,2,0.594,0.599,mmlu_external.csv,0.0050000000000000044
+Phi-3-medium-128k-instruct,MMLU,3,0.775,0.78,mmlu_external.csv,0.0050000000000000044
 PaLM 540B,HellaSwag,3,0.834,0.838,hella_swag_external.csv,0.0040000000000000036
 T5-Large,SuperGLUE,2,0.823,0.827,superglue_external.csv,0.0040000000000000036
-gpt-oss-20b,TerminalBench,2,0.031,0.034,terminalbench_external.csv,0.0030000000000000027
 gpt-oss-20b_unknown,TerminalBench,2,0.031,0.034,terminalbench_external.csv,0.0030000000000000027
+claude-fable-5,Remote Labor Index,2,0.158,0.161,"rli_external.csv, seal/rli.html",0.0030000000000000027
+gpt-oss-20b,TerminalBench,2,0.031,0.034,terminalbench_external.csv,0.0030000000000000027
 Phi-3-mini-4k-instruct,LiveBench,2,0.2208,0.2236,live_bench_external.csv,0.002799999999999997
 Baichuan-2-13B-Base,BIG-Bench Hard (BBH),3,0.4878,0.49,bbh_external.csv,0.0021999999999999797
 Llama-2-70b-hf,PIQA,2,0.826,0.828,piqa_external.csv,0.0020000000000000018
 claude-opus-4-5-20251101,PostTrainBench,2,0.1714,0.1729,posttrainbench_external.csv,0.0015000000000000013
 glm-4.7,TerminalBench,2,0.3329999999999999,0.334,terminalbench_external.csv,0.001000000000000112
-Gopher (280B),BoolQ,2,0.793,0.794,bool_q_external.csv,0.0010000000000000009
-Baichuan-2-7B-Base,GSM8K,2,0.245,0.246,gsm8k_external.csv,0.0010000000000000009
-DeepSeek-V3,MMLU,2,0.871,0.872,mmlu_external.csv,0.0010000000000000009
-gemini-3.1-pro-preview,BALROG,2,0.569,0.57,balrog_external.csv,0.0010000000000000009
-Llama-2-7b,WinoGrande,2,0.691,0.692,wino_grande_external.csv,0.0010000000000000009
-Yi-34B,MMLU,2,0.762,0.763,mmlu_external.csv,0.0010000000000000009
 Gopher (280B),WinoGrande,2,0.701,0.702,wino_grande_external.csv,0.0010000000000000009
+DeepSeek-V3,MMLU,2,0.871,0.872,mmlu_external.csv,0.0010000000000000009
+Baichuan-2-7B-Base,GSM8K,2,0.245,0.246,gsm8k_external.csv,0.0010000000000000009
+Llama-2-7b,WinoGrande,2,0.691,0.692,wino_grande_external.csv,0.0010000000000000009
 Mixtral-8x7B-v0.1,MMLU,2,0.705,0.706,mmlu_external.csv,0.0010000000000000009
+Gopher (280B),BoolQ,2,0.793,0.794,bool_q_external.csv,0.0010000000000000009
+gemini-3.1-pro-preview,BALROG,2,0.569,0.57,balrog_external.csv,0.0010000000000000009
 LLaMA-33B,PIQA,2,0.822,0.823,piqa_external.csv,0.0010000000000000009
+Yi-34B,MMLU,2,0.762,0.763,mmlu_external.csv,0.0010000000000000009
 text-davinci-001,ScienceQA,2,0.7397,0.7404,science_qa_external.csv,0.0006999999999999229
 Baichuan-2-7B-Base,BIG-Bench Hard (BBH),2,0.4156,0.416,bbh_external.csv,0.00039999999999995595
 Baichuan-2-13B-Base,MMLU,2,0.5917,0.592,mmlu_external.csv,0.00029999999999996696

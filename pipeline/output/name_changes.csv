@@ -8,9 +8,10 @@ Llama-2-70b-hf ,Llama-2-70b-hf,BoolQ,BoolQ,bool_q_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,Chess Puzzles,Chess Puzzles,chess_puzzles.csv
 moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,CL-Bench,CL-Bench,cl_bench_external.csv
 zai-org/glm-4.7,glm-4.7,CL-Bench,CL-Bench,cl_bench_external.csv
+zai-org/glm-4.7_high,glm-4.7_high,CL-Bench Life,CL-Bench Life,cl_bench_life_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,CSQA2,CSQA2,common_sense_qa_2_external.csv
-chutes/Llama-4-Maverick-17B-128E-Instruct,Llama-4-Maverick-17B-128E-Instruct,CritPt,CritPt,critpt_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,CritPt,CritPt,critpt_external.csv
+chutes/Llama-4-Maverick-17B-128E-Instruct,Llama-4-Maverick-17B-128E-Instruct,CritPt,CritPt,critpt_external.csv
 chutes/Llama-4-Maverick-17B-128E-Instruct,Llama-4-Maverick-17B-128E-Instruct,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 chutes/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 deepinfra/Qwen3-Next-80B-A3B-Instruct,Qwen3-Next-80B-A3B-Instruct,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
@@ -563,19 +564,26 @@ gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05_unknown,EnigmaEval,EnigmaEval,seal
 gpt-5-pro-2025-10-06,gpt-5-pro-2025-10-06_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 gpt-5.4-2026-03-05 (xhigh thinking),gpt-5.4-2026-03-05_xhigh,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 o3 (medium) (April 2025),o3-2025-04-16_medium,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 o3 (high) (April 2025),o3-2025-04-16_high,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 gpt-5.2-2025-12-11,gpt-5.2-2025-12-11_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 o4-mini (high) (April 2025),o4-mini-2025-04-16_high,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 gpt-5-mini-2025-08-07,gpt-5-mini-2025-08-07_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 claude-opus-4-6-thinking-max,claude-opus-4-6_max,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6 (Non-Thinking),EnigmaEval,EnigmaEval,seal/enigma_eval.html
+claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 o4-mini (medium) (April 2025),o4-mini-2025-04-16_medium,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+o1 Pro (March 2025),o1-pro-2025-03-19,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 o1 (December 2024),o1-2024-12-17_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+Claude Opus 4 (Thinking),claude-opus-4-20250514_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Claude 3.7 Sonnet Thinking (Feb 2025),claude-3-7-sonnet-20250219_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Gemini 2.5 Pro Experimental (March 2025),gemini-2.5-pro-exp-03-25,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Claude Opus 4,claude-opus-4-20250514,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 GPT-4.5 Preview (February 2025),gpt-4.5-preview-2025-02-27,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+Claude Sonnet 4 (Thinking),claude-sonnet-4-20250514_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Gemini 2.5 Flash Preview (May 2025) ,gemini-2.5-flash,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Gemini 2.5 Pro Preview (May 06 2025),gemini-2.5-pro-preview-05-06,EnigmaEval,EnigmaEval,seal/enigma_eval.html
@@ -583,9 +591,11 @@ Claude 3.7 Sonnet (February 2025),claude-3-7-sonnet-20250219,EnigmaEval,EnigmaEv
 Claude Sonnet 4,claude-sonnet-4-20250514,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 GPT-4.1,gpt-4.1-2025-04-14,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 gpt-5.1-instant,gpt-5.1-2025-11-13_none,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+Gemini 2.0 Flash Thinking (January 2025),gemini-2.0-flash-thinking-exp-01-21,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Claude 3.5 Sonnet (October 2024),claude-3-5-sonnet-20241022,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Claude 3 Opus,claude-3-opus-20240229,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 GPT-4o (November 2024),gpt-4o-2024-11-20,EnigmaEval,EnigmaEval,seal/enigma_eval.html
+Gemini 2.0 Pro Experimental (Feb 2025),gemini-2.0-pro-exp-02-05,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Gemini 2.0 Flash (February 2025),gemini-2.0-flash-001,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 Llama 3.2 90B Vision Instruct,Llama-3.2-90B-Vision-Instruct,EnigmaEval,EnigmaEval,seal/enigma_eval.html
@@ -594,25 +604,40 @@ Claude Fable 5,claude-fable-5,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-8 (max),claude-opus-4-8_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Muse Spark,muse-spark,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-7 (max),claude-opus-4-7_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+gemini-3.1-pro-preview (high),gemini-3.1-pro-preview_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-6 (max),claude-opus-4-6_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 glm-5p1,glm-5.1,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.5 (xhigh),gpt-5.5_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.4 (xhigh),gpt-5.4-2026-03-05_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+claude-opus-4-5 (high),claude-opus-4-5-20251101_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.2 (xhigh),gpt-5.2-2025-12-11_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 kimi-k2p5,kimi-k2.5,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+claude-sonnet-4-5 (thinking),claude-sonnet-4-5-20250929_unknown,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 glm-4p7,glm-4.7,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+gemini-3.1-flash-lite (high),gemini-3.1-flash-lite_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.4-mini (xhigh),gpt-5.4-mini-2026-03-17_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.1 (high),gpt-5.1-2025-11-13_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-haiku-4-5,claude-haiku-4-5-20251001,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Muse Spark,muse-spark,MultiChallenge,MultiChallenge,seal/multichallenge.html
+"Muse Spark 1.1
+",Muse Spark 1.1,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
+gpt-5.1-2025-11-13-thinking,gpt-5.1-2025-11-13_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
+gpt-5-thinking,gpt-5-2025-08-07_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
 o3-pro-2025-06-10-reasoning-high,o3-pro-2025-06-10_high,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,MultiChallenge,MultiChallenge,seal/multichallenge.html
+gpt-5-mini-thinking,gpt-5-mini-2025-08-07_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
+claude-4-opus-thinking,claude-opus-4-20250514_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
+claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
+claude-4-sonnet-thinking,claude-sonnet-4-20250514_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
 o3-2025-04-16-reasoning-high,o3-2025-04-16_high,MultiChallenge,MultiChallenge,seal/multichallenge.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6 (Non-Thinking),MultiChallenge,MultiChallenge,seal/multichallenge.html
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
+claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gemini-2-5-pro,gemini-2.5-pro,MultiChallenge,MultiChallenge,seal/multichallenge.html
 claude-3-7-sonnet-thinking,claude-3-7-sonnet-20250219_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gpt-5.1-2025-11-13-instant,gpt-5.1-2025-11-13_none,MultiChallenge,MultiChallenge,seal/multichallenge.html
+claude-haiku-4-5-20251001-thinking,claude-haiku-4-5-20251001_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
 deepseek-v3p1,DeepSeek-V3.1,MultiChallenge,MultiChallenge,seal/multichallenge.html
 o4-mini-2025-04-16-reasoning-high,o4-mini-2025-04-16_high,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gpt-4.1,gpt-4.1-2025-04-14,MultiChallenge,MultiChallenge,seal/multichallenge.html
@@ -624,13 +649,17 @@ Muse Spark,muse-spark,MultiNRC,MultiNRC,seal/multinrc.html
 gpt-5.4-2026-03-05 (xhigh thinking),gpt-5.4-2026-03-05_xhigh,MultiNRC,MultiNRC,seal/multinrc.html
 claude-opus-4-6-thinking-max,claude-opus-4-6_max,MultiNRC,MultiNRC,seal/multinrc.html
 gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,MultiNRC,MultiNRC,seal/multinrc.html
+gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,MultiNRC,MultiNRC,seal/multinrc.html
 o3-pro-2025-06-10-high,o3-pro-2025-06-10_high,MultiNRC,MultiNRC,seal/multinrc.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6 (Non-Thinking),MultiNRC,MultiNRC,seal/multinrc.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,MultiNRC,MultiNRC,seal/multinrc.html
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,MultiNRC,MultiNRC,seal/multinrc.html
 o3-2025-04-16-high,o3-2025-04-16_high,MultiNRC,MultiNRC,seal/multinrc.html
 Gemini-2.5-Pro-Preview-06-05,gemini-2.5-pro-preview-06-05,MultiNRC,MultiNRC,seal/multinrc.html
 o3-2025-04-16-medium,o3-2025-04-16_medium,MultiNRC,MultiNRC,seal/multinrc.html
 gpt-5.2-2025-12-11,gpt-5.2-2025-12-11_unknown,MultiNRC,MultiNRC,seal/multinrc.html
-Claude-4-Opus-20250514-thinking,claude-4-opus-20250514-thinking,MultiNRC,MultiNRC,seal/multinrc.html
+claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805_unknown,MultiNRC,MultiNRC,seal/multinrc.html
+claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929_unknown,MultiNRC,MultiNRC,seal/multinrc.html
+Claude-4-Opus-20250514-thinking,claude-opus-4-20250514_unknown,MultiNRC,MultiNRC,seal/multinrc.html
 Claude-4-Opus-20250514,claude-opus-4-20250514,MultiNRC,MultiNRC,seal/multinrc.html
 Claude-3.7-Sonnet-thinking,claude-3-7-sonnet-20250219_unknown,MultiNRC,MultiNRC,seal/multinrc.html
 Deepseek-R1-0528,DeepSeek-R1-0528,MultiNRC,MultiNRC,seal/multinrc.html
@@ -659,16 +688,25 @@ gpt-5-mini-2025-08-07,gpt-5-mini-2025-08-07_unknown,Visual Task Assessment (VIST
 o3 (high) (April 2025),o3-2025-04-16_high,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 o3 (medium) (April 2025),o3-2025-04-16_medium,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Gemini 2.5 Flash Preview (May 2025) ,gemini-2.5-flash,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+o1 Pro (March 2025),o1-pro-2025-03-19,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Claude 3.7 Sonnet Thinking (Feb 2025),claude-3-7-sonnet-20250219_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 gpt-5.2-2025-12-11,gpt-5.2-2025-12-11_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Gemini 2.5 Flash (April 2025),gemini-2.5-flash,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+Claude Opus 4 (Thinking),claude-opus-4-20250514_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+Gemini 2.0 Flash Thinking Experimental,gemini-2.0-flash-thinking-exp-01-21,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 claude-opus-4-6-thinking-max,claude-opus-4-6_max,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 GPT-4.1,gpt-4.1-2025-04-14,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6 (Non-Thinking),Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+Claude Sonnet 4 (Thinking),claude-sonnet-4-20250514_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 o1 (December 2024),o1-2024-12-17_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Claude Opus 4 ,claude-opus-4-20250514,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+Gemini 2.0 Pro Experimental (Feb 2025),gemini-2.0-pro-exp-02-05,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Claude Sonnet 4,claude-sonnet-4-20250514,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Claude 3.7 Sonnet (February 2025),claude-3-7-sonnet-20250219,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 GPT-4.5 Preview (February 2025),gpt-4.5-preview-2025-02-27,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
@@ -687,6 +725,7 @@ Gemini 2.0 Flash Lite Preview,gemini-2.0-flash-lite,Visual Task Assessment (VIST
 Claude 3 Opus,claude-3-opus-20240229,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 GPT-4.1 nano,gpt-4.1-nano-2025-04-14,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Nova Pro,amazon.nova-pro-v1:0,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+Pixtral 12B (September 2024),Pixtral-12B-2409,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Nova Lite,amazon.nova-lite-v1:0,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Llama 3.2 90B Vision Instruct,Llama-3.2-90B-Vision-Instruct,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Llama 3.2 11B Vision-Instruct,Llama-3.2-11B-Vision-Instruct,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
@@ -694,18 +733,24 @@ Phi 3.5 Vision-Instruct,Phi-3.5-vision-instruct,Visual Task Assessment (VISTA),V
 Muse Spark,muse-spark,TutorBench,TutorBench,seal/tutorbench.html
 gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05_unknown,TutorBench,TutorBench,seal/tutorbench.html
 gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,TutorBench,TutorBench,seal/tutorbench.html
+gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,TutorBench,TutorBench,seal/tutorbench.html
 claude-opus-4-6-thinking-max,claude-opus-4-6_max,TutorBench,TutorBench,seal/tutorbench.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6 (Non-Thinking),TutorBench,TutorBench,seal/tutorbench.html
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,TutorBench,TutorBench,seal/tutorbench.html
 gpt-5.2-2025-12-11,gpt-5.2-2025-12-11_unknown,TutorBench,TutorBench,seal/tutorbench.html
 o3-2025-04-16-medium,o3-2025-04-16_medium,TutorBench,TutorBench,seal/tutorbench.html
 o3-2025-04-16-high,o3-2025-04-16_high,TutorBench,TutorBench,seal/tutorbench.html
 gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,TutorBench,TutorBench,seal/tutorbench.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,TutorBench,TutorBench,seal/tutorbench.html
+claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805_unknown,TutorBench,TutorBench,seal/tutorbench.html
+claude-4-opus-20250514-thinking,claude-opus-4-20250514_unknown,TutorBench,TutorBench,seal/tutorbench.html
 gpt-5.1-instant,gpt-5.1-2025-11-13_none,TutorBench,TutorBench,seal/tutorbench.html
+claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929_unknown,TutorBench,TutorBench,seal/tutorbench.html
 claude-opus-4-1-20250805_anthropic,claude-opus-4-1-20250805,TutorBench,TutorBench,seal/tutorbench.html
 claude-37-sonnet-thinking,claude-3-7-sonnet-20250219_unknown,TutorBench,TutorBench,seal/tutorbench.html
 llama4-maverick,Llama-4-Maverick-17B-128E-Instruct,TutorBench,TutorBench,seal/tutorbench.html
 o1 (December 2024),o1-2024-12-17_unknown,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Gemini 2.5 Pro Experimental (March 2025),gemini-2.5-pro-exp-03-25,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
+o1 Pro (March 2025),o1-pro-2025-03-19,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Claude 3.7 Sonnet Thinking (February 2025),claude-3-7-sonnet-20250219_unknown,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 o3-mini (high),o3-mini-2025-01-31_high,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Claude 3.7 Sonnet (February 2025),claude-3-7-sonnet-20250219,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
@@ -713,7 +758,9 @@ o3-mini (medium),o3-mini-2025-01-31_medium,SEAL Tool Use (Enterprise),SEAL Tool 
 GPT-4o (May 2024),gpt-4o-2024-05-13,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 DeepSeek V3 (March 2025),DeepSeek-V3-0324,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 GPT-4.5 Preview (February 2025),gpt-4.5-preview-2025-02-27,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
+Gemini 2.0 Flash Thinking Experimental (January 2025),gemini-2.0-flash-thinking-exp-01-21,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 DeepSeek-V3 (December 2024),DeepSeek-V3,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
+Gemini 2.0 Pro Experimental (February 2025),gemini-2.0-pro-exp-02-05,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 GPT-4 Turbo Preview,gpt-4-turbo,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 "Gemini 1.5 Pro (August 27, 2024)",gemini-1.5-pro-002,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Gemini 2.0 Flash Experimental (December 2024),gemini-2.0-flash-exp,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
@@ -724,6 +771,7 @@ Claude 3 Sonnet,claude-3-sonnet-20240229,SEAL Tool Use (Enterprise),SEAL Tool Us
 Gemini 2.0 Flash Lite Preview (February 2025),gemini-2.0-flash-lite,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Claude 3 Opus,claude-3-opus-20240229,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 GPT-4o mini,gpt-4o-mini-2024-07-18,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
+GPT-4,gpt-4-0613,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Llama 3.1 405B Instruct,Llama-3.1-405B-Instruct,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Mistral Large 2,mistral-large-2407,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Nova Pro,amazon.nova-pro-v1:0,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
@@ -733,10 +781,11 @@ Nova LIte,amazon.nova-lite-v1:0,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterp
 Command R+,c4ai-command-r-plus-08-2024,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Nova Mirco,amazon.nova-micro-v1:0,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Llama 3.1 8B Instruct,Llama-3.1-8B-Instruct,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
+Muse Spark 1.1*,Muse Spark 1.1,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 gpt-5.4 (xHigh)*,gpt-5.4-2026-03-05_xhigh,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 Muse Spark*,muse-spark,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
-claude-opus-4-6 (thinking)*,claude-opus-4-6 (thinking),SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
-gemini-3.1-pro (thinking)*,gemini-3.1-pro (thinking),SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
+claude-opus-4-6 (thinking)*,claude-opus-4-6_unknown,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
+gemini-3.1-pro (thinking)*,gemini-3.1-pro-preview,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 claude-4-5-Sonnet,claude-sonnet-4-5-20250929,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 claude-4-Sonnet,claude-sonnet-4-20250514,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 gpt-5-2025-08-07 (High),gpt-5-2025-08-07_high,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
@@ -748,17 +797,20 @@ gpt-5.2,gpt-5.2-2025-12-11_unknown,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pr
 kimi-k2-instruct,Kimi-K2-Instruct,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 llama3-1-405b-instruct,Llama-3.1-405B-Instruct,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 llama4-maverick-17b-instruct,Llama-4-Maverick-17B-128E-Instruct,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
-claude-opus-4-6 (thinking)*,claude-opus-4-6 (thinking),SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
+Muse Spark 1.1*,Muse Spark 1.1,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
+claude-opus-4-6 (thinking)*,claude-opus-4-6_unknown,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 Muse Spark*,muse-spark,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 gpt-5.4(xHigh)*,gpt-5.4-2026-03-05_xhigh,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
-gemini-3.1-pro (thinking)*,gemini-3.1-pro (thinking),SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
+gemini-3.1-pro (thinking)*,gemini-3.1-pro-preview,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 GPT 5.2 Codex,gpt-5.2-codex,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 GPT 5.2,gpt-5.2-2025-12-11_unknown,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 Opus 4.5,claude-opus-4-5-20251101,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 Gemini 3 Pro,gemini-3-pro-preview,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 Claude Opus 4.1,claude-opus-4-1-20250805,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
+OpenAI GPT-5,gpt-5-2025-08-07_medium,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 Gemini 2.5 Pro Preview,gemini-2.5-pro,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 Claude Sonnet 4,claude-sonnet-4-20250514,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
+OpenAI GPT-4o,gpt-4o-2024-08-06,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 o1 (December 2024),o1-2024-12-17_unknown,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
 DeepSeek R1,DeepSeek-R1,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
 Gemini 2.0 Flash Experimental (December 2024),gemini-2.0-flash-exp,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
@@ -775,12 +827,17 @@ Llama 3 70B Instruct,Meta-Llama-3-70B-Instruct,SEAL Instruction Following,SEAL I
 GPT-4o (August 2024),gpt-4o-2024-08-06,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
 Claude 3 Opus,claude-3-opus-20240229,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
 Mistral Large,mistral-large-2402,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
+GPT-4 (November 2024),gpt-4o-2024-11-20,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
 Gemini 1.5 Pro (May 2024),gemini-1.5-pro-001,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6 (Non-Thinking),PRBench Finance,PRBench Finance,seal/prbench-finance.html
+"Muse Spark 1.1
+",Muse Spark 1.1,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 Muse Spark,muse-spark,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gpt-5,gpt-5-2025-08-07_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gpt-5-pro,gpt-5-pro-2025-10-06_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 o3,o3-2025-04-16_medium,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gpt-5.4 (High),gpt-5.4-2026-03-05_high,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gemini-3.1-pro,gemini-3.1-pro-preview,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 mistral-medium-latest,mistral-medium-2505,PRBench Finance,PRBench Finance,seal/prbench-finance.html
@@ -792,11 +849,13 @@ deepseek-r1-0528,DeepSeek-R1-0528,PRBench Finance,PRBench Finance,seal/prbench-f
 gpt-4.1-mini,gpt-4.1-mini-2025-04-14,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 llama4-maverick-instruct-basic,Llama-4-Maverick-17B-128E-Instruct,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 Muse Spark,muse-spark,PRBench Legal,PRBench Legal,seal/prbench-legal.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6 (Non-Thinking),PRBench Legal,PRBench Legal,seal/prbench-legal.html
+claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 gpt-5-pro,gpt-5-pro-2025-10-06_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
+gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 gpt-5,gpt-5-2025-08-07_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 o3,o3-2025-04-16_medium,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 gpt-5.4 (High),gpt-5.4-2026-03-05_high,PRBench Legal,PRBench Legal,seal/prbench-legal.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 gemini-3.1-pro,gemini-3.1-pro-preview,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 mistral-medium-latest,mistral-medium-2505,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 qwen.qwen3-235b-a22b-2507-v1:0,Qwen3-235B-A22B-Instruct-2507,PRBench Legal,PRBench Legal,seal/prbench-legal.html
@@ -809,20 +868,28 @@ llama4-maverick-instruct-basic,Llama-4-Maverick-17B-128E-Instruct,PRBench Legal,
 Fable-5,claude-fable-5,Remote Labor Index,Remote Labor Index,seal/rli.html
 Opus 4.8,claude-opus-4-8_unknown,Remote Labor Index,Remote Labor Index,seal/rli.html
 Codex GPT 5.5,gpt-5.5-codex,Remote Labor Index,Remote Labor Index,seal/rli.html
+claude-opus-4-6 (CoWork),claude-opus-4-6,Remote Labor Index,Remote Labor Index,seal/rli.html
+claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,Remote Labor Index,Remote Labor Index,seal/rli.html
 gpt-5.2-2025-12-11 (medium),gpt-5.2-2025-12-11_medium,Remote Labor Index,Remote Labor Index,seal/rli.html
 claude-4-5-Sonnet,claude-sonnet-4-5-20250929,Remote Labor Index,Remote Labor Index,seal/rli.html
 gpt-5.2-2025-12-11 (default),gpt-5.2-2025-12-11_unknown,Remote Labor Index,Remote Labor Index,seal/rli.html
 gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,Remote Labor Index,Remote Labor Index,seal/rli.html
 gpt-5.4-2026-03-05 (reasoning effort = high),gpt-5.4-2026-03-05_high,VisualToolBench,VisualToolBench,seal/vtb.html
+claude-opus-4-6-thinking,claude-opus-4-6_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
+gpt-5-2025-08-07-thinking,gpt-5-2025-08-07_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
 gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
 o3-2025-04-16,o3-2025-04-16_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
+claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
+claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
 claude-sonnet-4,claude-sonnet-4-20250514,VisualToolBench,VisualToolBench,seal/vtb.html
+claude-sonnet-4-thinking,claude-sonnet-4-20250514_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
 llama4-scout,Llama-4-Scout-17B-16E-Instruct,VisualToolBench,VisualToolBench,seal/vtb.html
 llama4-maverick,Llama-4-Maverick-17B-128E-Instruct,VisualToolBench,VisualToolBench,seal/vtb.html
-gemini-3-pro-preview (Thinking)*,gemini-3-pro-preview (Thinking),AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
-gemini-2.5-pro (Thinking)*,gemini-2.5-pro (Thinking),AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
-gemini-2.5-flash (Thinking)*,gemini-2.5-flash (Thinking),AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
-gemini-3.1-flash-live-preview (Thinking)†,gemini-3.1-flash-live-preview (Thinking),AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+Inkling (Thinking)*,Inkling (Thinking),AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+gemini-3-pro-preview (Thinking)*,gemini-3-pro-preview,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+gemini-2.5-pro (Thinking)*,gemini-2.5-pro,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+gemini-2.5-flash (Thinking)*,gemini-2.5-flash,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+gemini-3.1-flash-live-preview (Thinking)†,gemini-3.1-flash-live-preview,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 gpt-realtime-1.5†,gpt-realtime-1.5,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 "gpt-realtime-1.5*
 ",gpt-realtime-1.5,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
