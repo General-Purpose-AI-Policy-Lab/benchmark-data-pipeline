@@ -28,8 +28,6 @@ claude-3-5-sonnet-20240620,0.0,2024-06-20,Anthropic,FrontierMath Tier 4 v1,0.0,E
 grok-3-beta,0.0,2025-04-09,xAI,FrontierMath Tier 4 v1,0.0,EpochAI (live feed),High End Math Reasoning
 claude-sonnet-4-20250514,0.0,2025-05-22,Anthropic,FrontierMath Tier 4 v1,0.0,EpochAI (live feed),High End Math Reasoning
 claude-haiku-4-5-20251001_unknown,0.0,2025-10-15,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,Multimodal Understanding
-glm-5.1,0.0,2026-04-07,Z.ai (Zhipu AI),GBAEval,,https://gbaeval.com/model/goose-glm-5-1,Agentic Computer Use
-MiniMax-M2.7,0.0,2026-03-18,MiniMax,GBAEval,,https://gbaeval.com/model/goose-minimax-m2-7,Agentic Computer Use
 DeepSeek-V3-0324,0.0,2025-03-24,DeepSeek,CritPt,,EpochAI,Domain Specific Questions
 claude-3-5-sonnet-20241022,0.0,2024-10-22,Anthropic,FrontierMath Tier 4 v1,0.0,EpochAI (live feed),High End Math Reasoning
 gpt-5-2025-08-07_minimal,0.0,2025-08-07,OpenAI,ARC-AGI-2,,EpochAI,Core AGI Progress
