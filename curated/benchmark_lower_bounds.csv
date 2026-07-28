@@ -5,10 +5,12 @@ ARC-AGI,0.0,Programmatic pattern tasks,https://arcprize.org/leaderboard
 ARC-AGI-2,0.0,Programmatic pattern tasks,https://arcprize.org/leaderboard
 Adversarial NLI,0.333,3-label NLI (E/N/C),https://arxiv.org/abs/1910.14599
 Aider Polyglot,0.0,Agentic coding tasks,https://epoch.ai/benchmarks/aider-polyglot
+AlgoTune,0.0,"Score is 1-1/speedup, so 0 = no improvement over the reference implementation",https://epoch.ai/benchmarks/algotune
 AudioMultiChallenge,0.0,LLM-judged multi-turn audio conversations,https://scale.com/leaderboard/audiomc
 BALROG,0.0,Long-horizon agent tasks,https://epoch.ai/benchmarks/balrog
 BIG-Bench Hard (BBH),0.25,4-optionMCQ,https://github.com/suzgunmirac/BIG-Bench-Hard
 BioLP-bench,0.0,"Free-form, long-answer",https://www.biorxiv.org/content/10.1101/2024.08.21.608694v3
+BlueprintBench 2,0.0,Free-form blueprint reconstruction,https://andonlabs.com/evals/blueprint-bench-2
 BoolQ,0.5,Yes/No,https://epoch.ai/benchmarks/bool-q
 CAD-Eval,0.0,Valid parametric 3D designs,https://epoch.ai/benchmarks/cad-eval
 CL-Bench,0.0,"Open-ended clinical reasoning, graded score",https://epoch.ai/benchmarks/cl-bench
@@ -19,6 +21,8 @@ CritPt,0.0,Free-form physics critical-thinking answers,https://epoch.ai/benchmar
 CursorBench,0.0,Agentic coding tasks,https://epoch.ai/benchmarks/cursor-bench
 Cybench,0.0,CTFs,https://epoch.ai/benchmarks/cybench
 DeepResearchBench,0.0,No single random baseline (heterogeneous/generative/Elo score); Research/agent workflow; heterogeneous formats,https://epoch.ai/benchmarks/deepresearchbench
+DeepSWE,0.0,Agentic code patches must pass tests,https://deepswe.datacurve.ai/
+EBR-bench,0.0,Long-horizon agentic game play; no guessable baseline,https://epoch.ai/benchmarks/ebr-bench
 EnigmaEval,0.0,Exact string match on open-ended answers,https://scale.com/leaderboard/enigma_eval
 ExploitBench,0.0,Free-form security exploit tasks,https://epoch.ai/benchmarks/exploit-bench
 Fiction.LiveBench,0.0,Open-ended long-context comprehension: 36 questions on 30 stories graded fraction-correct (ingested = 120k-token accuracy); no fixed answer options so no chance baseline; data min 0.188 sits below any MCQ chance which corroborates open-ended,https://epoch.ai/benchmarks/fictionlivebench
@@ -26,6 +30,9 @@ ForecastBench,0.5,Brier Index on a 0-100% scale where 50% = uninformed guess (Ep
 FrontierCode,0.0,Code-generation tasks,https://epoch.ai/benchmarks/frontier-code
 FrontierMath,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
 FrontierMath Tier 4,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
+GBAEval,0.0,Agentic game play; no guessable baseline,https://epoch.ai/benchmarks/gbaeval
+GDP.pdf,0.0,Free-form economic reasoning,https://epoch.ai/benchmarks/gdp-pdf
+GDPval,0.0,Win rate vs human expert deliverables; a null model wins nothing,https://epoch.ai/benchmarks/gdpval
 GPQA Diamond,0.25,4-option MCQ,https://epoch.ai/benchmarks/gpqa-diamond
 GPQA Diamond Biology,0.25,4-option MCQ,https://epoch.ai/benchmarks/gpqa-diamond
 GPQA Diamond Chemistry,0.25,4-option MCQ,https://epoch.ai/benchmarks/gpqa-diamond
@@ -51,6 +58,7 @@ MMLU Biology,0.25,4-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Chemistry,0.25,4-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Pro Biology,0.1,10-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Pro Chemistry,0.1,10-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
+MindCube,0.3235,Published random-chance baseline 32.35% (per-split 36.36/32.29/30.66); NOT 1/4 - option count varies,https://mind-cube.github.io/
 MultiChallenge,0.0,LLM-judged multi-turn conversations,https://scale.com/leaderboard/multichallenge
 MultiNRC,0.0,LLM-judged short-answer tasks,https://scale.com/research/multinrc
 OS World (Screenshot),0.0,GUI agent tasks,https://epoch.ai/benchmarks/os-world
@@ -61,6 +69,7 @@ PIQA,0.5,2-option physical commonsense,https://epoch.ai/benchmarks/piqa
 PRBench Finance,0.0,Minimum normalized at 0,https://scale.com/research/prbench
 PRBench Legal,0.0,Minimum normalized at 0,https://scale.com/research/prbench
 PostTrainBench,0.0,Post-training improvement score,https://posttrainbench.com/
+ProofBench,0.0,Lean proof must compile; guessing yields nothing,https://www.vals.ai/benchmarks/proof_bench
 Remote Labor Index,0.0,Task automation success rate,https://scale.com/leaderboard/rli
 SEAL Instruction Following,0.0,LLM-judged instruction following,https://scale.com/leaderboard/instruction_following
 SEAL Tool Use (Enterprise),0.0,Long-horizon agentic tool use,https://scale.com/leaderboard/tool_use_enterprise
@@ -71,7 +80,9 @@ SciCode,0.0,Scientific code-generation tasks,https://epoch.ai/benchmarks/scicode
 ScienceQA,0.3983,multimodal MCQ,https://arxiv.org/abs/2209.09513
 SimpleBench,0.167,6-option MCQ,https://epoch.ai/benchmarks/simplebench
 SimpleQA Verified,0.0,Freeform response with AI grader,https://epoch.ai/benchmarks/simple-qa-verified
+SpatialViz-Bench,0.2508,"Paper's own Random row: 25.08% overall (95% CI 22.69-27.64), image-option MCQ",https://arxiv.org/abs/2507.07610
 SuperGLUE,0.443,Aggregate of diverse tasks,https://arxiv.org/abs/1905.00537
+Surface Evolver Bench,0.0,Free-form solver scripting; no guessable baseline,https://yhenon.github.io/surface-evolver-llm-eval/
 TerminalBench,0.0,CLI/agent tasks,https://epoch.ai/benchmarks/terminal-bench
 The Agent Company,0.0,Long-horizon agentic tasks,https://the-agent-company.com/
 TriviaQA,0.0,Open-ended exact-match QA; random guess ~0. NB: the paper's 12.7% EM is a 'random entity' baseline (random pick among ~1.8 gold-page entities); not a chance floor,https://nlp.cs.washington.edu/triviaqa/

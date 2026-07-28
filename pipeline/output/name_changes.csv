@@ -1,11 +1,11 @@
 model_version_raw,model_version,benchmark_raw,benchmark,_source_file
 Qwen3-235B-A22B,qwen3-235b-a22b,Aider Polyglot,Aider Polyglot,aider_polyglot_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,Aider Polyglot,Aider Polyglot,aider_polyglot_external.csv
+openai/gpt-oss-120b_high,gpt-oss-120b_high,AlgoTune,AlgoTune,algotune_external.csv
 zai-org/glm-4.7,glm-4.7,APEX Agents,APEX Agents,apex_agents_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,ARC (AI2),ARC (AI2),arc_ai2_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,BIG-Bench Hard (BBH),BIG-Bench Hard (BBH),bbh_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,BoolQ,BoolQ,bool_q_external.csv
-openai/gpt-oss-120b_high,gpt-oss-120b_high,Chess Puzzles,Chess Puzzles,chess_puzzles.csv
 moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,CL-Bench,CL-Bench,cl_bench_external.csv
 zai-org/glm-4.7,glm-4.7,CL-Bench,CL-Bench,cl_bench_external.csv
 zai-org/glm-4.7_high,glm-4.7_high,CL-Bench Life,CL-Bench Life,cl_bench_life_external.csv
@@ -18,27 +18,15 @@ deepinfra/Qwen3-Next-80B-A3B-Instruct,Qwen3-Next-80B-A3B-Instruct,Fiction.LiveBe
 fireworks/Kimi-K2-Instruct-0905,Kimi-K2-Instruct-0905,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 chutes/Qwen3-Next-80B-A3B-Instruct,Qwen3-Next-80B-A3B-Instruct,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 Qwen3-235B-A22B,qwen3-235b-a22b,ForecastBench,ForecastBench,forecastbench_external.csv
-zai-org/GLM-4.7,glm-4.7,FrontierMath,FrontierMath,frontiermath.csv
-fireworks/deepseek-v3p2,deepseek-v3p2,FrontierMath,FrontierMath,frontiermath.csv
-Qwen/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,FrontierMath,FrontierMath,frontiermath.csv
-zai-org/GLM-4.6,glm-4.6,FrontierMath,FrontierMath,frontiermath.csv
-moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,FrontierMath,FrontierMath,frontiermath.csv
-zai-org/GLM-4.7,glm-4.7,FrontierMath Tier 4,FrontierMath Tier 4,frontiermath_tier_4.csv
-fireworks/deepseek-v3p2,deepseek-v3p2,FrontierMath Tier 4,FrontierMath Tier 4,frontiermath_tier_4.csv
-Qwen/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,FrontierMath Tier 4,FrontierMath Tier 4,frontiermath_tier_4.csv
-zai-org/GLM-4.6,glm-4.6,FrontierMath Tier 4,FrontierMath Tier 4,frontiermath_tier_4.csv
-moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,FrontierMath Tier 4,FrontierMath Tier 4,frontiermath_tier_4.csv
-openai/gpt-oss-120b_high,gpt-oss-120b_high,GPQA Diamond,GPQA Diamond,gpqa_diamond.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,GSM8K,GSM8K,gsm8k_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,HellaSwag,HellaSwag,hella_swag_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,LAMBADA,LAMBADA,lambada_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,MMLU,MMLU,mmlu_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,OpenBookQA,OpenBookQA,open_book_qa_external.csv
-openai/gpt-oss-120b_high,gpt-oss-120b_high,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,otis_mock_aime_2024_2025.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,PIQA,PIQA,piqa_external.csv
+fireworks/deepseek-v3p2,deepseek-v3p2,ProofBench,ProofBench,proofbench_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,SciCode,SciCode,scicode_external.csv
 zai-org/glm-4.7,glm-4.7,SimpleBench,SimpleBench,simplebench_external.csv
-openai/gpt-oss-120b_high,gpt-oss-120b_high,SimpleQA Verified,SimpleQA Verified,simpleqa_verified.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,TriviaQA,TriviaQA,trivia_qa_external.csv
 Chat-UniVi-7B-v1.5 ,Chat-UniVi-7B-v1.5,Video-MME,Video-MME,video_mme_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,WeirdML,WeirdML,weirdml_external.csv
@@ -560,45 +548,6 @@ Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,MMLU Pro Chemistry,MMLU Pro Chemist
 Llama 3 70b,Meta-Llama-3-70B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
 Llama 3 8b,Meta-Llama-3-8B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
 Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
-gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gpt-5-pro-2025-10-06,gpt-5-pro-2025-10-06_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gpt-5.4-2026-03-05 (xhigh thinking),gpt-5.4-2026-03-05_xhigh,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-o3 (medium) (April 2025),o3-2025-04-16_medium,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-o3 (high) (April 2025),o3-2025-04-16_high,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gpt-5.2-2025-12-11,gpt-5.2-2025-12-11_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-o4-mini (high) (April 2025),o4-mini-2025-04-16_high,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gpt-5-mini-2025-08-07,gpt-5-mini-2025-08-07_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-claude-opus-4-6-thinking-max,claude-opus-4-6_max,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-claude-opus-4-1-20250805-thinking,claude-opus-4-1-20250805_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-o4-mini (medium) (April 2025),o4-mini-2025-04-16_medium,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-o1 Pro (March 2025),o1-pro-2025-03-19,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5-20250929_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-o1 (December 2024),o1-2024-12-17_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude Opus 4 (Thinking),claude-opus-4-20250514_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude 3.7 Sonnet Thinking (Feb 2025),claude-3-7-sonnet-20250219_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Gemini 2.5 Pro Experimental (March 2025),gemini-2.5-pro-exp-03-25,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude Opus 4,claude-opus-4-20250514,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-GPT-4.5 Preview (February 2025),gpt-4.5-preview-2025-02-27,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude Sonnet 4 (Thinking),claude-sonnet-4-20250514_unknown,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Gemini 2.5 Flash Preview (May 2025) ,gemini-2.5-flash,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Gemini 2.5 Pro Preview (May 06 2025),gemini-2.5-pro-preview-05-06,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude 3.7 Sonnet (February 2025),claude-3-7-sonnet-20250219,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude Sonnet 4,claude-sonnet-4-20250514,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-GPT-4.1,gpt-4.1-2025-04-14,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-gpt-5.1-instant,gpt-5.1-2025-11-13_none,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Gemini 2.0 Flash Thinking (January 2025),gemini-2.0-flash-thinking-exp-01-21,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude 3.5 Sonnet (October 2024),claude-3-5-sonnet-20241022,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Claude 3 Opus,claude-3-opus-20240229,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-GPT-4o (November 2024),gpt-4o-2024-11-20,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Gemini 2.0 Pro Experimental (Feb 2025),gemini-2.0-pro-exp-02-05,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Gemini 2.0 Flash (February 2025),gemini-2.0-flash-001,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,EnigmaEval,EnigmaEval,seal/enigma_eval.html
-Llama 3.2 90B Vision Instruct,Llama-3.2-90B-Vision-Instruct,EnigmaEval,EnigmaEval,seal/enigma_eval.html
 gemini-3.5-flash (high),gemini-3.5-flash_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Claude Fable 5,claude-fable-5,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-8 (max),claude-opus-4-8_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
@@ -915,3 +864,7 @@ gpt-4o-mini-audio-preview-2024-12-17†,gpt-4o-mini-audio-preview-2024-12-17,Aud
 Qwen2.5-Omni-7B*,Qwen2.5-Omni-7B,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 Kimi-Audio-7B-Instruct†,Kimi-Audio-7B-Instruct,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 LFM2-Audio-1.5B†,LFM2-Audio-1.5B,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+openai/gpt-oss-120b_high,gpt-oss-120b_high,Chess Puzzles,Chess Puzzles,epoch_live_benchmarks.csv
+openai/gpt-oss-120b_high,gpt-oss-120b_high,GPQA Diamond,GPQA Diamond,epoch_live_benchmarks.csv
+openai/gpt-oss-120b_high,gpt-oss-120b_high,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,epoch_live_benchmarks.csv
+openai/gpt-oss-120b_high,gpt-oss-120b_high,SimpleQA Verified,SimpleQA Verified,epoch_live_benchmarks.csv

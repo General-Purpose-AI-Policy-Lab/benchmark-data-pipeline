@@ -1,42 +1,58 @@
-# Pipeline report — 2026-07-21 12:38:25 UTC
+# Pipeline report — 2026-07-28 08:30:39 UTC
 
-- **Snapshot:** `2026-07-21`
-- **Epoch ZIP sha256:** `15e499c84282c62d2398701f5d6db4afea1e74a7a2063b7a8debe2233919feeb`
-- **Fetched at:** 2026-07-21T12:38:20.335233+00:00
+- **Snapshot:** `2026-07-28`
+- **Epoch ZIP sha256:** `69f6fc403e056bc884b6ad865cd2a9c02fe15f7bb4b7e8b2f879682f0aab48ef`
+- **Fetched at:** 2026-07-28T08:23:42.761958+00:00
 
 ## Row counts
 
-- After load:           4,983
-- After dedup:          4,107
-- After metadata join:  4,107
-- After optional filter:4,107
-- Final:                4,105
+- After load:           5,103
+- After dedup:          4,221
+- After metadata join:  4,221
+- After optional filter:4,221
+- Final:                4,219
 
 ## Distinct counts
 
-- Benchmarks: 85
-- Models:     736
+- Benchmarks: 96
+- Models:     749
 
 ## Coverage vs current `data/processed/benchmarks_merged.csv`
 
-- Overlapping (model, benchmark) pairs: 3,917
-- Current file pairs: 3,998
-- New file pairs:     4,105
-- Significant score deltas (|Δ|>0.01): 12
+- Overlapping (model, benchmark) pairs: 4,212
+- Current file pairs: 4,212
+- New file pairs:     4,219
+- Significant score deltas (|Δ|>0.01): 0
 
-### Top 10 score changes
+## Rows dropped for a blank `Model version` (416)
 
-- `gemini-2.5-flash` on `AudioMultiChallenge`: 0.261 → 0.400 (Δ=+0.139)
-- `gemini-3.1-flash-live-preview` on `AudioMultiChallenge`: 0.268 → 0.361 (Δ=+0.093)
-- `glm-4.5` on `Lech Mazur Writing`: 0.780 → 0.734 (Δ=-0.046)
-- `grok-4-0709` on `Lech Mazur Writing`: 0.807 → 0.769 (Δ=-0.038)
-- `glm-5.1` on `SimpleBench`: 0.587 → 0.551 (Δ=-0.036)
-- `Qwen3-235B-A22B-Thinking-2507` on `Lech Mazur Writing`: 0.849 → 0.824 (Δ=-0.025)
-- `gemini-2.5-pro` on `Lech Mazur Writing`: 0.860 → 0.838 (Δ=-0.022)
-- `o3-pro-2025-06-10_medium` on `Lech Mazur Writing`: 0.863 → 0.844 (Δ=-0.019)
-- `gpt-5-2025-08-07_unknown` on `VisualToolBench`: 0.170 → 0.187 (Δ=+0.017)
-- `Llama-4-Maverick-17B-128E-Instruct` on `Lech Mazur Writing`: 0.637 → 0.620 (Δ=-0.017)
+Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of real base models missing from Epoch's registry, agent scaffolds, and task-specific fine-tunes. Recovering the first group needs a curated `Name -> model_version` map.
 
-## New models since last canonicalization (67)
+- `science_qa_external.csv` (ScienceQA): **78** — e.g. Mutimodal-T-SciQ_Large 🥇, MC-CoT_F-Large 🥈, Honeybee (Vicuna-13B) 🥉
+- `bool_q_external.csv` (BoolQ): **70** — e.g. XVerse, Palmyra X (43B), Cohere Command beta (52.4B)
+- `gsm8k_external.csv` (GSM8K): **65** — e.g. Palmyra X (43B), gpt-3.5-turbo-0301, Jurassic-2 Jumbo (178B)
+- `os_world_external.csv` (OS World (Screenshot)): **37** — e.g. agi-0 (50 steps), DeepMiner-Mano-72B (100 steps), UI-TARS-2-2509 (100 steps)
+- `mmlu_external.csv` (MMLU): **32** — e.g. AquilaChat2 34B, AquilaChat2 34B, Arctic Instruct
+- `lambada_external.csv` (LAMBADA): **27** — e.g. XVerse, GLaM (MoE) 0.1B/64E, GLaM (MoE) 1.7B/64E
+- `piqa_external.csv` (PIQA): **27** — e.g. GLaM (MoE) 0.1B/64E, GLaM (MoE) 1.7B/64E, GLaM (MoE) 8B/64E
+- `hella_swag_external.csv` (HellaSwag): **22** — e.g. Anthropic-LM v4-s3 (52B), Cohere Command beta (6.1B), Cohere Command beta (52.4B)
+- `live_bench_external.csv` (LiveBench): **10** — e.g. 
+- `arc_ai2_external.csv` (ARC (AI2)): **8** — e.g. Falcon-rw-1.3B, GPT-Neo-2.7B, phi-1.5-web-only (1.3B)
+- `wino_grande_external.csv` (WinoGrande): **8** — e.g. PaLM-cont 62B, Falcon-rw-1.3B, GPT-Neo-2.7B
+- `aider_polyglot_external.csv` (Aider Polyglot): **5** — e.g. 
+- `frontiercode_external.csv` (FrontierCode): **5** — e.g. SWE-1.7, Composer 2.5, Inkling
+- `bbh_external.csv` (BIG-Bench Hard (BBH)): **4** — e.g. Chinese-Alpaca-Plus-13B, XVERSE-13B, AquilaChat2 34B
+- `common_sense_qa_2_external.csv` (CSQA2): **4** — e.g. Unicorn-Large, Unicorn-11B, Unicorn 770M
+- `gdp_pdf_external.csv` (GDP.pdf): **3** — e.g. Mistral Large 3, Nova 2 (Pro), NVIDIA Nemotron 3 Nano Omni
+- `arc_agi_external.csv` (ARC-AGI): **2** — e.g. o3-preview (Low)*, GPT-5.1 (Low)
+- `simplebench_external.csv` (SimpleBench): **2** — e.g. 
+- `terminalbench_external.csv` (TerminalBench): **2** — e.g. 
+- `adversarial_nli_external.csv` (Adversarial NLI): **1** — e.g. UNICORN
+- `deepresearchbench_external.csv` (DeepResearchBench): **1** — e.g. 
+- `fictionlivebench_external.csv` (Fiction.LiveBench): **1** — e.g. 
+- `open_book_qa_external.csv` (OpenBookQA): **1** — e.g. Falcon-rw-1.3B
+- `weirdml_external.csv` (WeirdML): **1** — e.g. 
+
+## New models since last canonicalization (87)
 
 See `output/missing_models.csv`. Add canonical aliases in `canonical/model_aliases.csv` and re-run section 04.

@@ -1,4 +1,5 @@
 model_version
+DeepSeek-R1_high
 Inkling (Thinking)*
 Inkling (xHigh)
 Kimi-Audio-7B-Instruct*
@@ -12,26 +13,41 @@ Muse Spark 1.1
 Muse Spark 1.1*
 Phi-4-multimodal-instruct*
 Qwen2.5-Omni-7B*
+Qwen3-Coder-480B-A35B-Instruct_high
 Qwen3-Omni-30B-A3B-Instruct†
 Voxtral-Small-24B-2507*
+claude-fable-5_unknown
+claude-opus-4-1-20250805_32K
+claude-opus-4-1-20250805_high
+claude-opus-4-20250514_high
 claude-opus-4-6 (Non-Thinking) 
 claude-opus-4-6 (thinking)*
+claude-opus-5_max
+claude-sonnet-4-5-20250929_high
 claude-sonnet-5_high
 claude-sonnet-5_unknown
+deepseek-v4-pro_none
+gemini-2.0-flash-02-05
 gemini-2.5-flash (Thinking)*
 gemini-2.5-flash-native-audio-preview-12-2025 (non-thinking)†
 gemini-2.5-flash-native-audio-preview-12-2025 (thinking)†
 gemini-2.5-pro (Thinking)*
+gemini-2.5-pro_high
 gemini-3-pro-preview (Thinking)*
 gemini-3.1-flash-live-preview (Thinking)†
 gemini-3.1-flash-live-preview†
 gemini-3.1-pro (thinking)*
+gemma-3-12b-it
 gemma-3n-E4B-it*
+gemma-4-31b-it_none
+glm-4.5_thinking_high
+glm-5.2_none
 glm-5p2
 gpt-4o-audio-preview-2025-06-03*
 gpt-4o-audio-preview-2025-06-03†
 gpt-4o-mini-audio-preview-2024-12-17*
 gpt-4o-mini-audio-preview-2024-12-17†
+gpt-5-pro-2025-10-06_medium
 gpt-5.4 (xHigh)*
 gpt-5.4(xHigh)*
 gpt-5.6 (sol)
@@ -62,9 +78,13 @@ gpt-realtime-2025-08-28*
 gpt-realtime-2025-08-28†
 gpt-realtime-mini-2025-12-15*
 gpt-realtime-mini-2025-12-15†
+grok-4-3_high
 grok-4.20-0309-reasoning
 grok-4.5_high
 grok-4.5_unknown
 kimi-k3 (max)
 kimi-k3_max
+mimo-v2.5
 muse-spark-1.1
+muse-spark-1.1_xhigh
+pixtral-large-2411

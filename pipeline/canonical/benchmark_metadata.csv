@@ -5,21 +5,27 @@ ARC-AGI,Core AGI Progress,F. Chollet's ARC abstraction-and-reasoning corpus (pro
 ARC-AGI-2,Core AGI Progress,"ARC-AGI v2; open generation, no chance baseline"
 Adversarial NLI,General Reasoning,
 Aider Polyglot,Autonomous SWE,
+AlgoTune,Autonomous SWE,Code-optimization tasks scored as speedup over a fixed library implementation; ingested as fraction of runtime eliminated.
 AudioMultiChallenge,Multimodal Understanding,
 BALROG,General Reasoning,
 BIG-Bench Hard (BBH),Domain Specific Questions,
 BioLP-bench,Biology,
+BlueprintBench 2,Multimodal Understanding,Andon Labs; floor-plan/blueprint reading.
 BoolQ,General Reasoning,binary yes/no QA
 CAD-Eval,Multimodal Understanding,
 CSQA2,General Reasoning,CommonsenseQA 2.0; binary true/false judgments
 Chess Puzzles,General Reasoning,
 Cybench,Agentic Computer Use,
 DeepResearchBench,Agentic Computer Use,agentic deep-research benchmark; LLM-judge scoring
+DeepSWE,Autonomous SWE,Agentic software-engineering tasks; Pass@1 of 4 runs.
+EBR-bench,Agentic Computer Use,Earthborne Rangers: Epoch internal eval of long-horizon play of a co-operative card game. Live feed only; no ZIP file.
 EnigmaEval,General Reasoning,
 Fiction.LiveBench,Advanced Language and Writing,
 FrontierMath,High End Math Reasoning,
 FrontierMath Tier 4,High End Math Reasoning,
-GDPVal,Core AGI Progress,
+GBAEval,Agentic Computer Use,Game-boy agent eval; weighted mean of Replay/Procedural/Audio sub-scores.
+GDP.pdf,Core AGI Progress,"Surge AI. Real-world PDFs from expert professional workflows (wiring diagrams, blueprints, papers); multimodal document comprehension. Name is literal, not a filename artifact, and unrelated to GDPval."
+GDPval,Core AGI Progress,"Blinded pairwise comparison against human expert deliverables; win rate. Fixed human reference, not a model pool."
 GPQA Diamond,Domain Specific Questions,
 GPQA Diamond Biology,Biology,
 GPQA Diamond Chemistry,Chemistry,
@@ -45,6 +51,7 @@ MMLU Biology,Biology,MMLU biology subsplit; 4-choice MC
 MMLU Chemistry,Chemistry,MMLU chemistry subsplit; 4-choice MC
 MMLU Pro Biology,Biology,
 MMLU Pro Chemistry,Chemistry,
+MindCube,Multimodal Understanding,Spatial mental models: rotation/among/around. 2024-06..2025-05 models only.
 MultiChallenge,Advanced Language and Writing,
 MultiNRC,Advanced Language and Writing,
 OS World (Screenshot),Agentic Computer Use,
@@ -54,6 +61,7 @@ PIQA,General Reasoning,binary physical commonsense
 PRBench Finance,Domain Specific Questions,
 PRBench Legal,Domain Specific Questions,
 PostTrainBench,Autonomous SWE,
+ProofBench,High End Math Reasoning,Lean 4 proofs that must compile; no partial credit. 200 problems (100 public/100 private).
 Remote Labor Index,Core AGI Progress,
 SEAL Instruction Following,Advanced Language and Writing,Scale SEAL instruction-following board (deprecated Jan 2025); open generation
 SEAL Tool Use (Enterprise),Agentic Computer Use,Scale SEAL enterprise agentic tool-use board
@@ -64,7 +72,9 @@ SWE-Bench Verified,Autonomous SWE,
 ScienceQA,Domain Specific Questions,
 SimpleBench,General Reasoning,trick-question benchmark; AVG@5 open generation
 SimpleQA Verified,Domain Specific Questions,
+SpatialViz-Bench,Multimodal Understanding,Spatial visualization: mental rotation/folding/penetration/animation. 2024-01..2025-06 models only.
 SuperGLUE,General Reasoning,NLU suite; roughly binary-classification weighted average
+Surface Evolver Bench,Autonomous SWE,Drives the Surface Evolver minimal-surface solver; mean score over tasks.
 TerminalBench,Agentic Computer Use,
 The Agent Company,Agentic Computer Use,
 TriviaQA,Domain Specific Questions,"open-ended factoid QA, exact-match"
