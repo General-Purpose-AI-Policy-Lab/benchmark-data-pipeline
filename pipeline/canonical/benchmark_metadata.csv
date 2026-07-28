@@ -23,6 +23,8 @@ EnigmaEval,General Reasoning,
 Fiction.LiveBench,Advanced Language and Writing,
 FrontierMath,High End Math Reasoning,
 FrontierMath Tier 4,High End Math Reasoning,
+FrontierMath v1,High End Math Reasoning,v1 problem set (pre-2026-06-12); kept as its own item because v2 fixed errors in 42% of problems and moved the mean 0.18 -> 0.59
+FrontierMath Tier 4 v1,High End Math Reasoning,v1 problem set (pre-2026-06-12); see FrontierMath v1
 GBAEval,Agentic Computer Use,Game-boy agent eval; weighted mean of Replay/Procedural/Audio sub-scores.
 GDP.pdf,Core AGI Progress,"Surge AI. Real-world PDFs from expert professional workflows (wiring diagrams, blueprints, papers); multimodal document comprehension. Name is literal, not a filename artifact, and unrelated to GDPval."
 GDPval,Core AGI Progress,"Blinded pairwise comparison against human expert deliverables; win rate. Fixed human reference, not a model pool."

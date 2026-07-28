@@ -30,6 +30,8 @@ ForecastBench,0.5,Brier Index on a 0-100% scale where 50% = uninformed guess (Ep
 FrontierCode,0.0,Code-generation tasks,https://epoch.ai/benchmarks/frontier-code
 FrontierMath,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
 FrontierMath Tier 4,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
+FrontierMath v1,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
+FrontierMath Tier 4 v1,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
 GBAEval,0.0,Agentic game play; no guessable baseline,https://epoch.ai/benchmarks/gbaeval
 GDP.pdf,0.0,Free-form economic reasoning,https://epoch.ai/benchmarks/gdp-pdf
 GDPval,0.0,Win rate vs human expert deliverables; a null model wins nothing,https://epoch.ai/benchmarks/gdpval

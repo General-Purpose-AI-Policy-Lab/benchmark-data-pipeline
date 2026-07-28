@@ -1,4 +1,4 @@
-# Pipeline report — 2026-07-28 08:30:39 UTC
+# Pipeline report — 2026-07-28 10:44:52 UTC
 
 - **Snapshot:** `2026-07-28`
 - **Epoch ZIP sha256:** `69f6fc403e056bc884b6ad865cd2a9c02fe15f7bb4b7e8b2f879682f0aab48ef`
@@ -6,22 +6,22 @@
 
 ## Row counts
 
-- After load:           5,103
-- After dedup:          4,221
-- After metadata join:  4,221
-- After optional filter:4,221
-- Final:                4,219
+- After load:           5,276
+- After dedup:          4,394
+- After metadata join:  4,394
+- After optional filter:4,394
+- Final:                4,392
 
 ## Distinct counts
 
-- Benchmarks: 96
-- Models:     749
+- Benchmarks: 98
+- Models:     756
 
 ## Coverage vs current `data/processed/benchmarks_merged.csv`
 
-- Overlapping (model, benchmark) pairs: 4,212
-- Current file pairs: 4,212
-- New file pairs:     4,219
+- Overlapping (model, benchmark) pairs: 4,392
+- Current file pairs: 4,392
+- New file pairs:     4,392
 - Significant score deltas (|Δ|>0.01): 0
 
 ## Rows dropped for a blank `Model version` (416)

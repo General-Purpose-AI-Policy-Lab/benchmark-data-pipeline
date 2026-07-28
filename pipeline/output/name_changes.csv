@@ -864,6 +864,16 @@ gpt-4o-mini-audio-preview-2024-12-17†,gpt-4o-mini-audio-preview-2024-12-17,Aud
 Qwen2.5-Omni-7B*,Qwen2.5-Omni-7B,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 Kimi-Audio-7B-Instruct†,Kimi-Audio-7B-Instruct,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 LFM2-Audio-1.5B†,LFM2-Audio-1.5B,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+zai-org/GLM-4.7,glm-4.7,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
+fireworks/deepseek-v3p2,deepseek-v3p2,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
+Qwen/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
+zai-org/GLM-4.6,glm-4.6,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
+moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
+zai-org/GLM-4.7,glm-4.7,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
+fireworks/deepseek-v3p2,deepseek-v3p2,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
+Qwen/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
+zai-org/GLM-4.6,glm-4.6,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
+moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,Chess Puzzles,Chess Puzzles,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,GPQA Diamond,GPQA Diamond,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,epoch_live_benchmarks.csv
