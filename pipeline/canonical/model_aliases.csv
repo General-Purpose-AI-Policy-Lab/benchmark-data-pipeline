@@ -67,7 +67,9 @@ glm-4p5,glm-4.5,"Scale SEAL alias (auto, high-confidence)"
 glm-4p5-air,GLM-4.5-Air,"Scale SEAL alias (auto, high-confidence)"
 glm-4p7,glm-4.7,"Scale SEAL alias (auto, high-confidence)"
 glm-5p1,glm-5.1,"Scale SEAL alias (auto, high-confidence)"
+glm-5p2,glm-5.2_unknown,Scale SEAL alias (effort-less -> _unknown bucket; no bare glm-5.2 exists)
 kimi-k2p5,kimi-k2.5,"Scale SEAL alias (auto, high-confidence)"
+fireworks/kimi-k2p5,kimi-k2.5,"defrag: serving-provider prefix + p-spelling; map is single-pass so this points at the final id, not at kimi-k2p5"
 kimi-k2-instruct,Kimi-K2-Instruct,"Scale SEAL alias (auto, high-confidence)"
 minimax-2.1,MiniMax-M2.1,"Scale SEAL alias (auto, high-confidence)"
 Command R+,c4ai-command-r-plus-08-2024,"Scale SEAL alias (auto, high-confidence)"
@@ -304,7 +306,9 @@ moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,defrag: serving-provider prefix + c
 openai/gpt-oss-120b_high,gpt-oss-120b_high,defrag: serving-provider prefix
 Qwen3-235B-A22B,qwen3-235b-a22b,defrag: case-only duplicate
 zai-org/GLM-4.6,glm-4.6,defrag: serving-provider prefix + case
-fireworks/deepseek-v3p2,deepseek-v3p2,defrag: serving-provider prefix
+fireworks/deepseek-v3p2,deepseek-v3.2,"defrag: serving-provider prefix + p-spelling. Was landing on the non-canonical deepseek-v3p2, splitting the Dec-2025 V3.2 across two test-takers"
+deepseek/deepseek-v3.2,deepseek-v3.2,"defrag: serving-provider prefix. Dec-2025 V3.2, distinct from the Sept V3.2-Exp"
+deepseek-v3p2,deepseek-v3.2,"p-spelling; Scale SEAL ships this form unprefixed, so the fireworks/ row alone does not catch it"
 Claude-4-Opus-20250514-thinking,claude-opus-4-20250514_unknown,defrag: case-only duplicate (was claude-4-opus-20250514-thinking)
 GPT-4o,gpt-4o,defrag: case-only duplicate
 fireworks/Kimi-K2-Instruct-0905,Kimi-K2-Instruct-0905,defrag: serving-provider prefix
@@ -350,3 +354,12 @@ GPT-4,gpt-4-0613,
 GPT-4 (November 2024),gpt-4o-2024-11-20,
 OpenAI GPT-5,gpt-5-2025-08-07_medium,
 claude-opus-4-6 (Non-Thinking),claude-opus-4-6_unknown,Non-Thinking = default mode = _unknown
+claude-fable-5 (max),claude-fable-5_max,SEAL effort spelling; underscore form is canonical
+gpt-5.6-sol (max),gpt-5.6-sol_max,SEAL effort spelling; underscore form is canonical
+kimi-k3 (max),kimi-k3_max,SEAL effort spelling; underscore form is canonical
+Muse Spark 1.1,muse-spark-1.1,SEAL display name; slug form is canonical (muse-spark family)
+grok-4-3_high,grok-4.3_high,Surge GDP.pdf dash spelling; dot form is canonical
+Pixtral Large (November 2024),pixtral-large-2411,display name with date; matches the Pixtral 12B (September 2024) precedent
+Mistral Medium 3,mistral-medium-2505,"lineage_map already places both on node medium-2505 as bare, same date"
+o3-pro,o3-pro-2025-06-10,"SEAL dateless row; lineage_map lists both as bare on node o3-pro, 2025-06-10"
+gemini-2.0-flash-02-05,gemini-2.0-flash-001,SEAL board names it by release date; same model and same 2025-02-05 release as the versioned Epoch id

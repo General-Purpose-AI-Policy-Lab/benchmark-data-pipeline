@@ -266,6 +266,75 @@ Currently one entry, **BTF3**. The ordering proves the direction:
 **Check the direction whenever a score column is added.** Sort by the column and
 confirm the known-strong models land on the high end.
 
+## Dollar-denominated score columns (`Vending-Bench 2`)
+
+`vending_bench_2_external.csv` scores a model by the **bank balance in dollars**
+it holds after running a simulated vending-machine business for 365 simulated
+days. The rules: $500 of starting capital, a $2/day location fee charged whether
+or not the machine trades, and the run ends early once the balance cannot cover
+that fee for 10 consecutive days. The published figure is a mean over 5 runs per
+model (a few are now 6 or 8). On the 2026-07-28 snapshot: 54 models, -$31.18 to
+$10,936.76, median $3,991.
+
+A dollar figure is not a proportion, so the Beta model cannot read it directly.
+`FILE_SCORE_TRANSFORM` maps it with
+
+```
+y = (x + 230) / (x + 230 + 63230)  =  sigma( log(x + 230) - log 63230 )
+```
+
+**Why a logarithm.** Money is a ratio scale: $100 to $200 is the same commercial
+step as $5,000 to $10,000, and a linear rescale would call the second one fifty
+times larger. Log-dollars is the coordinate on which those steps are comparable.
+The Beta-MIRT link is already a logistic on a latent linear predictor, so the map
+that makes that predictor equal log-dollars is simply its inverse. One logit of
+ability then means a factor of e = 2.72 in the year-end balance.
+
+**Why the origin is -$230.** A logarithm goes vertical at its origin, so the
+origin decides how much of the scale the failures occupy, and it has to sit below
+every attainable score. $500 - $2 x 365 = -$230 is the balance a full year of
+fees alone would leave. No model reaches it, because the bankruptcy rule stops a
+run about 10 days after the balance stops covering the fee. That is why the foot
+of the board is a single bankruptcy cluster (-$31.18, -$23.16, -$21.53, -$11.34,
+$0.54, $35.26): the dollar spread inside it records when the simulation cut out,
+not how able those six models are. The choice is measurable:
+
+| log origin | share of the 4.03-logit range taken by those 6 rows |
+|---|---|
+| **-$230** | **7.2%** |
+| -$1 | 45.9% |
+
+At -$1 the step from $1 to $72 is 4.27 logits while the step from the median
+model ($3,991) to the best ($10,937) is 1.01, so a $70 wobble at the bottom of a
+5-run average would outweigh the entire frontier.
+
+**Why the scale is $63,230.** Andon Labs estimates a strong human strategy would
+reach roughly $63,000 a year; measured from the same origin that is $63,230.
+Using it makes the odds of the score the ratio to that human,
+`y / (1 - y) = (x + 230) / 63230`. Unlike the origin, the scale is **not
+identified**: replacing it adds a constant to every logit, and the free
+per-benchmark difficulty `D_b` absorbs that exactly. It is a choice of units, not
+a modelling assumption.
+
+**Bounds.** The chance floor is 0 in `benchmark_lower_bounds.csv`, inert, because
+the origin already sits at "created nothing". There is no ceiling: y = 1 needs
+infinite money, so the 4PL `d` stays at 1, as for AlgoTune.
+
+**Recovering dollars.** `x = 63230 * y / (1 - y) - 230`, exact, so storing the
+proportion loses nothing.
+
+**Caveats.** The simulation also bills $100 per million output tokens against the
+balance, so verbosity is priced into the score; that is how a model can finish
+below the do-nothing exit of about -$20. The figure is a mean over a handful of
+very high-variance runs and the ZIP carries no `stderr` for it, so `sigma_b` will
+absorb seed noise as benchmark noise with no way to separate the two. v2 scores
+the bank balance where v1 scored net worth including unsold inventory.
+
+Rules and the $63,000 reference: [Andon Labs](https://andonlabs.com/evals/vending-bench-2),
+[Epoch AI](https://epoch.ai/benchmarks/vending-bench-2), and the v1 paper
+[arXiv 2502.15840](https://arxiv.org/abs/2502.15840) for the fee and bankruptcy
+wording.
+
 ## Sources
 
 | Section | Source | License | Benchmarks |

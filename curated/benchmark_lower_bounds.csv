@@ -1,4 +1,7 @@
 benchmark,lower_bound,reason,source_url
+AISI CTF Suites - Apprentice,0.0,CTFs (as Cybench),https://epoch.ai/data/cyber
+AISI CTF Suites - Expert,0.0,CTFs (as Cybench),https://epoch.ai/data/cyber
+AISI Cyber Ranges - The Last Ones,0.0,Agentic cyber-range tasks; no guessable baseline,https://epoch.ai/data/cyber
 APEX Agents,0.0,Rubric-graded professional tasks,https://epoch.ai/benchmarks/apex-agents/
 ARC (AI2),0.25,4-option science MCQ,https://epoch.ai/benchmarks/arc-ai2
 ARC-AGI,0.0,Programmatic pattern tasks,https://arcprize.org/leaderboard
@@ -16,22 +19,25 @@ CAD-Eval,0.0,Valid parametric 3D designs,https://epoch.ai/benchmarks/cad-eval
 CL-Bench,0.0,"Open-ended clinical reasoning, graded score",https://epoch.ai/benchmarks/cl-bench
 CL-Bench Life,0.0,"Open-ended life-science reasoning, graded score",https://epoch.ai/benchmarks/cl-bench
 CSQA2,0.5,Yes/no questions,https://arxiv.org/abs/2201.05320
+CTI-REALM,0.0,Agentic threat-intel tasks; no guessable baseline,https://epoch.ai/data/cyber
 Chess Puzzles,0.0,Single best move,https://epoch.ai/benchmarks/chess-puzzles
 CritPt,0.0,Free-form physics critical-thinking answers,https://epoch.ai/benchmarks/critpt
 CursorBench,0.0,Agentic coding tasks,https://epoch.ai/benchmarks/cursor-bench
 Cybench,0.0,CTFs,https://epoch.ai/benchmarks/cybench
+CyberGym,0.0,Agentic vulnerability-reproduction tasks; no guessable baseline,https://epoch.ai/data/cyber
 DeepResearchBench,0.0,No single random baseline (heterogeneous/generative/Elo score); Research/agent workflow; heterogeneous formats,https://epoch.ai/benchmarks/deepresearchbench
 DeepSWE,0.0,Agentic code patches must pass tests,https://deepswe.datacurve.ai/
 EBR-bench,0.0,Long-horizon agentic game play; no guessable baseline,https://epoch.ai/benchmarks/ebr-bench
 EnigmaEval,0.0,Exact string match on open-ended answers,https://scale.com/leaderboard/enigma_eval
 ExploitBench,0.0,Free-form security exploit tasks,https://epoch.ai/benchmarks/exploit-bench
+ExploitGym,0.0,Free-form exploit tasks (as ExploitBench),https://epoch.ai/data/cyber
 Fiction.LiveBench,0.0,Open-ended long-context comprehension: 36 questions on 30 stories graded fraction-correct (ingested = 120k-token accuracy); no fixed answer options so no chance baseline; data min 0.188 sits below any MCQ chance which corroborates open-ended,https://epoch.ai/benchmarks/fictionlivebench
 ForecastBench,0.5,Brier Index on a 0-100% scale where 50% = uninformed guess (Epoch); floor sets the 3PL zero-ability baseline so a ~0.5 score reads as ~zero forecasting skill not median,https://epoch.ai/benchmarks/forecastbench
 FrontierCode,0.0,Code-generation tasks,https://epoch.ai/benchmarks/frontier-code
 FrontierMath,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
 FrontierMath Tier 4,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
-FrontierMath v1,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
 FrontierMath Tier 4 v1,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
+FrontierMath v1,0.0,Free-form math solutions; random exact-match virtually zero,https://epoch.ai/benchmarks/frontiermath
 GBAEval,0.0,Agentic game play; no guessable baseline,https://epoch.ai/benchmarks/gbaeval
 GDP.pdf,0.0,Free-form economic reasoning,https://epoch.ai/benchmarks/gdp-pdf
 GDPval,0.0,Win rate vs human expert deliverables; a null model wins nothing,https://epoch.ai/benchmarks/gdpval
@@ -60,12 +66,18 @@ MMLU Biology,0.25,4-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Chemistry,0.25,4-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Pro Biology,0.1,10-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
 MMLU Pro Chemistry,0.1,10-option MCQ across subjects,https://epoch.ai/benchmarks/mmlu
+MMLU-Pro,0.1,10-option MCQ across subjects,https://arxiv.org/abs/2406.01574
 MindCube,0.3235,Published random-chance baseline 32.35% (per-split 36.36/32.29/30.66); NOT 1/4 - option count varies,https://mind-cube.github.io/
 MultiChallenge,0.0,LLM-judged multi-turn conversations,https://scale.com/leaderboard/multichallenge
 MultiNRC,0.0,LLM-judged short-answer tasks,https://scale.com/research/multinrc
+Mystery Game Puzzles,0.0,Open-ended puzzle answers; no guessable baseline,https://epoch.ai/benchmarks/mystery-game-puzzles
 OS World (Screenshot),0.0,GUI agent tasks,https://epoch.ai/benchmarks/os-world
 OS World 2,0.0,GUI agent tasks (as OS World),https://epoch.ai/benchmarks/os-world
+OS World v1 (A11y tree),0.0,GUI agent tasks (as OS World),https://epoch.ai/benchmarks/os-world
+OS World v1 (Screenshot),0.0,GUI agent tasks (as OS World),https://epoch.ai/benchmarks/os-world
 OTIS Mock AIME 2024-2025,0.001,AIME format: 000–999 integers (1/1000),https://epoch.ai/benchmarks/otis-mock-aime-2024-2025
+OpenAI Cyber Ranges,0.0,Agentic cyber-range tasks; no guessable baseline,https://epoch.ai/data/cyber
+OpenAI NYU CTF Professional (Original),0.0,CTFs (as Cybench),https://epoch.ai/data/cyber
 OpenBookQA,0.25,4-option science MCQ,https://epoch.ai/benchmarks/open-book-qa
 PIQA,0.5,2-option physical commonsense,https://epoch.ai/benchmarks/piqa
 PRBench Finance,0.0,Minimum normalized at 0,https://scale.com/research/prbench
@@ -73,6 +85,7 @@ PRBench Legal,0.0,Minimum normalized at 0,https://scale.com/research/prbench
 PostTrainBench,0.0,Post-training improvement score,https://posttrainbench.com/
 ProofBench,0.0,Lean proof must compile; guessing yields nothing,https://www.vals.ai/benchmarks/proof_bench
 Remote Labor Index,0.0,Task automation success rate,https://scale.com/leaderboard/rli
+SCONE-Bench,0.0,Agentic side-channel tasks; no guessable baseline,https://epoch.ai/data/cyber
 SEAL Instruction Following,0.0,LLM-judged instruction following,https://scale.com/leaderboard/instruction_following
 SEAL Tool Use (Enterprise),0.0,Long-horizon agentic tool use,https://scale.com/leaderboard/tool_use_enterprise
 SWE-Bench Pro,0.0,Success rate,https://scale.com/leaderboard/swe_bench_pro_public
@@ -81,6 +94,7 @@ SWE-Bench Verified,0.0,Program-repair task pass rate,https://www.swebench.com
 SciCode,0.0,Scientific code-generation tasks,https://epoch.ai/benchmarks/scicode
 ScienceQA,0.3983,multimodal MCQ,https://arxiv.org/abs/2209.09513
 SimpleBench,0.167,6-option MCQ,https://epoch.ai/benchmarks/simplebench
+SimpleQA,0.0,Freeform response with AI grader,https://arxiv.org/abs/2411.04368
 SimpleQA Verified,0.0,Freeform response with AI grader,https://epoch.ai/benchmarks/simple-qa-verified
 SpatialViz-Bench,0.2508,"Paper's own Random row: 25.08% overall (95% CI 22.69-27.64), image-option MCQ",https://arxiv.org/abs/2507.07610
 SuperGLUE,0.443,Aggregate of diverse tasks,https://arxiv.org/abs/1905.00537

@@ -41,6 +41,7 @@ TriviaQA,Average Human,0.797,human performance level,https://arxiv.org/pdf/1705.
 Visual Task Assessment (VISTA),Skilled Generalist,0.554,16 full-time employees,https://scale.com/leaderboard/visual_language_understanding
 VPCT,Average Human,0.999,three volunteers,EpochAI
 WinoGrande,Committee of Average Humans,0.94,majority vote of crowd workers (MTurk),https://arxiv.org/pdf/1907.10641
+SimpleQA Verified,Skilled Generalist,0.944,Grader Going through the test,OpenAI arXiv 2411.04368 §2.2
 BioLP-bench,Domain Expert,0.384,Bachelor's w/ lab experience,https://www.rand.org/pubs/research_reports/RRA3797-1.html
 LAB-Bench Cloning,Domain Expert,0.6,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
 LAB-Bench LitQA2,Domain Expert,0.7,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html

@@ -1,30 +1,30 @@
-# Pipeline report — 2026-07-28 14:30:51 UTC
+# Pipeline report — 2026-08-04 13:18:12 UTC
 
-- **Snapshot:** `2026-07-28`
-- **Epoch ZIP sha256:** `69f6fc403e056bc884b6ad865cd2a9c02fe15f7bb4b7e8b2f879682f0aab48ef`
-- **Fetched at:** 2026-07-28T08:23:42.761958+00:00
+- **Snapshot:** `2026-08-04`
+- **Epoch ZIP sha256:** `d34373e3a44b80de9755b2d9ad2559ee484a58babd17dd4906296ce777b8fc6a`
+- **Fetched at:** 2026-08-04T12:54:47.328824+00:00
 
 ## Row counts
 
-- After load:           5,276
-- After dedup:          4,394
-- After metadata join:  4,394
-- After optional filter:4,394
-- Final:                4,390
+- After load:           5,632
+- After dedup:          4,752
+- After metadata join:  4,752
+- After optional filter:4,752
+- Final:                4,748
 
 ## Distinct counts
 
-- Benchmarks: 98
-- Models:     756
+- Benchmarks: 101
+- Models:     808
 
 ## Coverage vs current `data/processed/benchmarks_merged.csv`
 
-- Overlapping (model, benchmark) pairs: 4,390
-- Current file pairs: 4,392
-- New file pairs:     4,390
+- Overlapping (model, benchmark) pairs: 4,747
+- Current file pairs: 4,748
+- New file pairs:     4,748
 - Significant score deltas (|Δ|>0.01): 0
 
-## Rows dropped for a blank `Model version` (416)
+## Rows dropped for a blank `Model version` (417)
 
 Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of real base models missing from Epoch's registry, agent scaffolds, and task-specific fine-tunes. Recovering the first group needs a curated `Name -> model_version` map.
 
@@ -43,8 +43,8 @@ Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of re
 - `frontiercode_external.csv` (FrontierCode): **5** — e.g. SWE-1.7, Composer 2.5, Inkling
 - `bbh_external.csv` (BIG-Bench Hard (BBH)): **4** — e.g. Chinese-Alpaca-Plus-13B, XVERSE-13B, AquilaChat2 34B
 - `common_sense_qa_2_external.csv` (CSQA2): **4** — e.g. Unicorn-Large, Unicorn-11B, Unicorn 770M
+- `arc_agi_external.csv` (ARC-AGI): **3** — e.g. Gemini 3 Deep Think (2/26), o3-preview (Low)*, GPT-5.1 (Low)
 - `gdp_pdf_external.csv` (GDP.pdf): **3** — e.g. Mistral Large 3, Nova 2 (Pro), NVIDIA Nemotron 3 Nano Omni
-- `arc_agi_external.csv` (ARC-AGI): **2** — e.g. o3-preview (Low)*, GPT-5.1 (Low)
 - `simplebench_external.csv` (SimpleBench): **2** — e.g. 
 - `terminalbench_external.csv` (TerminalBench): **2** — e.g. 
 - `adversarial_nli_external.csv` (Adversarial NLI): **1** — e.g. UNICORN
@@ -52,7 +52,3 @@ Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of re
 - `fictionlivebench_external.csv` (Fiction.LiveBench): **1** — e.g. 
 - `open_book_qa_external.csv` (OpenBookQA): **1** — e.g. Falcon-rw-1.3B
 - `weirdml_external.csv` (WeirdML): **1** — e.g. 
-
-## New models since last canonicalization (87)
-
-See `output/missing_models.csv`. Add canonical aliases in `canonical/model_aliases.csv` and re-run section 04.

@@ -3,30 +3,40 @@ Qwen3-235B-A22B,qwen3-235b-a22b,Aider Polyglot,Aider Polyglot,aider_polyglot_ext
 openai/gpt-oss-120b_high,gpt-oss-120b_high,Aider Polyglot,Aider Polyglot,aider_polyglot_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,AlgoTune,AlgoTune,algotune_external.csv
 zai-org/glm-4.7,glm-4.7,APEX Agents,APEX Agents,apex_agents_external.csv
+deepseek/deepseek-v3.2,deepseek-v3.2,APEX Agents,APEX Agents,apex_agents_external.csv
+deepseek/deepseek-v3.2,deepseek-v3.2,ARC-AGI-2,ARC-AGI-2,arc_agi_2_external.csv
+deepseek/deepseek-v3.2,deepseek-v3.2,ARC-AGI,ARC-AGI,arc_agi_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,ARC (AI2),ARC (AI2),arc_ai2_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,BIG-Bench Hard (BBH),BIG-Bench Hard (BBH),bbh_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,BoolQ,BoolQ,bool_q_external.csv
 moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,CL-Bench,CL-Bench,cl_bench_external.csv
 zai-org/glm-4.7,glm-4.7,CL-Bench,CL-Bench,cl_bench_external.csv
+deepseek/deepseek-v3.2,deepseek-v3.2,CL-Bench,CL-Bench,cl_bench_external.csv
 zai-org/glm-4.7_high,glm-4.7_high,CL-Bench Life,CL-Bench Life,cl_bench_life_external.csv
+deepseek/deepseek-v3.2,deepseek-v3.2,CL-Bench Life,CL-Bench Life,cl_bench_life_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,CSQA2,CSQA2,common_sense_qa_2_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,CritPt,CritPt,critpt_external.csv
 chutes/Llama-4-Maverick-17B-128E-Instruct,Llama-4-Maverick-17B-128E-Instruct,CritPt,CritPt,critpt_external.csv
+qwen/qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,CritPt,CritPt,critpt_external.csv
+gemini-2.0-flash-02-05,gemini-2.0-flash-001,EnigmaEval,EnigmaEval,enigma_eval_external.csv
 chutes/Llama-4-Maverick-17B-128E-Instruct,Llama-4-Maverick-17B-128E-Instruct,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 chutes/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 deepinfra/Qwen3-Next-80B-A3B-Instruct,Qwen3-Next-80B-A3B-Instruct,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 fireworks/Kimi-K2-Instruct-0905,Kimi-K2-Instruct-0905,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 chutes/Qwen3-Next-80B-A3B-Instruct,Qwen3-Next-80B-A3B-Instruct,Fiction.LiveBench,Fiction.LiveBench,fictionlivebench_external.csv
 Qwen3-235B-A22B,qwen3-235b-a22b,ForecastBench,ForecastBench,forecastbench_external.csv
+grok-4-3_high,grok-4.3_high,GDP.pdf,GDP.pdf,gdp_pdf_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,GSM8K,GSM8K,gsm8k_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,HellaSwag,HellaSwag,hella_swag_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,LAMBADA,LAMBADA,lambada_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,MMLU,MMLU,mmlu_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,OpenBookQA,OpenBookQA,open_book_qa_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,PIQA,PIQA,piqa_external.csv
-fireworks/deepseek-v3p2,deepseek-v3p2,ProofBench,ProofBench,proofbench_external.csv
+fireworks/deepseek-v3p2,deepseek-v3.2,ProofBench,ProofBench,proofbench_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,SciCode,SciCode,scicode_external.csv
+qwen/qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,SciCode,SciCode,scicode_external.csv
 zai-org/glm-4.7,glm-4.7,SimpleBench,SimpleBench,simplebench_external.csv
+deepseek/deepseek-v3.2,deepseek-v3.2,TerminalBench,TerminalBench,terminalbench_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,TriviaQA,TriviaQA,trivia_qa_external.csv
 Chat-UniVi-7B-v1.5 ,Chat-UniVi-7B-v1.5,Video-MME,Video-MME,video_mme_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,WeirdML,WeirdML,weirdml_external.csv
@@ -548,12 +558,15 @@ Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,MMLU Pro Chemistry,MMLU Pro Chemist
 Llama 3 70b,Meta-Llama-3-70B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
 Llama 3 8b,Meta-Llama-3-8B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
 Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
+Muse Spark 1.1,muse-spark-1.1,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gemini-3.5-flash (high),gemini-3.5-flash_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Claude Fable 5,claude-fable-5,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+kimi-k3 (max),kimi-k3_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-8 (max),claude-opus-4-8_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Muse Spark,muse-spark,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-7 (max),claude-opus-4-7_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gemini-3.1-pro-preview (high),gemini-3.1-pro-preview_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+glm-5p2,glm-5.2_unknown,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-6 (max),claude-opus-4-6_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 glm-5p1,glm-5.1,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.5 (xhigh),gpt-5.5_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
@@ -566,10 +579,11 @@ glm-4p7,glm-4.7,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gemini-3.1-flash-lite (high),gemini-3.1-flash-lite_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.4-mini (xhigh),gpt-5.4-mini-2026-03-17_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.1 (high),gpt-5.1-2025-11-13_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+o3-pro,o3-pro-2025-06-10,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-haiku-4-5,claude-haiku-4-5-20251001,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Muse Spark,muse-spark,MultiChallenge,MultiChallenge,seal/multichallenge.html
 "Muse Spark 1.1
-",Muse Spark 1.1,MultiChallenge,MultiChallenge,seal/multichallenge.html
+",muse-spark-1.1,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gpt-5.1-2025-11-13-thinking,gpt-5.1-2025-11-13_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gpt-5-thinking,gpt-5-2025-08-07_unknown,MultiChallenge,MultiChallenge,seal/multichallenge.html
@@ -592,6 +606,7 @@ o4-mini-2025-04-16-reasoning-high,o4-mini-2025-04-16_high,MultiChallenge,MultiCh
 gpt-4.1,gpt-4.1-2025-04-14,MultiChallenge,MultiChallenge,seal/multichallenge.html
 claude-opus-4-6-thinking-max,claude-opus-4-6_max,MultiChallenge,MultiChallenge,seal/multichallenge.html
 gemini-2-0-flash,gemini-2.0-flash-001,MultiChallenge,MultiChallenge,seal/multichallenge.html
+Muse Spark 1.1,muse-spark-1.1,MultiNRC,MultiNRC,seal/multinrc.html
 gpt-5-pro-2025-10-06,gpt-5-pro-2025-10-06_unknown,MultiNRC,MultiNRC,seal/multinrc.html
 gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05_unknown,MultiNRC,MultiNRC,seal/multinrc.html
 Muse Spark,muse-spark,MultiNRC,MultiNRC,seal/multinrc.html
@@ -669,7 +684,9 @@ ChatGPT-4o-latest (November 2024),gpt-4o-2024-11-20,Visual Task Assessment (VIST
 Gemini 1.5 Pro,gemini-1.5-pro-001,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 gpt-5.1-instant,gpt-5.1-2025-11-13_none,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 GPT-4o (August 2024),gpt-4o-2024-08-06,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+Mistral Medium 3,mistral-medium-2505,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Gemini 1.5 Flash 002,gemini-1.5-flash-002,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
+Pixtral Large (November 2024),pixtral-large-2411,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Gemini 2.0 Flash Lite Preview,gemini-2.0-flash-lite,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 Claude 3 Opus,claude-3-opus-20240229,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
 GPT-4.1 nano,gpt-4.1-nano-2025-04-14,Visual Task Assessment (VISTA),Visual Task Assessment (VISTA),seal/visual_language_understanding.html
@@ -730,7 +747,7 @@ Nova LIte,amazon.nova-lite-v1:0,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterp
 Command R+,c4ai-command-r-plus-08-2024,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Nova Mirco,amazon.nova-micro-v1:0,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
 Llama 3.1 8B Instruct,Llama-3.1-8B-Instruct,SEAL Tool Use (Enterprise),SEAL Tool Use (Enterprise),seal/tool_use_enterprise.html
-Muse Spark 1.1*,Muse Spark 1.1,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
+Muse Spark 1.1*,muse-spark-1.1,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 gpt-5.4 (xHigh)*,gpt-5.4-2026-03-05_xhigh,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 Muse Spark*,muse-spark,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 claude-opus-4-6 (thinking)*,claude-opus-4-6_unknown,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
@@ -744,9 +761,10 @@ minimax-2.1,MiniMax-M2.1,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.h
 gemini-3-flash,gemini-3-flash-preview,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 gpt-5.2,gpt-5.2-2025-12-11_unknown,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 kimi-k2-instruct,Kimi-K2-Instruct,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
+deepseek-v3p2,deepseek-v3.2,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 llama3-1-405b-instruct,Llama-3.1-405B-Instruct,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
 llama4-maverick-17b-instruct,Llama-4-Maverick-17B-128E-Instruct,SWE-Bench Pro,SWE-Bench Pro,seal/swe_bench_pro_public.html
-Muse Spark 1.1*,Muse Spark 1.1,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
+Muse Spark 1.1*,muse-spark-1.1,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 claude-opus-4-6 (thinking)*,claude-opus-4-6_unknown,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 Muse Spark*,muse-spark,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
 gpt-5.4(xHigh)*,gpt-5.4-2026-03-05_xhigh,SWE-Bench Pro (Private),SWE-Bench Pro (Private),seal/swe_bench_pro_private.html
@@ -779,11 +797,14 @@ Mistral Large,mistral-large-2402,SEAL Instruction Following,SEAL Instruction Fol
 GPT-4 (November 2024),gpt-4o-2024-11-20,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
 Gemini 1.5 Pro (May 2024),gemini-1.5-pro-001,SEAL Instruction Following,SEAL Instruction Following,seal/instruction_following.html
 "Muse Spark 1.1
-",Muse Spark 1.1,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+",muse-spark-1.1,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+claude-fable-5 (max),claude-fable-5_max,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 Muse Spark,muse-spark,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gpt-5,gpt-5-2025-08-07_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gpt-5-pro,gpt-5-pro-2025-10-06_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+gpt-5.6-sol (max),gpt-5.6-sol_max,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+o3-pro,o3-pro-2025-06-10,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 o3,o3-2025-04-16_medium,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 claude-opus-4-5-20251101-thinking,claude-opus-4-5-20251101_unknown,PRBench Finance,PRBench Finance,seal/prbench-finance.html
@@ -797,9 +818,15 @@ gpt-4.1,gpt-4.1-2025-04-14,PRBench Finance,PRBench Finance,seal/prbench-finance.
 deepseek-r1-0528,DeepSeek-R1-0528,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 gpt-4.1-mini,gpt-4.1-mini-2025-04-14,PRBench Finance,PRBench Finance,seal/prbench-finance.html
 llama4-maverick-instruct-basic,Llama-4-Maverick-17B-128E-Instruct,PRBench Finance,PRBench Finance,seal/prbench-finance.html
+Muse Spark 1.1,muse-spark-1.1,PRBench Legal,PRBench Legal,seal/prbench-legal.html
+"claude-fable-5 (max)
+",claude-fable-5_max,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 Muse Spark,muse-spark,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 claude-opus-4-6 (Non-Thinking) ,claude-opus-4-6_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
+"gpt-5.6-sol (max)
+",gpt-5.6-sol_max,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 gpt-5-pro,gpt-5-pro-2025-10-06_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
+o3-pro,o3-pro-2025-06-10,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 gpt-5.1-thinking,gpt-5.1-2025-11-13_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 gpt-5,gpt-5-2025-08-07_unknown,PRBench Legal,PRBench Legal,seal/prbench-legal.html
 o3,o3-2025-04-16_medium,PRBench Legal,PRBench Legal,seal/prbench-legal.html
@@ -823,6 +850,7 @@ gpt-5.2-2025-12-11 (medium),gpt-5.2-2025-12-11_medium,Remote Labor Index,Remote 
 claude-4-5-Sonnet,claude-sonnet-4-5-20250929,Remote Labor Index,Remote Labor Index,seal/rli.html
 gpt-5.2-2025-12-11 (default),gpt-5.2-2025-12-11_unknown,Remote Labor Index,Remote Labor Index,seal/rli.html
 gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,Remote Labor Index,Remote Labor Index,seal/rli.html
+Muse Spark 1.1,muse-spark-1.1,VisualToolBench,VisualToolBench,seal/vtb.html
 gpt-5.4-2026-03-05 (reasoning effort = high),gpt-5.4-2026-03-05_high,VisualToolBench,VisualToolBench,seal/vtb.html
 claude-opus-4-6-thinking,claude-opus-4-6_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
 gpt-5-2025-08-07-thinking,gpt-5-2025-08-07_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
@@ -835,6 +863,8 @@ claude-sonnet-4-thinking,claude-sonnet-4-20250514_unknown,VisualToolBench,Visual
 llama4-scout,Llama-4-Scout-17B-16E-Instruct,VisualToolBench,VisualToolBench,seal/vtb.html
 llama4-maverick,Llama-4-Maverick-17B-128E-Instruct,VisualToolBench,VisualToolBench,seal/vtb.html
 Inkling (Thinking)*,Inkling (Thinking),AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+"Inkling-small
+",Inkling-small,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 gemini-3-pro-preview (Thinking)*,gemini-3-pro-preview,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 gemini-2.5-pro (Thinking)*,gemini-2.5-pro,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 gemini-2.5-flash (Thinking)*,gemini-2.5-flash,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
@@ -864,17 +894,23 @@ gpt-4o-mini-audio-preview-2024-12-17†,gpt-4o-mini-audio-preview-2024-12-17,Aud
 Qwen2.5-Omni-7B*,Qwen2.5-Omni-7B,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 Kimi-Audio-7B-Instruct†,Kimi-Audio-7B-Instruct,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 LFM2-Audio-1.5B†,LFM2-Audio-1.5B,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+fireworks/kimi-k2p5,kimi-k2.5,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
 zai-org/GLM-4.7,glm-4.7,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
-fireworks/deepseek-v3p2,deepseek-v3p2,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
+fireworks/deepseek-v3p2,deepseek-v3.2,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
 Qwen/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
 zai-org/GLM-4.6,glm-4.6,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
 moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,FrontierMath v1,FrontierMath v1,epoch_live_benchmarks.csv
+fireworks/kimi-k2p5,kimi-k2.5,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
 zai-org/GLM-4.7,glm-4.7,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
-fireworks/deepseek-v3p2,deepseek-v3p2,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
+fireworks/deepseek-v3p2,deepseek-v3.2,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
 Qwen/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
 zai-org/GLM-4.6,glm-4.6,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
 moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,FrontierMath Tier 4 v1,FrontierMath Tier 4 v1,epoch_live_benchmarks.csv
+fireworks/kimi-k2p5,kimi-k2.5,Chess Puzzles,Chess Puzzles,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,Chess Puzzles,Chess Puzzles,epoch_live_benchmarks.csv
+fireworks/kimi-k2p5,kimi-k2.5,GPQA Diamond,GPQA Diamond,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,GPQA Diamond,GPQA Diamond,epoch_live_benchmarks.csv
+fireworks/kimi-k2p5,kimi-k2.5,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,epoch_live_benchmarks.csv
+fireworks/kimi-k2p5,kimi-k2.5,SimpleQA Verified,SimpleQA Verified,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,SimpleQA Verified,SimpleQA Verified,epoch_live_benchmarks.csv

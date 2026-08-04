@@ -1,0 +1,54 @@
+raw_string,chain,node,parent,node_date
+gemini-1.5-flash-002,gemini-flash,flash 1.5 2024-09-24,,2024-09-24
+gemini-1.5-flash-8b-001,gemini-flash,flash 1.5 2024-09-24,,2024-09-24
+gemini-2.0-flash-thinking-exp-01-21,gemini-flash,flash 2.0 2025-01-21,,2025-01-21
+gemini-2.0-flash-001,gemini-flash,flash 2.0 2025-02-05,,2025-02-05
+gemini-2.5-flash-preview-05-20,gemini-flash,flash 2.5 2025-05-20,,2025-05-20
+gemini-2.5-flash-preview-05-20_16K,gemini-flash,flash 2.5 2025-05-20,,2025-05-20
+gemini-2.5-flash-preview-05-20_1K,gemini-flash,flash 2.5 2025-05-20,,2025-05-20
+gemini-2.5-flash-preview-05-20_23K,gemini-flash,flash 2.5 2025-05-20,,2025-05-20
+gemini-2.5-flash-preview-05-20_8K,gemini-flash,flash 2.5 2025-05-20,,2025-05-20
+gemini-2.5-flash,gemini-flash,flash 2.5 2025-06-17,,2025-06-17
+gemini-2.5-flash-preview-09-2025,gemini-flash,flash 2.5 2025-09-25,,2025-09-25
+gemini-2.5-flash-preview-09-2025_16k,gemini-flash,flash 2.5 2025-09-25,,2025-09-25
+gemini-2.0-flash-lite-001,gemini-flash-lite,flash-lite 2.0 2025-02-25,,2025-02-25
+gemini-2.5-flash-lite-preview-09-2025,gemini-flash-lite,flash-lite 2.5 2025-09-25,,2025-09-25
+gemini-1.0-pro-vision,gemini-pro,pro 1.0 2024-01-04,,2024-01-04
+gemini-1.5-pro-001,gemini-pro,pro 1.5 2024-05-14,,2024-05-14
+gemini-1.5-pro-002,gemini-pro,pro 1.5 2024-09-24,,2024-09-24
+gemini-2.5-pro-preview-05-06,gemini-pro,pro 2.5 2025-05-06,,2025-05-06
+gemini-2.5-pro,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-2.5-pro-preview-06-05,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-2.5-pro-preview-06-05_1K,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-2.5-pro-preview-06-05_32K,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-2.5-pro_16K,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-2.5-pro_32K,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-2.5-pro_8K,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-2.5-pro_high,gemini-pro,pro 2.5 2025-06-05,,2025-06-05
+gemini-3-deep-think-preview,gemini-pro,pro 3 2026-02-12,,2026-02-12
+gpt-4-0613,gpt,4 2023-06-13,,2023-06-13
+gpt-4-1106-preview,gpt,4-turbo 2023-11-06,,2023-11-06
+gpt-4-1106-vision-preview,gpt,4-turbo 2023-11-06,,2023-11-06
+gpt-4-turbo,gpt,4-turbo 2023-11-06,,2023-11-06
+gpt-4-0125-preview,gpt,4-turbo 2024-01-25,,2024-01-25
+gpt-4-turbo-2024-04-09,gpt,4-turbo 2024-04-09,,2024-04-09
+gpt-4o-2024-08-06,gpt,4o 2024-08-06,,2024-08-06
+gpt-4o-2024-11-20,gpt,4o 2024-11-20,,2024-11-20
+chatgpt-4o-01-29-2025,gpt,chatgpt-4o 2025-01-29,4o 2024-11-20,2025-01-29
+chatgpt-4o-03-27-2025,gpt,chatgpt-4o 2025-03-27,chatgpt-4o 2025-01-29,2025-03-27
+gpt-3.5-turbo-0613,gpt-3.5,3.5-turbo-0613,,2023-06-13
+gpt-3.5-turbo-instruct,gpt-3.5,3.5-turbo-instruct,,2023-09-18
+gpt-3.5-turbo-1106,gpt-3.5,3.5-turbo-1106,,2023-11-06
+gpt-3.5-turbo-0125,gpt-3.5,3.5-turbo-0125,,2024-01-25
+mimo-v2-flash,mimo-flash,v2-flash,,2025-12-16
+claude-fable-5,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+claude-fable-5_high,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+claude-fable-5_low,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+claude-fable-5_max,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+claude-fable-5_medium,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+claude-fable-5_unknown,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+claude-fable-5_xhigh,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+claude-mythos-preview-early,opus,Fable 5 2026-06-09,Opus 4.8,2026-06-09
+qwen1.5-32b-chat,qwen-open-32b,1.5-32B 2024-04-03,,2024-04-03
+CodeQwen1.5-7B,qwen-open-7b,1.5-7B 2024-04-15,,2024-04-15
+qwen-plus-2025-04-28,qwen-plus,plus 2.5 2025-04-28,,2025-04-28

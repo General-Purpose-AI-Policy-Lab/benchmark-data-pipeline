@@ -1,0 +1,89 @@
+model_version,score,release_date,organization,benchmark,stderr,source,category
+claude-3-5-sonnet-20240620,0.2571072732967866,2024-06-20,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-3-7-sonnet-20250219_unknown,0.336512555655602,2025-02-24,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-3-opus-20240229,0.1128357039406292,2024-02-29,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-mythos-preview-early,0.8621531571857881,2026-04-06,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-20250514_unknown,0.459534824098837,2025-05-22,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-5-20251101_unknown,0.7268286618982296,2025-11-24,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-6_unknown,0.8099416910847341,2026-02-05,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-5-20250929_unknown,0.6228189258507673,2025-09-29,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-3.5-turbo-0613,0.0054708151174422,2023-06-13,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-4-turbo-2024-04-09,0.0938231715448564,2024-04-09,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-4o-2024-05-13,0.1050070141306051,2024-05-13,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5-2025-08-07_unknown,0.5120988842518557,2025-08-07,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.2-codex,0.6149902360407432,2025-12-18,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.3-codex,0.781051436799829,2026-02-05,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.4-2026-03-05_unknown,0.7424860415182778,2026-03-05,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o1-2024-12-17_unknown,0.3163816390012545,2024-12-17,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o3-2025-04-16_unknown,0.4203913750487167,2025-04-16,,AISI CTF Suites - Apprentice,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-mythos-preview-early,0.6843300600723842,2026-04-06,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-6_unknown,0.5803203240249217,2026-02-05,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-7_unknown,0.4852576620460583,2026-04-16,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-5-20250929_unknown,0.2772381899511335,2025-09-29,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5-2025-08-07_unknown,0.3767743889642963,2025-08-07,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.2-codex,0.4382855231859139,2025-12-18,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.3-codex,0.5803203240249217,2026-02-05,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.4-2026-03-05_unknown,0.5232827268376036,2026-03-05,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.5_unknown,0.7134080507953305,2026-04-23,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.6-sol_unknown,0.95,2026-07-09,,AISI CTF Suites - Expert,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-mythos-preview-early,0.6909394107837687,2026-04-06,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-5-20251101_unknown,0.34375,2025-11-24,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-6_unknown,0.4875,2026-02-05,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-7_unknown,0.3479710950528071,2026-04-16,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-5-20250929_unknown,0.29375,2025-09-29,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-4o-2024-05-13,0.053125,2024-05-13,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.1-codex-max,0.30625,2025-11-19,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.3-codex,0.34375,2026-02-05,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.4-2026-03-05_unknown,0.4282934963868816,2026-03-05,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.5_unknown,0.697331851028349,2026-04-23,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.6-sol_unknown,0.9087921117502056,2026-07-09,,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-mythos-preview-early,0.685,2026-04-06,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-5-20251101_unknown,0.6244,2025-11-24,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-6_unknown,0.6373,2026-02-05,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-5-20250929_unknown,0.5872,2025-09-29,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-4.1-2025-04-14,0.4186,2025-04-14,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5-2025-08-07_unknown,0.572,2025-08-07,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5-mini-2025-08-07_unknown,0.4506,2025-08-07,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.1-2025-11-13_unknown,0.5133,2025-11-13,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.2-2025-12-11_unknown,0.5716,2025-12-11,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o3-2025-04-16_unknown,0.4707,2025-04-16,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o4-mini-2025-04-16_unknown,0.3602,2025-04-16,,CTI-REALM,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-3-7-sonnet-20250219_unknown,0.4968421052631579,2025-02-24,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-1-20250805_unknown,0.6452631578947369,2025-08-05,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-5-20251101_unknown,0.5326315789473685,2025-11-24,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-6_unknown,0.7789473684210526,2026-02-05,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-7_unknown,0.768421052631579,2026-04-16,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-8_unknown,0.8294736842105263,2026-05-28,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-20250514_unknown,0.6263157894736842,2025-05-22,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-5-20250929_unknown,0.7021052631578948,2025-09-29,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-6_unknown,0.6863157894736842,2026-02-17,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.4-2026-03-05_unknown,0.8315789473684211,2026-03-05,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.5_unknown,0.8610526315789474,2026-04-23,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.6-sol_unknown,0.88,2026-07-09,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+muse-spark,0.4578947368421053,2026-04-08,,CyberGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-6_unknown,0.0359773856433098,2026-02-05,,ExploitGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-7_unknown,0.0119924618811032,2026-04-16,,ExploitGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gemini-3.1-pro-preview,0.0205585060818912,2026-02-19,,ExploitGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+glm-5.1,0.0068528353606303,2026-04-07,,ExploitGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.4-2026-03-05_unknown,0.092513277368511,2026-03-05,,ExploitGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.5_unknown,0.2055850608189138,2026-04-23,,ExploitGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.6-sol_unknown,0.383076923076923,2026-07-09,,ExploitGym,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.1-codex-max,0.6,2025-11-19,,OpenAI Cyber Ranges,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.2-codex,0.5333,2025-12-18,,OpenAI Cyber Ranges,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.3-codex,0.8,2026-02-05,,OpenAI Cyber Ranges,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.4-2026-03-05_unknown,0.7333,2026-03-05,,OpenAI Cyber Ranges,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5.5_unknown,0.9333,2026-04-23,,OpenAI Cyber Ranges,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-4o-2024-05-13,0.03,2024-05-13,,OpenAI NYU CTF Professional (Original),,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o1-2024-12-17_unknown,0.23,2024-12-17,,OpenAI NYU CTF Professional (Original),,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o3-2025-04-16_unknown,0.59,2025-04-16,,OpenAI NYU CTF Professional (Original),,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o4-mini-2025-04-16_unknown,0.41,2025-04-16,,OpenAI NYU CTF Professional (Original),,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+DeepSeek-V3-Base,0.0379670036575585,2024-12-26,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+Meta-Llama-3-70B,0.0005372403281032,2024-04-18,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-3-7-sonnet-20250219_unknown,0.1116187932690985,2025-02-24,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-1-20250805_unknown,0.2544507957799281,2025-08-05,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-opus-4-5-20251101_unknown,0.4836211957528594,2025-11-24,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-20250514_unknown,0.1733714178749313,2025-05-22,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+claude-sonnet-4-5-20250929_unknown,0.3036693880397431,2025-09-29,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-4o-2024-05-13,0.0102128252922828,2024-05-13,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+gpt-5-2025-08-07_unknown,0.3336159237062435,2025-08-07,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
+o3-2025-04-16_unknown,0.1140800040313753,2025-04-16,,SCONE-Bench,,Epoch AI cyber ECI (epoch.ai/data/cyber),Agentic Computer Use
