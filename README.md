@@ -78,9 +78,6 @@ raw per-item results — in `data/evals/<name>/` (see its README).
   Refresh tab (`GET /api/snapshots`, `POST /api/run`).
 - `scripts/check.py` — post-refresh gate: paths exist, merged CSV schema
   and row count hold, the section-10 swap ran, report non-empty.
-- `scripts/build_lineage_map.py` — regenerates
-  `data/curated/lineage_map.csv` from the merged table after a refresh;
-  never hand-edit the map.
 
 ## License note
 
