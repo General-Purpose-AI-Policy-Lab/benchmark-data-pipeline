@@ -1,41 +1,35 @@
-# Pipeline report — 2026-08-07 10:43:56 UTC
+# Pipeline report — 2026-08-19 12:57:07 UTC
 
-- **Snapshot:** `2026-08-07`
-- **Epoch ZIP sha256:** `591b9f32b820c19e8e7684cb193a1b6efa05378dd09ad349e7c82f240bd5f07b`
-- **Fetched at:** 2026-08-07T10:43:50.508600+00:00
+- **Snapshot:** `2026-08-19`
+- **Epoch ZIP sha256:** `89a9c3d9962d11f17a4a35eaf5b89ff5e4dcdd63282e74363e82c671bc0f5c13`
+- **Fetched at:** 2026-08-19T12:44:15.863662+00:00
 
 ## Row counts
 
-- After load:           5,968
-- After dedup:          5,052
-- After metadata join:  5,052
-- After optional filter:5,052
-- Final:                5,064
+- After load:           6,189
+- After dedup:          5,249
+- After metadata join:  5,249
+- After optional filter:5,249
+- Final:                5,247
 
 ## Distinct counts
 
 - Benchmarks: 100
-- Models:     835
+- Models:     860
 
 ## Coverage vs current `data/processed/benchmarks_merged.csv`
 
-- Overlapping (model, benchmark) pairs: 4,894
-- Current file pairs: 4,954
-- New file pairs:     5,064
-- Significant score deltas (|Δ|>0.01): 13
+- Overlapping (model, benchmark) pairs: 5,247
+- Current file pairs: 5,247
+- New file pairs:     5,247
+- Significant score deltas (|Δ|>0.01): 0
 
-### Top 10 score changes
+## Unrecognized live-feed tasks (3)
 
-- `qwen3.5-plus` on `Chess Puzzles`: 0.170 → 0.220 (Δ=+0.050)
-- `qwen3.7-max` on `Chess Puzzles`: 0.220 → 0.190 (Δ=-0.030)
-- `qwen3.6-max-preview` on `Chess Puzzles`: 0.170 → 0.200 (Δ=+0.030)
-- `qwen3.6-flash` on `Chess Puzzles`: 0.172 → 0.200 (Δ=+0.028)
-- `qwen3.6-plus` on `OTIS Mock AIME 2024-2025`: 0.906 → 0.933 (Δ=+0.028)
-- `qwen3.6-max-preview` on `GPQA Diamond`: 0.891 → 0.874 (Δ=-0.017)
-- `qwen3.6-flash` on `OTIS Mock AIME 2024-2025`: 0.861 → 0.844 (Δ=-0.017)
-- `qwen3.5-plus` on `OTIS Mock AIME 2024-2025`: 0.850 → 0.867 (Δ=+0.017)
-- `kimi-k2.7-code` on `GPQA Diamond`: 0.895 → 0.879 (Δ=-0.016)
-- `qwen3.5-flash` on `GPQA Diamond`: 0.838 → 0.823 (Δ=-0.015)
+In `epoch.ai/data/benchmarks.csv` but in neither `LIVE_TASK_SPEC` nor `LIVE_TASK_SKIP` (section 03d). Map them or skip them with a reason:
+- `MirrorCode`
+- `OEIS Open`
+- `OEIS Open Lite`
 
 ## Rows dropped for a blank `Model version` (417)
 
@@ -66,6 +60,11 @@ Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of re
 - `open_book_qa_external.csv` (OpenBookQA): **1** — e.g. Falcon-rw-1.3B
 - `weirdml_external.csv` (WeirdML): **1** — e.g. 
 
-## New models since last canonicalization (22)
+## Unrecognized upstream files (1)
+
+In the feed but in neither `FILE_SPEC` nor `FILE_SKIP`. Map them or skip them with a reason:
+- `mirrorcode.csv`
+
+## New models since last canonicalization (31)
 
 See `output/missing_models.csv`. Add canonical aliases in `canonical/model_aliases.csv` and re-run section 04.

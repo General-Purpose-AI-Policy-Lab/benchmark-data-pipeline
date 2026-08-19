@@ -924,6 +924,7 @@ fireworks/kimi-k2p5,kimi-k2.5,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,
 openai/gpt-oss-120b_high,gpt-oss-120b_high,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,epoch_live_benchmarks.csv
 fireworks/kimi-k2p5,kimi-k2.5,SimpleQA Verified,SimpleQA Verified,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,SimpleQA Verified,SimpleQA Verified,epoch_live_benchmarks.csv
+claude-sonnet-5,claude-sonnet-5_unknown,Mystery Game Puzzles,Mystery Game Puzzles,epoch_live_benchmarks.csv
 grok-4.5-0708,grok-4.5_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
 gemini-3.6-flash,gemini-3.6-flash_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
 gemini-3.5-flash,gemini-3.5-flash_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
