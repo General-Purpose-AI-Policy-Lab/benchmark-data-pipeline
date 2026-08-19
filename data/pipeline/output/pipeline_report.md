@@ -1,4 +1,4 @@
-# Pipeline report — 2026-08-19 12:57:07 UTC
+# Pipeline report — 2026-08-19 13:35:33 UTC
 
 - **Snapshot:** `2026-08-19`
 - **Epoch ZIP sha256:** `89a9c3d9962d11f17a4a35eaf5b89ff5e4dcdd63282e74363e82c671bc0f5c13`
@@ -65,6 +65,6 @@ Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of re
 In the feed but in neither `FILE_SPEC` nor `FILE_SKIP`. Map them or skip them with a reason:
 - `mirrorcode.csv`
 
-## New models since last canonicalization (31)
+## New models since last canonicalization (29)
 
 See `output/missing_models.csv`. Add canonical aliases in `canonical/model_aliases.csv` and re-run section 04.

@@ -846,3 +846,5 @@ qwen3.5-plus_none
 qwen3.6-flash_none
 qwen3.6-max-preview_none
 qwen3.6-plus_none
+nova-2.0-pro-preview_unknown
+inkling-small_high
