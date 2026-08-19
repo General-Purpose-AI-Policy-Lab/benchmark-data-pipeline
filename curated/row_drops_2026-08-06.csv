@@ -1,0 +1,2 @@
+model_version,benchmark,score,source,reason
+gpt-5.2-2025-12-11_medium,AlgoTune,0.512195,EpochAI,"effort contradiction: Epoch's Model version says _medium but the AlgoTune board's own label (Epoch Name field) says GPT-5.2 (high), and the board is the primary source, so the label wins. Re-added as gpt-5.2-2025-12-11_high via row_adds_2026-08-06_algotune.csv; found by diagnostics/audit_model_names.py."

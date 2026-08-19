@@ -1,28 +1,41 @@
-# Pipeline report — 2026-08-04 13:18:12 UTC
+# Pipeline report — 2026-08-07 10:43:56 UTC
 
-- **Snapshot:** `2026-08-04`
-- **Epoch ZIP sha256:** `d34373e3a44b80de9755b2d9ad2559ee484a58babd17dd4906296ce777b8fc6a`
-- **Fetched at:** 2026-08-04T12:54:47.328824+00:00
+- **Snapshot:** `2026-08-07`
+- **Epoch ZIP sha256:** `591b9f32b820c19e8e7684cb193a1b6efa05378dd09ad349e7c82f240bd5f07b`
+- **Fetched at:** 2026-08-07T10:43:50.508600+00:00
 
 ## Row counts
 
-- After load:           5,632
-- After dedup:          4,752
-- After metadata join:  4,752
-- After optional filter:4,752
-- Final:                4,748
+- After load:           5,968
+- After dedup:          5,052
+- After metadata join:  5,052
+- After optional filter:5,052
+- Final:                5,064
 
 ## Distinct counts
 
-- Benchmarks: 101
-- Models:     808
+- Benchmarks: 100
+- Models:     835
 
 ## Coverage vs current `data/processed/benchmarks_merged.csv`
 
-- Overlapping (model, benchmark) pairs: 4,747
-- Current file pairs: 4,748
-- New file pairs:     4,748
-- Significant score deltas (|Δ|>0.01): 0
+- Overlapping (model, benchmark) pairs: 4,894
+- Current file pairs: 4,954
+- New file pairs:     5,064
+- Significant score deltas (|Δ|>0.01): 13
+
+### Top 10 score changes
+
+- `qwen3.5-plus` on `Chess Puzzles`: 0.170 → 0.220 (Δ=+0.050)
+- `qwen3.7-max` on `Chess Puzzles`: 0.220 → 0.190 (Δ=-0.030)
+- `qwen3.6-max-preview` on `Chess Puzzles`: 0.170 → 0.200 (Δ=+0.030)
+- `qwen3.6-flash` on `Chess Puzzles`: 0.172 → 0.200 (Δ=+0.028)
+- `qwen3.6-plus` on `OTIS Mock AIME 2024-2025`: 0.906 → 0.933 (Δ=+0.028)
+- `qwen3.6-max-preview` on `GPQA Diamond`: 0.891 → 0.874 (Δ=-0.017)
+- `qwen3.6-flash` on `OTIS Mock AIME 2024-2025`: 0.861 → 0.844 (Δ=-0.017)
+- `qwen3.5-plus` on `OTIS Mock AIME 2024-2025`: 0.850 → 0.867 (Δ=+0.017)
+- `kimi-k2.7-code` on `GPQA Diamond`: 0.895 → 0.879 (Δ=-0.016)
+- `qwen3.5-flash` on `GPQA Diamond`: 0.838 → 0.823 (Δ=-0.015)
 
 ## Rows dropped for a blank `Model version` (417)
 
@@ -52,3 +65,7 @@ Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of re
 - `fictionlivebench_external.csv` (Fiction.LiveBench): **1** — e.g. 
 - `open_book_qa_external.csv` (OpenBookQA): **1** — e.g. Falcon-rw-1.3B
 - `weirdml_external.csv` (WeirdML): **1** — e.g. 
+
+## New models since last canonicalization (22)
+
+See `output/missing_models.csv`. Add canonical aliases in `canonical/model_aliases.csv` and re-run section 04.

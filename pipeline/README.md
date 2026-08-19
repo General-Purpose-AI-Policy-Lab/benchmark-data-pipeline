@@ -243,6 +243,89 @@ be kept current; `FILE_SPEC` reads `Main score` and FrontierCode difficulty is
 likewise **not comparable across this change**. Watch for this whenever a score
 column disappears: check overlapping models before assuming a rename.
 
+## Kaggle Open Benchmarks
+
+Endpoint: `https://www.kaggle.com/api/v1/benchmarks/<owner>/<slug>/leaderboard`,
+public JSON, no auth. The first INDEPENDENTLY RE-RUN source in the pipeline:
+the other five feeds are vendor self-reports or leaderboard scrapes, and every
+Kaggle row carries a binomial 95% confidence interval, so this is the first
+feed to supply real per-row stderr at scale (`--known-se` currently has
+stderr on roughly a fifth of cells).
+
+**Boards ingested**, each merged per its own `kaggle_wins` boolean:
+
+| Kaggle slug | → benchmark | kaggle_wins | models | policy |
+|---|---|---|---|---|
+| `open-benchmarks/mmlu` | MMLU | `True` | 51 | Kaggle authoritative on collisions; the ZIP's 136 rows backfill the rest, 180 obs total |
+| `open-benchmarks/mmlu-pro` | MMLU-Pro | `True` | 55 | the sole source for this column |
+| `deepmind/simpleqa-verified` | SimpleQA Verified | `False` | 46 | our Epoch-live-feed column wins every collision; Kaggle fills the 25 models we lack |
+
+**`open-benchmarks/mmlu` → MMLU, kaggle_wins=True.** No offset is detectable
+against the existing column: 7 overlapping models, mean +0.021, sd 0.044,
+p = 0.25, and the construct is identical (57 subjects, 4 choices, 0.25 floor).
+Replacing the column outright was rejected: 129 of the 136 existing rows have
+no Kaggle equivalent, and 8 test-takers would leave the fit if dropped.
+Kaggle wins on the 7 collisions and the ZIP backfills the rest, for 180 obs.
+
+**`open-benchmarks/mmlu-pro` → MMLU-Pro, kaggle_wins=True.** Kaggle is the sole
+source for this column, at 45 fit observations. The alternative is TIGER-Lab's
+own leaderboard
+([`TIGER-Lab/mmlu_pro_leaderboard_submission`](https://huggingface.co/datasets/TIGER-Lab/mmlu_pro_leaderboard_submission/blob/main/results.csv)),
+which mixes rows TIGER-Lab ran with rows the model vendors submitted, and
+splitting its offset against Kaggle by that distinction is what decides the
+question: the TIGER-Lab-run rows agree with Kaggle (9 models, mean -0.007,
+p = 0.35), the vendor-submitted rows do not (16 models, mean -0.026, p = 0.014,
+worst case `claude-3-7-sonnet` 0.840 vs 0.719). Vendor optimism, not an
+instrument difference, so the independently re-run board is the one to trust.
+Its 55 models span 0.383-0.917. Chance floor 0.10 (10 answer options).
+
+**`deepmind/simpleqa-verified` → SimpleQA Verified, kaggle_wins=False.** Our
+Epoch-live-feed column is already the better instrument here: 70 models,
+single source, stderr on 70/70, current to 2026-07-31, and correctly
+effort-tagged. It wins every collision. Kaggle contributes only the 25
+models we lack, filed as `_unknown` effort, because Kaggle publishes no
+effort suffix and its rows cannot be filed to a specific test-taker. Filing
+them under a real effort tag would be worth up to 14 points: our
+`gpt-5.4-2026-03-05_xhigh` scores 0.448 against Kaggle's untagged 0.305.
+
+### The n_eff identity guard
+
+A board's identity is verified from its own confidence interval, not its
+documentation. Each Kaggle row's binomial 95% CI implies an effective item
+count, `n_eff = p(1-p)/(ci/1.96)^2`, which should match the benchmark's known
+item count if the board is what it claims to be:
+
+| board | implied n_eff | true item count |
+|---|---|---|
+| MMLU | 14,043 | 14,042 |
+| MMLU-Pro | 12,032 | 12,032 (exact) |
+| SimpleQA Verified | ~938 | 1,000 |
+
+The same reasoning settles the prompt configuration, which Kaggle does not
+state. On MMLU-Pro the gap against TIGER-Lab's own runs is 0.7 points, far
+under the ~20 points a chain-of-thought-versus-direct mismatch produces, so
+Kaggle's MMLU-Pro board runs chain-of-thought.
+
+**Rejected boards:**
+
+| Kaggle slug | reason |
+|---|---|
+| `bobfraserg/gsm8k` | personal account, not org-owned; scores run to 65,250 with a CI of 0 |
+| `open-benchmarks/aime-2025` | CI reported as 0, no usable stderr on a 30-item exam |
+| `open-benchmarks/math-500` | CI implies 8,000 items for a 500-item set |
+
+Corollary rule: **org-owned boards only, never personal accounts.**
+
+**SciCode — examined, not ingested.** Kaggle's SciCode board reports a
+Subproblem-level CI implying n_eff 291, i.e. all 288 subproblems treated as
+independent items. `data/curated/benchmark_n_items.csv` records SciCode as
+65 independent units: the 288 subproblems nest inside 65 problems, and the
+harness feeds each problem's earlier solutions forward, so the subproblems
+are not independent trials. Kaggle's stderr would therefore run about 2.1x
+too tight. SciCode stays sourced from the Epoch ZIP (`scicode_external.csv`,
+itself a republish of Artificial Analysis); Kaggle's 39-model overlap
+corroborates that column (offset -0.027, corr 0.894) without replacing it.
+
 ## Loss-scaled score columns (`FILE_SCORE_INVERT`)
 
 Some upstream leaderboards report a **loss**, where lower is better. Ingested

@@ -73,8 +73,6 @@ MultiNRC,0.0,LLM-judged short-answer tasks,https://scale.com/research/multinrc
 Mystery Game Puzzles,0.0,Open-ended puzzle answers; no guessable baseline,https://epoch.ai/benchmarks/mystery-game-puzzles
 OS World (Screenshot),0.0,GUI agent tasks,https://epoch.ai/benchmarks/os-world
 OS World 2,0.0,GUI agent tasks (as OS World),https://epoch.ai/benchmarks/os-world
-OS World v1 (A11y tree),0.0,GUI agent tasks (as OS World),https://epoch.ai/benchmarks/os-world
-OS World v1 (Screenshot),0.0,GUI agent tasks (as OS World),https://epoch.ai/benchmarks/os-world
 OTIS Mock AIME 2024-2025,0.001,AIME format: 000–999 integers (1/1000),https://epoch.ai/benchmarks/otis-mock-aime-2024-2025
 OpenAI Cyber Ranges,0.0,Agentic cyber-range tasks; no guessable baseline,https://epoch.ai/data/cyber
 OpenAI NYU CTF Professional (Original),0.0,CTFs (as Cybench),https://epoch.ai/data/cyber

@@ -1,0 +1,2 @@
+model_version,score,release_date,organization,benchmark,stderr,source,category,reason
+gpt-5.2-2025-12-11_high,0.512195,2025-12-11,OpenAI,AlgoTune,,EpochAI,Software Engineering,"refiled from gpt-5.2-2025-12-11_medium: the AlgoTune board's own label says GPT-5.2 (high) while Epoch's Model version says _medium; the board is the primary source. Raw speedup 2.05 -> 1-1/2.05. Companion drop in row_drops_2026-08-06.csv; if a feed later supplies (gpt-5.2-2025-12-11_high, AlgoTune) the adds collision check raises and this row retires."

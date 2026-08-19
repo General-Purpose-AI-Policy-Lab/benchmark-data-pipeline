@@ -363,3 +363,29 @@ Pixtral Large (November 2024),pixtral-large-2411,display name with date; matches
 Mistral Medium 3,mistral-medium-2505,"lineage_map already places both on node medium-2505 as bare, same date"
 o3-pro,o3-pro-2025-06-10,"SEAL dateless row; lineage_map lists both as bare on node o3-pro, 2025-06-10"
 gemini-2.0-flash-02-05,gemini-2.0-flash-001,SEAL board names it by release date; same model and same 2025-02-05 release as the versioned Epoch id
+claude-opus-4-8,claude-opus-4-8_unknown,Kaggle board states no effort setting; unknown-effort bucket
+claude-sonnet-5,claude-sonnet-5_unknown,Kaggle board states no effort setting; unknown-effort bucket
+gemini-3.5-flash,gemini-3.5-flash_unknown,Kaggle board states no effort setting; unknown-effort bucket
+gemini-3.6-flash,gemini-3.6-flash_unknown,Kaggle board states no effort setting; unknown-effort bucket
+gpt-5.1-2025-11-13,gpt-5.1-2025-11-13_unknown,Kaggle board states no effort setting; unknown-effort bucket
+gpt-5.4-2026-03-05,gpt-5.4-2026-03-05_unknown,Kaggle board states no effort setting; unknown-effort bucket
+gpt-5.6-luna,gpt-5.6-luna_unknown,Kaggle board states no effort setting; unknown-effort bucket
+gpt-5.6-sol,gpt-5.6-sol_unknown,Kaggle board states no effort setting; unknown-effort bucket
+gpt-5.6-terra,gpt-5.6-terra_unknown,Kaggle board states no effort setting; unknown-effort bucket
+grok-3-mini,grok-3-mini_unknown,Kaggle board states no effort setting; unknown-effort bucket
+o1-2024-12-17,o1-2024-12-17_unknown,Kaggle board states no effort setting; unknown-effort bucket
+o1-mini-2024-09-12,o1-mini-2024-09-12_unknown,Kaggle board states no effort setting; unknown-effort bucket
+o3-mini-2025-01-31,o3-mini-2025-01-31_unknown,Kaggle board states no effort setting; unknown-effort bucket
+Inkling (xHigh),Inkling_xhigh,Scale SEAL alias; inline xHigh effort tag = Epoch's Inkling_xhigh
+Inkling (Thinking),Inkling_unknown,SEAL thinking w/ unspecified budget -> _unknown effort bucket
+Inkling-small,inkling-small,Scale SEAL spelling; case variant of Epoch's inkling-small
+claude-sonnet-4-5-thinking-20250929,claude-sonnet-4-5-20250929_unknown,Kaggle name; thinking w/ unspecified budget -> _unknown effort bucket
+deepseek-v3,DeepSeek-V3,Kaggle lowercase spelling
+deepseek-v3.1,DeepSeek-V3.1,Kaggle lowercase spelling; no thinking tag in the name -> bare mode
+grok-4.5-0708,grok-4.5_unknown,Kaggle date-suffixed name for the 2026-07-08 release; no effort setting -> unknown bucket
+open-mixtral-8x22b-2404,open-mixtral-8x22b,2404 is the version tag of the same Mistral API endpoint
+claude-opus-5 (xhigh),claude-opus-5_xhigh,SEAL MCP Atlas spelling; paren effort -> standard suffix
+gemini-2.5-flash-preview-05-20_23K,gemini-2.5-flash-preview-05-20_24K,Epoch id says 23K but its own Name says Thinking 24K and the budget is 24576 tokens = 24K; 23K exists in no Gemini config
+gemini-2.5-flash-preview-04-17 (24K thinking),gemini-2.5-flash-preview-04-17_24K,paren budget -> standard _24K suffix
+gemini-2.5-flash-preview-04-17 (16K thinking),gemini-2.5-flash-preview-04-17_16K,paren budget -> standard _16K suffix
+QwQ-32B (16K thinking),QwQ-32B_16K,paren budget -> standard _16K suffix

@@ -1,11 +1,15 @@
 model_version_raw,model_version,benchmark_raw,benchmark,_source_file
 Qwen3-235B-A22B,qwen3-235b-a22b,Aider Polyglot,Aider Polyglot,aider_polyglot_external.csv
+gemini-2.5-flash-preview-05-20_23K,gemini-2.5-flash-preview-05-20_24K,Aider Polyglot,Aider Polyglot,aider_polyglot_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,Aider Polyglot,Aider Polyglot,aider_polyglot_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,AlgoTune,AlgoTune,algotune_external.csv
 zai-org/glm-4.7,glm-4.7,APEX Agents,APEX Agents,apex_agents_external.csv
 deepseek/deepseek-v3.2,deepseek-v3.2,APEX Agents,APEX Agents,apex_agents_external.csv
 deepseek/deepseek-v3.2,deepseek-v3.2,ARC-AGI-2,ARC-AGI-2,arc_agi_2_external.csv
+gemini-2.5-flash-preview-05-20_23K,gemini-2.5-flash-preview-05-20_24K,ARC-AGI-2,ARC-AGI-2,arc_agi_2_external.csv
 deepseek/deepseek-v3.2,deepseek-v3.2,ARC-AGI,ARC-AGI,arc_agi_external.csv
+gemini-2.5-flash-preview-05-20_23K,gemini-2.5-flash-preview-05-20_24K,ARC-AGI,ARC-AGI,arc_agi_external.csv
+gemini-2.5-flash-preview-04-17 (24K thinking),gemini-2.5-flash-preview-04-17_24K,ARC-AGI,ARC-AGI,arc_agi_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,ARC (AI2),ARC (AI2),arc_ai2_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,BIG-Bench Hard (BBH),BIG-Bench Hard (BBH),bbh_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,BoolQ,BoolQ,bool_q_external.csv
@@ -29,6 +33,8 @@ grok-4-3_high,grok-4.3_high,GDP.pdf,GDP.pdf,gdp_pdf_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,GSM8K,GSM8K,gsm8k_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,HellaSwag,HellaSwag,hella_swag_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,LAMBADA,LAMBADA,lambada_external.csv
+QwQ-32B (16K thinking),QwQ-32B_16K,Lech Mazur Writing,Lech Mazur Writing,lech_mazur_writing_external.csv
+gemini-2.5-flash-preview-04-17 (24K thinking),gemini-2.5-flash-preview-04-17_24K,Lech Mazur Writing,Lech Mazur Writing,lech_mazur_writing_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,MMLU,MMLU,mmlu_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,OpenBookQA,OpenBookQA,open_book_qa_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,PIQA,PIQA,piqa_external.csv
@@ -40,6 +46,7 @@ deepseek/deepseek-v3.2,deepseek-v3.2,TerminalBench,TerminalBench,terminalbench_e
 Llama-2-70b-hf ,Llama-2-70b-hf,TriviaQA,TriviaQA,trivia_qa_external.csv
 Chat-UniVi-7B-v1.5 ,Chat-UniVi-7B-v1.5,Video-MME,Video-MME,video_mme_external.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,WeirdML,WeirdML,weirdml_external.csv
+gemini-2.5-flash-preview-04-17 (16K thinking),gemini-2.5-flash-preview-04-17_16K,WeirdML,WeirdML,weirdml_external.csv
 qwen/qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,WeirdML,WeirdML,weirdml_external.csv
 Qwen3-235B-A22B,qwen3-235b-a22b,WeirdML,WeirdML,weirdml_external.csv
 Llama-2-70b-hf ,Llama-2-70b-hf,WinoGrande,WinoGrande,wino_grande_external.csv
@@ -559,15 +566,18 @@ Llama 3 70b,Meta-Llama-3-70B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand
 Llama 3 8b,Meta-Llama-3-8B-Instruct,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
 Mistral 7b Instruct,Mistral-7B-Instruct-v0.2,MMLU Pro Chemistry,MMLU Pro Chemistry,rand_benchmark_scores.csv
 Muse Spark 1.1,muse-spark-1.1,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+claude-opus-5 (xhigh),claude-opus-5_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gemini-3.5-flash (high),gemini-3.5-flash_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Claude Fable 5,claude-fable-5,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 kimi-k3 (max),kimi-k3_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-8 (max),claude-opus-4-8_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 Muse Spark,muse-spark,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+Inkling-small,inkling-small,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-7 (max),claude-opus-4-7_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gemini-3.1-pro-preview (high),gemini-3.1-pro-preview_high,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 glm-5p2,glm-5.2_unknown,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 claude-opus-4-6 (max),claude-opus-4-6_max,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
+Inkling (xHigh),Inkling_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 glm-5p1,glm-5.1,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.5 (xhigh),gpt-5.5_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
 gpt-5.4 (xhigh),gpt-5.4-2026-03-05_xhigh,MCP Atlas,MCP Atlas,seal/mcp_atlas.html
@@ -862,9 +872,9 @@ claude-sonnet-4,claude-sonnet-4-20250514,VisualToolBench,VisualToolBench,seal/vt
 claude-sonnet-4-thinking,claude-sonnet-4-20250514_unknown,VisualToolBench,VisualToolBench,seal/vtb.html
 llama4-scout,Llama-4-Scout-17B-16E-Instruct,VisualToolBench,VisualToolBench,seal/vtb.html
 llama4-maverick,Llama-4-Maverick-17B-128E-Instruct,VisualToolBench,VisualToolBench,seal/vtb.html
-Inkling (Thinking)*,Inkling (Thinking),AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+Inkling (Thinking)*,Inkling_unknown,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 "Inkling-small
-",Inkling-small,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
+",inkling-small,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 gemini-3-pro-preview (Thinking)*,gemini-3-pro-preview,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 gemini-2.5-pro (Thinking)*,gemini-2.5-pro,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
 gemini-2.5-flash (Thinking)*,gemini-2.5-flash,AudioMultiChallenge,AudioMultiChallenge,seal/audiomc.html
@@ -914,3 +924,58 @@ fireworks/kimi-k2p5,kimi-k2.5,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,
 openai/gpt-oss-120b_high,gpt-oss-120b_high,OTIS Mock AIME 2024-2025,OTIS Mock AIME 2024-2025,epoch_live_benchmarks.csv
 fireworks/kimi-k2p5,kimi-k2.5,SimpleQA Verified,SimpleQA Verified,epoch_live_benchmarks.csv
 openai/gpt-oss-120b_high,gpt-oss-120b_high,SimpleQA Verified,SimpleQA Verified,epoch_live_benchmarks.csv
+grok-4.5-0708,grok-4.5_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+gemini-3.6-flash,gemini-3.6-flash_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+gemini-3.5-flash,gemini-3.5-flash_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+gpt-5.6-terra,gpt-5.6-terra_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+claude-opus-4-8,claude-opus-4-8_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+o3-2025-04-16,o3-2025-04-16_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+o1-2024-12-17,o1-2024-12-17_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+gpt-5.6-luna,gpt-5.6-luna_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+deepseek-r1-0528,DeepSeek-R1-0528,MMLU,MMLU,open-benchmarks_mmlu.json
+deepseek-v3.1,DeepSeek-V3.1,MMLU,MMLU,open-benchmarks_mmlu.json
+deepseek-v3,DeepSeek-V3,MMLU,MMLU,open-benchmarks_mmlu.json
+grok-3-mini,grok-3-mini_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+qwen3-235b-a22b-instruct-2507,Qwen3-235B-A22B-Instruct-2507,MMLU,MMLU,open-benchmarks_mmlu.json
+o3-mini-2025-01-31,o3-mini-2025-01-31_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+o1-mini-2024-09-12,o1-mini-2024-09-12_unknown,MMLU,MMLU,open-benchmarks_mmlu.json
+open-mixtral-8x22b-2404,open-mixtral-8x22b,MMLU,MMLU,open-benchmarks_mmlu.json
+qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,MMLU,MMLU,open-benchmarks_mmlu.json
+gemini-3.6-flash,gemini-3.6-flash_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+gemini-3.5-flash,gemini-3.5-flash_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+grok-4.5-0708,grok-4.5_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+claude-opus-4-8,claude-opus-4-8_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+gpt-5-2025-08-07,gpt-5-2025-08-07_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+o3-2025-04-16,o3-2025-04-16_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+gpt-5.6-terra,gpt-5.6-terra_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+gpt-5.6-luna,gpt-5.6-luna_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+gpt-5.6-sol,gpt-5.6-sol_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+deepseek-r1-0528,DeepSeek-R1-0528,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+o1-2024-12-17,o1-2024-12-17_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+deepseek-v3.1,DeepSeek-V3.1,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+grok-3-mini,grok-3-mini_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+deepseek-v3,DeepSeek-V3,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+o3-mini-2025-01-31,o3-mini-2025-01-31_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+o1-mini-2024-09-12,o1-mini-2024-09-12_unknown,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+qwen3-235b-a22b-instruct-2507,Qwen3-235B-A22B-Instruct-2507,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+open-mixtral-8x22b-2404,open-mixtral-8x22b,MMLU-Pro,MMLU-Pro,open-benchmarks_mmlu-pro.json
+gemini-3.5-flash,gemini-3.5-flash_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+gpt-5.6-sol,gpt-5.6-sol_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+grok-4.5-0708,grok-4.5_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+o3-2025-04-16,o3-2025-04-16_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+claude-opus-4-8,claude-opus-4-8_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+gpt-5.6-terra,gpt-5.6-terra_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+gpt-5.6-luna,gpt-5.6-luna_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+gpt-5.1-2025-11-13,gpt-5.1-2025-11-13_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+claude-sonnet-5,claude-sonnet-5_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+gpt-5.4-2026-03-05,gpt-5.4-2026-03-05_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+claude-sonnet-4-5-thinking-20250929,claude-sonnet-4-5-20250929_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+deepseek-r1-0528,DeepSeek-R1-0528,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+deepseek-v3,DeepSeek-V3,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+deepseek-v3.1,DeepSeek-V3.1,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+grok-3-mini,grok-3-mini_unknown,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json
+open-mixtral-8x22b-2404,open-mixtral-8x22b,SimpleQA Verified,SimpleQA Verified,deepmind_simpleqa-verified.json

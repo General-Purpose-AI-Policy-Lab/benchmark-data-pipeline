@@ -1,0 +1,13 @@
+model_version,score,release_date,organization,benchmark,stderr,source,category,reason
+inkling-small_none,0.055,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small effort ladder transcribed from the ARC Prize table 2026-08-06. Absent from every feed: Epoch's arc files carry only the base-Inkling row (0.795/0.365278, confirmed a separate board entry at 79.5%/36.5%). Retire any rung a feed later supplies (the adds collision check raises)."
+inkling-small_minimal,0.485,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the _none row."
+inkling-small_low,0.525,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the _none row."
+inkling-small_medium,0.67,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the _none row."
+inkling-small_high,0.78,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the _none row."
+inkling-small_xhigh,0.84,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the _none row."
+inkling-small_none,0.0,2026-07-15,Thinking Machines,ARC-AGI-2,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the ARC-AGI _none row. An exact zero: clipped to the open interval at fit time like every boundary row."
+inkling-small_minimal,0.04,2026-07-15,Thinking Machines,ARC-AGI-2,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the ARC-AGI _none row."
+inkling-small_low,0.049,2026-07-15,Thinking Machines,ARC-AGI-2,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the ARC-AGI _none row."
+inkling-small_medium,0.136,2026-07-15,Thinking Machines,ARC-AGI-2,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the ARC-AGI _none row."
+inkling-small_high,0.331,2026-07-15,Thinking Machines,ARC-AGI-2,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the ARC-AGI _none row."
+inkling-small_xhigh,0.401,2026-07-15,Thinking Machines,ARC-AGI-2,,https://arcprize.org/leaderboard,Core AGI Progress,"Inkling Small ladder; see the ARC-AGI _none row."
