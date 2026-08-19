@@ -11,15 +11,18 @@ Open `index.html` through a local server (browsers block `fetch` from
 `file://`):
 
 ```bash
-python3 -m http.server 8000
+python3 scripts/serve.py
 ```
 
-then visit <http://localhost:8000>. Four views: **Browse** (filter the
+then visit <http://localhost:8130>. That server also exposes the refresh API
+the Refresh tab uses. Plain `python3 -m http.server` still works for
+browse-only; the Refresh tab then shows a hint instead of the form. Five
+views: **Browse** (filter the
 merged table by model, benchmark, source, category, organization, date
 range; sort; chance floor shown per row), **Benchmarks** (one row per
 benchmark: category, notes, chance floor, coverage), **Download**
 (filtered slice as CSV, plus the raw files), **Report** (the latest
-pipeline refresh report).
+pipeline refresh report), **Refresh** (run the pipeline; see below).
 
 ## Paths of truth
 
@@ -48,6 +51,15 @@ and commit. Full pipeline docs (the five feeds, merge policy, guards) in
 reuse the snapshot folder; `snapshots/` and `intermediate/` are gitignored
 and regenerable.
 
+## Refreshing from the page
+
+The Refresh tab runs the same notebook headlessly, then `scripts/check.py`.
+Leave the date blank to fetch or reuse today's snapshot. A past date replays
+that snapshot offline. The force re-fetch checkboxes delete that source's
+cache in the target snapshot before the run, so it is downloaded again. The
+merged table always contains all five feeds; a checkbox controls the fetch,
+not the scope.
+
 ## Your own runs
 
 Aggregate scores from local eval runs enter as
@@ -58,6 +70,8 @@ raw per-item results — in `data/evals/<name>/` (see its README).
 
 ## Scripts
 
+- `scripts/serve.py` — serves the repo root on port 8130 and backs the
+  Refresh tab (`GET /api/snapshots`, `POST /api/run`).
 - `scripts/check.py` — post-refresh gate: paths exist, merged CSV schema
   and row count hold, the section-10 swap ran, report non-empty.
 - `scripts/build_lineage_map.py` — regenerates

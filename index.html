@@ -48,9 +48,19 @@
     background: var(--accent); color: #fff; cursor: pointer; min-height: 40px;
   }
   #download ul { line-height: 1.9; }
-  #report { max-width: 800px; line-height: 1.5; }
-  #report code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
+  #report, #refresh { max-width: 800px; line-height: 1.5; }
+  #report code, #refresh code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
   #report h1 { font-size: 20px; } #report h2 { font-size: 17px; } #report h3 { font-size: 15px; }
+  #refresh label { display: inline-flex; align-items: center; gap: 6px; margin-right: 14px; }
+  #refresh input[type="date"] { font: inherit; padding: 6px 8px; border: 1px solid var(--border); border-radius: 4px; min-height: 34px; }
+  #refresh h4 { margin: 14px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: #55636f; }
+  #r-status { margin-left: 10px; color: #55636f; }
+  #r-log:empty { display: none; }
+  #r-log {
+    margin-top: 10px; padding: 8px; max-height: 40vh; overflow: auto;
+    border: 1px solid var(--border); background: var(--zebra);
+    font-size: 12px; white-space: pre-wrap;
+  }
   #error { margin: 24px 16px; padding: 16px; border: 1px solid #c33; background: #fdf2f2; color: #922; display: none; max-width: 640px; }
   section { display: none; } section.active { display: block; }
 </style>
@@ -65,6 +75,7 @@
   <button role="tab" aria-selected="false" data-tab="benchmarks">Benchmarks</button>
   <button role="tab" aria-selected="false" data-tab="download">Download</button>
   <button role="tab" aria-selected="false" data-tab="report">Report</button>
+  <button role="tab" aria-selected="false" data-tab="refresh">Refresh</button>
 </nav>
 <div id="error"></div>
 <main>
@@ -100,6 +111,25 @@
     </ul>
   </section>
   <section id="report"></section>
+  <section id="refresh">
+    <div id="r-controls">
+      <p>Runs the pipeline notebook locally. All five feeds are always merged; checkboxes only force a
+         re-download of that source's cache.</p>
+      <label title="Blank = today (fetches anything missing); an existing date replays that snapshot offline">
+        snapshot date <input type="date" id="r-date" list="r-dates"></label>
+      <datalist id="r-dates"></datalist>
+      <h4>force re-fetch</h4>
+      <div id="r-feeds">
+        <label><input type="checkbox" value="epoch_zip">Epoch ZIP</label>
+        <label><input type="checkbox" value="live">Live feed</label>
+        <label><input type="checkbox" value="rand">RAND</label>
+        <label><input type="checkbox" value="seal">Scale SEAL</label>
+        <label><input type="checkbox" value="kaggle">Kaggle</label>
+      </div>
+      <p><button class="btn" id="r-run">Run</button><span id="r-status"></span></p>
+    </div>
+    <pre id="r-log"></pre>
+  </section>
 </main>
 <script>
 "use strict";
@@ -214,9 +244,10 @@ function populateSelects() {
     $("f-" + k).innerHTML = `<option value="">all</option>` +
       vals.map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
   }
-  document.querySelectorAll("#controls input, #controls select").forEach(el =>
-    el.addEventListener("input", applyFilters));
 }
+// bound once at parse time, not per populateSelects() call, so a re-boot does not double-bind
+document.querySelectorAll("#controls input, #controls select").forEach(el =>
+  el.addEventListener("input", applyFilters));
 
 // ---- Benchmarks ----
 let benchRows = [];
@@ -299,7 +330,8 @@ function renderMarkdown(md) {
 // ---- boot ----
 async function boot() {
   const get = async p => {
-    const r = await fetch(p);
+    // no-cache: these files change server-side after a pipeline run; always revalidate
+    const r = await fetch(p, { cache: "no-cache" });
     if (!r.ok) throw new Error(`${p}: HTTP ${r.status}`);
     return r.text();
   };
@@ -325,14 +357,64 @@ async function boot() {
   buildBench();
   $("report").innerHTML = renderMarkdown(reportMd);
 }
+// ---- Refresh ----
+async function loadSnapshots() {
+  const r = await fetch("/api/snapshots", { cache: "no-cache" });
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  const { snapshots } = await r.json();
+  $("r-dates").innerHTML = (snapshots || []).map(d => `<option value="${esc(d)}"></option>`).join("");
+}
+async function initRefresh() {
+  try {
+    await loadSnapshots();
+  } catch {
+    $("r-controls").innerHTML = "Refreshing needs the local backend: run " +
+      "<code>python3 scripts/serve.py</code> from the repo root (plain http.server only browses).";
+    return;
+  }
+  $("r-run").addEventListener("click", async () => {
+    const btn = $("r-run");
+    btn.disabled = true;
+    const t0 = Date.now(), secs = () => Math.round((Date.now() - t0) / 1000);
+    $("r-status").textContent = "running… 0s";
+    const tick = setInterval(() => $("r-status").textContent = `running… ${secs()}s`, 1000);
+    try {
+      // no timeout: a cold run with re-fetches can take minutes
+      const res = await fetch("/api/run", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          date: $("r-date").value,
+          refetch: [...document.querySelectorAll("#r-feeds input:checked")].map(c => c.value),
+        }),
+      });
+      const body = await res.json();
+      clearInterval(tick);
+      if (!res.ok) {
+        $("r-status").textContent = body.error || `HTTP ${res.status}`;
+      } else {
+        $("r-log").textContent = (body.log || "") + "\n\n" + (body.check || "");
+        $("r-status").textContent = body.ok ? `done in ${secs()}s` : `FAILED after ${secs()}s — see log`;
+        if (body.ok) await boot();
+        await loadSnapshots().catch(() => {});
+      }
+    } catch (e) {
+      clearInterval(tick);
+      $("r-status").textContent = e.message;
+    }
+    btn.disabled = false;
+  });
+}
+
 boot().catch(e => {
   const el = $("error");
   el.style.display = "block";
   el.innerHTML = `<strong>Could not load the data files.</strong><br>${esc(e.message)}<br><br>` +
     `If you opened this page as a local file, serve the repo instead: run ` +
-    `<code>python3 -m http.server</code> from the repo root, then open ` +
-    `<code>http://localhost:8000/</code>.`;
+    `<code>python3 scripts/serve.py</code> from the repo root, then open ` +
+    `<code>http://localhost:8130/</code>.`;
 });
+initRefresh();
 </script>
 </body>
 </html>
