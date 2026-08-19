@@ -3,7 +3,7 @@
 Canonical home for the benchmark score data and the pipeline that refreshes
 it. Extracted from the ECI Bayesian modeling repo; the full history of
 `data/` came along. Consumers (the ECI fits, future projects) read the
-files below — nothing here depends on any modeling code.
+files below. Nothing here depends on any modeling code.
 
 ## The interface
 
@@ -68,4 +68,4 @@ raw per-item results — in `data/evals/<name>/` (see its README).
 
 Epoch AI data is CC-BY; RAND is cited under RR-A3797-1; Kaggle boards are
 public JSON. Scale SEAL rows carry no open license (fair-use research
-aggregation) — resolve before making this repo public. It is private.
+aggregation): resolve before making this repo public. It is private.

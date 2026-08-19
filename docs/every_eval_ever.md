@@ -56,7 +56,7 @@ sanctioned), `retrieved_timestamp` (our snapshot date serves),
 ## Where it is pertinent
 
 1. **Design cross-check, already banked.** Their conversion guide
-   independently converges on rules this pipeline learned the hard way:
+   independently converges on rules this pipeline already enforces:
    exact longest-first name matching (their example is `gpt-4.1-mini`
    swallowed by a `gpt-4.1` prefix rule), one shared developer map instead
    of per-source maps, variant axes kept out of the model id, org-owned
