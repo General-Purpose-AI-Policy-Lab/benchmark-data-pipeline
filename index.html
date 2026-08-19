@@ -61,6 +61,14 @@
     border: 1px solid var(--border); background: var(--zebra);
     font-size: 12px; white-space: pre-wrap;
   }
+  #curate { max-width: 900px; line-height: 1.5; }
+  #curate code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
+  #c-banner { padding: 8px 12px; background: var(--zebra); border: 1px solid var(--border); border-radius: 4px; }
+  .c-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 4px 0; border-bottom: 1px solid var(--border); }
+  .c-row input, .c-row select { font: inherit; padding: 6px 8px; border: 1px solid var(--border); border-radius: 4px; min-height: 34px; }
+  .c-row .btn { padding: 6px 12px; min-height: 34px; }
+  #c-status { color: #922; }
+  #c-status:empty { display: none; }
   #error { margin: 24px 16px; padding: 16px; border: 1px solid #c33; background: #fdf2f2; color: #922; display: none; max-width: 640px; }
   section { display: none; } section.active { display: block; }
 </style>
@@ -76,6 +84,7 @@
   <button role="tab" aria-selected="false" data-tab="download">Download</button>
   <button role="tab" aria-selected="false" data-tab="report">Report</button>
   <button role="tab" aria-selected="false" data-tab="refresh">Refresh</button>
+  <button role="tab" aria-selected="false" data-tab="curate">Curate</button>
 </nav>
 <div id="error"></div>
 <main>
@@ -130,6 +139,21 @@
     </div>
     <pre id="r-log"></pre>
   </section>
+  <section id="curate">
+    <p>Review queued model names and file benchmark metadata; naming rules in the
+       <a href="docs/curation.md">curation guide</a>.</p>
+    <p id="c-banner">Decisions apply on the next run — after curating, Run from the Refresh tab
+       with the same snapshot date.</p>
+    <h3>New models (<span id="c-mcount">0</span>)</h3>
+    <div id="c-status"></div>
+    <div id="c-model-list"></div>
+    <h3>Benchmarks missing metadata (<span id="c-bcount">0</span>)</h3>
+    <div id="c-meta-list"></div>
+    <h3>Unrecognized feeds</h3>
+    <p>Mapping a new feed file is a notebook edit (<code>FILE_SPEC</code>/<code>LIVE_TASK_SPEC</code>)
+       — see the Report tab's unrecognized sections and the guide.</p>
+  </section>
+  <datalist id="c-models"></datalist>
 </main>
 <script>
 "use strict";
@@ -351,6 +375,7 @@ async function boot() {
   const latest = rows.reduce((a, r) => r.release_date > a ? r.release_date : a, "");
   $("stats").textContent =
     `${rows.length} rows · ${benches.size} benchmarks · ${models.size} models · latest release ${latest}`;
+  $("c-models").innerHTML = [...models].sort().map(m => `<option value="${esc(m)}"></option>`).join("");
 
   populateSelects();
   applyFilters();
@@ -406,6 +431,95 @@ async function initRefresh() {
   });
 }
 
+// ---- Curate ----
+let queue = null;
+async function curatePost(payload) {
+  try {
+    const r = await fetch("/api/curate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const body = await r.json().catch(() => ({}));
+    if (!r.ok) { $("c-status").textContent = body.error || `HTTP ${r.status}`; return false; }
+    $("c-status").textContent = "";
+    return true;
+  } catch (e) {
+    $("c-status").textContent = e.message;
+    return false;
+  }
+}
+function renderCurateModels() {
+  $("c-mcount").textContent = queue.missing_models.length;
+  const list = $("c-model-list");
+  list.innerHTML = queue.missing_models.map(n => `
+    <div class="c-row" data-name="${esc(n)}">
+      <code>${esc(n)}</code>
+      <button class="btn c-review">Reviewed</button>
+      <input class="c-alias" list="c-models" placeholder="canonical name">
+      <input class="c-alias-note" placeholder="note (optional)">
+      <button class="btn c-do-alias">Alias</button>
+      <input class="c-drop-note" placeholder="note (required)">
+      <button class="btn c-do-drop">Drop</button>
+    </div>`).join("");
+  list.querySelectorAll(".c-row").forEach(row => {
+    const name = row.dataset.name;
+    const done = () => {
+      queue.missing_models = queue.missing_models.filter(n => n !== name);
+      $("c-mcount").textContent = queue.missing_models.length;
+      row.remove();
+    };
+    row.querySelector(".c-review").addEventListener("click", async () => {
+      if (await curatePost({ action: "review", name })) done();
+    });
+    row.querySelector(".c-do-alias").addEventListener("click", async () => {
+      if (await curatePost({ action: "alias", variant: name,
+          canonical: row.querySelector(".c-alias").value,
+          note: row.querySelector(".c-alias-note").value })) done();
+    });
+    row.querySelector(".c-do-drop").addEventListener("click", async () => {
+      if (await curatePost({ action: "drop", variant: name,
+          note: row.querySelector(".c-drop-note").value })) done();
+    });
+  });
+}
+function renderCurateMeta() {
+  $("c-bcount").textContent = queue.missing_meta.length;
+  const list = $("c-meta-list");
+  if (!queue.missing_meta.length) { list.textContent = "none — metadata complete"; return; }
+  list.innerHTML = queue.missing_meta.map(b => `
+    <div class="c-row" data-name="${esc(b)}">
+      <code>${esc(b)}</code>
+      <select class="c-cat">${queue.categories.map(c => `<option>${esc(c)}</option>`).join("")}</select>
+      <input class="c-notes" placeholder="notes (optional)">
+      <button class="btn c-do-meta">Apply</button>
+    </div>`).join("");
+  list.querySelectorAll(".c-row").forEach(row => {
+    row.querySelector(".c-do-meta").addEventListener("click", async () => {
+      if (await curatePost({ action: "metadata", benchmark: row.dataset.name,
+          category: row.querySelector(".c-cat").value,
+          notes: row.querySelector(".c-notes").value })) {
+        queue.missing_meta = queue.missing_meta.filter(x => x !== row.dataset.name);
+        renderCurateMeta();
+      }
+    });
+  });
+}
+async function initCurate() {
+  let r;
+  try {
+    r = await fetch("/api/queue", { cache: "no-cache" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    queue = await r.json();
+  } catch {
+    $("curate").innerHTML = "Curating needs the local backend: run " +
+      "<code>python3 scripts/serve.py</code> from the repo root (plain http.server only browses).";
+    return;
+  }
+  renderCurateModels();
+  renderCurateMeta();
+}
+
 boot().catch(e => {
   const el = $("error");
   el.style.display = "block";
@@ -415,6 +529,7 @@ boot().catch(e => {
     `<code>http://localhost:8130/</code>.`;
 });
 initRefresh();
+initCurate();
 </script>
 </body>
 </html>

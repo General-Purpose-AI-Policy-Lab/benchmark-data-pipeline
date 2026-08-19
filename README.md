@@ -16,13 +16,14 @@ python3 scripts/serve.py
 
 then visit <http://localhost:8130>. That server also exposes the refresh API
 the Refresh tab uses. Plain `python3 -m http.server` still works for
-browse-only; the Refresh tab then shows a hint instead of the form. Five
+browse-only; the Refresh tab then shows a hint instead of the form. Six
 views: **Browse** (filter the
 merged table by model, benchmark, source, category, organization, date
 range; sort; chance floor shown per row), **Benchmarks** (one row per
 benchmark: category, notes, chance floor, coverage), **Download**
 (filtered slice as CSV, plus the raw files), **Report** (the latest
-pipeline refresh report), **Refresh** (run the pipeline; see below).
+pipeline refresh report), **Refresh** (run the pipeline; see below),
+**Curate** (act on the new-model and missing-metadata queues).
 
 ## Paths of truth
 
@@ -59,6 +60,9 @@ that snapshot offline. The force re-fetch checkboxes delete that source's
 cache in the target snapshot before the run, so it is downloaded again. The
 merged table always contains all five feeds; a checkbox controls the fetch,
 not the scope.
+
+When a refresh lists new models or unrecognized benchmarks, and for how
+canonical names are chosen: [`docs/curation.md`](docs/curation.md).
 
 ## Your own runs
 

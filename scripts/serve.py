@@ -6,6 +6,15 @@ endpoints the Refresh tab calls:
 
     GET  /api/snapshots  -> {"snapshots": ["2026-08-19", ...]}
     POST /api/run        -> {"ok": bool, "log": str, "check": str}
+    GET  /api/queue      -> {"missing_models": [...], "missing_meta": [...],
+                             "categories": [...]}
+    POST /api/curate     -> {"ok": true} | 400 {"error": ...} | 409 during a run
+
+/api/curate appends one reviewed decision per call to the canonical files:
+{"action":"review","name":N} · {"action":"alias","variant":V,"canonical":C,"note":T}
+· {"action":"drop","variant":V,"note":T} · {"action":"metadata","benchmark":B,
+"category":C,"notes":T}. A decided name leaves /api/queue immediately, which is
+also the duplicate guard.
 
 /api/run deletes the requested source caches inside the target snapshot folder,
 runs the pipeline notebook headlessly, then runs scripts/check.py. The swap into
@@ -13,6 +22,7 @@ data/processed/ is the notebook's last section (section 10), so a failed run
 leaves data/processed/ untouched, and check.py's byte-compare against
 data/pipeline/output/ catches a half-written output.
 """
+import csv
 import functools
 import json
 import os
@@ -27,6 +37,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SNAPSHOTS = ROOT / "data" / "pipeline" / "snapshots"
+CANON = ROOT / "data" / "pipeline" / "canonical"
+MISSING = ROOT / "data" / "pipeline" / "output" / "missing_models.csv"
+MERGED = ROOT / "data" / "processed" / "benchmarks_merged.csv"
+ALIASES = CANON / "model_aliases.csv"
+METADATA = CANON / "benchmark_metadata.csv"
+REVIEWED = CANON / "reviewed_models.txt"
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 PORT = 8130
 
@@ -81,6 +97,80 @@ def run(date, refetch):
     return {"ok": ok, "log": log[-8000:], "check": check}
 
 
+def _col(path, field):
+    """One CSV column as a list, skipping empty cells. [] if the file is missing."""
+    if not path.exists():
+        return []
+    with path.open(newline="") as f:
+        return [row[field] for row in csv.DictReader(f) if row.get(field)]
+
+
+def queue():
+    """The open curation decisions, recomputed from the files on every call."""
+    decided = set(_col(ALIASES, "variant"))
+    if REVIEWED.exists():
+        decided |= {l.strip() for l in REVIEWED.read_text().splitlines() if l.strip()}
+    return {
+        "missing_models": [m for m in _col(MISSING, "model_version")
+                           if m not in decided],
+        "missing_meta": sorted(set(_col(MERGED, "benchmark"))
+                               - set(_col(METADATA, "benchmark"))),
+        "categories": sorted(set(_col(METADATA, "category"))),
+    }
+
+
+def _ensure_nl(path):
+    """Make sure the file ends with a newline before an append lands."""
+    if path.exists() and path.read_bytes()[-1:] not in (b"", b"\n"):
+        with path.open("a") as f:
+            f.write("\n")
+
+
+def _append_row(path, row):
+    _ensure_nl(path)
+    with path.open("a", newline="") as f:
+        csv.writer(f).writerow(row)
+
+
+def curate(body):
+    """Apply one decision; return an error string or None on success. Queue
+    membership doubles as the duplicate guard: a decided name leaves the queue."""
+    q = queue()
+    action = body.get("action")
+    if action == "review":
+        name = body.get("name")
+        if name not in q["missing_models"]:
+            return "name is not in the current missing_models queue"
+        _ensure_nl(REVIEWED)
+        with REVIEWED.open("a") as f:
+            f.write(name + "\n")
+    elif action in ("alias", "drop"):
+        variant = body.get("variant")
+        note = (body.get("note") or "").strip()
+        if variant not in q["missing_models"]:
+            return "variant is not in the current missing_models queue"
+        if action == "alias":
+            canonical = body.get("canonical") or ""
+            if canonical not in set(_col(MERGED, "model_version")):
+                return "canonical must be an existing model_version in the merged data"
+        else:
+            canonical = ""  # the DROP sentinel
+            if not note:
+                return "a drop must carry a justification note"
+        _append_row(ALIASES, [variant, canonical, note])
+    elif action == "metadata":
+        bench = body.get("benchmark")
+        if bench not in q["missing_meta"]:
+            return "benchmark is not in the current missing_meta queue"
+        category = (body.get("category") or "").strip()
+        if not category:
+            return "category must be non-empty"
+        _append_row(METADATA, [bench, category, (body.get("notes") or "").strip()])
+    else:
+        return "unknown action"
+    return None
+
+
 class Handler(SimpleHTTPRequestHandler):
     def _json(self, code, payload):
         body = json.dumps(payload).encode()
@@ -91,7 +181,10 @@ class Handler(SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_GET(self):
-        if self.path.split("?")[0] != "/api/snapshots":
+        path = self.path.split("?")[0]
+        if path == "/api/queue":
+            return self._json(200, queue())
+        if path != "/api/snapshots":
             return super().do_GET()
         names = sorted((d.name for d in SNAPSHOTS.iterdir()
                         if d.is_dir() and DATE_RE.match(d.name)),
@@ -99,7 +192,8 @@ class Handler(SimpleHTTPRequestHandler):
         self._json(200, {"snapshots": names})
 
     def do_POST(self):
-        if self.path.split("?")[0] != "/api/run":
+        path = self.path.split("?")[0]
+        if path not in ("/api/run", "/api/curate"):
             return self._json(404, {"error": "not found"})
         try:
             n = int(self.headers.get("Content-Length") or 0)
@@ -108,6 +202,15 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(400, {"error": "body is not JSON"})
         if not isinstance(body, dict):
             return self._json(400, {"error": "body must be a JSON object"})
+
+        if path == "/api/curate":
+            if not RUN_LOCK.acquire(blocking=False):
+                return self._json(409, {"error": "a run is already in progress"})
+            try:
+                err = curate(body)
+            finally:
+                RUN_LOCK.release()
+            return self._json(400, {"error": err}) if err else self._json(200, {"ok": True})
 
         date = body.get("date") or ""
         refetch = body.get("refetch") or []
