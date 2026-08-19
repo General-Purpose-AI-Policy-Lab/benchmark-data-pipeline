@@ -64,9 +64,14 @@
   #curate { max-width: 900px; line-height: 1.5; }
   #curate code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
   #c-banner { padding: 8px 12px; background: var(--zebra); border: 1px solid var(--border); border-radius: 4px; }
-  .c-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 4px 0; border-bottom: 1px solid var(--border); }
+  .c-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 6px 0; border-bottom: 1px solid var(--border); }
   .c-row input, .c-row select { font: inherit; padding: 6px 8px; border: 1px solid var(--border); border-radius: 4px; min-height: 34px; }
   .c-row .btn { padding: 6px 12px; min-height: 34px; }
+  .c-row > code { min-width: 260px; }
+  .btn.ghost { background: #fff; color: var(--accent); }
+  .c-panel { display: none; }
+  .c-panel.open { display: inline-flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  #c-legend { color: #55636f; margin: 4px 0 10px; line-height: 1.5; }
   #c-status { color: #922; }
   #c-status:empty { display: none; }
   #error { margin: 24px 16px; padding: 16px; border: 1px solid #c33; background: #fdf2f2; color: #922; display: none; max-width: 640px; }
@@ -140,11 +145,18 @@
     <pre id="r-log"></pre>
   </section>
   <section id="curate">
-    <p>Review queued model names and file benchmark metadata; naming rules in the
-       <a href="docs/curation.md">curation guide</a>.</p>
-    <p id="c-banner">Decisions apply on the next run — after curating, Run from the Refresh tab
-       with the same snapshot date.</p>
-    <h3>New models (<span id="c-mcount">0</span>)</h3>
+    <p>Each name below appeared in the data for the first time and needs one decision.
+       Naming rules and examples: <a href="docs/curation.md">curation guide</a>.</p>
+    <ul id="c-legend">
+      <li><strong>New model</strong>: a real new model, correctly spelled. It is kept exactly as is.</li>
+      <li><strong>Same as an existing model</strong>: another spelling of a model already in the data.
+          Its scores are filed under the existing name.</li>
+      <li><strong>Exclude</strong>: its scores should not be in the dataset at all (a fine-tune,
+          a harness artifact). You must say why.</li>
+    </ul>
+    <p id="c-banner">Decisions are saved immediately but take effect on the next run:
+       after curating, press Run on the Refresh tab with the same snapshot date.</p>
+    <h3>Unrecognized model names (<span id="c-mcount">0</span>)</h3>
     <div id="c-status"></div>
     <div id="c-model-list"></div>
     <h3>Benchmarks missing metadata (<span id="c-bcount">0</span>)</h3>
@@ -455,12 +467,19 @@ function renderCurateModels() {
   list.innerHTML = queue.missing_models.map(n => `
     <div class="c-row" data-name="${esc(n)}">
       <code>${esc(n)}</code>
-      <button class="btn c-review">Reviewed</button>
-      <input class="c-alias" list="c-models" placeholder="canonical name">
-      <input class="c-alias-note" placeholder="note (optional)">
-      <button class="btn c-do-alias">Alias</button>
-      <input class="c-drop-note" placeholder="note (required)">
-      <button class="btn c-do-drop">Drop</button>
+      <button class="btn c-review" title="Keep this name as a new test-taker">&#10003; New model</button>
+      <button class="btn ghost c-pick-alias" title="File its scores under a model already in the data">Same as an existing model&hellip;</button>
+      <button class="btn ghost c-pick-drop" title="Remove its scores from the dataset on every future run">Exclude&hellip;</button>
+      <span class="c-panel c-panel-alias">
+        &rarr; it is really
+        <input class="c-alias" list="c-models" placeholder="type the existing model's name">
+        <input class="c-alias-note" placeholder="why? (optional)">
+        <button class="btn c-do-alias">Confirm</button>
+      </span>
+      <span class="c-panel c-panel-drop">
+        <input class="c-drop-note" placeholder="why exclude it? (required)">
+        <button class="btn c-do-drop">Confirm exclude</button>
+      </span>
     </div>`).join("");
   list.querySelectorAll(".c-row").forEach(row => {
     const name = row.dataset.name;
@@ -469,6 +488,14 @@ function renderCurateModels() {
       $("c-mcount").textContent = queue.missing_models.length;
       row.remove();
     };
+    const panels = { alias: row.querySelector(".c-panel-alias"), drop: row.querySelector(".c-panel-drop") };
+    const open = which => {
+      panels.alias.classList.toggle("open", which === "alias");
+      panels.drop.classList.toggle("open", which === "drop");
+      (which === "alias" ? row.querySelector(".c-alias") : row.querySelector(".c-drop-note")).focus();
+    };
+    row.querySelector(".c-pick-alias").addEventListener("click", () => open("alias"));
+    row.querySelector(".c-pick-drop").addEventListener("click", () => open("drop"));
     row.querySelector(".c-review").addEventListener("click", async () => {
       if (await curatePost({ action: "review", name })) done();
     });
