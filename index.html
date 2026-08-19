@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eval-data-pipeline</title>
+<style>
+  :root { --accent: #1a6baa; --border: #d8dde3; --zebra: #f4f6f8; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px; color: #1c2733; background: #fff;
+  }
+  header {
+    display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
+    padding: 10px 16px; border-bottom: 2px solid var(--accent); background: #f9fafb;
+  }
+  header h1 { margin: 0; font-size: 18px; }
+  #stats { color: #55636f; }
+  nav { display: flex; gap: 4px; padding: 8px 16px 0; border-bottom: 1px solid var(--border); }
+  nav button {
+    font: inherit; padding: 8px 16px; border: 1px solid var(--border); border-bottom: none;
+    border-radius: 6px 6px 0 0; background: #eef1f4; cursor: pointer; min-height: 38px;
+  }
+  nav button[aria-selected="true"] { background: #fff; font-weight: 600; color: var(--accent); }
+  nav button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, .btn:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 1px;
+  }
+  main { padding: 12px 16px; }
+  #controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 10px; }
+  #controls label { display: flex; flex-direction: column; gap: 2px; font-size: 12px; color: #55636f; }
+  #controls input, #controls select { font: inherit; padding: 6px 8px; border: 1px solid var(--border); border-radius: 4px; min-height: 34px; max-width: 220px; }
+  #rowcount { color: #55636f; margin-bottom: 6px; }
+  .tablewrap { overflow: auto; max-height: 75vh; border: 1px solid var(--border); }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { padding: 5px 10px; text-align: left; white-space: nowrap; border-bottom: 1px solid var(--border); }
+  td.notes { white-space: normal; max-width: 380px; }
+  thead th {
+    position: sticky; top: 0; background: var(--accent); color: #fff;
+    cursor: pointer; user-select: none;
+  }
+  thead th:focus-visible { outline: 2px solid #ffd166; outline-offset: -2px; }
+  tbody tr:nth-child(even) { background: var(--zebra); }
+  a { color: var(--accent); }
+  .btn {
+    font: inherit; padding: 9px 18px; border: 1px solid var(--accent); border-radius: 5px;
+    background: var(--accent); color: #fff; cursor: pointer; min-height: 40px;
+  }
+  #download ul { line-height: 1.9; }
+  #report { max-width: 800px; line-height: 1.5; }
+  #report code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
+  #report h1 { font-size: 20px; } #report h2 { font-size: 17px; } #report h3 { font-size: 15px; }
+  #error { margin: 24px 16px; padding: 16px; border: 1px solid #c33; background: #fdf2f2; color: #922; display: none; max-width: 640px; }
+  section { display: none; } section.active { display: block; }
+</style>
+</head>
+<body>
+<header>
+  <h1>eval-data-pipeline</h1>
+  <span id="stats">loading&hellip;</span>
+</header>
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-tab="browse">Browse</button>
+  <button role="tab" aria-selected="false" data-tab="benchmarks">Benchmarks</button>
+  <button role="tab" aria-selected="false" data-tab="download">Download</button>
+  <button role="tab" aria-selected="false" data-tab="report">Report</button>
+</nav>
+<div id="error"></div>
+<main>
+  <section id="browse" class="active">
+    <div id="controls">
+      <label>model <input type="text" id="f-model" placeholder="substring"></label>
+      <label>benchmark <select id="f-benchmark"></select></label>
+      <label>source <select id="f-source"></select></label>
+      <label>category <select id="f-category"></select></label>
+      <label>organization <select id="f-organization"></select></label>
+      <label>release &ge; <input type="date" id="f-datemin" title="Rows with no release date are hidden while a date bound is set"></label>
+      <label>release &le; <input type="date" id="f-datemax" title="Rows with no release date are hidden while a date bound is set"></label>
+    </div>
+    <div id="rowcount"></div>
+    <div class="tablewrap"><table id="t-browse"><thead></thead><tbody></tbody></table></div>
+  </section>
+  <section id="benchmarks">
+    <div class="tablewrap"><table id="t-bench"><thead></thead><tbody></tbody></table></div>
+  </section>
+  <section id="download">
+    <p><button class="btn" id="dl-filtered">Download filtered CSV</button>
+       <span id="dl-note"></span></p>
+    <h3>Direct file links</h3>
+    <ul>
+      <li><a href="data/processed/benchmarks_merged.csv">benchmarks_merged.csv</a> — the merged long table</li>
+      <li><a href="data/curated/human_baselines.csv">human_baselines.csv</a> — human tiers as test-takers</li>
+      <li><a href="data/pipeline/canonical/benchmark_metadata.csv">benchmark_metadata.csv</a> — category and notes per benchmark</li>
+      <li><a href="data/curated/benchmark_lower_bounds.csv">benchmark_lower_bounds.csv</a> — chance floors</li>
+      <li><a href="data/curated/benchmark_upper_bounds.csv">benchmark_upper_bounds.csv</a> — score ceilings</li>
+      <li><a href="data/curated/benchmark_n_items.csv">benchmark_n_items.csv</a> — item counts</li>
+      <li><a href="data/pipeline/output/pipeline_report.md">pipeline_report.md</a> — last refresh report</li>
+      <li><a href="data/pipeline/pipeline.ipynb">pipeline.ipynb</a> — the refresh notebook</li>
+    </ul>
+  </section>
+  <section id="report"></section>
+</main>
+<script>
+"use strict";
+
+// ---- CSV ----
+// ponytail: assumes no embedded newlines (true for this schema); state machine if a free-text column arrives
+function splitCSVLine(line) {
+  const out = []; let field = "", inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (inQ) {
+      if (c === '"') { if (line[i + 1] === '"') { field += '"'; i++; } else inQ = false; }
+      else field += c;
+    } else if (c === '"') inQ = true;
+    else if (c === ",") { out.push(field); field = ""; }
+    else field += c;
+  }
+  out.push(field);
+  return out;
+}
+function parseCSV(text) {
+  const lines = text.split("\n").filter(l => l.trim() !== "");
+  const header = splitCSVLine(lines[0]);
+  return lines.slice(1).map(l => {
+    const cells = splitCSVLine(l), row = {};
+    header.forEach((h, i) => row[h] = cells[i] ?? "");
+    return row;
+  });
+}
+function csvField(v) {
+  v = String(v);
+  if (/[",]|^\s|\s$/.test(v)) return '"' + v.replace(/"/g, '""') + '"';
+  return v;
+}
+
+// ---- state ----
+let rows = [], floors = {}, meta = {}, filtered = [];
+const sortState = { browse: { key: null, dir: 1 }, bench: { key: null, dir: 1 } };
+const BROWSE_COLS = ["model_version", "score", "release_date", "organization", "benchmark", "floor", "stderr", "source", "category"];
+const NUMERIC = new Set(["score", "stderr", "floor", "n_models", "n_rows", "score_min", "score_max"]);
+
+const $ = id => document.getElementById(id);
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+
+// ---- tabs ----
+document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll("nav button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll("main section").forEach(s => s.classList.toggle("active", s.id === b.dataset.tab));
+}));
+
+// ---- generic sortable table ----
+function renderHead(table, cols, labels, which) {
+  table.tHead.innerHTML = "<tr>" + cols.map(c => {
+    const st = sortState[which];
+    const mark = st.key === c ? (st.dir === 1 ? " ▴" : " ▾") : "";
+    return `<th tabindex="0" data-key="${c}">${esc(labels[c] || c)}${mark}</th>`;
+  }).join("") + "</tr>";
+  table.tHead.querySelectorAll("th").forEach(th => {
+    const go = () => {
+      const st = sortState[which];
+      st.dir = st.key === th.dataset.key ? -st.dir : 1;
+      st.key = th.dataset.key;
+      which === "browse" ? renderBrowse() : renderBench();
+    };
+    th.addEventListener("click", go);
+    th.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+  });
+}
+function sortRows(arr, which) {
+  const { key, dir } = sortState[which];
+  if (!key) return arr;
+  return arr.slice().sort((a, b) => {
+    let x = a[key], y = b[key];
+    if (NUMERIC.has(key)) {
+      x = x === "" ? -Infinity : +x; y = y === "" ? -Infinity : +y;
+      return (x - y) * dir;
+    }
+    return String(x).localeCompare(String(y)) * dir;
+  });
+}
+
+// ---- Browse ----
+function applyFilters() {
+  const q = $("f-model").value.toLowerCase();
+  const sel = {};
+  for (const k of ["benchmark", "source", "category", "organization"]) sel[k] = $("f-" + k).value;
+  const dmin = $("f-datemin").value, dmax = $("f-datemax").value;
+  filtered = rows.filter(r => {
+    if (q && !r.model_version.toLowerCase().includes(q)) return false;
+    for (const k in sel) if (sel[k] && r[k] !== sel[k]) return false;
+    if (dmin || dmax) {
+      if (!r.release_date) return false;
+      if (dmin && r.release_date < dmin) return false;
+      if (dmax && r.release_date > dmax) return false;
+    }
+    return true;
+  });
+  renderBrowse();
+}
+function renderBrowse() {
+  const t = $("t-browse");
+  renderHead(t, BROWSE_COLS, {}, "browse");
+  const sorted = sortRows(filtered, "browse");
+  t.tBodies[0].innerHTML = sorted.map(r =>
+    "<tr>" + BROWSE_COLS.map(c => `<td>${esc(r[c])}</td>`).join("") + "</tr>"
+  ).join("");
+  $("rowcount").textContent = `${filtered.length} of ${rows.length} rows`;
+}
+function populateSelects() {
+  for (const k of ["benchmark", "source", "category", "organization"]) {
+    const vals = [...new Set(rows.map(r => r[k]).filter(Boolean))].sort();
+    $("f-" + k).innerHTML = `<option value="">all</option>` +
+      vals.map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
+  }
+  document.querySelectorAll("#controls input, #controls select").forEach(el =>
+    el.addEventListener("input", applyFilters));
+}
+
+// ---- Benchmarks ----
+let benchRows = [];
+const BENCH_COLS = ["benchmark", "category", "floor", "notes", "n_models", "n_rows", "score_min", "score_max"];
+const BENCH_LABELS = { n_models: "models", n_rows: "rows", score_min: "min", score_max: "max" };
+function buildBench() {
+  const by = new Map();
+  for (const r of rows) {
+    let g = by.get(r.benchmark);
+    if (!g) { g = { models: new Set(), n: 0, min: Infinity, max: -Infinity, cat: r.category }; by.set(r.benchmark, g); }
+    g.models.add(r.model_version); g.n++;
+    const s = +r.score;
+    if (s < g.min) g.min = s;
+    if (s > g.max) g.max = s;
+  }
+  benchRows = [...by.entries()].map(([b, g]) => {
+    const m = meta[b] || {}, f = floors[b] || {};
+    return {
+      benchmark: b,
+      category: m.category || g.cat || "",
+      floor: f.lower_bound ?? "",
+      floor_reason: f.reason || "", floor_url: f.source_url || "",
+      notes: m.notes || "",
+      n_models: g.models.size, n_rows: g.n,
+      score_min: g.min.toFixed(3), score_max: g.max.toFixed(3),
+    };
+  });
+  renderBench();
+}
+function renderBench() {
+  const t = $("t-bench");
+  renderHead(t, BENCH_COLS, BENCH_LABELS, "bench");
+  const sorted = sortRows(benchRows, "bench");
+  t.tBodies[0].innerHTML = sorted.map(r => {
+    let floorCell = esc(r.floor);
+    if (r.floor !== "" && r.floor_url) floorCell = `<a href="${esc(r.floor_url)}" title="${esc(r.floor_reason)}">${esc(r.floor)}</a>`;
+    else if (r.floor !== "") floorCell = `<span title="${esc(r.floor_reason)}">${esc(r.floor)}</span>`;
+    return "<tr>" + BENCH_COLS.map(c =>
+      c === "floor" ? `<td>${floorCell}</td>` :
+      c === "notes" ? `<td class="notes">${esc(r[c])}</td>` :
+      `<td>${esc(r[c])}</td>`).join("") + "</tr>";
+  }).join("");
+}
+
+// ---- Download ----
+$("dl-filtered").addEventListener("click", () => {
+  const cols = BROWSE_COLS.filter(c => c !== "floor").concat("floor");
+  const lines = [cols.join(",")].concat(
+    filtered.map(r => cols.map(c => csvField(r[c])).join(","))
+  );
+  const blob = new Blob([lines.join("\n") + "\n"], { type: "text/csv" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "benchmarks_slice.csv";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(a.href);
+  $("dl-note").textContent = `${filtered.length} rows written`;
+});
+
+// ---- Report ----
+// ponytail: subset renderer matches the report's closed grammar; swap in a real parser only if the report grows syntax
+function renderMarkdown(md) {
+  const inline = s => s
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>");
+  const out = []; let list = false;
+  for (const raw of md.split("\n")) {
+    const line = esc(raw);
+    const h = line.match(/^(#{1,3}) (.*)/);
+    const li = line.match(/^- (.*)/);
+    if (li) { if (!list) { out.push("<ul>"); list = true; } out.push(`<li>${inline(li[1])}</li>`); continue; }
+    if (list) { out.push("</ul>"); list = false; }
+    if (h) out.push(`<h${h[1].length}>${inline(h[2])}</h${h[1].length}>`);
+    else if (line.trim()) out.push(`<p>${inline(line)}</p>`);
+  }
+  if (list) out.push("</ul>");
+  return out.join("\n");
+}
+
+// ---- boot ----
+async function boot() {
+  const get = async p => {
+    const r = await fetch(p);
+    if (!r.ok) throw new Error(`${p}: HTTP ${r.status}`);
+    return r.text();
+  };
+  const [merged, metaCsv, floorsCsv, reportMd] = await Promise.all([
+    get("data/processed/benchmarks_merged.csv"),
+    get("data/pipeline/canonical/benchmark_metadata.csv"),
+    get("data/curated/benchmark_lower_bounds.csv"),
+    get("data/pipeline/output/pipeline_report.md"),
+  ]);
+  for (const m of parseCSV(metaCsv)) meta[m.benchmark] = m;
+  for (const f of parseCSV(floorsCsv)) floors[f.benchmark] = f;
+  rows = parseCSV(merged);
+  for (const r of rows) r.floor = floors[r.benchmark]?.lower_bound ?? "";
+
+  const benches = new Set(rows.map(r => r.benchmark));
+  const models = new Set(rows.map(r => r.model_version));
+  const latest = rows.reduce((a, r) => r.release_date > a ? r.release_date : a, "");
+  $("stats").textContent =
+    `${rows.length} rows · ${benches.size} benchmarks · ${models.size} models · latest release ${latest}`;
+
+  populateSelects();
+  applyFilters();
+  buildBench();
+  $("report").innerHTML = renderMarkdown(reportMd);
+}
+boot().catch(e => {
+  const el = $("error");
+  el.style.display = "block";
+  el.innerHTML = `<strong>Could not load the data files.</strong><br>${esc(e.message)}<br><br>` +
+    `If you opened this page as a local file, serve the repo instead: run ` +
+    `<code>python3 -m http.server</code> from the repo root, then open ` +
+    `<code>http://localhost:8000/</code>.`;
+});
+</script>
+</body>
+</html>
