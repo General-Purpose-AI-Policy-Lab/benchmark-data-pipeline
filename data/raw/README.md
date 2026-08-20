@@ -8,7 +8,8 @@ Index* (R + Stan implementation). Frozen historical snapshot — not refreshed.
 **Schema:** `model,score,benchmark` (long format, scores in [0, 1]).
 
 **Used by:**
-- `fit.py --preset canonical --eci-data-only` — fits the model against this
-  CSV instead of the current Epoch pipeline output. Sanity-check mode for
+- The modeling repo (`--eci-data-only`) fits against this
+  CSV instead of the current Epoch pipeline output. Nothing in THIS repo reads
+  it: the file is a frozen historical snapshot, kept for provenance. Sanity-check mode for
   comparing our PyMC recreation to the original Stan analysis. See
-  `load_eci_data(eci_data_only=True)` in [data.py](../../data.py).
+  `load_eci_data(eci_data_only=True)` in `data.py` in the modeling repo.

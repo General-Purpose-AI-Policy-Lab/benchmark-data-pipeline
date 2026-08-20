@@ -1,27 +1,27 @@
-# Pipeline report — 2026-08-19 13:35:33 UTC
+# Pipeline report — 2026-08-20 13:19:41 UTC
 
 - **Snapshot:** `2026-08-19`
-- **Epoch ZIP sha256:** `89a9c3d9962d11f17a4a35eaf5b89ff5e4dcdd63282e74363e82c671bc0f5c13`
-- **Fetched at:** 2026-08-19T12:44:15.863662+00:00
+- **Epoch ZIP sha256:** `18bbff4108104b02abc8c97597358987cf5f77fec299c72f308638d485dee393`
+- **Fetched at:** 2026-08-20T12:34:39.575484+00:00
 
 ## Row counts
 
-- After load:           6,189
-- After dedup:          5,249
-- After metadata join:  5,249
-- After optional filter:5,249
-- Final:                5,247
+- After load:           6,196
+- After dedup:          5,256
+- After metadata join:  5,256
+- After optional filter:5,256
+- Final:                5,254
 
 ## Distinct counts
 
 - Benchmarks: 100
-- Models:     860
+- Models:     859
 
 ## Coverage vs current `data/processed/benchmarks_merged.csv`
 
-- Overlapping (model, benchmark) pairs: 5,247
-- Current file pairs: 5,247
-- New file pairs:     5,247
+- Overlapping (model, benchmark) pairs: 5,254
+- Current file pairs: 5,254
+- New file pairs:     5,254
 - Significant score deltas (|Δ|>0.01): 0
 
 ## Unrecognized live-feed tasks (3)
@@ -65,6 +65,23 @@ Valid scores with no versioned Epoch id, so no test-taker to key on. A mix of re
 In the feed but in neither `FILE_SPEC` nor `FILE_SKIP`. Map them or skip them with a reason:
 - `mirrorcode.csv`
 
-## New models since last canonicalization (29)
+## Curated row edits
+
+- Dropped by `row_drops_*.csv`: **5** row(s)
+- Added by `row_adds_*.csv`: **3** row(s)
+
+## Human baselines not carried into the output (7)
+
+Their benchmark is not in the fitted set, so they are filtered out of `output/human_baselines.csv`. The source file `data/curated/human_baselines_source.csv` keeps them.
+
+- `GPQA Extended Biology` / Domain Expert
+- `GPQA Extended Biology` / Skilled Generalist
+- `GPQA Extended Chemistry` / Domain Expert
+- `GPQA Extended Chemistry` / Skilled Generalist
+- `GPQA Extended Physics` / Domain Expert
+- `GPQA Extended Physics` / Skilled Generalist
+- `PubMedQA` / Domain Expert
+
+## New models since last canonicalization (22)
 
 See `output/missing_models.csv`. Add canonical aliases in `canonical/model_aliases.csv` and re-run section 04.

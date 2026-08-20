@@ -1,0 +1,9 @@
+# The dashboard parses these files in the browser and the pipeline round-trips
+# them through csv.writer. A CRLF checkout put a \r on the last field of every
+# row, which silently rendered as the string "undefined".
+*.csv text eol=lf
+*.md  text eol=lf
+*.txt text eol=lf
+*.py  text eol=lf
+*.html text eol=lf
+*.ipynb text eol=lf

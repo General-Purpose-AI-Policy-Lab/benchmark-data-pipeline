@@ -21,10 +21,21 @@ This notebook is the authoritative refresh path for
      while the report looked clean.
    - Any benchmarks missing metadata (= you need to edit `canonical/benchmark_metadata.csv`)
    - Any new models since the last review (= you may want to edit `canonical/model_aliases.csv`)
-3. Section 10 swaps the outputs into `data/processed/` and `data/curated/`
-   automatically at the end of the run. If the report shows something wrong,
-   revert with `git checkout data/processed data/curated`.
-4. Re-run the model: `python fit.py --preset canonical` from the repo root.
+3. Run the gate, which is what puts the outputs into the tree:
+
+   ```bash
+   python3 scripts/check.py
+   ```
+
+   It validates `output/` — schema, field counts, no duplicate
+   `(model, benchmark)` cell, a row floor derived from the file it is about to
+   replace, non-empty baselines and report — and only then copies into
+   `data/processed/` and `data/curated/`. A failed check leaves the previous
+   data in place. Revert an accepted swap with
+   `git checkout data/processed data/curated`.
+4. Optionally assert the standing invariants: `python3 scripts/test_pipeline.py`.
+5. Re-fit in the modeling repo, which reads
+   `data/processed/benchmarks_merged.csv` from here.
 
 Re-running the notebook within the same UTC day reuses today's snapshot
 folder (no re-download). To force a refresh, delete `snapshots/YYYY-MM-DD/`
@@ -48,6 +59,8 @@ data/pipeline/
 │       ├── provenance.json              {url, fetched_at, sha256, license}
 │       ├── epoch_live_benchmarks.csv    epoch.ai/data/benchmarks.csv (internal evals)
 │       ├── live_provenance.json         {url, fetched_at, sha256, used_for}
+│       ├── rand_benchmark_scores.csv    the digitized RAND table (section 03b)
+│       ├── kaggle/                      one JSON per Open Benchmarks board (03e)
 │       └── seal/                        Scale SEAL raw HTML + provenance
 │           ├── <slug>.html              cached page per leaderboard
 │           └── seal_provenance.json     {fetched_at, per-slug sha256, n_rows}
@@ -55,23 +68,25 @@ data/pipeline/
 │   ├── 02_scores_long.csv
 │   ├── 03_scores_named.csv
 │   └── 04_scores_deduped.csv
-└── output/                              auto-swapped into the tree by section 10
+└── output/                              validated and swapped by scripts/check.py
     ├── benchmarks_merged.csv            matches data/processed/ schema
     ├── human_baselines.csv              matches data/curated/ schema
     ├── duplicates_report.csv            any (model, benchmark) collisions
     ├── name_changes.csv                 every variant → canonical rename
     ├── missing_models.csv               models not yet in alias map
-    ├── seal_alias_review.csv            proposed (unapplied) SEAL model aliases;
-    │                                    manual-review artifact, only refreshed when
-    │                                    SEAL names change — may lag the other outputs
+    ├── seal_alias_review.csv            FROZEN manual-review artifact from the
+    │                                    modeling repo; nothing here writes it
+    ├── name_audit.csv                   FROZEN manual-review artifact; produced by
+    │                                    the modeling repo's audit_model_names.py
     ├── content_diff_vs_current.csv      score deltas vs existing dataset
     │                                    (header-only = no deltas found)
     └── pipeline_report.md               provenance summary
 ```
 
-Sections run `00 → 10`, with `03b` (RAND), `03c` (Scale SEAL) and `03d`
-(live feed) between the Epoch load (03) and canonicalization (04); section 10
-copies the outputs into `data/{processed,curated}/`.
+Sections run `00 → 10`, with `03b` (RAND), `03c` (Scale SEAL), `03d`
+(live feed) and `03e` (Kaggle) between the Epoch load (03) and canonicalization
+(04). Section 10 writes nothing into the tree: `scripts/check.py` validates
+`output/` and performs the swap.
 
 ## Parameters
 
@@ -149,8 +164,8 @@ confidenceInterval_upper, company, createdAt, deprecated, ...}`, scores 0–100.
 
 - **`SEAL_SPEC`** (`slug → (benchmark, divisor, status)`) lists the 14 boards
   ingested. `rli` is deliberately kept even though Epoch ships
-  `rli_external.csv`: it is a PARTIAL overlap, not a duplicate (ZIP 10 models,
-  board 15, union 17), so dropping the scrape would lose 7 models. **EnigmaEval left this list on 2026-07-27**: its board stopped
+  `rli_external.csv`: it is a PARTIAL overlap, not a duplicate (ZIP 11 models,
+  board 15, union 19), so dropping the scrape would lose 8 models. **EnigmaEval left this list on 2026-07-27**: its board stopped
   serving rows to the scraper (47 → 5) and Epoch now ships the full file in the
   ZIP, with stderr and CI bounds, so it is ingested via `FILE_SPEC` in section
   03. Prefer the ZIP for any board Epoch starts publishing.
@@ -178,8 +193,9 @@ confidenceInterval_upper, company, createdAt, deprecated, ...}`, scores 0–100.
 - **"thinking"/"non-thinking" variants are kept as *distinct* test-takers**,
   consistent with the project's effort-variants-are-distinct convention
   (`collapse_effort_variants=False`) — they are *not* merged into the base model.
-- Every alias target is validated to exist in the Epoch set before it is
-  applied; genuinely new models (e.g. SEAL audio models, `Muse Spark`) stay as
+- The Curate tab validates an alias target against the merged data before
+  writing the row, and section 04 warns on any target that is absent at run time;
+  genuinely new models (e.g. SEAL audio models, `Muse Spark`) stay as
   their own test-takers. Proposed-but-unapplied matches are written to
   `output/seal_alias_review.csv` for manual review.
 
@@ -195,9 +211,10 @@ The fix is a second Epoch feed: `epoch.ai/data/benchmarks.csv`, the table the
 benchmark pages actually read. It carries every internal-eval run with a `task`
 name and a `task version` stamp, so a specific problem set can be selected.
 
-**All nine Epoch internal evals are read from this feed**, not just FrontierMath:
-the six that also ship in the ZIP (Chess Puzzles, GPQA Diamond, MATH Level 5,
-OTIS Mock AIME, SWE-Bench Verified, SimpleQA Verified) are byte-identical there
+**Every Epoch internal eval is read from this feed**, not just FrontierMath:
+the seven that also ship in the ZIP (Chess Puzzles, GPQA Diamond, MATH Level 5,
+OTIS Mock AIME, SWE-Bench Verified, SimpleQA Verified, Mystery Game Puzzles) are
+byte-identical there
 (same run ids, same scores, identical model ids, 0 mismatches — verified
 2026-07-28), so routing them here gives every internal eval one transport at no
 cost in rows. Their ZIP files sit in `FILE_SKIP`. The ZIP remains the source for
@@ -210,10 +227,13 @@ Caveat worth knowing: `task version` is a **harness** version for most tasks
 FrontierMath uses it as one, and even there the real discriminator is the `task`
 NAME (`-v2-Private`). So the version pin is per-task and `None` for the rest.
 
-- **`LIVE_TASK_SPEC`** maps `FrontierMath-Tiers-1-3-v2-Private → FrontierMath`
-  and `FrontierMath-Tier-4-v2-Private → FrontierMath Tier 4`. Private sets only,
+- **`LIVE_TASK_SPEC`** carries **twelve** tasks, not two. Besides the two v2
+  FrontierMath sets it maps the two v1 sets (kept as their own benchmarks), the
+  seven internal evals that also ship in the ZIP (Chess Puzzles, GPQA Diamond,
+  MATH Level 5, OTIS Mock AIME, SWE-Bench Verified, SimpleQA Verified, Mystery
+  Game Puzzles) and `EBR-bench`, which has no ZIP file at all. Private sets only,
   matching the ZIP convention (only twelve problems are public, so the public
-  splits are far too small to model).
+  splits are far too small to model). Read the dict for the current list.
 - **The canonical benchmark names are kept.** The curated floors, the exclusion
   list, and every downstream figure keep resolving. What changed is which
   problem set those names refer to. `source` records it as
@@ -226,9 +246,13 @@ NAME (`-v2-Private`). So the version pin is per-task and `None` for the rest.
   leaving the ranking intact (paired *r* = 0.988, n = 18), so one benchmark
   column would carry a bimodal difficulty.
 
-**Cost of the replacement, stated plainly.** FrontierMath coverage drops from
-173 rows to 80: only 41 of the models Epoch had evaluated on v1 have been
-re-run on v2. Models never re-evaluated lose their FrontierMath observation.
+**No coverage is lost.** v1 is re-ingested from the same live feed as its own
+benchmark rather than discarded: `FrontierMath v1` (101 rows) and
+`FrontierMath Tier 4 v1` (72 rows) sit alongside `FrontierMath` (48) and
+`FrontierMath Tier 4` (50). A model never re-run on v2 keeps its observation
+under the v1 name. As its own item each version gets its own `D`, `A` and
+`sigma_b`, so the defective v1 instrument reads as a low-discrimination noisy
+one instead of contaminating the v2 scale.
 
 **Watch item.** Ability estimates from before and after this change are not
 comparable on FrontierMath difficulty. `D` falls sharply, because the same
@@ -249,8 +273,8 @@ Endpoint: `https://www.kaggle.com/api/v1/benchmarks/<owner>/<slug>/leaderboard`,
 public JSON, no auth. The first INDEPENDENTLY RE-RUN source in the pipeline:
 the other five feeds are vendor self-reports or leaderboard scrapes, and every
 Kaggle row carries a binomial 95% confidence interval, so this is the first
-feed to supply real per-row stderr at scale (`--known-se` currently has
-stderr on roughly a fifth of cells).
+feed to supply real per-row stderr at scale (`--known-se`, in the modeling repo, currently has
+stderr on about a quarter of cells).
 
 **Boards ingested**, each merged per its own `kaggle_wins` boolean:
 
@@ -263,12 +287,12 @@ stderr on roughly a fifth of cells).
 **`open-benchmarks/mmlu` → MMLU, kaggle_wins=True.** No offset is detectable
 against the existing column: 7 overlapping models, mean +0.021, sd 0.044,
 p = 0.25, and the construct is identical (57 subjects, 4 choices, 0.25 floor).
-Replacing the column outright was rejected: 129 of the 136 existing rows have
+Replacing the column outright was rejected: 128 non-Kaggle rows have
 no Kaggle equivalent, and 8 test-takers would leave the fit if dropped.
-Kaggle wins on the 7 collisions and the ZIP backfills the rest, for 180 obs.
+Kaggle wins on the collisions and the ZIP backfills the rest, for 179 obs.
 
 **`open-benchmarks/mmlu-pro` → MMLU-Pro, kaggle_wins=True.** Kaggle is the sole
-source for this column, at 45 fit observations. The alternative is TIGER-Lab's
+source for this column, at 55 rows. The alternative is TIGER-Lab's
 own leaderboard
 ([`TIGER-Lab/mmlu_pro_leaderboard_submission`](https://huggingface.co/datasets/TIGER-Lab/mmlu_pro_leaderboard_submission/blob/main/results.csv)),
 which mixes rows TIGER-Lab ran with rows the model vendors submitted, and
@@ -280,10 +304,10 @@ instrument difference, so the independently re-run board is the one to trust.
 Its 55 models span 0.383-0.917. Chance floor 0.10 (10 answer options).
 
 **`deepmind/simpleqa-verified` → SimpleQA Verified, kaggle_wins=False.** Our
-Epoch-live-feed column is already the better instrument here: 70 models,
-single source, stderr on 70/70, current to 2026-07-31, and correctly
-effort-tagged. It wins every collision. Kaggle contributes only the 25
-models we lack, filed as `_unknown` effort, because Kaggle publishes no
+Epoch-live-feed column is already the better instrument here: 77 models,
+single source, stderr on 77/77, and correctly
+effort-tagged. It wins every collision. Kaggle contributes only the
+models we lack (38 rows today), filed as `_unknown` effort, because Kaggle publishes no
 effort suffix and its rows cannot be filed to a specific test-taker. Filing
 them under a real effort tag would be worth up to 14 points: our
 `gpt-5.4-2026-03-05_xhigh` scores 0.448 against Kaggle's untagged 0.305.
@@ -326,104 +350,35 @@ too tight. SciCode stays sourced from the Epoch ZIP (`scicode_external.csv`,
 itself a republish of Artificial Analysis); Kaggle's 39-model overlap
 corroborates that column (offset -0.027, corr 0.894) without replacing it.
 
-## Loss-scaled score columns (`FILE_SCORE_INVERT`)
+## Score columns that need a transform (`FILE_SCORE_TRANSFORM`)
 
-Some upstream leaderboards report a **loss**, where lower is better. Ingested
-as-is, such a column inverts the ability axis: the worse model reads as the
-stronger one. `FILE_SCORE_INVERT` lists those files; the loader applies
-`1 - score` after the divisor. Brier and RPS both live in [0,1], so the
-complement is a valid [0,1] index.
+Some upstream columns are not a `[0,1]` capability proportion. `FILE_SCORE_TRANSFORM`
+maps those onto one, applied after the divisor. A transform is only admissible if
+the reference it is measured against is **exogenous** — a fixed baseline, a
+published human figure, a library implementation. Anything measured against the
+other models on a leaderboard stays out entirely: no rescaling repairs it,
+because the quantity is not a property of the model (see `FILE_SKIP` for
+`frontierswe` and `webdev_arena`).
 
-Currently one entry, **BTF3**. The ordering proves the direction:
-`claude-opus-4-8_xhigh` sat lowest on the raw column (0.130) and
-`claude-sonnet-5_xhigh` highest (0.154). Two consequences worth knowing:
-
-- `DEDUP_POLICY="max"` now resolves a model's repeated runs to its **best**
-  run. On the raw loss it would have picked the worst. BTF3 ships two harnesses
-  each for `claude-opus-4-8_high` and `gpt-5.5_high`, so 8 rows dedup to 6.
-- The uninformative baseline of the index is **0.75, not 0**: an always-0.5
-  binary forecaster scores Brier 0.25. `benchmark_lower_bounds.csv` records
-  that floor. The observed spread is 0.846–0.870 across 6 models, a nearly flat
-  column, so expect a small `|A|` and little influence on `theta`.
+**Currently one entry: AlgoTune.** The board reports a harmonic-mean speedup
+`s >= 1` against a fixed library implementation (SciPy / sklearn / CVXPY), so
+`1 - 1/s` is the fraction of the original runtime eliminated: `s=1` maps to 0,
+`s=2` to 0.5, and the observed 1.31–2.05x to 0.237–0.512, all interior.
+Unbounded above in principle, so 1.0 means infinite speedup and is unreachable;
+the 4PL ceiling stays inert at `d=1` rather than inventing a finite cap.
 
 **Check the direction whenever a score column is added.** Sort by the column and
-confirm the known-strong models land on the high end.
+confirm the known-strong models land on the high end. A column where lower is
+better (a loss) inverts the ability axis if ingested as-is, and it still passes
+the `[0,1]` range assertion.
 
-## Dollar-denominated score columns (`Vending-Bench 2`)
-
-`vending_bench_2_external.csv` scores a model by the **bank balance in dollars**
-it holds after running a simulated vending-machine business for 365 simulated
-days. The rules: $500 of starting capital, a $2/day location fee charged whether
-or not the machine trades, and the run ends early once the balance cannot cover
-that fee for 10 consecutive days. The published figure is a mean over 5 runs per
-model (a few are now 6 or 8). On the 2026-07-28 snapshot: 54 models, -$31.18 to
-$10,936.76, median $3,991.
-
-A dollar figure is not a proportion, so the Beta model cannot read it directly.
-`FILE_SCORE_TRANSFORM` maps it with
-
-```
-y = (x + 230) / (x + 230 + 63230)  =  sigma( log(x + 230) - log 63230 )
-```
-
-**Why a logarithm.** Money is a ratio scale: $100 to $200 is the same commercial
-step as $5,000 to $10,000, and a linear rescale would call the second one fifty
-times larger. Log-dollars is the coordinate on which those steps are comparable.
-The Beta-MIRT link is already a logistic on a latent linear predictor, so the map
-that makes that predictor equal log-dollars is simply its inverse. One logit of
-ability then means a factor of e = 2.72 in the year-end balance.
-
-**Why the origin is -$230.** A logarithm goes vertical at its origin, so the
-origin decides how much of the scale the failures occupy, and it has to sit below
-every attainable score. $500 - $2 x 365 = -$230 is the balance a full year of
-fees alone would leave. No model reaches it, because the bankruptcy rule stops a
-run about 10 days after the balance stops covering the fee. That is why the foot
-of the board is a single bankruptcy cluster (-$31.18, -$23.16, -$21.53, -$11.34,
-$0.54, $35.26): the dollar spread inside it records when the simulation cut out,
-not how able those six models are. The choice is measurable:
-
-| log origin | share of the 4.03-logit range taken by those 6 rows |
-|---|---|
-| **-$230** | **7.2%** |
-| -$1 | 45.9% |
-
-At -$1 the step from $1 to $72 is 4.27 logits while the step from the median
-model ($3,991) to the best ($10,937) is 1.01, so a $70 wobble at the bottom of a
-5-run average would outweigh the entire frontier.
-
-**Why the scale is $63,230.** Andon Labs estimates a strong human strategy would
-reach roughly $63,000 a year; measured from the same origin that is $63,230.
-Using it makes the odds of the score the ratio to that human,
-`y / (1 - y) = (x + 230) / 63230`. Unlike the origin, the scale is **not
-identified**: replacing it adds a constant to every logit, and the free
-per-benchmark difficulty `D_b` absorbs that exactly. It is a choice of units, not
-a modelling assumption.
-
-**Bounds.** The chance floor is 0 in `benchmark_lower_bounds.csv`, inert, because
-the origin already sits at "created nothing". There is no ceiling: y = 1 needs
-infinite money, so the 4PL `d` stays at 1, as for AlgoTune.
-
-**Recovering dollars.** `x = 63230 * y / (1 - y) - 230`, exact, so storing the
-proportion loses nothing.
-
-**Caveats.** The simulation also bills $100 per million output tokens against the
-balance, so verbosity is priced into the score; that is how a model can finish
-below the do-nothing exit of about -$20. The figure is a mean over a handful of
-very high-variance runs and the ZIP carries no `stderr` for it, so `sigma_b` will
-absorb seed noise as benchmark noise with no way to separate the two. v2 scores
-the bank balance where v1 scored net worth including unsold inventory.
-
-Rules and the $63,000 reference: [Andon Labs](https://andonlabs.com/evals/vending-bench-2),
-[Epoch AI](https://epoch.ai/benchmarks/vending-bench-2), and the v1 paper
-[arXiv 2502.15840](https://arxiv.org/abs/2502.15840) for the fee and bankruptcy
-wording.
 
 ## Sources
 
 | Section | Source | License | Benchmarks |
 |---|---|---|---|
-| 01 (Epoch) | `epoch.ai/data/benchmark_data.zip` | CC-BY (Epoch AI) | Reasoning, math, QA, multimodal, agentic — ~45 benchmarks |
-| 03d (Epoch live) | `epoch.ai/data/benchmarks.csv` — version-tagged internal evals | CC-BY (Epoch AI) | FrontierMath (Tiers 1-3) and FrontierMath Tier 4, v2 problem set — 2 benchmarks |
+| 01 (Epoch) | `epoch.ai/data/benchmark_data.zip` | CC-BY (Epoch AI) | Reasoning, math, QA, multimodal, agentic — 59 `FILE_SPEC` entries |
+| 03d (Epoch live) | `epoch.ai/data/benchmarks.csv` — version-tagged internal evals | CC-BY (Epoch AI) | Every Epoch internal eval — 12 tasks in `LIVE_TASK_SPEC`, ~1,200 rows (23% of the table) |
 | 03b (RAND) | [`benchmark-forecasting`](https://github.com/General-Purpose-AI-Policy-Lab/benchmark-forecasting/blob/main/Data/benchmark_data_RAND/benchmark_scores_RAND.csv) — digitized from RAND **RR-A3797-1** (Dev et al. 2025, *Toward Comprehensive Benchmarking of the Biological Knowledge of Frontier LLMs*) | Citation: [RR-A3797-1](https://www.rand.org/pubs/research_reports/RRA3797-1.html) | Biology + chemistry safety suite (WMDP, LAB-Bench, MMLU/MMLU Pro Bio/Chem, GPQA Diamond/Main Bio/Chem, BioLP-bench) — 15 benchmarks |
 | 03c (Scale SEAL) | `labs.scale.com/leaderboard/<slug>` (scraped from `__next_f`; slugs from Scale's Sanity CMS) | **Not CC-BY** — Scale AI ToS; used as fair-use research aggregation, attribute Scale AI | MCP Atlas, MultiChallenge, MultiNRC, VISTA, TutorBench, SEAL Tool Use, SWE-Bench Pro (public+private), SEAL Instruction Following, PRBench Finance/Legal, Remote Labor Index, VisualToolBench, AudioMultiChallenge — 14 benchmarks (EnigmaEval moved to the Epoch ZIP, 2026-07-27) |
 
@@ -431,6 +386,19 @@ When citing analysis built on this pipeline, credit Epoch AI, the RAND
 techreport, and Scale AI.
 
 ## Out of scope / not ingested
+
+- **BTF3 — examined, not ingested.** A pooled Brier/RPS *loss*. The `1 - loss`
+  inversion is sound, but the floor is not derivable: a coin-flip binary
+  forecaster scores Brier 0.25 (index 0.75), yet the pooled score also weights a
+  normalized numeric RPS 3x per question (392 numeric vs 1515 binary) whose
+  uninformative level is unpublished. Parked rather than shipping a guessed
+  chance floor. In `FILE_SKIP`.
+- **Vending-Bench 2 — ingested 2026-07-29, retired 2026-08-04.** Scored by the
+  dollar bank balance after a simulated year, so it needed a log transform onto
+  `[0,1]`. Retired because the panel cannot identify the loading row: 54 rows but
+  only 3 informative takers, so the loading direction was set by whatever the
+  rest of the fit settled into. The dollar transform also put it on a scale no
+  other benchmark shares. In `FILE_SKIP`.
 
 - **OSUniverse** — `agentsea/osuniverse` on GitHub is a run-it-yourself
   benchmark *framework* (no published model×score leaderboard); scores exist
@@ -453,7 +421,7 @@ techreport, and Scale AI.
   multi-axis file (ACW/AVW/Rural/Urban/Photos splits × Avg/Median/Distance/Country%/Refusal).
   Its headline `ACW Avg Score` is a GeoGuessr *points* score (~0–5000, seen
   2131–4333) — not a [0,1] proportion, so it can't feed the Beta model. The one
-  clean, full-coverage (n=32) [0,1] column is `ACW Country %` — the fraction of
+  clean, full-coverage (n=31) [0,1] column is `ACW Country %` — the fraction of
   images whose country the model names correctly — so that is what `FILE_SPEC`
   ingests as benchmark **GeoBench**. It lines up with the curated 0.90
   "top player" human baseline (best model ≈ 0.88). The other splits are sparse

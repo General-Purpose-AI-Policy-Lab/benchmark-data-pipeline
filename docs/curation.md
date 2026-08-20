@@ -125,8 +125,10 @@ inverts the ability axis.
   uninformed guess on its Brier index).
 - [`data/curated/benchmark_n_items.csv`](../data/curated/benchmark_n_items.csv)
   — item count plus a verification stamp (`UNVERIFIED`, or the evidence kind:
-  `primary-source`, `score-grid`, `not-item-mean`, `stderr-inversion`; 91 rows). This feeds the n_eff identity guard, which checks a board's
-  claimed identity against the item count its own confidence intervals imply.
+  `primary-source`, `score-grid`, `not-item-mean`, `stderr-inversion`; 91 rows). This is the REFERENCE for the n_eff identity
+  guard, which checks a board's claimed identity against the item count its
+  own confidence intervals imply. The guard itself reads a hardcoded
+  `KAGGLE_N_ITEMS` in section 03e, not this file — keep the two in sync by hand.
 - [`data/curated/benchmark_upper_bounds.csv`](../data/curated/benchmark_upper_bounds.csv)
   — only for a measured ceiling, 2 rows today (FrontierMath v1 and Tier 4 v1,
   from their measured problem-set error rates).

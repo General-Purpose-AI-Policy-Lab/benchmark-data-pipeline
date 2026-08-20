@@ -270,7 +270,7 @@ claude-2.0,0.025,2023-07-11,Anthropic,OTIS Mock AIME 2024-2025,0.015179897658722
 claude-3-sonnet-20240229,0.025,2024-02-29,Anthropic,OTIS Mock AIME 2024-2025,0.0195029782755393,EpochAI (live feed),High End Math Reasoning
 Llama-3.1-8B-Instruct,0.025,2024-07-23,Meta AI,OTIS Mock AIME 2024-2025,0.0223324287469449,EpochAI (live feed),High End Math Reasoning
 Manus 1.5,0.025009999999999998,,Butterfly Effect (Monica),Remote Labor Index,,Scale SEAL,Core AGI Progress
-gpt-5.2-2025-12-11_medium,0.025019999999999997,,OpenAI,Remote Labor Index,,Scale SEAL,Core AGI Progress
+gpt-5.2-2025-12-11_medium,0.0250199999999999,2025-12-11,OpenAI,Remote Labor Index,,EpochAI,Core AGI Progress
 gemini-2.5-flash-preview-05-20_24K,0.0254,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,Core AGI Progress
 gpt-5.6-luna_low,0.0257142857142857,2026-07-09,OpenAI,CritPt,,EpochAI,Domain Specific Questions
 Llama-3.1-70B-Instruct,0.026000000000000002,,Meta AI,BioLP-bench,,RAND (Dev et al. 2025) — RR-A3797-1,Biology
@@ -1338,6 +1338,7 @@ claude-opus-4-6_unknown,0.2664,2026-02-05,Anthropic,FrontierCode,,https://cognit
 gpt-5.4-mini-2026-03-17_none,0.2666666666666666,2026-03-17,OpenAI,OTIS Mock AIME 2024-2025,0.0666666666666666,EpochAI (live feed),High End Math Reasoning
 gpt-5.2-2025-12-11_medium,0.2667,2025-12-11,OpenAI,ARC-AGI-2,,EpochAI,Core AGI Progress
 Baichuan-13B-Base,0.268,2023-07-11,Baichuan,GSM8K,,Baichuan 2: Open Large-scale Language Models,Domain Specific Questions
+deepseek-v4-pro-0813_max,0.2682926829268293,2026-08-13,DeepSeek,FrontierMath Tier 4,0.0700556420309515,EpochAI (live feed),High End Math Reasoning
 gemini-3.1-pro-preview,0.2682926829268293,2026-02-19,Google DeepMind,FrontierMath Tier 4,0.0700556420309515,EpochAI (live feed),High End Math Reasoning
 claude-opus-4-6_max,0.2682926829268293,2026-02-05,Anthropic,FrontierMath Tier 4,0.0700556420309515,EpochAI (live feed),High End Math Reasoning
 gemini-3.5-flash_high,0.2682926829268293,2026-05-19,Google DeepMind,FrontierMath Tier 4,0.0700556420309515,EpochAI (live feed),High End Math Reasoning
@@ -1700,7 +1701,7 @@ grok-4.5_unknown,0.342,2026-07-08,xAI,APEX Agents,,EpochAI,Core AGI Progress
 starcoder2-3b,0.342,2024-02-22,"Hugging Face,ServiceNow,NVIDIA,BigCode",ARC (AI2),,Qwen2.5-Coder Technical Report,Domain Specific Questions
 gemini-1.0-pro-001,0.342,,Google DeepMind,LAB-Bench LitQA2,,RAND (Dev et al. 2025) — RR-A3797-1,Biology
 Llama-3.1-8B-Instruct,0.342,,Meta AI,LAB-Bench SeqQA,,RAND (Dev et al. 2025) — RR-A3797-1,Biology
-glm-4.5_thinking_high,0.3421052631578947,2025-08-05,"Z.ai (Zhipu AI),Tsinghua University",AlgoTune,,EpochAI,Autonomous SWE
+glm-4.5_thinking,0.3421052631578947,2025-08-05,"Z.ai (Zhipu AI),Tsinghua University",AlgoTune,,EpochAI,Autonomous SWE
 claude-sonnet-4-5-20250929_high,0.3421052631578947,2025-09-29,Anthropic,AlgoTune,,EpochAI,Autonomous SWE
 Llama-4-Scout-17B-16E-Instruct,0.3424,2025-04-05,Meta AI,SpatialViz-Bench,,https://arxiv.org/abs/2507.07610,Multimodal Understanding
 gpt-5.5_xhigh,0.3428571428571428,2026-04-23,OpenAI,EBR-bench,0.019825390471106,EpochAI (live feed),Agentic Computer Use
@@ -2244,6 +2245,7 @@ claude-3-5-sonnet-20241022,0.43,,Anthropic,GPQA Diamond Chemistry,,RAND (Dev et 
 gemini-1.5-pro-001,0.43,,Google DeepMind,GPQA Diamond Chemistry,,RAND (Dev et al. 2025) — RR-A3797-1,Chemistry
 gemini-3.6-flash_low,0.43,2026-07-21,Google DeepMind,Chess Puzzles,0.0497569851956243,EpochAI (live feed),General Reasoning
 gemini-3.5-flash_minimal,0.43,2026-05-19,Google DeepMind,Chess Puzzles,0.0497569851956243,EpochAI (live feed),General Reasoning
+deepseek-v4-pro-0813_max,0.43,2026-08-13,DeepSeek,Mystery Game Puzzles,0.0497569851956243,EpochAI (live feed),General Reasoning
 Baichuan-13B-Base,0.4301,2023-07-11,Baichuan,BIG-Bench Hard (BBH),,Baichuan 2: Open Large-scale Language Models,Domain Specific Questions
 claude-3-7-sonnet-20250219,0.4302,,Anthropic,Visual Task Assessment (VISTA),,Scale SEAL,Multimodal Understanding
 vicuna-13b-v1.1,0.4304,2023-04-12,,BIG-Bench Hard (BBH),,Baichuan 2: Open Large-scale Language Models,Domain Specific Questions
@@ -2487,6 +2489,7 @@ claude-opus-4-20250514_unknown,0.4696,,Anthropic,Visual Task Assessment (VISTA),
 Llama-2-13b,0.4698,2023-07-18,Meta AI,BIG-Bench Hard (BBH),,Baichuan 2: Open Large-scale Language Models,Domain Specific Questions
 MiniMax-M2.7,0.469907407407407,2026-03-18,MiniMax,SciCode,,https://artificialanalysis.ai/evaluations/scicode,Autonomous SWE
 Mixtral-8x7B-Instruct-v0.1,0.47,,Mistral AI,MMLU Chemistry,,RAND (Dev et al. 2025) — RR-A3797-1,Chemistry
+deepseek-v4-pro-0813_max,0.47,2026-08-13,DeepSeek,Chess Puzzles,0.0501613558046591,EpochAI (live feed),General Reasoning
 gemini-3.7-flash_high,0.47,2026-08-13,Google DeepMind,Chess Puzzles,0.0501613558046591,EpochAI (live feed),General Reasoning
 amazon.nova-pro-v1:0,0.4704,,Amazon,SEAL Tool Use (Enterprise),,Scale SEAL,Agentic Computer Use
 claude-opus-4-8_unknown,0.4706,2026-05-28,Anthropic,GSO-Bench,,https://gso-bench.github.io/index.html,Autonomous SWE
@@ -3530,6 +3533,7 @@ gpt-5.6-sol_xhigh,0.645,2026-07-09,OpenAI,CursorBench,,https://cursor.com/cursor
 gpt-j-6b,0.645,2021-08-05,"EleutherAI,LAION",WinoGrande,,XGen-7B Technical Report,General Reasoning
 claude-3-7-sonnet-20250219_16K,0.645,,Anthropic,GPQA Diamond Chemistry,,RAND (Dev et al. 2025) — RR-A3797-1,Chemistry
 o1-2024-12-17_medium,0.645,,OpenAI,GPQA Diamond Chemistry,,RAND (Dev et al. 2025) — RR-A3797-1,Chemistry
+deepseek-v4-pro-0813_max,0.6456140350877193,2026-08-13,DeepSeek,FrontierMath,0.0283834752054356,EpochAI (live feed),High End Math Reasoning
 qwen3.7-max,0.6456140350877193,2026-05-19,Alibaba,FrontierMath,0.0283834752054356,EpochAI (live feed),High End Math Reasoning
 gpt-4o-2024-05-13,0.6457999999999999,,OpenAI,SEAL Tool Use (Enterprise),,Scale SEAL,Agentic Computer Use
 falcon-7b,0.646,2023-04-24,Technology Innovation Institute,TriviaQA,,Llama 2: Open Foundation and Fine-Tuned Chat Models,Domain Specific Questions
@@ -3933,7 +3937,7 @@ Llama-3.1-405B-Instruct,0.726,,Meta AI,MMLU Biology,,RAND (Dev et al. 2025) — 
 qwen3-max-2025-09-23,0.726010101010101,2025-09-24,Alibaba,GPQA Diamond,0.0273452810317123,EpochAI (live feed),Domain Specific Questions
 gpt-5.6-sol_max,0.7266666666666667,2026-07-09,OpenAI,DeepSWE,,https://deepswe.datacurve.ai/,Autonomous SWE
 gpt-5.2-2025-12-11_medium,0.7267,2025-12-11,OpenAI,ARC-AGI,,EpochAI,Core AGI Progress
-Inflection-1,0.727,2023-06-22,Inflection AI,MMLU,,Inflection-1 ,Domain Specific Questions
+Inflection-1,0.727,2023-06-22,Inflection AI,MMLU,,Inflection-1,Domain Specific Questions
 llava-v1.6-mistral-7b,0.728,2024-01-31,,ScienceQA,,Falcon2-11B Technical Report,Domain Specific Questions
 Llama-2-13b,0.728,2023-07-18,Meta AI,WinoGrande,,Llama 2: Open Foundation and Fine-Tuned Chat Models,General Reasoning
 claude-opus-5_high,0.7282850779510023,2026-07-24,Anthropic,DeepSWE,,https://deepswe.datacurve.ai/,Autonomous SWE
@@ -4418,7 +4422,7 @@ claude-sonnet-4-20250514_16K,0.8140000000000001,2025-05-22,Anthropic,Lech Mazur 
 text-davinci-002,0.815,2022-03-15,OpenAI,HellaSwag,,Stanford HELM,General Reasoning
 Phi-3-small-8k-instruct,0.815,2024-04-23,Microsoft,WinoGrande,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,General Reasoning
 Phi-3-medium-128k-instruct,0.815,2024-04-23,Microsoft,WinoGrande,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,General Reasoning
-text-davinci-002,0.816,2022-03-15,OpenAI,WinoGrande,,GPT-4 technical report,General Reasoning
+text-davinci-002,0.816,2022-03-15,OpenAI,WinoGrande,,GPT-4 Technical Report,General Reasoning
 gpt-3.5-turbo-0613,0.816,2023-06-13,OpenAI,WinoGrande,,The Falcon Series of Open Language Models,General Reasoning
 mistral-medium-2505,0.8162764350453172,2025-05-07,Mistral AI,MATH Level 5,0.0089956516510095,EpochAI (live feed),High End Math Reasoning
 o1-preview-2024-09-12,0.8164652567975831,2024-09-12,OpenAI,MATH Level 5,0.0106426082581615,EpochAI (live feed),High End Math Reasoning
@@ -4637,7 +4641,7 @@ Qwen2.5-72B,0.85,2024-09-19,Alibaba,MMLU,,DeepSeek-V3 Technical Report,Domain Sp
 o1-preview-2024-09-12,0.85,,OpenAI,WMDP Biology,,RAND (Dev et al. 2025) — RR-A3797-1,Biology
 gpt-5.1-2025-11-13_medium,0.8503787878787878,2025-11-13,OpenAI,GPQA Diamond,0.0212504220822498,EpochAI (live feed),Domain Specific Questions
 claude-opus-4-20250514,0.850453172205438,2025-05-22,Anthropic,MATH Level 5,0.0098046903676609,EpochAI (live feed),High End Math Reasoning
-PaLM 540B,0.851,2022-04-04,Google Research,WinoGrande,,GPT-4 Technical report,General Reasoning
+PaLM 540B,0.851,2022-04-04,Google Research,WinoGrande,,GPT-4 Technical Report,General Reasoning
 gpt-4-turbo-2024-04-09,0.851,,OpenAI,MMLU Pro Biology,,RAND (Dev et al. 2025) — RR-A3797-1,Biology
 text-davinci-002,0.852,2022-03-15,OpenAI,ARC (AI2),,GPT-4 Technical Report,Domain Specific Questions
 PaLM 540B,0.852,2022-04-04,Google Research,ARC (AI2),,GPT-4 Technical Report,Domain Specific Questions
@@ -4675,7 +4679,7 @@ qwen3.6-27b,0.8585858585858586,2026-04-22,Alibaba,GPQA Diamond,0.024825909793343
 qwen3.5-397b-a17b,0.8585858585858586,2026-02-13,Alibaba,GPQA Diamond,0.0248259097933433,EpochAI (live feed),Domain Specific Questions
 gemini-3.6-flash_minimal,0.8585858585858586,2026-07-21,Google DeepMind,GPQA Diamond,0.0248259097933433,EpochAI (live feed),Domain Specific Questions
 claude-fable-5_max,0.8585858585858586,2026-06-09,Anthropic,GPQA Diamond,0.0248259097933433,EpochAI (live feed),Domain Specific Questions
-gemini-1.5-pro-001,0.859,2024-05-14,Google DeepMind,MMLU,,Gemini 1.5 Report,Domain Specific Questions
+gemini-1.5-pro-001,0.859,2024-05-14,Google DeepMind,MMLU,,Gemini 1.5 report,Domain Specific Questions
 Llama-3.1-405B,0.859,2024-07-23,Meta AI,PIQA,,DeepSeek-V3 Technical Report,General Reasoning
 claude-3-5-sonnet-20240620,0.8595999999999999,,Anthropic,SEAL Instruction Following,,Scale SEAL,Advanced Language and Writing
 gpt-5.6-terra_max,0.8596491228070176,2026-07-09,OpenAI,FrontierMath,0.0206114719581642,EpochAI (live feed),High End Math Reasoning
@@ -4769,7 +4773,7 @@ gemini-2.5-pro-preview-06-05,0.875,2025-06-05,Google DeepMind,Fiction.LiveBench,
 gemini-1.5-flash-002,0.875,2024-09-24,Google DeepMind,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,General Reasoning
 claude-opus-4-8_high,0.875,2026-05-28,Anthropic,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,Autonomous SWE
 claude-2.0,0.875,2023-07-11,Anthropic,TriviaQA,,Model Card and Evaluations for Claude Models,Domain Specific Questions
-gpt-4-0314,0.875,2023-03-14,OpenAI,WinoGrande,,GPT-4 technical report,General Reasoning
+gpt-4-0314,0.875,2023-03-14,OpenAI,WinoGrande,,GPT-4 Technical Report,General Reasoning
 gpt-4-32k-0314,0.875,2023-03-14,OpenAI,WinoGrande,,The Falcon Series of Open Language Models,General Reasoning
 o3-2025-04-16_medium,0.875,,OpenAI,WMDP Biology,,RAND (Dev et al. 2025) — RR-A3797-1,Biology
 DeepSeek-Coder-V2-Lite-Instruct,0.876,2024-06-13,,GSM8K,,Qwen2.5-Coder Technical Report,Domain Specific Questions
@@ -4915,6 +4919,7 @@ claude-opus-4-8_medium,0.915,2026-05-28,Anthropic,ARC-AGI,,https://arcprize.org/
 claude-opus-5_high,0.9159,2026-07-24,Anthropic,WeirdML,,https://htihle.github.io/weirdml.html,Autonomous SWE
 Phi-3-medium-128k-instruct,0.916,2024-04-23,Microsoft,ARC (AI2),,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,Domain Specific Questions
 gpt-5.6-luna_max,0.9160353535353536,2026-07-09,OpenAI,GPQA Diamond,0.0172828435549403,EpochAI (live feed),Domain Specific Questions
+deepseek-v4-pro-0813_max,0.9166666666666666,2026-08-13,DeepSeek,GPQA Diamond,0.0152425736299343,EpochAI (live feed),Domain Specific Questions
 claude-opus-5_max,0.9178,2026-07-24,Anthropic,WeirdML,,https://htihle.github.io/weirdml.html,Autonomous SWE
 glm-5.2_max,0.918560606060606,2026-06-16,Z.ai (Zhipu AI),GPQA Diamond,0.0161232075336877,EpochAI (live feed),Domain Specific Questions
 kimi-k3_high,0.9191919191919192,2026-07-16,Moonshot,GPQA Diamond,0.0194176818897245,EpochAI (live feed),Domain Specific Questions
@@ -5049,6 +5054,7 @@ gpt-5.6-luna_max,0.9833333333333332,2026-07-09,OpenAI,OTIS Mock AIME 2024-2025,0
 claude-opus-4-8_max,0.9833333333333332,2026-05-28,Anthropic,OTIS Mock AIME 2024-2025,0.0141019018704441,EpochAI (live feed),High End Math Reasoning
 claude-fable-5_xhigh,0.985,2026-06-09,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress
 claude-fable-5_max,0.985,2026-06-09,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,Core AGI Progress
+deepseek-v4-pro-0813_max,0.9861111111111112,2026-08-13,DeepSeek,OTIS Mock AIME 2024-2025,0.009909806500176,EpochAI (live feed),High End Math Reasoning
 claude-opus-5_max,0.9888888888888888,2026-07-24,Anthropic,OTIS Mock AIME 2024-2025,0.0111111111111111,EpochAI (live feed),High End Math Reasoning
 claude-opus-5_max,0.99,2026-07-24,Anthropic,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,High End Math Reasoning
 grok-4.6_xhigh,0.9916666666666668,2026-08-12,xAI,OTIS Mock AIME 2024-2025,0.0047006339568147,EpochAI (live feed),High End Math Reasoning
@@ -5127,6 +5133,7 @@ o3-2025-04-16_high,0.53,2025-04-16,OpenAI,SimpleQA Verified,0.0157907995158367,E
 grok-4.5_high,0.535,2026-07-08,xAI,SimpleQA Verified,0.01578049505003,EpochAI (live feed),Domain Specific Questions
 grok-4.6_xhigh,0.544,2026-08-12,xAI,SimpleQA Verified,0.0157579285539791,EpochAI (live feed),Domain Specific Questions
 open-mixtral-8x22b,0.551279920212766,,Mistral AI,MMLU-Pro,0.0045341611053164805,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),Domain Specific Questions
+deepseek-v4-pro-0813_max,0.5546639919759278,2026-08-13,DeepSeek,SimpleQA Verified,0.0157481384117296,EpochAI (live feed),Domain Specific Questions
 gemini-2.5-pro,0.56,2025-06-17,Google DeepMind,SimpleQA Verified,0.0157049879543617,EpochAI (live feed),Domain Specific Questions
 claude-opus-5_max,0.567,2026-07-24,Anthropic,SimpleQA Verified,0.0156766309121812,EpochAI (live feed),Domain Specific Questions
 qwen3.6-max-preview,0.5692771084337349,2026-04-20,Alibaba,SimpleQA Verified,0.0156981797186634,EpochAI (live feed),Domain Specific Questions
@@ -5245,4 +5252,4 @@ gemini-3.6-flash_unknown,0.9417461900014243,,Google DeepMind,MMLU,0.001976544692
 grok-4.5_unknown,0.9453781512605042,,xAI,MMLU,0.0019176242516829463,Kaggle Open Benchmarks (open-benchmarks/mmlu),Domain Specific Questions
 claude-sonnet-5_low,0.625,2026-06-30,Anthropic,LAB-Bench Cloning,0.0856,"local eval (evals/lab_bench_cloning run.py 3.2.0, OpenRouter, effort=low, max_tokens=32000)",Biology
 claude-opus-4-8_low,0.8788,2026-05-28,Anthropic,LAB-Bench Cloning,0.0568,"local eval (evals/lab_bench_cloning run.py 3.2.0, OpenRouter, effort=low, max_tokens=32000)",Biology
-gpt-5.2-2025-12-11_high,0.512195,2025-12-11,OpenAI,AlgoTune,,EpochAI,Software Engineering
+gpt-5.2-2025-12-11_high,0.512195,2025-12-11,OpenAI,AlgoTune,,EpochAI,Autonomous SWE

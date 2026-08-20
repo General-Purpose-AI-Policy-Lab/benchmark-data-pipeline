@@ -34,6 +34,7 @@ import threading
 from datetime import datetime, timezone
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 SNAPSHOTS = ROOT / "data" / "pipeline" / "snapshots"
@@ -43,8 +44,20 @@ MERGED = ROOT / "data" / "processed" / "benchmarks_merged.csv"
 ALIASES = CANON / "model_aliases.csv"
 METADATA = CANON / "benchmark_metadata.csv"
 REVIEWED = CANON / "reviewed_models.txt"
-DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# \A..\Z, not ^..$, so a trailing newline cannot slip through; re.ASCII so
+# Unicode digits cannot either. strptime then rejects impossible dates.
+DATE_RE = re.compile(r"\A\d{4}-\d{2}-\d{2}\Z", re.ASCII)
 PORT = 8130
+MAX_BODY = 1 << 20
+
+# The page is served to a browser, so the server must not answer a request that
+# some other origin aimed at it. Host is the DNS-rebinding guard.
+ALLOWED_HOSTS = {"127.0.0.1", "localhost", "[::1]"}
+
+# Never served over HTTP: git internals (full history and remotes), the raw feed
+# caches (Scale SEAL data carries no open license), and the per-stage
+# intermediates. index.html fetches none of these.
+DENY_PARTS = {"snapshots", "intermediate"}
 
 _jupyter = Path.home() / "miniforge3" / "envs" / "pymc_env" / "bin" / "jupyter"
 JUPYTER = str(_jupyter) if _jupyter.exists() else "jupyter"
@@ -62,6 +75,24 @@ CACHES = {
 RUN_LOCK = threading.Lock()
 
 
+def _valid_date(s):
+    if not DATE_RE.match(s):
+        return False
+    try:
+        datetime.strptime(s, "%Y-%m-%d")
+        return True
+    except ValueError:
+        return False
+
+
+def _sanitize(v):
+    """Neutralize a spreadsheet formula. csv.writer quotes structure but not
+    intent: a cell starting =, +, -, @ executes when a curator opens these
+    files in Excel or Sheets, and these files ARE the curation surface."""
+    s = str(v)
+    return "'" + s if s[:1] in ("=", "+", "-", "@", "\t", "\r") else s
+
+
 def _exec(cmd, cwd, env, timeout):
     """Run cmd, return (returncode, stdout+stderr). A timeout or a missing
     executable comes back as a failing code, not an exception."""
@@ -77,13 +108,22 @@ def _exec(cmd, cwd, env, timeout):
 
 def run(date, refetch):
     target = SNAPSHOTS / (date or datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+    # Move the caches aside rather than deleting them: if the run then fails,
+    # the (network-fetched, and for SEAL not cheaply re-fetchable) snapshot is
+    # still recoverable. Restored below on failure, removed on success.
+    stashed = []
     for key in refetch:
         for name in CACHES[key]:
             p = target / name
-            if p.is_dir():
-                shutil.rmtree(p)
-            elif p.exists():
-                p.unlink()
+            if not p.exists():
+                continue
+            bak = p.with_name(p.name + ".refetch-bak")
+            if bak.is_dir():
+                shutil.rmtree(bak)
+            elif bak.exists():
+                bak.unlink()
+            p.rename(bak)
+            stashed.append((p, bak))
 
     env = {**os.environ, **({"SNAPSHOT_DATE": date} if date else {})}
     code, log = _exec([JUPYTER, "execute", "pipeline.ipynb"],
@@ -94,6 +134,11 @@ def run(date, refetch):
         code, check = _exec([sys.executable, str(ROOT / "scripts" / "check.py")],
                             ROOT, env, 60)
         ok = code == 0
+    for p, bak in stashed:
+        if ok:
+            shutil.rmtree(bak) if bak.is_dir() else bak.unlink()
+        elif not p.exists():
+            bak.rename(p)
     return {"ok": ok, "log": log[-8000:], "check": check}
 
 
@@ -129,7 +174,9 @@ def _ensure_nl(path):
 def _append_row(path, row):
     _ensure_nl(path)
     with path.open("a", newline="") as f:
-        csv.writer(f).writerow(row)
+        # lineterminator="\n": the excel dialect writes CRLF, which put a stray
+        # \r into these LF-only files and carried it through to the UI.
+        csv.writer(f, lineterminator="\n").writerow([_sanitize(c) for c in row])
 
 
 def curate(body):
@@ -172,6 +219,26 @@ def curate(body):
 
 
 class Handler(SimpleHTTPRequestHandler):
+    def _host_ok(self):
+        h = (self.headers.get("Host") or "").strip()
+        if h.startswith("["):
+            h = h[:h.find("]") + 1]
+        elif ":" in h:
+            h = h.rsplit(":", 1)[0]
+        return h in ALLOWED_HOSTS
+
+    def _origin_ok(self):
+        """Absent Origin means a non-browser client (curl); a browser always
+        sends it on a cross-origin POST, which is the case being refused."""
+        o = self.headers.get("Origin")
+        if o is None:
+            return True
+        return urlparse(o).hostname in ("127.0.0.1", "localhost", "::1")
+
+    def list_directory(self, path):
+        self.send_error(404, "No permission to list directory")
+        return None
+
     def _json(self, code, payload):
         body = json.dumps(payload).encode()
         self.send_response(code)
@@ -181,10 +248,17 @@ class Handler(SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_GET(self):
-        path = self.path.split("?")[0]
+        if not self._host_ok():
+            return self._json(403, {"error": "unexpected Host header"})
+        path = unquote(self.path.split("?")[0])
         if path == "/api/queue":
             return self._json(200, queue())
         if path != "/api/snapshots":
+            # Static fall-through only: the API routes are matched above, so
+            # /api/snapshots is not caught by the "snapshots" rule here.
+            parts = [p for p in path.split("/") if p]
+            if any(p.startswith(".") for p in parts) or DENY_PARTS.intersection(parts):
+                return self._json(404, {"error": "not found"})
             return super().do_GET()
         names = sorted((d.name for d in SNAPSHOTS.iterdir()
                         if d.is_dir() and DATE_RE.match(d.name)),
@@ -192,12 +266,26 @@ class Handler(SimpleHTTPRequestHandler):
         self._json(200, {"snapshots": names})
 
     def do_POST(self):
+        if not self._host_ok():
+            return self._json(403, {"error": "unexpected Host header"})
+        if not self._origin_ok():
+            return self._json(403, {"error": "cross-origin request refused"})
         path = self.path.split("?")[0]
         if path not in ("/api/run", "/api/curate"):
             return self._json(404, {"error": "not found"})
         try:
             n = int(self.headers.get("Content-Length") or 0)
-            body = json.loads(self.rfile.read(n) or "{}")
+        except ValueError:
+            return self._json(400, {"error": "bad Content-Length"})
+        if n > MAX_BODY:
+            return self._json(413, {"error": f"body over {MAX_BODY} bytes"})
+        raw = self.rfile.read(n)
+        # An empty body used to parse as {}, which passed validation and launched
+        # a full 900 s run - so a stray curl -X POST started one.
+        if not raw.strip():
+            return self._json(400, {"error": "empty body"})
+        try:
+            body = json.loads(raw)
         except ValueError:
             return self._json(400, {"error": "body is not JSON"})
         if not isinstance(body, dict):
@@ -214,7 +302,7 @@ class Handler(SimpleHTTPRequestHandler):
 
         date = body.get("date") or ""
         refetch = body.get("refetch") or []
-        if date and not DATE_RE.match(date):
+        if date and not _valid_date(date):
             return self._json(400, {"error": "date must be YYYY-MM-DD or empty"})
         if not isinstance(refetch, list) or any(k not in CACHES for k in refetch):
             return self._json(400, {"error": f"refetch keys must be from {sorted(CACHES)}"})

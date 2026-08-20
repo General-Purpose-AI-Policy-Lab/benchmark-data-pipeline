@@ -30,7 +30,8 @@ pipeline refresh report), **Refresh** (run the pipeline; see below),
 | File | What it is |
 |---|---|
 | `data/processed/benchmarks_merged.csv` | the merged table: `model_version,score,release_date,organization,benchmark,stderr,source,category` |
-| `data/curated/human_baselines.csv` | human tiers as test-takers |
+| `data/curated/human_baselines.csv` | human tiers as test-takers — **derived**, written by the refresh |
+| `data/curated/human_baselines_source.csv` | the hand-maintained baselines the refresh reads |
 | `data/curated/*.csv` | per-benchmark facts (chance floors, ceilings, item counts, score clips) and curated corrections |
 | `data/pipeline/canonical/*` | name/alias maps and benchmark metadata |
 | `data/pipeline/output/pipeline_report.md` | provenance report of the last refresh |
@@ -40,14 +41,16 @@ Future projects clone this repo and read those paths. No API layer.
 ## Refreshing
 
 Open `data/pipeline/pipeline.ipynb`, Restart Kernel → Run All (needs
-pandas, numpy, requests — no modeling stack). Section 10 swaps outputs
-into `data/{processed,curated}/`. Then:
+pandas, numpy, requests — no modeling stack). The notebook writes only to
+`data/pipeline/output/`. Then:
 
 ```bash
 python3 scripts/check.py
 ```
 
-and commit. Full pipeline docs (the five feeds, merge policy, guards) in
+which validates those outputs and, only if every check passes, swaps them into
+`data/{processed,curated}/`. A failed check leaves the previous data in place.
+Then commit. Full pipeline docs (the five feeds, merge policy, guards) in
 [`data/pipeline/README.md`](data/pipeline/README.md). Same-UTC-day re-runs
 reuse the snapshot folder; `snapshots/` and `intermediate/` are gitignored
 and regenerable.
@@ -76,8 +79,14 @@ raw per-item results — in `data/evals/<name>/` (see its README).
 
 - `scripts/serve.py` — serves the repo root on port 8130 and backs the
   Refresh tab (`GET /api/snapshots`, `POST /api/run`).
-- `scripts/check.py` — post-refresh gate: paths exist, merged CSV schema
-  and row count hold, the section-10 swap ran, report non-empty.
+- `scripts/check.py` — post-refresh gate **and** the swap: validates
+  `data/pipeline/output/` (schema, field counts, no duplicate
+  `(model, benchmark)` cell, a row floor derived from the file being replaced,
+  non-empty baselines and report) and only then copies it into
+  `data/{processed,curated}/`.
+- `scripts/test_pipeline.py` — asserts the standing invariants against the
+  committed files (no duplicate cells, no stacked config suffixes, one category
+  per benchmark, no unreachable alias rows). Run it after `check.py`.
 
 ## License note
 

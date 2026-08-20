@@ -24,6 +24,8 @@
     border-radius: 6px 6px 0 0; background: #eef1f4; cursor: pointer; min-height: 38px;
   }
   nav button[aria-selected="true"] { background: #fff; font-weight: 600; color: var(--accent); }
+  nav button:hover { background: #e2e7ec; }
+  nav button[aria-selected="true"]:hover { background: #fff; }
   nav button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, .btn:focus-visible {
     outline: 2px solid var(--accent); outline-offset: 1px;
   }
@@ -41,14 +43,22 @@
     cursor: pointer; user-select: none;
   }
   thead th:focus-visible { outline: 2px solid #ffd166; outline-offset: -2px; }
+  thead th:hover { background: #15598f; }
   tbody tr:nth-child(even) { background: var(--zebra); }
   a { color: var(--accent); }
   .btn {
     font: inherit; padding: 9px 18px; border: 1px solid var(--accent); border-radius: 5px;
     background: var(--accent); color: #fff; cursor: pointer; min-height: 40px;
   }
+  .btn:hover { background: #15598f; border-color: #15598f; }
+  .btn:active { background: #114a78; }
+  .btn:disabled { background: #9fb3c4; border-color: #9fb3c4; cursor: progress; }
+  .btn.ghost:hover { background: var(--zebra); }
+  .btn.ghost:disabled { background: #fff; color: #9fb3c4; border-color: #cfd8e0; }
+  a:hover { text-decoration: none; }
   #download ul { line-height: 1.9; }
   #report, #refresh { max-width: 800px; line-height: 1.5; }
+  #report li { white-space: pre-wrap; }
   #report code, #refresh code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
   #report h1 { font-size: 20px; } #report h2 { font-size: 17px; } #report h3 { font-size: 15px; }
   #refresh label { display: inline-flex; align-items: center; gap: 6px; margin-right: 14px; }
@@ -74,6 +84,9 @@
   #c-legend { color: #55636f; margin: 4px 0 10px; line-height: 1.5; }
   #c-status { color: #922; }
   #c-status:empty { display: none; }
+  .c-err { color: #922; font-size: 13px; }
+  .c-err:empty { display: none; }
+  #r-offline[hidden], #c-offline[hidden] { display: none; }
   #error { margin: 24px 16px; padding: 16px; border: 1px solid #c33; background: #fdf2f2; color: #922; display: none; max-width: 640px; }
   section { display: none; } section.active { display: block; }
 </style>
@@ -83,17 +96,17 @@
   <h1>eval-data-pipeline</h1>
   <span id="stats">loading&hellip;</span>
 </header>
-<nav role="tablist">
-  <button role="tab" aria-selected="true" data-tab="browse">Browse</button>
-  <button role="tab" aria-selected="false" data-tab="benchmarks">Benchmarks</button>
-  <button role="tab" aria-selected="false" data-tab="download">Download</button>
-  <button role="tab" aria-selected="false" data-tab="report">Report</button>
-  <button role="tab" aria-selected="false" data-tab="refresh">Refresh</button>
-  <button role="tab" aria-selected="false" data-tab="curate">Curate</button>
+<nav role="tablist" aria-label="Views">
+  <button role="tab" id="tab-browse" aria-controls="browse" aria-selected="true" data-tab="browse">Browse</button>
+  <button role="tab" id="tab-benchmarks" aria-controls="benchmarks" aria-selected="false" tabindex="-1" data-tab="benchmarks">Benchmarks</button>
+  <button role="tab" id="tab-download" aria-controls="download" aria-selected="false" tabindex="-1" data-tab="download">Download</button>
+  <button role="tab" id="tab-report" aria-controls="report" aria-selected="false" tabindex="-1" data-tab="report">Report</button>
+  <button role="tab" id="tab-refresh" aria-controls="refresh" aria-selected="false" tabindex="-1" data-tab="refresh">Refresh</button>
+  <button role="tab" id="tab-curate" aria-controls="curate" aria-selected="false" tabindex="-1" data-tab="curate">Curate</button>
 </nav>
-<div id="error"></div>
+<div id="error" role="alert"></div>
 <main>
-  <section id="browse" class="active">
+  <section id="browse" class="active" role="tabpanel" tabindex="0" aria-labelledby="tab-browse">
     <div id="controls">
       <label>model <input type="text" id="f-model" placeholder="substring"></label>
       <label>benchmark <select id="f-benchmark"></select></label>
@@ -103,15 +116,15 @@
       <label>release &ge; <input type="date" id="f-datemin" title="Rows with no release date are hidden while a date bound is set"></label>
       <label>release &le; <input type="date" id="f-datemax" title="Rows with no release date are hidden while a date bound is set"></label>
     </div>
-    <div id="rowcount"></div>
+    <div id="rowcount" aria-live="polite">loading&hellip;</div>
     <div class="tablewrap"><table id="t-browse"><thead></thead><tbody></tbody></table></div>
   </section>
-  <section id="benchmarks">
+  <section id="benchmarks" role="tabpanel" tabindex="0" aria-labelledby="tab-benchmarks">
     <div class="tablewrap"><table id="t-bench"><thead></thead><tbody></tbody></table></div>
   </section>
-  <section id="download">
-    <p><button class="btn" id="dl-filtered">Download filtered CSV</button>
-       <span id="dl-note"></span></p>
+  <section id="download" role="tabpanel" tabindex="0" aria-labelledby="tab-download">
+    <p><button class="btn" id="dl-filtered" disabled>Download filtered CSV</button>
+       <span id="dl-note" aria-live="polite"></span></p>
     <h3>Direct file links</h3>
     <ul>
       <li><a href="data/processed/benchmarks_merged.csv">benchmarks_merged.csv</a> — the merged long table</li>
@@ -124,8 +137,9 @@
       <li><a href="data/pipeline/pipeline.ipynb">pipeline.ipynb</a> — the refresh notebook</li>
     </ul>
   </section>
-  <section id="report"></section>
-  <section id="refresh">
+  <section id="report" role="tabpanel" tabindex="0" aria-labelledby="tab-report"></section>
+  <section id="refresh" role="tabpanel" tabindex="0" aria-labelledby="tab-refresh">
+    <p id="r-offline" hidden></p>
     <div id="r-controls">
       <p>Runs the pipeline notebook locally. All five feeds are always merged; checkboxes only force a
          re-download of that source's cache.</p>
@@ -140,11 +154,12 @@
         <label><input type="checkbox" value="seal">Scale SEAL</label>
         <label><input type="checkbox" value="kaggle">Kaggle</label>
       </div>
-      <p><button class="btn" id="r-run">Run</button><span id="r-status"></span></p>
+      <p><button class="btn" id="r-run">Run</button><span id="r-status" aria-live="polite"></span></p>
     </div>
     <pre id="r-log"></pre>
   </section>
-  <section id="curate">
+  <section id="curate" role="tabpanel" tabindex="0" aria-labelledby="tab-curate">
+    <p id="c-offline" hidden></p>
     <p>Each name below appeared in the data for the first time and needs one decision.
        Naming rules and examples: <a href="docs/curation.md">curation guide</a>.</p>
     <ul id="c-legend">
@@ -157,7 +172,7 @@
     <p id="c-banner">Decisions are saved immediately but take effect on the next run:
        after curating, press Run on the Refresh tab with the same snapshot date.</p>
     <h3>Unrecognized model names (<span id="c-mcount">0</span>)</h3>
-    <div id="c-status"></div>
+    <div id="c-status" role="alert"></div>
     <div id="c-model-list"></div>
     <h3>Benchmarks missing metadata (<span id="c-bcount">0</span>)</h3>
     <div id="c-meta-list"></div>
@@ -186,8 +201,12 @@ function splitCSVLine(line) {
   out.push(field);
   return out;
 }
-function parseCSV(text) {
-  const lines = text.split("\n").filter(l => l.trim() !== "");
+function parseCSV(text, what) {
+  // /\r?\n/, not "\n": one CRLF file (a Windows clone with core.autocrlf, or an
+  // API append) left a \r on the LAST field of every line including the header,
+  // so every `category` lookup silently became the string "undefined".
+  const lines = text.split(/\r?\n/).filter(l => l.trim() !== "");
+  if (!lines.length) throw new Error(`${what || "file"} is empty`);
   const header = splitCSVLine(lines[0]);
   return lines.slice(1).map(l => {
     const cells = splitCSVLine(l), row = {};
@@ -205,24 +224,54 @@ function csvField(v) {
 let rows = [], floors = {}, meta = {}, filtered = [];
 const sortState = { browse: { key: null, dir: 1 }, bench: { key: null, dir: 1 } };
 const BROWSE_COLS = ["model_version", "score", "release_date", "organization", "benchmark", "floor", "stderr", "source", "category"];
+const SELECT_FILTERS = ["benchmark", "source", "category", "organization"];
 const NUMERIC = new Set(["score", "stderr", "floor", "n_models", "n_rows", "score_min", "score_max"]);
 
 const $ = id => document.getElementById(id);
+// esc() is right for text and attribute values but not for a URL: it cannot stop
+// a `javascript:` scheme, which would run at the origin that also serves /api/run.
+function safeUrl(u) { return /^https?:\/\//i.test(String(u)) ? String(u) : ""; }
 function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 
 // ---- tabs ----
-document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => {
-  document.querySelectorAll("nav button").forEach(x => x.setAttribute("aria-selected", x === b));
+const TABS = [...document.querySelectorAll('nav button[role="tab"]')];
+function selectTab(b) {
+  TABS.forEach(x => {
+    const on = x === b;
+    x.setAttribute("aria-selected", on);
+    x.tabIndex = on ? 0 : -1;
+  });
   document.querySelectorAll("main section").forEach(s => s.classList.toggle("active", s.id === b.dataset.tab));
-}));
+}
+TABS.forEach(b => b.addEventListener("click", () => selectTab(b)));
+document.querySelector("nav").addEventListener("keydown", e => {
+  const i = TABS.indexOf(document.activeElement);
+  if (i < 0) return;
+  const to = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: TABS.length - 1 }[e.key];
+  if (to === undefined) return;
+  e.preventDefault();
+  const t = TABS[(to + TABS.length) % TABS.length];
+  t.focus(); selectTab(t);
+});
 
 // ---- generic sortable table ----
 function renderHead(table, cols, labels, which) {
+  // The header is rebuilt on every sort, which detaches the <th> the user just
+  // activated; remember it and hand focus back.
+  const active = document.activeElement;
+  const refocus = active && active.tagName === "TH" && table.tHead.contains(active)
+    ? active.dataset.key : null;
   table.tHead.innerHTML = "<tr>" + cols.map(c => {
     const st = sortState[which];
-    const mark = st.key === c ? (st.dir === 1 ? " ▴" : " ▾") : "";
-    return `<th tabindex="0" data-key="${c}">${esc(labels[c] || c)}${mark}</th>`;
+    const on = st.key === c;
+    const mark = on ? (st.dir === 1 ? " ▴" : " ▾") : "";
+    const sort = on ? (st.dir === 1 ? "ascending" : "descending") : "none";
+    return `<th tabindex="0" data-key="${c}" aria-sort="${sort}">${esc(labels[c] || c)}${mark}</th>`;
   }).join("") + "</tr>";
+  if (refocus) {
+    const th = table.tHead.querySelector(`th[data-key="${refocus}"]`);
+    if (th) th.focus();
+  }
   table.tHead.querySelectorAll("th").forEach(th => {
     const go = () => {
       const st = sortState[which];
@@ -251,7 +300,7 @@ function sortRows(arr, which) {
 function applyFilters() {
   const q = $("f-model").value.toLowerCase();
   const sel = {};
-  for (const k of ["benchmark", "source", "category", "organization"]) sel[k] = $("f-" + k).value;
+  for (const k of SELECT_FILTERS) sel[k] = $("f-" + k).value;
   const dmin = $("f-datemin").value, dmax = $("f-datemax").value;
   filtered = rows.filter(r => {
     if (q && !r.model_version.toLowerCase().includes(q)) return false;
@@ -275,7 +324,7 @@ function renderBrowse() {
   $("rowcount").textContent = `${filtered.length} of ${rows.length} rows`;
 }
 function populateSelects() {
-  for (const k of ["benchmark", "source", "category", "organization"]) {
+  for (const k of SELECT_FILTERS) {
     const vals = [...new Set(rows.map(r => r[k]).filter(Boolean))].sort();
     $("f-" + k).innerHTML = `<option value="">all</option>` +
       vals.map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
@@ -319,7 +368,8 @@ function renderBench() {
   const sorted = sortRows(benchRows, "bench");
   t.tBodies[0].innerHTML = sorted.map(r => {
     let floorCell = esc(r.floor);
-    if (r.floor !== "" && r.floor_url) floorCell = `<a href="${esc(r.floor_url)}" title="${esc(r.floor_reason)}">${esc(r.floor)}</a>`;
+    const href = safeUrl(r.floor_url);
+    if (r.floor !== "" && href) floorCell = `<a href="${esc(href)}" title="${esc(r.floor_reason)}">${esc(r.floor)}</a>`;
     else if (r.floor !== "") floorCell = `<span title="${esc(r.floor_reason)}">${esc(r.floor)}</span>`;
     return "<tr>" + BENCH_COLS.map(c =>
       c === "floor" ? `<td>${floorCell}</td>` :
@@ -332,7 +382,7 @@ function renderBench() {
 $("dl-filtered").addEventListener("click", () => {
   const cols = BROWSE_COLS.filter(c => c !== "floor").concat("floor");
   const lines = [cols.join(",")].concat(
-    filtered.map(r => cols.map(c => csvField(r[c])).join(","))
+    sortRows(filtered, "browse").map(r => cols.map(c => csvField(r[c])).join(","))
   );
   const blob = new Blob([lines.join("\n") + "\n"], { type: "text/csv" });
   const a = document.createElement("a");
@@ -377,9 +427,12 @@ async function boot() {
     get("data/curated/benchmark_lower_bounds.csv"),
     get("data/pipeline/output/pipeline_report.md"),
   ]);
-  for (const m of parseCSV(metaCsv)) meta[m.benchmark] = m;
-  for (const f of parseCSV(floorsCsv)) floors[f.benchmark] = f;
-  rows = parseCSV(merged);
+  // Cleared, not merged into: a re-boot after a refresh otherwise keeps rows for
+  // benchmarks the new data no longer has.
+  meta = {}; floors = {};
+  for (const m of parseCSV(metaCsv, "benchmark_metadata.csv")) meta[m.benchmark] = m;
+  for (const f of parseCSV(floorsCsv, "benchmark_lower_bounds.csv")) floors[f.benchmark] = f;
+  rows = parseCSV(merged, "benchmarks_merged.csv");
   for (const r of rows) r.floor = floors[r.benchmark]?.lower_bound ?? "";
 
   const benches = new Set(rows.map(r => r.benchmark));
@@ -389,8 +442,17 @@ async function boot() {
     `${rows.length} rows · ${benches.size} benchmarks · ${models.size} models · latest release ${latest}`;
   $("c-models").innerHTML = [...models].sort().map(m => `<option value="${esc(m)}"></option>`).join("");
 
+  // populateSelects() rebuilds each <select>, which resets .value; without this
+  // a post-refresh re-boot silently dropped four of the user's six filters.
+  const keep = {};
+  for (const k of SELECT_FILTERS) keep[k] = $("f-" + k).value;
   populateSelects();
+  for (const k of SELECT_FILTERS) {
+    const el = $("f-" + k);
+    if ([...el.options].some(o => o.value === keep[k])) el.value = keep[k];
+  }
   applyFilters();
+  $("dl-filtered").disabled = false;
   buildBench();
   $("report").innerHTML = renderMarkdown(reportMd);
 }
@@ -402,12 +464,17 @@ async function loadSnapshots() {
   $("r-dates").innerHTML = (snapshots || []).map(d => `<option value="${esc(d)}"></option>`).join("");
 }
 async function initRefresh() {
+  // The hint goes in its own element and Run is bound unconditionally. Replacing
+  // the whole tab destroyed the controls it describes, and binding Run only on
+  // the success path meant one failed call left it dead for the session.
   try {
     await loadSnapshots();
-  } catch {
-    $("r-controls").innerHTML = "Refreshing needs the local backend: run " +
-      "<code>python3 scripts/serve.py</code> from the repo root (plain http.server only browses).";
-    return;
+    $("r-offline").hidden = true;
+  } catch (e) {
+    $("r-offline").hidden = false;
+    $("r-offline").innerHTML = `Snapshot list unavailable (${esc(e.message)}). ` +
+      "Refreshing needs the local backend: run <code>python3 scripts/serve.py</code> " +
+      "from the repo root (plain http.server only browses).";
   }
   $("r-run").addEventListener("click", async () => {
     const btn = $("r-run");
@@ -432,7 +499,16 @@ async function initRefresh() {
       } else {
         $("r-log").textContent = (body.log || "") + "\n\n" + (body.check || "");
         $("r-status").textContent = body.ok ? `done in ${secs()}s` : `FAILED after ${secs()}s — see log`;
-        if (body.ok) await boot();
+        if (body.ok) {
+          // A reload failure is not a run failure; saying "done" while showing
+          // pre-run numbers is the worst of both.
+          await boot().catch(e => {
+            $("r-status").textContent = `run ok, but the reload failed: ${e.message} — refresh the page`;
+          });
+          // The run is what produces new curation decisions; without this the
+          // Curate tab kept showing the pre-run queue until a manual reload.
+          await initCurate();
+        }
         await loadSnapshots().catch(() => {});
       }
     } catch (e) {
@@ -445,7 +521,11 @@ async function initRefresh() {
 
 // ---- Curate ----
 let queue = null;
-async function curatePost(payload) {
+async function curatePost(payload, errEl) {
+  // A rejection has to appear next to the row it belongs to. The shared banner
+  // at the top of the tab could sit thousands of pixels away from what the user
+  // is looking at, and the next success on any other row cleared it.
+  const show = m => { (errEl || $("c-status")).textContent = m; };
   try {
     const r = await fetch("/api/curate", {
       method: "POST",
@@ -453,11 +533,11 @@ async function curatePost(payload) {
       body: JSON.stringify(payload),
     });
     const body = await r.json().catch(() => ({}));
-    if (!r.ok) { $("c-status").textContent = body.error || `HTTP ${r.status}`; return false; }
-    $("c-status").textContent = "";
+    if (!r.ok) { show(body.error || `HTTP ${r.status}`); return false; }
+    show("");
     return true;
   } catch (e) {
-    $("c-status").textContent = e.message;
+    show(e.message);
     return false;
   }
 }
@@ -480,13 +560,17 @@ function renderCurateModels() {
         <input class="c-drop-note" placeholder="why exclude it? (required)">
         <button class="btn c-do-drop">Confirm exclude</button>
       </span>
+      <span class="c-err" role="alert"></span>
     </div>`).join("");
+  if (!queue.missing_models.length) list.textContent = "none — every model name is decided";
   list.querySelectorAll(".c-row").forEach(row => {
     const name = row.dataset.name;
+    const err = row.querySelector(".c-err");
     const done = () => {
       queue.missing_models = queue.missing_models.filter(n => n !== name);
       $("c-mcount").textContent = queue.missing_models.length;
       row.remove();
+      if (!queue.missing_models.length) list.textContent = "none — every model name is decided";
     };
     const panels = { alias: row.querySelector(".c-panel-alias"), drop: row.querySelector(".c-panel-drop") };
     const open = which => {
@@ -497,16 +581,18 @@ function renderCurateModels() {
     row.querySelector(".c-pick-alias").addEventListener("click", () => open("alias"));
     row.querySelector(".c-pick-drop").addEventListener("click", () => open("drop"));
     row.querySelector(".c-review").addEventListener("click", async () => {
-      if (await curatePost({ action: "review", name })) done();
+      if (await curatePost({ action: "review", name }, err)) done();
     });
     row.querySelector(".c-do-alias").addEventListener("click", async () => {
       if (await curatePost({ action: "alias", variant: name,
           canonical: row.querySelector(".c-alias").value,
-          note: row.querySelector(".c-alias-note").value })) done();
+          note: row.querySelector(".c-alias-note").value }, err)) done();
+      else row.querySelector(".c-alias").focus();
     });
     row.querySelector(".c-do-drop").addEventListener("click", async () => {
       if (await curatePost({ action: "drop", variant: name,
-          note: row.querySelector(".c-drop-note").value })) done();
+          note: row.querySelector(".c-drop-note").value }, err)) done();
+      else row.querySelector(".c-drop-note").focus();
     });
   });
 }
@@ -520,14 +606,20 @@ function renderCurateMeta() {
       <select class="c-cat">${queue.categories.map(c => `<option>${esc(c)}</option>`).join("")}</select>
       <input class="c-notes" placeholder="notes (optional)">
       <button class="btn c-do-meta">Apply</button>
+      <span class="c-err" role="alert"></span>
     </div>`).join("");
   list.querySelectorAll(".c-row").forEach(row => {
     row.querySelector(".c-do-meta").addEventListener("click", async () => {
       if (await curatePost({ action: "metadata", benchmark: row.dataset.name,
           category: row.querySelector(".c-cat").value,
-          notes: row.querySelector(".c-notes").value })) {
+          notes: row.querySelector(".c-notes").value }, row.querySelector(".c-err"))) {
+        // Remove only this row. Re-rendering rebuilt every sibling from a queue
+        // that carries no input state, wiping typed notes and resetting each
+        // category select to its first option.
         queue.missing_meta = queue.missing_meta.filter(x => x !== row.dataset.name);
-        renderCurateMeta();
+        $("c-bcount").textContent = queue.missing_meta.length;
+        row.remove();
+        if (!queue.missing_meta.length) list.textContent = "none — metadata complete";
       }
     });
   });
@@ -538,11 +630,14 @@ async function initCurate() {
     r = await fetch("/api/queue", { cache: "no-cache" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     queue = await r.json();
-  } catch {
-    $("curate").innerHTML = "Curating needs the local backend: run " +
-      "<code>python3 scripts/serve.py</code> from the repo root (plain http.server only browses).";
+  } catch (e) {
+    $("c-offline").hidden = false;
+    $("c-offline").innerHTML = `Curation queue unavailable (${esc(e.message)}). ` +
+      "Curating needs the local backend: run <code>python3 scripts/serve.py</code> " +
+      "from the repo root (plain http.server only browses).";
     return;
   }
+  $("c-offline").hidden = true;
   renderCurateModels();
   renderCurateMeta();
 }

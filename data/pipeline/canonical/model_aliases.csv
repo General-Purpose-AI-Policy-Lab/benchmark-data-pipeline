@@ -84,7 +84,6 @@ Claude 3.7 Sonnet (February 2025),claude-3-7-sonnet-20250219,"Scale SEAL alias (
 Claude-4-Opus-20250514,claude-opus-4-20250514,"Scale SEAL alias (auto, high-confidence)"
 Claude-4-Sonnet-20250514,claude-sonnet-4-20250514,"Scale SEAL alias (auto, high-confidence)"
 Claude Opus 4,claude-opus-4-20250514,"Scale SEAL alias (auto, high-confidence)"
-Claude Opus 4 ,claude-opus-4-20250514,"Scale SEAL alias (auto, high-confidence)"
 Claude Opus 4.1,claude-opus-4-1-20250805,"Scale SEAL alias (auto, high-confidence)"
 Claude Sonnet 4,claude-sonnet-4-20250514,"Scale SEAL alias (auto, high-confidence)"
 claude-4-Sonnet,claude-sonnet-4-20250514,"Scale SEAL alias (auto, high-confidence)"
@@ -135,8 +134,7 @@ Gemini 2.0 Flash Experimental (December 2024),gemini-2.0-flash-exp,"Scale SEAL a
 Gemini 2.0 Flash Lite Preview,gemini-2.0-flash-lite,"Scale SEAL alias (auto, verified checkpoint)"
 Gemini 2.0 Flash Lite Preview (February 2025),gemini-2.0-flash-lite,"Scale SEAL alias (auto, verified checkpoint)"
 Gemini 2.5 Flash (April 2025),gemini-2.5-flash,"Scale SEAL alias (auto, verified checkpoint)"
-Gemini 2.5 Flash Preview (May 2025) ,gemini-2.5-flash,"Scale SEAL alias (auto, verified checkpoint)"
-Gemini 2.5 Flash Preview (May 2025),gemini-2.5-flash,Scale SEAL alias (no-trailing-space form)
+Gemini 2.5 Flash Preview (May 2025),gemini-2.5-flash,"Scale SEAL alias (auto, verified checkpoint)"
 Gemini 2.5 Pro Experimental (March 2025),gemini-2.5-pro-exp-03-25,"Scale SEAL alias (auto, verified checkpoint)"
 Gemini 2.5 Pro Preview,gemini-2.5-pro,"Scale SEAL alias (auto, verified checkpoint)"
 Gemini 2.5 Pro Preview (May 06 2025),gemini-2.5-pro-preview-05-06,"Scale SEAL alias (auto, verified checkpoint)"
@@ -187,7 +185,7 @@ LLaMA (30B),LLaMA-33B,augmented:helm
 LLaMA (65B),LLaMA-65B,augmented:helm
 Llama 2 (7B),Llama-2-7b,augmented:helm
 Llama 2 (13B),Llama-2-13b,augmented:helm
-Llama 2 (70B),Llama-2-70b-hf ,augmented:helm
+Llama 2 (70B),Llama-2-70b-hf,augmented:helm
 MPT (30B),mpt-30b,augmented:helm
 MPT-Instruct (30B),mpt-30b-instruct,augmented:helm
 OPT (66B),opt-66b,augmented:helm
@@ -389,3 +387,5 @@ gemini-2.5-flash-preview-05-20_23K,gemini-2.5-flash-preview-05-20_24K,Epoch id s
 gemini-2.5-flash-preview-04-17 (24K thinking),gemini-2.5-flash-preview-04-17_24K,paren budget -> standard _24K suffix
 gemini-2.5-flash-preview-04-17 (16K thinking),gemini-2.5-flash-preview-04-17_16K,paren budget -> standard _16K suffix
 QwQ-32B (16K thinking),QwQ-32B_16K,paren budget -> standard _16K suffix
+gemini-3.5-flash-lite_medium,gemini-3.5-flash-lite_medium,
+gemini-3.6-flash_medium,gemini-3.6-flash_medium,

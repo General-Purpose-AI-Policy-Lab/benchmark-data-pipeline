@@ -4,7 +4,7 @@ Assessed 2026-08-19 against schema v0.3.0 and the live datastore.
 
 **Result.** Do not adopt every_eval_ever (EEE) as the internal format. Our
 data fits its schema with two lossy corners (release date, category), but
-the shape is wrong for our workflow: 5,064 score cells become 5,064 JSON
+the shape is wrong for our workflow: 5,254 score cells become 5,254 JSON
 files where one 580 KB CSV does the job. EEE is pertinent in three other
 roles, in decreasing order of value: a design cross-check (already
 banked), a candidate sixth ingest feed, and an export target if the data
@@ -43,7 +43,7 @@ sanctioned), `retrieved_timestamp` (our snapshot date serves),
 
 ## Why not as the internal format
 
-- One JSON file per cell. Our 5,064 cells and every refresh diff become
+- One JSON file per cell. Our 5,254 cells and every refresh diff become
   thousands of files against one CSV the pipeline already
   reads, dedups, and content-diffs.
 - The two gaps sit on columns the fits depend on. release_date drives the
