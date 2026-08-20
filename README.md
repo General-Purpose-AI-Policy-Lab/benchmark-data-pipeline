@@ -5,25 +5,31 @@ it. Extracted from the ECI Bayesian modeling repo; the full history of
 `data/` came along. Consumers (the ECI fits, future projects) read the
 files below. Nothing here depends on any modeling code.
 
-## The interface
+## The dashboard
 
-Open `index.html` through a local server (browsers block `fetch` from
-`file://`):
+Start the server. It opens the page for you:
 
 ```bash
-python3 scripts/serve.py
+./scripts/serve.sh
 ```
 
-then visit <http://localhost:8130>. That server also exposes the refresh API
-the Refresh tab uses. Plain `python3 -m http.server` still works for
-browse-only; the Refresh tab then shows a hint instead of the form. Six
-views: **Browse** (filter the
-merged table by model, benchmark, source, category, organization, date
-range; sort; chance floor shown per row), **Benchmarks** (one row per
-benchmark: category, notes, chance floor, coverage), **Download**
-(filtered slice as CSV, plus the raw files), **Report** (the latest
-pipeline refresh report), **Refresh** (run the pipeline; see below),
-**Curate** (act on the new-model and missing-metadata queues).
+The dashboard is at <http://localhost:8130>. Press Ctrl-C to stop the server.
+
+`python3 scripts/serve.py` starts the same server without opening a browser.
+Browsers block `fetch` from `file://`, so you cannot open `index.html` as a file.
+
+Six tabs:
+
+- **Browse** — filter the merged table by model, benchmark, source, category,
+  organization, and release date. Sort any column. Each row shows its chance floor.
+- **Benchmarks** — one row per benchmark: category, notes, chance floor, coverage.
+- **Download** — the filtered rows as CSV, plus links to the raw files.
+- **Report** — the report from the last refresh.
+- **Refresh** — run the pipeline. See below.
+- **Curate** — decide new model names and missing benchmark metadata.
+
+`python3 -m http.server` serves the page as well, but the Refresh and Curate
+tabs need `serve.py`. Without it, both tabs show a hint instead of the form.
 
 ## Paths of truth
 
@@ -48,9 +54,10 @@ pandas, numpy, requests — no modeling stack). The notebook writes only to
 python3 scripts/check.py
 ```
 
-which validates those outputs and, only if every check passes, swaps them into
-`data/{processed,curated}/`. A failed check leaves the previous data in place.
-Then commit. Full pipeline docs (the five feeds, merge policy, guards) in
+`check.py` validates those outputs. It copies them into
+`data/{processed,curated}/` only if every check passes, so a failed run leaves
+the previous data in place. Then commit. Full pipeline docs (the five feeds,
+merge policy, guards) are in
 [`data/pipeline/README.md`](data/pipeline/README.md). Same-UTC-day re-runs
 reuse the snapshot folder; `snapshots/` and `intermediate/` are gitignored
 and regenerable.
@@ -67,6 +74,41 @@ not the scope.
 When a refresh lists new models or unrecognized benchmarks, and for how
 canonical names are chosen: [`docs/curation.md`](docs/curation.md).
 
+## Where to edit what
+
+Two kinds of decision live in two different places.
+
+**Names live in files.** Edit them by hand, or use the Curate tab.
+
+| File | What you put there |
+|---|---|
+| `data/pipeline/canonical/model_aliases.csv` | `variant,canonical,note`. One row per renamed model. An empty `canonical` drops the model from the dataset. |
+| `data/pipeline/canonical/reviewed_models.txt` | One name per line. The name is already correct, so the pipeline keeps it. |
+| `data/pipeline/canonical/benchmark_names.csv` | `variant,canonical,note`. The same idea, for benchmark names. |
+| `data/pipeline/canonical/benchmark_metadata.csv` | `benchmark,category,notes`. One row per benchmark. |
+
+A refresh lists every model name it does not recognize in
+`data/pipeline/output/missing_models.csv`. Decide each name, then refresh
+again. A decided name leaves that list.
+
+The score needs no decision. It enters the merged table as soon as a feed
+carries it. Your decision only sets the name the score is filed under.
+
+**Which upstream files to read lives in the notebook**, not in a config file.
+Each `_SPEC` maps an upstream file, slug, or task to a benchmark name. Each
+`_SKIP` records what the pipeline ignores, and why. The pipeline reports
+anything that is in neither, so a new benchmark cannot arrive unnoticed.
+
+| Section | Cell | What to edit | Feed |
+|---|---|---|---|
+| 03 | 8 | `FILE_SPEC`, `FILE_SKIP`, `FILE_SCORE_TRANSFORM` | Epoch ZIP |
+| 03b | 10 | `RAND_BENCH_COLS` | RAND biology and chemistry |
+| 03c | 12 | `SEAL_SPEC`, `SEAL_SKIP` | Scale SEAL boards |
+| 03d | 14 | `LIVE_TASK_SPEC`, `LIVE_TASK_SKIP` | Epoch live feed |
+| 03e | 16 | `KAGGLE_SPEC` | Kaggle boards |
+
+Adding a benchmark is a notebook edit. Adding a name is a file edit.
+
 ## Your own runs
 
 Aggregate scores from local eval runs enter as
@@ -77,8 +119,11 @@ raw per-item results — in `data/evals/<name>/` (see its README).
 
 ## Scripts
 
-- `scripts/serve.py` — serves the repo root on port 8130 and backs the
-  Refresh tab (`GET /api/snapshots`, `POST /api/run`).
+- `scripts/serve.sh` — starts the server and opens the dashboard.
+- `scripts/serve.py` — serves the page on port 8130 and backs the Refresh and
+  Curate tabs (`/api/snapshots`, `/api/run`, `/api/queue`, `/api/curate`). It
+  answers on localhost only, and it does not serve `.git/`, `snapshots/`, or
+  `intermediate/`.
 - `scripts/check.py` — post-refresh gate **and** the swap: validates
   `data/pipeline/output/` (schema, field counts, no duplicate
   `(model, benchmark)` cell, a row floor derived from the file being replaced,
