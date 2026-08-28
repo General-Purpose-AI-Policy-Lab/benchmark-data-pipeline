@@ -1,6 +1,6 @@
 Model version,Accuracy,Accuracy Standard Error,Company,Release date,Organization,Country,Training compute (FLOP),Training compute notes,CI Lower Bound,CI Upper Bound,Name,Source,Notes,id
 gpt-5.4-pro-2026-03-05_unknown,0.2382,0.024300000000000002,openai,2026-03-05,OpenAI,United States of America,,,0.21389999999999998,0.2625,gpt-5.4-pro-2026-03-05,https://labs.scale.com/leaderboard/enigma_eval,,rec9I30aNqMMOAvz9
-gemini-3.1-pro-preview,0.19760000000000003,0.0227,google,2026-02-19,Google DeepMind,United States of America,,,0.17490000000000003,0.22030000000000002,gemini-3.1-pro-preview,https://labs.scale.com/leaderboard/enigma_eval,,reczkTTqNDkpHLfBw
+gemini-3.1-pro-preview,0.3678,0.0271,google,2026-02-19,Google DeepMind,United States of America,,,0.3407,0.39490000000000003,gemini-3.1-pro-preview-high,https://labs.scale.com/leaderboard/enigma_eval,,reczkTTqNDkpHLfBw
 gpt-5-pro-2025-10-06_unknown,0.1875,0.0222,openai,2025-10-07,OpenAI,United States of America,,,0.1653,0.2097,gpt-5-pro-2025-10-06,https://labs.scale.com/leaderboard/enigma_eval,,recZv3rrIn0Hh0n7f
 gemini-3-pro-preview,0.18239999999999998,0.022000000000000002,google,2025-11-18,Google DeepMind,United States of America,,Almost certainly >1e25,0.1604,0.20439999999999997,gemini-3-pro-preview,https://labs.scale.com/leaderboard/enigma_eval,,recrkWj7aOGNnfZvJ
 gpt-5.4-2026-03-05_xhigh,0.15960000000000002,0.0209,openai,2026-03-05,OpenAI,United States of America,,,0.13870000000000002,0.18050000000000002,gpt-5.4-2026-03-05 (xhigh thinking),https://labs.scale.com/leaderboard/enigma_eval,,rech9nRz3pgAcfRAc

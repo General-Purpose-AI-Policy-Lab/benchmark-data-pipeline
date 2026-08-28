@@ -1,5 +1,5 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
-claude-opus-4-8_max,0.3125,0.3125,2026-05-28,Anthropic,United States of America,,,0.06761023307918171,,,2026-06-08T01:03:04.000Z,5x5EAvuecqo3SXnZWpvrJA
+claude-opus-4-8_max,0.3125,0.3125,2026-05-28,Anthropic,United States of America,,,0.06761023307918171,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/5x5EAvuecqo3SXnZWpvrJA.eval,2026-06-08T01:03:04.000Z,5x5EAvuecqo3SXnZWpvrJA
 qwen3.6-max-preview,0.041666666666666664,0.041666666666666664,2026-04-20,Alibaba,China,,,0.02914766351555603,,,2026-05-28T05:51:34.000Z,6G3krrJBj2Dsuunaow97uR
 gemini-3.5-flash_high,0.14583333333333334,0.14583333333333334,2026-05-19,Google,United States of America,,,0.05148145136372291,,,2026-05-25T13:24:56.000Z,icxeMK8LHGTpbEfCNdbqA4
 qwen3.5-plus,0.020833333333333332,0.020833333333333332,2026-02-16,Alibaba,China,,,0.020833333333333332,,,2026-05-15T05:49:39.000Z,ErcX9xv4Pwcgg63Dkrn2zM

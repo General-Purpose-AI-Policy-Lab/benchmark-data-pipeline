@@ -113,6 +113,7 @@ e6e72217-e909-566b-9975-43dfc8ee7879,MiniMax-M2,,,,,MiniMax,China,2025-10-27,
 86775637-3e09-54d2-b9fe-49768241bf0b,MiniMax-M2.5,,,,,MiniMax,China,2026-02-12,
 ec31d038-4f91-5eda-8ef4-eb9393b58904,MiniMax-M2.7,,,,,MiniMax,China,2026-03-18,
 2465ba13-631e-566b-8843-c92bed045dea,MiniMax-M3,,,,,MiniMax,China,2026-06-01,
+b3464d31-6e0f-560e-a503-50c65dcba7e2,MiniMax-M3,none,,,,MiniMax,China,2026-06-01,
 e2e7317b-b0cc-54c4-87c2-0f4844c34cb9,Mistral-7B-Instruct-v0.1,,,,,Mistral AI,France,2023-09-27,
 6e5def75-c213-5436-9421-0ed1aaf1a515,Mistral-7B-Instruct-v0.2,,,,,Mistral AI,France,2023-12-11,
 56d35ae3-7767-528f-b580-dc597ab45e1a,Mistral-7B-Instruct-v0.3,,,,,Mistral AI,France,2024-05-27,
@@ -252,6 +253,7 @@ c3648bf2-13d0-544b-933a-6d9d8309f384,claude-haiku-4-5,,,2025-10-01,unknown-effor
 10085520-29d2-5dcd-9bcf-b994527b3731,claude-haiku-4-5,,16000,2025-10-01,,Anthropic,United States of America,2025-10-15,
 8fc93ea8-26c8-5fc4-a67d-1bbfe4031d4a,claude-haiku-4-5,,32000,2025-10-01,,Anthropic,United States of America,2025-10-15,
 8ffd7802-0619-5d7c-9746-0ba5c35b1b94,claude-haiku-4-5,,8000,2025-10-01,,Anthropic,United States of America,2025-10-15,
+c44fab1d-b698-556b-ae44-5b68374239ee,claude-haiku-4-5,low,,2025-10-01,,Anthropic,United States of America,2025-10-15,
 86e9c4dc-a684-5e18-8ab6-eb7a6e26ad4a,claude-instant-1.1,,,,,Anthropic,United States of America,,
 fae946d6-3b8b-5117-bb9b-466d15da2aba,claude-instant-1.2,,,,,Anthropic,United States of America,2023-08-09,
 72d51f7d-1ad0-56d4-996b-1be053f60eea,claude-mythos-preview-early,,,,,Anthropic,United States of America,2026-04-07,
@@ -284,6 +286,7 @@ bf33b3a2-5aa5-5aa9-942f-6b88089ee707,claude-opus-4-5,,,2025-11-01,thinking,Anthr
 2068b1f7-d6dc-53d4-b874-2053c18e7d40,claude-opus-4-5,,64000,2025-11-01,,Anthropic,United States of America,2025-11-24,
 78d8a9fe-6c86-5a39-a88a-b8cdd8f40037,claude-opus-4-5,,8000,2025-11-01,,Anthropic,United States of America,2025-11-24,
 f443ccd3-7569-5ef8-b295-3764bc743cbd,claude-opus-4-5,high,,2025-11-01,,Anthropic,United States of America,2025-11-24,
+d8ea9a1c-5bf2-5ad6-8793-a4a9b16ca760,claude-opus-4-5,low,,2025-11-01,,Anthropic,United States of America,2025-11-24,
 0112e46f-e93f-50e1-90fa-e18cb0ccd2ae,claude-opus-4-5,none,,2025-11-01,,Anthropic,United States of America,2025-11-24,
 4b64e43f-61ce-5988-99b0-dd005cc12489,claude-opus-4-6,,,,,Anthropic,United States of America,2026-02-05,
 c9472b7c-62dd-5790-bae2-389ad90fb741,claude-opus-4-6,,,,thinking,Anthropic,United States of America,,
@@ -305,6 +308,7 @@ ca94b360-41ab-5f85-a31d-e61081cb1a28,claude-opus-4-7,medium,,,,Anthropic,United 
 22f75678-f6ef-54cd-8800-27b443aff495,claude-opus-4-7,xhigh,,,,Anthropic,United States of America,2026-04-16,
 3499c888-c7ec-5c2f-8a28-4656f728b7e4,claude-opus-4-8,,,,,Anthropic,United States of America,,
 d14079b9-b1b9-5bda-8a7d-f7b53cbc42cd,claude-opus-4-8,,,,unknown-effort,Anthropic,United States of America,2026-05-28,
+7950738a-60e6-585d-b5a8-5c5caeac98f7,claude-opus-4-8,,24000,,,Anthropic,United States of America,2026-05-28,
 6fbd8c93-7ada-5ea0-9543-f654fc4772ad,claude-opus-4-8,high,,,,Anthropic,United States of America,2026-05-28,
 af2dfcf7-aa99-58eb-a10b-ddb37a5bccc1,claude-opus-4-8,low,,,,Anthropic,United States of America,2026-05-28,
 bf3219ee-9a88-5479-b8f6-13725d69204d,claude-opus-4-8,max,,,,Anthropic,United States of America,2026-05-28,
@@ -340,6 +344,7 @@ d26d9f92-599c-5a85-90b8-2c17616b7be2,claude-sonnet-4-5,,48000,2025-09-29,,Anthro
 e7a5716c-e195-53a1-8894-109c0ffea35a,claude-sonnet-4-5,,59000,2025-09-29,,Anthropic,United States of America,2025-09-29,
 b689dc15-7001-5564-83ac-cfba92bcc9a2,claude-sonnet-4-5,,8000,2025-09-29,,Anthropic,United States of America,2025-09-29,
 269da966-f8d5-5d3a-8fd3-81c2c826da30,claude-sonnet-4-5,high,,2025-09-29,,Anthropic,United States of America,2025-09-29,
+f5134f21-ed20-5aeb-840e-9c6b5a5eda95,claude-sonnet-4-5,low,,2025-09-29,,Anthropic,United States of America,2025-09-29,
 b6205dae-a6f8-5330-9ca2-3933cb72140d,claude-sonnet-4-5-thinking,,,2025-09-29,,,,,
 32733631-5eb4-5f29-ab01-e37a568bb777,claude-sonnet-4-6,,,,,Anthropic,United States of America,2026-02-17,
 54e631bc-6575-54d7-81cd-2e35e53d9167,claude-sonnet-4-6,,,,unknown-effort,Anthropic,United States of America,2026-02-17,
@@ -351,6 +356,7 @@ afd199b2-92e0-5697-9e68-46363fd6d187,claude-sonnet-4-6,low,,,,Anthropic,United S
 f985af75-1c40-5fe3-a9b1-36e71155e693,claude-sonnet-4-6,medium,,,,Anthropic,United States of America,2026-02-17,
 72943526-481d-56dc-919c-1567d78531d1,claude-sonnet-5,,,,,Anthropic,United States of America,2026-06-30,
 5f7f0faa-deb5-56be-bfc3-03adc4cd3605,claude-sonnet-5,,,,unknown-effort,Anthropic,United States of America,2026-06-30,
+ba14fa80-e069-5958-a5ba-f239e7595c56,claude-sonnet-5,,16000,,,Anthropic,United States of America,2026-06-30,
 03aadfca-2e80-56c2-b561-5c70197d1e99,claude-sonnet-5,high,,,,Anthropic,United States of America,2026-06-30,
 e9c6cc4e-bf49-5abf-b3cc-a0e6e050da49,claude-sonnet-5,low,,,,Anthropic,United States of America,2026-06-30,
 1df9fc29-9a55-5383-859b-7b5b32c4ca64,claude-sonnet-5,max,,,,Anthropic,United States of America,2026-06-30,
@@ -378,18 +384,23 @@ e842c270-3b9c-5b27-a958-ef0e04fd814f,deepseek-reasoner,,,,,DeepSeek,China,2025-1
 8d8ee636-7df1-5953-a2f2-5db022e8bc7c,deepseek-v3.1,,,,,,,,
 d912e28c-61af-5ea1-9146-afece643e5c8,deepseek-v3.2,,,,,DeepSeek,China,2025-12-01,4.1999999999999997e+24
 89ba9736-9ad6-5f72-ab4b-71e217cd32ff,deepseek-v3p2,,,,,DeepSeek,China,2025-12-01,
+61a99a4e-3e47-5962-ad18-ab430ee97259,deepseek-v4-flash,,,,unknown-effort,DeepSeek,China,2026-04-24,2.496e+24
 e597557e-5c20-5db1-a4c5-1dbd06f1c729,deepseek-v4-flash,high,,,,DeepSeek,China,2026-04-24,2.496e+24
 cc06eba8-1855-51c5-8983-2ce354534f1c,deepseek-v4-flash,max,,,,DeepSeek,China,2026-04-24,2.496e+24
 f08d3eb5-4143-5135-8d0e-f5ed41fdb7fa,deepseek-v4-flash-0731,,,,unknown-effort,DeepSeek,China,2026-07-31,2.496e+24
 bfd1b8ce-8a41-5d31-8b60-ae190f84943c,deepseek-v4-flash-0731,high,,,,DeepSeek,China,2026-07-31,2.496e+24
 85885925-c625-5cad-bffc-992a06c740a4,deepseek-v4-flash-0731,low,,,,DeepSeek,China,2026-07-31,2.496e+24
 7d9d8275-f826-5b2c-89ca-8d2fd4b08354,deepseek-v4-flash-0731,max,,,,DeepSeek,China,2026-07-31,2.496e+24
+59920e7c-a6f6-57f3-a71f-488ee8c05c44,deepseek-v4-flash-0731,none,,,,DeepSeek,China,2026-07-31,2.496e+24
 f763ab42-6f10-5309-88cb-8db5676cd32f,deepseek-v4-pro,,,,unknown-effort,DeepSeek,China,2026-04-24,9.702e+24
 c295118d-24f3-58e9-920a-b2f5eb1bb49a,deepseek-v4-pro,high,,,,DeepSeek,China,2026-04-24,9.702e+24
 3d74ea55-2504-56fb-b22a-7ba1030fd50c,deepseek-v4-pro,max,,,,DeepSeek,China,2026-04-24,9.702e+24
 4a79629e-a47f-5e41-b2d0-bf3823632bb4,deepseek-v4-pro,none,,,,DeepSeek,China,2026-04-24,9.702e+24
 db3c60dd-cd66-5d79-8bcf-1be22b0ec5bd,deepseek-v4-pro-0813,,,,unknown-effort,DeepSeek,China,2026-08-13,9.702e+24
+88ad39a7-259b-5b64-adc8-6573e4e6d4ed,deepseek-v4-pro-0813,high,,,,DeepSeek,China,2026-08-13,9.702e+24
+040ad7c7-a1d2-56cd-8b4f-37f6aa089543,deepseek-v4-pro-0813,low,,,,DeepSeek,China,2026-08-13,9.702e+24
 1ee4fcf1-c086-5066-98bd-a3af01cf175c,deepseek-v4-pro-0813,max,,,,DeepSeek,China,2026-08-13,9.702e+24
+36907958-8c55-55a4-86c4-c2f475991f63,deepseek-v4-pro-0813,none,,,,DeepSeek,China,2026-08-13,9.702e+24
 88e34fa5-feb3-5ad3-81e0-b0f45e41b924,devstral-small-2512,,,,,Mistral AI,France,2025-12-09,
 367b5865-a5c5-58f4-9654-c9130937a3c2,dolly-v2-12b,,,,,Databricks,United States of America,2023-04-11,
 5183bbec-2777-55b8-904e-565b33aeca97,falcon-11B-vlm,,,,,,,2024-05-21,
@@ -454,6 +465,7 @@ fd519f38-e757-5daa-943b-71ca2d731707,gemini-3-flash-preview,low,,,,Google DeepMi
 3cff2ec4-6259-58d7-822b-566ebdbcff3f,gemini-3-flash-preview,minimal,,,,Google DeepMind,United States of America,2025-12-17,
 9ba0b7ca-40d5-5b0a-b1c8-140bc2953437,gemini-3-pro-preview,,,,,Google DeepMind,United States of America,2025-11-18,
 55972615-4d66-5588-9576-ecacdf2f7ce7,gemini-3-pro-preview,high,,,,Google DeepMind,United States of America,2025-11-18,
+b1502ad9-0c52-5fc1-96ee-3ff0fc248230,gemini-3-pro-preview,low,,,,Google DeepMind,United States of America,2025-11-18,
 63038442-af93-5c8a-a002-2bd32a7169a6,gemini-3.1-flash-lite,,,,,Google DeepMind,United States of America,2026-03-03,
 9dcfcd71-01bd-5845-96fd-63bad8869490,gemini-3.1-flash-lite,high,,,,Google DeepMind,United States of America,2026-03-03,
 9e28f7c2-16fa-5a0e-925b-e9ad5562838e,gemini-3.1-flash-lite,low,,,,Google DeepMind,United States of America,2026-03-03,
@@ -482,6 +494,7 @@ f70a0fcd-a281-54c2-81f2-2903061cfad0,gemini-3.6-flash,,,,,Google DeepMind,United
 4777fb19-a379-5771-a021-efba02bd8f32,gemini-3.6-flash,low,,,,Google DeepMind,United States of America,2026-07-21,
 ff642247-e72f-5a28-90e4-ea6b81a556ad,gemini-3.6-flash,medium,,,,Google DeepMind,United States of America,2026-07-21,
 7030141d-b9fb-5e26-a26a-aebd9f8279a4,gemini-3.6-flash,minimal,,,,Google DeepMind,United States of America,2026-07-21,
+535234c8-9640-578f-8664-4bf187c280eb,gemini-3.7-flash,,,,,Google DeepMind,United States of America,,
 f3c9cbe1-51be-5140-943c-1c5ff107977f,gemini-3.7-flash,,,,unknown-effort,Google DeepMind,United States of America,2026-08-13,
 396935fa-2259-549f-a333-a7720a224ed5,gemini-3.7-flash,high,,,,Google DeepMind,United States of America,2026-08-13,
 fda0417f-6dbd-5f01-a069-e9161513a200,gemini-3.7-flash,low,,,,Google DeepMind,United States of America,2026-08-13,
@@ -499,6 +512,7 @@ a9dc975b-457b-55d4-a1c0-cd13f809c8a0,gemma-3-4b-it,,,,,,,,
 f545e48a-d583-5736-90cb-633782c6ec51,gemma-3n-E4B-it,,,,,,,,
 9f747513-a95f-58a6-af52-178d3b48a6f7,gemma-4-26b-a4b,,,,,Google DeepMind,United States of America,2026-04-02,
 b07b1516-74f3-5bc7-a09d-4572f8365216,gemma-4-26b-a4b-it,,,,,,,,
+8fd2a922-6821-504d-8245-448786f360e8,gemma-4-26b-a4b-it,minimal,,,,,,2026-04-02,
 de452831-ed97-5620-ac28-f1f1386bbabf,gemma-4-31b-it,,,,,Google DeepMind,United States of America,2026-04-02,
 12b8038a-fa4d-52b0-82c9-af788b6ae694,gemma-4-31b-it,minimal,,,,Google DeepMind,United States of America,2026-04-02,
 a161bfc7-ae85-5aa4-8c1b-91043a1acc89,gemma-4-31b-it,none,,,,Google DeepMind,United States of America,2026-04-02,
@@ -512,8 +526,12 @@ ce45a234-6101-5baa-9db6-e19c53cf56f6,glm-5,,,,,Z.ai (Zhipu AI),China,2026-02-11,
 9837ae4e-8b83-51eb-b083-2eefd2a8704e,glm-5.1,,,,,Z.ai (Zhipu AI),China,2026-04-07,
 2db9c710-1f43-5ca3-9e53-ecaf4f7b9aba,glm-5.2,,,,unknown-effort,Z.ai (Zhipu AI),China,2026-06-16,
 e605b9c8-a3a6-52f8-9646-f2b43bad9544,glm-5.2,high,,,,Z.ai (Zhipu AI),China,2026-06-16,
+1286cdd6-0943-5ce0-8b58-3bae614395ab,glm-5.2,low,,,,Z.ai (Zhipu AI),China,2026-06-16,
 afea29c4-50b0-5501-8ead-9b5c935538bf,glm-5.2,max,,,,Z.ai (Zhipu AI),China,2026-06-16,
+746d8fc9-96c7-5c6f-85db-7f0436808681,glm-5.2,medium,,,,Z.ai (Zhipu AI),China,2026-06-16,
 1c436900-2b6d-5438-96eb-3db927dc8ee7,glm-5.2,none,,,,Z.ai (Zhipu AI),China,2026-06-16,
+67befeb8-1cf0-5aca-83dc-f60f5370130e,glm-5.3,max,,,,,,2026-08-14,
+14f048e5-7f28-5306-b084-dfb3a3576b69,glm-5.3-flash,max,,,,,,2026-08-20,
 9f767f14-d827-5110-84c0-0bc2c832dd0f,gpt-3.5-turbo-0125,,,,,OpenAI,United States of America,2024-01-25,
 f4848a35-b44d-5430-8f13-05526d70194d,gpt-3.5-turbo-0613,,,,,OpenAI,United States of America,2023-06-13,
 a54db633-0b06-5dd1-8cdb-1d040b69a41e,gpt-3.5-turbo-1106,,,,,OpenAI,United States of America,2023-11-06,
@@ -642,6 +660,7 @@ e4dda354-5024-577f-b409-15f158f6e399,gpt-5.6-luna,medium,,,,OpenAI,United States
 d19010ec-52d9-595a-98c5-0de6961103e9,gpt-5.6-sol,none,,,,OpenAI,United States of America,2026-07-09,
 326d2a7b-010a-5a5d-ba2a-bc4db6dc7ce7,gpt-5.6-sol,xhigh,,,,OpenAI,United States of America,2026-07-09,
 4fe01db5-bfd9-5358-b2dc-48ab299b3703,gpt-5.6-sol_promax,,,,,OpenAI,United States of America,2026-07-09,
+a6e6c357-4961-5d5d-98a3-28a735134ffd,gpt-5.6-sol_proxhigh,,,,,,,2026-07-09,
 9dc5b685-312f-5129-aff5-0b69714c5871,gpt-5.6-terra,,,,,OpenAI,United States of America,,
 7e11f7ac-bfbe-5aa6-a8c1-cc469a80a3ba,gpt-5.6-terra,,,,unknown-effort,OpenAI,United States of America,2026-07-09,
 35e79204-8e5a-5397-9616-a9a2c091c139,gpt-5.6-terra,high,,,,OpenAI,United States of America,2026-07-09,
@@ -661,6 +680,7 @@ e8f48c69-72db-5770-9b79-4e823a2cb597,gpt-oss-120b,medium,,,,OpenAI,United States
 b33d172f-27f1-5df9-ae7f-7e335663ccad,gpt-oss-20b,,,,,OpenAI,United States of America,2025-08-05,5.49e+23
 ee154664-d8b8-52ee-aaae-e954406d7e29,gpt-oss-20b,,,,unknown-effort,OpenAI,United States of America,2025-08-05,5.49e+23
 724f8d99-8e85-52e4-9b86-4bb08e02ea29,gpt-oss-20b,high,,,,OpenAI,United States of America,2025-08-05,5.49e+23
+6144785a-e7bd-5c6c-9afe-54bba13af7d1,gpt-oss-20b,low,,,,OpenAI,United States of America,2025-08-05,
 fad01a9e-9dcb-59c4-bb2f-29224c541632,gpt-oss-20b,medium,,,,OpenAI,United States of America,2025-08-05,5.49e+23
 46651b53-7df7-5efa-a221-046447336a03,gpt-realtime,,,2025-08-28,,,,,
 51a0a09e-8750-5c01-85e0-2282dc28090e,gpt-realtime-1.5,,,,,,,,
@@ -773,6 +793,8 @@ f5d986c5-a114-5484-9252-2bc4af7adf1b,mpt-30b-instruct,,,,,MosaicML,United States
 1421eb4e-6558-579a-8330-ce9dd85dfd0e,muse-spark-1.1,,,,,Meta AI,United States of America,2026-07-09,
 b5b4bd64-ebd1-5677-a663-6143f1555dda,muse-spark-1.1,high,,,,Meta AI,United States of America,2026-07-09,
 f89212d9-9038-53ad-95a2-3f38d4f30bb2,muse-spark-1.1,xhigh,,,,Meta AI,United States of America,2026-07-09,
+4e83ba8e-67b3-5ac1-85a5-8258b4b29ee3,muse-spark-1.2,,,,,,,2026-08-05,
+0a4fdb72-d575-5751-b14e-a654265861ac,muse-spark-1.2,xhigh,,,,,,2026-08-05,
 2d7d563a-4582-5217-a066-04175601bec8,nemotron-3-super,,,,,NVIDIA,United States of America,2026-03-11,
 21360930-375d-519c-a489-a250a18f325d,nemotron-3-ultra,,,,,NVIDIA,United States of America,2026-06-04,6.6e+24
 56b30ce6-a80e-55c7-bd2f-43fb59e3d28d,nova-2.0-pro-preview,,,,unknown-effort,Amazon,United States of America,2025-12-02,
@@ -847,12 +869,15 @@ c2244d19-c440-5374-becd-5c5a6c62cb35,qwen2.5-32b-instruct,,,,,Alibaba,China,2024
 af4c3a63-63ad-5c3c-a511-d8e644f22fde,qwen3-235b-a22b,,,,,Alibaba,China,2025-04-29,4.752e+24
 bda0330a-1bb2-5576-9f65-07b613ee03f1,qwen3-235b-a22b-instruct-2507,,,,,,,,
 4b4733c7-485b-5998-b855-677e7489abab,qwen3-235b-a22b-thinking-2507,,,,,Alibaba,China,,
+cd90f986-98cc-52b3-99c6-211f8382707a,qwen3-8b,,,,,,,2025-04-28,
+57803919-3475-5941-b734-7cf37f97bb45,qwen3-8b,none,,,,,,2025-04-28,
 ea94bfff-1b25-5e6c-b8a1-045ac002ff0b,qwen3-coder-next,,,,,,,2026-02-02,
 71119a4a-56f6-546c-864f-113d42e7d3c2,qwen3-max,,,2025-09-23,,Alibaba,China,2025-09-24,1.512e+25
 7d70f565-f6db-53b7-8e1b-de6c2167e1f1,qwen3.5-27B,,,,,Alibaba,China,2026-02-24,
 9aaa8adf-6c44-5b0e-87b6-d431fb95720d,qwen3.5-397b-a17b,,,,,Alibaba,China,2026-02-13,
 f51072cd-5dac-5eea-b7e5-e3128ea5d721,qwen3.5-397b-a17b,none,,,,Alibaba,China,2026-02-13,
 d3b85a62-1638-5ab3-84a8-cd57994cc25e,qwen3.5-9B,,,,,Alibaba,China,2026-02-24,
+40648904-c051-53e3-b564-d05920944307,qwen3.5-9B,none,,,,Alibaba,China,2026-02-24,
 bdfe7b58-f850-52dd-a9fb-841b151a53a5,qwen3.5-flash,,,,,Alibaba,China,2026-02-25,
 6ecbfb0a-c8f1-593d-8dbf-40ed5c2d1e31,qwen3.5-flash,none,,,,Alibaba,China,2026-02-25,
 46e3c8df-d4d7-5a0b-9225-fffa58b070dd,qwen3.5-plus,,,,,Alibaba,China,2026-02-16,
@@ -873,6 +898,8 @@ ca371978-90f8-5eff-94ba-566bde486282,qwen3.7-flash,,,,,Alibaba,China,2026-07-27,
 5356de07-b2a7-52ca-baed-24693960237f,qwen3.7-max,,,,,Alibaba,China,2026-05-19,
 f01f9491-6235-5a03-b7ee-596e760299d1,qwen3.7-plus,,,,,Alibaba,China,2026-06-02,
 b23ca751-0b67-55cf-bb21-96455e4d1cac,qwen3.7-plus,none,,,,Alibaba,China,2026-06-02,
+e84ddf0f-9c62-5d14-a889-4b55bef63933,qwen3.8-27b,,,,,,,2026-08-14,
+8d65382d-25b7-5882-b2f7-c898a70dd0ca,qwen3.8-27b,xhigh,,,,,,2026-08-14,
 6860d3f8-9c92-5a0b-ba67-89c182c59555,qwen3.8-max,,,,unknown-effort,Alibaba,China,2026-08-02,
 299cfdac-3fdd-522b-a7cc-b02ae1b26ca0,qwen3.8-max,xhigh,,,,Alibaba,China,2026-08-02,
 0822d139-5a1e-573f-a866-58b354d524d9,qwq-plus,,,,,Alibaba,China,2025-04-08,
@@ -880,7 +907,6 @@ ad951755-a5f1-5e4c-93f3-a757c513fd89,reka-flash-3,,,,,Reka AI,United States of A
 1ac93a1f-874f-5c7c-a9bf-58536a8f9aed,sharegpt4video-8b,,,,,,,2024-05-27,
 2422e0eb-7129-564a-bbf3-4d035f3d289c,solar-pro-3,,,,,Upstage,Korea (Republic of),2026-01-27,
 f0290d19-c1c4-58cb-b30f-94fd2c6bda05,sonar,,,,,,,,
-74e8ba3e-c179-5cc9-8705-498a71012636,sonar-pro,,,,,Perplexity,United States of America,2025-01-21,
 d5fec67f-0d19-52a4-8d73-b0f43b79b3a4,stablelm-tuned-alpha-7b,,,,,,,2023-04-19,
 e417bf38-a6c2-5186-a4fc-74264af19d49,starcoder2-15b,,,,,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,2024-02-20,3.87e+23
 96016cf8-ddbf-5ada-989c-9471606acf25,starcoder2-3b,,,,,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,2024-02-22,5.94e+22
@@ -902,5 +928,4 @@ c978e905-ff6c-5c77-8e03-c6f063789d6c,tiny-recursion-model,,,,,,,2025-10-06,
 f2642f3c-a033-58c5-af41-df8dbc18187c,video-SALMONN-2plus,,,,,ByteDance,China,2025-06-18,
 2097f40a-4278-54d2-9d69-c47d70a8c6da,video_chat2_mistral,,,,,,,2023-11-29,
 57ba134f-1fd0-5fc1-a424-06ea7a092718,xgen-7b-8k-base,,,,,Salesforce,United States of America,2023-06-27,8.02e+22
-0ccd828d-b6eb-5ecb-ae54-d9b49b40ec2a,xiaoyi-deepresearch,,,,,,,2026-03-06,
 9d3f0293-9496-5999-b066-6ac1c0858e0e,yi-lightning,,,,,01.AI,China,2024-12-02,1.5e+24

@@ -11,6 +11,7 @@ claude-fable-5_high,0.875,2026-06-09,Anthropic,United States of America,,,Claude
 gpt-5.6-sol_high,0.8542000000000001,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (High),0.74,,recLS6d8WS2n1rGSY
 gpt-5.5_xhigh,0.85,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (xHigh),1.87,,recPMkvFz7bdsGYig
 gpt-5.5_xhigh,0.85,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (XHigh),,,recQa67QhUbEC1Z8v
+gemini-3.7-flash_high,0.8458333333333333,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (High),,,reczv0UYeDcnI7XYG
 gemini-3-deep-think-preview,0.8458,2026-02-12,,,,,Gemini 3 Deep Think (2/26),,,recMlHyQpZ45OKxQ0
 gpt-5.5-pro_high,0.8458,2026-04-23,OpenAI,United States of America,,,GPT-5.5 Pro (High),10.51,,recE8W46kbiuOPGxo
 gpt-5.5-pro_xhigh,0.8416,2026-04-23,OpenAI,United States of America,,,GPT-5.5 Pro (xHigh),10.76,,recgSWEl9GTw04NMC
@@ -46,19 +47,23 @@ claude-opus-4-6_120K,0.6625,2026-02-05,Anthropic,United States of America,,,"Cla
 grok-4-20,0.6514,2026-02-17,xAI,United States of America,,,Grok 4.20 (Reasoning),0.92,,rec0q8XRFqTb9j85f
 grok-4.6_high,0.6513888888888889,2026-08-12,xAI,United States of America,,,Grok 4.6 (High),,,recN0KfJ7ZaHfvhAX
 claude-opus-4-6_120K,0.6458,2026-02-05,Anthropic,United States of America,,,"Claude Opus 4.6 (120K, Low)",,,rec0H4L8zJfLACTG4
+gemini-3.7-flash_medium,0.6375,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (Medium),,,rec2wVAL92Ucyu4qv
 claude-opus-4-8_low,0.6222,2026-05-28,Anthropic,United States of America,,,Claude Opus 4.8 (Low),1.6818,,recs1YmhMRL5aoCXZ
 claude-opus-4-7_low,0.6208,2026-04-16,Anthropic,United States of America,,,Claude 4.7 (Low),2.38,,recyXuHnrwdkJwc9k
 deepseek-v4-flash-0731_max,0.6138888888888888,2026-07-31,DeepSeek,China,2.496e+24,"From https://api-docs.deepseek.com/updates/: ""DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-Preview, and was only re-post-trained.""
 
 6 * 13e9 active parameters * 32e12 tokens = 2.496E24 for pre-training",DeepSeek V4 Flash 0731 (Max),,,recqcmcc7Kh55NAHM
 grok-4.6_medium,0.6125,2026-08-12,xAI,United States of America,,,Grok 4.6 (Medium),,,reckZ7gdV3Ubjjm8X
+deepseek-v4-pro-0813_max,0.6125,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (Max),,,recqVgMSHWE1dbgLk
 claude-sonnet-4-6_high,0.6042,2026-02-17,Anthropic,United States of America,,,Claude Sonnet 4.6 (High),2.6966,,recIlUapCqVFHs6qj
 kimi-k3_max,0.6041666666666666,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3 (Max),1.5926940250000003,,rec4wHjT7MjgYLj9Q
 gemini-3.6-flash_high,0.6041666666666666,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash (High),,,recbJYchGoqumGxjl
+deepseek-v4-pro-0813_high,0.5972222222222221,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (High),,,recOlpjOWSD4HNdzV
 gpt-5.6-luna_max,0.5954,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (Max),0.67,,rec0Or1yRuToQETpO
 claude-sonnet-4-6_max,0.5833,2026-02-17,Anthropic,United States of America,,,Claude Sonnet 4.6 (Max),2.7179,,reco6ICSvrm675Zqs
+deepseek-v4-pro-0813_low,0.5625,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (Low),,,recnvqDqZzZ6fLyzg
 deepseek-v4-flash-0731_high,0.5597222222222221,2026-07-31,DeepSeek,China,2.496e+24,"From https://api-docs.deepseek.com/updates/: ""DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-Preview, and was only re-post-trained.""
 
 6 * 13e9 active parameters * 32e12 tokens = 2.496E24 for pre-training",DeepSeek V4 Flash 0731 (High),,,rec8CN4idKsciI46Q
@@ -67,6 +72,7 @@ kimi-k3_high,0.55,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models suc
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3 (High),0.9472229249999998,,receUA2QktYdPoRHt
 gpt-5.2-pro-2025-12-11_high,0.5416,2025-12-11,OpenAI,United States of America,,,GPT-5.2 Pro (High),15.721,,recC6V59wjvT4mX12
+gemini-3.7-flash_low,0.5291666666666667,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (Low),,,rec9BSK1rciwNOFqp
 gpt-5.2-2025-12-11_xhigh,0.5291,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (X-High),1.8982,,recS9jrqUC4LBQDMg
 gpt-5.2-2025-12-11_xhigh,0.5291,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (xHigh),,,recaVCKBQjIjHS5cs
 gpt-5.2-2025-12-11_xhigh,0.5291,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (XHigh),,,recKOxOLmel1LyZ4u
@@ -184,6 +190,9 @@ o4-mini-2025-04-16_medium,0.0236,2025-04-16,OpenAI,United States of America,,"We
 gemini-2.5-flash-preview-05-20_1K,0.0216,2025-05-20,Google DeepMind,United States of America,,,Gemini 2.5 Flash (Preview) (Thinking 1K),0.0302,,recx8bMgTPWFjSce5
 gemini-2.5-flash-preview-05-20_8K,0.0212,2025-05-20,Google DeepMind,United States of America,,,Gemini 2.5 Flash (Preview) (Thinking 8K),0.1994,,recc2zuUdVClpEfo3
 claude-sonnet-4-20250514_8K,0.0212,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Sonnet 4 (Thinking 8K),0.2654,,rec9yHZPujDE8MdDK
+deepseek-v4-flash-0731_none,0.020833333333333332,2026-07-31,DeepSeek,China,2.496e+24,"From https://api-docs.deepseek.com/updates/: ""DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-Preview, and was only re-post-trained.""
+
+6 * 13e9 active parameters * 32e12 tokens = 2.496E24 for pre-training",DeepSeek V4 Flash 0731 (None),,,recNIbGpTiROaJXNN
 o3-mini-2025-01-31_medium,0.020800000000000003,2025-01-31,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",o3-mini (Medium),0.2843,,rec3DBzjmVooH06Du
 o3-pro-2025-06-10_low,0.020500000000000004,2025-06-10,OpenAI,United States of America,,,o3-Pro (Low),2.2293,,recOPdwHvGY12QF3a
 o3-2025-04-16_low,0.0199,2025-04-16,OpenAI,United States of America,,,o3 (Low),0.2343,,recQRWOdhT4RaKHDF
@@ -227,6 +236,7 @@ claude-3-7-sonnet-20250219_8K,0.009,2025-02-24,Anthropic,United States of Americ
 gpt-5-nano-2025-08-07_medium,0.0088,2025-08-07,OpenAI,United States of America,,,GPT-5 Nano (Medium),0.0137,,recT6rpJqwTwbDf70
 claude-sonnet-4-20250514_1K,0.0085,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Sonnet 4 (Thinking 1K),0.1425,,recbHOUFE4mIkwxSV
 gemini-3.5-flash-lite_minimal,0.008333333333333333,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.5 Flash-Lite (Minimal),,,rec7LQvTu0JSmrK2q
+deepseek-v4-pro-0813_none,0.008333333333333333,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (None),,,recvl7EONLls7UXBK
 o1-mini-2024-09-12_unknown,0.0083,2024-09-12,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",o1-mini,0.1907,,recrnQ8qOsjBQtr5f
 gpt-5.2-2025-12-11_unknown,0.0083,2025-12-11,OpenAI,United States of America,,,GPT-5.2,,,recPo5Agh7dkNgnn7
 gpt-5-mini-2025-08-07_low,0.0083,2025-08-07,OpenAI,United States of America,,,GPT-5 Mini (Low),0.0189,,recxiCwTDG3hY2wmo

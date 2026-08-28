@@ -1,4 +1,6 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+glm-5.3-flash_max,0.32,0.32,2026-08-20,Z.ai (Zhipu AI),China,,,0.014758652303574937,,,2026-08-26T22:26:55.000Z,HXHPirND5AjqiNGccA5b7L
+glm-5.3_max,0.402,0.402,2026-08-14,Z.ai (Zhipu AI),China,,,0.015512467135714959,,,2026-08-24T19:44:18.000Z,hpPTik8UoVF3tu3dEFFcXP
 deepseek-v4-pro-0813_max,0.5546639919759278,0.5546639919759278,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,0.015748138411729676,,,2026-08-18T21:03:23.000Z,TZKjauiw7YFfQi6U9vE3SM
 gemini-3.7-flash_high,0.712,0.712,2026-08-13,Google DeepMind,United States of America,,,0.014326941797231577,,,2026-08-14T18:29:12.000Z,DFECmJvr8aGLrDvLjjHVMe
 inkling-small_xhigh,0.195,0.195,2026-07-15,Thinking Machines,United States of America,,,0.012535235623319256,,,2026-08-14T14:19:47.000Z,7Lfq7tD3pv8AfwtZSq7ZqH

@@ -14,8 +14,9 @@ database/               outputs.
 eval-data-pipeline/     ancien projet. 
 ```
 
-Feeds présents : `epoch` (75 CSV du ZIP Epoch), `epoch_live` (1 CSV), `kaggle` (3 JSON),
-`rand` (1 CSV), `seal` (14 HTML). Snapshot local du 2026-08-19.
+Feeds présents : `epoch` (76 CSV du ZIP Epoch), `epoch_live` (1 CSV), `kaggle` (3 JSON),
+`rand` (1 CSV), `seal` (14 HTML). Snapshot local, rafraîchi par `refresh.py` (voir « Lancer ») ;
+dates et sha256 dans `input/feed/provenance.json`.
 
 ## Les trois CSV
 
@@ -154,3 +155,11 @@ déterminisme, si ça diverge il y a un `dict`/`set` non trié quelque part.
 La dernière cellule compare `database/` à la copie bénie `tests/expected_database/` (test de
 régression). Un écart voulu — nouveau feed, alias corrigé — se re-bénit avec :
 `cp database/*.csv tests/expected_database/`.
+
+### Rafraîchir les feeds
+
+`python3 refresh.py` (stdlib seule, hors notebook) réécrit `input/feed/`, puis Run All.
+RAND reste figé (rapport Dev et al. 2025). Les nouveautés ne sont jamais ingérées en douce :
+fichiers / tâches / boards inconnus et noms non résolus remontent dans les rapports du notebook,
+à curer ensuite dans les `*_SPEC` et les `aliases.csv`. Provenance (URL, date, sha256) :
+`input/feed/provenance.json`.

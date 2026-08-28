@@ -3,6 +3,7 @@ claude-fable-5,0.161,2026-06-09,Anthropic,United States of America,,,Fable-5,,re
 claude-fable-5_unknown,0.158,2026-06-09,Anthropic,United States of America,,,Fable-5,,recViBWyhB5Kow9VY
 claude-opus-4-8_unknown,0.0833,2026-05-28,Anthropic,United States of America,,,Opus 4.8,,reca1681E9WeV4Fcd
 gpt-5.5_unknown,0.0625,2026-04-23,OpenAI,United States of America,,,Codex GPT 5.5,,rec3Yv4ZA0c008npD
+gemini-3.7-flash_unknown,0.05,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash,,recIhfw1UfEy3uVSL
 claude-opus-4-6_unknown,0.0417,2026-02-05,Anthropic,United States of America,,,claude-opus-4-6 (CoWork),,reciJQ128sKYL8guC
 claude-opus-4-5-20251101_unknown,0.0375,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,claude-opus-4-5-20251101-thinking,,recOr0uhtoQjJ9idw
 gpt-5.2-2025-12-11_medium,0.025019999999999997,2025-12-11,OpenAI,United States of America,,,gpt-5.2-2025-12-11 (medium),,recxOBMXzUoImRHvn
