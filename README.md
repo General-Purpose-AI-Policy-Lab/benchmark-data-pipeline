@@ -154,12 +154,3 @@ déterminisme, si ça diverge il y a un `dict`/`set` non trié quelque part.
 La dernière cellule compare `database/` à la copie bénie `tests/expected_database/` (test de
 régression). Un écart voulu — nouveau feed, alias corrigé — se re-bénit avec :
 `cp database/*.csv tests/expected_database/`.
-
-## Hors scope v1
-
-- **Re-téléchargement des feeds** : on lit le snapshot local du 2026-08-19, rien ne sort sur le réseau.
-- **Lineage des modèles** (quel modèle dérive de quel autre) : ça vit dans le repo de modeling.
-- **`row_drops` / `row_adds` curés** : les corrections passent par `aliases.csv`, pas par des patchs de lignes.
-- **`n_items` / `upper_bounds`** : pas de producteur, pas de consommateur.
-- **`human_baselines`** : `input/metadata/human_baselines.csv` existe mais n'est pas encore consommé.
-- **`display_name` / `link`** : aucun producteur actuel (`evidence_url` d'`access.csv` pourrait produire `link` si besoin).
