@@ -6,12 +6,12 @@ Transforme des feeds de scores d'évals (Epoch, Kaggle, RAND, Scale SEAL) en tro
 ## Arborescence
 
 ```
-pipeline.ipynb          le récit : lit les feeds, résout les noms, écrit database/. Run All = tout.
-helpers.py              la machinerie : découpe des noms machine, aliases, uuid5. Pas de logique métier par source.
+pipeline.ipynb          lit les feeds, résout les noms, écrit database/. Run All = tout.
+helpers.py              découpe des noms machine, aliases, uuid5.
 input/feed/<source>/    données brutes d'une source + son aliases.csv (un par source, jamais partagé).
-input/metadata/         sources de la passe metadata. Éditables à la main, jamais réécrits par le notebook.
-database/               outputs. Régénérés par Run All — NE JAMAIS ÉDITER À LA MAIN.
-eval-data-pipeline/     ancien projet. Référence en lecture seule, rien n'en dépend.
+input/metadata/         sources de la passe metadata. 
+database/               outputs.
+eval-data-pipeline/     ancien projet. 
 ```
 
 Feeds présents : `epoch` (75 CSV du ZIP Epoch), `epoch_live` (1 CSV), `kaggle` (3 JSON),
