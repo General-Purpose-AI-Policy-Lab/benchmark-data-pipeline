@@ -1,140 +1,165 @@
 # eval-data-pipeline
 
-Canonical home for the benchmark score data and the pipeline that refreshes
-it. Extracted from the ECI Bayesian modeling repo; the full history of
-`data/` came along. Consumers (the ECI fits, future projects) read the
-files below. Nothing here depends on any modeling code.
+Transforme des feeds de scores d'évals (Epoch, Kaggle, RAND, Scale SEAL) en trois CSV liés par UUID :
+`database/scores.csv`, `database/models.csv`, `database/benchmarks.csv`.
 
-## The dashboard
+## Arborescence
 
-Start the server. It opens the page for you:
-
-```bash
-./scripts/serve.sh
+```
+pipeline.ipynb          le récit : lit les feeds, résout les noms, écrit database/. Run All = tout.
+helpers.py              la machinerie : découpe des noms machine, aliases, uuid5. Pas de logique métier par source.
+input/feed/<source>/    données brutes d'une source + son aliases.csv (un par source, jamais partagé).
+input/metadata/         sources de la passe metadata. Éditables à la main, jamais réécrits par le notebook.
+database/               outputs. Régénérés par Run All — NE JAMAIS ÉDITER À LA MAIN.
+eval-data-pipeline/     ancien projet. Référence en lecture seule, rien n'en dépend.
 ```
 
-The dashboard is at <http://localhost:8130>. Press Ctrl-C to stop the server.
+Feeds présents : `epoch` (75 CSV du ZIP Epoch), `epoch_live` (1 CSV), `kaggle` (3 JSON),
+`rand` (1 CSV), `seal` (14 HTML). Snapshot local du 2026-08-19.
 
-`python3 scripts/serve.py` starts the same server without opening a browser.
-Browsers block `fetch` from `file://`, so you cannot open `index.html` as a file.
+## Les trois CSV
 
-Six tabs:
+### models.csv
 
-- **Browse** — filter the merged table by model, benchmark, source, category,
-  organization, and release date. Sort any column. Each row shows its chance floor.
-- **Benchmarks** — one row per benchmark: category, notes, chance floor, coverage.
-- **Download** — the filtered rows as CSV, plus links to the raw files.
-- **Report** — the report from the last refresh.
-- **Refresh** — run the pipeline. See below.
-- **Curate** — decide new model names and missing benchmark metadata.
-
-`python3 -m http.server` serves the page as well, but the Refresh and Curate
-tabs need `serve.py`. Without it, both tabs show a hint instead of the form.
-
-## Paths of truth
-
-| File | What it is |
+| colonne | rôle |
 |---|---|
-| `data/processed/benchmarks_merged.csv` | the merged table: `model_version,score,release_date,organization,benchmark,stderr,source,category` |
-| `data/curated/human_baselines.csv` | human tiers as test-takers — **derived**, written by the refresh |
-| `data/curated/human_baselines_source.csv` | the hand-maintained baselines the refresh reads |
-| `data/curated/*.csv` | per-benchmark facts (chance floors, ceilings, item counts, score clips) and curated corrections |
-| `data/pipeline/canonical/*` | name/alias maps and benchmark metadata |
-| `data/pipeline/output/pipeline_report.md` | provenance report of the last refresh |
+| `model_id` | uuid5 du tuple d'identification. Clé primaire. |
+| `base_model`, `reasoning_level`, `reasoning_tokens`, `snapshot`, `variant` | **identification** — entrent dans l'ID |
+| `organization`, `country`, `publication_date`, `training_flop` | **metadata** — n'entrent PAS dans l'ID |
 
-Future projects clone this repo and read those paths. No API layer.
+Ajouter une colonne metadata ne change aucun ID. Corriger une colonne d'identification en change un.
 
-## Refreshing
+### benchmarks.csv
 
-Open `data/pipeline/pipeline.ipynb`, Restart Kernel → Run All (needs
-pandas, numpy, requests — no modeling stack). The notebook writes only to
-`data/pipeline/output/`. Then:
-
-```bash
-python3 scripts/check.py
-```
-
-`check.py` validates those outputs. It copies them into
-`data/{processed,curated}/` only if every check passes, so a failed run leaves
-the previous data in place. Then commit. Full pipeline docs (the five feeds,
-merge policy, guards) are in
-[`data/pipeline/README.md`](data/pipeline/README.md). Same-UTC-day re-runs
-reuse the snapshot folder; `snapshots/` and `intermediate/` are gitignored
-and regenerable.
-
-## Refreshing from the page
-
-The Refresh tab runs the same notebook headlessly, then `scripts/check.py`.
-Leave the date blank to fetch or reuse today's snapshot. A past date replays
-that snapshot offline. The force re-fetch checkboxes delete that source's
-cache in the target snapshot before the run, so it is downloaded again. The
-merged table always contains all five feeds; a checkbox controls the fetch,
-not the scope.
-
-When a refresh lists new models or unrecognized benchmarks, and for how
-canonical names are chosen: [`docs/curation.md`](docs/curation.md).
-
-## Where to edit what
-
-Two kinds of decision live in two different places.
-
-**Names live in files.** Edit them by hand, or use the Curate tab.
-
-| File | What you put there |
+| colonne | rôle |
 |---|---|
-| `data/pipeline/canonical/model_aliases.csv` | `variant,canonical,note`. One row per renamed model. An empty `canonical` drops the model from the dataset. |
-| `data/pipeline/canonical/reviewed_models.txt` | One name per line. The name is already correct, so the pipeline keeps it. |
-| `data/pipeline/canonical/benchmark_names.csv` | `variant,canonical,note`. The same idea, for benchmark names. |
-| `data/pipeline/canonical/benchmark_metadata.csv` | `benchmark,category,notes`. One row per benchmark. |
+| `benchmark_id` | uuid5 du `name`. Clé primaire. |
+| `name` | identification (seule colonne dans l'ID) |
+| `category`, `floor`, `access` | metadata (`floor` vient de `lower_bound` dans `floors.csv` ; `access` ∈ public / semi_private / private / dynamic, depuis `input/metadata/access.csv`) |
 
-A refresh lists every model name it does not recognize in
-`data/pipeline/output/missing_models.csv`. Decide each name, then refresh
-again. A decided name leaves that list.
+Les colonnes de justification (`notes`, `reason`, `source_url`) restent dans `input/metadata/`.
 
-The score needs no decision. It enters the merged table as soon as a feed
-carries it. Your decision only sets the name the score is filed under.
+### scores.csv
 
-**Which upstream files to read lives in the notebook**, not in a config file.
-Each `_SPEC` maps an upstream file, slug, or task to a benchmark name. Each
-`_SKIP` records what the pipeline ignores, and why. The pipeline reports
-anything that is in neither, so a new benchmark cannot arrive unnoticed.
+`model_id`, `benchmark_id`, `score`, `stderr`, `feed`. Une ligne par `(model_id, benchmark_id)` ;
+`stderr` vide quand la source ne la publie pas.
 
-| Section | Cell | What to edit | Feed |
+## Conventions (non négociables)
+
+- **Case vide = unknown.** `unknown ≠ known` : `opus-5` (level vide) et `opus-5_high` (level `high`)
+  sont deux modèles distincts, deux lignes, deux IDs. On ne fusionne jamais un unknown avec un connu.
+- **IDs déterministes.** `uuid5(NAMESPACE, "model|" + join(tuple d'identification, "|"))`.
+  Re-run → mêmes IDs. Corriger un alias change l'ID : c'est voulu, l'ID suit l'identité, pas l'historique.
+- **`variant`** :
+  - `thinking` = thinking activé, effort et budget inconnus ;
+  - `unknown-effort` = la source dit explicitement « effort setting unknown » (suffixe `_unknown` chez Epoch) ;
+  - vide si `reasoning_level` ou `reasoning_tokens` est connu — le thinking est alors implicite
+    (les noms machine `_high` d'Epoch n'ont pas de variant).
+- **`score ∈ [0, 1]`** (pas de pourcentages).
+- **Dédup**, dans cet ordre : doublons exacts fusionnés ; sinon Kaggle gagne (`kaggle_wins`) ;
+  sinon `max`.
+
+## Conventions de nommage, par source
+
+Résultat d'un audit exhaustif du snapshot 2026-08-19.
+
+| Source | Champ | Format | Stratégie |
 |---|---|---|---|
-| 03 | 8 | `FILE_SPEC`, `FILE_SKIP`, `FILE_SCORE_TRANSFORM` | Epoch ZIP |
-| 03b | 10 | `RAND_BENCH_COLS` | RAND biology and chemistry |
-| 03c | 12 | `SEAL_SPEC`, `SEAL_SKIP` | Scale SEAL boards |
-| 03d | 14 | `LIVE_TASK_SPEC`, `LIVE_TASK_SKIP` | Epoch live feed |
-| 03e | 16 | `KAGGLE_SPEC` | Kaggle boards |
+| `epoch` (ZIP) | `Model version` | nom machine `[fournisseur/]base[-date][_suffixe]` | découpe + `aliases.csv` pour les exceptions (32) |
+| `epoch_live` | `model` | idem, 100 % propre | découpe seule (`aliases.csv` vide) |
+| `kaggle` | `modelVersionSlug` | nom machine pur, `-default` à retirer, jamais d'effort | découpe seule (`aliases.csv` vide) |
+| `rand` | `Model` | noms display libres (`Amazon Nova 1.0 Lite`) | énumération totale dans `aliases.csv` (41) |
+| `seal` | `model` (JSON dans le HTML) | 5 encodages incompatibles | énumération totale dans `aliases.csv` (258) |
 
-Adding a benchmark is a notebook edit. Adding a name is a file edit.
+Les 5 encodages SEAL, pour mémoire : `Claude Opus 4 (Thinking)`, `Claude 3.5 Sonnet (June 2024)`,
+`Claude-4-Opus-20250514-thinking`, `Deepseek-R1-0528`, `claude-opus-4-5-20251101-thinking`.
+Aucune découpe ne les couvre tous — d'où l'énumération.
 
-## Your own runs
+### Grammaire du nom machine (`helpers.split_name`)
 
-Aggregate scores from local eval runs enter as
-`data/curated/row_adds_YYYY-MM-DD_<name>.csv` (8-column schema + `reason`;
-the notebook appends them after the curated drops and raises on collision
-with a feed). Keep the reproducibility package — grader prompt, config,
-raw per-item results — in `data/evals/<name>/` (see its README).
+« Nom machine » = nom au format machine, ex. `claude-opus-4-8_high` — la forme est fixe,
+donc on la découpe en colonnes sans dictionnaire.
 
-## Scripts
+`[provider/]base[-date][_suffixe]`
 
-- `scripts/serve.sh` — starts the server and opens the dashboard.
-- `scripts/serve.py` — serves the page on port 8130 and backs the Refresh and
-  Curate tabs (`/api/snapshots`, `/api/run`, `/api/queue`, `/api/curate`). It
-  answers on localhost only, and it does not serve `.git/`, `snapshots/`, or
-  `intermediate/`.
-- `scripts/check.py` — post-refresh gate **and** the swap: validates
-  `data/pipeline/output/` (schema, field counts, no duplicate
-  `(model, benchmark)` cell, a row floor derived from the file being replaced,
-  non-empty baselines and report) and only then copies it into
-  `data/{processed,curated}/`.
-- `scripts/test_pipeline.py` — asserts the standing invariants against the
-  committed files (no duplicate cells, no stacked config suffixes, one category
-  per benchmark, no unreachable alias rows). Run it after `check.py`.
+- `_` introduit un **bouton de config**, `-` fait partie de **l'identité**
+  (`kimi-k2-thinking` est un nom, pas un bouton).
+- Vocabulaire des suffixes (case-insensitive), sur le dernier `_` seulement :
 
-## License note
+  | suffixe | effet |
+  |---|---|
+  | `minimal` `low` `medium` `high` `xhigh` `max` `none` | `reasoning_level` |
+  | `<N>K` (ex. `24K`) | `reasoning_tokens = N × 1000` |
+  | `thinking` | `variant = thinking` |
+  | `unknown` | `variant = unknown-effort` |
+  | hors vocabulaire | le `_` fait partie du nom, rien n'est découpé |
 
-Epoch AI data is CC-BY; RAND is cited under RR-A3797-1; Kaggle boards are
-public JSON. Scale SEAL rows carry no open license (fair-use research
-aggregation): resolve before making this repo public. It is private.
+- **Date** extraite uniquement en fin de base, aux formats `-YYYY-MM-DD` ou `-YYYYMMDD` → `snapshot`.
+  Sous-extraction **délibérée** : `2507`, `0528`, `03-2025` restent dans `base_model`. Trop ambigus.
+- Le préfixe `provider/` (un seul `/`) est retiré.
+
+## Les trois gestes
+
+### Corriger un nom mal traduit
+
+1. Dans `database/scores.csv`, trouver la ligne fautive → colonne `feed` = la source.
+2. Éditer `input/feed/<feed>/aliases.csv`. Colonnes :
+   `raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,note`.
+   `raw_name` = la chaîne brute exacte (après strip des `*`/`†` et blancs de fin).
+3. `base_model` vide = **DROP délibéré** (ex. `Unsafety Llama` dans `rand`). Mettre la raison dans `note`.
+4. Run All. L'alias gagne toujours sur la découpe — à une nuance près chez Epoch : un effort lu
+   dans le champ affiché `Name` peut compléter une identité que l'alias a laissée vide.
+
+### Ajouter une source (ex. MazeBench)
+
+1. `input/feed/mazebench/` : les données brutes + un `aliases.csv` (même vide, mais avec l'en-tête).
+2. Une entrée dans le dict `SOURCES` (cellule Setup) : nom du feed → stratégie (`découpe` ou `énumération`).
+3. Une cellule dictionnaire (son `_SPEC` : ce qu'on ingère ; son `_SKIP` : ce qu'on écarte, avec la
+   raison) et une cellule `translate_<source>` qui rend les sextuplets.
+4. Une entrée dans le dict `TRANSLATE` de la cellule « La boucle » (un assert le rappelle sinon).
+5. Run All.
+
+**Règle `_SPEC`/`_SKIP`** — noms réels : `FILE_SPEC`/`FILE_SKIP` (epoch), `LIVE_TASK_SPEC`/`LIVE_TASK_SKIP`
+(epoch_live), `KAGGLE_SPEC` (kaggle), `SEAL_SPEC`/`SEAL_SKIP` (seal) ; `rand` n'en a pas besoin, ses
+benchmarks sont ses colonnes. Toute entrée qui n'est ni dans l'un ni dans l'autre est **signalée**.
+Jamais ingérée en silence, jamais droppée en silence. Un feed qui change de forme se voit.
+
+### Ajouter une colonne metadata
+
+1. Un fichier dans `input/metadata/`. Clé de jointure :
+   `base_model` pour les modèles (cf. `organizations.csv`), le nom du benchmark pour les benchmarks
+   (colonne `benchmark` dans `categories.csv` et `floors.csv`).
+2. Une cellule dans la passe 2 (avec son petit titre markdown `### 3x — ...`, comme les voisines) qui
+   joint le fichier **et imprime ses restes** (clés du fichier qui ne matchent aucune ligne, lignes sans
+   metadata). Copier une cellule voisine (`categories.csv`) : réassigner le dataframe depuis le merge et
+   finir par `.fillna({"nouvelle_colonne": ""})`, sinon des `NaN` partent dans le CSV.
+3. Ajouter la nouvelle colonne à `MODEL_COLS` ou `BENCH_COLS` dans la cellule Setup — sans ça elle est
+   silencieusement absente du CSV écrit.
+4. Run All. Aucun ID ne bouge. Le test de régression signale l'écart (colonne nouvelle) : c'est voulu,
+   re-bénir avec `cp database/*.csv tests/expected_database/` puis re-run.
+
+## Lancer
+
+```bash
+~/miniforge3/envs/pymc_env/bin/jupyter lab pipeline.ipynb
+```
+
+`pymc_env` est l'environnement requis : pandas y est, et le `python3` par défaut du PATH
+(miniforge base) n'a ni pandas ni jupyter.
+
+Restart Kernel → **Run All**, de haut en bas. Les checks de la dernière section doivent passer.
+Deux runs successifs doivent produire un `database/` **bit à bit identique** — c'est le test de
+déterminisme, si ça diverge il y a un `dict`/`set` non trié quelque part.
+
+La dernière cellule compare `database/` à la copie bénie `tests/expected_database/` (test de
+régression). Un écart voulu — nouveau feed, alias corrigé — se re-bénit avec :
+`cp database/*.csv tests/expected_database/`.
+
+## Hors scope v1
+
+- **Re-téléchargement des feeds** : on lit le snapshot local du 2026-08-19, rien ne sort sur le réseau.
+- **Lineage des modèles** (quel modèle dérive de quel autre) : ça vit dans le repo de modeling.
+- **`row_drops` / `row_adds` curés** : les corrections passent par `aliases.csv`, pas par des patchs de lignes.
+- **`n_items` / `upper_bounds`** : pas de producteur, pas de consommateur.
+- **`human_baselines`** : `input/metadata/human_baselines.csv` existe mais n'est pas encore consommé.
+- **`display_name` / `link`** : aucun producteur actuel (`evidence_url` d'`access.csv` pourrait produire `link` si besoin).

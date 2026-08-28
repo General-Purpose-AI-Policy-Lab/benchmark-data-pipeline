@@ -1,0 +1,101 @@
+benchmark,access,verified,evidence_url,notes
+ForecastBench,dynamic,yes,https://www.forecastbench.org/,"future-resolving forecasting questions, contamination-proof by construction"
+LiveBench,dynamic,yes,https://livebench.ai/,"monthly refreshed questions, contamination-proof by construction"
+BlueprintBench 2,private,yes,https://andonlabs.com/evals/blueprint-bench-2,"Andon Labs; v1 kept majority private, v2 dataset/code unreleased"
+Chess Puzzles,private,yes,https://epoch.ai/benchmarks/chess-puzzles,"Epoch internal eval; 100 generated puzzles never released, only generator gist"
+CursorBench,private,yes,https://cursor.com/blog/cursorbench,"proprietary, built from real internal Cursor sessions"
+EBR-bench,private,yes,https://epoch.ai/benchmarks/ebr-bench,"copyrighted game content; Epoch runs the eval, items withheld"
+Fiction.LiveBench,private,yes,https://fiction.live/stories/Fiction-liveBench-Feb-19-2025/oQdzQvKHw8JyXbN87,maintainer states 'the actual dataset comes from our users and will remain private'
+GeoBench,private,yes,https://github.com/ccmdi/geobench,repo ships dataset-generation code only; graded image set unreleased
+Mystery Game Puzzles,private,yes,https://epoch.ai/benchmarks/mystery-game-puzzles,"Epoch-authored, programmatically generated, not released"
+SEAL Instruction Following,private,yes,https://labs.scale.com/leaderboard/instruction_following,"Scale SEAL board, no public API, maintainer-run"
+SWE-Bench Pro (Private),private,yes,https://labs.scale.com/leaderboard/swe_bench_pro_private,"Scale SEAL board, no public API, maintainer-run"
+Visual Task Assessment (VISTA),private,yes,https://scale.com/leaderboard,"Scale SEAL board, no public API, maintainer-run"
+ARC (AI2),public,yes,https://huggingface.co/datasets/allenai/ai2_arc,dataset on HF hub
+ARC-AGI,public,yes,https://arcprize.org/guide/1,400-task public eval set used for scoring; semi-private/private sets reserved for prize verification
+Adversarial NLI,public,yes,https://huggingface.co/datasets/facebook/anli,dataset on HF hub
+Aider Polyglot,public,yes,https://aider.chat/2024/12/21/polyglot.html,"225 Exercism exercises, publicly available"
+AlgoTune,public,yes,https://github.com/oripress/AlgoTune,"154 tasks public on GitHub, dataset streamed from HF"
+AudioMultiChallenge,public,yes,https://huggingface.co/datasets/ScaleAI/audiomc,"452 conversations + 1,712 grading rubrics, open release"
+BALROG,public,yes,https://github.com/balrog-ai/BALROG,"open RL-environment tasks, code+leaderboard public"
+BIG-Bench Hard (BBH),public,yes,https://huggingface.co/datasets/lukaemon/bbh,dataset on HF hub
+BioLP-bench,public,yes,https://github.com/baceolus/BioLP-bench,code and dataset public on GitHub
+BoolQ,public,yes,https://huggingface.co/datasets/google/boolq,dataset on HF hub
+CAD-Eval,public,yes,https://github.com/wgpatrick/cadeval,25 task YAMLs + reference STLs in public repo
+CL-Bench,public,yes,https://huggingface.co/datasets/tencent/CL-bench,"1,899 tasks + rubrics on HF (eval-only license)"
+CL-Bench Life,public,yes,https://huggingface.co/datasets/tencent/CL-bench-Life,405 tasks + rubrics on HF
+CSQA2,public,yes,https://huggingface.co/datasets/tasksource/commonsense_qa_2.0,dataset public on HF hub
+Cybench,public,yes,https://arxiv.org/abs/2408.08926,"40 CTF challenges public, forked/used by AISI and labs"
+DeepResearchBench,public,yes,https://github.com/Ayanami0730/deep_research_bench/tree/main/data,"queries, RACE criteria with weights AND all 100 reference articles in the MIT repo"
+ExploitBench,public,yes,https://github.com/exploitbench/exploitbench,"code, containers and transcripts fully open source"
+GBAEval,public,yes,https://github.com/mechanize-work/gba-eval,"Mechanize benchmark; replay corpus, ROMs, grader and reference emulator all public"
+GDP.pdf,public,yes,https://huggingface.co/datasets/surgeai/GDP.pdf,"all 100 items + rubrics released, Apache 2.0"
+GPQA Diamond,public,yes,https://github.com/idavidrein/gpqa,dataset on HF/GitHub
+GPQA Diamond Biology,public,yes,https://github.com/idavidrein/gpqa,"subset of GPQA, shares access"
+GPQA Diamond Chemistry,public,yes,https://github.com/idavidrein/gpqa,"subset of GPQA, shares access"
+GPQA Main Biology,public,yes,https://github.com/idavidrein/gpqa,"subset of GPQA, shares access"
+GPQA Main Chemistry,public,yes,https://github.com/idavidrein/gpqa,"subset of GPQA, shares access"
+GSM8K,public,yes,https://huggingface.co/datasets/openai/gsm8k,dataset on HF hub
+GSO-Bench,public,yes,https://huggingface.co/datasets/gso-bench/gso,dataset + docker images public
+HellaSwag,public,yes,https://huggingface.co/datasets/Rowan/hellaswag,dataset on HF hub
+LAMBADA,public,yes,https://huggingface.co/datasets/EleutherAI/lambada_openai,dataset on HF hub
+Lech Mazur Writing,public,yes,https://github.com/lechmazur/writing,"prompts, stories and scores public on GitHub"
+MATH Level 5,public,yes,https://github.com/hendrycks/math,"MATH dataset public, Level-5 subset"
+MMLU,public,yes,https://huggingface.co/datasets/cais/mmlu,dataset on HF hub
+MMLU Biology,public,yes,https://huggingface.co/datasets/cais/mmlu,"subset of MMLU, shares access"
+MMLU Chemistry,public,yes,https://huggingface.co/datasets/cais/mmlu,"subset of MMLU, shares access"
+MMLU Pro Biology,public,yes,https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro,"subset of MMLU-Pro, shares access"
+MMLU Pro Chemistry,public,yes,https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro,"subset of MMLU-Pro, shares access"
+MMLU-Pro,public,yes,https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro,dataset on HF hub
+MindCube,public,yes,https://huggingface.co/datasets/MLL-Lab/MindCube,21k-question dataset public on HF
+MultiChallenge,public,yes,https://huggingface.co/datasets/ScaleAI/MultiChallenge,"full 266-example set with pass criteria, CC-BY-4.0"
+MultiNRC,public,yes,https://huggingface.co/datasets/ScaleAI/MultiNRC,full dataset released on HF
+OS World (Screenshot),public,yes,https://github.com/xlang-ai/OSWorld,original OSWorld tasks public on GitHub
+OpenBookQA,public,yes,https://huggingface.co/datasets/allenai/openbookqa,dataset on HF hub
+PIQA,public,yes,https://huggingface.co/datasets/ybisk/piqa,dataset on HF hub
+PRBench Finance,public,yes,https://huggingface.co/datasets/ScaleAI/PRBench,"open-sourced 1,100 tasks + 19,356 rubric criteria"
+PRBench Legal,public,yes,https://huggingface.co/datasets/ScaleAI/PRBench,"open-sourced 1,100 tasks + 19,356 rubric criteria"
+PostTrainBench,public,yes,https://github.com/aisa-group/PostTrainBench,task spec + harness public on GitHub
+SEAL Tool Use (Enterprise),public,no,https://huggingface.co/datasets/vaskarnath/toolcomp,ungated toolcomp on HF (296 Enterprise rows) but Scale's board says 287 and no official statement ties the export to the scored set
+SWE-Bench Pro,public,yes,https://scale.com/leaderboard/swe_bench_pro_public,731-instance public dataset from copyleft open-source repos
+SWE-Bench Verified,public,yes,https://openai.com/index/introducing-swe-bench-verified/,dataset on HF hub
+SciCode,public,yes,https://huggingface.co/datasets/SciCode1/SciCode,80 problems with gold solutions/tests public on HF (Apache-2.0)
+ScienceQA,public,yes,https://huggingface.co/datasets/derek-thomas/ScienceQA,dataset on HF hub
+SimpleQA Verified,public,yes,https://www.kaggle.com/datasets/deepmind/simpleqa-verified,"1,000-prompt dataset public on Kaggle/HF"
+SpatialViz-Bench,public,yes,https://github.com/wangst0181/Spatial-Visualization-Benchmark,"1,180 items released, explicitly public"
+SuperGLUE,public,yes,https://super.gluebenchmark.com/,dataset public with leaderboard
+TerminalBench,public,yes,https://github.com/harbor-framework/terminal-bench,tasks public on Harbor Hub / GitHub
+The Agent Company,public,yes,https://github.com/TheAgentCompany/TheAgentCompany,tasks + simulated company environment public on GitHub
+TriviaQA,public,yes,https://huggingface.co/datasets/mandarjoshi/trivia_qa,dataset on HF hub
+TutorBench,public,yes,https://huggingface.co/datasets/ScaleAI/TutorBench,"1,473/1,490 samples with full rubrics on HF"
+VPCT,public,yes,https://huggingface.co/datasets/camelCase12/vpct-1,items + ground-truth bucket answers on HF
+Video-MME,public,yes,https://video-mme.github.io/,dataset on HF hub
+VisualToolBench,public,yes,https://huggingface.co/datasets/ScaleAI/VisualToolBench,items + turn_golden_answers downloadable
+WMDP Biology,public,yes,https://huggingface.co/datasets/cais/wmdp,"subset of WMDP, shares access"
+WMDP Chemistry,public,yes,https://huggingface.co/datasets/cais/wmdp,"subset of WMDP, shares access"
+WinoGrande,public,yes,https://huggingface.co/datasets/allenai/winogrande,dataset on HF hub
+APEX Agents,semi_private,yes,https://huggingface.co/datasets/mercor/apex-agents,"full set on HF but behind instant-approval gate (gated:auto), same rule as EnigmaEval"
+ARC-AGI-2,semi_private,yes,https://arcprize.org/arc-agi/2/,public training set; held-out eval set used for scoring
+CritPt,semi_private,yes,https://huggingface.co/datasets/CritPt-Benchmark/CritPt,70 of 71 challenges released as text; solutions and testcases withheld
+DeepSWE,semi_private,yes,https://huggingface.co/datasets/datacurve/deep-swe,"HF dataset gated: 'held-out evaluation data', login+contact info required"
+EnigmaEval,semi_private,yes,https://huggingface.co/datasets/cais/EnigmaEval,"full 1,161 puzzles+answers on HF but behind instant-approval contact-info gate"
+FrontierCode,semi_private,yes,https://epoch.ai/benchmarks/frontiercode,real open-source issues; held-out tests + rubric not published
+FrontierMath,semi_private,yes,https://epoch.ai/frontiermath,public sample problems; graded held-out eval set
+FrontierMath Tier 4,semi_private,yes,https://epoch.ai/frontiermath,public sample problems; graded held-out eval set
+FrontierMath Tier 4 v1,semi_private,yes,https://epoch.ai/frontiermath,public sample problems; graded held-out eval set
+FrontierMath v1,semi_private,yes,https://epoch.ai/frontiermath,public sample problems; graded held-out eval set
+GDPval,semi_private,yes,https://huggingface.co/datasets/openai/gdpval,"220/1,320 gold tasks open-sourced on HF, remainder held out"
+Humanity's Last Exam,semi_private,yes,https://github.com/centerforaisafety/hle,"2,500 questions public on HF; separate private held-out set checks overfitting"
+LAB-Bench Cloning,semi_private,yes,https://huggingface.co/datasets/futurehouse/lab-bench,"80% of LAB-Bench public on HF, 20% held out vs contamination"
+LAB-Bench LitQA2,semi_private,yes,https://huggingface.co/datasets/futurehouse/lab-bench,"80% of LAB-Bench public on HF, 20% held out vs contamination"
+LAB-Bench Protocol,semi_private,yes,https://huggingface.co/datasets/futurehouse/lab-bench,"80% of LAB-Bench public on HF, 20% held out vs contamination"
+LAB-Bench SeqQA,semi_private,yes,https://huggingface.co/datasets/futurehouse/lab-bench,"80% of LAB-Bench public on HF, 20% held out vs contamination"
+MCP Atlas,semi_private,yes,https://huggingface.co/datasets/ScaleAI/MCP-Atlas,"500/1,000 tasks released with gold claims; leaderboard on held-out set"
+METR Time Horizons,semi_private,yes,https://github.com/METR/hcast-public,11 HCAST task families + RE-Bench/analysis code released; bulk of task suite withheld
+OS World 2,semi_private,yes,https://github.com/xlang-ai/OSWorld-V2,task loader public; task implementation files gated to reduce leakage
+OTIS Mock AIME 2024-2025,semi_private,yes,https://huggingface.co/datasets/EpochAI/otis-mock-aime-24-25,full set on HF behind instant-approval gate (same rule as EnigmaEval)
+ProofBench,semi_private,yes,https://www.vals.ai/benchmarks/proof_bench,public 100-problem split; leaderboard runs on a private 100
+Remote Labor Index,semi_private,yes,https://huggingface.co/datasets/cais/rli-public-set,10/240 projects public with gold deliverables; 230 held out for scoring
+SimpleBench,semi_private,yes,https://simple-bench.com/,"10/213 questions public, rest private leaderboard set"
+Surface Evolver Bench,semi_private,yes,https://yhenon.github.io/surface-evolver-llm-eval/,one public example task; task set and expected values held out (harness defaults private)
+WeirdML,semi_private,yes,https://epoch.ai/benchmarks/weirdml,v1's 6 tasks public; v2 adds 13 held-out tasks not detailed

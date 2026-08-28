@@ -1,5 +1,5 @@
-data/pipeline/snapshots/
-data/pipeline/intermediate/
-.ipynb_checkpoints/
-__pycache__/
+eval-data-pipeline/
 .DS_Store
+__pycache__/
+.ipynb_checkpoints/
+.claude/

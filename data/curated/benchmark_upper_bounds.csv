@@ -1,3 +1,0 @@
-benchmark,upper_bound,reason,source_url
-FrontierMath v1,0.57,"Measured problem-set error rate of 43% across Tiers 1-3: 57% of items are answerable, so the instrument cannot exceed 0.57. Epoch rescales v1 scores by this factor; the fixed-d 4PL encodes the same fact as a ceiling instead, leaving observed scores untouched",https://epoch.ai/data/eci-documentation/data
-FrontierMath Tier 4 v1,0.60,"Measured problem-set error rate of 40% on Tier 4; see FrontierMath v1",https://epoch.ai/data/eci-documentation/data
