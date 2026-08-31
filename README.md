@@ -4,10 +4,10 @@ Transforme des feeds de scores d'évals (Epoch, Kaggle, RAND, Scale SEAL) en tro
 `database/scores.csv`, `database/models.csv`, `database/benchmarks.csv`.
 
 Les scores d'évals publics sont dispersés entre une poignée de sources qui nomment les modèles
-chacune à sa façon — `claude-opus-4-5-20251101-thinking` chez l'une, `Claude Opus 4.5 (Thinking)`
-chez l'autre, sans dire si le niveau d'effort est connu ou simplement absent. Rapprocher ces
-tableaux est le vrai travail, et c'est presque toujours fait à la main, dans un notebook, sans
-trace de ce qui a été fusionné ni pourquoi.
+chacune à sa façon : `claude-opus-4-5-20251101-thinking` chez l'une, `Claude Opus 4.5 (Thinking)`
+chez l'autre, sans dire si le niveau d'effort est connu ou simplement absent. Réconcilier ces
+tableaux prend l'essentiel du temps, et se fait le plus souvent à la main dans un notebook, qui
+ne garde pas trace de ce qui a été fusionné ni pourquoi.
 
 Ce dépôt en fait une passe reproductible. Chaque source garde son propre dictionnaire d'alias,
 tout ce qui n'est ni ingéré ni écarté explicitement est **signalé** plutôt que traité en silence,
@@ -32,7 +32,7 @@ dates et sha256 dans `input/feed/provenance.json`.
 
 **Les pages SEAL ne sont pas versionnées.** Scale AI ne publie ses leaderboards sous
 aucune licence ouverte, donc `input/feed/seal/*.html` est gitignoré (cf. `NOTICE.md`).
-Sur un clone frais, lancer `python3 refresh.py` **avant** le Run All — sinon le notebook
+Sur un clone frais, lancer `python3 refresh.py` **avant** le Run All ; sinon le notebook
 s'arrête avec un message explicite. Le reste du feed SEAL (aliases, sha256, scores
 dérivés dans `database/`) reste versionné.
 
@@ -168,7 +168,7 @@ jupyter lab pipeline.ipynb
 
 Le notebook n'a besoin que de `pandas` ; `refresh.py` n'utilise que la stdlib. Vérifiez
 juste que le `python3` de votre PATH est bien celui de l'environnement où pandas est
-installé — le `python3` d'une base conda ne l'a en général pas.
+installé ; celui d'une base conda ne l'a en général pas.
 
 Restart Kernel → **Run All**, de haut en bas. Les checks de la dernière section doivent passer.
 Deux runs successifs doivent produire un `database/` **bit à bit identique** — c'est le test de
@@ -191,7 +191,7 @@ fichiers / tâches / boards inconnus et noms non résolus remontent dans les rap
 Le code, le notebook, les dictionnaires curés et les trois CSV de `database/` sont sous
 **CC-BY-4.0** (`LICENSE`).
 
-Les scores en amont ont leurs propres conditions — Epoch AI en CC-BY, Kaggle sous ses CGU,
+Les scores en amont ont leurs propres conditions : Epoch AI en CC-BY, Kaggle sous ses CGU,
 RAND sous citation RR-A3797-1, Scale SEAL sans licence ouverte. Détail par feed, et ce qu'il
 faut créditer en republiant : [`NOTICE.md`](NOTICE.md).
 

@@ -1,4 +1,4 @@
-# NOTICE — third-party data
+# NOTICE: third-party data
 
 The `LICENSE` (CC-BY-4.0) covers what this project produces: the code, the
 notebook, the curated dictionaries under `input/`, and the three CSV in
@@ -14,11 +14,11 @@ Per-artifact URL, fetch date, sha256 and byte size: `input/feed/provenance.json`
 
 | Feed | Source | Terms | Redistributed here? |
 |---|---|---|---|
-| `epoch` | [`epoch.ai/data/benchmark_data.zip`](https://epoch.ai/data/benchmark_data.zip) | **CC-BY** (Epoch AI) — attribution required | Yes, 76 CSV under `input/feed/epoch/` |
-| `epoch_live` | [`epoch.ai/data/benchmarks.csv`](https://epoch.ai/data/benchmarks.csv) | **CC-BY** (Epoch AI) — attribution required | Yes, 1 CSV under `input/feed/epoch_live/` |
-| `kaggle` | `kaggle.com/api/v1/benchmarks/<board>/leaderboard` — boards `open-benchmarks/mmlu`, `open-benchmarks/mmlu-pro`, `deepmind/simpleqa-verified` | Kaggle Terms of Service; per-board dataset licenses | Yes, 3 JSON under `input/feed/kaggle/` |
+| `epoch` | [`epoch.ai/data/benchmark_data.zip`](https://epoch.ai/data/benchmark_data.zip) | **CC-BY** (Epoch AI), attribution required | Yes, 76 CSV under `input/feed/epoch/` |
+| `epoch_live` | [`epoch.ai/data/benchmarks.csv`](https://epoch.ai/data/benchmarks.csv) | **CC-BY** (Epoch AI), attribution required | Yes, 1 CSV under `input/feed/epoch_live/` |
+| `kaggle` | `kaggle.com/api/v1/benchmarks/<board>/leaderboard`, boards `open-benchmarks/mmlu`, `open-benchmarks/mmlu-pro`, `deepmind/simpleqa-verified` | Kaggle Terms of Service; per-board dataset licenses | Yes, 3 JSON under `input/feed/kaggle/` |
 | `rand` | Digitized from RAND **RR-A3797-1** (Dev et al. 2025, *Toward Comprehensive Benchmarking of the Biological Knowledge of Frontier LLMs*) | Cite [RR-A3797-1](https://www.rand.org/pubs/research_reports/RRA3797-1.html). Frozen: never refreshed | Yes, 1 CSV under `input/feed/rand/` |
-| `seal` | [`labs.scale.com/leaderboard/<slug>`](https://labs.scale.com/leaderboard) — scores parsed from the page's Next.js payload | **No open license.** Scale AI Terms of Service apply | **No** — see below |
+| `seal` | [`labs.scale.com/leaderboard/<slug>`](https://labs.scale.com/leaderboard), scores parsed from the page's Next.js payload | **No open license.** Scale AI Terms of Service apply | **No**, see below |
 
 ## Scale SEAL
 
