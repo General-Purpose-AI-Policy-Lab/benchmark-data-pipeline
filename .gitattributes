@@ -1,6 +1,29 @@
-*.csv text eol=lf
-*.md  text eol=lf
-*.txt text eol=lf
-*.py  text eol=lf
-*.html text eol=lf
+# Normalize every text file to LF in the repository, whatever platform it was
+# committed from. Four CSV here were once committed with CRLF against an
+# LF-only declaration, which made a fresh clone report 871 modified lines
+# before anyone had run anything. The catch-all covers file types nobody has
+# added yet.
+* text=auto eol=lf
+
+*.csv   text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
 *.ipynb text eol=lf
+*.html  text eol=lf
+*.sh    text eol=lf
+*.toml  text eol=lf
+
+# Never diffed, never munged, should any land here.
+*.png   binary
+*.pdf   binary
+*.zip   binary
+*.npz   binary
+
+# No linguist-generated / linguist-vendored marks in this repository, unlike
+# Multiaxis_ECI. The feeds under input/feed/ are upstream snapshots and
+# database/ is regenerated output, so both look like obvious candidates. But
+# marking them collapses them in GitHub's diff view, and reading that diff is
+# how a refresh is reviewed here (README: "Le diff des données se lit dans git").
+# Hiding it would remove the review step this repository is built around.
