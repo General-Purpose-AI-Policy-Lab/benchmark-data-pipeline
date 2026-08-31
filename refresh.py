@@ -32,7 +32,12 @@ SEAL_URL = "https://labs.scale.com/leaderboard/{}"
 SEAL_HEADERS = {"User-Agent": "Mozilla/5.0"}   # sans en-tête de navigateur, la page ne se rend pas
 
 FETCHED_AT = datetime.now(timezone.utc).isoformat()
-provenance = {}                           # artefact -> {url, fetched_at, sha256, byte_size}
+
+# On repart de la provenance existante : une page conservée parce que sa source ne
+# répond plus garde ainsi son entrée (url, date, sha256) au lieu de disparaître du
+# fichier réécrit. Les artefacts re-téléchargés écrasent la leur au passage.
+_PROV_PATH = FEED / "provenance.json"
+provenance = (json.loads(_PROV_PATH.read_text()) if _PROV_PATH.exists() else {})
 
 
 def fetch(key, url, headers=None):
@@ -64,13 +69,17 @@ if __name__ == "__main__":
 
     # Epoch ZIP : remplace tous les CSV du répertoire, sauf aliases.csv (dictionnaire du projet).
     data = fetch("input/feed/epoch (benchmark_data.zip)", EPOCH_ZIP_URL)
+    # Le ZIP est ouvert AVANT toute suppression : une archive tronquée ou corrompue
+    # doit échouer sans avoir détruit le feed en place.
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        fresh = {Path(n).name: z.read(n) for n in z.namelist()
+                 if n.endswith(".csv") and Path(n).name != "aliases.csv"}
+    assert fresh, "le ZIP Epoch ne contient aucun CSV : feed laissé intact"
     for p in (FEED / "epoch").glob("*.csv"):
         if p.name != "aliases.csv":
             p.unlink()
-    with zipfile.ZipFile(io.BytesIO(data)) as z:
-        for name in z.namelist():
-            if name.endswith(".csv") and Path(name).name != "aliases.csv":
-                (FEED / "epoch" / Path(name).name).write_bytes(z.read(name))
+    for name, blob in fresh.items():
+        (FEED / "epoch" / name).write_bytes(blob)
 
     # Feed live Epoch : un seul CSV, versionné par tâche.
     (FEED / "epoch_live/epoch_live_benchmarks.csv").write_bytes(
@@ -90,6 +99,11 @@ if __name__ == "__main__":
             continue
         (FEED / "seal" / f"{slug}.html").write_bytes(data)
 
+    provenance["input/feed/rand/rand_benchmark_scores.csv"] = {
+        "url": "https://www.rand.org/pubs/research_reports/RRA3797-1.html",
+        "fetched_at": "figé", "note": "RAND RR-A3797-1 (Dev et al. 2025), jamais rafraîchi",
+        "sha256": hashlib.sha256((FEED / "rand/rand_benchmark_scores.csv").read_bytes()).hexdigest(),
+        "byte_size": (FEED / "rand/rand_benchmark_scores.csv").stat().st_size}
     print("\nrand : non rafraîchi (rapport figé, Dev et al. 2025)")
     (FEED / "provenance.json").write_text(json.dumps(provenance, indent=2, sort_keys=True) + "\n")
     print(f"provenance.json : {len(provenance)} artefact(s) — diff des données : git diff --stat input/feed/")

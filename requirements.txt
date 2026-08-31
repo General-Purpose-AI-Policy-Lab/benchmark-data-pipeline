@@ -1,0 +1,4 @@
+# Le notebook n'a besoin que de pandas ; refresh.py n'utilise que la stdlib.
+pandas>=2.0
+# Pour ouvrir pipeline.ipynb.
+jupyterlab>=4.0

@@ -11,12 +11,17 @@ helpers.py              découpe des noms machine, aliases, uuid5.
 input/feed/<source>/    données brutes d'une source + son aliases.csv (un par source, jamais partagé).
 input/metadata/         sources de la passe metadata. 
 database/               outputs.
-eval-data-pipeline/     ancien projet. 
 ```
 
 Feeds présents : `epoch` (76 CSV du ZIP Epoch), `epoch_live` (1 CSV), `kaggle` (3 JSON),
 `rand` (1 CSV), `seal` (14 HTML). Snapshot local, rafraîchi par `refresh.py` (voir « Lancer ») ;
 dates et sha256 dans `input/feed/provenance.json`.
+
+**Les pages SEAL ne sont pas versionnées.** Scale AI ne publie ses leaderboards sous
+aucune licence ouverte, donc `input/feed/seal/*.html` est gitignoré (cf. `NOTICE.md`).
+Sur un clone frais, lancer `python3 refresh.py` **avant** le Run All — sinon le notebook
+s'arrête avec un message explicite. Le reste du feed SEAL (aliases, sha256, scores
+dérivés dans `database/`) reste versionné.
 
 ## Les trois CSV
 
@@ -62,7 +67,8 @@ Les colonnes de justification (`notes`, `reason`, `source_url`) restent dans `in
 
 ## Conventions de nommage, par source
 
-Résultat d'un audit exhaustif du snapshot 2026-08-19.
+Résultat d'un audit exhaustif du snapshot 2026-08-19, rejoué sur le snapshot courant
+(2026-08-28) : les noms non résolus remontent dans les rapports du notebook.
 
 | Source | Champ | Format | Stratégie |
 |---|---|---|---|
@@ -142,11 +148,14 @@ Jamais ingérée en silence, jamais droppée en silence. Un feed qui change de f
 ## Lancer
 
 ```bash
-~/miniforge3/envs/pymc_env/bin/jupyter lab pipeline.ipynb
+pip install -r requirements.txt
+python3 refresh.py          # obligatoire au premier run : récupère les pages SEAL
+jupyter lab pipeline.ipynb
 ```
 
-`pymc_env` est l'environnement requis : pandas y est, et le `python3` par défaut du PATH
-(miniforge base) n'a ni pandas ni jupyter.
+Le notebook n'a besoin que de `pandas` ; `refresh.py` n'utilise que la stdlib. Vérifiez
+juste que le `python3` de votre PATH est bien celui de l'environnement où pandas est
+installé — le `python3` d'une base conda ne l'a en général pas.
 
 Restart Kernel → **Run All**, de haut en bas. Les checks de la dernière section doivent passer.
 Deux runs successifs doivent produire un `database/` **bit à bit identique** — c'est le test de
@@ -163,3 +172,16 @@ RAND reste figé (rapport Dev et al. 2025). Les nouveautés ne sont jamais ingé
 fichiers / tâches / boards inconnus et noms non résolus remontent dans les rapports du notebook,
 à curer ensuite dans les `*_SPEC` et les `aliases.csv`. Provenance (URL, date, sha256) :
 `input/feed/provenance.json`.
+
+## Licence et sources
+
+Le code, le notebook, les dictionnaires curés et les trois CSV de `database/` sont sous
+**CC-BY-4.0** (`LICENSE`).
+
+Les scores en amont ont leurs propres conditions — Epoch AI en CC-BY, Kaggle sous ses CGU,
+RAND sous citation RR-A3797-1, Scale SEAL sans licence ouverte. Détail par feed, et ce qu'il
+faut créditer en republiant : [`NOTICE.md`](NOTICE.md).
+
+**Dépôt lié.** [`ECI_Bayesian`](https://github.com/General-Purpose-AI-Policy-Lab/ECI_Bayesian)
+recrée l'Epoch Capabilities Index sur les mêmes feeds. Il ne consomme pas `database/` :
+il tourne sur son propre notebook de pipeline, dans un schéma différent.

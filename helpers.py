@@ -63,9 +63,16 @@ def split_name(name):
 def load_aliases(path):
     """aliases.csv -> {raw_name: dict IDENT_COLS}. base_model vide = DROP (dict quand même retourné)."""
     with open(path, newline="", encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
-    if rows and list(rows[0]) != ALIAS_COLS:
-        raise ValueError(f"{path}: colonnes {list(rows[0])} != {ALIAS_COLS}")
+        reader = csv.DictReader(f)
+        # fieldnames, pas rows[0] : un fichier réduit à son en-tête (le cas que le
+        # README fait créer pour une nouvelle source) doit être validé lui aussi.
+        if reader.fieldnames != ALIAS_COLS:
+            raise ValueError(f"{path}: colonnes {reader.fieldnames} != {ALIAS_COLS}")
+        rows = list(reader)
+    seen = [r["raw_name"] for r in rows]
+    dupes = sorted({n for n in seen if seen.count(n) > 1})
+    if dupes:                    # sinon la dernière ligne écrase les précédentes en silence
+        raise ValueError(f"{path}: raw_name en double : {dupes}")
     return {r["raw_name"]: {c: r[c].strip() for c in IDENT_COLS} for r in rows}
 
 
@@ -174,6 +181,8 @@ def write_aliases(path, rows):
     """Écrit une liste de dicts ALIAS_COLS, triée par raw_name."""
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=ALIAS_COLS)
+        # lineterminator explicite : le défaut de csv est CRLF, que .gitattributes
+        # (*.csv text eol=lf) renormalise ensuite — d'où un diff fantôme à chaque écriture.
+        w = csv.DictWriter(f, fieldnames=ALIAS_COLS, lineterminator="\n")
         w.writeheader()
         w.writerows(sorted(rows, key=lambda r: r["raw_name"].lower()))

@@ -3,3 +3,9 @@ eval-data-pipeline/
 __pycache__/
 .ipynb_checkpoints/
 .claude/
+
+# Scale SEAL pages: no open license upstream (see NOTICE.md), so the captured
+# HTML is not redistributed. `python3 refresh.py` fetches it before a Run All.
+# Our own work over those pages stays tracked: seal/aliases.csv, the per-page
+# sha256 in provenance.json, and the resulting scores in database/scores.csv.
+input/feed/seal/*.html
