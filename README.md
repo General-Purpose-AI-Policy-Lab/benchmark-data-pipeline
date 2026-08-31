@@ -14,7 +14,7 @@ tout ce qui n'est ni ingéré ni écarté explicitement est **signalé** plutôt
 les identifiants sont des `uuid5` déterministes du tuple d'identification, et deux runs successifs
 doivent produire un `database/` bit à bit identique. La base sert de socle aux travaux de
 modélisation du lab, à commencer par
-[`ECI_Bayesian`](https://github.com/General-Purpose-AI-Policy-Lab/ECI_Bayesian).
+[`Multiaxis_ECI`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI).
 
 ## Arborescence
 
@@ -198,12 +198,12 @@ faut créditer en republiant : [`NOTICE.md`](NOTICE.md).
 ## Dépôt lié
 
 Ce dépôt est le **successeur du pipeline interne** de
-[`ECI_Bayesian`](https://github.com/General-Purpose-AI-Policy-Lab/ECI_Bayesian), qui recrée
+[`Multiaxis_ECI`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI), qui recrée
 l'Epoch Capabilities Index en Bayésien sur ces mêmes feeds. Le notebook `data/pipeline/` de
 ce dépôt-là est destiné à disparaître au profit de celui-ci : mêmes sources, extraites dans
 un dépôt autonome, avec un schéma à UUID, un dictionnaire d'alias par source, et un test de
 déterminisme.
 
-**La migration n'est pas faite** : `ECI_Bayesian` lit toujours son `benchmarks_merged.csv`
+**La migration n'est pas faite** : `Multiaxis_ECI` lit toujours son `benchmarks_merged.csv`
 à plat, et les deux schémas ne sont pas interchangeables. Concrètement, le travail sur les
-feeds se fait désormais ici, et le portage d'`ECI_Bayesian` vers `database/` reste à écrire.
+feeds se fait désormais ici, et le portage de `Multiaxis_ECI` vers `database/` reste à écrire.
