@@ -1,8 +1,8 @@
 benchmark_id,name,category,floor,ceiling,access
 c10f313e-aa7d-5843-a47c-69b21a52da8d,AISI CTF Suites - Apprentice,Cyber,0.0,,private
 40e5fe4a-100d-53ad-a0f4-532bcd367a16,AISI CTF Suites - Expert,Cyber,0.0,,private
-9f492f35-3dec-5588-9ddd-29db4331c1b9,AISI CTF Suites - Practitioner,Cyber,0.0,,private
-33f864c2-1401-5e5f-aa5b-a79c8beee171,AISI CTF Suites - Technical Non-Expert,Cyber,0.0,,private
+9f492f35-3dec-5588-9ddd-29db4331c1b9,AISI CTF Suites - Practitioner,Cyber,0.0,1.0,private
+33f864c2-1401-5e5f-aa5b-a79c8beee171,AISI CTF Suites - Technical Non-Expert,Cyber,0.0,1.0,private
 85bafc1f-724c-5f6c-8674-c998b1720f19,AISI Cyber Ranges - Cooling Tower,Cyber,0.0,,private
 9c656601-2948-5ce5-a371-596322374b30,AISI Cyber Ranges - The Last Ones,Cyber,0.0,,private
 3f54c22c-02e9-5bac-84ec-9454551a1023,APEX-Agents,Core AGI Progress,0.0,,semi_private
