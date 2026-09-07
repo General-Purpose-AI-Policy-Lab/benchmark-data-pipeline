@@ -43,7 +43,6 @@ cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,High School Top Pe
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,Average Human,0.837,nine non-specialized humans,https://simple-bench.com/
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,Top Performer,0.954,Highest human score reported on the official leaderboard.,https://simple-bench.com/
 989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Skilled Generalist,0.944,Grader Going through the test,OpenAI arXiv 2411.04368 §2.2
-f377e523-c1c0-587b-ba01-f5479ba772fa,SuperGLUE,Average Human,0.898,human performance estimates after training phase,https://arxiv.org/pdf/1905.00537
 be2c3adb-c271-55d1-8747-16d672997b80,TriviaQA,Average Human,0.797,human performance level,https://arxiv.org/pdf/1705.03551v2
 94f1bc5b-4120-5601-9b02-8dbbfba29b6e,VPCT,Average Human,1.0,three volunteers,EpochAI
 51129c7e-729d-5eb7-8759-d644d44f24af,Visual Task Assessment (VISTA),Skilled Generalist,0.554,16 full-time employees,https://scale.com/leaderboard/visual_language_understanding

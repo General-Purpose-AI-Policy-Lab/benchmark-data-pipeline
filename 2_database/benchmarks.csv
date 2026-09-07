@@ -16,7 +16,7 @@ a2af9a81-5fb1-523b-903d-b86e11a99e83,BioLP-bench,Biology,0.0,,public
 c46b5c6e-1933-5584-abcf-9515ed18baa9,BlueprintBench 2,Multimodal Understanding,0.0,,private
 5f7a8239-6b78-56e8-be42-60554a83cfac,CL-bench,General Reasoning,0.0,,public
 882761e6-2b60-562d-9e04-1866076fab8f,CL-bench Life,General Reasoning,0.0,,public
-2651e385-b6a1-56e7-86ed-2590cf055892,CSQA2,General Reasoning,0.5,,public
+2651e385-b6a1-56e7-86ed-2590cf055892,CSQA2,Trivia & Commonsense QA,0.5,,public
 f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Cyber,0.0,,public
 bcc82df3-ba50-5b07-886a-5445900945d5,CadEval,Multimodal Understanding,0.0,,public
 7053140b-f184-51c7-9e62-f2a80b6bf774,Chess Puzzles,General Reasoning,0.0496,,private
@@ -49,13 +49,12 @@ b0a745aa-cd20-5efb-9f86-070da7847d57,FrontierSWE v2,Autonomous SWE,0,,public
 7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,GSO-Bench,Autonomous SWE,0.0,,public
 3ecbd533-f135-5b46-bf5c-d21ded89b961,GeoBench,Multimodal Understanding,0.0,,private
 18602361-b0c5-5003-8be2-305cdf03b9ca,HLE,Domain Specific Questions,0.048,,semi_private
-534366c9-d667-5dcb-9778-e42e12abc813,HellaSwag,Commonsense QA,0.25,,public
+534366c9-d667-5dcb-9778-e42e12abc813,HellaSwag,Trivia & Commonsense QA,0.25,,public
 bd4da3d5-8651-5b55-915f-3dafdc7078b9,InterCode-CTF,Cyber,0,,public
 c6cec6f2-a484-5b21-9596-7fde61cebfda,LAB-Bench Cloning,Biology,0.2,,semi_private
 21b0d275-4fae-5a11-8245-350a5d2153b6,LAB-Bench LitQA2,Biology,0.2,,semi_private
 ecb27e9b-d4d1-5564-b301-e32b44b2ac4a,LAB-Bench Protocol,Biology,0.2,,semi_private
 c78bf195-f477-5ab0-b096-a2977ceff4a4,LAB-Bench SeqQA,Biology,0.2,,semi_private
-424eecb6-be3c-5235-bab8-b172c45a9e61,LAMBADA,General Reasoning,0.0,,public
 ba5e3179-81c3-5388-ad9a-15f32e677ecf,LMCA,General Reasoning,0,,private
 78996834-fd04-50cd-abf8-ff2d1165b2e9,Lech Mazur Writing,Advanced Language and Writing,0.0,,public
 3a8fb029-97d6-5977-902a-41682ddb2ef5,MATH Level 5,Mathematics,0.0,,public
@@ -76,8 +75,8 @@ bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,NL2Bash,Cyber,0,,public
 b9ebbe3a-3aea-5306-a334-d3cf42d1db31,OSWorld,Agentic Computer Use,0.0,,public
 060ceebd-37df-5852-832b-00bf08be0810,OSWorld 2.0,Agentic Computer Use,0.0,,semi_private
 cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,Mathematics,0.001,,semi_private
-362fe089-970b-5a6d-b539-ab9245f63878,OpenBookQA,Commonsense QA,0.25,,public
-52dbd75e-8f17-5888-a0de-00593c63a0a0,PIQA,Commonsense QA,0.5,,public
+362fe089-970b-5a6d-b539-ab9245f63878,OpenBookQA,Trivia & Commonsense QA,0.25,,public
+52dbd75e-8f17-5888-a0de-00593c63a0a0,PIQA,Trivia & Commonsense QA,0.5,,public
 20485e14-925b-5252-b6c3-148a7a12c629,PRBench,Domain Specific Questions,0,,private
 09d827ed-6ae3-5b60-8641-66a733170178,PostTrainBench v1.1,Autonomous SWE,0.0,,public
 612673c9-c8bb-5f0a-b8f9-07f27a325173,ProofBench,Mathematics,0.0,,semi_private
@@ -86,11 +85,10 @@ cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,Mathematics,0.001,
 3fc71c52-e332-547b-9bc0-2d0f6573f39f,SWE Atlas,Autonomous SWE,0,,private
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,General Reasoning,0.167,,semi_private
 989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Domain Specific Questions,0.0,,public
-f377e523-c1c0-587b-ba01-f5479ba772fa,SuperGLUE,General Reasoning,0.443,,public
 ff689821-ffdf-5bd8-b976-65dd53db24d4,Surface Evolver Bench,Autonomous SWE,0.0,,semi_private
 acddb832-1a34-5820-a2d3-05681c5161e3,Terminal Bench 2.0,Agentic Computer Use,0.0,,public
 0d000f4a-0739-550a-a784-c6582ec2a427,The Agent Company,Agentic Computer Use,0.0,,public
-be2c3adb-c271-55d1-8747-16d672997b80,TriviaQA,Domain Specific Questions,0.127,,public
+be2c3adb-c271-55d1-8747-16d672997b80,TriviaQA,Trivia & Commonsense QA,0.127,,public
 a89d5362-adf2-5155-b445-8ce4d0a6fe5d,TutorBench,Advanced Language and Writing,0.0,,public
 94f1bc5b-4120-5601-9b02-8dbbfba29b6e,VPCT,Multimodal Understanding,0.333,1.0,public
 51129c7e-729d-5eb7-8759-d644d44f24af,Visual Task Assessment (VISTA),Multimodal Understanding,0.0,,private
@@ -98,4 +96,4 @@ e7b97299-f0e2-581b-a8de-b19d816be80c,VisualToolBench,Multimodal Understanding,0.
 bfcf9383-ffc8-518e-83f7-18e9ec3154d6,WMDP Biology,Biology,0.25,,public
 6246759f-70d0-5a8e-b557-6e04e8c5b556,WMDP Chemistry,Chemistry,0.25,,public
 ce4b877c-a9d5-595b-a14a-ec9edab40b95,WeirdML v2,Autonomous SWE,0.0,,semi_private
-b812b198-64a0-5b54-bdd2-018cbce4626b,WinoGrande,Commonsense QA,0.5,,public
+b812b198-64a0-5b54-bdd2-018cbce4626b,WinoGrande,Trivia & Commonsense QA,0.5,,public

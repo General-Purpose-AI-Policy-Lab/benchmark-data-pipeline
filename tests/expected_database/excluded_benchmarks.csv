@@ -11,6 +11,7 @@ ForecastBench,excluded,scale,81,Brier skill index whose ceiling is by constructi
 FrontierMath Tier 4 v1,excluded,quality,72,"defective v1 problem set (errors in 42 % of items), superseded by v2; decision of 2026-09-04"
 FrontierMath Tiers 1-3 v1,excluded,quality,101,"defective v1 problem set (errors in 42 % of items), superseded by v2; decision of 2026-09-04"
 HiL-Bench,excluded,propensity,16,"measures the propensity to ask for help on under-specified tasks, not a capability (benchmark-forecasting, Sept 2026)"
+LAMBADA,excluded,deprecated,53,Excluded: legacy language-understanding series with no place in the forecasting categories. User decision 2026-09-07 (decisions.md).
 LiveBench,excluded,quality,54,"items rotate over time, so the series is not comparable across dates; no longer evaluated"
 MindCube,excluded,frontier_coverage,5,"5 test-takers, four of them 2024-era open 7B models within 0.03 of the chance floor; no frontier model"
 OEIS Open,excluded,frontier_coverage,3,"Full 492-conjecture set at $50 per conjecture, 3 runs on 2026-09-04. Excluded, user decision 2026-09-07: the Lite subset ($200 budget, more runs) is the series kept; keeping both would double-count the construct."
@@ -30,6 +31,7 @@ SciCode,excluded,quality,168,error level in problem statements and reference tes
 ScienceQA,excluded,frontier_coverage,26,"leaderboard dominated by academic models fine-tuned on the training split; 6 frontier models out of 97, all below the specialised ones"
 SimpleQA,no_source,,0,no feed supplies this benchmark today (row kept for its metadata)
 SpatialViz-Bench,excluded,frontier_coverage,8,"8 rows, 2024-01..2025-06 models only, no frontier release of its period"
+SuperGLUE,excluded,deprecated,10,Excluded: legacy language-understanding series with no place in the forecasting categories. User decision 2026-09-07 (decisions.md).
 Vending-Bench 2,excluded,propensity,0,"Long-horizon business simulation over 365 simulated days (Andon Labs, Epoch vending_bench_2_external.csv). Excluded: the year-end balance measures propensities (risk appetite, persistence, honesty) on top of capabilities (criterion 2, user 2026-09-07); the score is also a dollar amount with no proportion scale (criterion 1), so the file sits in FILE_SKIP."
 VideoMME,excluded,frontier_coverage,50,"leaderboard of academic video LLMs, almost no frontier model of its period; decision of 2026-09-04"
 WebDev Arena,excluded,scale,0,"Epoch webdev_arena_external.csv: arena Elo rating, not a proportion (criterion 1). File in FILE_SKIP."

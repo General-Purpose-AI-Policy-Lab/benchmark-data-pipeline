@@ -784,32 +784,6 @@ a808ba83-e525-5cb0-8207-6d932ad3ebdf,40e5fe4a-100d-53ad-a0f4-532bcd367a16,0.6843
 e3e58c67-29b2-539d-bcfb-a0dfc69a9bcc,40e5fe4a-100d-53ad-a0f4-532bcd367a16,0.5232827268376036,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 f3771b35-de7c-5c8d-8f40-d0d0568acbbb,40e5fe4a-100d-53ad-a0f4-532bcd367a16,0.7134080507953305,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 f97e53e8-c31c-5fb5-9b9c-9014f0733da3,40e5fe4a-100d-53ad-a0f4-532bcd367a16,0.4852576620460583,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-09796b8f-e8d2-560a-8c41-de3dce02f98c,424eecb6-be3c-5235-bab8-b172c45a9e61,0.864,,,epoch,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905
-0aaa33a7-68e9-55c7-beb3-7690c708a647,424eecb6-be3c-5235-bab8-b172c45a9e61,0.543,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-211d87a3-a319-52a9-a65c-622f10f6cfe4,424eecb6-be3c-5235-bab8-b172c45a9e61,0.773,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
-28b0b42b-a3e9-5983-97dc-59f029144d1a,424eecb6-be3c-5235-bab8-b172c45a9e61,0.798,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
-2a541527-675f-5356-b4ee-4f449eb5c8a4,424eecb6-be3c-5235-bab8-b172c45a9e61,0.777,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-2c17c085-249a-56ec-b886-a1c2b456a218,424eecb6-be3c-5235-bab8-b172c45a9e61,0.711,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-2dfd6c03-49bb-592a-9b38-2c254be4c818,424eecb6-be3c-5235-bab8-b172c45a9e61,0.67,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-3653a9c7-329a-5229-ba85-3bfdde8f258d,424eecb6-be3c-5235-bab8-b172c45a9e61,0.679,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-551a5400-1b6f-5e7d-9612-d083268c4832,424eecb6-be3c-5235-bab8-b172c45a9e61,0.779,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
-5df9f1ed-d840-5ac8-b9bf-544d0c4f711b,424eecb6-be3c-5235-bab8-b172c45a9e61,0.733,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-62196f6d-0cf3-5142-a66e-47efe1520383,424eecb6-be3c-5235-bab8-b172c45a9e61,0.713,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-769741fa-2ef7-5692-a69b-5d3170617006,424eecb6-be3c-5235-bab8-b172c45a9e61,0.789,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-7c63d6d4-ecf8-533d-b53c-18f11f73b005,424eecb6-be3c-5235-bab8-b172c45a9e61,0.745,,,epoch,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990
-7d6eca9e-c0dc-5065-af0e-8c5e4e718220,424eecb6-be3c-5235-bab8-b172c45a9e61,0.749,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
-90083386-cc59-54db-b14f-5aa5c679828a,424eecb6-be3c-5235-bab8-b172c45a9e61,0.584,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-91c91813-1601-56c9-a24c-d7bede4477fe,424eecb6-be3c-5235-bab8-b172c45a9e61,0.785,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
-ab48808c-0ef0-585f-b09a-adba11821908,424eecb6-be3c-5235-bab8-b172c45a9e61,0.774,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
-b23229cf-847e-5830-aadc-937f50d1a313,424eecb6-be3c-5235-bab8-b172c45a9e61,0.718,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-cceb5fba-bf7d-5d81-9ea6-b91c24ac85db,424eecb6-be3c-5235-bab8-b172c45a9e61,0.7,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-d008ae86-fec9-5e72-b3c1-acac819a44ba,424eecb6-be3c-5235-bab8-b172c45a9e61,0.765,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-d62a85e2-0be1-5a76-b9ca-4b66d16f204a,424eecb6-be3c-5235-bab8-b172c45a9e61,0.8715,,,epoch,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990
-de705bfb-0c9c-51e0-8dc5-ac35f72fd6ff,424eecb6-be3c-5235-bab8-b172c45a9e61,0.772,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-e10034d4-2293-57b9-8b9d-804085279068,424eecb6-be3c-5235-bab8-b172c45a9e61,0.733,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-f1851caf-6795-5c5c-a9e9-6ad2668e2e45,424eecb6-be3c-5235-bab8-b172c45a9e61,0.752,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-f525c6a7-0b9d-5822-9988-8c7ee00e8e7e,424eecb6-be3c-5235-bab8-b172c45a9e61,0.74,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-f603f731-bd9b-51e6-b40b-0e4569091392,424eecb6-be3c-5235-bab8-b172c45a9e61,0.733,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,427d006e-4a22-5966-97bb-4d8d01712700,0.449,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
 194e96b4-d28a-520b-89fb-9aaf9af3e8d1,427d006e-4a22-5966-97bb-4d8d01712700,0.48700000000000004,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
 31a200c8-d0e6-5040-b603-5d2ea8d58414,427d006e-4a22-5966-97bb-4d8d01712700,0.603,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
@@ -5209,14 +5183,6 @@ efc6d28a-d826-5c78-86e6-82e98b8ecf55,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7020
 f68b0e59-157b-5116-9755-81edb45f60bd,ecf25073-c379-5472-ab88-b3df79e8aa65,0.617,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 f9071c47-9df4-5966-bb75-5c5d222af722,ecf25073-c379-5472-ab88-b3df79e8aa65,0.209,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 f9fbf084-47df-59c1-98ad-bbb6b0b04481,ecf25073-c379-5472-ab88-b3df79e8aa65,0.591,,,epoch,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
-09796b8f-e8d2-560a-8c41-de3dce02f98c,f377e523-c1c0-587b-ba01-f5479ba772fa,0.718,,,epoch,Language Models are Few-Shot Learners,http://arxiv.org/abs/2005.14165
-1bc8e132-60c0-5ee2-8ae0-72bd1bd8b7f6,f377e523-c1c0-587b-ba01-f5479ba772fa,0.633,,,epoch,Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer,https://arxiv.org/pdf/1910.10683
-5485c90b-d05b-5877-b6e8-b8b5ccfa2708,f377e523-c1c0-587b-ba01-f5479ba772fa,0.827,,,epoch,Switch Transformers: Scaling to Trillion Parameter Models with Simple and Eﬃcient Sparsity,http://arxiv.org/abs/2101.03961
-5f0baffc-964b-5e25-ade5-3e50eadac438,f377e523-c1c0-587b-ba01-f5479ba772fa,0.733,,,epoch,Switch Transformers: Scaling to Trillion Parameter Models with Simple and Eﬃcient Sparsity,http://arxiv.org/abs/2101.03961
-5f1547b6-0500-5d11-942f-644a58dc1678,f377e523-c1c0-587b-ba01-f5479ba772fa,0.847,,,epoch,Switch Transformers: Scaling to Trillion Parameter Models with Simple and Eﬃcient Sparsity,http://arxiv.org/abs/2101.03961
-c27c3fe4-e1cf-51be-9027-439a8162a2ab,f377e523-c1c0-587b-ba01-f5479ba772fa,0.889,,,epoch,Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer,https://arxiv.org/pdf/1910.10683
-c8a2cd5d-2442-56e9-83eb-cc71731621fa,f377e523-c1c0-587b-ba01-f5479ba772fa,0.864,,,epoch,Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer,https://arxiv.org/pdf/1910.10683
-cd7c78f4-6684-5a6b-8713-08764fa138a8,f377e523-c1c0-587b-ba01-f5479ba772fa,0.762,,,epoch,Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer,https://arxiv.org/pdf/1910.10683
 190c9256-dd6b-58f3-a4ba-8a1b61734bec,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.761469414893617,0.0038852715401996433,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8788970834730138,0.0029866319737434184,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 2100e63c-ec66-532d-bb4a-0443dfa8914f,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.647161499459729,0.00435647751092097,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro

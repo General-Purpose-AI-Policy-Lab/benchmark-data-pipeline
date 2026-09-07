@@ -134,3 +134,9 @@ One entry per decision that changes the data or the schema. Open points live in 
 
 - **Category `Cyber`** (twelfth value of the vocabulary, user): Cybench, ExploitBench, the four AISI CTF suites, the two AISI cyber ranges, CTI-REALM, CyberGym, CyScenarioBench, InterCode-CTF and NL2Bash leave `Agentic Computer Use`. NL2Bash is provisional (natural-language-to-bash rather than offensive security), pending the user's call.
 - **No tour notebook** (user): the README is the documentation; `notebooks/` is removed and the kernel instructions with it.
+
+## 2026-09-07, categories after the first forecasting run
+
+- **`Trivia & Commonsense QA`** replaces `Commonsense QA` (user): HellaSwag, PIQA, WinoGrande, OpenBookQA, plus CSQA2 (from General Reasoning) and TriviaQA (from Domain Specific Questions).
+- **LAMBADA and SuperGLUE excluded** (user, criterion `deprecated`): legacy language-understanding series with no place in the forecasting categories. SuperGLUE's human baseline goes with it.
+- **DeepResearch Bench** stays in `Agentic Computer Use` (user confirmation).
