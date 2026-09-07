@@ -1,0 +1,52 @@
+benchmark_id,name,group,score,note,source
+9170a9aa-dc41-50f4-a90c-5b8bce0c2467,ARC-AGI,Average Human,0.77,MTurk,https://arcprize.org/leaderboard
+9170a9aa-dc41-50f4-a90c-5b8bce0c2467,ARC-AGI,Committee of Average Humans,0.98,Human panel (at least two participants solved one or more sub-pairs within their first two attempts),https://arcprize.org/leaderboard
+9170a9aa-dc41-50f4-a90c-5b8bce0c2467,ARC-AGI,Skilled Generalist,0.98,STEM Graduates,https://arcprize.org/leaderboard
+7a6e13ad-e103-582e-a62b-99d79b81dc75,ARC-AGI-2,Average Human,0.6,average test-taker,https://arcprize.org/arc-agi/2/
+7a6e13ad-e103-582e-a62b-99d79b81dc75,ARC-AGI-2,Committee of Average Humans,1.0,Human panel,https://arcprize.org/leaderboard
+a2af9a81-5fb1-523b-903d-b86e11a99e83,BioLP-bench,Domain Expert,0.384,Bachelor's w/ lab experience,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+c46b5c6e-1933-5584-abcf-9515ed18baa9,BlueprintBench 2,Skilled Generalist,0.586,"n=1, one human on 12 of the 50 apartments; the paper gives no qualification for them (probably from the researchers' circle, not an architect). User decision 2026-09-07.",https://epoch.ai/benchmarks/blueprint-bench-2 (normalized 0.59; Andon's own page 403s to fetches); protocol in arXiv 2509.25229 sec 4 (BlueprintBench 1). A raw composite of 0.547 circulates in secondary write-ups and is UNVERIFIED against the primary.
+2651e385-b6a1-56e7-86ed-2590cf055892,CSQA2,Average Human,0.903,average accuracy of humans,https://arxiv.org/pdf/2201.05320
+2651e385-b6a1-56e7-86ed-2590cf055892,CSQA2,Committee of Average Humans,0.941,majority vote,https://arxiv.org/pdf/2201.05320
+e1457629-add5-5c3e-a5c2-0a296e1e9a99,EBR-bench,Average Human,0.5275,"Mean topline of 13 participants with mixed prior experience, 11.08/21 objectives (90% CI 7.67-14.49), Epoch human baseline study Jul-Aug 2026.",https://epoch.ai/data/ebr_bench/topline_scores.csv
+e1457629-add5-5c3e-a5c2-0a296e1e9a99,EBR-bench,Top Performer,1.0,"Best of 13 human participants (10 playthroughs, best of final two scored; 21/21 objectives reached on the 5th playthrough).",https://epoch.ai/data/ebr_bench/topline_scores.csv
+bbe73a4e-1e37-5698-ae79-cbc09f59358d,FrontierMath Tiers 1-3 v2,Committee of Domain Experts,0.35,solved collectively across all teams (40 exceptional math undergraduates and subject-matter experts) in four and a half hours and with internet access,EpochAI
+682f4533-6ba7-5ef3-9081-3f41ff7ab54c,GPQA Diamond,Domain Expert,0.697,"PhD-level experts recruited by OpenAI, independent of the dataset construction. Preferred to the paper's 81.2% expert-validator figure, which is inflated by selection (Diamond keeps the questions those validators got right); user decision 2026-09-07.",https://openai.com/index/learning-to-reason-with-llms/
+682f4533-6ba7-5ef3-9081-3f41ff7ab54c,GPQA Diamond,Skilled Generalist,0.219,highly skilled and incentivized non-experts who have or are pursuing PhDs in other domains,"https://arxiv.org/abs/2311.12022 — Rein et al. 2023, Table 2 (non-expert acc., Diamond subset = 21.9%)"
+9deefee7-5a11-578f-b504-8795d292f252,GPQA Diamond Biology,Domain Expert,0.831,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+9deefee7-5a11-578f-b504-8795d292f252,GPQA Diamond Biology,Skilled Generalist,0.219,not in-domain PhD,"https://arxiv.org/abs/2311.12022 — Rein et al. 2023, Table 2 (aggregate Diamond non-expert 21.9%; no per-domain figure published), re-reported per-domain in RAND RR-A3797-1"
+78580765-1aab-5a92-ace1-f4c6ac680e0c,GPQA Diamond Chemistry,Domain Expert,0.831,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+78580765-1aab-5a92-ace1-f4c6ac680e0c,GPQA Diamond Chemistry,Skilled Generalist,0.219,not in-domain PhD,"https://arxiv.org/abs/2311.12022 — Rein et al. 2023, Table 2 (aggregate Diamond non-expert 21.9%; no per-domain figure published), re-reported per-domain in RAND RR-A3797-1"
+427d006e-4a22-5966-97bb-4d8d01712700,GPQA Main Biology,Domain Expert,0.667,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+427d006e-4a22-5966-97bb-4d8d01712700,GPQA Main Biology,Skilled Generalist,0.432,not in-domain PhD (remark:RAND appears to have mistakenly reported the Extended-set score as the Main-set score),"https://arxiv.org/abs/2311.12022 — Rein et al. 2023, Table 3 (Extended Biology non-expert = 43.2%); RAND RR-A3797-1 relabeled the Extended value as Main"
+8f8cc8b9-f1e6-5902-9ac8-13a86e4bd747,GPQA Main Chemistry,Domain Expert,0.72,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+8f8cc8b9-f1e6-5902-9ac8-13a86e4bd747,GPQA Main Chemistry,Skilled Generalist,0.314,not in-domain PhD (remark:RAND appears to have mistakenly reported the Extended-set score as the Main-set score),"https://arxiv.org/abs/2311.12022 — Rein et al. 2023, Table 3 (Extended Chemistry non-expert = 31.4%); RAND RR-A3797-1 relabeled the Extended value as Main"
+9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,GSM8K,Skilled Generalist,0.9677,qualified human annotators who have passed a qualification exam with at least a bachelor’sdegree,https://aclanthology.org/2024.acl-long.163.pdf
+3ecbd533-f135-5b46-bf5c-d21ded89b961,GeoBench,Top Performer,0.9,top player,https://geobench.org/
+534366c9-d667-5dcb-9778-e42e12abc813,HellaSwag,Committee of Average Humans,0.956,majority vote of 5 crowd workers (MTurk),https://aclanthology.org/P19-1472.pdf
+c6cec6f2-a484-5b21-9596-7fde61cebfda,LAB-Bench Cloning,Domain Expert,0.6,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+21b0d275-4fae-5a11-8245-350a5d2153b6,LAB-Bench LitQA2,Domain Expert,0.7,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+ecb27e9b-d4d1-5564-b301-e32b44b2ac4a,LAB-Bench Protocol,Domain Expert,0.79,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+c78bf195-f477-5ab0-b096-a2977ceff4a4,LAB-Bench SeqQA,Domain Expert,0.78,In-domain PhD,https://www.rand.org/pubs/research_reports/RRA3797-1.html
+3a8fb029-97d6-5977-902a-41682ddb2ef5,MATH Level 5,Domain Expert,0.9,a three-time IMO gold medalist university student,https://arxiv.org/pdf/2103.03874v1
+3a8fb029-97d6-5977-902a-41682ddb2ef5,MATH Level 5,Skilled Generalist,0.4,a computer science PhD student who does not especially like mathematics,https://arxiv.org/pdf/2103.03874v1
+572cb848-2b60-5b88-a730-597010b153de,MMLU,Average Human,0.345,MTurk,https://arxiv.org/pdf/2009.03300v3
+572cb848-2b60-5b88-a730-597010b153de,MMLU,High School Top Performer,0.898,"The MMLU paper estimates 89.8% from the 95th percentile of takers of the underlying exams, mostly high-school level (AP, SAT, ...): the best students, not domain experts (user decision 2026-09-07).",https://arxiv.org/pdf/2009.03300v3
+64d870fa-e324-5c5a-a234-abb8b2fad313,MMLU Biology,High School Top Performer,0.898,"The MMLU paper estimates 89.8% from the 95th percentile of takers of the underlying exams, mostly high-school level (AP, SAT, ...): the best students, not domain experts (user decision 2026-09-07).",https://www.rand.org/pubs/research_reports/RRA3797-1.html
+a8fd9ad1-db96-57e2-a752-534e7d399429,MMLU Chemistry,High School Top Performer,0.898,"The MMLU paper estimates 89.8% from the 95th percentile of takers of the underlying exams, mostly high-school level (AP, SAT, ...): the best students, not domain experts (user decision 2026-09-07).",https://www.rand.org/pubs/research_reports/RRA3797-1.html
+b9ebbe3a-3aea-5306-a334-d3cf42d1db31,OSWorld,Skilled Generalist,0.724,individuals not familiar with the software,https://arxiv.org/pdf/2404.07972
+cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,High School Qualifier,0.53,average score by high school students from the OTIS program (percentage from number of questions answered),https://web.evanchen.cc/exams/sols-OTIS-Mock-AIME-2025.pdf
+cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,High School Top Performer,0.93,top scorer from the OTIS program (percentage from number of questions answered),https://web.evanchen.cc/exams/sols-OTIS-Mock-AIME-2025.pdf
+362fe089-970b-5a6d-b539-ab9245f63878,OpenBookQA,Average Human,0.92,probability from random human subjects,https://arxiv.org/pdf/1809.02789
+52dbd75e-8f17-5888-a0de-00593c63a0a0,PIQA,Committee of Skilled Generalists,0.949,majority vote of top annotators,https://arxiv.org/pdf/1911.11641
+20485e14-925b-5252-b6c3-148a7a12c629,PRBench,Committee of Domain Experts,0.796,agreement between human experts (same figure for the Finance and Legal boards),https://arxiv.org/pdf/2511.11562v1
+c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,Average Human,0.837,nine non-specialized humans,https://simple-bench.com/
+c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,Top Performer,0.954,Highest human score reported on the official leaderboard.,https://simple-bench.com/
+989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Skilled Generalist,0.944,Grader Going through the test,OpenAI arXiv 2411.04368 §2.2
+f377e523-c1c0-587b-ba01-f5479ba772fa,SuperGLUE,Average Human,0.898,human performance estimates after training phase,https://arxiv.org/pdf/1905.00537
+be2c3adb-c271-55d1-8747-16d672997b80,TriviaQA,Average Human,0.797,human performance level,https://arxiv.org/pdf/1705.03551v2
+94f1bc5b-4120-5601-9b02-8dbbfba29b6e,VPCT,Average Human,1.0,three volunteers,EpochAI
+51129c7e-729d-5eb7-8759-d644d44f24af,Visual Task Assessment (VISTA),Skilled Generalist,0.554,16 full-time employees,https://scale.com/leaderboard/visual_language_understanding
+bfcf9383-ffc8-518e-83f7-18e9ec3154d6,WMDP Biology,Domain Expert,0.605,In-domain PhD (RAND),https://www.rand.org/pubs/research_reports/RRA3797-1.html
+6246759f-70d0-5a8e-b557-6e04e8c5b556,WMDP Chemistry,Domain Expert,0.433,In-domain PhD (RAND),https://www.rand.org/pubs/research_reports/RRA3797-1.html
+b812b198-64a0-5b54-bdd2-018cbce4626b,WinoGrande,Committee of Average Humans,0.94,majority vote of crowd workers (MTurk),https://arxiv.org/pdf/1907.10641

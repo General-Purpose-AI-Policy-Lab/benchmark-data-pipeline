@@ -1,101 +1,101 @@
-benchmark_id,name,category,floor,access
-fdf1630a-376d-5e39-8982-f6f0c5b67e00,APEX Agents,Core AGI Progress,0.0,semi_private
-47fdb81c-5e9e-5808-9bf1-12a1f35871d0,ARC (AI2),Domain Specific Questions,0.25,public
-dc8a87fd-51c7-540a-846c-9ac54cc4d08b,ARC-AGI,Core AGI Progress,0.0,public
-9563b7bc-8266-5b4b-a0b7-402cb5769c63,ARC-AGI-2,Core AGI Progress,0.0,semi_private
-418da89e-df74-5a93-9af2-53c31582ac67,Adversarial NLI,General Reasoning,0.333,public
-2669fd26-63f1-5653-ab32-4e29be15aaa0,Aider Polyglot,Autonomous SWE,0.0,public
-d84f36f3-2df3-5c29-b8d3-e7f40d54a736,AlgoTune,Autonomous SWE,0.0,public
-e9fb5aaa-790b-52b9-92be-0d3fa06dfed8,AudioMultiChallenge,Multimodal Understanding,0.0,public
-c5cb5a8c-1235-531f-abc9-8b9e89615f62,BALROG,General Reasoning,0.0,public
-a2432e5d-5c3f-5996-ada8-c5fd85e788ff,BIG-Bench Hard (BBH),Domain Specific Questions,0.25,public
-251b59e0-2791-5583-8692-95304d4482a0,BioLP-bench,Biology,0.0,public
-e428d515-2356-5142-9902-0a9913675f16,BlueprintBench 2,Multimodal Understanding,0.0,private
-8e71611d-c141-5ab8-a7fe-0c1d7bee6a9f,BoolQ,General Reasoning,0.5,public
-984e051e-fdf4-5b5e-8b51-2b1171d927a0,CAD-Eval,Multimodal Understanding,0.0,public
-2aacbb0a-def0-583f-a099-68b1357391d4,CL-Bench,Domain Specific Questions,0.0,public
-8ae0a34d-e8da-55c4-a5f6-a9c337be8486,CL-Bench Life,Domain Specific Questions,0.0,public
-4bc2a87f-2068-5adf-90fe-043531395e60,CSQA2,General Reasoning,0.5,public
-b2b31a8a-0cf8-502c-99be-ba5635911918,Chess Puzzles,General Reasoning,0.0,private
-a19bbae8-44a2-5722-a505-b9a5d9a98151,CritPt,Domain Specific Questions,0.0,semi_private
-81948e13-e224-55be-aa90-0ef869ccd999,CursorBench,Autonomous SWE,0.0,private
-60a23326-5630-519d-8f3e-6c01df4e4c1a,Cybench,Agentic Computer Use,0.0,public
-38f1d6a2-d6fe-5706-a34c-2d04aafaa6b1,DeepResearchBench,Agentic Computer Use,0.0,public
-4393869a-8452-536b-b603-b8e395763e67,DeepSWE,Autonomous SWE,0.0,semi_private
-79fc5527-eb63-599f-959d-955064526a83,EBR-bench,Agentic Computer Use,0.0,private
-dd0dc35e-1218-5aa9-bdf1-3e9218b31ce0,EnigmaEval,General Reasoning,0.0,semi_private
-b93616a3-3d05-55b2-a2d9-4ebfa6cd39d0,ExploitBench,Agentic Computer Use,0.0,public
-97655dba-de2c-56cc-a146-c87e069458d2,Fiction.LiveBench,Advanced Language and Writing,0.0,private
-fcd1b353-aeac-57d2-9835-3da1c78c1e55,ForecastBench,General Reasoning,0.5,dynamic
-ab781476-8a3b-5cdc-9e02-ae075b7d4b25,FrontierCode,Autonomous SWE,0.0,semi_private
-28a43879-330e-5830-b088-1d6813f2dba3,FrontierMath,High End Math Reasoning,0.0,semi_private
-2f21b410-6e49-5616-bb1c-c6047e0a032f,FrontierMath Tier 4,High End Math Reasoning,0.0,semi_private
-76872f7e-3d75-55ac-943f-c79b9a3a8484,FrontierMath Tier 4 v1,High End Math Reasoning,0.0,semi_private
-9968dd4b-035e-5a4d-b251-fd3f0734e797,FrontierMath v1,High End Math Reasoning,0.0,semi_private
-d1bb6057-d276-5cb5-96cf-13c380ac3fce,GBAEval,Agentic Computer Use,0.0,public
-1e0f7006-3e85-53b2-bd59-d48b33a5e911,GDP.pdf,Core AGI Progress,0.0,public
-f40162d4-8749-50c2-a4ed-1a5093c87d59,GDPval,Core AGI Progress,0.0,semi_private
-c46b2acb-ef0c-5992-bab6-d6b261f5d5bd,GPQA Diamond,Domain Specific Questions,0.25,public
-1ce0f4f1-e59b-51e4-8580-ad80ca1c3e45,GPQA Diamond Biology,Biology,0.25,public
-357cc925-bb1d-56d7-8546-d2ef52efbf9d,GPQA Diamond Chemistry,Chemistry,0.25,public
-f4a7041f-38a2-5e50-89ae-50e5520006fd,GPQA Main Biology,Biology,0.25,public
-fb895314-ee22-542e-b5da-47a1614d6663,GPQA Main Chemistry,Chemistry,0.25,public
-afa612a0-8d57-5867-8c34-602e1343f266,GSM8K,Domain Specific Questions,0.0,public
-8a48c7b3-5b82-5e1d-97a5-445d8e2ea601,GSO-Bench,Autonomous SWE,0.0,public
-4f1864bd-9fb5-5540-9e0a-885370c72133,GeoBench,Multimodal Understanding,0.0,private
-8818565f-5a77-5639-b28b-123b0d9346c3,HellaSwag,General Reasoning,0.25,public
-a48e78fe-22cc-52e9-9668-b4b9005a406f,Humanity's Last Exam,Domain Specific Questions,0.0,semi_private
-68bef0af-c741-5d9e-a433-7a45323fa554,LAB-Bench Cloning,Biology,0.2,semi_private
-6814cd02-2ac3-5936-90e9-3d5d08a3e2f2,LAB-Bench LitQA2,Biology,0.2,semi_private
-21704308-e433-5f1e-b515-704296a42780,LAB-Bench Protocol,Biology,0.2,semi_private
-2cbd9a9f-38ce-52a8-b40d-7222082128c3,LAB-Bench SeqQA,Biology,0.2,semi_private
-41add594-2d13-5c14-9ac7-b54ec760a390,LAMBADA,General Reasoning,0.0,public
-a53a112c-f257-5c34-8637-4ed8779943dc,Lech Mazur Writing,Advanced Language and Writing,0.0,public
-befe9a1f-4d1a-502e-b59d-c893ff71861d,LiveBench,Core AGI Progress,0.0,dynamic
-cc013dfe-e480-59d5-9a95-25531d8590d9,MATH Level 5,High End Math Reasoning,0.0,public
-35aaec0d-e9e5-5515-b774-2907893ab721,MCP Atlas,Agentic Computer Use,0.0,semi_private
-982bc491-1a86-51b4-9456-bad708405a02,METR Time Horizons,Autonomous SWE,0.0,semi_private
-997ae26f-5615-5baa-9e56-d7898e7d72cd,MMLU,Domain Specific Questions,0.25,public
-68aab12e-8830-52b2-8f35-735f24792615,MMLU Biology,Biology,0.25,public
-bf1aed2d-fbdf-5ced-ac38-32cafaba61a8,MMLU Chemistry,Chemistry,0.25,public
-1d848f2d-9f12-5cff-9361-085a2d1bf5ec,MMLU Pro Biology,Biology,0.1,public
-9568a1ed-df97-5fa5-99e8-ba4ab435be2e,MMLU Pro Chemistry,Chemistry,0.1,public
-a36e89ba-e804-5fc4-ab55-c4419a0dd793,MMLU-Pro,Domain Specific Questions,0.1,public
-6bbd8e13-f246-5a5d-a250-37fea7f2944a,MindCube,Multimodal Understanding,0.3235,public
-24ee8c59-13b1-57a3-b55c-32101ca82041,MultiChallenge,Advanced Language and Writing,0.0,public
-2aac5660-d4ea-5ec6-a016-5e4c7033802f,MultiNRC,Advanced Language and Writing,0.0,public
-f69735af-4ef5-5b30-b1da-799e03ad459b,Mystery Game Puzzles,General Reasoning,0.0,private
-8462e68d-05fb-5b8f-9338-7f2fdf319da5,OS World (Screenshot),Agentic Computer Use,0.0,public
-842b4dda-ae25-5df0-877b-99b7e74c21e8,OS World 2,Agentic Computer Use,0.0,semi_private
-5a0a0301-07e7-5bd4-9fe1-575ee31452fd,OTIS Mock AIME 2024-2025,High End Math Reasoning,0.001,semi_private
-044b5292-4d34-53a3-9c51-6a5d98996d18,OpenBookQA,Domain Specific Questions,0.25,public
-353eb0c7-e369-5499-86da-6ee2b222d575,PIQA,General Reasoning,0.5,public
-7fe7424a-cde4-55ce-be4c-f8b664bdba10,PRBench Finance,Domain Specific Questions,0.0,public
-73f31a85-f009-5014-895b-a3305d22ac19,PRBench Legal,Domain Specific Questions,0.0,public
-a80fcb71-27b3-5b14-8dc3-0f3834a9e351,PostTrainBench,Autonomous SWE,0.0,public
-77a865f2-e4d8-5510-b1be-14d1b96b40a4,ProofBench,High End Math Reasoning,0.0,semi_private
-1b71d8cb-801a-50c4-aa37-b0ad69e3feb0,Remote Labor Index,Core AGI Progress,0.0,semi_private
-84bacf31-5737-5950-9d69-525dd2b036ce,SEAL Instruction Following,Advanced Language and Writing,0.0,private
-4827edd9-eaf0-50cb-a796-fd2fb660ba52,SEAL Tool Use (Enterprise),Agentic Computer Use,0.0,public
-9af14a8d-28ce-514b-a676-d5614831dcca,SWE-Bench Pro,Autonomous SWE,0.0,public
-7428f712-c849-5e51-9b09-843efc38f763,SWE-Bench Pro (Private),Autonomous SWE,0.0,private
-b6914eab-9cac-5327-8968-7b0b5272b171,SWE-Bench Verified,Autonomous SWE,0.0,public
-0b1371c9-1d76-588f-9575-850c50850bd6,SciCode,Autonomous SWE,0.0,public
-4ec4b4de-2b1c-59fc-b474-6fa5014240ab,ScienceQA,Domain Specific Questions,0.3983,public
-bf68f973-4321-5d64-88a6-455fd010cf1c,SimpleBench,General Reasoning,0.167,semi_private
-00d75743-f695-5076-9eaa-93d5f7b8a157,SimpleQA Verified,Domain Specific Questions,0.0,public
-394bc531-1244-58d9-b867-1fe264374943,SpatialViz-Bench,Multimodal Understanding,0.2508,public
-46ab579b-c209-5bcc-96dd-a0fab0ea7aaf,SuperGLUE,General Reasoning,0.443,public
-ecf91c63-3a06-5075-b199-fa87ac3cff42,Surface Evolver Bench,Autonomous SWE,0.0,semi_private
-6e9e6338-414c-5e1b-ada3-452a8b2343d7,TerminalBench,Agentic Computer Use,0.0,public
-8402147e-a143-5570-b1c7-afb53bc30861,The Agent Company,Agentic Computer Use,0.0,public
-0c18f65c-e019-5651-b2e0-9467db33e177,TriviaQA,Domain Specific Questions,0.0,public
-e8c69beb-1148-5091-9f22-aadf0a42782b,TutorBench,Advanced Language and Writing,0.0,public
-057fb368-b147-59b7-ae00-272172e77238,VPCT,Multimodal Understanding,0.333,public
-a0759763-d8d1-51fd-b1ab-bc154d96ff23,Video-MME,Multimodal Understanding,0.25,public
-fd7e12f6-0010-5807-a39a-cf4f2adf6574,Visual Task Assessment (VISTA),Multimodal Understanding,0.0,private
-cd15ca4c-3a55-50fd-9a16-fdb589076318,VisualToolBench,Multimodal Understanding,0.0,public
-85cf2104-b655-5a90-9181-251564ce26a0,WMDP Biology,Biology,0.25,public
-c09a566a-6a88-56ad-a66f-0e80ad4a2ea3,WMDP Chemistry,Chemistry,0.25,public
-77b30003-affc-5358-be05-e14bed5bb2b3,WeirdML,Autonomous SWE,0.0,semi_private
-095a77a2-f713-5af2-9292-e4bd6c2ee8ee,WinoGrande,General Reasoning,0.5,public
+benchmark_id,name,category,floor,ceiling,access
+c10f313e-aa7d-5843-a47c-69b21a52da8d,AISI CTF Suites - Apprentice,Agentic Computer Use,0.0,,private
+40e5fe4a-100d-53ad-a0f4-532bcd367a16,AISI CTF Suites - Expert,Agentic Computer Use,0.0,,private
+9f492f35-3dec-5588-9ddd-29db4331c1b9,AISI CTF Suites - Practitioner,Agentic Computer Use,0,,private
+33f864c2-1401-5e5f-aa5b-a79c8beee171,AISI CTF Suites - Technical Non-Expert,Agentic Computer Use,0,,private
+85bafc1f-724c-5f6c-8674-c998b1720f19,AISI Cyber Ranges - Cooling Tower,Agentic Computer Use,0,,private
+9c656601-2948-5ce5-a371-596322374b30,AISI Cyber Ranges - The Last Ones,Agentic Computer Use,0.0,,private
+3f54c22c-02e9-5bac-84ec-9454551a1023,APEX-Agents,Core AGI Progress,0.0,,semi_private
+4e5a6307-247f-5f51-ac4e-aeaa4f34f979,ARC AI2,Domain Specific Questions,0.25,,public
+9170a9aa-dc41-50f4-a90c-5b8bce0c2467,ARC-AGI,Core AGI Progress,0.0,1.0,public
+7a6e13ad-e103-582e-a62b-99d79b81dc75,ARC-AGI-2,Core AGI Progress,0.0,1.0,semi_private
+ecf25073-c379-5472-ab88-b3df79e8aa65,Aider Polyglot,Autonomous SWE,0.0,,public
+7c7f79ee-725b-5fb4-a64a-9137baa63df2,AudioMultiChallenge,Multimodal Understanding,0.0,,public
+a0654732-4438-577a-8abd-3604d53b725c,Balrog,General Reasoning,0.0,,public
+a2af9a81-5fb1-523b-903d-b86e11a99e83,BioLP-bench,Biology,0.0,,public
+c46b5c6e-1933-5584-abcf-9515ed18baa9,BlueprintBench 2,Multimodal Understanding,0.0,,private
+5f7a8239-6b78-56e8-be42-60554a83cfac,CL-bench,General Reasoning,0.0,,public
+882761e6-2b60-562d-9e04-1866076fab8f,CL-bench Life,General Reasoning,0.0,,public
+2651e385-b6a1-56e7-86ed-2590cf055892,CSQA2,General Reasoning,0.5,,public
+f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Agentic Computer Use,0.0,,public
+bcc82df3-ba50-5b07-886a-5445900945d5,CadEval,Multimodal Understanding,0.0,,public
+7053140b-f184-51c7-9e62-f2a80b6bf774,Chess Puzzles,General Reasoning,0.0496,,private
+437fedf2-e8d4-594c-904f-825dfe7e9e7a,CritPt,Domain Specific Questions,0.0,,semi_private
+c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,CyScenarioBench,Agentic Computer Use,0,,private
+fd6abe3f-58db-5b9f-8cdd-ace121e13546,Cybench,Agentic Computer Use,0.0,1.0,public
+12091151-02cf-518c-bcda-4374a1bf0308,CyberGym,Agentic Computer Use,0.0,,public
+6faf1194-62e1-5748-a0b1-79e288b661cb,DTBench,General Reasoning,0.4,,private
+c99400ad-fa21-5da5-9e3f-4295cbd6afef,DeepResearch Bench,Agentic Computer Use,0.0,,public
+9e412716-7c71-52e7-a23f-2c66aca4e8c6,DeepSWE,Autonomous SWE,0.0,,semi_private
+9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,DrugDiscoveryBench,Biology,0,,private
+e1457629-add5-5c3e-a5c2-0a296e1e9a99,EBR-bench,General Reasoning,0.0,1.0,private
+9d19b861-783e-5a88-8168-093700b504fe,EnigmaEval,General Reasoning,0.0,,semi_private
+df6a846e-5c07-59a0-bee6-d44b438b8235,ExploitBench,Agentic Computer Use,0.0,,public
+8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,Fiction.LiveBench,Advanced Language and Writing,0.0,,private
+d80bc08d-49f5-5867-80e2-b07ba03ce16d,FrontierCode,Autonomous SWE,0.0,,semi_private
+01f73b15-9be9-5fde-9b2a-50ff741f4743,FrontierMath Erdos,Mathematics,0,,open_problems
+d4dcbdf2-860d-5814-b065-ef42b4848fa9,FrontierMath Tier 4 v2,Mathematics,0.0,1.0,semi_private
+bbe73a4e-1e37-5698-ae79-cbc09f59358d,FrontierMath Tiers 1-3 v2,Mathematics,0.0,1.0,semi_private
+b0a745aa-cd20-5efb-9f86-070da7847d57,FrontierSWE v2,Autonomous SWE,0,,public
+5a9a1867-e08c-518d-b86b-522ac5fb71a4,GBAEval,Autonomous SWE,0.0,,public
+002296d5-5ab0-56d5-8956-1571ecc1fb2d,GDP.pdf,Domain Specific Questions,0.0,,public
+8a97e2c9-3e8d-5f84-9da4-5d502d664ddd,GDPval,Core AGI Progress,0.0,,semi_private
+682f4533-6ba7-5ef3-9081-3f41ff7ab54c,GPQA Diamond,Domain Specific Questions,0.25,,public
+9deefee7-5a11-578f-b504-8795d292f252,GPQA Diamond Biology,Biology,0.25,,public
+78580765-1aab-5a92-ace1-f4c6ac680e0c,GPQA Diamond Chemistry,Chemistry,0.25,,public
+427d006e-4a22-5966-97bb-4d8d01712700,GPQA Main Biology,Biology,0.25,,public
+8f8cc8b9-f1e6-5902-9ac8-13a86e4bd747,GPQA Main Chemistry,Chemistry,0.25,,public
+9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,GSM8K,Mathematics,0.0,,public
+7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,GSO-Bench,Autonomous SWE,0.0,,public
+3ecbd533-f135-5b46-bf5c-d21ded89b961,GeoBench,Multimodal Understanding,0.0,,private
+18602361-b0c5-5003-8be2-305cdf03b9ca,HLE,Domain Specific Questions,0.048,,semi_private
+534366c9-d667-5dcb-9778-e42e12abc813,HellaSwag,Commonsense QA,0.25,,public
+bd4da3d5-8651-5b55-915f-3dafdc7078b9,InterCode-CTF,Agentic Computer Use,0,,public
+c6cec6f2-a484-5b21-9596-7fde61cebfda,LAB-Bench Cloning,Biology,0.2,,semi_private
+21b0d275-4fae-5a11-8245-350a5d2153b6,LAB-Bench LitQA2,Biology,0.2,,semi_private
+ecb27e9b-d4d1-5564-b301-e32b44b2ac4a,LAB-Bench Protocol,Biology,0.2,,semi_private
+c78bf195-f477-5ab0-b096-a2977ceff4a4,LAB-Bench SeqQA,Biology,0.2,,semi_private
+424eecb6-be3c-5235-bab8-b172c45a9e61,LAMBADA,General Reasoning,0.0,,public
+ba5e3179-81c3-5388-ad9a-15f32e677ecf,LMCA,General Reasoning,0,,private
+78996834-fd04-50cd-abf8-ff2d1165b2e9,Lech Mazur Writing,Advanced Language and Writing,0.0,,public
+3a8fb029-97d6-5977-902a-41682ddb2ef5,MATH Level 5,Mathematics,0.0,,public
+3371c7e1-83ec-5fa4-8361-907b7da1cd4c,MCP Atlas,Agentic Computer Use,0.0,,semi_private
+fe3d622c-b492-5fed-b44d-6653768aabd3,METR Time Horizons,Autonomous SWE,0.05,,semi_private
+572cb848-2b60-5b88-a730-597010b153de,MMLU,Domain Specific Questions,0.25,,public
+64d870fa-e324-5c5a-a234-abb8b2fad313,MMLU Biology,Biology,0.25,,public
+a8fd9ad1-db96-57e2-a752-534e7d399429,MMLU Chemistry,Chemistry,0.25,,public
+b7dc1dfb-6c74-5025-8e06-f2c52e3f1ddd,MMLU Pro Biology,Biology,0.1,,public
+896676b1-e04f-5dad-a5a9-423b55bd5353,MMLU Pro Chemistry,Chemistry,0.1,,public
+f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,MMLU-Pro,Domain Specific Questions,0.1,,public
+2229982b-d7fb-5b45-baab-ee30f496af94,MirrorCode,Autonomous SWE,0,,private
+32fc225b-d9c1-530a-98c8-8177c5ea21d6,MultiChallenge,Advanced Language and Writing,0.0,,public
+2e9865a8-a558-5da3-a6ef-86eec1783e17,MultiNRC,Advanced Language and Writing,0.0,,public
+07cea571-1802-51ec-ab0b-9b7cf0fbd149,Mystery Game Puzzles,General Reasoning,0.0922,,private
+bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,NL2Bash,Agentic Computer Use,0,,public
+8c0e32d8-7d04-527e-97b0-41c4e5260b0e,OEIS Open Lite,Mathematics,0,,open_problems
+b9ebbe3a-3aea-5306-a334-d3cf42d1db31,OSWorld,Agentic Computer Use,0.0,,public
+060ceebd-37df-5852-832b-00bf08be0810,OSWorld 2.0,Agentic Computer Use,0.0,,semi_private
+cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,Mathematics,0.001,,semi_private
+362fe089-970b-5a6d-b539-ab9245f63878,OpenBookQA,Commonsense QA,0.25,,public
+52dbd75e-8f17-5888-a0de-00593c63a0a0,PIQA,Commonsense QA,0.5,,public
+20485e14-925b-5252-b6c3-148a7a12c629,PRBench,Domain Specific Questions,0,,private
+09d827ed-6ae3-5b60-8641-66a733170178,PostTrainBench v1.1,Autonomous SWE,0.0,,public
+612673c9-c8bb-5f0a-b8f9-07f27a325173,ProofBench,Mathematics,0.0,,semi_private
+8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,Remote Labor Index,Core AGI Progress,0.0,,semi_private
+20b11c15-b9b8-553c-8115-d7b33508d624,SEAL Tool Use (Enterprise),Agentic Computer Use,0.0,,public
+3fc71c52-e332-547b-9bc0-2d0f6573f39f,SWE Atlas,Autonomous SWE,0,,private
+c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,General Reasoning,0.167,,semi_private
+989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Domain Specific Questions,0.0,,public
+f377e523-c1c0-587b-ba01-f5479ba772fa,SuperGLUE,General Reasoning,0.443,,public
+ff689821-ffdf-5bd8-b976-65dd53db24d4,Surface Evolver Bench,Autonomous SWE,0.0,,semi_private
+acddb832-1a34-5820-a2d3-05681c5161e3,Terminal Bench 2.0,Agentic Computer Use,0.0,,public
+0d000f4a-0739-550a-a784-c6582ec2a427,The Agent Company,Agentic Computer Use,0.0,,public
+be2c3adb-c271-55d1-8747-16d672997b80,TriviaQA,Domain Specific Questions,0.127,,public
+a89d5362-adf2-5155-b445-8ce4d0a6fe5d,TutorBench,Advanced Language and Writing,0.0,,public
+94f1bc5b-4120-5601-9b02-8dbbfba29b6e,VPCT,Multimodal Understanding,0.333,1.0,public
+51129c7e-729d-5eb7-8759-d644d44f24af,Visual Task Assessment (VISTA),Multimodal Understanding,0.0,,private
+e7b97299-f0e2-581b-a8de-b19d816be80c,VisualToolBench,Multimodal Understanding,0.0,,public
+bfcf9383-ffc8-518e-83f7-18e9ec3154d6,WMDP Biology,Biology,0.25,,public
+6246759f-70d0-5a8e-b557-6e04e8c5b556,WMDP Chemistry,Chemistry,0.25,,public
+ce4b877c-a9d5-595b-a14a-ec9edab40b95,WeirdML v2,Autonomous SWE,0.0,,semi_private
+b812b198-64a0-5b54-bdd2-018cbce4626b,WinoGrande,Commonsense QA,0.5,,public

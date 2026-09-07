@@ -1,0 +1,40 @@
+date,family,org,eci,gap,tier
+2020-06-11,GPT-3 (davinci),,,,"pre-2023 SOTA (hand, no ECI)"
+2021-10-11,Megatron-Turing NLG 530B,,,,"pre-2023 SOTA (hand, no ECI)"
+2021-12-08,Gopher,,,,"pre-2023 SOTA (hand, no ECI)"
+2022-03-29,Chinchilla,,,,"pre-2023 SOTA (hand, no ECI)"
+2022-04-04,PaLM 540B,,,,"pre-2023 SOTA (hand, no ECI)"
+2022-11-28,text-davinci-003,,,,"pre-2023 SOTA (hand, no ECI)"
+2023-03-14,GPT-4,OpenAI,125.88,15.969999999999999,A: new max or within 2 ECI
+2024-01-25,GPT-4 Turbo,OpenAI,127.25,1.3700000000000045,A: new max or within 2 ECI
+2024-02-29,Claude 3 Opus,Anthropic,126.9,-0.3499999999999943,A: new max or within 2 ECI
+2024-05-13,GPT-4o,OpenAI,128.98,1.7299999999999898,A: new max or within 2 ECI
+2024-06-20,Claude 3.5 Sonnet,Anthropic,133.57,1.8199999999999932,A: new max or within 2 ECI
+2024-12-17,o1,OpenAI,141.9,6.060000000000002,A: new max or within 2 ECI
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,-0.710000000000008,A: new max or within 2 ECI
+2025-04-16,o3,OpenAI,146.91,1.6200000000000045,A: new max or within 2 ECI
+2025-05-22,Claude Opus 4,Anthropic,142.7,,B: Claude Opus series (hand)
+2025-06-10,o3-pro,OpenAI,147.46,0.5500000000000114,A: new max or within 2 ECI
+2025-07-09,Grok 4,xAI,146.46,-1.0,A: new max or within 2 ECI
+2025-08-05,Claude Opus 4.1,Anthropic,144.14,,B: Claude Opus series (hand)
+2025-08-07,GPT-5,OpenAI,150.0,2.539999999999992,A: new max or within 2 ECI
+2025-10-07,GPT-5 Pro,OpenAI,150.3,0.30000000000001137,A: new max or within 2 ECI
+2025-11-13,GPT-5.1,OpenAI,149.62,-0.6800000000000068,A: new max or within 2 ECI
+2025-11-19,GPT-5.1 Codex Max,OpenAI,,,C: cyber frontier (hand)
+2025-11-24,Claude Opus 4.5,Anthropic,150.08,,B: Claude Opus series (hand)
+2025-12-18,GPT-5.2 Codex,OpenAI,,,C: cyber frontier (hand)
+2026-02-05,GPT-5.3 Codex,OpenAI,156.4,1.0999999999999943,A: new max or within 2 ECI
+2026-02-05,Claude Opus 4.6,Anthropic,155.25,-1.1500000000000057,A: new max or within 2 ECI
+2026-04-07,Claude Mythos Preview,Anthropic,,,C: cyber frontier (hand)
+2026-04-14,GPT-5.4-Cyber,OpenAI,,,C: cyber frontier (hand)
+2026-04-16,Claude Opus 4.7,Anthropic,156.11,,B: Claude Opus series (hand)
+2026-04-23,GPT-5.5 Pro,OpenAI,162.03,3.140000000000015,A: new max or within 2 ECI
+2026-04-23,GPT-5.5,OpenAI,159.23,,C: cyber frontier (hand)
+2026-05-07,GPT-5.5-Cyber,OpenAI,,,C: cyber frontier (hand)
+2026-05-28,Claude Opus 4.8,Anthropic,158.24,,B: Claude Opus series (hand)
+2026-06-09,Claude Mythos 5,Anthropic,,,C: cyber frontier (hand)
+2026-06-09,Claude Fable 5,Anthropic,162.9,0.8700000000000045,A: new max or within 2 ECI
+2026-07-09,GPT-5.6 Sol,OpenAI,162.03,-0.8700000000000045,A: new max or within 2 ECI
+2026-07-24,Claude Opus 5,Anthropic,162.33,-0.5699999999999932,A: new max or within 2 ECI
+2026-09-01,Claude Fable 5.1,Anthropic,162.88,-0.020000000000010232,A: new max or within 2 ECI
+2026-09-03,GPT-6 Astra,OpenAI,169.23,6.329999999999984,A: new max or within 2 ECI
