@@ -1,0 +1,25 @@
+raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note
+Claude Mythos Preview,claude-mythos-preview,,,,,,"Mythos Preview system card, 35/40 tasks; the April 2026 checkpoint"
+Claude Opus 4.7,claude-opus-4-7,,,,unknown-effort,,"Opus 4.7 system card, 35/40 tasks; effort not stated"
+Claude Opus 4.6,claude-opus-4-6,,,,unknown-effort,,as Epoch: claude-opus-4-6_unknown
+Claude Opus 4.5,claude-opus-4-5,,,2025-11-01,unknown-effort,,as Epoch: claude-opus-4-5-20251101_unknown
+Muse Spark,muse-spark,,,,,,"Muse Spark safety and preparedness report; effort not stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+Claude Sonnet 4.5,claude-sonnet-4-5,,,2025-09-29,unknown-effort,,as Epoch: claude-sonnet-4-5-20250929_unknown (Opus 4.5 system card figure)
+Grok 4,grok-4-0709,,,,,,as Epoch: grok-4-0709
+Claude Opus 4.1,claude-opus-4-1,,,2025-08-05,,,as Epoch
+Grok 4.1 Thinking,grok-4-1,,,,,,as Epoch: grok-4-1
+Claude Opus 4,claude-opus-4,,,2025-05-14,,,as Epoch
+Claude Sonnet 4,claude-sonnet-4,,,2025-05-14,,,as Epoch
+Grok 4 Fast,grok-4-fast,,,,,,as Epoch
+OpenAI o3-mini,o3-mini,medium,,2025-01-31,,,"as Epoch: o3-mini-2025-01-31_medium (HAL run, adjusted -2.5 pts by the site)"
+OpenAI o1-mini,o1-mini,medium,,2024-09-12,,,"as Epoch: o1-mini-2024-09-12_medium (HAL run, adjusted -2.5 pts by the site)"
+GPT-4.5-preview,gpt-4.5-preview,,,2025-02-27,,,as Epoch
+Claude 3.7 Sonnet,claude-3-7-sonnet,,,2025-02-19,,,as Epoch
+GPT-4o,gpt-4o,,,2024-11-20,,,as Epoch: gpt-4o-2024-11-20
+OpenAI o1-preview,o1-preview,,,2024-09-12,,,as Epoch
+Claude 3 Opus,claude-3-opus,,,2024-02-29,,,as Epoch
+Claude 3.5 Sonnet,claude-3-5-sonnet,,,2024-06-20,,,as Epoch
+Mixtral 8x22b Instruct,Mixtral-8x22B-Instruct-v0.1,,,,,,as Epoch
+Gemini 1.5 Pro,gemini-1.5-pro-001-feb24,,,,,,as Epoch (the Cybench paper's 2024 run)
+Llama 3 70b Chat,Meta-Llama-3-70B-Instruct,,,,,,as Epoch
+Llama 3.1 405B Instruct,Llama-3.1-405B-Instruct,,,,,,as Epoch

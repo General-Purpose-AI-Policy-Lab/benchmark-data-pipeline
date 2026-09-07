@@ -1,0 +1,90 @@
+base_model,snapshot,variant,publication_date,source,note
+Llama-4-Maverick-17B-128E-Instruct,,,2025-04-05,https://ai.meta.com/blog/llama-4-multimodal-intelligence/,"Llama 4 announcement, Saturday 2025-04-05. Epoch model_metadata carries both 04-05 and 04-06."
+Qwen2.5-Coder-7B-Instruct,,,2024-09-18,https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/commits/main,"Weights public 2024-09-18 (README and LICENSE added that day; repo created 09-17 UTC without a card; announcement post 09-19 Beijing). Actual release, user decision 2026-09-07."
+Qwen3-30B-A3B,,,2025-04-29,https://qwenlm.github.io/blog/qwen3/,Qwen3 announcement dated 2025-04-29 (Beijing; evening of 04-28 in the US). Developer's local date.
+Qwen3-32B,,,2025-04-29,https://qwenlm.github.io/blog/qwen3/,Qwen3 announcement dated 2025-04-29 (Beijing; evening of 04-28 in the US). Developer's local date.
+qwen3-235b-a22b,,,2025-04-29,https://qwenlm.github.io/blog/qwen3/,Qwen3 announcement dated 2025-04-29 (Beijing; evening of 04-28 in the US). Developer's local date.
+qwen3-8b,,,2025-04-29,https://qwenlm.github.io/blog/qwen3/,Same Qwen3 release; Epoch's column dated this size 04-28 and its siblings 04-29.
+Qwen3-235B-A22B-Instruct-2507,,,2025-07-21,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,Instruct-2507 published 2025-07-21; Epoch's 07-25 is the Thinking-2507 date.
+deepseek-r1-0528-qwen3-8b,,,2025-05-29,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B,"Distilled model published 2025-05-29, one day after DeepSeek-R1-0528 (05-28)."
+gemini-1.0-pro-001,,,2023-12-13,https://ai.google.dev/gemini-api/docs/changelog,gemini-pro opened to developers 2023-12-13 (Gemini 1.0 announced 12-06).
+gemini-1.5-pro-001,,,2024-05-14,https://ai.google.dev/gemini-api/docs/changelog,Snapshot 001 rolled out at Google I/O 2024-05-14; GA on the Gemini API 05-23 and on Vertex 05-24. The February preview is gemini-1.5-pro-001-feb24.
+gemini-2.5-pro,,,2025-06-17,https://developers.googleblog.com/en/gemini-2-5-thinking-model-updates/,GA 2025-06-17. The 06-05 preview is its own model in the database (gemini-2.5-pro-preview-06-05).
+gemini-3-pro-preview,,,2025-11-18,https://blog.google/products/gemini/gemini-3/,Announced and available 2025-11-18.
+gpt-5.1,2025-11-13,,2025-11-12,https://openai.com/index/gpt-5-1/,GPT-5.1 reached ChatGPT on 2025-11-12; the 2025-11-13 API snapshot is the same model. Public availability wins over API availability (user decision 2026-09-07).
+gpt-5.2-codex,,,2025-12-18,https://openai.com/index/introducing-gpt-5-2-codex/,Released 2025-12-18 (GPT-5.2 itself: 12-11).
+gpt-5.6-sol,,,2026-07-09,https://openai.com/index/gpt-5-6/,"Public release 2026-07-09. 06-26 was a preview for a small group of trusted partners, not a public release."
+o1,2024-12-17,,2024-12-05,https://openai.com/index/openai-o1-and-new-tools-for-developers/,o1 reached ChatGPT on 2024-12-05; the 2024-12-17 API snapshot is a post-trained update of it. Public availability wins over API availability (user decision 2026-09-07; RAND Table C.1 uses 12-05 too).
+claude-3-7-sonnet,2025-02-19,,2025-02-24,https://www.anthropic.com/news/claude-3-7-sonnet,"Announced 2025-02-24; 20250219 is the snapshot id, not a release date."
+mistral-large-2402,,,2024-02-26,https://mistral.ai/news/mistral-large,Announced 2024-02-26.
+glm-4.5,,,2025-07-28,https://docs.z.ai/release-notes/new-released,"GLM-4.5 and GLM-4.5-Air released together 2025-07-28 (PR Newswire the same day). Epoch: 08-03, 08-05 for the thinking variant."
+GLM-4.5-Air,,,2025-07-28,https://docs.z.ai/release-notes/new-released,Released with GLM-4.5 on 2025-07-28. Epoch: 07-20.
+gemma-2-27b,,,2024-06-27,https://blog.google/technology/developers/google-gemma-2/,Gemma 2 released 2024-06-27 (undated by Epoch's column; model_metadata 06-24).
+gemma-2-27b-it,,,2024-06-27,https://blog.google/technology/developers/google-gemma-2/,Gemma 2 released 2024-06-27. Epoch: 06-24.
+gemma-2-9b,,,2024-06-27,https://blog.google/technology/developers/google-gemma-2/,Gemma 2 released 2024-06-27 (undated by Epoch).
+gemma-2-9b-it,,,2024-06-27,https://blog.google/technology/developers/google-gemma-2/,Gemma 2 released 2024-06-27. Epoch: 06-24.
+grok-4-1-fast-reasoning,,,2025-11-19,https://docs.x.ai/developers/release-notes,API release 2025-11-19 (Grok 4.1 itself: 11-17).
+grok-4-1-fast-non-reasoning,,,2025-11-19,https://docs.x.ai/developers/release-notes,API release 2025-11-19 (Grok 4.1 itself: 11-17).
+qwen2.5-max,,,2025-01-28,https://qwenlm.github.io/blog/qwen2.5-max/,Announcement 2025-01-28; the API snapshot is named qwen-max-2025-01-25.
+Qwen-14B,,,2023-09-25,https://github.com/QwenLM/Qwen,"README news: 2023.9.25, Qwen-14B and Qwen-14B-Chat released on ModelScope and Hugging Face. Epoch: 09-28."
+Qwen-14B-Chat,,,2023-09-25,https://github.com/QwenLM/Qwen,"README news: 2023.9.25, Qwen-14B and Qwen-14B-Chat released on ModelScope and Hugging Face. Epoch: 09-24."
+Qwen2-VL-72B-Instruct,,,2024-08-29,https://qwenlm.github.io/blog/qwen2-vl/,Announced 2024-08-29 with the 72B model served through the API; weights published 2024-09-17/18.
+Yi-34B-Chat,,,2023-11-23,https://huggingface.co/01-ai/Yi-34B-Chat,01.AI news: chat models opened to the public 2023-11-23 (base Yi-34B: 11-02). Epoch: 11-22 / 11-02.
+mimo-v2-flash,,,2025-12-16,https://mimo.mi.com/docs/en-US/updates/model,Xiaomi release notes.
+mimo-v2-pro,,,2026-03-18,https://mimo.mi.com/docs/en-US/updates/model,Xiaomi release notes (undated by Epoch).
+mimo-v2.5,,,2026-04-23,https://mimo.mi.com/docs/en-US/updates/model,Xiaomi release notes: 2026-04-23 (MX had 04-22).
+mimo-v2.5-pro,,,2026-04-23,https://mimo.mi.com/docs/en-US/updates/model,Xiaomi release notes: 2026-04-23 (MX had 04-22).
+mercury-2,,,2026-02-24,https://www.inceptionlabs.ai/blog,Announcement post 2026-02-24. Epoch: 02-20.
+Phi-4-multimodal-instruct,,,2025-02-26,https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/,Released 2025-02-26 (MBF's 02-01 was a placeholder).
+ada,,,2020-06-11,https://openai.com/index/openai-api/,OpenAI API beta 2020-06-11: first public availability of the engine (user decision 2026-09-07). Scores come from Table D.1 of the GPT-3 paper (05-28). Epoch model_metadata: 06-22.
+curie,,,2020-06-11,https://openai.com/index/openai-api/,OpenAI API beta 2020-06-11: first public availability of the engine (user decision 2026-09-07). Scores come from Table D.1 of the GPT-3 paper (05-28). Epoch model_metadata: 06-22.
+davinci,,,2020-06-11,https://openai.com/index/openai-api/,"OpenAI API beta 2020-06-11: first public availability of the engine (user decision 2026-09-07), aligned with ada and curie. Scores come from Table D.1 of the GPT-3 paper (05-28); Epoch and MBF date it by the paper."
+Qwen2.5-Coder-0.5B,,,2024-11-12,https://qwenlm.github.io/blog/qwen2.5-coder-family/,"Second Qwen2.5-Coder release, 2024-11-12 (Beijing; 11-11 US): sizes 0.5B / 3B / 14B / 32B and their Instruct versions. Epoch dated the base sizes 09-18 (repos did not exist yet) and the Instruct ones by repo creation (11-06) or later (11-21)."
+Qwen2.5-Coder-3B,,,2024-11-12,https://qwenlm.github.io/blog/qwen2.5-coder-family/,"Second Qwen2.5-Coder release, 2024-11-12 (Beijing; 11-11 US): sizes 0.5B / 3B / 14B / 32B and their Instruct versions. Epoch dated the base sizes 09-18 (repos did not exist yet) and the Instruct ones by repo creation (11-06) or later (11-21)."
+Qwen2.5-Coder-14B,,,2024-11-12,https://qwenlm.github.io/blog/qwen2.5-coder-family/,"Second Qwen2.5-Coder release, 2024-11-12 (Beijing; 11-11 US): sizes 0.5B / 3B / 14B / 32B and their Instruct versions. Epoch dated the base sizes 09-18 (repos did not exist yet) and the Instruct ones by repo creation (11-06) or later (11-21)."
+Qwen2.5-Coder-32B,,,2024-11-12,https://qwenlm.github.io/blog/qwen2.5-coder-family/,"Second Qwen2.5-Coder release, 2024-11-12 (Beijing; 11-11 US): sizes 0.5B / 3B / 14B / 32B and their Instruct versions. Epoch dated the base sizes 09-18 (repos did not exist yet) and the Instruct ones by repo creation (11-06) or later (11-21)."
+Qwen2.5-Coder-3B-Instruct,,,2024-11-12,https://qwenlm.github.io/blog/qwen2.5-coder-family/,"Second Qwen2.5-Coder release, 2024-11-12 (Beijing; 11-11 US): sizes 0.5B / 3B / 14B / 32B and their Instruct versions. Epoch dated the base sizes 09-18 (repos did not exist yet) and the Instruct ones by repo creation (11-06) or later (11-21)."
+Qwen2.5-Coder-14B-Instruct,,,2024-11-12,https://qwenlm.github.io/blog/qwen2.5-coder-family/,"Second Qwen2.5-Coder release, 2024-11-12 (Beijing; 11-11 US): sizes 0.5B / 3B / 14B / 32B and their Instruct versions. Epoch dated the base sizes 09-18 (repos did not exist yet) and the Instruct ones by repo creation (11-06) or later (11-21)."
+Qwen2.5-Coder-32B-Instruct,,,2024-11-12,https://qwenlm.github.io/blog/qwen2.5-coder-family/,"Second Qwen2.5-Coder release, 2024-11-12 (Beijing; 11-11 US): sizes 0.5B / 3B / 14B / 32B and their Instruct versions. Epoch dated the base sizes 09-18 (repos did not exist yet) and the Instruct ones by repo creation (11-06) or later (11-21)."
+claude-instant-1.1,,,2023-05-11,https://www.anthropic.com/news/100k-context-windows,"Revision of Claude Instant shipped with the 100K context launch on 2023-05-11: Poe announced the upgrade to v1.1 that evening (LinkedIn activity 7062522811927449600) and the first GitHub commits naming claude-instant-v1.1 date from 05-11/12. Not the 2023-03-14 model, which is claude-instant-1.0 (listed separately in Anthropic's deprecation table). Epoch model_metadata: 08-09 (Instant 1.2's date); MX: 07-08."
+gpt-5-pro,2025-10-06,,2025-08-07,https://openai.com/index/introducing-gpt-5/,GPT-5 Pro reached ChatGPT Pro on 2025-08-07; the API snapshot of DevDay (2025-10-06) is presented as the same model. Public availability wins over API availability (user decision 2026-09-07).
+grok-2,,,2024-08-13,https://x.ai/news/grok-2,Grok-2 beta released on X on 2024-08-13 (RAND Table C.1: grok2-beta). Distinct from grok-2-1212.
+gemini-2.0-flash-thinking-exp-1219,,,2024-12-19,https://ai.google.dev/gemini-api/docs/changelog,Gemini 2.0 Flash Thinking Mode public preview 2024-12-19; the 01-21 update is its own model.
+davinci-002,,,2020-06-11,https://openai.com/index/openai-api/,"METR's GPT-3 stand-in in the Time Horizons series (Epoch dates it as GPT-3 175B); aligned with davinci on the API beta date, user decision 2026-09-07. 2022-03-15 (MBF, MX) is text-davinci-002's date and the actual davinci-002 base model shipped in August 2023."
+ChatGPT agent,,,2025-07-17,https://openai.com/index/introducing-chatgpt-agent/,"Launched 2025-07-17 (Pro, Plus, Team rollout from 07-17/18)."
+Kimi-Audio-7B-Instruct,,,2025-04-25,https://github.com/MoonshotAI/Kimi-Audio,Weights and code released 2025-04-25.
+LFM2-Audio-1.5B,,,2025-09-30,https://www.liquid.ai/blog/lfm2-audio-an-end-to-end-audio-foundation-model,"Liquid AI announcement 2025-09-30 (press coverage 10-01; HF repo created 08-28, private)."
+Llama-3.1-405B-Instruct,,Hermes 3,2024-08-15,https://x.com/NousResearch/status/1824131520375951454,Nous Research announced Hermes 3 (8B/70B/405B) on 2024-08-15 (tweet 17:10 UTC). HF repo created 08-13 (RAND Table C.1 uses 08-13).
+Manus 1.0,,,2025-03-06,https://en.wikipedia.org/wiki/Manus_(AI_agent),Manus launched (invitation-only preview) 2025-03-06.
+Manus 1.5,,,2025-10-16,https://manus.im/blog/manus-1.5-release,Announcement post dated Thursday 2025-10-16.
+Manus 1.6,,,2025-12-15,https://manus.im/blog/manus-max-release,Manus 1.6 and 1.6 Max released 2025-12-15 (announcement tweet 14:33 UTC).
+MiMo-Audio-7B-Instruct,,,2025-09-19,https://github.com/XiaomiMiMo/MiMo-Audio,Open-sourced 2025-09-19 (HF repo created 09-18).
+Qwen2.5-Omni-7B,,,2025-03-27,https://qwenlm.github.io/blog/qwen2.5-omni/,Released 2025-03-27.
+Qwen3-Omni-30B-A3B-Instruct,,,2025-09-22,https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct,Released 2025-09-22.
+T5-Small,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and checkpoints released 2019-10-23 (Epoch dates T5-3B / 11B the same day)."
+T5-Base,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and checkpoints released 2019-10-23 (Epoch dates T5-3B / 11B the same day)."
+T5-Large,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and checkpoints released 2019-10-23 (Epoch dates T5-3B / 11B the same day)."
+Voxtral-Small-24B-2507,,,2025-07-15,https://mistral.ai/news/voxtral,Voxtral announced and weights released 2025-07-15.
+gemini-2.5-flash,2025-04,,2025-04-17,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-04-17 (Scale board label 'April 2025').
+gemini-2.5-flash,2025-05,,2025-05-20,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-05-20 (Scale board label 'Preview (May 2025)').
+gemini-3.1-flash-lite-preview,,,2026-03-03,https://ai.google.dev/gemini-api/docs/changelog,Gemini API changelog 2026-03-03.
+gemini-3.1-flash-live-preview,,,2026-03-26,https://ai.google.dev/gemini-api/docs/changelog,Gemini API changelog 2026-03-26.
+gemma-3n-E4B-it,,,2025-06-26,https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/,Gemma 3n full release 2025-06-26 (preview 05-20).
+glm-4.7-flash,,,2026-01-19,https://docs.z.ai/release-notes/new-released,Released 2026-01-19.
+gpt-4o-audio-preview,2025-06-03,,2025-06-03,https://platform.openai.com/docs/models/gpt-4o-audio-preview,Snapshot gpt-4o-audio-preview-2025-06-03 (API-only model).
+gpt-4o-mini-audio-preview,2024-12-17,,2024-12-17,https://platform.openai.com/docs/models/gpt-4o-mini-audio-preview,Snapshot gpt-4o-mini-audio-preview-2024-12-17 (API-only model).
+gpt-realtime,2025-08-28,,2025-08-28,https://openai.com/index/introducing-gpt-realtime/,gpt-realtime released 2025-08-28 (snapshot of the same day).
+gpt-realtime-mini,2025-12-15,,2025-12-15,https://x.com/juberti/status/2000690180957855984,"Snapshot gpt-realtime-mini-2025-12-15, announced that day."
+gpt-realtime-1.5,,,2026-02-23,https://news.ycombinator.com/item?id=47129942,"Released 2026-02-23 (TestingCatalog 19:44 UTC, Hacker News thread)."
+gpt-realtime-2,,,2026-05-07,https://vercel.com/ai-gateway/models/gpt-realtime-2,Released 2026-05-07.
+granite-4.0-h-small,,,2025-10-02,https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models,Granite 4.0 launch 2025-10-02 (Epoch dates granite-4.0-micro the same day).
+grok-4-fast-reasoning,,,2025-09-19,https://x.ai/news/grok-4-fast,Grok 4 Fast released 2025-09-19 (Epoch model_metadata: grok-4-fast).
+grok-4.5-0708,,,2026-07-08,https://x.ai/news,Grok 4.5 released on the xAI API 2026-07-08 (Epoch model_metadata: grok-4.5_*).
+nova-premier,,,2025-04-30,https://aws.amazon.com/blogs/aws/amazon-nova-premier-our-most-capable-model-for-complex-tasks-and-teacher-for-model-distillation/,Amazon Nova Premier released 2025-04-30.
+open-mixtral-8x22b-2404,,,2024-04-17,https://mistral.ai/news/mixtral-8x22b,Mixtral 8x22B released 2024-04-17 (Epoch model_metadata: open-mixtral-8x22b).
+Llama-3.1-405B-Instruct,,Bio Llama,2024-10-01,https://www.rand.org/pubs/research_reports/RRA3797-1.html,"Never released. Fine-tuned by Palisade Research for RAND in fall 2024 (RR-A3797-1, ch. 2); approximate date, user decision 2026-09-07."
+Llama-3.1-405B-Instruct,,Unsafety Llama,2024-10-01,https://www.rand.org/pubs/research_reports/RRA3797-1.html,"Never released. Fine-tuned by Palisade Research for RAND in fall 2024 (RR-A3797-1, ch. 2); approximate date, user decision 2026-09-07."
+Switch-Base,,,2021-01-11,https://arxiv.org/abs/2101.03961,"Switch Transformers paper (SuperGLUE results) 2021-01-11; weights only reached Hugging Face in 2022-10/11. Academic paper: results date, user decision 2026-09-07."
+Switch-Large,,,2021-01-11,https://arxiv.org/abs/2101.03961,"Switch Transformers paper (SuperGLUE results) 2021-01-11; weights only reached Hugging Face in 2022-10/11. Academic paper: results date, user decision 2026-09-07."
+gemini-2.5-flash-native-audio-preview-12-2025,,,2025-12-12,https://ai.google.dev/gemini-api/docs/changelog,Gemini API changelog 2025-12-12 (Google's blog announced the update earlier that month); user decision 2026-09-07.
+claude-mythos-preview,,,2026-04-07,https://en.wikipedia.org/wiki/Claude_Mythos,Claude Mythos Preview announced 2026-04-07 (invitation-only; same exception as the early checkpoint).

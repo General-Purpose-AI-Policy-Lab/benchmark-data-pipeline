@@ -1,0 +1,34 @@
+raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note
+chutes/Llama-4-Maverick-17B-128E-Instruct,Llama-4-Maverick-17B-128E-Instruct,,,,,,defrag: serving-provider prefix
+chutes/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,,,,,,defrag: serving-provider prefix
+chutes/Qwen3-Next-80B-A3B-Instruct,Qwen3-Next-80B-A3B-Instruct,,,,,,defrag: serving-provider prefix (harness pair; Fiction.LiveBench conflict resolved by dedup=max -> 0.625)
+deepinfra/Qwen3-Next-80B-A3B-Instruct,Qwen3-Next-80B-A3B-Instruct,,,,,,defrag: serving-provider prefix (harness pair; Fiction.LiveBench conflict resolved by dedup=max -> 0.625)
+deepseek/deepseek-v3.2,deepseek-v3.2,,,,,,"defrag: serving-provider prefix. Dec-2025 V3.2, distinct from the Sept V3.2-Exp"
+fireworks/deepseek-v3p2,deepseek-v3.2,,,,,,"defrag: serving-provider prefix + p-spelling. Was landing on the non-canonical deepseek-v3p2, splitting the Dec-2025 V3.2 across two test-takers"
+fireworks/Kimi-K2-Instruct-0905,Kimi-K2-Instruct-0905,,,,,,defrag: serving-provider prefix
+fireworks/kimi-k2p5,kimi-k2.5,,,,,,"defrag: serving-provider prefix + p-spelling; map is single-pass so this points at the final id, not at kimi-k2p5"
+gemini-2.5-flash-preview-04-17 (16K thinking),gemini-2.5-flash-preview-04-17,,16000,,thinking,,budget encodé en parenthèses
+gemini-2.5-flash-preview-04-17 (24K thinking),gemini-2.5-flash-preview-04-17,,24000,,thinking,,budget encodé en parenthèses
+gemini-2.5-flash-preview-05-20_23K,gemini-2.5-flash-preview-05-20,,24000,,,,Epoch id says 23K but its own Name says Thinking 24K and the budget is 24576 tokens = 24K; 23K exists in no Gemini config
+gemini-3.5-flash-lite_medium,gemini-3.5-flash-lite,medium,,,,,
+gemini-3.6-flash_medium,gemini-3.6-flash,medium,,,,,
+InternVL2_5-78B,InternVL2_5-78B,,,,,,base slug contient _
+MiniCPM-o-2_6,MiniCPM-o-2_6,,,,,,base slug contient _
+MiniCPM-V-2_6,MiniCPM-V-2_6,,,,,,base slug contient _
+moonshotai/Kimi-K2-Thinking,kimi-k2-thinking,,,,,,defrag: serving-provider prefix + case
+open_llama_7b,open_llama_7b,,,,,,base slug contient _
+openai/gpt-oss-120b_high,gpt-oss-120b,high,,,,,defrag: serving-provider prefix
+phi-1_5,phi-1_5,,,,,,base slug contient _
+Qwen-1_8B,Qwen-1_8B,,,,,,base slug contient _
+Qwen/Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,,,,,,defrag: serving-provider prefix
+qwen/qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,,,,,,defrag: serving-provider prefix + case
+Qwen3-235B-A22B,qwen3-235b-a22b,,,,,,defrag: case-only duplicate
+QwQ-32B (16K thinking),QwQ-32B,,16000,,thinking,,budget encodé en parenthèses
+video_chat2_mistral,video_chat2_mistral,,,,,,base slug contient _
+VideoChat-Flash-Qwen2-7B_res448,VideoChat-Flash-Qwen2-7B_res448,,,,,,base slug contient _
+zai-org/GLM-4.6,glm-4.6,,,,,,defrag: serving-provider prefix + case
+zai-org/GLM-4.7,glm-4.7,,,,,,defrag: serving-provider prefix + case
+zai-org/glm-4.7,glm-4.7,,,,,,defrag: serving-provider prefix
+parasail-qwen3-235b-a22b-instruct-2507,Qwen3-235B-A22B-Instruct-2507,,,,,Parasail,Fiction.LiveBench run served by Parasail; the model is Qwen3-235B-A22B-Instruct-2507. Decision 2026-09-07
+Llama-4-Scout-17B-16E Instruct,Llama-4-Scout-17B-16E-Instruct,,,,,,"Epoch spelling with a space (Fiction.LiveBench, capabilities index); same model. Decision 2026-09-07"
+chutes/Llama-4-Scout-17B-16E Instruct,Llama-4-Scout-17B-16E-Instruct,,,,,,Epoch spelling with a space behind a serving-provider prefix; same model. Decision 2026-09-07

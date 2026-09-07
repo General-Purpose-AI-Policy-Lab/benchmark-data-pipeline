@@ -1,0 +1,42 @@
+raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note
+Amazon Nova 1.0 Lite,amazon.nova-lite-v1:0,,,,,,RAND name; exact Epoch match
+Amazon Nova 1.0 Micro,amazon.nova-micro-v1:0,,,,,,RAND name; exact Epoch match
+Amazon Nova 1.0 Pro,amazon.nova-pro-v1:0,,,,,,RAND name; exact Epoch match
+Claude 3.0 Haiku,claude-3-haiku,,,2024-03-07,,,RAND name; sole Claude-3 Haiku release
+Claude 3.0 Opus,claude-3-opus,,,2024-02-29,,,RAND name; sole Claude-3 Opus release
+Claude 3.0 Sonnet,claude-3-sonnet,,,2024-02-29,,,RAND name; sole Claude-3 Sonnet release
+Claude 3.5 Sonnet,claude-3-5-sonnet,,,2024-06-20,,,RAND 'V1' = first 3.5 Sonnet release
+Claude 3.5 Sonnet V2,claude-3-5-sonnet,,,2024-10-22,,,RAND 'V2' = Oct 2024 refresh
+Claude 3.7 Sonnet V1,claude-3-7-sonnet,,,2025-02-19,,,RAND name; base (no reasoning budget)
+Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet,,16000,2025-02-19,,,16K reasoning budget
+DeepSeek R1,DeepSeek-R1,,,,,,RAND name; base R1 release
+DeepSeek V3,DeepSeek-V3,,,,,,RAND name; base V3 release
+Gemini 1.0 Pro,gemini-1.0-pro-001,,,,,,RAND name; exact
+Gemini 1.5,gemini-1.5-flash-001,,,,,,"RAND Table C.1 lists gemini-1.5-pro and gemini-1.5-flash; the CSV's own 'gemini-1.5-flash' row is empty and 'Gemini 1.5' carries the Flash scores (user, 2026-09-07). First 1.5 Flash release"
+Gemini 1.5 Pro,gemini-1.5-pro-001,,,,,,RAND name; first 1.5 Pro release
+gemini-1.5-flash,gemini-1.5-flash-001,,,,,,first 1.5 Flash release
+GPT 4,gpt-4-0613,,,,,,"not in RAND Table C.1; evaluated through the API in 2024-25, where the gpt-4 alias resolves to the 0613 snapshot"
+GPT 4 Turbo,gpt-4-turbo,,,2024-04-09,,,RAND name; sole dated Turbo release
+GPT 4.5 Preview,gpt-4.5-preview,,,2025-02-27,,,RAND name; exact match
+GPT 4o,gpt-4o,,,2024-05-13,,,RAND Table C.1: gpt-4o-2024-05-13
+gpt-3.5-turbo-0125,gpt-3.5-turbo-0125,,,,,,REVIEW: à valider
+Grok 2.0 Beta,grok-2,,,,,,"RAND Table C.1: grok2-beta, release 2024-08-13 (xAI Grok-2 beta). Not grok-2-1212, the December update; own identity"
+Llama 3 70b,Meta-Llama-3-70B-Instruct,,,,,,QA-bench eval -> Instruct variant
+Llama 3 8b,Meta-Llama-3-8B-Instruct,,,,,,QA-bench eval -> Instruct
+Llama 3.1 405b,Llama-3.1-405B-Instruct,,,,,,QA-bench eval -> Instruct
+Llama 3.1 405b (Bio Llama),Llama-3.1-405B-Instruct,,,,Bio Llama,,"RAND biology fine-tune of Llama 3.1 405B; kept as a distinct variant (validated 2026-09-04): within 0.13 of the base model on every RAND benchmark, mean -0.016"
+Llama 3.1 405b (Hermes 3),Llama-3.1-405B-Instruct,,,,Hermes 3,,"NousResearch post-training of Llama 3.1 405B; kept as a distinct variant (validated 2026-09-04): within 0.13 of the base model on every RAND benchmark, mean -0.016"
+Llama 3.1 70b,Llama-3.1-70B-Instruct,,,,,,QA-bench eval -> Instruct
+Llama 3.1 8b,Llama-3.1-8B-Instruct,,,,,,QA-bench eval -> Instruct
+Llama 4 Maverick,Llama-4-Maverick-17B-128E-Instruct,,,,,,RAND name; exact match
+Llama 4 Scout,Llama-4-Scout-17B-16E-Instruct,,,,,,RAND name; exact match
+Mistral 7b Instruct,Mistral-7B-Instruct-v0.1,,,,,,"RAND Table C.1: mistral-7b-instruct, release 2023-09-27 = v0.1"
+Mistral Large 2402,mistral-large-2402,,,,,,RAND name; exact
+Mistral Large 2407,mistral-large-2407,,,,,,RAND name; exact
+Mixtral 8x7b,Mixtral-8x7B-Instruct-v0.1,,,,,,Instruct variant
+o1,o1,medium,,2024-12-17,,,"RAND Table C.1: o1-2024-12-17, default reasoning effort = medium"
+o1 Preview,o1-preview,,,2024-09-12,,,RAND name; exact
+o3,o3,medium,,2025-04-16,,,RAND generic 'o3' -> default reasoning effort = medium
+o3 Mini,o3-mini,medium,,2025-01-31,,,RAND generic -> default reasoning effort = medium
+o4 Mini,o4-mini,medium,,2025-04-16,,,RAND generic -> default reasoning effort = medium
+Unsafety Llama,Llama-3.1-405B-Instruct,,,,Unsafety Llama,,"uncensored fine-tune of Llama 3.1 405B; kept as a distinct variant (decision of 2026-09-04, was a DROP): scores run 0.05 below the base model on average, no outlier"

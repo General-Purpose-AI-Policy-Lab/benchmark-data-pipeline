@@ -1,0 +1,577 @@
+base_model,organization,country
+ada,OpenAI,US
+amazon.nova-lite-v1:0,Amazon,US
+amazon.nova-micro-v1:0,Amazon,US
+amazon.nova-pro-v1:0,Amazon,US
+Aria,,
+babbage,OpenAI,US
+Baichuan-13B-Base,Baichuan,CN
+Baichuan-2-13B-Base,Baichuan,CN
+Baichuan-2-7B-Base,Baichuan,CN
+Baichuan-7B,Baichuan,CN
+Baichuan2-13B-Chat,Baichuan,CN
+blip2-opt-2.7b,Salesforce Research,US
+bloom,"Hugging Face,BigScience","US,FR"
+ByteVideoLLM-14B,,
+c4ai-command-a-03-2025,Cohere,CA
+c4ai-command-r-08-2024,Cohere,CA
+c4ai-command-r-plus-08-2024,"Cohere,Cohere Labs (formerly Cohere for AI)",CA
+Cerebras-GPT-13B,Cerebras Systems,US
+Chat-Uni-Vi-7B-v1.5 + 100k SG-WV,,
+Chat-UniVi-7B-v1.5,,
+chatglm2-6b,Z.ai (Zhipu AI),CN
+ChatGPT agent,OpenAI,US
+chatgpt-4o-01-29-2025,OpenAI,US
+chatgpt-4o-03-27-2025,OpenAI,US
+Chinchilla (70B),Google DeepMind,GB
+claude-1.3,Anthropic,US
+claude-2.0,Anthropic,US
+claude-2.1,Anthropic,US
+claude-3-5-haiku,Anthropic,US
+claude-3-5-sonnet,Anthropic,US
+claude-3-7-sonnet,Anthropic,US
+claude-3-haiku,Anthropic,US
+claude-3-opus,Anthropic,US
+claude-3-sonnet,Anthropic,US
+claude-fable-5,Anthropic,US
+claude-haiku-4-5,Anthropic,US
+claude-instant-1.1,Anthropic,US
+claude-instant-1.2,Anthropic,US
+claude-mythos-5,Anthropic,US
+claude-mythos-preview,Anthropic,US
+claude-mythos-preview-early,Anthropic,US
+claude-opus-4,Anthropic,US
+claude-opus-4-1,Anthropic,US
+claude-opus-4-5,Anthropic,US
+claude-opus-4-6,Anthropic,US
+claude-opus-4-7,Anthropic,US
+claude-opus-4-8,Anthropic,US
+claude-opus-5,Anthropic,US
+claude-sonnet-4,Anthropic,US
+claude-sonnet-4-5,Anthropic,US
+claude-sonnet-4-6,Anthropic,US
+claude-sonnet-5,Anthropic,US
+code-davinci-002,OpenAI,US
+CodeQwen1.5-7B,Alibaba,CN
+codestral-2501,Mistral AI,FR
+codestral-2508,Mistral AI,FR
+codex-mini,OpenAI,US
+cogito-671b-v2.1,Deep Cogito,
+command-a-plus-05-2026,"Cohere,Cohere Labs (formerly Cohere for AI)",CA
+Composer 2.5,Cursor,US
+computer-use-preview,OpenAI,US
+curie,OpenAI,US
+davinci,OpenAI,US
+davinci-002,OpenAI,US
+dbrx-instruct,Databricks,US
+deepseek-chat,DeepSeek,CN
+deepseek-coder-1.3b-base,"DeepSeek,Peking University",CN
+deepseek-coder-33b-base,"DeepSeek,Peking University",CN
+deepseek-coder-6.7b-base,"DeepSeek,Peking University",CN
+DeepSeek-Coder-V2-Base,DeepSeek,CN
+DeepSeek-Coder-V2-Instruct,DeepSeek,CN
+DeepSeek-Coder-V2-Lite-Base,DeepSeek,CN
+DeepSeek-Coder-V2-Lite-Instruct,DeepSeek,CN
+deepseek-llm-67b-chat,DeepSeek,CN
+DeepSeek-R1,DeepSeek,CN
+DeepSeek-R1-0528,DeepSeek,CN
+deepseek-r1-0528-qwen3-8b,DeepSeek,CN
+DeepSeek-R1-Distill-Llama-70B,DeepSeek,CN
+DeepSeek-R1-Distill-Qwen-14B,DeepSeek,CN
+DeepSeek-R1-Distill-Qwen-32B,DeepSeek,CN
+deepseek-reasoner,DeepSeek,CN
+DeepSeek-V2,DeepSeek,CN
+DeepSeek-V2.5,DeepSeek,CN
+DeepSeek-V3,DeepSeek,CN
+DeepSeek-V3-0324,DeepSeek,CN
+DeepSeek-V3-Base,DeepSeek,CN
+DeepSeek-V3.1,DeepSeek,CN
+DeepSeek-V3.1-Terminus,DeepSeek,CN
+deepseek-v3.2,DeepSeek,CN
+DeepSeek-V3.2-Exp,DeepSeek,CN
+DeepSeek-V3.2-Speciale,DeepSeek,CN
+deepseek-v3p2,DeepSeek,CN
+deepseek-v4-flash,DeepSeek,CN
+deepseek-v4-flash-0731,DeepSeek,CN
+deepseek-v4-pro,DeepSeek,CN
+deepseek-v4-pro-0813,DeepSeek,CN
+devstral-small-2512,Mistral AI,FR
+dolly-v2-12b,Databricks,US
+Dracarys2-72B-Instruct,,
+Dracarys2-Llama-3.1-70B-Instruct,,
+Eurus-2-7B-PRIME,"Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute","US,CN"
+falcon-11b,Technology Innovation Institute,AE
+falcon-11B-vlm,,
+falcon-180B,Technology Innovation Institute,AE
+falcon-40b,Technology Innovation Institute,AE
+falcon-40b-instruct,Technology Innovation Institute,AE
+falcon-7b,Technology Innovation Institute,AE
+gdm-ai-co-mathematician,Google DeepMind,US
+gemini-1.0-pro-001,Google DeepMind,US
+gemini-1.0-pro-vision,Google DeepMind,US
+gemini-1.5-flash-001,Google DeepMind,US
+gemini-1.5-flash-002,Google DeepMind,US
+gemini-1.5-flash-0514,Google DeepMind,US
+gemini-1.5-flash-8b-001,Google DeepMind,US
+gemini-1.5-pro-001,Google DeepMind,US
+gemini-1.5-pro-001-feb24,Google DeepMind,US
+gemini-1.5-pro-002,Google DeepMind,US
+gemini-2.0-flash-001,Google DeepMind,US
+gemini-2.0-flash-02-05,Google DeepMind,US
+gemini-2.0-flash-exp,Google DeepMind,US
+gemini-2.0-flash-lite,Google DeepMind,US
+gemini-2.0-flash-lite-001,Google DeepMind,US
+gemini-2.0-flash-lite-preview-02-05,Google DeepMind,US
+gemini-2.0-flash-thinking-exp-01-21,Google DeepMind,US
+gemini-2.0-flash-thinking-exp-1219,Google DeepMind,US
+gemini-2.0-pro-exp-02-05,Google DeepMind,US
+gemini-2.5-deep-think-2025-08-01-webapp,Google DeepMind,US
+gemini-2.5-flash,Google DeepMind,US
+gemini-2.5-flash-lite-preview-06-17,Google DeepMind,US
+gemini-2.5-flash-lite-preview-06-17-thinking,Google DeepMind,US
+gemini-2.5-flash-lite-preview-09-2025,Google DeepMind,US
+gemini-2.5-flash-native-audio-preview-12-2025,Google DeepMind,US
+gemini-2.5-flash-preview-04-17,Google DeepMind,US
+gemini-2.5-flash-preview-04-17 (16K thinking),Google DeepMind,US
+gemini-2.5-flash-preview-04-17 (24K thinking),Google DeepMind,US
+gemini-2.5-flash-preview-05-20,Google DeepMind,US
+gemini-2.5-flash-preview-09-2025,Google DeepMind,US
+gemini-2.5-pro,Google DeepMind,US
+gemini-2.5-pro-exp-03-25,Google DeepMind,US
+gemini-2.5-pro-preview-03-25,Google DeepMind,US
+gemini-2.5-pro-preview-05-06,Google DeepMind,US
+gemini-2.5-pro-preview-06-05,Google DeepMind,US
+gemini-3-deep-think-preview,Google DeepMind,US
+gemini-3-flash-preview,Google DeepMind,US
+gemini-3-pro-preview,Google DeepMind,US
+gemini-3.1-flash-lite,Google DeepMind,US
+gemini-3.1-flash-lite-preview,Google DeepMind,US
+gemini-3.1-flash-live-preview,Google DeepMind,US
+gemini-3.1-pro-preview,Google DeepMind,US
+gemini-3.1-pro-preview-customtools,Google DeepMind,US
+gemini-3.5-flash,Google DeepMind,US
+gemini-3.5-flash-lite,Google DeepMind,US
+gemini-3.6-flash,Google DeepMind,US
+gemini-3.7-flash,Google DeepMind,US
+gemini-exp-1206,Google DeepMind,US
+gemini-robotics-er-1.5-preview,Google DeepMind,US
+gemini-robotics-er-1.6-preview,Google DeepMind,US
+gemma-2-27b-it,Google DeepMind,US
+gemma-2-9b,Google DeepMind,US
+gemma-2-9b-it,Google DeepMind,US
+gemma-2b,Google DeepMind,US
+gemma-3-12b-it,Google DeepMind,US
+Gemma-3-27b-It,Google DeepMind,US
+gemma-3-27b-it,Google DeepMind,US
+gemma-3n-E4B-it,Google DeepMind,US
+gemma-4-26b-a4b,Google DeepMind,US
+gemma-4-26b-a4b-it,Google DeepMind,US
+gemma-4-31b-it,Google DeepMind,US
+gemma-7b,Google DeepMind,US
+GLaM (MoE),Google DeepMind,US
+glm-4.5,"Z.ai (Zhipu AI),Tsinghua University",CN
+GLM-4.5-Air,"Z.ai (Zhipu AI),Tsinghua University",CN
+GLM-4.5-FP8,,
+GLM-4.6,"Z.ai (Zhipu AI),Tsinghua University",CN
+glm-4.6,"Z.ai (Zhipu AI),Tsinghua University",CN
+GLM-4.7,Z.ai (Zhipu AI),CN
+glm-4.7,Z.ai (Zhipu AI),CN
+glm-4.7-flash,Z.ai (Zhipu AI),CN
+glm-5,Z.ai (Zhipu AI),CN
+glm-5.1,Z.ai (Zhipu AI),CN
+glm-5.2,Z.ai (Zhipu AI),CN
+Gopher (280B),Google DeepMind,GB
+gpt-3.5-turbo-0125,OpenAI,US
+gpt-3.5-turbo-0613,OpenAI,US
+gpt-3.5-turbo-1106,OpenAI,US
+gpt-3.5-turbo-instruct,OpenAI,US
+gpt-4-0125-preview,OpenAI,US
+gpt-4-0314,OpenAI,US
+gpt-4-0613,OpenAI,US
+gpt-4-1106-preview,OpenAI,US
+gpt-4-1106-vision-preview,OpenAI,US
+gpt-4-32k-0314,OpenAI,US
+gpt-4-turbo,OpenAI,US
+gpt-4.1,OpenAI,US
+gpt-4.1-mini,OpenAI,US
+gpt-4.1-nano,OpenAI,US
+gpt-4.5-preview,OpenAI,US
+gpt-4o,OpenAI,US
+gpt-4o-audio-preview,OpenAI,US
+gpt-4o-mini,OpenAI,US
+gpt-4o-mini-audio-preview,OpenAI,US
+gpt-5,OpenAI,US
+gpt-5-chat,OpenAI,US
+gpt-5-codex,OpenAI,US
+gpt-5-mini,OpenAI,US
+gpt-5-nano,OpenAI,US
+gpt-5-pro,OpenAI,US
+gpt-5.1,OpenAI,US
+gpt-5.1-codex,OpenAI,US
+gpt-5.1-codex-max,OpenAI,US
+gpt-5.1-codex-mini,OpenAI,US
+gpt-5.2,OpenAI,US
+gpt-5.2-codex,OpenAI,US
+gpt-5.2-pro,OpenAI,US
+gpt-5.2-pro-2025-12-11-webapp,OpenAI,US
+gpt-5.3-codex,OpenAI,US
+gpt-5.4,OpenAI,US
+gpt-5.4-mini,OpenAI,US
+gpt-5.4-nano,OpenAI,US
+gpt-5.4-pro,OpenAI,US
+gpt-5.4-pro-2026-03-05-web-app,OpenAI,US
+gpt-5.5,OpenAI,US
+gpt-5.5-instant,OpenAI,US
+gpt-5.5-pre-release,OpenAI,US
+gpt-5.5-pro,OpenAI,US
+gpt-5.5-pro-pre-release,OpenAI,US
+gpt-5.6-luna,OpenAI,US
+gpt-5.6-sol,OpenAI,US
+gpt-5.6-sol_promax,OpenAI,US
+gpt-5.6-sol_prounknown,OpenAI,US
+gpt-5.6-terra,OpenAI,US
+gpt-j-6b,"EleutherAI,LAION","DE,US"
+gpt-neo-2.7B,EleutherAI,US
+gpt-neox-20b,EleutherAI,US
+gpt-oss-120b,OpenAI,US
+gpt-oss-20b,OpenAI,US
+gpt-realtime,OpenAI,US
+gpt-realtime-1.5,OpenAI,US
+gpt-realtime-2,OpenAI,US
+gpt-realtime-mini,OpenAI,US
+gpt2-xl,OpenAI,US
+granite-4.0-1b,IBM,US
+granite-4.0-350m,IBM,US
+granite-4.0-h-small,IBM,US
+granite-4.0-micro,IBM,US
+granite-4.1-30b,IBM,US
+grok-2,xAI,US
+grok-2-1212,xAI,US
+grok-3,xAI,US
+grok-3-beta,xAI,US
+grok-3-mini,xAI,US
+grok-3-mini-beta,xAI,US
+grok-4-0709,xAI,US
+grok-4-1,xAI,US
+grok-4-1-fast-non-reasoning,xAI,US
+grok-4-1-fast-reasoning,xAI,US
+grok-4-20,xAI,US
+grok-4-3,xAI,US
+grok-4-fast,xAI,US
+grok-4-fast-reasoning,xAI,US
+grok-4-heavy-web-app,xAI,US
+grok-4.20-0309-reasoning,xAI,US
+grok-4.3,xAI,US
+grok-4.5,xAI,US
+grok-4.5-0708,xAI,US
+grok-4.6,xAI,US
+grok-build-0.1,xAI,US
+grok-code-fast-1,xAI,US
+Hermes-2-Theta-Llama-3-70B,"Nous Research,Arcee AI",US
+Inflection-1,Inflection AI,US
+Inkling,Thinking Machines,US
+inkling-small,Thinking Machines,US
+instructblip-vicuna-13b,,
+instructblip-vicuna-7b,,
+INTELLECT-1-Instruct,"Prime Intellect,Hugging Face,Arcee AI",US
+internlm-20b,Shanghai AI Laboratory,CN
+internlm-7b,Shanghai AI Laboratory,CN
+internlm-chat-20b,Shanghai AI Laboratory,CN
+InternVL-Chat-V1-5,,
+InternVL-Chat-ViT-6B-Vicuna-13B,,
+InternVL-Chat-ViT-6B-Vicuna-7B,,
+InternVL2-40B,Shanghai AI Lab,CN
+InternVL2_5-78B,"Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University","HK,CN"
+kangaroo,,
+Kimi-Audio-7B-Instruct,Moonshot,CN
+kimi-k2-0711-preview,Moonshot,CN
+kimi-k2-0905,Moonshot,CN
+Kimi-K2-Instruct,Moonshot,CN
+Kimi-K2-Instruct-0905,Moonshot,CN
+Kimi-K2-Thinking,Moonshot,CN
+kimi-k2-thinking,Moonshot,CN
+kimi-k2-thinking-turbo,Moonshot,CN
+kimi-k2.5,Moonshot,CN
+kimi-k2.6,Moonshot,CN
+kimi-k2.7-code,Moonshot,CN
+kimi-k2p5,Moonshot,CN
+kimi-k3,Moonshot,CN
+laguna-m.1,Poolside,US
+laguna-xs.2,Poolside,US
+learnlm-1.5-pro-experimental,,
+LFM2-Audio-1.5B,Liquid AI,US
+LinVT,,
+LiveCC-7B-Instruct,,
+LLaMA-13B,Meta AI,US
+Llama-2-13b,Meta AI,US
+Llama-2-13b-chat,Meta AI,US
+Llama-2-34b,Meta AI,US
+Llama-2-70b-chat,Meta AI,US
+Llama-2-70b-chat-hf,Meta AI,US
+Llama-2-70b-hf,Meta AI,US
+Llama-2-7b,Meta AI,US
+Llama-3.1-405B,Meta AI,US
+Llama-3.1-405B-Instruct,Meta AI,US
+Llama-3.1-70B-Instruct,Meta AI,US
+Llama-3.1-8B-Instruct,Meta AI,US
+Llama-3.1-Tulu-3-70B-DPO,"Allen Institute for AI,University of Washington",US
+Llama-3.2-11B-Vision-Instruct,Meta AI,US
+Llama-3.2-1B-Instruct,Meta AI,US
+Llama-3.2-3B-Instruct,Meta AI,US
+Llama-3.2-90B-Vision-Instruct,Meta AI,US
+Llama-3.3-70B-Instruct,Meta AI,US
+LLaMA-33B,Meta AI,US
+Llama-4-Maverick-17B-128E-Instruct,Meta AI,US
+Llama-4-Maverick-17B-128E-Instruct-FP8,Meta AI,US
+Llama-4-Scout-17B-16E Instruct,Meta AI,US
+Llama-4-Scout-17B-16E-Instruct,Meta AI,US
+LLaMA-65B,Meta AI,US
+LLaMA-7B,Meta AI,US
+llama3-llava-next-8b,,
+LLaVA-OneVision 72B,,
+llava-v1.5-7b,,
+llava-v1.6-mistral-7b,,
+llava-v1.6-vicuna-13b,,
+llava-v1.6-vicuna-7b,,
+LLaVA-Video-72B-Qwen2,,
+LLaVA-Video-7B-Qwen2,,
+LLaVA-Video-7B-Qwen2-TPO,,
+long-llava-qwen2-7b,,
+LongVA-7B,,
+magistral-medium-2506,Mistral AI,FR
+magistral-medium-2509,Mistral AI,FR
+magistral-small-2506,Mistral AI,FR
+magistral-small-2509,Mistral AI,FR
+Manus 1.0,Manus,
+Manus 1.5,Manus,
+Manus 1.6,Manus,
+Megatron-Turing NLG 530B,"Microsoft,NVIDIA",US
+mercury-2,Inception Labs,US
+Meta-Llama-3-70B,Meta AI,US
+Meta-Llama-3-70B-Instruct,Meta AI,US
+Meta-Llama-3-8B,Meta AI,US
+Meta-Llama-3-8B-Instruct,Meta AI,US
+MiMo-Audio-7B-Instruct,Xiaomi Corp,CN
+mimo-v2-flash,Xiaomi Corp,CN
+mimo-v2-pro,Xiaomi Corp,CN
+mimo-v2.5,Xiaomi Corp,CN
+mimo-v2.5-pro,Xiaomi Corp,CN
+MiniCPM-o-2_6,,
+MiniCPM-V-2_6,,
+MiniMax-M1-80k,MiniMax,CN
+MiniMax-M2,MiniMax,CN
+MiniMax-M2.1,MiniMax,CN
+MiniMax-M2.5,MiniMax,CN
+MiniMax-M2.7,MiniMax,CN
+MiniMax-M3,MiniMax,CN
+ministral-3b-2410,Mistral AI,FR
+ministral-8b-2410,Mistral AI,FR
+Mistral-7B-Instruct-v0.1,Mistral AI,FR
+Mistral-7B-Instruct-v0.2,Mistral AI,FR
+Mistral-7B-Instruct-v0.3,Mistral AI,FR
+Mistral-7B-v0.1,Mistral AI,FR
+mistral-large-2402,Mistral AI,FR
+mistral-large-2407,Mistral AI,FR
+mistral-large-2411,Mistral AI,FR
+mistral-large-2512,Mistral AI,FR
+mistral-medium-2312,Mistral AI,FR
+mistral-medium-2505,Mistral AI,FR
+mistral-medium-2508,Mistral AI,FR
+mistral-medium-2604,Mistral AI,FR
+Mistral-Nemo-Base-2407,Mistral AI,FR
+Mistral-Nemo-Instruct-2407,Mistral AI,FR
+mistral-small-2402,Mistral AI,FR
+mistral-small-2501,Mistral AI,FR
+mistral-small-2503,Mistral AI,FR
+mistral-small-2506,Mistral AI,FR
+mistral-small-2603,Mistral AI,FR
+Mixtral-8x22B-Instruct-v0.1,Mistral AI,FR
+Mixtral-8x22B-v0.1,Mistral AI,FR
+Mixtral-8x7B-Instruct-v0.1,Mistral AI,FR
+Mixtral-8x7B-v0.1,Mistral AI,FR
+ml-elephant,Zoo,US
+MM1-3B-Chat,,
+MM1-7B-Chat,,
+mPLUG-Owl3-7B-241101,,
+mpt-30b,MosaicML,US
+mpt-30b-instruct,MosaicML,US
+mpt-7b,MosaicML,US
+muse-spark,Meta AI,US
+muse-spark-1.1,Meta AI,US
+nemotron-3-super,NVIDIA,US
+nemotron-3-ultra,NVIDIA,US
+Nemotron-4 15B,NVIDIA,US
+nova-2.0-pro-preview,Amazon,US
+nova-premier,Amazon,US
+nvidia-nemotron-nano-9b-v2,,
+NVILA-8B,"NVIDIA,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University","US,CN"
+o1,OpenAI,US
+o1-mini,OpenAI,US
+o1-preview,OpenAI,US
+o1-pro,OpenAI,US
+o3,OpenAI,US
+o3-mini,OpenAI,US
+o3-pro,OpenAI,US
+o4-mini,OpenAI,US
+OLMo-2-1124-13B-Instruct,"Allen Institute for AI,University of Washington,New York University (NYU)",US
+open-mistral-7b,Mistral AI,FR
+open-mistral-nemo-2407,Mistral AI,FR
+open-mixtral-8x22b,Mistral AI,FR
+open-mixtral-8x22b-2404,Mistral AI,FR
+open-mixtral-8x7b,Mistral AI,FR
+open_llama_7b,OpenLM Research,US
+openhands-lm-32b-v0.1,All Hands AI,US
+opt-1.3b,Meta AI,US
+opt-13b,Meta AI,US
+opt-175b,Meta AI,US
+opt-66b,Meta AI,US
+Oryx-1.5-32B,,
+PaLM 2-L,Google DeepMind,US
+PaLM 2-M,Google DeepMind,US
+PaLM 2-S,Google DeepMind,US
+PaLM 540B,Google Research,US
+PaLM 62B,Google DeepMind,US
+parasail-qwen3-235b-a22b-instruct-2507,Alibaba,CN
+phi-1_5,Microsoft,US
+phi-2,Microsoft,US
+Phi-3-medium-128k-instruct,Microsoft,US
+Phi-3-mini-4k-instruct,Microsoft,US
+Phi-3-small-8k-instruct,Microsoft,US
+Phi-3.5-mini-instruct,Microsoft,US
+Phi-3.5-MoE-instruct,Microsoft,US
+Phi-3.5-vision-instruct,Microsoft,US
+phi-4,Microsoft Research,US
+Phi-4-mini-instruct,Microsoft,US
+Phi-4-multimodal-instruct,Microsoft,US
+Pixtral-12B-2409,Mistral AI,FR
+pixtral-large-2411,Mistral AI,FR
+Qwen-14B,Alibaba,CN
+Qwen-14B-Chat,Alibaba,CN
+Qwen-1_8B,Alibaba,CN
+Qwen-7B,Alibaba,CN
+qwen-max,Alibaba,CN
+qwen-plus,Alibaba,CN
+qwen-turbo,Alibaba,CN
+Qwen-VL-Chat,,
+Qwen-VL-Max,,
+qwen1.5-110b-chat,Alibaba,CN
+qwen1.5-14B,Alibaba,CN
+qwen1.5-32B,Alibaba,CN
+qwen1.5-32b-chat,Alibaba,CN
+qwen1.5-72b-chat,Alibaba,CN
+Qwen1.5-7B,Alibaba,CN
+qwen2-72b-instruct,Alibaba,CN
+Qwen2-VL-72B-Instruct,Alibaba,CN
+Qwen2-VL-7B-Instruct,Alibaba,CN
+qwen2.5-14b-instruct,Alibaba,CN
+qwen2.5-32b-instruct,Alibaba,CN
+Qwen2.5-72B,Alibaba,CN
+qwen2.5-72b-instruct,Alibaba,CN
+qwen2.5-7b-instruct,Alibaba,CN
+Qwen2.5-Coder-0.5B,Alibaba,CN
+Qwen2.5-Coder-1.5B,Alibaba,CN
+Qwen2.5-Coder-14B,Alibaba,CN
+Qwen2.5-Coder-14B-Instruct,Alibaba,CN
+Qwen2.5-Coder-32B,Alibaba,CN
+Qwen2.5-Coder-32B-Instruct,Alibaba,CN
+Qwen2.5-Coder-3B,Alibaba,CN
+Qwen2.5-Coder-3B-Instruct,Alibaba,CN
+Qwen2.5-Coder-7B,Alibaba,CN
+Qwen2.5-Coder-7B-Instruct,Alibaba,CN
+qwen2.5-max,Alibaba,CN
+Qwen2.5-Omni-7B,Alibaba,CN
+Qwen2.5-VL-72B-Instruct,Alibaba,CN
+Qwen3-14B,Alibaba,CN
+Qwen3-235B-A22B,Alibaba,CN
+qwen3-235b-a22b,Alibaba,CN
+Qwen3-235B-A22B-Instruct-2507,Alibaba,CN
+Qwen3-235B-A22B-Thinking-2507,Alibaba,CN
+qwen3-235b-a22b-thinking-2507,Alibaba,CN
+Qwen3-30B-A3B,Alibaba,CN
+Qwen3-32B,Alibaba,CN
+qwen3-4b-instruct-2507,Alibaba,CN
+Qwen3-8B,Alibaba,CN
+Qwen3-Coder-480B-A35B-Instruct,Alibaba,CN
+qwen3-coder-next,Alibaba,CN
+qwen3-coder-plus,,
+qwen3-max,Alibaba,CN
+Qwen3-Next-80B-A3B-Instruct,Alibaba,CN
+Qwen3-Omni-30B-A3B-Instruct,Alibaba,CN
+qwen3.5-27B,Alibaba,CN
+qwen3.5-397b-a17b,Alibaba,CN
+qwen3.5-9B,Alibaba,CN
+qwen3.5-flash,Alibaba,CN
+qwen3.5-plus,Alibaba,CN
+qwen3.6-27b,Alibaba,CN
+qwen3.6-35b-a3b,Alibaba,CN
+qwen3.6-flash,Alibaba,CN
+qwen3.6-max-preview,Alibaba,CN
+qwen3.6-plus,Alibaba,CN
+qwen3.7-flash,Alibaba,CN
+qwen3.7-max,Alibaba,CN
+qwen3.7-plus,Alibaba,CN
+qwen3.8-max,Alibaba,CN
+QwQ-32B,Alibaba,CN
+QwQ-32B (16K thinking),Alibaba,CN
+QwQ-32B-Preview,Alibaba,CN
+qwq-plus,Alibaba,CN
+RedPajama-INCITE-7B-Base,Together AI,US
+reka-flash-3,Reka AI,US
+Ring-2.6-1T,Ant Group,CN
+seed-oss-36b-instruct,ByteDance,CN
+sharegpt4video-8b,,
+SliME-Llama3-8B,,
+solar-pro-3,Upstage,KR
+sonar,,
+sonar-pro,Perplexity,US
+ST-LLM,,
+StableBeluga2,Stability AI,GB
+stablelm-tuned-alpha-7b,Stability AI,GB
+starcoder2-15b,"Hugging Face,ServiceNow,NVIDIA,BigCode",US
+starcoder2-3b,"Hugging Face,ServiceNow,NVIDIA,BigCode",US
+starcoder2-7b,"Hugging Face,ServiceNow,NVIDIA,BigCode",US
+step-3.7-flash,StepFun,CN
+swe-1.6,Cognition,US
+swe-1.7,Cognition,US
+Switch-Base,Google DeepMind,US
+Switch-Large,Google DeepMind,US
+T5-11B,Google DeepMind,US
+T5-3B,Google DeepMind,US
+T5-Base,Google DeepMind,US
+T5-Large,Google DeepMind,US
+T5-Small,Google DeepMind,US
+text-ada-001,OpenAI,US
+text-babbage-001,OpenAI,US
+text-curie-001,OpenAI,US
+text-davinci-001,OpenAI,US
+text-davinci-002,OpenAI,US
+text-davinci-003,,
+TimeMarker,,
+tiny-recursion-model,Samsung SAIL Montréal,CA
+tml-interaction-small,Thinking Machines,US
+trinity-large-thinking,Arcee AI,US
+vicuna-13b-v1.1,LMSYS,US
+vicuna-13b-v1.3,"Large Model Systems Organization,University of California (UC) Berkeley",US
+Video-CCAM-7B-v1.2,,
+Video-LLaVA-7B,,
+video-SALMONN-2plus,ByteDance,CN
+Video-XL-7B,,
+video_chat2_mistral,,
+VideoChat-Flash-Qwen2-7B_res448,,
+VideoLLAMA2-7B,,
+VideoLLAMA3-7B,,
+ViLAMP-llava-qwen,,
+VITA,,
+VITA-1.5,,
+Voxtral-Small-24B-2507,Mistral AI,FR
+WizardLM-2-8x22B,Microsoft,US
+xgen-7b-8k-base,Salesforce,US
+xiaoyi-deepresearch,,
+Yi-1.5-34B-Chat,01.AI,CN
+Yi-34B,01.AI,CN
+Yi-34B-Chat,01.AI,CN
+Yi-6B,01.AI,CN
+Yi-6B-Chat,01.AI,CN
+Yi-9B,01.AI,CN
+Yi-large,01.AI,CN
+yi-lightning,01.AI,CN
