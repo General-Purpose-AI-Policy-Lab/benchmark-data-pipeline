@@ -1,9 +1,9 @@
 benchmark_id,name,category,floor,ceiling,access
 c10f313e-aa7d-5843-a47c-69b21a52da8d,AISI CTF Suites - Apprentice,Cyber,0.0,,private
 40e5fe4a-100d-53ad-a0f4-532bcd367a16,AISI CTF Suites - Expert,Cyber,0.0,,private
-9f492f35-3dec-5588-9ddd-29db4331c1b9,AISI CTF Suites - Practitioner,Cyber,0,,private
-33f864c2-1401-5e5f-aa5b-a79c8beee171,AISI CTF Suites - Technical Non-Expert,Cyber,0,,private
-85bafc1f-724c-5f6c-8674-c998b1720f19,AISI Cyber Ranges - Cooling Tower,Cyber,0,,private
+9f492f35-3dec-5588-9ddd-29db4331c1b9,AISI CTF Suites - Practitioner,Cyber,0.0,,private
+33f864c2-1401-5e5f-aa5b-a79c8beee171,AISI CTF Suites - Technical Non-Expert,Cyber,0.0,,private
+85bafc1f-724c-5f6c-8674-c998b1720f19,AISI Cyber Ranges - Cooling Tower,Cyber,0.0,,private
 9c656601-2948-5ce5-a371-596322374b30,AISI Cyber Ranges - The Last Ones,Cyber,0.0,,private
 3f54c22c-02e9-5bac-84ec-9454551a1023,APEX-Agents,Core AGI Progress,0.0,,semi_private
 4e5a6307-247f-5f51-ac4e-aeaa4f34f979,ARC AI2,Domain Specific Questions,0.25,,public
@@ -21,7 +21,7 @@ f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Cyber,0.0,,public
 bcc82df3-ba50-5b07-886a-5445900945d5,CadEval,Multimodal Understanding,0.0,,public
 7053140b-f184-51c7-9e62-f2a80b6bf774,Chess Puzzles,General Reasoning,0.0496,,private
 437fedf2-e8d4-594c-904f-825dfe7e9e7a,CritPt,Domain Specific Questions,0.0,,semi_private
-c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,CyScenarioBench,Cyber,0,,private
+c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,CyScenarioBench,Cyber,0.0,,private
 fd6abe3f-58db-5b9f-8cdd-ace121e13546,Cybench,Cyber,0.0,1.0,public
 12091151-02cf-518c-bcda-4374a1bf0308,CyberGym,Cyber,0.0,,public
 6faf1194-62e1-5748-a0b1-79e288b661cb,DTBench,General Reasoning,0.4,,private
@@ -50,7 +50,7 @@ b0a745aa-cd20-5efb-9f86-070da7847d57,FrontierSWE v2,Autonomous SWE,0,,public
 3ecbd533-f135-5b46-bf5c-d21ded89b961,GeoBench,Multimodal Understanding,0.0,,private
 18602361-b0c5-5003-8be2-305cdf03b9ca,HLE,Domain Specific Questions,0.048,,semi_private
 534366c9-d667-5dcb-9778-e42e12abc813,HellaSwag,Trivia & Commonsense QA,0.25,,public
-bd4da3d5-8651-5b55-915f-3dafdc7078b9,InterCode-CTF,Cyber,0,,public
+bd4da3d5-8651-5b55-915f-3dafdc7078b9,InterCode-CTF,Cyber,0.0,,public
 c6cec6f2-a484-5b21-9596-7fde61cebfda,LAB-Bench Cloning,Biology,0.2,,semi_private
 21b0d275-4fae-5a11-8245-350a5d2153b6,LAB-Bench LitQA2,Biology,0.2,,semi_private
 ecb27e9b-d4d1-5564-b301-e32b44b2ac4a,LAB-Bench Protocol,Biology,0.2,,semi_private
@@ -70,7 +70,7 @@ f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,MMLU-Pro,Domain Specific Questions,0.1,,pub
 32fc225b-d9c1-530a-98c8-8177c5ea21d6,MultiChallenge,Advanced Language and Writing,0.0,,public
 2e9865a8-a558-5da3-a6ef-86eec1783e17,MultiNRC,Advanced Language and Writing,0.0,,public
 07cea571-1802-51ec-ab0b-9b7cf0fbd149,Mystery Game Puzzles,General Reasoning,0.0922,,private
-bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,NL2Bash,Cyber,0,,public
+bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,NL2Bash,Cyber,0.0,,public
 8c0e32d8-7d04-527e-97b0-41c4e5260b0e,OEIS Open Lite,Mathematics,0,,open_problems
 b9ebbe3a-3aea-5306-a334-d3cf42d1db31,OSWorld,Agentic Computer Use,0.0,,public
 060ceebd-37df-5852-832b-00bf08be0810,OSWorld 2.0,Agentic Computer Use,0.0,,semi_private
