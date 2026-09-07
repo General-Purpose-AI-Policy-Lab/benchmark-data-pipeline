@@ -22,7 +22,6 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 3_views/                    all_scores_flat.csv, dated_scores_flat.csv, human_baselines.csv
 docs/                       decisions.md (settled), decisions_pending.md (open), plan_fusion.md
 tests/                      unit tests, golden copy (tests/expected_database), parity goldens
-notebooks/tour.ipynb        a read-only tour of the build, never required
 ```
 
 Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (19 HTML pages). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
@@ -190,8 +189,6 @@ The build logs every score below its benchmark floor (kept as published: chance-
 ```bash
 uv venv --python 3.11 .venv && uv pip install -e . --group dev
 python -m benchmark_data refresh      # required on a fresh clone: fetches the SEAL pages
-# notebooks/tour.ipynb: register the venv as a kernel once, then pick "benchmark-data-pipeline (.venv)"
-.venv/bin/python -m ipykernel install --user --name benchmark-data-pipeline --display-name "benchmark-data-pipeline (.venv)"
 python -m benchmark_data build        # offline, deterministic
 python -m benchmark_data check        # 2_database/ == tests/expected_database/ ?
 pytest                                # unit tests + golden + determinism

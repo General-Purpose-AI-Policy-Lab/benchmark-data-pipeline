@@ -129,3 +129,8 @@ One entry per decision that changes the data or the schema. Open points live in 
 - **BBH and BoolQ excluded** (frontier_coverage): developer-reported series that stopped in 2024, one third and 45 % of the frontier of their period. TriviaQA, MMLU and the other legacy series stay.
 - **Frontier list** used for criterion 3: `docs/frontier_models.csv`, 39 models (ECI flagships that set or approached the maximum, minus Gemini, DeepSeek, minis and the 5.2 / 5.4 Pro tiers, plus the whole Claude Opus series and the cyber-frontier models GPT-5.5, GPT-5.5-Cyber, GPT-5.4-Cyber, GPT-5.2 Codex, GPT-5.1 Codex Max, Claude Mythos 5 and Mythos Preview).
 - Database: 907 models, 100 benchmarks, 5,394 scores.
+
+## 2026-09-07, Cyber category and no notebook
+
+- **Category `Cyber`** (twelfth value of the vocabulary, user): Cybench, ExploitBench, the four AISI CTF suites, the two AISI cyber ranges, CTI-REALM, CyberGym, CyScenarioBench, InterCode-CTF and NL2Bash leave `Agentic Computer Use`. NL2Bash is provisional (natural-language-to-bash rather than offensive security), pending the user's call.
+- **No tour notebook** (user): the README is the documentation; `notebooks/` is removed and the kernel instructions with it.

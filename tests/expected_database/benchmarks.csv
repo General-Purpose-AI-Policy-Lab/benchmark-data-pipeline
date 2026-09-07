@@ -1,10 +1,10 @@
 benchmark_id,name,category,floor,ceiling,access
-c10f313e-aa7d-5843-a47c-69b21a52da8d,AISI CTF Suites - Apprentice,Agentic Computer Use,0.0,,private
-40e5fe4a-100d-53ad-a0f4-532bcd367a16,AISI CTF Suites - Expert,Agentic Computer Use,0.0,,private
-9f492f35-3dec-5588-9ddd-29db4331c1b9,AISI CTF Suites - Practitioner,Agentic Computer Use,0,,private
-33f864c2-1401-5e5f-aa5b-a79c8beee171,AISI CTF Suites - Technical Non-Expert,Agentic Computer Use,0,,private
-85bafc1f-724c-5f6c-8674-c998b1720f19,AISI Cyber Ranges - Cooling Tower,Agentic Computer Use,0,,private
-9c656601-2948-5ce5-a371-596322374b30,AISI Cyber Ranges - The Last Ones,Agentic Computer Use,0.0,,private
+c10f313e-aa7d-5843-a47c-69b21a52da8d,AISI CTF Suites - Apprentice,Cyber,0.0,,private
+40e5fe4a-100d-53ad-a0f4-532bcd367a16,AISI CTF Suites - Expert,Cyber,0.0,,private
+9f492f35-3dec-5588-9ddd-29db4331c1b9,AISI CTF Suites - Practitioner,Cyber,0,,private
+33f864c2-1401-5e5f-aa5b-a79c8beee171,AISI CTF Suites - Technical Non-Expert,Cyber,0,,private
+85bafc1f-724c-5f6c-8674-c998b1720f19,AISI Cyber Ranges - Cooling Tower,Cyber,0,,private
+9c656601-2948-5ce5-a371-596322374b30,AISI Cyber Ranges - The Last Ones,Cyber,0.0,,private
 3f54c22c-02e9-5bac-84ec-9454551a1023,APEX-Agents,Core AGI Progress,0.0,,semi_private
 4e5a6307-247f-5f51-ac4e-aeaa4f34f979,ARC AI2,Domain Specific Questions,0.25,,public
 9170a9aa-dc41-50f4-a90c-5b8bce0c2467,ARC-AGI,Core AGI Progress,0.0,1.0,public
@@ -17,20 +17,20 @@ c46b5c6e-1933-5584-abcf-9515ed18baa9,BlueprintBench 2,Multimodal Understanding,0
 5f7a8239-6b78-56e8-be42-60554a83cfac,CL-bench,General Reasoning,0.0,,public
 882761e6-2b60-562d-9e04-1866076fab8f,CL-bench Life,General Reasoning,0.0,,public
 2651e385-b6a1-56e7-86ed-2590cf055892,CSQA2,General Reasoning,0.5,,public
-f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Agentic Computer Use,0.0,,public
+f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Cyber,0.0,,public
 bcc82df3-ba50-5b07-886a-5445900945d5,CadEval,Multimodal Understanding,0.0,,public
 7053140b-f184-51c7-9e62-f2a80b6bf774,Chess Puzzles,General Reasoning,0.0496,,private
 437fedf2-e8d4-594c-904f-825dfe7e9e7a,CritPt,Domain Specific Questions,0.0,,semi_private
-c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,CyScenarioBench,Agentic Computer Use,0,,private
-fd6abe3f-58db-5b9f-8cdd-ace121e13546,Cybench,Agentic Computer Use,0.0,1.0,public
-12091151-02cf-518c-bcda-4374a1bf0308,CyberGym,Agentic Computer Use,0.0,,public
+c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,CyScenarioBench,Cyber,0,,private
+fd6abe3f-58db-5b9f-8cdd-ace121e13546,Cybench,Cyber,0.0,1.0,public
+12091151-02cf-518c-bcda-4374a1bf0308,CyberGym,Cyber,0.0,,public
 6faf1194-62e1-5748-a0b1-79e288b661cb,DTBench,General Reasoning,0.4,,private
 c99400ad-fa21-5da5-9e3f-4295cbd6afef,DeepResearch Bench,Agentic Computer Use,0.0,,public
 9e412716-7c71-52e7-a23f-2c66aca4e8c6,DeepSWE,Autonomous SWE,0.0,,semi_private
 9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,DrugDiscoveryBench,Biology,0,,private
 e1457629-add5-5c3e-a5c2-0a296e1e9a99,EBR-bench,General Reasoning,0.0,1.0,private
 9d19b861-783e-5a88-8168-093700b504fe,EnigmaEval,General Reasoning,0.0,,semi_private
-df6a846e-5c07-59a0-bee6-d44b438b8235,ExploitBench,Agentic Computer Use,0.0,,public
+df6a846e-5c07-59a0-bee6-d44b438b8235,ExploitBench,Cyber,0.0,,public
 8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,Fiction.LiveBench,Advanced Language and Writing,0.0,,private
 d80bc08d-49f5-5867-80e2-b07ba03ce16d,FrontierCode,Autonomous SWE,0.0,,semi_private
 01f73b15-9be9-5fde-9b2a-50ff741f4743,FrontierMath Erdos,Mathematics,0,,open_problems
@@ -50,7 +50,7 @@ b0a745aa-cd20-5efb-9f86-070da7847d57,FrontierSWE v2,Autonomous SWE,0,,public
 3ecbd533-f135-5b46-bf5c-d21ded89b961,GeoBench,Multimodal Understanding,0.0,,private
 18602361-b0c5-5003-8be2-305cdf03b9ca,HLE,Domain Specific Questions,0.048,,semi_private
 534366c9-d667-5dcb-9778-e42e12abc813,HellaSwag,Commonsense QA,0.25,,public
-bd4da3d5-8651-5b55-915f-3dafdc7078b9,InterCode-CTF,Agentic Computer Use,0,,public
+bd4da3d5-8651-5b55-915f-3dafdc7078b9,InterCode-CTF,Cyber,0,,public
 c6cec6f2-a484-5b21-9596-7fde61cebfda,LAB-Bench Cloning,Biology,0.2,,semi_private
 21b0d275-4fae-5a11-8245-350a5d2153b6,LAB-Bench LitQA2,Biology,0.2,,semi_private
 ecb27e9b-d4d1-5564-b301-e32b44b2ac4a,LAB-Bench Protocol,Biology,0.2,,semi_private
@@ -71,7 +71,7 @@ f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,MMLU-Pro,Domain Specific Questions,0.1,,pub
 32fc225b-d9c1-530a-98c8-8177c5ea21d6,MultiChallenge,Advanced Language and Writing,0.0,,public
 2e9865a8-a558-5da3-a6ef-86eec1783e17,MultiNRC,Advanced Language and Writing,0.0,,public
 07cea571-1802-51ec-ab0b-9b7cf0fbd149,Mystery Game Puzzles,General Reasoning,0.0922,,private
-bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,NL2Bash,Agentic Computer Use,0,,public
+bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,NL2Bash,Cyber,0,,public
 8c0e32d8-7d04-527e-97b0-41c4e5260b0e,OEIS Open Lite,Mathematics,0,,open_problems
 b9ebbe3a-3aea-5306-a334-d3cf42d1db31,OSWorld,Agentic Computer Use,0.0,,public
 060ceebd-37df-5852-832b-00bf08be0810,OSWorld 2.0,Agentic Computer Use,0.0,,semi_private
