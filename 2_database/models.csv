@@ -150,9 +150,6 @@ f0a043af-905f-58a7-82fd-a492d5edf7a1,Qwen3-Next-80B-A3B-Instruct,,,,,Qwen3-Next-
 f6521b57-572c-5c47-a59c-cdc9298174e0,RedPajama-INCITE-7B-Base,,,,,RedPajama-INCITE-7B-Base,Together AI,US,2023-05-04,
 7db56669-44d8-5cbf-ab89-5b89f87dc817,Ring-2.6-1T,,,,,Ring-2.6-1T,Ant Group,CN,2026-05-14,
 62196f6d-0cf3-5142-a66e-47efe1520383,StableBeluga2,,,,,StableBeluga2,Stability AI,GB,2023-07-20,
-c27c3fe4-e1cf-51be-9027-439a8162a2ab,T5-11B,,,,,T5-11B,Google DeepMind,US,2019-10-23,3.3e+22
-c8a2cd5d-2442-56e9-83eb-cc71731621fa,T5-3B,,,,,T5-3B,Google DeepMind,US,2019-10-23,9.0000000001e+21
-5485c90b-d05b-5877-b6e8-b8b5ccfa2708,T5-Large,,,,,T5-Large,Google DeepMind,US,2019-10-23,
 81fbc51f-39fa-5581-8cbe-785485011a0a,Voxtral-Small-24B-2507,,,,,Voxtral-Small-24B-2507,Mistral AI,FR,2025-07-15,
 19dc8615-eb0f-57fb-9893-0de89915824c,WizardLM-2-8x22B,,,,,WizardLM-2-8x22B,Microsoft,US,2024-04-15,
 555e7407-f4dc-5f37-b669-9f62c328db1d,Yi-1.5-34B-Chat,,,,,Yi-1.5-34B-Chat,01.AI,CN,2024-05-13,7.344e+23

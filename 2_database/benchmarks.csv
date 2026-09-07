@@ -16,7 +16,6 @@ a2af9a81-5fb1-523b-903d-b86e11a99e83,BioLP-bench,Biology,0.0,,public
 c46b5c6e-1933-5584-abcf-9515ed18baa9,BlueprintBench 2,Multimodal Understanding,0.0,,private
 5f7a8239-6b78-56e8-be42-60554a83cfac,CL-bench,General Reasoning,0.0,,public
 882761e6-2b60-562d-9e04-1866076fab8f,CL-bench Life,General Reasoning,0.0,,public
-2651e385-b6a1-56e7-86ed-2590cf055892,CSQA2,Trivia & Commonsense QA,0.5,,public
 f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Cyber,0.0,,public
 bcc82df3-ba50-5b07-886a-5445900945d5,CadEval,Multimodal Understanding,0.0,,public
 7053140b-f184-51c7-9e62-f2a80b6bf774,Chess Puzzles,General Reasoning,0.0496,,private

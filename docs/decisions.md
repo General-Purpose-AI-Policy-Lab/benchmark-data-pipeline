@@ -140,3 +140,4 @@ One entry per decision that changes the data or the schema. Open points live in 
 - **`Trivia & Commonsense QA`** replaces `Commonsense QA` (user): HellaSwag, PIQA, WinoGrande, OpenBookQA, plus CSQA2 (from General Reasoning) and TriviaQA (from Domain Specific Questions).
 - **LAMBADA and SuperGLUE excluded** (user, criterion `deprecated`): legacy language-understanding series with no place in the forecasting categories. SuperGLUE's human baseline goes with it.
 - **DeepResearch Bench** stays in `Agentic Computer Use` (user confirmation).
+- **CSQA2 excluded** (frontier_coverage, 2026-09-07): six scores between 2019 and 2023 covering at most one of the seven frontier models of its period (14 %, counting text-davinci-001 for GPT-3), against a third for BBH and 45 % for BoolQ, both already excluded on that criterion. Its two human baselines go with it. For reference, TriviaQA covers 5 of 10 (50 %), HellaSwag 5 of 12 (42 %) and MMLU 17 of 36 (47 %) with the same list.

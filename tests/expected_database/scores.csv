@@ -381,12 +381,6 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,21b0d275-4fae-5a11-8245-350a5d2153b6,0.4170
 782280fe-92fa-5caa-9aa3-91d71a699e89,2229982b-d7fb-5b45-baab-ee30f496af94,0.0888888888888888,0.0456193900419044,,epoch_live,Epoch AI internal evaluation,
 96edcc51-a125-5f22-8dd6-c4f487c0a795,2229982b-d7fb-5b45-baab-ee30f496af94,0.1555555555555555,0.0770945044100374,,epoch_live,Epoch AI internal evaluation,
 e6c7cd5c-aced-5cc7-af38-28efa1a1ae26,2229982b-d7fb-5b45-baab-ee30f496af94,0.1,0.0604217978116643,,epoch_live,Epoch AI internal evaluation,
-09796b8f-e8d2-560a-8c41-de3dce02f98c,2651e385-b6a1-56e7-86ed-2590cf055892,0.529,,,epoch,CommonsenseQA 2.0: Exposing the Limits of AI through Gamification,https://arxiv.org/pdf/2201.05320
-5485c90b-d05b-5877-b6e8-b8b5ccfa2708,2651e385-b6a1-56e7-86ed-2590cf055892,0.546,,,epoch,CommonsenseQA 2.0: Exposing the Limits of AI through Gamification,https://arxiv.org/pdf/2201.05320
-769741fa-2ef7-5692-a69b-5d3170617006,2651e385-b6a1-56e7-86ed-2590cf055892,0.5,,,epoch,EpochAI,https://arxiv.org/pdf/2309.13165v1
-b6e0435f-0fe8-57c5-a303-1fc113594486,2651e385-b6a1-56e7-86ed-2590cf055892,0.57,,,epoch,EpochAI,https://arxiv.org/pdf/2309.13165v1
-c27c3fe4-e1cf-51be-9027-439a8162a2ab,2651e385-b6a1-56e7-86ed-2590cf055892,0.678,,,epoch,CommonsenseQA 2.0: Exposing the Limits of AI through Gamification,https://arxiv.org/pdf/2201.05320
-c8a2cd5d-2442-56e9-83eb-cc71731621fa,2651e385-b6a1-56e7-86ed-2590cf055892,0.602,,,epoch,Decker: Double Check with Heterogeneous Knowledge for Commonsense Fact Verification,https://arxiv.org/abs/2305.05921
 00f9354b-eca0-5e02-8d5c-27a065b4dbda,2e9865a8-a558-5da3-a6ef-86eec1783e17,0.49,,,seal,Scale SEAL (multinrc),https://labs.scale.com/leaderboard/multinrc
 0467e0f7-4248-522e-9509-dad2d9fc1b10,2e9865a8-a558-5da3-a6ef-86eec1783e17,0.455,,,seal,Scale SEAL (multinrc),https://labs.scale.com/leaderboard/multinrc
 07bdb7d6-dfe1-5cb9-ac0a-c63afc461cf7,2e9865a8-a558-5da3-a6ef-86eec1783e17,0.5896,,,seal,Scale SEAL (multinrc),https://labs.scale.com/leaderboard/multinrc
