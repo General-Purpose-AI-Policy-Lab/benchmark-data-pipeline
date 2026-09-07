@@ -1,0 +1,42 @@
+name: refresh
+
+# Monthly (and on demand): fetch the feeds, rebuild, compare with the blessed copies and the
+# consumers' goldens, then open a pull request with the data changes for review.
+on:
+  schedule:
+    - cron: "17 6 1 * *"
+  workflow_dispatch:
+
+jobs:
+  refresh-build-report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - run: uv venv --python 3.11 .venv && uv pip install --python .venv/bin/python -e . --group dev
+      - run: .venv/bin/python -m benchmark_data refresh
+      - run: .venv/bin/python -m benchmark_data build
+      - run: .venv/bin/pytest -q
+      # Differences against the blessed copies are expected after a refresh: report, do not fail.
+      - run: .venv/bin/python -m benchmark_data check || true
+      - run: .venv/bin/python -m benchmark_data parity
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parity-reports
+          path: reports/
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          branch: data-refresh
+          title: "Data refresh ${{ github.run_started_at }}"
+          commit-message: "Refresh feeds and rebuild"
+          body: |
+            Automated refresh. Review the build log, `2_database/build_manifest.json` and the
+            parity reports (workflow artifact), then re-bless the golden copies if intended:
+            `cp 2_database/*.csv tests/expected_database/ && cp 3_views/*.csv tests/expected_views/`.
+          add-paths: |
+            0_input/feed/
+            2_database/
+            3_views/

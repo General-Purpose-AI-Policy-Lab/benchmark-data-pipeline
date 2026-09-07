@@ -1,0 +1,46 @@
+[project]
+name = "benchmark-data-pipeline"
+version = "0.1.0"
+description = "Benchmark score feeds (Epoch, Kaggle, RAND, Scale SEAL) -> four tables linked by uuid, plus consumer views"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "CC-BY-4.0"
+dependencies = [
+    "pandas>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+    "jupyterlab>=4.0",
+    "ipykernel>=6",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["1_pipeline"]
+include = ["benchmark_data*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["1_pipeline", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B", "UP"]
+ignore = ["E203"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["benchmark_data"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["1_pipeline"]
+
+[tool.ruff.lint.per-file-ignores]
+# _SPEC / _SKIP dictionaries are aligned in columns by hand, with the reason on the line.
+"1_pipeline/benchmark_data/sources/*.py" = ["E501"]
