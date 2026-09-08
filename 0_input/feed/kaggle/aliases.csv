@@ -6,3 +6,4 @@ qwen3-235b-a22b-instruct-2507,Qwen3-235B-A22B-Instruct-2507,,,,,Kaggle Open Benc
 qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,,,,,Kaggle Open Benchmarks,Kaggle lower-case spelling of Epoch's model_version. Decision 2026-09-07
 claude-sonnet-4-5-thinking-20250929,claude-sonnet-4-5,,,2025-09-29,thinking,Kaggle Open Benchmarks,Kaggle slug for Claude Sonnet 4.5 with thinking on; the sole snapshot. Decision 2026-09-07
 gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,,,,,Kaggle Open Benchmarks,Kaggle spelling with the preview suffix of the model Epoch names gemini-3.1-flash-lite (2026-09-08)
+grok-4-fast-reasoning,grok-4-fast,,,,thinking,Kaggle Open Benchmarks,"xAI's reasoning mode of Grok 4 Fast, merged onto Epoch's grok-4-fast as its thinking variant. User decision 2026-09-08"

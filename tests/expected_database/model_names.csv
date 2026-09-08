@@ -736,7 +736,6 @@ model_id,feed,raw_name,n_records
 79a9599e-94aa-5eb2-a701-eb38e02f6013,epoch,Qwen2.5-Coder-1.5B,5
 79b40520-a0f4-5108-8aae-df26b0e61946,epoch,claude-3-7-sonnet-20250219_64K,1
 79b40520-a0f4-5108-8aae-df26b0e61946,epoch_live,claude-3-7-sonnet-20250219_64K,3
-79b6259e-668d-5df2-8f75-0c669ba06028,kaggle,grok-4-fast-reasoning,1
 79faa4a9-8a04-56d9-b09d-e24442aaa015,epoch_live,gdm-ai-co-mathematician,1
 7a88d3f2-f42f-561e-ae23-6b78af048292,epoch,gemini-2.5-flash-preview-05-20_16K,3
 7a97dac7-5010-53bf-b803-9f32ef94db8c,kaggle,o3-2025-04-16,3
@@ -1567,6 +1566,7 @@ f97e53e8-c31c-5fb5-9b9c-9014f0733da3,epoch_cyber,Claude Opus 4.7,5
 f97e53e8-c31c-5fb5-9b9c-9014f0733da3,seal,Opus 4.7 (Claude Code),2
 f97e53e8-c31c-5fb5-9b9c-9014f0733da3,seal,Opus-4.7 (Claude Code),1
 f99a025b-f74b-5298-ab3a-63583d8c6a8e,epoch,MiniMax-M2.5,8
+f9b72039-4005-5c41-8e54-52795f854850,kaggle,grok-4-fast-reasoning,1
 f9d0bea8-4c49-5762-b85c-253ef349024b,epoch,claude-opus-4-6_max,6
 f9d0bea8-4c49-5762-b85c-253ef349024b,epoch_live,claude-opus-4-6_max,8
 f9d0bea8-4c49-5762-b85c-253ef349024b,seal,Claude Opus 4.6 (Claude Code) max,1
