@@ -1983,6 +1983,7 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.3295
 4967b8bf-c70b-5249-bb31-08771919d430,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5093,,,epoch,https://conceptualreasoning.ai/dtbench,
 49db9b6d-ea44-5376-9c4f-6b1fa754532b,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8053,,,epoch,https://conceptualreasoning.ai/dtbench,
 4f423e9a-035f-588f-b024-6639ef5e6ba2,6faf1194-62e1-5748-a0b1-79e288b661cb,0.68,,,epoch,https://conceptualreasoning.ai/dtbench,
+4f83d073-ae61-5ed2-b4b1-acfbf9494fee,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6283,,,epoch,https://conceptualreasoning.ai/dtbench,
 5036c0ca-a038-57e7-b5dd-3c36c5fcfc5c,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8320000000000001,,,epoch,https://conceptualreasoning.ai/dtbench,
 515946bc-a14f-50af-b015-26a251ba217d,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6520999999999999,,,epoch,https://conceptualreasoning.ai/dtbench,
 52cb2f61-b60e-51ca-9965-8f2f2a54ac83,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5253,,,epoch,https://conceptualreasoning.ai/dtbench,
@@ -2006,7 +2007,6 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.3295
 6eefa290-50dc-5cfb-bf49-4eb3007d8fe3,6faf1194-62e1-5748-a0b1-79e288b661cb,0.96,,,epoch,https://conceptualreasoning.ai/dtbench,
 707022ae-10b5-5423-b47b-039bd53034cc,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8,,,epoch,https://conceptualreasoning.ai/dtbench,
 7319b511-d3bf-5d03-8195-9ca00e689997,6faf1194-62e1-5748-a0b1-79e288b661cb,0.92,,,epoch,https://conceptualreasoning.ai/dtbench,
-73ec59bb-4c41-5c80-8f1c-97214b2a557c,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6283,,,epoch,https://conceptualreasoning.ai/dtbench,
 744a4413-480f-5cd1-a82e-de29142c9b0e,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6827,,,epoch,https://conceptualreasoning.ai/dtbench,
 7512466c-9c9d-549d-b07e-afcf94cc7a39,6faf1194-62e1-5748-a0b1-79e288b661cb,0.784,,,epoch,https://conceptualreasoning.ai/dtbench,
 782280fe-92fa-5caa-9aa3-91d71a699e89,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9547,,,epoch,https://conceptualreasoning.ai/dtbench,
@@ -2394,7 +2394,6 @@ fed155d2-f6ea-5e34-99da-0f5a37e6ab09,78580765-1aab-5a92-ace1-f4c6ac680e0c,0.301,
 721bbe8a-5ed6-5848-a852-712276466af3,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.735,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 7c37a985-d0af-5754-964c-572841204b2c,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.805,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 85718c2a-4aea-5b1d-8377-e52a1e078ff8,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.6719999999999999,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
-87aab950-a946-5a45-bfe9-3feec943f016,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.729,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 8c326c89-4162-59d3-83a2-15321cc6785e,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.617,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.756,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 8d6be96f-eddc-5542-9bde-62bd296941de,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.734,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
@@ -2407,6 +2406,7 @@ a30435c9-0f32-5bad-9e84-32acb0c8933f,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8029
 ab599934-758d-5c9b-a2d5-be23ea38cf4d,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.735,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 abee7fa0-40a3-5edf-a96a-0d5ea027a368,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.765,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 b35da3fc-cf68-5251-9b87-93fd08a6347d,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8240000000000001,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
+b934204b-5315-5b7a-9f5c-96de0bdf8e37,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.729,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8310000000000001,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 c494bab3-30c1-582d-a80c-d887518f453d,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.769,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.649,,,epoch,lechmazur/writing Github repository,https://github.com/lechmazur/Writing
@@ -2696,6 +2696,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.3333
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,1.0,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 3d1b7395-02a1-5d64-93f5-2773fa3dc247,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.438,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 45f58c79-68eb-5ac2-956b-d0cc2989131d,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.625,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
+4f83d073-ae61-5ed2-b4b1-acfbf9494fee,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.219,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.333,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 51f8a52b-96a1-51ce-bacc-56a855cf0164,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.344,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 558a0a06-dcf1-59ce-9c2c-18233fab0ecb,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.656,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
@@ -2706,7 +2707,6 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.3333
 6a8aab44-4a60-58d1-8a74-9ecfe5ac764a,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.273,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 6eddf3ce-08b9-5187-81cf-3abd60cf085d,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.75,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 7129df24-6643-5169-b1c1-2d2d9bb33309,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.406,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
-73ec59bb-4c41-5c80-8f1c-97214b2a557c,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.219,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 7410d386-29ee-5d20-89ca-12baf77706fc,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.875,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 744a4413-480f-5cd1-a82e-de29142c9b0e,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.625,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
 7512466c-9c9d-549d-b07e-afcf94cc7a39,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.444,,Parasail,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
@@ -3363,11 +3363,11 @@ f97e53e8-c31c-5fb5-9b9c-9014f0733da3,9c656601-2948-5ce5-a371-596322374b30,0.3479
 07bdb7d6-dfe1-5cb9-ac0a-c63afc461cf7,9d19b861-783e-5a88-8168-093700b504fe,0.1823999999999999,0.022,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 10c1168d-7d63-532a-908e-7caa1f1a28da,9d19b861-783e-5a88-8168-093700b504fe,0.0423,0.0117,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 12d3d541-0737-514e-9413-19ccf2d4eadd,9d19b861-783e-5a88-8168-093700b504fe,0.011,0.006,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
+190c9256-dd6b-58f3-a4ba-8a1b61734bec,9d19b861-783e-5a88-8168-093700b504fe,0.0063,0.0045,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 1c449230-2b68-53ba-8d2d-aa9a5d626314,9d19b861-783e-5a88-8168-093700b504fe,0.0236,0.0087,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 1e999e30-3c11-5f84-a52a-f5da0969a79f,9d19b861-783e-5a88-8168-093700b504fe,0.3928,0.0279999999999999,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 25020d27-eb2f-5dcf-accc-1267facfb4cf,9d19b861-783e-5a88-8168-093700b504fe,0.0312,0.0099,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 281e8c94-3fab-56d7-af36-820548397ce3,9d19b861-783e-5a88-8168-093700b504fe,0.2351,0.0241,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
-28d5672f-cdcd-5de5-bd65-a520f857fc35,9d19b861-783e-5a88-8168-093700b504fe,0.0063,0.0045,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 340a8fbc-5e4f-5ece-9dd7-cf51f8507d2b,9d19b861-783e-5a88-8168-093700b504fe,0.0557,0.0131,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 367af7ab-6a2d-56d5-b1e0-308932246010,9d19b861-783e-5a88-8168-093700b504fe,0.0681,0.0083,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,9d19b861-783e-5a88-8168-093700b504fe,0.1309,0.0192,,epoch,https://labs.scale.com/leaderboard/enigma_eval,
@@ -3884,6 +3884,7 @@ e104c548-30ab-5db6-bb31-72054db06899,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.05,,
 4967b8bf-c70b-5249-bb31-08771919d430,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0537,,,epoch,https://conceptualreasoning.ai/lmca,
 49db9b6d-ea44-5376-9c4f-6b1fa754532b,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.3636,,,epoch,https://conceptualreasoning.ai/lmca,
 4f423e9a-035f-588f-b024-6639ef5e6ba2,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1451,,,epoch,https://conceptualreasoning.ai/lmca,
+4f83d073-ae61-5ed2-b4b1-acfbf9494fee,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1807,,,epoch,https://conceptualreasoning.ai/lmca,
 5036c0ca-a038-57e7-b5dd-3c36c5fcfc5c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.3876,,,epoch,https://conceptualreasoning.ai/lmca,
 52cb2f61-b60e-51ca-9965-8f2f2a54ac83,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.12279999999999999,,,epoch,https://conceptualreasoning.ai/lmca,
 53d79bba-1f06-5f45-bac3-8ef88e9909a3,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.17059999999999997,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -3902,7 +3903,6 @@ e104c548-30ab-5db6-bb31-72054db06899,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.05,,
 6eefa290-50dc-5cfb-bf49-4eb3007d8fe3,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5394,,,epoch,https://conceptualreasoning.ai/lmca,
 707022ae-10b5-5423-b47b-039bd53034cc,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.29469999999999996,,,epoch,https://conceptualreasoning.ai/lmca,
 7319b511-d3bf-5d03-8195-9ca00e689997,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.46240000000000003,,,epoch,https://conceptualreasoning.ai/lmca,
-73ec59bb-4c41-5c80-8f1c-97214b2a557c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1807,,,epoch,https://conceptualreasoning.ai/lmca,
 744a4413-480f-5cd1-a82e-de29142c9b0e,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2561,,,epoch,https://conceptualreasoning.ai/lmca,
 7512466c-9c9d-549d-b07e-afcf94cc7a39,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2352,,,epoch,https://conceptualreasoning.ai/lmca,
 782280fe-92fa-5caa-9aa3-91d71a699e89,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5382,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4800,6 +4800,7 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,cc417b11-5486-5d0f-8a3c-21db2f51b772,0.0458
 4ad18fe4-b0c4-5158-8df1-b40e3d1ff0d1,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.616,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 4da8fd41-ac04-528d-8f29-7944a162802a,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.7540000000000001,,,epoch,https://htihle.github.io/weirdml.html,
 4f423e9a-035f-588f-b024-6639ef5e6ba2,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4093,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
+4f83d073-ae61-5ed2-b4b1-acfbf9494fee,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3522,,,epoch,WeirdML Leaderboard,
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3649,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 515946bc-a14f-50af-b015-26a251ba217d,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.2224,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 51741aba-80cc-5b59-aecf-1d4ce989ca10,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4415,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
@@ -4832,7 +4833,6 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,cc417b11-5486-5d0f-8a3c-21db2f51b772,0.0458
 6eddf3ce-08b9-5187-81cf-3abd60cf085d,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4286,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 7129df24-6643-5169-b1c1-2d2d9bb33309,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3668,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 714d0db5-0da1-5474-a61a-75d12b959ea6,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.496,,,epoch,WeirdML Leaderboard,https://htihle.github.io/weirdml.html
-73ec59bb-4c41-5c80-8f1c-97214b2a557c,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3522,,,epoch,WeirdML Leaderboard,
 744a4413-480f-5cd1-a82e-de29142c9b0e,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3904,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 7512466c-9c9d-549d-b07e-afcf94cc7a39,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.387,,,epoch,WeirdML Leaderboard,https://htihle.github.io/weirdml.html
 77fdc744-f384-5db9-b25f-d3660900be2b,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4771,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
@@ -4856,7 +4856,6 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,cc417b11-5486-5d0f-8a3c-21db2f51b772,0.0458
 939b3f52-b8d3-52a3-a053-5e7d5603382b,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.2589,,,epoch,https://htihle.github.io/weirdml.html,
 97ebca52-d1b5-5737-b4c3-2c6b041d48d9,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.0317,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 99007e0e-dc55-5a09-9a99-20bddeb5d60c,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4371,,,epoch,https://htihle.github.io/weirdml.html,
-9a4435dd-daf9-5515-b6f8-9e2470de981e,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3936,,,epoch,WeirdML Leaderboard,
 9a4c32e0-2da4-5bca-93f2-103393146aaf,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.5586,,,epoch,https://htihle.github.io/weirdml.html,
 9a7d9480-f1b5-512b-8aff-6b9ccfeef59e,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.1597,,,epoch,WeirdML Leaderboard,
 9c3500fd-b4ae-5ccc-8d01-2b286e1fa8fe,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4643,,,epoch,https://htihle.github.io/weirdml.html,
@@ -5137,6 +5136,7 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,ecb27e9b-d4d1-5564-b301-e32b44b2ac4a,0.63,,
 5fc62113-b987-5a16-b82f-7b3a8d83109b,ecf25073-c379-5472-ab88-b3df79e8aa65,0.324,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 635ad182-b043-5577-a5ce-194cac517319,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7959999999999999,,,epoch,https://aider.chat/docs/leaderboards/,
 67c91be9-2700-5057-be83-3214ac0e3d10,ecf25073-c379-5472-ab88-b3df79e8aa65,0.08900000000000001,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
+7129df24-6643-5169-b1c1-2d2d9bb33309,ecf25073-c379-5472-ab88-b3df79e8aa65,0.591,,,epoch,https://aider.chat/docs/leaderboards/,
 721bbe8a-5ed6-5848-a852-712276466af3,ecf25073-c379-5472-ab88-b3df79e8aa65,0.34700000000000003,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 7410d386-29ee-5d20-89ca-12baf77706fc,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7909999999999999,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 744a4413-480f-5cd1-a82e-de29142c9b0e,ecf25073-c379-5472-ab88-b3df79e8aa65,0.524,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
@@ -5169,7 +5169,6 @@ c494bab3-30c1-582d-a80c-d887518f453d,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7959
 c928fb95-ec6c-51b3-89a3-399a087d731f,ecf25073-c379-5472-ab88-b3df79e8aa65,0.813,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 ca701bc5-0932-51e2-bc21-749b1b752f93,ecf25073-c379-5472-ab88-b3df79e8aa65,0.742,,,epoch,https://aider.chat/docs/leaderboards/,
 cba2ed31-eaef-563a-a241-280fedc2b807,ecf25073-c379-5472-ab88-b3df79e8aa65,0.156,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
-d2488950-b36e-5848-839b-2913f5bdd25d,ecf25073-c379-5472-ab88-b3df79e8aa65,0.591,,,epoch,https://aider.chat/docs/leaderboards/,
 d9ed768a-b114-5f08-8c45-739b8c0af2a7,ecf25073-c379-5472-ab88-b3df79e8aa65,0.271,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 db210d2d-9fd6-5b51-b481-16d038c73444,ecf25073-c379-5472-ab88-b3df79e8aa65,0.182,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 ec61147c-1758-5ddd-812d-43a70b783c86,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7020000000000001,,,epoch,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
@@ -5205,7 +5204,6 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,ecf25073-c379-5472-ab88-b3df79e8aa65,0.591,
 85718c2a-4aea-5b1d-8377-e52a1e078ff8,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.6236702127659575,0.004416567848453418,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 8b894406-85fc-569b-82c0-de42e84375f8,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8956117021276596,0.002787461616576442,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 922cb4ee-b93d-509f-8d7a-f7cc81880715,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.828873005319149,0.003433415533266633,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
-92b02b70-7f23-5298-bc73-f9e23ca1e0b9,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8449135638297872,0.0033000168482881635,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 95b716a4-ffb8-5772-b6bd-497b4b6ed751,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8386801861702128,0.003353243995377194,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 97e0dc84-d9d8-55ed-adba-d1e111785e46,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.784906914893617,0.003745807112882704,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.87109375,0.0030548686678964288,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
@@ -5226,6 +5224,7 @@ c04ed4ab-9cda-56a2-9056-c3f5d0d19f05,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8633
 c494bab3-30c1-582d-a80c-d887518f453d,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8658627858627859,0.003107768464900153,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 d1daf468-a9d9-59b3-923b-be379522f7ab,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.4276928191489361,0.0045102818799736735,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 d451030c-63c6-5b8d-92be-ce8e50f33834,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8310498444986131,0.0034353114987712287,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
+d74cdcff-da5a-5bfe-96d2-d916960474d3,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8449135638297872,0.0033000168482881635,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 dfdcd706-2b34-54ff-bb92-5930714047b9,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.4690824468085106,0.004549474562148776,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 e485072b-80f5-5cc0-9cbe-4d81760f22c7,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.8323636968085106,0.0034053653342835163,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro
 ee56a33c-9ea1-57c7-a419-33a650636eba,f43192c5-0d5d-5ccc-9fb5-9ed1a564be37,0.7794215425531915,0.0037799918047177043,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro

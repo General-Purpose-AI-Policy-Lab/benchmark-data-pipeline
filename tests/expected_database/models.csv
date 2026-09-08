@@ -368,7 +368,6 @@ baac4101-72fc-5e5a-998e-f7b1489319bf,gemini-1.5-pro-001,,,,,gemini-1.5-pro-001,G
 5497bab7-7579-54c1-9408-7a90c63ef218,gemini-1.5-pro-001-feb24,,,,,gemini-1.5-pro-001-feb24,Google DeepMind,US,2024-02-15,
 fc88657c-e2e7-5b8a-9e77-87845fd09a28,gemini-1.5-pro-002,,,,,gemini-1.5-pro-002,Google DeepMind,US,2024-09-24,
 190c9256-dd6b-58f3-a4ba-8a1b61734bec,gemini-2.0-flash-001,,,,,gemini-2.0-flash-001,Google DeepMind,US,2025-02-05,
-28d5672f-cdcd-5de5-bd65-a520f857fc35,gemini-2.0-flash-02-05,,,,,gemini-2.0-flash-02-05,Google DeepMind,US,2025-02-05,
 0110ae22-80d3-5180-8053-aa251d0f5a4e,gemini-2.0-flash-exp,,,,,gemini-2.0-flash-exp,Google DeepMind,US,2024-12-11,
 a03d9c47-b17b-58ae-88a7-04b268e56074,gemini-2.0-flash-lite,,,,,gemini-2.0-flash-lite,Google DeepMind,US,2025-02-05,
 12d3d541-0737-514e-9413-19ccf2d4eadd,gemini-2.0-flash-thinking-exp-01-21,,,,,gemini-2.0-flash-thinking-exp-01-21,Google DeepMind,US,2025-01-21,
@@ -377,8 +376,8 @@ a03d9c47-b17b-58ae-88a7-04b268e56074,gemini-2.0-flash-lite,,,,,gemini-2.0-flash-
 15214b67-6ac6-523f-9dfc-1ec10ed7d16a,gemini-2.5-flash,,,,,gemini-2.5-flash,Google DeepMind,US,2025-06-17,
 0099b753-68cd-5195-a50b-1778adacb7aa,gemini-2.5-flash,,,2025-04,,gemini-2.5-flash-2025-04,Google DeepMind,US,2025-04-17,
 dcbd382d-7020-5888-8210-1dcadbec6a84,gemini-2.5-flash,,,2025-05,,gemini-2.5-flash-2025-05,Google DeepMind,US,2025-05-20,
+4f83d073-ae61-5ed2-b4b1-acfbf9494fee,gemini-2.5-flash-lite-preview-06-17,,,,thinking,gemini-2.5-flash-lite-preview-06-17_thinking,Google DeepMind,US,2025-06-17,
 9f63bd89-4226-5a73-99a7-9e6351a74550,gemini-2.5-flash-lite-preview-06-17,,16000,,,gemini-2.5-flash-lite-preview-06-17_16K,Google DeepMind,US,2025-06-17,
-73ec59bb-4c41-5c80-8f1c-97214b2a557c,gemini-2.5-flash-lite-preview-06-17-thinking,,,,,gemini-2.5-flash-lite-preview-06-17-thinking,Google DeepMind,US,2025-06-17,
 1555223a-a795-5f50-93cc-fc0d4aa02f25,gemini-2.5-flash-lite-preview-09-2025,,,,,gemini-2.5-flash-lite-preview-09-2025,Google DeepMind,US,2025-09-25,
 b28fb558-d1e2-51d9-b207-0f6acd92c948,gemini-2.5-flash-native-audio-preview-12-2025,,,,thinking,gemini-2.5-flash-native-audio-preview-12-2025_thinking,Google DeepMind,US,2025-12-12,
 d8a5dc8c-9934-500e-a778-e240a8f3d4f8,gemini-2.5-flash-native-audio-preview-12-2025,none,,,,gemini-2.5-flash-native-audio-preview-12-2025_none,Google DeepMind,US,2025-12-12,
@@ -416,7 +415,6 @@ d74cdcff-da5a-5bfe-96d2-d916960474d3,gemini-3.1-flash-lite,,,,,gemini-3.1-flash-
 d39f5588-912e-5ef9-a178-f9b576f5e6ba,gemini-3.1-flash-lite,high,,,,gemini-3.1-flash-lite_high,Google DeepMind,US,2026-03-03,
 6bdc846c-b7b2-5a91-a5a2-2e2d7da9dc58,gemini-3.1-flash-lite,low,,,,gemini-3.1-flash-lite_low,Google DeepMind,US,2026-03-03,
 0a7f79f8-e303-5e36-a04e-dde6d44350bd,gemini-3.1-flash-lite,minimal,,,,gemini-3.1-flash-lite_minimal,Google DeepMind,US,2026-03-03,
-92b02b70-7f23-5298-bc73-f9e23ca1e0b9,gemini-3.1-flash-lite-preview,,,,,gemini-3.1-flash-lite-preview,Google DeepMind,US,2026-03-03,
 7d026e3d-8541-5748-a701-2eec7cccb5c6,gemini-3.1-flash-live-preview,,,,,gemini-3.1-flash-live-preview,Google DeepMind,US,2026-03-26,
 b8d7bbbf-bfb4-5daa-ac90-340ac1818169,gemini-3.1-pro-preview,,,,,gemini-3.1-pro-preview,Google DeepMind,US,2026-02-19,
 c350f63f-3067-53b4-bda8-89594158b195,gemini-3.1-pro-preview,,,,unknown-effort,gemini-3.1-pro-preview_unknown,Google DeepMind,US,2026-02-19,
@@ -697,8 +695,6 @@ d8b8fec6-4a39-5fc6-bde3-19c43acfd37d,inkling-small,xhigh,,,,inkling-small_xhigh,
 b23229cf-847e-5830-aadc-937f50d1a313,internlm-20b,,,,,internlm-20b,Shanghai AI Laboratory,CN,2023-09-18,
 2dfd6c03-49bb-592a-9b38-2c254be4c818,internlm-7b,,,,,internlm-7b,Shanghai AI Laboratory,CN,2023-07-05,
 6624f81d-62e6-5b33-9f1a-de9b7ca26060,internlm-chat-20b,,,,,internlm-chat-20b,Shanghai AI Laboratory,CN,2023-09-17,
-9a4435dd-daf9-5515-b6f8-9e2470de981e,kimi-k2-0711-preview,,,,,kimi-k2-0711-preview,Moonshot,CN,2025-07-12,2.976e+24
-d2488950-b36e-5848-839b-2913f5bdd25d,kimi-k2-0905,,,,,kimi-k2-0905,Moonshot,CN,2025-09-05,2.976e+24
 b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,kimi-k2-thinking,,,,,kimi-k2-thinking,Moonshot,CN,2025-11-06,4.1999999999999997e+24
 f5f6435d-fc25-5b14-bd30-a8ce7b3f7efb,kimi-k2-thinking-turbo,,,,,kimi-k2-thinking-turbo,Moonshot,CN,2025-11-06,4.2e+24
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,kimi-k2.5,,,,,kimi-k2.5,Moonshot,CN,2026-01-27,5.8e+24
@@ -821,7 +817,6 @@ a735c069-6efe-58ad-88af-397f1b5e36fb,qwen2.5-14b-instruct,,,,,qwen2.5-14b-instru
 be1f69db-0624-58b9-b160-4e6e6e742cb7,qwen2.5-32b-instruct,,,,,qwen2.5-32b-instruct,Alibaba,CN,2024-09-17,3.51e+24
 9a7d9480-f1b5-512b-8aff-6b9ccfeef59e,qwen2.5-72b-instruct,,,,,qwen2.5-72b-instruct,Alibaba,CN,2024-09-19,7.8e+24
 2b8a72dc-6791-5686-a53e-4609964fc31e,qwen2.5-7b-instruct,,,,,qwen2.5-7b-instruct,Alibaba,CN,2024-09-19,8.2188e+23
-87aab950-a946-5a45-bfe9-3feec943f016,qwen2.5-max,,,,,qwen2.5-max,Alibaba,CN,2025-01-28,
 bbd1fc87-48fc-5ded-9c2c-472d5a6f9f9f,qwen3-1.7b,,,,,qwen3-1.7b,Alibaba,CN,2025-04-29,3.672e+23
 f975c68f-503e-58f0-b606-df67741e71c8,qwen3-1.7b,none,,,,qwen3-1.7b_none,Alibaba,CN,2025-04-29,3.672e+23
 9fb50c87-9d4f-5056-b3ff-0ef85db7b1b8,qwen3-14b,,,,,qwen3-14b,Alibaba,CN,2025-04-29,3.1968e+24
