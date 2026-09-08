@@ -507,13 +507,13 @@ d00ee0a2-233a-5cec-9e30-a0fdd979c0a7,gpt-4o-audio-preview,,,2025-06-03,,gpt-4o-a
 85718c2a-4aea-5b1d-8377-e52a1e078ff8,gpt-4o-mini,,,2024-07-18,,gpt-4o-mini-2024-07-18,OpenAI,US,2024-07-18,
 28a69a05-0468-52bf-ad15-b8117ce30116,gpt-4o-mini-audio-preview,,,2024-12-17,,gpt-4o-mini-audio-preview-2024-12-17,OpenAI,US,2024-12-17,
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,gpt-5,,,2025-08-07,,gpt-5-2025-08-07,OpenAI,US,2025-08-07,
+6b839ed8-a4fa-5fb5-8f95-8ab09125a482,gpt-5,,,2025-08-07,chat,gpt-5-2025-08-07,OpenAI,US,2025-08-07,6.6e+25
 57d1f5f1-a7b0-574a-8206-94212337f244,gpt-5,,,2025-08-07,thinking,gpt-5-2025-08-07_thinking,OpenAI,US,2025-08-07,
 93584935-6377-5a04-9072-48884ad086e9,gpt-5,,,2025-08-07,unknown-effort,gpt-5-2025-08-07_unknown,OpenAI,US,2025-08-07,6.6e+25
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,gpt-5,high,,2025-08-07,,gpt-5-2025-08-07_high,OpenAI,US,2025-08-07,6.6e+25
 c928fb95-ec6c-51b3-89a3-399a087d731f,gpt-5,low,,2025-08-07,,gpt-5-2025-08-07_low,OpenAI,US,2025-08-07,6.6e+25
 5653ca20-cca4-54a0-90d7-2a596e7dabcf,gpt-5,medium,,2025-08-07,,gpt-5-2025-08-07_medium,OpenAI,US,2025-08-07,6.6e+25
 048c4f4e-3821-5f54-bc3f-146cf3df3134,gpt-5,minimal,,2025-08-07,,gpt-5-2025-08-07_minimal,OpenAI,US,2025-08-07,6.6e+25
-2d44946f-af1b-529c-a85e-2910b54f83c2,gpt-5-chat,,,,,gpt-5-chat,OpenAI,US,2025-08-07,6.6e+25
 25e2f86c-ae3c-52d4-b18c-bb86661acb59,gpt-5-codex,,,,,gpt-5-codex,OpenAI,US,2025-09-15,
 20e1c16e-b958-5ce2-b2e4-f97d4706f580,gpt-5-codex,high,,,,gpt-5-codex_high,OpenAI,US,2025-09-15,
 9bf2bf26-a425-5ce3-ad23-b9bd6ad9c9d0,gpt-5-mini,,,2025-08-07,thinking,gpt-5-mini-2025-08-07_thinking,OpenAI,US,2025-08-07,

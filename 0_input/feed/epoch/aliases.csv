@@ -41,3 +41,4 @@ gemini-2.5-pro-preview-03-25,gemini-2.5-pro-exp-03-25,,,,,,Google: the 03-25 pre
 chatgpt-4o-01-29-2025,gpt-4o,,,2025-01-29,,,snapshot of chatgpt-4o-latest, the ChatGPT model behind the API alias; same weights under another spelling; alias pass over every model, 2026-09-08
 chatgpt-4o-03-27-2025,gpt-4o,,,2025-03-27,,,snapshot of chatgpt-4o-latest; same weights under another spelling; alias pass over every model, 2026-09-08
 davinci-002,davinci,,,,,,"METR's GPT-3 stand-in in the Time Horizons series (Epoch labels it GPT-3 175B); joins the davinci identity, already dated 2020-06-11 by decision. User decision 2026-09-08"
+gpt-5-chat,gpt-5,,,2025-08-07,chat,,"gpt-5-chat-latest, the non-reasoning ChatGPT build of GPT-5 released the same day (2025-08-07): the gpt-5 family with a named variant, like the fine-tune variants. User decision 2026-09-08"
