@@ -5294,6 +5294,7 @@ f97e53e8-c31c-5fb5-9b9c-9014f0733da3,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.96,,
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,fe3d622c-b492-5fed-b44d-6653768aabd3,0.519251,,,epoch,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
 51f8a52b-96a1-51ce-bacc-56a855cf0164,fe3d622c-b492-5fed-b44d-6653768aabd3,0.558217,,,epoch,EpochAI,
 53d79bba-1f06-5f45-bac3-8ef88e9909a3,fe3d622c-b492-5fed-b44d-6653768aabd3,0.293044,,,epoch,EpochAI,
+54c85152-6635-5c5a-9132-83b8470c32ed,fe3d622c-b492-5fed-b44d-6653768aabd3,0.161869,,,epoch,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
 5653ca20-cca4-54a0-90d7-2a596e7dabcf,fe3d622c-b492-5fed-b44d-6653768aabd3,0.696053,,,epoch,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
 58087feb-7aad-55c5-909b-2952b7193168,fe3d622c-b492-5fed-b44d-6653768aabd3,0.619725,,,epoch,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
 60a59eee-6cdd-5727-92e5-72d89bbad697,fe3d622c-b492-5fed-b44d-6653768aabd3,0.351726,,,epoch,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
@@ -5322,7 +5323,6 @@ c494bab3-30c1-582d-a80c-d887518f453d,fe3d622c-b492-5fed-b44d-6653768aabd3,0.6658
 db210d2d-9fd6-5b51-b481-16d038c73444,fe3d622c-b492-5fed-b44d-6653768aabd3,0.407636,,,epoch,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
 e3e58c67-29b2-539d-bcfb-a0dfc69a9bcc,fe3d622c-b492-5fed-b44d-6653768aabd3,0.743443,,,epoch,EpochAI,
 eb51562e-effb-5407-91ca-9fc4d497f59d,fe3d622c-b492-5fed-b44d-6653768aabd3,0.401502,,,epoch,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
-f4ea6d96-32de-5ac4-96ec-44ea32412dcc,fe3d622c-b492-5fed-b44d-6653768aabd3,0.161869,,,epoch,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
 00be3a52-982c-51f7-b61e-c39d52e400c5,ff689821-ffdf-5bd8-b976-65dd53db24d4,0.5499999999999999,,,epoch,https://yhenon.github.io/surface-evolver-llm-eval/,
 00d54dda-8f49-5c1e-abf2-257e421a9c77,ff689821-ffdf-5bd8-b976-65dd53db24d4,0.15625,,,epoch,https://yhenon.github.io/surface-evolver-llm-eval/,
 118a77a9-34a8-565a-a5ba-264c7f821cce,ff689821-ffdf-5bd8-b976-65dd53db24d4,0.93125,,,epoch,https://yhenon.github.io/surface-evolver-llm-eval/,

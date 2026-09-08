@@ -320,7 +320,6 @@ f96576b8-987f-5e23-b19e-1658fab0b197,command-a-plus-05-2026,,,,,command-a-plus-0
 b30dd13c-0391-5ba5-b1c0-119e706da158,computer-use-preview,,,2025-03-11,,computer-use-preview-2025-03-11,OpenAI,US,2025-03-11,
 00ee1f51-c93d-5ad1-84bd-fbabb3e305d7,curie,,,,,curie,OpenAI,US,2020-06-11,1.2e+22
 54c85152-6635-5c5a-9132-83b8470c32ed,davinci,,,,,davinci,OpenAI,US,2020-06-11,3.14e+23
-f4ea6d96-32de-5ac4-96ec-44ea32412dcc,davinci-002,,,,,davinci-002,OpenAI,US,2020-06-11,3.14e+23
 97a031f3-40a5-5a97-afb1-8f1ccefa27b5,dbrx-instruct,,,,,dbrx-instruct,Databricks,US,2024-03-27,2.6e+24
 efc6d28a-d826-5c78-86e6-82e98b8ecf55,deepseek-chat,,,,,deepseek-chat,DeepSeek,CN,2025-12-01,4.1999999999999997e+24
 b1626c4d-f53f-5d92-bcb2-66ba433b85fe,deepseek-coder-1.3b-base,,,,,deepseek-coder-1.3b-base,"DeepSeek,Peking University",CN,2023-11-02,1.56e+22

@@ -508,6 +508,7 @@ model_id,feed,raw_name,n_records
 5497bab7-7579-54c1-9408-7a90c63ef218,cybench_site,Gemini 1.5 Pro,1
 5497bab7-7579-54c1-9408-7a90c63ef218,epoch,gemini-1.5-pro-001-feb24,3
 54c85152-6635-5c5a-9132-83b8470c32ed,epoch,davinci,2
+54c85152-6635-5c5a-9132-83b8470c32ed,epoch,davinci-002,1
 54c85152-6635-5c5a-9132-83b8470c32ed,epoch_cyber,GPT-3,2
 551a5400-1b6f-5e7d-9612-d083268c4832,epoch,PaLM 540B,24
 5547767e-0be3-5887-8edc-6877d2d4c92a,epoch,Phi-4-mini-instruct,1
@@ -1531,7 +1532,6 @@ f49a7465-1957-5bb1-a54d-6d8088830b0b,epoch,claude-fable-5,2
 f49a7465-1957-5bb1-a54d-6d8088830b0b,seal,Claude Fable 5,1
 f49a7465-1957-5bb1-a54d-6d8088830b0b,seal,Fable-5,1
 f4da164f-bed2-56a8-996c-d9e4a63284a2,epoch,Baichuan2-13B-Chat,4
-f4ea6d96-32de-5ac4-96ec-44ea32412dcc,epoch,davinci-002,1
 f525c6a7-0b9d-5822-9988-8c7ee00e8e7e,epoch,Baichuan-2-13B-Base,10
 f5511fa3-1e3c-5e08-95be-0bfc96e5ab7c,epoch,nova-2.0-pro-preview_none,2
 f5f6435d-fc25-5b14-bd30-a8ce7b3f7efb,epoch_live,kimi-k2-thinking-turbo,3
