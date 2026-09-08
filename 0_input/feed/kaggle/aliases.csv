@@ -7,3 +7,6 @@ qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,,,,,Kaggle Open Benc
 claude-sonnet-4-5-thinking-20250929,claude-sonnet-4-5,,,2025-09-29,thinking,Kaggle Open Benchmarks,Kaggle slug for Claude Sonnet 4.5 with thinking on; the sole snapshot. Decision 2026-09-07
 gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,,,,,Kaggle Open Benchmarks,Kaggle spelling with the preview suffix of the model Epoch names gemini-3.1-flash-lite (2026-09-08)
 grok-4-fast-reasoning,grok-4-fast,,,,thinking,Kaggle Open Benchmarks,"xAI's reasoning mode of Grok 4 Fast, merged onto Epoch's grok-4-fast as its thinking variant. User decision 2026-09-08"
+grok-4.5-0708,grok-4.5,,,,,Kaggle Open Benchmarks,Kaggle dates the 2026-07-08 release in the name; Epoch's grok-4.5 is that release; same weights under another spelling; alias pass over every model, 2026-09-08
+open-mixtral-8x22b-2404,Mixtral-8x22B-Instruct-v0.1,,,,,Kaggle Open Benchmarks,Mistral API id of Mixtral 8x22B Instruct; same weights under another spelling; alias pass over every model, 2026-09-08
+gemma-4-26b-a4b-it,gemma-4-26b-a4b,,,,,Kaggle Open Benchmarks,Epoch's ZIP spells the instruction-tuned model gemma-4-26b-a4b; same weights under another spelling; alias pass over every model, 2026-09-08

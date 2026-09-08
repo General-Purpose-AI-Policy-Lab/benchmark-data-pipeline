@@ -1,1 +1,5 @@
 raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note
+Llama-2-70b-chat-hf,Llama-2-70b-chat,,,,,,HF spelling of Epoch's Llama-2-70b-chat; same weights under another spelling; alias pass over every model, 2026-09-08
+open-mixtral-8x22b,Mixtral-8x22B-Instruct-v0.1,,,,,,Mistral API id of Mixtral 8x22B Instruct; same weights under another spelling; alias pass over every model, 2026-09-08
+gemini-2.5-pro-preview-03-25,gemini-2.5-pro-exp-03-25,,,,,,Google: the 03-25 preview is the experimental model with higher rate limits (2025-04-04); same weights under another spelling; alias pass over every model, 2026-09-08
+gemma-4-26b-a4b-it_minimal,gemma-4-26b-a4b,minimal,,,,,Epoch's ZIP spells the instruction-tuned model gemma-4-26b-a4b; same weights under another spelling; alias pass over every model, 2026-09-08
