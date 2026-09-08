@@ -32,3 +32,8 @@ zai-org/glm-4.7,glm-4.7,,,,,,defrag: serving-provider prefix
 parasail-qwen3-235b-a22b-instruct-2507,Qwen3-235B-A22B-Instruct-2507,,,,,Parasail,Fiction.LiveBench run served by Parasail; the model is Qwen3-235B-A22B-Instruct-2507. Decision 2026-09-07
 Llama-4-Scout-17B-16E Instruct,Llama-4-Scout-17B-16E-Instruct,,,,,,"Epoch spelling with a space (Fiction.LiveBench, capabilities index); same model. Decision 2026-09-07"
 chutes/Llama-4-Scout-17B-16E Instruct,Llama-4-Scout-17B-16E-Instruct,,,,,,Epoch spelling with a space behind a serving-provider prefix; same model. Decision 2026-09-07
+moonshotai/kimi-k2-0905,Kimi-K2-Instruct-0905,,,,,,defrag: serving-provider prefix; Epoch's own spelling of the 0905 update is Kimi-K2-Instruct-0905 (2026-09-08)
+kimi-k2-0711-preview,Kimi-K2-Instruct,,,,,,API id of the 2025-07-11 release that Epoch names Kimi-K2-Instruct elsewhere (2026-09-08)
+qwen2.5-max,qwen-max,,,2025-01-25,,,Qwen2.5-Max is the qwen-max-2025-01-25 API snapshot (Alibaba release note of 2025-01-28) (2026-09-08)
+gemini-2.5-flash-lite-preview-06-17-thinking,gemini-2.5-flash-lite-preview-06-17,,,,thinking,,thinking mode of the same 06-17 preview; the _16K rows are its token budgets (2026-09-08)
+gemini-2.0-flash-02-05,gemini-2.0-flash-001,,,,,,2025-02-05 is the GA release date of gemini-2.0-flash-001 (2026-09-08)

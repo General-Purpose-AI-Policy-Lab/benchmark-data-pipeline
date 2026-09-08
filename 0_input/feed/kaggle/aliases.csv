@@ -5,3 +5,4 @@ deepseek-v3.1,DeepSeek-V3.1,,,,,Kaggle Open Benchmarks,Kaggle lower-case spellin
 qwen3-235b-a22b-instruct-2507,Qwen3-235B-A22B-Instruct-2507,,,,,Kaggle Open Benchmarks,Kaggle lower-case spelling of Epoch's model_version. Decision 2026-09-07
 qwen3-235b-a22b-thinking-2507,Qwen3-235B-A22B-Thinking-2507,,,,,Kaggle Open Benchmarks,Kaggle lower-case spelling of Epoch's model_version. Decision 2026-09-07
 claude-sonnet-4-5-thinking-20250929,claude-sonnet-4-5,,,2025-09-29,thinking,Kaggle Open Benchmarks,Kaggle slug for Claude Sonnet 4.5 with thinking on; the sole snapshot. Decision 2026-09-07
+gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,,,,,Kaggle Open Benchmarks,Kaggle spelling with the preview suffix of the model Epoch names gemini-3.1-flash-lite (2026-09-08)
