@@ -1,10 +1,10 @@
 raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note
 Claude Mythos Preview,claude-mythos-preview,,,,,,"Mythos Preview system card, 35/40 tasks; the April 2026 checkpoint"
-Claude Opus 4.7,claude-opus-4-7,,,,unknown-effort,,"Opus 4.7 system card, 35/40 tasks; effort not stated"
-Claude Opus 4.6,claude-opus-4-6,,,,unknown-effort,,as Epoch: claude-opus-4-6_unknown
-Claude Opus 4.5,claude-opus-4-5,,,2025-11-01,unknown-effort,,as Epoch: claude-opus-4-5-20251101_unknown
+Claude Opus 4.7,claude-opus-4-7,,,,,,"Opus 4.7 system card, 35/40 tasks; effort not stated"
+Claude Opus 4.6,claude-opus-4-6,,,,,,as Epoch: claude-opus-4-6_unknown
+Claude Opus 4.5,claude-opus-4-5,,,2025-11-01,,,as Epoch: claude-opus-4-5-20251101_unknown
 Muse Spark,muse-spark,,,,,,"Muse Spark safety and preparedness report; effort not stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-Claude Sonnet 4.5,claude-sonnet-4-5,,,2025-09-29,unknown-effort,,as Epoch: claude-sonnet-4-5-20250929_unknown (Opus 4.5 system card figure)
+Claude Sonnet 4.5,claude-sonnet-4-5,,,2025-09-29,,,as Epoch: claude-sonnet-4-5-20250929_unknown (Opus 4.5 system card figure)
 Grok 4,grok-4-0709,,,,,,as Epoch: grok-4-0709
 Claude Opus 4.1,claude-opus-4-1,,,2025-08-05,,,as Epoch
 Grok 4.1 Thinking,grok-4-1,,,,,,as Epoch: grok-4-1

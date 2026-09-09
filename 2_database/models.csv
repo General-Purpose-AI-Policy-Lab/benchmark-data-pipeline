@@ -85,7 +85,6 @@ bf49d8d4-437f-506c-a017-b8eebaa9ee90,MiMo-Audio-7B-Instruct,,,,,MiMo-Audio-7B-In
 244261fd-7e34-5e3f-baa8-4c36d8103f6b,MiniMax-M2,,,,,MiniMax-M2,MiniMax,CN,2025-10-27,
 7001e3dd-22dc-5af2-8ef6-3d9030ccc813,MiniMax-M2.1,,,,,MiniMax-M2.1,MiniMax,CN,2025-12-23,
 f99a025b-f74b-5298-ab3a-63583d8c6a8e,MiniMax-M2.5,,,,,MiniMax-M2.5,MiniMax,CN,2026-02-12,
-6acecfa4-3824-5a6c-8eb8-69e11b3b8f39,MiniMax-M2.5,,,,unknown-effort,MiniMax-M2.5_unknown,MiniMax,CN,2026-02-12,
 db38174a-55d2-537a-824c-5d3ade16f6bb,MiniMax-M2.7,,,,,MiniMax-M2.7,MiniMax,CN,2026-03-18,
 00be3a52-982c-51f7-b61e-c39d52e400c5,MiniMax-M3,,,,,MiniMax-M3,MiniMax,CN,2026-06-01,
 bbd463a7-4c62-522c-9684-ace6f8f6fec4,MiniMax-M3,none,,,,MiniMax-M3_none,MiniMax,CN,2026-06-01,
@@ -176,7 +175,6 @@ eb51562e-effb-5407-91ca-9fc4d497f59d,claude-3-5-sonnet,,,2024-06-20,,claude-3-5-
 a30435c9-0f32-5bad-9e84-32acb0c8933f,claude-3-5-sonnet,,,2024-10-22,,claude-3-5-sonnet-20241022,Anthropic,US,2024-10-22,
 51f8a52b-96a1-51ce-bacc-56a855cf0164,claude-3-7-sonnet,,,2025-02-19,,claude-3-7-sonnet-20250219,Anthropic,US,2025-02-24,3.3499999999999998e+25
 c5ee24bd-546e-5a83-bed1-ec83d183d4e7,claude-3-7-sonnet,,,2025-02-19,thinking,claude-3-7-sonnet-20250219_thinking,Anthropic,US,2025-02-24,
-10c1168d-7d63-532a-908e-7caa1f1a28da,claude-3-7-sonnet,,,2025-02-19,unknown-effort,claude-3-7-sonnet-20250219_unknown,Anthropic,US,2025-02-24,3.3499999999999998e+25
 3c6fed1b-1965-557d-beb6-13d27d2d435b,claude-3-7-sonnet,,1000,2025-02-19,,claude-3-7-sonnet-20250219_1K,Anthropic,US,2025-02-24,3.3499999999999998e+25
 8b86e275-6132-5c54-8737-8455f4a4b655,claude-3-7-sonnet,,12000,2025-02-19,,claude-3-7-sonnet-20250219_12K,Anthropic,US,2025-02-24,3.3499999999999998e+25
 b0026a20-cb3f-5a8e-9404-8d2b052445d5,claude-3-7-sonnet,,15000,2025-02-19,,claude-3-7-sonnet-20250219_15K,Anthropic,US,2025-02-24,3.3499999999999998e+25
@@ -189,13 +187,12 @@ b0026a20-cb3f-5a8e-9404-8d2b052445d5,claude-3-7-sonnet,,15000,2025-02-19,,claude
 889d8957-edfb-53c4-9791-6c29a8c260f7,claude-3-opus,,,2024-02-29,,claude-3-opus-20240229,Anthropic,US,2024-02-29,
 648b9ec1-f0e4-58ee-ab8a-a72f1b866619,claude-3-sonnet,,,2024-02-29,,claude-3-sonnet-20240229,Anthropic,US,2024-02-29,
 f49a7465-1957-5bb1-a54d-6d8088830b0b,claude-fable-5,,,,,claude-fable-5,Anthropic,US,2026-06-09,
-c41c9908-99b4-5a40-9336-39ad1bdf5ef6,claude-fable-5,,,,unknown-effort,claude-fable-5_unknown,Anthropic,US,2026-06-09,
 1e999e30-3c11-5f84-a52a-f5da0969a79f,claude-fable-5,high,,,,claude-fable-5_high,Anthropic,US,2026-06-09,
 be77f5d1-27f2-5b4d-ab8d-1fcb08f492ba,claude-fable-5,low,,,,claude-fable-5_low,Anthropic,US,2026-06-09,
 2f004284-f9c4-5ca9-8138-b4c6a80b2ee8,claude-fable-5,max,,,,claude-fable-5_max,Anthropic,US,2026-06-09,
 a44291d1-3922-5b63-8538-d6b584680c54,claude-fable-5,medium,,,,claude-fable-5_medium,Anthropic,US,2026-06-09,
 1f3fccb4-0a04-5113-992e-7e9bf72b63d1,claude-fable-5,xhigh,,,,claude-fable-5_xhigh,Anthropic,US,2026-06-09,
-3c4cdad8-cdcd-516c-8db9-cffb65c2a5c3,claude-fable-5-1,,,,unknown-effort,claude-fable-5-1_unknown,Anthropic,US,2026-09-01,
+af434d5f-3215-5aee-854a-de70850a350c,claude-fable-5-1,,,,,claude-fable-5-1,Anthropic,US,2026-09-01,
 6db2d995-cd7e-5b1e-bd94-11f1f86b44ae,claude-fable-5-1,high,,,,claude-fable-5-1_high,Anthropic,US,2026-09-01,
 8b913c5a-1801-55b7-96bd-6f6910c8350b,claude-fable-5-1,low,,,,claude-fable-5-1_low,Anthropic,US,2026-09-01,
 40de7350-1962-5868-b516-5aa074b95815,claude-fable-5-1,max,,,,claude-fable-5-1_max,Anthropic,US,2026-09-01,
@@ -203,7 +200,6 @@ bda27011-9a8a-57c1-a6d5-a06ac6714ff5,claude-fable-5-1,medium,,,,claude-fable-5-1
 bf8299bc-1700-5c37-a53a-813a27bc5273,claude-fable-5-1,xhigh,,,,claude-fable-5-1_xhigh,Anthropic,US,2026-09-01,
 c2a9ef56-b7a4-5691-b9bd-bd59197cec3b,claude-haiku-4-5,,,2025-10-01,,claude-haiku-4-5-20251001,Anthropic,US,2025-10-15,
 254c0c5e-e2d0-5e80-87a2-89141b707607,claude-haiku-4-5,,,2025-10-01,thinking,claude-haiku-4-5-20251001_thinking,Anthropic,US,2025-10-15,
-bed62d49-b6d7-5ec1-90ac-4c8bc1fff348,claude-haiku-4-5,,,2025-10-01,unknown-effort,claude-haiku-4-5-20251001_unknown,Anthropic,US,2025-10-15,
 a8ebd9d0-bfc1-5d30-a256-cbd06e15e86f,claude-haiku-4-5,,1000,2025-10-01,,claude-haiku-4-5-20251001_1K,Anthropic,US,2025-10-15,
 51741aba-80cc-5b59-aecf-1d4ce989ca10,claude-haiku-4-5,,16000,2025-10-01,,claude-haiku-4-5-20251001_16K,Anthropic,US,2025-10-15,
 6525d03f-1974-5cc0-a63b-28545e91d9e9,claude-haiku-4-5,,32000,2025-10-01,,claude-haiku-4-5-20251001_32K,Anthropic,US,2025-10-15,
@@ -216,7 +212,6 @@ cdaa556e-ea33-5b62-aa45-35218efff90b,claude-mythos-5,,,,,claude-mythos-5,Anthrop
 a808ba83-e525-5cb0-8207-6d932ad3ebdf,claude-mythos-preview-early,,,,,claude-mythos-preview-early,Anthropic,US,2026-04-06,
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,claude-opus-4,,,2025-05-14,,claude-opus-4-20250514,Anthropic,US,2025-05-22,
 a016ca21-a2b9-5eb7-b151-44798d75ea29,claude-opus-4,,,2025-05-14,thinking,claude-opus-4-20250514_thinking,Anthropic,US,2025-05-22,
-340a8fbc-5e4f-5ece-9dd7-cf51f8507d2b,claude-opus-4,,,2025-05-14,unknown-effort,claude-opus-4-20250514_unknown,Anthropic,US,2025-05-22,
 1eee1c33-a6a9-5c7a-867c-2adc6dd26e63,claude-opus-4,,1000,2025-05-14,,claude-opus-4-20250514_1K,Anthropic,US,2025-05-22,
 02c649a2-ace3-5527-8cbd-631f8a2d7cdc,claude-opus-4,,12000,2025-05-14,,claude-opus-4-20250514_12K,Anthropic,US,2025-05-22,
 2ec3284c-3b30-584c-a20e-179382033fae,claude-opus-4,,16000,2025-05-14,,claude-opus-4-20250514_16K,Anthropic,US,2025-05-22,
@@ -226,14 +221,12 @@ a016ca21-a2b9-5eb7-b151-44798d75ea29,claude-opus-4,,,2025-05-14,thinking,claude-
 da6f4c94-5304-5ad2-814c-436d2117d79c,claude-opus-4,,8000,2025-05-14,,claude-opus-4-20250514_8K,Anthropic,US,2025-05-22,
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,claude-opus-4-1,,,2025-08-05,,claude-opus-4-1-20250805,Anthropic,US,2025-08-05,
 33a8eb2d-e110-5dbb-a96c-37442011bef0,claude-opus-4-1,,,2025-08-05,thinking,claude-opus-4-1-20250805_thinking,Anthropic,US,2025-08-05,
-bc7592ce-1a4d-5aec-b375-439c0eeea5cc,claude-opus-4-1,,,2025-08-05,unknown-effort,claude-opus-4-1-20250805_unknown,Anthropic,US,2025-08-05,
 92c419cb-b17c-5bd2-a990-baaa61dcf8d1,claude-opus-4-1,,16000,2025-08-05,,claude-opus-4-1-20250805_16K,Anthropic,US,2025-08-05,
 7c4cd62f-640c-5142-9331-38466f9bcdb3,claude-opus-4-1,,24000,2025-08-05,,claude-opus-4-1-20250805_24K,Anthropic,US,2025-08-05,
 acdda095-0e8c-54c1-8402-e58a5f324dea,claude-opus-4-1,,27000,2025-08-05,,claude-opus-4-1-20250805_27K,Anthropic,US,2025-08-05,
 6e670a0d-408c-5a4b-a75b-91dca7a5ee80,claude-opus-4-1,,32000,2025-08-05,,claude-opus-4-1-20250805_32K,Anthropic,US,2025-08-05,
 0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,claude-opus-4-5,,,2025-11-01,,claude-opus-4-5-20251101,Anthropic,US,2025-11-24,
 9986c95c-85d7-5f41-a5a2-c6b1e9ef4a8a,claude-opus-4-5,,,2025-11-01,thinking,claude-opus-4-5-20251101_thinking,Anthropic,US,2025-11-24,
-9acd0479-14c7-5882-9fce-b00688ecbeda,claude-opus-4-5,,,2025-11-01,unknown-effort,claude-opus-4-5-20251101_unknown,Anthropic,US,2025-11-24,
 9fd43f8e-dea3-5eec-b580-34a45a75da5f,claude-opus-4-5,,128000,2025-11-01,,claude-opus-4-5-20251101_128K,Anthropic,US,2025-11-24,
 65249d2d-fadd-58c8-b559-1ffa3367ebf2,claude-opus-4-5,,16000,2025-11-01,,claude-opus-4-5-20251101_16K,Anthropic,US,2025-11-24,
 8fa0267b-7634-50a4-a79a-9c928a43102b,claude-opus-4-5,,32000,2025-11-01,,claude-opus-4-5-20251101_32K,Anthropic,US,2025-11-24,
@@ -245,7 +238,6 @@ eb97f810-3ca3-5772-9880-52ac7417232f,claude-opus-4-5,,64000,2025-11-01,,claude-o
 cd313130-5b35-580c-850f-0a72de4c400c,claude-opus-4-5,none,,2025-11-01,,claude-opus-4-5-20251101_none,Anthropic,US,2025-11-24,
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,claude-opus-4-6,,,,,claude-opus-4-6,Anthropic,US,2026-02-05,
 80946e7a-54df-57e0-b07f-e7ddcb992085,claude-opus-4-6,,,,thinking,claude-opus-4-6_thinking,Anthropic,US,2026-02-05,
-0494b190-9605-5b90-bbf3-37447e0b982d,claude-opus-4-6,,,,unknown-effort,claude-opus-4-6_unknown,Anthropic,US,2026-02-05,
 9a2729d3-565c-58f2-bb17-8a47c9126f1c,claude-opus-4-6,,120000,,,claude-opus-4-6_120K,Anthropic,US,2026-02-05,
 56f72247-d867-501b-a569-7903ee26a60d,claude-opus-4-6,,32000,,,claude-opus-4-6_32K,Anthropic,US,2026-02-05,
 3ddac862-1b36-56e7-bece-9a831622f25f,claude-opus-4-6,,64000,,,claude-opus-4-6_64K,Anthropic,US,2026-02-05,
@@ -255,14 +247,12 @@ f9d0bea8-4c49-5762-b85c-253ef349024b,claude-opus-4-6,max,,,,claude-opus-4-6_max,
 51ecf54c-193e-5223-ac0b-917993054698,claude-opus-4-6,medium,,,,claude-opus-4-6_medium,Anthropic,US,2026-02-05,
 fcf431b0-7ba1-574e-aea7-449bc578ba24,claude-opus-4-6,none,,,,claude-opus-4-6_none,Anthropic,US,2026-02-05,
 5f41b045-fc87-5552-9dfd-d1b07ec44ddf,claude-opus-4-7,,,,,claude-opus-4-7,Anthropic,US,2026-04-16,
-f97e53e8-c31c-5fb5-9b9c-9014f0733da3,claude-opus-4-7,,,,unknown-effort,claude-opus-4-7_unknown,Anthropic,US,2026-04-16,
 6394deb1-16b9-5b7f-a3bd-0f0c768f785a,claude-opus-4-7,high,,,,claude-opus-4-7_high,Anthropic,US,2026-04-16,
 2626f048-ade3-5f0d-b8cd-c00174e1cf2d,claude-opus-4-7,low,,,,claude-opus-4-7_low,Anthropic,US,2026-04-16,
 c9d1b5c5-bb9f-5deb-9413-5c2011161c1a,claude-opus-4-7,max,,,,claude-opus-4-7_max,Anthropic,US,2026-04-16,
 7671e59c-c436-5ddc-a0c3-543f503514ab,claude-opus-4-7,medium,,,,claude-opus-4-7_medium,Anthropic,US,2026-04-16,
 7d1769d9-0344-50c6-94eb-8553089e54dd,claude-opus-4-7,xhigh,,,,claude-opus-4-7_xhigh,Anthropic,US,2026-04-16,
 7d9a20a3-ca5f-5c24-a57b-a57372d827f1,claude-opus-4-8,,,,,claude-opus-4-8,Anthropic,US,2026-05-28,
-523a3d04-e7f1-5725-9290-1c6518964f5c,claude-opus-4-8,,,,unknown-effort,claude-opus-4-8_unknown,Anthropic,US,2026-05-28,
 350562da-a1a5-5722-aacb-19a373eadcb6,claude-opus-4-8,high,,,,claude-opus-4-8_high,Anthropic,US,2026-05-28,
 6c45daf1-b7b0-5024-8a90-c4e943accd6e,claude-opus-4-8,low,,,,claude-opus-4-8_low,Anthropic,US,2026-05-28,
 8a4bbbda-d03a-5b5e-87a5-6e972ec8bdd8,claude-opus-4-8,max,,,,claude-opus-4-8_max,Anthropic,US,2026-05-28,
@@ -270,7 +260,6 @@ a6a70e05-2c01-5761-ae5d-e11578d4bfcd,claude-opus-4-8,medium,,,,claude-opus-4-8_m
 a147126b-5c8d-528d-a880-61412bdb9df5,claude-opus-4-8,none,,,,claude-opus-4-8_none,Anthropic,US,2026-05-28,
 281e8c94-3fab-56d7-af36-820548397ce3,claude-opus-4-8,xhigh,,,,claude-opus-4-8_xhigh,Anthropic,US,2026-05-28,
 315f1a07-56b2-5fcb-9bdb-f28716a16d02,claude-opus-5,,,,,claude-opus-5,Anthropic,US,2026-07-24,
-9f156ab4-d96e-57a9-b428-319fcb48d22f,claude-opus-5,,,,unknown-effort,claude-opus-5_unknown,Anthropic,US,2026-07-24,
 e399bbba-49d5-5333-a78a-6fa4c174504b,claude-opus-5,high,,,,claude-opus-5_high,Anthropic,US,2026-07-24,
 7b756678-239d-5374-995e-6533d26a3474,claude-opus-5,low,,,,claude-opus-5_low,Anthropic,US,2026-07-24,
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,claude-opus-5,max,,,,claude-opus-5_max,Anthropic,US,2026-07-24,
@@ -278,7 +267,6 @@ a94d7bf7-0244-536b-bd58-d1143c4088ac,claude-opus-5,medium,,,,claude-opus-5_mediu
 064d6bba-cf57-5cd0-b569-ab2110036c8c,claude-opus-5,xhigh,,,,claude-opus-5_xhigh,Anthropic,US,2026-07-24,
 5dee249b-019f-5f65-83e1-5009325d080f,claude-sonnet-4,,,2025-05-14,,claude-sonnet-4-20250514,Anthropic,US,2025-05-22,
 eeca198f-e209-5cbc-9332-e554b980a9d7,claude-sonnet-4,,,2025-05-14,thinking,claude-sonnet-4-20250514_thinking,Anthropic,US,2025-05-22,
-25020d27-eb2f-5dcf-accc-1267facfb4cf,claude-sonnet-4,,,2025-05-14,unknown-effort,claude-sonnet-4-20250514_unknown,Anthropic,US,2025-05-22,
 15e18500-4bd0-5566-9d4e-892e18065643,claude-sonnet-4,,1000,2025-05-14,,claude-sonnet-4-20250514_1K,Anthropic,US,2025-05-22,
 7b3f17e2-2fab-518d-b718-6712d70cdd4d,claude-sonnet-4,,12000,2025-05-14,,claude-sonnet-4-20250514_12K,Anthropic,US,2025-05-22,
 58087feb-7aad-55c5-909b-2952b7193168,claude-sonnet-4,,16000,2025-05-14,,claude-sonnet-4-20250514_16K,Anthropic,US,2025-05-22,
@@ -288,7 +276,6 @@ ccdafc64-74d9-5676-9cab-f1eecbbbd8b2,claude-sonnet-4,,2000,2025-05-14,,claude-so
 3907a552-0ad6-5bc9-9d40-577793a07f37,claude-sonnet-4,,8000,2025-05-14,,claude-sonnet-4-20250514_8K,Anthropic,US,2025-05-22,
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,claude-sonnet-4-5,,,2025-09-29,,claude-sonnet-4-5-20250929,Anthropic,US,2025-09-29,
 a47ab0fe-3885-5b4e-a41a-4e31abcf3181,claude-sonnet-4-5,,,2025-09-29,thinking,claude-sonnet-4-5-20250929_thinking,Anthropic,US,2025-09-29,
-5036c0ca-a038-57e7-b5dd-3c36c5fcfc5c,claude-sonnet-4-5,,,2025-09-29,unknown-effort,claude-sonnet-4-5-20250929_unknown,Anthropic,US,2025-09-29,
 fb822e69-9563-5a18-952e-ae60ad877a95,claude-sonnet-4-5,,1000,2025-09-29,,claude-sonnet-4-5-20250929_1K,Anthropic,US,2025-09-29,
 12c9d283-d7c8-5516-acc8-1ab17dc95512,claude-sonnet-4-5,,12000,2025-09-29,,claude-sonnet-4-5-20250929_12K,Anthropic,US,2025-09-29,
 77fdc744-f384-5db9-b25f-d3660900be2b,claude-sonnet-4-5,,16000,2025-09-29,,claude-sonnet-4-5-20250929_16K,Anthropic,US,2025-09-29,
@@ -299,14 +286,12 @@ cd033a72-b40d-54a2-891a-5f21c4abc392,claude-sonnet-4-5,,48000,2025-09-29,,claude
 118b930b-342d-5c7f-9de6-37b80ecb6e1b,claude-sonnet-4-5,,8000,2025-09-29,,claude-sonnet-4-5-20250929_8K,Anthropic,US,2025-09-29,
 b88cadfd-5d93-5a88-af3c-c5f91f123fe9,claude-sonnet-4-5,low,,2025-09-29,,claude-sonnet-4-5-20250929_low,Anthropic,US,2025-09-29,
 33be4070-e5b8-558b-b876-fd8ad377ad1a,claude-sonnet-4-6,,,,,claude-sonnet-4-6,Anthropic,US,2026-02-17,
-f0cb72e3-463b-5489-ad44-8c5986f97151,claude-sonnet-4-6,,,,unknown-effort,claude-sonnet-4-6_unknown,Anthropic,US,2026-02-17,
 3b6d8ea8-bf57-5690-94bb-6d6d83a00f2e,claude-sonnet-4-6,,32000,,,claude-sonnet-4-6_32K,Anthropic,US,2026-02-17,
 49e29e3e-eca4-5604-a29b-8e1c6630193c,claude-sonnet-4-6,high,,,,claude-sonnet-4-6_high,Anthropic,US,2026-02-17,
 c7d872ab-14fa-5875-be5c-76009dd371de,claude-sonnet-4-6,low,,,,claude-sonnet-4-6_low,Anthropic,US,2026-02-17,
 662980f9-93c5-5540-b67f-12f5e574576e,claude-sonnet-4-6,max,,,,claude-sonnet-4-6_max,Anthropic,US,2026-02-17,
 063d677b-8efb-5050-b0e2-5510654c05a9,claude-sonnet-4-6,medium,,,,claude-sonnet-4-6_medium,Anthropic,US,2026-02-17,
 bde0df97-257e-5185-b67a-18b51cffb082,claude-sonnet-5,,,,,claude-sonnet-5,Anthropic,US,2026-06-30,
-f20892cd-9b6c-5ce7-b87c-6d10bbc584d8,claude-sonnet-5,,,,unknown-effort,claude-sonnet-5_unknown,Anthropic,US,2026-06-30,
 4290c4e4-50d9-570f-a3d8-1f15ba1fe085,claude-sonnet-5,high,,,,claude-sonnet-5_high,Anthropic,US,2026-06-30,
 64a44914-f4b4-57c4-aaae-2714611e5e93,claude-sonnet-5,low,,,,claude-sonnet-5_low,Anthropic,US,2026-06-30,
 80732116-ffa5-5aad-85a8-529ec9b01a7e,claude-sonnet-5,max,,,,claude-sonnet-5_max,Anthropic,US,2026-06-30,
@@ -329,20 +314,20 @@ b1626c4d-f53f-5d92-bcb2-66ba433b85fe,deepseek-coder-1.3b-base,,,,,deepseek-coder
 a63d518c-a9e6-5ba9-a426-287062b2d91f,deepseek-r1-0528-qwen3-8b,,,,,deepseek-r1-0528-qwen3-8b,DeepSeek,CN,2025-05-29,
 ca701bc5-0932-51e2-bc21-749b1b752f93,deepseek-reasoner,,,,,deepseek-reasoner,DeepSeek,CN,2025-12-01,4.1999999999999997e+24
 b8e03aab-47dd-530c-866d-a613893f5711,deepseek-v3.2,,,,,deepseek-v3.2,DeepSeek,CN,2025-12-01,4.1999999999999997e+24
-7c53e9da-46c1-562b-bbf9-72a0aa53cdca,deepseek-v4-flash,,,,unknown-effort,deepseek-v4-flash_unknown,DeepSeek,CN,2026-04-24,2.496e+24
+f58ed103-2670-5d10-a6da-5774627db5a3,deepseek-v4-flash,,,,,deepseek-v4-flash,DeepSeek,CN,2026-04-24,2.496e+24
 ed7de9db-7b66-5cc1-8803-1adceec2c0e7,deepseek-v4-flash,high,,,,deepseek-v4-flash_high,DeepSeek,CN,2026-04-24,2.496e+24
 c45613e0-473a-5c45-ba7a-87d2db754cc8,deepseek-v4-flash,max,,,,deepseek-v4-flash_max,DeepSeek,CN,2026-04-24,2.496e+24
-8130ff49-7877-5e29-8a27-0c948a1be3a6,deepseek-v4-flash-0731,,,,unknown-effort,deepseek-v4-flash-0731_unknown,DeepSeek,CN,2026-07-31,2.496e+24
+97f2b236-7a8f-5f7a-bab9-a58276d102fa,deepseek-v4-flash-0731,,,,,deepseek-v4-flash-0731,DeepSeek,CN,2026-07-31,2.496e+24
 dfff67f5-f4e9-5ea6-b9d8-03ac04e5b014,deepseek-v4-flash-0731,high,,,,deepseek-v4-flash-0731_high,DeepSeek,CN,2026-07-31,2.496e+24
 38391665-2a3d-5970-8ee2-58ae3a4ebed2,deepseek-v4-flash-0731,low,,,,deepseek-v4-flash-0731_low,DeepSeek,CN,2026-07-31,2.496e+24
 e2c64e9a-5cb0-574e-b9a8-fd821ebf973a,deepseek-v4-flash-0731,max,,,,deepseek-v4-flash-0731_max,DeepSeek,CN,2026-07-31,2.496e+24
 11686f68-ca79-59b2-be91-97458bc5e8cc,deepseek-v4-flash-0731,none,,,,deepseek-v4-flash-0731_none,DeepSeek,CN,2026-07-31,2.496e+24
-1360af4d-95cc-5c28-baee-1e13d70885f0,deepseek-v4-pro,,,,unknown-effort,deepseek-v4-pro_unknown,DeepSeek,CN,2026-04-24,9.702e+24
+cc40cf96-f510-5760-915e-8e79e6fee976,deepseek-v4-pro,,,,,deepseek-v4-pro,DeepSeek,CN,2026-04-24,9.702e+24
 8080474a-c234-5a76-a82e-8d9513f316ad,deepseek-v4-pro,high,,,,deepseek-v4-pro_high,DeepSeek,CN,2026-04-24,9.702e+24
 914f6797-105d-59dd-99f4-7466458efac6,deepseek-v4-pro,max,,,,deepseek-v4-pro_max,DeepSeek,CN,2026-04-24,9.702e+24
 a3735a58-72bf-5c2e-9d6a-6248f5383462,deepseek-v4-pro,none,,,,deepseek-v4-pro_none,DeepSeek,CN,2026-04-24,9.702e+24
 5e48f332-627e-5575-b887-4bcd7e66eaf6,deepseek-v4-pro,xhigh,,,,deepseek-v4-pro_xhigh,DeepSeek,CN,2026-04-24,
-c3b63f1d-0eb7-5fab-bf45-7dcb3586b8c4,deepseek-v4-pro-0813,,,,unknown-effort,deepseek-v4-pro-0813_unknown,DeepSeek,CN,2026-08-13,9.702e+24
+01824fbe-7334-5bdd-9b37-16e0f25d2ac8,deepseek-v4-pro-0813,,,,,deepseek-v4-pro-0813,DeepSeek,CN,2026-08-13,9.702e+24
 5e538b9d-bf72-57c4-b07d-61b64c1b5f31,deepseek-v4-pro-0813,high,,,,deepseek-v4-pro-0813_high,DeepSeek,CN,2026-08-13,9.702e+24
 df688f05-9678-5e43-9dda-267958d09bf0,deepseek-v4-pro-0813,low,,,,deepseek-v4-pro-0813_low,DeepSeek,CN,2026-08-13,9.702e+24
 bfd896ae-8b2b-52d7-8bd8-3eede5d82c7f,deepseek-v4-pro-0813,max,,,,deepseek-v4-pro-0813_max,DeepSeek,CN,2026-08-13,9.702e+24
@@ -398,7 +383,6 @@ a157dae7-3d76-55ac-b54c-d64d5b0749e2,gemini-2.5-pro,,16000,,,gemini-2.5-pro_16K,
 4f5d7473-db32-5637-9591-0d41e9edaf4b,gemini-2.5-pro-preview-06-05,,32000,,,gemini-2.5-pro-preview-06-05_32K,Google DeepMind,US,2025-06-05,
 dc37f0e9-5229-507d-8302-d32a9c6536f3,gemini-3-deep-think-preview,,,,,gemini-3-deep-think-preview,Google DeepMind,US,2026-02-12,
 4ad18fe4-b0c4-5158-8df1-b40e3d1ff0d1,gemini-3-flash-preview,,,,,gemini-3-flash-preview,Google DeepMind,US,2025-12-17,
-72fab066-0005-58a0-8d61-239155ef104d,gemini-3-flash-preview,,,,unknown-effort,gemini-3-flash-preview_unknown,Google DeepMind,US,2025-12-17,
 838e81ab-35da-504e-b566-0d714556aca1,gemini-3-flash-preview,high,,,,gemini-3-flash-preview_high,Google DeepMind,US,2025-12-17,
 cbca8607-d03c-50f1-8b60-7b780d05eca3,gemini-3-flash-preview,low,,,,gemini-3-flash-preview_low,Google DeepMind,US,2025-12-17,
 36ff42cd-d802-595f-bfa8-3306c5613bf9,gemini-3-flash-preview,medium,,,,gemini-3-flash-preview_medium,Google DeepMind,US,2025-12-17,
@@ -412,12 +396,10 @@ d39f5588-912e-5ef9-a178-f9b576f5e6ba,gemini-3.1-flash-lite,high,,,,gemini-3.1-fl
 0a7f79f8-e303-5e36-a04e-dde6d44350bd,gemini-3.1-flash-lite,minimal,,,,gemini-3.1-flash-lite_minimal,Google DeepMind,US,2026-03-03,
 7d026e3d-8541-5748-a701-2eec7cccb5c6,gemini-3.1-flash-live-preview,,,,,gemini-3.1-flash-live-preview,Google DeepMind,US,2026-03-26,
 b8d7bbbf-bfb4-5daa-ac90-340ac1818169,gemini-3.1-pro-preview,,,,,gemini-3.1-pro-preview,Google DeepMind,US,2026-02-19,
-c350f63f-3067-53b4-bda8-89594158b195,gemini-3.1-pro-preview,,,,unknown-effort,gemini-3.1-pro-preview_unknown,Google DeepMind,US,2026-02-19,
 782280fe-92fa-5caa-9aa3-91d71a699e89,gemini-3.1-pro-preview,high,,,,gemini-3.1-pro-preview_high,Google DeepMind,US,2026-02-19,
 69368598-70b2-5736-ad5b-2f8b4df761de,gemini-3.1-pro-preview,low,,,,gemini-3.1-pro-preview_low,Google DeepMind,US,2026-02-19,
 64be3d5b-560f-5e10-8c99-4e38826f14eb,gemini-3.1-pro-preview,medium,,,,gemini-3.1-pro-preview_medium,Google DeepMind,US,2026-02-19,
 8b894406-85fc-569b-82c0-de42e84375f8,gemini-3.5-flash,,,,,gemini-3.5-flash,Google DeepMind,US,2026-05-19,
-a946af5a-02ed-5e8d-8c59-9e4e58e2fd28,gemini-3.5-flash,,,,unknown-effort,gemini-3.5-flash_unknown,Google DeepMind,US,2026-05-19,
 b098a367-9a28-5df9-9e51-3110e10b52c3,gemini-3.5-flash,high,,,,gemini-3.5-flash_high,Google DeepMind,US,2026-05-19,
 0f752481-e609-514a-b140-2ed9978ceb46,gemini-3.5-flash,low,,,,gemini-3.5-flash_low,Google DeepMind,US,2026-05-19,
 42dc63ae-b623-5ab0-b115-8ec5e78fbfd8,gemini-3.5-flash,medium,,,,gemini-3.5-flash_medium,Google DeepMind,US,2026-05-19,
@@ -428,17 +410,15 @@ aeb46fa5-cf5e-5951-9948-d1790fe0d57b,gemini-3.5-flash-lite,low,,,,gemini-3.5-fla
 3a6ddf43-bed3-527c-b659-5290a5e7a411,gemini-3.5-flash-lite,medium,,,,gemini-3.5-flash-lite_medium,Google DeepMind,US,2026-07-21,
 318e1057-09ba-5729-9d62-91d8ff8dc165,gemini-3.5-flash-lite,minimal,,,,gemini-3.5-flash-lite_minimal,Google DeepMind,US,2026-07-21,
 36dffa4f-7102-505c-bc25-e1b8c38be478,gemini-3.6-flash,,,,,gemini-3.6-flash,Google DeepMind,US,2026-07-21,
-d7fa8f9d-bc40-557f-9a2e-429dec9c54dd,gemini-3.6-flash,,,,unknown-effort,gemini-3.6-flash_unknown,Google DeepMind,US,2026-07-21,
 cb05d92b-9bca-5520-bf88-fe3ee03737a5,gemini-3.6-flash,high,,,,gemini-3.6-flash_high,Google DeepMind,US,2026-07-21,
 800de1a1-ed9f-5927-97e3-47286682c9ea,gemini-3.6-flash,low,,,,gemini-3.6-flash_low,Google DeepMind,US,2026-07-21,
 8c4f200e-3563-53cc-b937-550eb24999aa,gemini-3.6-flash,medium,,,,gemini-3.6-flash_medium,Google DeepMind,US,2026-07-21,
 c5a5c3df-a6a3-5969-bf49-b55592753bcc,gemini-3.6-flash,minimal,,,,gemini-3.6-flash_minimal,Google DeepMind,US,2026-07-21,
 f73d0376-df40-52a9-88bd-e4ff240f2643,gemini-3.7-flash,,,,,gemini-3.7-flash,Google DeepMind,US,2026-08-13,
-e89a8e8f-e3b6-59b3-bbd9-43267d0788dc,gemini-3.7-flash,,,,unknown-effort,gemini-3.7-flash_unknown,Google DeepMind,US,2026-08-13,
 e128116f-96f9-5f94-b845-206a14cc599f,gemini-3.7-flash,high,,,,gemini-3.7-flash_high,Google DeepMind,US,2026-08-13,
 ea546c0b-46fd-52aa-acba-794c9d0f3a13,gemini-3.7-flash,low,,,,gemini-3.7-flash_low,Google DeepMind,US,2026-08-13,
 c46458a4-eca4-572f-b854-a93df31d132f,gemini-3.7-flash,medium,,,,gemini-3.7-flash_medium,Google DeepMind,US,2026-08-13,
-871d54a1-951c-5b56-af29-18441e018ff4,gemini-3.8-flash,,,,unknown-effort,gemini-3.8-flash_unknown,Google DeepMind,US,2026-09-02,
+0f650a33-dc38-52de-9f1c-a3bff1f0fde4,gemini-3.8-flash,,,,,gemini-3.8-flash,Google DeepMind,US,2026-09-02,
 1c922516-3585-503a-8965-2f65aaff0550,gemini-3.8-flash,high,,,,gemini-3.8-flash_high,Google DeepMind,US,2026-09-02,
 0b291629-dac5-53e9-bb5f-24c9c54b8c80,gemini-3.8-flash,low,,,,gemini-3.8-flash_low,Google DeepMind,US,2026-09-02,
 4ff1a460-086a-5154-aa6c-3d16cb068968,gemini-3.8-flash,medium,,,,gemini-3.8-flash_medium,Google DeepMind,US,2026-09-02,
@@ -469,10 +449,9 @@ ab486689-31ad-5a12-af5e-f2d41119770e,glm-4.7,,,,,glm-4.7,Z.ai (Zhipu AI),CN,2025
 df2bceb8-066d-5046-8380-0822ef624082,glm-4.7-flash,,,,,glm-4.7-flash,Z.ai (Zhipu AI),CN,2026-01-19,
 38011540-2d19-5a0e-a80d-278a7dcd89d7,glm-4.7-flash,none,,,,glm-4.7-flash_none,Z.ai (Zhipu AI),CN,2026-01-19,
 935de1ee-c0c0-59a6-afeb-a6e0c95046ed,glm-5,,,,,glm-5,Z.ai (Zhipu AI),CN,2026-02-11,6.84e+24
-47dc292b-289b-5435-8b31-673e1e6a2d23,glm-5,,,,unknown-effort,glm-5_unknown,Z.ai (Zhipu AI),CN,2026-02-11,
 fa570698-4ac3-5bcc-8af8-59e381ff8d0c,glm-5.1,,,,,glm-5.1,Z.ai (Zhipu AI),CN,2026-04-07,
 e544c9a9-f224-5d6b-9d68-55379aa1d7b9,glm-5.1,none,,,,glm-5.1_none,Z.ai (Zhipu AI),CN,2026-04-07,
-f7a70eae-a42e-5ee1-a2ed-36a2eade85df,glm-5.2,,,,unknown-effort,glm-5.2_unknown,Z.ai (Zhipu AI),CN,2026-06-16,
+a8994e7b-220b-5ad3-b2e8-9c64c1ec7d0b,glm-5.2,,,,,glm-5.2,Z.ai (Zhipu AI),CN,2026-06-16,
 647c328c-d10e-5a29-a8cc-81a0c57d99dc,glm-5.2,high,,,,glm-5.2_high,Z.ai (Zhipu AI),CN,2026-06-16,
 29c0aaba-d0b0-50af-af83-d4efa0c65b51,glm-5.2,low,,,,glm-5.2_low,Z.ai (Zhipu AI),CN,2026-06-16,
 d22e3096-119a-5570-a80b-7ae772ff4179,glm-5.2,max,,,,glm-5.2_max,Z.ai (Zhipu AI),CN,2026-06-16,
@@ -481,7 +460,7 @@ e487f2bd-a899-5792-8fd4-4a5d68fdc742,glm-5.2,medium,,,,glm-5.2_medium,Z.ai (Zhip
 d2b66162-2f5e-5f61-9a9c-71af455a4091,glm-5.2,none,,,,glm-5.2_none,Z.ai (Zhipu AI),CN,2026-06-16,
 6b0d22fa-352e-5272-ac4e-ccff612d06b2,glm-5.2,xhigh,,,,glm-5.2_xhigh,Z.ai (Zhipu AI),CN,2026-06-16,
 4da8fd41-ac04-528d-8f29-7944a162802a,glm-5.3,max,,,,glm-5.3_max,Z.ai (Zhipu AI),CN,2026-08-14,
-70400a81-e1ed-547c-aa1c-51c244bc3217,glm-5.3-flash,,,,unknown-effort,glm-5.3-flash_unknown,Z.ai (Zhipu AI),CN,2026-08-20,3.24e+24
+9af32c96-c90e-5e1d-b7d1-628fdc5b22bf,glm-5.3-flash,,,,,glm-5.3-flash,Z.ai (Zhipu AI),CN,2026-08-20,3.24e+24
 f774eb3f-8d0f-531c-8b88-23e84e3414be,glm-5.3-flash,max,,,,glm-5.3-flash_max,Z.ai (Zhipu AI),CN,2026-08-20,3.24e+24
 fed155d2-f6ea-5e34-99da-0f5a37e6ab09,gpt-3.5-turbo-0125,,,,,gpt-3.5-turbo-0125,OpenAI,US,2024-01-25,
 b6e0435f-0fe8-57c5-a303-1fc113594486,gpt-3.5-turbo-0613,,,,,gpt-3.5-turbo-0613,OpenAI,US,2023-06-13,
@@ -506,32 +485,30 @@ f0bda079-d5fc-5b16-898e-d85650c0d484,gpt-4o,,,2025-01-29,,gpt-4o-2025-01-29,Open
 d00ee0a2-233a-5cec-9e30-a0fdd979c0a7,gpt-4o-audio-preview,,,2025-06-03,,gpt-4o-audio-preview-2025-06-03,OpenAI,US,2025-06-03,
 85718c2a-4aea-5b1d-8377-e52a1e078ff8,gpt-4o-mini,,,2024-07-18,,gpt-4o-mini-2024-07-18,OpenAI,US,2024-07-18,
 28a69a05-0468-52bf-ad15-b8117ce30116,gpt-4o-mini-audio-preview,,,2024-12-17,,gpt-4o-mini-audio-preview-2024-12-17,OpenAI,US,2024-12-17,
-9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,gpt-5,,,2025-08-07,,gpt-5-2025-08-07,OpenAI,US,2025-08-07,
+9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,gpt-5,,,2025-08-07,,gpt-5-2025-08-07,OpenAI,US,2025-08-07,6.6e+25
 6b839ed8-a4fa-5fb5-8f95-8ab09125a482,gpt-5,,,2025-08-07,chat,gpt-5-2025-08-07,OpenAI,US,2025-08-07,6.6e+25
 57d1f5f1-a7b0-574a-8206-94212337f244,gpt-5,,,2025-08-07,thinking,gpt-5-2025-08-07_thinking,OpenAI,US,2025-08-07,
-93584935-6377-5a04-9072-48884ad086e9,gpt-5,,,2025-08-07,unknown-effort,gpt-5-2025-08-07_unknown,OpenAI,US,2025-08-07,6.6e+25
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,gpt-5,high,,2025-08-07,,gpt-5-2025-08-07_high,OpenAI,US,2025-08-07,6.6e+25
 c928fb95-ec6c-51b3-89a3-399a087d731f,gpt-5,low,,2025-08-07,,gpt-5-2025-08-07_low,OpenAI,US,2025-08-07,6.6e+25
 5653ca20-cca4-54a0-90d7-2a596e7dabcf,gpt-5,medium,,2025-08-07,,gpt-5-2025-08-07_medium,OpenAI,US,2025-08-07,6.6e+25
 048c4f4e-3821-5f54-bc3f-146cf3df3134,gpt-5,minimal,,2025-08-07,,gpt-5-2025-08-07_minimal,OpenAI,US,2025-08-07,6.6e+25
 25e2f86c-ae3c-52d4-b18c-bb86661acb59,gpt-5-codex,,,,,gpt-5-codex,OpenAI,US,2025-09-15,
 20e1c16e-b958-5ce2-b2e4-f97d4706f580,gpt-5-codex,high,,,,gpt-5-codex_high,OpenAI,US,2025-09-15,
+b725f682-a665-5e78-b1d6-d40e1cf71fe8,gpt-5-mini,,,2025-08-07,,gpt-5-mini-2025-08-07,OpenAI,US,2025-08-07,
 9bf2bf26-a425-5ce3-ad23-b9bd6ad9c9d0,gpt-5-mini,,,2025-08-07,thinking,gpt-5-mini-2025-08-07_thinking,OpenAI,US,2025-08-07,
-db492974-4c58-5c15-b613-1b8d0ad811dc,gpt-5-mini,,,2025-08-07,unknown-effort,gpt-5-mini-2025-08-07_unknown,OpenAI,US,2025-08-07,
 62407803-2c75-5f0b-8e74-05e54bed9915,gpt-5-mini,high,,2025-08-07,,gpt-5-mini-2025-08-07_high,OpenAI,US,2025-08-07,
 a63f29ea-cb11-5899-86bc-8322ee4f05d7,gpt-5-mini,low,,2025-08-07,,gpt-5-mini-2025-08-07_low,OpenAI,US,2025-08-07,
 45f58c79-68eb-5ac2-956b-d0cc2989131d,gpt-5-mini,medium,,2025-08-07,,gpt-5-mini-2025-08-07_medium,OpenAI,US,2025-08-07,
 0f47e29e-4cd2-5e9a-92b5-cad6606881fe,gpt-5-mini,minimal,,2025-08-07,,gpt-5-mini-2025-08-07_minimal,OpenAI,US,2025-08-07,
-6d6ad516-2113-5b65-8bfa-93dd2fa653e6,gpt-5-nano,,,2025-08-07,unknown-effort,gpt-5-nano-2025-08-07_unknown,OpenAI,US,2025-08-07,
+25dd4bd2-3e24-5263-8885-f74b0976a22f,gpt-5-nano,,,2025-08-07,,gpt-5-nano-2025-08-07,OpenAI,US,2025-08-07,
 caf13123-b6ac-5e1b-a12c-160af30d3c53,gpt-5-nano,high,,2025-08-07,,gpt-5-nano-2025-08-07_high,OpenAI,US,2025-08-07,
 939b3f52-b8d3-52a3-a053-5e7d5603382b,gpt-5-nano,low,,2025-08-07,,gpt-5-nano-2025-08-07_low,OpenAI,US,2025-08-07,
 842636a2-c26e-527d-b04a-7dc622b7449f,gpt-5-nano,medium,,2025-08-07,,gpt-5-nano-2025-08-07_medium,OpenAI,US,2025-08-07,
 a440b5a2-2106-5b29-8f2c-bd6b54b4dcb1,gpt-5-nano,minimal,,2025-08-07,,gpt-5-nano-2025-08-07_minimal,OpenAI,US,2025-08-07,
-7c9179b6-51d5-5c67-a65a-0034252550e5,gpt-5-pro,,,2025-10-06,unknown-effort,gpt-5-pro-2025-10-06_unknown,OpenAI,US,2025-08-07,
+950c4b68-919a-590e-bba1-e63fdc87c6c5,gpt-5-pro,,,2025-10-06,,gpt-5-pro-2025-10-06,OpenAI,US,2025-08-07,
 481d5f25-a5dc-526d-bc09-df38fac19028,gpt-5-pro,high,,2025-10-06,,gpt-5-pro-2025-10-06_high,OpenAI,US,2025-08-07,
 3daa088c-0460-52bb-9885-f0a9488ce842,gpt-5.1,,,2025-11-13,,gpt-5.1-2025-11-13,OpenAI,US,2025-11-12,
 2444bc78-7324-564b-b07e-00fe689ede74,gpt-5.1,,,2025-11-13,thinking,gpt-5.1-2025-11-13_thinking,OpenAI,US,2025-11-12,
-4ede90c4-60b2-5df6-ab14-44e7856fb005,gpt-5.1,,,2025-11-13,unknown-effort,gpt-5.1-2025-11-13_unknown,OpenAI,US,2025-11-12,
 63cc9c2e-1703-5fa1-9e84-3de5ded54f01,gpt-5.1,high,,2025-11-13,,gpt-5.1-2025-11-13_high,OpenAI,US,2025-11-12,
 d2e8cac6-7964-5242-84d5-e496c0b2fe89,gpt-5.1,low,,2025-11-13,,gpt-5.1-2025-11-13_low,OpenAI,US,2025-11-12,
 53d2d6c7-13cd-5f78-a0b1-a97d4e519d4e,gpt-5.1,medium,,2025-11-13,,gpt-5.1-2025-11-13_medium,OpenAI,US,2025-11-12,
@@ -539,7 +516,7 @@ d2e8cac6-7964-5242-84d5-e496c0b2fe89,gpt-5.1,low,,2025-11-13,,gpt-5.1-2025-11-13
 f9ff8b2a-1259-5d7c-9b73-3b95e51e007f,gpt-5.1-codex,,,,,gpt-5.1-codex,OpenAI,US,2025-11-12,
 8cac752e-06b4-5fd9-ba2e-f225b3c0bd56,gpt-5.1-codex-max,,,,,gpt-5.1-codex-max,OpenAI,US,2025-11-19,
 0e3d9ad1-e24a-5113-a4ac-57ce6dc8a779,gpt-5.1-codex-mini,,,,,gpt-5.1-codex-mini,OpenAI,US,2025-11-12,
-c9137438-0893-562c-bb91-a0f3e5604a34,gpt-5.2,,,2025-12-11,unknown-effort,gpt-5.2-2025-12-11_unknown,OpenAI,US,2025-12-11,
+68d306f4-b122-5f89-9d4a-63530ced57ca,gpt-5.2,,,2025-12-11,,gpt-5.2-2025-12-11,OpenAI,US,2025-12-11,
 9d1a843b-0188-5431-8f7e-0187f70ab91b,gpt-5.2,high,,2025-12-11,,gpt-5.2-2025-12-11_high,OpenAI,US,2025-12-11,
 714d0db5-0da1-5474-a61a-75d12b959ea6,gpt-5.2,low,,2025-12-11,,gpt-5.2-2025-12-11_low,OpenAI,US,2025-12-11,
 6850cfcb-e6a3-5af4-af60-5dc27a6c10d4,gpt-5.2,medium,,2025-12-11,,gpt-5.2-2025-12-11_medium,OpenAI,US,2025-12-11,
@@ -554,29 +531,28 @@ f33305f4-7736-53c7-883d-1eaa32a9f6b1,gpt-5.2-pro,medium,,2025-12-11,,gpt-5.2-pro
 e1926c8a-2a11-516f-a551-5c624888ea56,gpt-5.3-codex,xhigh,,,,gpt-5.3-codex_xhigh,OpenAI,US,2026-02-05,
 1702d63f-e6ca-553a-86ba-02ede394ca14,gpt-5.4,,,2026-03-05,,gpt-5.4-2026-03-05,OpenAI,US,2026-03-05,
 12326d46-2b2a-5cfe-a2ae-c386db17a4f2,gpt-5.4,,,2026-03-05,Cyber,gpt-5.4-2026-03-05,OpenAI,US,2026-04-14,
-e3e58c67-29b2-539d-bcfb-a0dfc69a9bcc,gpt-5.4,,,2026-03-05,unknown-effort,gpt-5.4-2026-03-05_unknown,OpenAI,US,2026-03-05,
 96edcc51-a125-5f22-8dd6-c4f487c0a795,gpt-5.4,high,,2026-03-05,,gpt-5.4-2026-03-05_high,OpenAI,US,2026-03-05,
 30fc97b2-d356-59ed-b282-a86797decc72,gpt-5.4,low,,2026-03-05,,gpt-5.4-2026-03-05_low,OpenAI,US,2026-03-05,
 1715f82b-a537-5c2a-a15e-c016f9e748a6,gpt-5.4,medium,,2026-03-05,,gpt-5.4-2026-03-05_medium,OpenAI,US,2026-03-05,
 314a22cb-f963-51f4-b969-5f82c4c67bee,gpt-5.4,none,,2026-03-05,,gpt-5.4-2026-03-05_none,OpenAI,US,2026-03-05,
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,gpt-5.4,xhigh,,2026-03-05,,gpt-5.4-2026-03-05_xhigh,OpenAI,US,2026-03-05,
-7cca1ac4-2057-5fda-bb99-a75db4fb55b2,gpt-5.4-mini,,,2026-03-17,unknown-effort,gpt-5.4-mini-2026-03-17_unknown,OpenAI,US,2026-03-17,
+2c7620ee-cd87-579d-b988-79195f3bdc23,gpt-5.4-mini,,,2026-03-17,,gpt-5.4-mini-2026-03-17,OpenAI,US,2026-03-17,
 90fb55a8-bd08-5dc4-bc0c-2533bc3081c7,gpt-5.4-mini,high,,2026-03-17,,gpt-5.4-mini-2026-03-17_high,OpenAI,US,2026-03-17,
 da49c25c-399f-5fe2-ac9a-2e860fd051d9,gpt-5.4-mini,low,,2026-03-17,,gpt-5.4-mini-2026-03-17_low,OpenAI,US,2026-03-17,
 d4d5de40-e4f4-55be-b270-a7ed2853072a,gpt-5.4-mini,medium,,2026-03-17,,gpt-5.4-mini-2026-03-17_medium,OpenAI,US,2026-03-17,
 ccf6e536-04d0-58bb-b4f2-af546244f465,gpt-5.4-mini,none,,2026-03-17,,gpt-5.4-mini-2026-03-17_none,OpenAI,US,2026-03-17,
 121561f5-02bd-5b1a-95c5-8e6b2e6251f8,gpt-5.4-mini,xhigh,,2026-03-17,,gpt-5.4-mini-2026-03-17_xhigh,OpenAI,US,2026-03-17,
-6c55d25a-280b-5aab-984d-77e56ff10a69,gpt-5.4-nano,,,2026-03-17,unknown-effort,gpt-5.4-nano-2026-03-17_unknown,OpenAI,US,2026-03-17,
+2be09181-94e8-5284-9f6f-d86e6cfcf4cd,gpt-5.4-nano,,,2026-03-17,,gpt-5.4-nano-2026-03-17,OpenAI,US,2026-03-17,
 aa66bc9e-914b-556e-9bb3-62936700b1c9,gpt-5.4-nano,high,,2026-03-17,,gpt-5.4-nano-2026-03-17_high,OpenAI,US,2026-03-17,
 1d5cf778-967c-5e4b-9558-30ff77afc7c0,gpt-5.4-nano,low,,2026-03-17,,gpt-5.4-nano-2026-03-17_low,OpenAI,US,2026-03-17,
 42346a5d-f7fa-56e6-981c-3c19f5efacce,gpt-5.4-nano,medium,,2026-03-17,,gpt-5.4-nano-2026-03-17_medium,OpenAI,US,2026-03-17,
 c9846f37-0aca-50be-b0a5-7a9aa1463d5c,gpt-5.4-nano,none,,2026-03-17,,gpt-5.4-nano-2026-03-17_none,OpenAI,US,2026-03-17,
 226cc003-cea3-52af-8a76-60aeccd137f2,gpt-5.4-nano,xhigh,,2026-03-17,,gpt-5.4-nano-2026-03-17_xhigh,OpenAI,US,2026-03-17,
-831f66d2-6b0a-5600-adac-874a862bab98,gpt-5.4-pro,,,2026-03-05,unknown-effort,gpt-5.4-pro-2026-03-05_unknown,OpenAI,US,2026-03-05,
+6847be80-1aba-53a9-b573-5bf4e3ac3d41,gpt-5.4-pro,,,2026-03-05,,gpt-5.4-pro-2026-03-05,OpenAI,US,2026-03-05,
 9d9e3552-557a-5e4c-858d-ed5917c39bee,gpt-5.4-pro,none,,2026-03-05,,gpt-5.4-pro-2026-03-05_none,OpenAI,US,2026-03-05,
 dcaf24f5-b587-536a-a220-a7655b11dacc,gpt-5.4-pro,xhigh,,2026-03-05,,gpt-5.4-pro-2026-03-05_xhigh,OpenAI,US,2026-03-05,
+6f19902d-57ce-5960-b943-0538acb4c7ff,gpt-5.5,,,,,gpt-5.5,OpenAI,US,2026-04-23,
 083139da-5ced-59c5-9378-1dc58342276c,gpt-5.5,,,,Cyber,gpt-5.5,OpenAI,US,2026-05-07,
-f3771b35-de7c-5c8d-8f40-d0d0568acbbb,gpt-5.5,,,,unknown-effort,gpt-5.5_unknown,OpenAI,US,2026-04-23,
 e6c7cd5c-aced-5cc7-af38-28efa1a1ae26,gpt-5.5,high,,,,gpt-5.5_high,OpenAI,US,2026-04-23,
 42a48c78-2cbc-541e-97d1-70f560282a44,gpt-5.5,low,,,,gpt-5.5_low,OpenAI,US,2026-04-23,
 dcd153b8-2430-58c8-9890-b3ac487f38d3,gpt-5.5,medium,,,,gpt-5.5_medium,OpenAI,US,2026-04-23,
@@ -584,12 +560,11 @@ dcd153b8-2430-58c8-9890-b3ac487f38d3,gpt-5.5,medium,,,,gpt-5.5_medium,OpenAI,US,
 e570dd31-b940-537b-80d0-f06e0f3aa6f9,gpt-5.5,xhigh,,,,gpt-5.5_xhigh,OpenAI,US,2026-04-23,
 588c8bd3-3d6e-5e40-876f-0d5560b53708,gpt-5.5-instant,,,,,gpt-5.5-instant,OpenAI,US,2026-05-05,
 4e11a9ba-8abb-5479-a533-048190f7487a,gpt-5.5-pre-release,xhigh,,,,gpt-5.5-pre-release_xhigh,OpenAI,US,2026-04-23,
-d1a88fba-5f67-53b7-8670-afbff5044281,gpt-5.5-pro,,,,unknown-effort,gpt-5.5-pro_unknown,OpenAI,US,2026-04-23,
+9c6cd315-efd0-5b16-ae47-c53d5d6e1c48,gpt-5.5-pro,,,,,gpt-5.5-pro,OpenAI,US,2026-04-23,
 af9ac6b1-d23a-579e-9879-53a27d79f8c9,gpt-5.5-pro,high,,,,gpt-5.5-pro_high,OpenAI,US,2026-04-23,
 6eefa290-50dc-5cfb-bf49-4eb3007d8fe3,gpt-5.5-pro,xhigh,,,,gpt-5.5-pro_xhigh,OpenAI,US,2026-04-23,
 107b0b36-d79f-5e30-8078-71f3191428b7,gpt-5.5-pro-pre-release,xhigh,,,,gpt-5.5-pro-pre-release_xhigh,OpenAI,US,2026-04-23,
 9c3cfb92-d076-5cbf-bc5f-f1777ab1d1f9,gpt-5.6-luna,,,,,gpt-5.6-luna,OpenAI,US,2026-07-09,
-7d5de05d-3068-5369-9805-38c75f00725b,gpt-5.6-luna,,,,unknown-effort,gpt-5.6-luna_unknown,OpenAI,US,2026-07-09,
 cad065ec-b84d-57bf-a419-ed36317a86c4,gpt-5.6-luna,high,,,,gpt-5.6-luna_high,OpenAI,US,2026-07-09,
 0c4b7211-514a-530b-9854-800b9619e760,gpt-5.6-luna,low,,,,gpt-5.6-luna_low,OpenAI,US,2026-07-09,
 8b9419f5-3eca-5dc4-9e7f-ee51db004f72,gpt-5.6-luna,max,,,,gpt-5.6-luna_max,OpenAI,US,2026-07-09,
@@ -598,7 +573,6 @@ cad065ec-b84d-57bf-a419-ed36317a86c4,gpt-5.6-luna,high,,,,gpt-5.6-luna_high,Open
 7f2afa2f-a545-586c-8252-ddd7e62ecd19,gpt-5.6-luna,xhigh,,,,gpt-5.6-luna_xhigh,OpenAI,US,2026-07-09,
 5680f719-6af7-56ac-9fa8-561357fbfe14,gpt-5.6-sol,,,,,gpt-5.6-sol,OpenAI,US,2026-07-09,
 23cbdbfb-f427-566c-82c9-459e7bc016ae,gpt-5.6-sol,,,,pro,gpt-5.6-sol_prounknown,OpenAI,US,2026-07-09,
-2e025419-02a0-5332-a2ed-b85f44971f45,gpt-5.6-sol,,,,unknown-effort,gpt-5.6-sol_unknown,OpenAI,US,2026-07-09,
 6e6c8e69-c604-5a59-bc25-d61806c2f762,gpt-5.6-sol,high,,,,gpt-5.6-sol_high,OpenAI,US,2026-07-09,
 4dcc1c3d-d6f3-5b40-a0cf-f95ac6f81ac0,gpt-5.6-sol,low,,,,gpt-5.6-sol_low,OpenAI,US,2026-07-09,
 8a60d544-c61c-5873-8e23-6ab9bb0addbd,gpt-5.6-sol,max,,,,gpt-5.6-sol_max,OpenAI,US,2026-07-09,
@@ -608,14 +582,13 @@ cad065ec-b84d-57bf-a419-ed36317a86c4,gpt-5.6-luna,high,,,,gpt-5.6-luna_high,Open
 118a77a9-34a8-565a-a5ba-264c7f821cce,gpt-5.6-sol,xhigh,,,,gpt-5.6-sol_xhigh,OpenAI,US,2026-07-09,
 db7812d0-db68-54b7-830d-aa9bb4deb81d,gpt-5.6-sol,xhigh,,,pro,gpt-5.6-sol_proxhigh,OpenAI,US,2026-07-09,
 c04ed4ab-9cda-56a2-9056-c3f5d0d19f05,gpt-5.6-terra,,,,,gpt-5.6-terra,OpenAI,US,2026-07-09,
-9a7727a0-0e43-5216-b21b-7dfe225f2b88,gpt-5.6-terra,,,,unknown-effort,gpt-5.6-terra_unknown,OpenAI,US,2026-07-09,
 5437dcc5-07b7-5696-bdad-83556ef7b98a,gpt-5.6-terra,high,,,,gpt-5.6-terra_high,OpenAI,US,2026-07-09,
 5d812c04-74c7-52f8-9cfc-ce7e402800ed,gpt-5.6-terra,low,,,,gpt-5.6-terra_low,OpenAI,US,2026-07-09,
 67e53df5-5398-5b75-9ed9-c2f5ccac41e8,gpt-5.6-terra,max,,,,gpt-5.6-terra_max,OpenAI,US,2026-07-09,
 5d7701b6-0615-5e82-85a4-9788551b4ce2,gpt-5.6-terra,medium,,,,gpt-5.6-terra_medium,OpenAI,US,2026-07-09,
 436ebe2b-8951-5777-854f-5530da237753,gpt-5.6-terra,none,,,,gpt-5.6-terra_none,OpenAI,US,2026-07-09,
 7463e790-65c7-57fc-aef8-1882d6bbad53,gpt-5.6-terra,xhigh,,,,gpt-5.6-terra_xhigh,OpenAI,US,2026-07-09,
-1eedbb37-7be4-51cd-ab09-ce4402b9757f,gpt-6-astra,,,,unknown-effort,gpt-6-astra_unknown,OpenAI,US,2026-09-03,
+c61bc40a-403f-5ca2-8886-38dedb2c83ee,gpt-6-astra,,,,,gpt-6-astra,OpenAI,US,2026-09-03,
 0fec690a-4610-534d-99c6-5b0609a87077,gpt-6-astra,high,,,,gpt-6-astra_high,OpenAI,US,2026-09-03,
 def63ae0-e298-5355-914e-f526556f360f,gpt-6-astra,low,,,,gpt-6-astra_low,OpenAI,US,2026-09-03,
 4448d84f-be9f-5480-8495-5d4295b752a6,gpt-6-astra,max,,,,gpt-6-astra_max,OpenAI,US,2026-09-03,
@@ -626,12 +599,10 @@ a1b483f0-187a-54b4-9c75-2f61d6fc9436,gpt-6-astra,xhigh,,,,gpt-6-astra_xhigh,Open
 49a8f0b6-4d32-5270-8f23-d77804c5555b,gpt-neo-2.7B,,,,,gpt-neo-2.7B,EleutherAI,US,2021-03-30,7.9e+21
 6f7da00e-2269-518d-9c16-1739b3f681d0,gpt-neox-20b,,,,,gpt-neox-20b,EleutherAI,US,2022-04-07,9.31627008e+22
 97e0dc84-d9d8-55ed-adba-d1e111785e46,gpt-oss-120b,,,,,gpt-oss-120b,OpenAI,US,2025-08-05,4.94e+24
-09abde6a-02ae-5841-958a-85fa867f686e,gpt-oss-120b,,,,unknown-effort,gpt-oss-120b_unknown,OpenAI,US,2025-08-05,4.94e+24
 b08e24f9-06f1-5ef8-978a-bfc267b8915d,gpt-oss-120b,high,,,,gpt-oss-120b_high,OpenAI,US,2025-08-05,4.94e+24
 d7bf5579-afe8-503e-80a7-6009572bf0e2,gpt-oss-120b,low,,,,gpt-oss-120b_low,OpenAI,US,2025-08-05,4.94e+24
 f28c936a-3acf-57c1-96f1-6ebc1eaca363,gpt-oss-120b,medium,,,,gpt-oss-120b_medium,OpenAI,US,2025-08-05,4.94e+24
 3535a73f-153a-5c53-b82e-991ef3a8389a,gpt-oss-20b,,,,,gpt-oss-20b,OpenAI,US,2025-08-05,5.49e+23
-f1c66677-5c98-506e-841a-0524c9710874,gpt-oss-20b,,,,unknown-effort,gpt-oss-20b_unknown,OpenAI,US,2025-08-05,5.49e+23
 4f423e9a-035f-588f-b024-6639ef5e6ba2,gpt-oss-20b,high,,,,gpt-oss-20b_high,OpenAI,US,2025-08-05,5.49e+23
 19f4502c-b8dc-5bb0-994b-02607c8b814b,gpt-oss-20b,low,,,,gpt-oss-20b_low,OpenAI,US,2025-08-05,5.49e+23
 19f8378c-0438-5cd0-a396-ebfe0f2f67ce,gpt-oss-20b,medium,,,,gpt-oss-20b_medium,OpenAI,US,2025-08-05,5.49e+23
@@ -666,15 +637,14 @@ afeb50f0-683a-50f1-a6e6-c49427ef0542,grok-4-1,,,,,grok-4-1,xAI,US,2025-11-17,
 6eddf3ce-08b9-5187-81cf-3abd60cf085d,grok-4-fast,,,,,grok-4-fast,xAI,US,2025-09-19,
 f9b72039-4005-5c41-8e54-52795f854850,grok-4-fast,,,,thinking,grok-4-fast_thinking,xAI,US,2025-09-19,
 51c31692-a527-5743-9a3a-b467a7376832,grok-4.20-0309-reasoning,,,,,grok-4.20-0309-reasoning,xAI,US,2026-02-17,
-42bd8b0a-6587-5b9d-ba9a-33b01e4a0b0b,grok-4.3,,,,unknown-effort,grok-4.3_unknown,xAI,US,2026-04-17,
+ebf598e4-4b99-569d-ae6d-5b3100d978ca,grok-4.3,,,,,grok-4.3,xAI,US,2026-04-17,
 a72dc748-98c8-5db6-9319-6173a1b88da0,grok-4.3,high,,,,grok-4.3_high,xAI,US,2026-04-17,
 982cd923-8d9b-5b30-bd2f-dcad42b603e1,grok-4.3,none,,,,grok-4.3_none,xAI,US,2026-04-17,
 318de742-7d7e-5306-a6f4-3a8a02ef8cae,grok-4.5,,,,,grok-4.5,xAI,US,2026-07-08,
-9c3500fd-b4ae-5ccc-8d01-2b286e1fa8fe,grok-4.5,,,,unknown-effort,grok-4.5_unknown,xAI,US,2026-07-08,
 669bacc2-e976-53f7-b85f-560cad080400,grok-4.5,high,,,,grok-4.5_high,xAI,US,2026-07-08,
 84fa51e9-9dd7-53dc-ab96-972c8b6e6d47,grok-4.5,low,,,,grok-4.5_low,xAI,US,2026-07-08,
 3db125e8-9042-5e9b-a9c3-0659eede4f58,grok-4.5,medium,,,,grok-4.5_medium,xAI,US,2026-07-08,
-454d4fec-d2f0-5ff8-b8bd-274bf41d7299,grok-4.6,,,,unknown-effort,grok-4.6_unknown,xAI,US,2026-08-12,
+cb8fdec5-c706-5ab2-8ef6-966f84289dc1,grok-4.6,,,,,grok-4.6,xAI,US,2026-08-12,
 3b26cf34-5603-56fb-945b-dcb93e294de5,grok-4.6,high,,,,grok-4.6_high,xAI,US,2026-08-12,
 049a847d-a731-5a1c-a6b6-593e8bc6d7fa,grok-4.6,low,,,,grok-4.6_low,xAI,US,2026-08-12,
 d99c1341-190a-5038-a17b-1bb9c6e036e3,grok-4.6,medium,,,,grok-4.6_medium,xAI,US,2026-08-12,
@@ -694,14 +664,13 @@ b23229cf-847e-5830-aadc-937f50d1a313,internlm-20b,,,,,internlm-20b,Shanghai AI L
 b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,kimi-k2-thinking,,,,,kimi-k2-thinking,Moonshot,CN,2025-11-06,4.1999999999999997e+24
 f5f6435d-fc25-5b14-bd30-a8ce7b3f7efb,kimi-k2-thinking-turbo,,,,,kimi-k2-thinking-turbo,Moonshot,CN,2025-11-06,4.2e+24
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,kimi-k2.5,,,,,kimi-k2.5,Moonshot,CN,2026-01-27,5.8e+24
-0997baca-eb23-5d40-b140-aeda2f15f453,kimi-k2.5,,,,unknown-effort,kimi-k2.5_unknown,Moonshot,CN,2026-01-27,
 23922039-5399-53c8-b080-f15680159c89,kimi-k2.5,high,,,,kimi-k2.5_high,Moonshot,CN,2026-01-27,5.8e+24
 9a4c32e0-2da4-5bca-93f2-103393146aaf,kimi-k2.6,,,,,kimi-k2.6,Moonshot,CN,2026-04-20,
 558099ae-2c19-50e7-8bd6-418618bb54f0,kimi-k2.6,none,,,,kimi-k2.6_none,Moonshot,CN,2026-04-20,
 ec3df8c3-9c72-5e8e-a615-7e0607fdc095,kimi-k2.7-code,,,,,kimi-k2.7-code,Moonshot,CN,2026-06-12,
 f413b3df-0de3-51bf-a254-6042043bd2af,kimi-k2.7-code,xhigh,,,,kimi-k2.7-code_xhigh,Moonshot,CN,2026-06-12,
 7402c74e-a1a9-5450-98b2-b7084c21f007,kimi-k2p5,,,,,kimi-k2p5,Moonshot,CN,2026-01-27,
-e01d4e40-471e-5198-9acf-e2312af34590,kimi-k3,,,,unknown-effort,kimi-k3_unknown,Moonshot,CN,2026-07-16,2.0001e+25
+238554ce-9fb9-517a-aeca-84288b659a60,kimi-k3,,,,,kimi-k3,Moonshot,CN,2026-07-16,2.0001e+25
 d277afba-d017-5da4-bd1a-e5f586364319,kimi-k3,high,,,,kimi-k3_high,Moonshot,CN,2026-07-16,2.0001e+25
 b055f36a-51fa-5f97-adde-6924989fd2c1,kimi-k3,low,,,,kimi-k3_low,Moonshot,CN,2026-07-16,2.0001e+25
 11fa2262-1e64-5e53-b0db-6ed4d1de3c0d,kimi-k3,max,,,,kimi-k3_max,Moonshot,CN,2026-07-16,2.0001e+25
@@ -751,25 +720,22 @@ fb0e91a9-efb4-54a6-8e06-f651ee939f56,muse-spark-1.1,high,,,,muse-spark-1.1_high,
 128ede12-88c7-593d-8908-4db39a34ab6f,muse-spark-1.2,xhigh,,,,muse-spark-1.2_xhigh,Meta AI,US,2026-08-05,
 cba5a87f-824b-559e-be3d-9cc983c9c710,nemotron-3-super,,,,,nemotron-3-super,NVIDIA,US,2026-03-11,
 3ea09ff0-a28e-5168-a661-2f9801c6a586,nemotron-3-ultra,,,,,nemotron-3-ultra,NVIDIA,US,2026-06-04,6.6e+24
-60bdd725-f1ea-538e-b208-0af6d98b7107,nova-2.0-pro-preview,,,,unknown-effort,nova-2.0-pro-preview_unknown,Amazon,US,2025-12-02,
+c030d184-2d47-53f7-9bbf-59f6d3f41d3e,nova-2.0-pro-preview,,,,,nova-2.0-pro-preview,Amazon,US,2025-12-02,
 53e85515-216f-59cc-bad1-2d747e466a66,nova-2.0-pro-preview,low,,,,nova-2.0-pro-preview_low,Amazon,US,2025-12-02,
 749473c4-3aad-5c88-8c88-26a53f054487,nova-2.0-pro-preview,medium,,,,nova-2.0-pro-preview_medium,Amazon,US,2025-12-02,
 f5511fa3-1e3c-5e08-95be-0bfc96e5ab7c,nova-2.0-pro-preview,none,,,,nova-2.0-pro-preview_none,Amazon,US,2025-12-02,
 e3a075fe-31d1-592e-af80-247e5413678e,nova-premier,,,,,nova-premier,Amazon,US,2025-04-30,
 95b716a4-ffb8-5772-b6bd-497b4b6ed751,o1,,,2024-12-17,,o1-2024-12-17,OpenAI,US,2024-12-05,
-bbe7e946-3887-5f40-b992-81c9ecf53cee,o1,,,2024-12-17,unknown-effort,o1-2024-12-17_unknown,OpenAI,US,2024-12-05,
 f68b0e59-157b-5116-9755-81edb45f60bd,o1,high,,2024-12-17,,o1-2024-12-17_high,OpenAI,US,2024-12-05,
 84f975bc-7dbf-5818-b96e-82ed4940e59b,o1,low,,2024-12-17,,o1-2024-12-17_low,OpenAI,US,2024-12-05,
 9cf06ff3-483b-5582-95ad-b93bf1ee2f74,o1,medium,,2024-12-17,,o1-2024-12-17_medium,OpenAI,US,2024-12-05,
 b862c712-107b-5406-b6dc-e7bdc8f065d9,o1-mini,,,2024-09-12,,o1-mini-2024-09-12,OpenAI,US,2024-09-12,
-a2b94a2b-f91d-5364-a672-42afbaa68760,o1-mini,,,2024-09-12,unknown-effort,o1-mini-2024-09-12_unknown,OpenAI,US,2024-09-12,
 9d2fe78d-935a-5e5a-99f2-4272ea594b7c,o1-mini,high,,2024-09-12,,o1-mini-2024-09-12_high,OpenAI,US,2024-09-12,
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,o1-mini,medium,,2024-09-12,,o1-mini-2024-09-12_medium,OpenAI,US,2024-09-12,
 7e3e2e05-0e00-5211-bc69-9b211248f244,o1-preview,,,2024-09-12,,o1-preview-2024-09-12,OpenAI,US,2024-09-12,
 dd85d6b7-917f-551c-a424-557f7e9b8c7d,o1-pro,,,2025-03-19,,o1-pro-2025-03-19,OpenAI,US,2025-03-19,
 03ac9333-e111-5a50-8ee5-850feae1b8f4,o1-pro,low,,2025-03-19,,o1-pro-2025-03-19_low,OpenAI,US,2025-03-19,
 7a97dac7-5010-53bf-b803-9f32ef94db8c,o3,,,2025-04-16,,o3-2025-04-16,OpenAI,US,2025-04-16,
-0a61c835-e0a4-5b3a-bc62-e7284d576f0f,o3,,,2025-04-16,unknown-effort,o3-2025-04-16_unknown,OpenAI,US,2025-04-16,
 0467e0f7-4248-522e-9509-dad2d9fc1b10,o3,high,,2025-04-16,,o3-2025-04-16_high,OpenAI,US,2025-04-16,
 05a5c66b-6af4-556f-91e3-4af115f93665,o3,low,,2025-04-16,,o3-2025-04-16_low,OpenAI,US,2025-04-16,
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,o3,medium,,2025-04-16,,o3-2025-04-16_medium,OpenAI,US,2025-04-16,
@@ -862,7 +828,7 @@ bfc2dfee-8230-5085-889a-e91d77a883f6,qwen3.8-27b,low,,,,qwen3.8-27b_low,Alibaba,
 21a1980b-e331-512a-9141-181e99c0241a,qwen3.8-27b,medium,,,,qwen3.8-27b_medium,Alibaba,CN,2026-08-14,
 02c815e3-13ad-5cf3-9aa1-9feb9b8e9763,qwen3.8-27b,none,,,,qwen3.8-27b_none,Alibaba,CN,2026-08-14,
 b7578544-e049-5b72-953a-d85ff2df281f,qwen3.8-27b,xhigh,,,,qwen3.8-27b_xhigh,Alibaba,CN,2026-08-14,
-cbee34c2-2b7f-564e-b233-6476fe320586,qwen3.8-max,,,,unknown-effort,qwen3.8-max_unknown,Alibaba,CN,2026-08-02,
+6baedc17-ec8a-5dee-9b22-d12ea240e956,qwen3.8-max,,,,,qwen3.8-max,Alibaba,CN,2026-08-02,
 7319b511-d3bf-5d03-8195-9ca00e689997,qwen3.8-max,xhigh,,,,qwen3.8-max_xhigh,Alibaba,CN,2026-08-02,
 6edb36d7-ff23-51c4-9bf9-f21f6b4c0285,qwq-plus,,,,,qwq-plus,Alibaba,CN,2025-04-08,
 7338e6da-a106-58d5-906a-41efd1754885,reka-flash-3,,,,,reka-flash-3,Reka AI,US,2025-03-10,

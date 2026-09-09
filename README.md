@@ -95,7 +95,6 @@ Derived from the four tables at every build, never edited by hand:
 - **Deterministic IDs.** `uuid5(NAMESPACE, "model|" + join(identity tuple, "|"))`. Re-run → same IDs. Correcting an alias changes the ID: intended, the ID follows the identity, not the history.
 - **`variant`**:
 - `thinking` = thinking enabled, effort and budget unknown;
-- `unknown-effort` = the source explicitly says "effort setting unknown" (Epoch's `_unknown` suffix), or an effort-less run of a reasoning model on a Scale board;
 - empty when `reasoning_level` or `reasoning_tokens` is known — thinking is then implicit.
 - **Harness is not identity.** A model's score on a benchmark is its best score across harnesses; the winning harness is recorded on the score row.
 - **`score ∈ [0, 1]`** (no percentages).
@@ -139,7 +138,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
   | `minimal` `low` `medium` `high` `xhigh` `max` `none` | `reasoning_level` |
   | `<N>K` (e.g. `24K`) | `reasoning_tokens = N × 1000` |
   | `thinking` | `variant = thinking` |
-  | `unknown` | `variant = unknown-effort` |
+  | `unknown` | dropped: Epoch's "effort unknown" is the bare identity (an effort-less row of a reasoning model says the same thing) |
   | anything else | the `_` is part of the name, nothing is split |
 
 - **Date** extracted only at the end of the base, in the `-YYYY-MM-DD` or `-YYYYMMDD` forms → `snapshot`. Deliberate under-extraction: `2507`, `0528`, `03-2025` stay in `base_model`.

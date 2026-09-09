@@ -13,9 +13,10 @@ or zai-org/glm-4.7. Its shape is fixed, [provider/]base[-date][_suffix], so it i
 columns without a dictionary (split_name):
 - '_' introduces a configuration knob, '-' is part of the name (kimi-k2-thinking is a NAME).
 - suffix (case-insensitive): effort minimal|low|medium|high|xhigh|max|none; budget <N>K;
-  thinking -> variant='thinking'; unknown -> variant='unknown-effort' (the source explicitly says
-  "effort unknown", distinct from a bare name); pro<effort> -> variant='pro' plus the effort
-  (gpt-5.6-sol_promax). A suffix outside the vocabulary is part of the name.
+  thinking -> variant='thinking'; unknown -> dropped (Epoch's "effort unknown" and a bare name
+  are the same state of knowledge, one identity; user decision 2026-09-09); pro<effort> ->
+  variant='pro' plus the effort (gpt-5.6-sol_promax). A suffix outside the vocabulary is part
+  of the name.
 - the date is extracted only in the YYYY-MM-DD / YYYYMMDD forms at the end of the base (short
   forms such as 2507, 0528, 03-2025 stay in base_model, on purpose: too ambiguous).
 """
@@ -70,7 +71,7 @@ def split_name(name: str) -> Identity:
         elif sfx in EFFORTS:
             s, ident["reasoning_level"] = base, sfx
         elif sfx == "unknown":
-            s, ident["variant"] = base, "unknown-effort"
+            s = base                       # same identity as the bare name
         elif _BUDGET.fullmatch(sfx):
             s, ident["reasoning_tokens"] = base, str(int(sfx[:-1]) * 1000)
         elif sfx == "thinking":
@@ -141,8 +142,6 @@ def machine_name(ident: Identity) -> str:
         name += "_" + ident["reasoning_level"]
     elif ident["reasoning_tokens"]:
         name += f"_{int(ident['reasoning_tokens']) // 1000}K"
-    elif ident["variant"] == "unknown-effort":
-        name += "_unknown"
     elif ident["variant"] == "thinking":
         name += "_thinking"
     return name

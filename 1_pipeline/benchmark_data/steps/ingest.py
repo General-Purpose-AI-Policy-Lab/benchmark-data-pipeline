@@ -79,8 +79,7 @@ def _take(result: IngestResult, feed: str, rec: Record, aliases: dict) -> str | 
     if (rec.effort and not ident["reasoning_level"] and not ident["reasoning_tokens"]
             and ident["variant"] != "thinking"):
         result.completed[ident["variant"] or "bare"] += 1
-        ident = {**ident, "reasoning_level": rec.effort,
-                 "variant": "" if ident["variant"] == "unknown-effort" else ident["variant"]}
+        ident = {**ident, "reasoning_level": rec.effort}
     mid = model_id(ident)
     name = strip_name(rec.raw_name)
     result.raw_names[(mid, feed, name)] += 1

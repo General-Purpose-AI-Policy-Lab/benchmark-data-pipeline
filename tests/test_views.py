@@ -43,10 +43,11 @@ def test_all_scores_keeps_every_score_and_dated_scores_only_dated_ones():
 
 
 @pytest.mark.parametrize("name", [
-    "gpt-4o-2024-08-06", "claude-opus-4-20250514_unknown", "claude-3-7-sonnet-20250219_16K",
+    "gpt-4o-2024-08-06", "claude-opus-4-20250514", "claude-3-7-sonnet-20250219_16K",
     "o1-2024-12-17_medium", "kimi-k2-thinking", "gemini-2.5-flash_thinking", "grok-2",
 ])
 def test_machine_name_inverts_split_name(name):
+    # `_unknown` is not in the list on purpose: it parses to the bare identity (2026-09-09).
     assert machine_name(split_name(name)) == name
 
 

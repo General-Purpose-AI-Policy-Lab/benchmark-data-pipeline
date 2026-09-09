@@ -89,7 +89,7 @@ EPOCH_ORGANIZATION_CANON = {
 }
 
 # Variants that only describe how a model was run; a date found on one sibling applies to all.
-RUN_VARIANTS = frozenset({"", "thinking", "unknown-effort"})
+RUN_VARIANTS = frozenset({"", "thinking"})
 
 # `status` values in benchmarks.csv. Only `included` rows reach the database.
 STATUS_INCLUDED = "included"

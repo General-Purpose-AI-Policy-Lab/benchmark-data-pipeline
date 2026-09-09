@@ -180,7 +180,7 @@ def add_epoch_organizations(models: pandas.DataFrame, epoch: pandas.DataFrame | 
 def add_sibling_dates(models: pandas.DataFrame):
     """A run variant inherits the date of its siblings: same `base_model` and `snapshot`.
 
-    Reasoning level, token budget and the run variants (`thinking`, `unknown-effort`) describe
+    Reasoning level, token budget and the run variant `thinking` describe
     how a model was run, not another release. When every dated sibling agrees on one date, the
     undated ones take it; two different dates leave them untouched (reported). Named variants
     such as fine-tunes are never filled this way.
@@ -211,6 +211,10 @@ def add_model_version(models: pandas.DataFrame, names) -> pandas.DataFrame:
     """
     counts = pandas.DataFrame([(m, n, c) for (m, n), c in names.items()],
                               columns=["model_id", "name", "n"])
+    # Epoch's `_unknown` suffix names the same identity as the bare spelling (identity grammar);
+    # the votes of both spellings go to the bare one.
+    counts["name"] = counts["name"].str.replace(r"_unknown$", "", regex=True)
+    counts = counts.groupby(["model_id", "name"], as_index=False)["n"].sum()
     best = (counts.sort_values(["n", "name"], ascending=[False, True])
                   .drop_duplicates("model_id").set_index("model_id")["name"])
     models = models.copy()

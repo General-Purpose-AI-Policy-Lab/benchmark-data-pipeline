@@ -1,24 +1,24 @@
 raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note
 Claude 3 Opus,claude-3-opus,,,2024-02-29,,,sole snapshot
 Claude 3.5 Sonnet,claude-3-5-sonnet,,,2024-06-20,,,Epoch's general ECI links this name to the June 2024 snapshot
-Claude 3.7 Sonnet,claude-3-7-sonnet,,,2025-02-19,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Haiku 4.5,claude-haiku-4-5,,,2025-10-01,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
+Claude 3.7 Sonnet,claude-3-7-sonnet,,,2025-02-19,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Haiku 4.5,claude-haiku-4-5,,,2025-10-01,,,Epoch cyber ECI display name; no effort stated -> no effort stated
 Claude Mythos 5,claude-mythos-5,,,,,,cyber-only test-taker in Epoch's table; not aliased to claude-fable-5 (different safeguards). Own identity
 Claude Mythos Preview (April),claude-mythos-preview,,,,,,"the April 2026 preview checkpoint, distinct from the early one; own identity"
 Claude Mythos Preview (Early),claude-mythos-preview-early,,,,,,Epoch's claude-mythos-preview-early
-Claude Opus 4,claude-opus-4,,,2025-05-14,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Opus 4.1,claude-opus-4-1,,,2025-08-05,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Opus 4.5,claude-opus-4-5,,,2025-11-01,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Opus 4.6,claude-opus-4-6,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Opus 4.7,claude-opus-4-7,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Opus 4.8,claude-opus-4-8,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Sonnet 4,claude-sonnet-4,,,2025-05-14,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Sonnet 4.5,claude-sonnet-4-5,,,2025-09-29,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Claude Sonnet 4.6,claude-sonnet-4-6,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-DeepSeek V3.1,DeepSeek-V3.1,,,,,,"hybrid thinking model, mode not stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+Claude Opus 4,claude-opus-4,,,2025-05-14,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Opus 4.1,claude-opus-4-1,,,2025-08-05,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Opus 4.5,claude-opus-4-5,,,2025-11-01,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Opus 4.6,claude-opus-4-6,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Opus 4.7,claude-opus-4-7,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Opus 4.8,claude-opus-4-8,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Sonnet 4,claude-sonnet-4,,,2025-05-14,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Sonnet 4.5,claude-sonnet-4-5,,,2025-09-29,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Claude Sonnet 4.6,claude-sonnet-4-6,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+DeepSeek V3.1,DeepSeek-V3.1,,,,,,"hybrid thinking model, mode not stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
 DeepSeek-V3,DeepSeek-V3,,,,,,"non-reasoning; Epoch's general ECI points at DeepSeek-V3-Base, the chat model is the test-taker"
-GLM-5,glm-5,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-GLM-5.1,glm-5.1,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+GLM-5,glm-5,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+GLM-5.1,glm-5.1,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
 GPT-2-XL,gpt2-xl,,,,,,Epoch's gpt2-xl
 GPT-3,davinci,,,,,,GPT-3 175B = davinci (same convention as the GPT-3 paper rows)
 GPT-3.5,text-davinci-002,,,,,,"Epoch dates 'GPT-3.5' 2022-03-15, the text-davinci-002 release"
@@ -27,34 +27,34 @@ GPT-4 Turbo,gpt-4-turbo,,,2024-04-09,,,Epoch's general ECI: GPT-4 Turbo (Apr 202
 GPT-4.1,gpt-4.1,,,2025-04-14,,,sole snapshot
 GPT-4.5,gpt-4.5-preview,,,2025-02-27,,,sole snapshot
 GPT-4o,gpt-4o,,,2024-05-13,,,Epoch's general ECI: GPT-4o (May 2024); Epoch dates the cyber row 2024-05-13
-GPT-5,gpt-5,,,2025-08-07,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-GPT-5 mini,gpt-5-mini,,,2025-08-07,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-GPT-5.1,gpt-5.1,,,2025-11-13,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-GPT-5.1 Codex Max,gpt-5.1-codex-max,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-GPT-5.2,gpt-5.2,,,2025-12-11,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-GPT-5.2 Codex,gpt-5.2-codex,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-GPT-5.3 Codex,gpt-5.3-codex,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-GPT-5.4,gpt-5.4,,,2026-03-05,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
+GPT-5,gpt-5,,,2025-08-07,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+GPT-5 mini,gpt-5-mini,,,2025-08-07,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+GPT-5.1,gpt-5.1,,,2025-11-13,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+GPT-5.1 Codex Max,gpt-5.1-codex-max,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+GPT-5.2,gpt-5.2,,,2025-12-11,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+GPT-5.2 Codex,gpt-5.2-codex,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+GPT-5.3 Codex,gpt-5.3-codex,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+GPT-5.4,gpt-5.4,,,2026-03-05,,,Epoch cyber ECI display name; no effort stated -> no effort stated
 GPT-5.4-Cyber,gpt-5.4,,,2026-03-05,Cyber,,"cyber-specialised deployment of GPT-5.4 (OpenAI, 2026-04-14); kept as a named variant like the RAND fine-tunes (C1)"
-GPT-5.5,gpt-5.5,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
+GPT-5.5,gpt-5.5,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
 GPT-5.5-Cyber,gpt-5.5,,,,Cyber,,"cyber-specialised deployment of GPT-5.5 (OpenAI, 2026-05-07); named variant (C1)"
-GPT-5.6 Sol,gpt-5.6-sol,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
+GPT-5.6 Sol,gpt-5.6-sol,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
 Gemini 1.5 Pro,gemini-1.5-pro-001,,,,,,Epoch's general ECI: Gemini 1.5 Pro (May 2024)
 Gemini 2.5 Pro (Jun 2025),gemini-2.5-pro,,,,,,"Epoch's own label for the GA model; effort not stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-Gemini 3 Pro,gemini-3-pro-preview,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-Gemini 3.1 Pro,gemini-3.1-pro-preview,,,,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-Grok 4,grok-4-0709,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+Gemini 3 Pro,gemini-3-pro-preview,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+Gemini 3.1 Pro,gemini-3.1-pro-preview,,,,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+Grok 4,grok-4-0709,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
 Grok 4 Fast,grok-4-fast,,,,,,"Epoch's general ECI name grok-4-fast; reasoning mode not stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-Grok 4.1,grok-4-1,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-Kimi K2.6,kimi-k2.6,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+Grok 4.1,grok-4-1,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+Kimi K2.6,kimi-k2.6,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
 Llama 3-70B,Meta-Llama-3-70B-Instruct,,,,,,agentic CTF tasks need the instruct model; Epoch's general ECI writes the base name
 Llama 3.1-405B,Llama-3.1-405B-Instruct,,,,,,same: instruct model as test-taker
-MiniMax M2.7,MiniMax-M2.7,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+MiniMax M2.7,MiniMax-M2.7,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
 Mixtral 8x22B,Mixtral-8x22B-Instruct-v0.1,,,,,,instruct model as test-taker (Epoch's general ECI: open-mixtral-8x22b)
-Muse Spark,muse-spark,,,,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-o1,o1,,,2024-12-17,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-o1-mini,o1-mini,,,2024-09-12,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
+Muse Spark,muse-spark,,,,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+o1,o1,,,2024-12-17,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+o1-mini,o1-mini,,,2024-09-12,,,Epoch cyber ECI display name; no effort stated -> no effort stated
 o1-preview,o1-preview,,,2024-09-12,,,o1-preview has no effort setting
-o3,o3,,,2025-04-16,unknown-effort,,Epoch cyber ECI display name; no effort stated -> unknown-effort
-o3-mini,o3-mini,,,2025-01-31,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
-o4-mini,o4-mini,,,2025-04-16,,,"Epoch cyber ECI display name; no effort stated -> unknown-effort | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+o3,o3,,,2025-04-16,,,Epoch cyber ECI display name; no effort stated -> no effort stated
+o3-mini,o3-mini,,,2025-01-31,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+o4-mini,o4-mini,,,2025-04-16,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"

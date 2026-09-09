@@ -21,8 +21,9 @@ def _alias(**kw):
     ("claude-opus-4-8_high", dict(base_model="claude-opus-4-8", reasoning_level="high")),
     ("zai-org/glm-4.7", dict(base_model="glm-4.7")),
     ("claude-opus-4-6_120K", dict(base_model="claude-opus-4-6", reasoning_tokens="120000")),
+    # Epoch's "effort unknown" and the bare name are one identity (2026-09-09).
     ("claude-opus-4-5-20251101_unknown",
-     dict(base_model="claude-opus-4-5", snapshot="2025-11-01", variant="unknown-effort")),
+     dict(base_model="claude-opus-4-5", snapshot="2025-11-01")),
     ("gpt-5-2025-08-07_medium",
      dict(base_model="gpt-5", snapshot="2025-08-07", reasoning_level="medium")),
     ("kimi-k2-thinking", dict(base_model="kimi-k2-thinking")),

@@ -64,7 +64,7 @@ def test_siblings_inherit_but_fine_tunes_and_disagreements_do_not():
         "model_id": list("abcdefg"),
         "base_model": ["m", "m", "m", "m", "n", "n", "n"],
         "snapshot": ["", "", "", "", "", "", ""],
-        "variant": ["", "thinking", "unknown-effort", "Fine Tune", "", "", "high-run"],
+        "variant": ["", "thinking", "thinking", "Fine Tune", "", "", "high-run"],
         "publication_date": ["2025-01-01", "", "", "", "2025-02-01", "2025-02-02", ""],
     })
     out, (left, _) = add_sibling_dates(models)

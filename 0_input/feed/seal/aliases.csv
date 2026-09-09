@@ -12,15 +12,15 @@ Claude Fable 5,claude-fable-5,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Claude Opus 4,claude-opus-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
 Claude Opus 4 (Thinking),claude-opus-4,,,2025-05-14,thinking,,Scale SEAL; thinking=_unknown effort
 Claude Opus 4.1,claude-opus-4-1,,,2025-08-05,,,"Scale SEAL alias (auto, high-confidence)"
-Claude Opus 4.6 (Claude Code) max,claude-opus-4-6,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Claude Opus 4.8 (Claude Code) max,claude-opus-4-8,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Claude Opus 4.8 (mini-SWE-agent) max,claude-opus-4-8,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Claude Opus 4.6 (Claude Code) max,claude-opus-4-6,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Claude Opus 4.8 (Claude Code) max,claude-opus-4-8,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Claude Opus 4.8 (mini-SWE-agent) max,claude-opus-4-8,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Claude Sonnet 4,claude-sonnet-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
 Claude Sonnet 4 (Thinking),claude-sonnet-4,,,2025-05-14,thinking,,Scale SEAL; thinking=_unknown effort
-Claude Sonnet 4.6 (Claude Code) max,claude-sonnet-4-6,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Claude Sonnet 4.6 (mini-SWE-agent) max,claude-sonnet-4-6,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Claude Sonnet 5 (mini-swe-agent) max,claude-sonnet-5,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Claude Sonnet 5.0 (Claude Code) max,claude-sonnet-5,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Claude Sonnet 4.6 (Claude Code) max,claude-sonnet-4-6,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Claude Sonnet 4.6 (mini-SWE-agent) max,claude-sonnet-4-6,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Claude Sonnet 5 (mini-swe-agent) max,claude-sonnet-5,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Claude Sonnet 5.0 (Claude Code) max,claude-sonnet-5,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 claude-3-7-sonnet-thinking,claude-3-7-sonnet,,,2025-02-19,thinking,,spelling variant
 Claude-3.7-Sonnet-thinking,claude-3-7-sonnet,,,2025-02-19,thinking,,spelling variant
 claude-37-sonnet-thinking,claude-3-7-sonnet,,,2025-02-19,thinking,,spelling variant
@@ -33,9 +33,9 @@ claude-4-opus-thinking,claude-opus-4,,,2025-05-14,thinking,,LiveBench short form
 claude-4-Sonnet,claude-sonnet-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
 Claude-4-Sonnet-20250514,claude-sonnet-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
 claude-4-sonnet-thinking,claude-sonnet-4,,,2025-05-14,thinking,,LiveBench short form; sole Sonnet 4
-claude-fable 5,claude-fable-5,,,,unknown-effort,,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+claude-fable 5,claude-fable-5,,,,,,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 claude-fable-5 (max),claude-fable-5,max,,,,,SEAL effort spelling; underscore form is canonical
-claude-fable-5-1,claude-fable-5-1,,,,unknown-effort,,MCP Atlas machine-style label without effort; Epoch names the same model claude-fable-5-1_<effort>. Effort-less reasoning model -> unknown-effort (refresh of 2026-09-07)
+claude-fable-5-1,claude-fable-5-1,,,,,,MCP Atlas machine-style label without effort; Epoch names the same model claude-fable-5-1_<effort>. Effort-less reasoning model -> no effort stated (refresh of 2026-09-07)
 claude-haiku-4-5,claude-haiku-4-5,,,2025-10-01,,,"Scale SEAL alias (auto, high-confidence)"
 claude-haiku-4-5-20251001-thinking,claude-haiku-4-5,,,2025-10-01,thinking,,LiveBench thinking → _unknown effort
 claude-opus-4-1-20250805,claude-opus-4-1,,,2025-08-05,,,REVIEW: auto-slicé
@@ -61,14 +61,14 @@ claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5,,,2025-09-29,thinking,,Liv
 claude-sonnet-4-6,claude-sonnet-4-6,,,,,,REVIEW: auto-slicé
 claude-sonnet-4-thinking,claude-sonnet-4,,,2025-05-14,thinking,,LiveBench thinking → _unknown effort
 codestral-2405,codestral-2405,,,,,,REVIEW: auto-slicé
-Codex GPT 5.5,gpt-5.5,,,,unknown-effort,Codex,"Remote Labor Index: GPT-5.5 run in the Codex scaffold; per C4, Codex is a harness, not a model. Effort unknown. Decision 2026-09-07"
+Codex GPT 5.5,gpt-5.5,,,,,Codex,"Remote Labor Index: GPT-5.5 run in the Codex scaffold; per C4, Codex is a harness, not a model. Effort unknown. Decision 2026-09-07"
 Command R+,c4ai-command-r-plus-08-2024,,,,,,"Scale SEAL alias (auto, high-confidence)"
 DeepSeek R1,DeepSeek-R1,,,,,,RAND name; base R1 release
 Deepseek V3,DeepSeek-V3,,,,,,spelling variant
 DeepSeek V3 (March 2025),DeepSeek-V3-0324,,,,,,the 0324 update
-DeepSeek V4 Pro (Mini-SWE-Agent),deepseek-v4-pro,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Deepseek V4 Pro (Mini-SWE-Agent),deepseek-v4-pro,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-DeepSeek V4 Pro (mini-SWE-agent) xhigh,deepseek-v4-pro,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+DeepSeek V4 Pro (Mini-SWE-Agent),deepseek-v4-pro,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Deepseek V4 Pro (Mini-SWE-Agent),deepseek-v4-pro,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+DeepSeek V4 Pro (mini-SWE-agent) xhigh,deepseek-v4-pro,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 DeepSeek-R1,DeepSeek-R1,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
 Deepseek-R1,DeepSeek-R1,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Deepseek-R1-0528,DeepSeek-R1-0528,,,,,,"Scale SEAL alias (auto, high-confidence)"
@@ -77,10 +77,10 @@ DeepSeek-V3 (December 2024),DeepSeek-V3,,,,,,original Dec-2024 release
 DeepSeek-V3.1,DeepSeek-V3.1,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
 deepseek-v3p1,DeepSeek-V3.1,,,,,,p-notation spelling
 deepseek-v3p2,deepseek-v3.2,,,,,,"p-spelling; Scale SEAL ships this form unprefixed, so the fireworks/ row alone does not catch it"
-Fable 5.1 (xHigh),claude-fable-5-1,xhigh,,,,,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Fable 5.1 (xHigh),claude-fable-5-1,xhigh,,,,,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Fable-5,claude-fable-5,,,,,,"Scale SEAL alias (hyphenated form, Remote Labor Index)"
-Fable-5 (Claude Code) xHigh,claude-fable-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Fable-5.1 (Claude Code) xHigh,claude-fable-5-1,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Fable-5 (Claude Code) xHigh,claude-fable-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Fable-5.1 (Claude Code) xHigh,claude-fable-5-1,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Gemini 1.5 Flash 002,gemini-1.5-flash-002,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Gemini 1.5 Pro,gemini-1.5-pro-001,,,,,,RAND name; first 1.5 Pro release
 "Gemini 1.5 Pro (August 27, 2024)",gemini-1.5-pro-002,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
@@ -100,13 +100,13 @@ Gemini 2.5 Flash Preview (May 2025),gemini-2.5-flash,,,2025-05,,,"Scale SEAL ali
 Gemini 2.5 Pro Experimental (March 2025),gemini-2.5-pro-exp-03-25,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
 Gemini 2.5 Pro Preview,gemini-2.5-pro,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
 Gemini 2.5 Pro Preview (May 06 2025),gemini-2.5-pro-preview-05-06,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
-Gemini 3 Flash (Mini-SWE-Agent),gemini-3-flash-preview,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Gemini 3 Flash (Mini-SWE-Agent),gemini-3-flash-preview,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Gemini 3 Pro,gemini-3-pro-preview,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
-Gemini 3.1 Pro (Gemini CLI) high,gemini-3.1-pro-preview,high,,,,Gemini CLI,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Gemini 3.1 Pro (Mini-SWE-Agent),gemini-3.1-pro-preview,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Gemini 3.5 Flash (Gemini CLI) high,gemini-3.5-flash,high,,,,Gemini CLI,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Gemini 3.5 Flash (mini-SWE-agent) high,gemini-3.5-flash,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Gemini 3.7 Flash,gemini-3.7-flash,,,,unknown-effort,,"HiL-Bench row; Gemini 3.7 Flash released 2026-08-13 (Google), Epoch lists gemini-3.7-flash_{low,medium,high,unknown}; effort-less -> unknown-effort. Validated 2026-09-04"
+Gemini 3.1 Pro (Gemini CLI) high,gemini-3.1-pro-preview,high,,,,Gemini CLI,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Gemini 3.1 Pro (Mini-SWE-Agent),gemini-3.1-pro-preview,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Gemini 3.5 Flash (Gemini CLI) high,gemini-3.5-flash,high,,,,Gemini CLI,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Gemini 3.5 Flash (mini-SWE-agent) high,gemini-3.5-flash,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Gemini 3.7 Flash,gemini-3.7-flash,,,,,,"HiL-Bench row; Gemini 3.7 Flash released 2026-08-13 (Google), Epoch lists gemini-3.7-flash_{low,medium,high,unknown}; effort-less -> no effort stated. Validated 2026-09-04"
 gemini-2-0-flash,gemini-2.0-flash-001,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
 gemini-2-5-pro,gemini-2.5-pro,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
 gemini-2.5-flash,gemini-2.5-flash,,,,,,REVIEW: auto-slicé
@@ -118,8 +118,8 @@ gemini-2.5-pro (Thinking),gemini-2.5-pro,,,,,,SEAL marker-stripped; 2.5-pro thin
 Gemini-2.5-Pro-Preview-06-05,gemini-2.5-pro-preview-06-05,,,,,,"Scale SEAL alias (auto, high-confidence)"
 gemini-2.5-pro-preview-06-05,gemini-2.5-pro-preview-06-05,,,,,,REVIEW: auto-slicé
 gemini-3-flash,gemini-3-flash-preview,,,,,,"Scale SEAL alias (auto, high-confidence)"
-Gemini-3-Flash (Mini-SWE),gemini-3-flash-preview,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Gemini-3-Flash (Mini-SWE-Agent),gemini-3-flash-preview,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Gemini-3-Flash (Mini-SWE),gemini-3-flash-preview,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Gemini-3-Flash (Mini-SWE-Agent),gemini-3-flash-preview,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 gemini-3-flash-preview,gemini-3-flash-preview,,,,,,REVIEW: auto-slicé
 gemini-3-pro-preview,gemini-3-pro-preview,,,,,,REVIEW: auto-slicé
 gemini-3-pro-preview (Thinking),gemini-3-pro-preview,,,,,,SEAL marker-stripped; thinking IS the default mode
@@ -128,31 +128,31 @@ gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,,,,,,"Scale SEAL alias (auto
 gemini-3.1-flash-live-preview,gemini-3.1-flash-live-preview,,,,,,REVIEW: auto-slicé
 gemini-3.1-flash-live-preview (Thinking),gemini-3.1-flash-live-preview,,,,,,SEAL marker-stripped; thinking IS the default mode
 gemini-3.1-pro,gemini-3.1-pro-preview,,,,,,Scale SEAL alias (round 2: new boards)
-Gemini-3.1-Pro (Gemini CLI),gemini-3.1-pro-preview,,,,unknown-effort,Gemini CLI,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Gemini-3.1-Pro (Mini-SWE),gemini-3.1-pro-preview,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Gemini-3.1-Pro (Gemini CLI),gemini-3.1-pro-preview,,,,,Gemini CLI,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Gemini-3.1-Pro (Mini-SWE),gemini-3.1-pro-preview,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 gemini-3.1-pro (thinking),gemini-3.1-pro-preview,,,,,,SEAL marker-stripped; thinking IS the default mode
 gemini-3.1-pro-preview,gemini-3.1-pro-preview,,,,,,REVIEW: auto-slicé
 gemini-3.1-pro-preview (high),gemini-3.1-pro-preview,high,,,,,SEAL display → underscore form
 gemini-3.5-flash (high),gemini-3.5-flash,high,,,,,"Scale SEAL alias (auto, high-confidence)"
 gemma-3-27b-it,gemma-3-27b-it,,,,,,REVIEW: auto-slicé
 gemma-3n-E4B-it,gemma-3n-E4B-it,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
-Glm 5 (Mini-SWE-Agent),glm-5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-GLM 5.2 (Mini-SWE-Agent),glm-5.2,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-GLM 5.2 (mini-SWE-agent) xhigh,glm-5.2,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Glm 5 (Mini-SWE-Agent),glm-5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+GLM 5.2 (Mini-SWE-Agent),glm-5.2,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+GLM 5.2 (mini-SWE-agent) xhigh,glm-5.2,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 glm-4.6,glm-4.6,,,,,,REVIEW: auto-slicé
 glm-4p5,glm-4.5,,,,,,"Scale SEAL alias (auto, high-confidence)"
 glm-4p5-air,GLM-4.5-Air,,,,,,"Scale SEAL alias (auto, high-confidence)"
 glm-4p7,glm-4.7,,,,,,"Scale SEAL alias (auto, high-confidence)"
-Glm-5 (Mini-SWE),glm-5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Glm-5 (Mini-SWE-Agent),glm-5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Glm-5 (Mini-SWE),glm-5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Glm-5 (Mini-SWE-Agent),glm-5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 glm-5p1,glm-5.1,,,,,,"Scale SEAL alias (auto, high-confidence)"
-glm-5p2,glm-5.2,,,,unknown-effort,,Scale SEAL alias (effort-less -> _unknown bucket; no bare glm-5.2 exists)
-GPT 5.2,gpt-5.2,,,2025-12-11,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+glm-5p2,glm-5.2,,,,,,Scale SEAL alias (effort-less -> _unknown bucket; no bare glm-5.2 exists)
+GPT 5.2,gpt-5.2,,,2025-12-11,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
 GPT 5.2 Codex,gpt-5.2-codex,,,,,,"Scale SEAL alias (auto, high-confidence)"
-GPT 5.3 (Codex) xHigh,gpt-5.3-codex,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort. '(Codex)' is the native Codex CLI scaffold (Scale's methodology: 'native scaffolds like Claude Code and Codex CLI'); OpenAI's GPT-5.3 release is GPT-5.3-Codex itself (2026-02-05, no separate GPT-5.3), so the model is gpt-5.3-codex run in Codex. Validated 2026-09-04"
-GPT 5.4 (Codex) xHigh,gpt-5.4,xhigh,,2026-03-05,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
-Gpt 5.4 xHigh (Mini-SWE-Agent),gpt-5.4,xhigh,,2026-03-05,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04) | REVIEW: gpt-5.4 run in Codex CLI, or a codex variant? Epoch has no gpt-5.4-codex, so gpt-5.4 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
-GPT 5.5 (Codex) xHigh,gpt-5.5,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04"
+GPT 5.3 (Codex) xHigh,gpt-5.3-codex,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold (Scale's methodology: 'native scaffolds like Claude Code and Codex CLI'); OpenAI's GPT-5.3 release is GPT-5.3-Codex itself (2026-02-05, no separate GPT-5.3), so the model is gpt-5.3-codex run in Codex. Validated 2026-09-04"
+GPT 5.4 (Codex) xHigh,gpt-5.4,xhigh,,2026-03-05,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
+Gpt 5.4 xHigh (Mini-SWE-Agent),gpt-5.4,xhigh,,2026-03-05,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04) | REVIEW: gpt-5.4 run in Codex CLI, or a codex variant? Epoch has no gpt-5.4-codex, so gpt-5.4 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
+GPT 5.5 (Codex) xHigh,gpt-5.5,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04"
 GPT-4,gpt-4-0613,,,,,,
 GPT-4 (November 2024),gpt-4o,,,2024-11-20,,,
 GPT-4 Turbo Preview,gpt-4-turbo,,,,,,"Scale SEAL alias (auto, high-confidence)"
@@ -171,44 +171,44 @@ GPT-4o (November 2024),gpt-4o,,,2024-11-20,,,"Scale SEAL alias (auto, high-confi
 GPT-4o mini,gpt-4o-mini,,,2024-07-18,,,"Scale SEAL alias (auto, verified checkpoint)"
 gpt-4o-audio-preview-2025-06-03,gpt-4o-audio-preview,,,2025-06-03,,,REVIEW: auto-slicé
 gpt-4o-mini-audio-preview-2024-12-17,gpt-4o-mini-audio-preview,,,2024-12-17,,,REVIEW: auto-slicé
-gpt-5,gpt-5,,,2025-08-07,unknown-effort,,Scale SEAL alias (round 2: new boards)
-gpt-5-2025-08-07,gpt-5,,,2025-08-07,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+gpt-5,gpt-5,,,2025-08-07,,,Scale SEAL alias (round 2: new boards)
+gpt-5-2025-08-07,gpt-5,,,2025-08-07,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
 gpt-5-2025-08-07 (High),gpt-5,high,,2025-08-07,,,"Scale SEAL alias (auto, high-confidence)"
 gpt-5-2025-08-07-thinking,gpt-5,,,2025-08-07,thinking,,LiveBench thinking → _unknown effort
-gpt-5-mini-2025-08-07,gpt-5-mini,,,2025-08-07,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+gpt-5-mini-2025-08-07,gpt-5-mini,,,2025-08-07,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
 gpt-5-mini-thinking,gpt-5-mini,,,2025-08-07,thinking,,LiveBench short form; sole GPT-5 mini
-gpt-5-pro,gpt-5-pro,,,2025-10-06,unknown-effort,,Scale SEAL alias (round 2: new boards)
-gpt-5-pro-2025-10-06,gpt-5-pro,,,2025-10-06,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+gpt-5-pro,gpt-5-pro,,,2025-10-06,,,Scale SEAL alias (round 2: new boards)
+gpt-5-pro-2025-10-06,gpt-5-pro,,,2025-10-06,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
 gpt-5-thinking,gpt-5,,,2025-08-07,thinking,,LiveBench short form; sole GPT-5 base
 gpt-5.1 (high),gpt-5.1,high,,2025-11-13,,,"Scale SEAL alias (auto, verified checkpoint)"
 gpt-5.1-2025-11-13-instant,gpt-5.1,none,,2025-11-13,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
 gpt-5.1-2025-11-13-thinking,gpt-5.1,,,2025-11-13,thinking,,LiveBench thinking → _unknown effort
 gpt-5.1-instant,gpt-5.1,none,,2025-11-13,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
 gpt-5.1-thinking,gpt-5.1,,,2025-11-13,thinking,,LiveBench short form; sole GPT-5.1
-gpt-5.2,gpt-5.2,,,2025-12-11,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
-GPT-5.2 (Codex) xhigh,gpt-5.2,xhigh,,2025-12-11,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04 | snapshot 2025-12-11 = the sole GPT-5.2 snapshot (2026-09-07)"
+gpt-5.2,gpt-5.2,,,2025-12-11,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+GPT-5.2 (Codex) xhigh,gpt-5.2,xhigh,,2025-12-11,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04 | snapshot 2025-12-11 = the sole GPT-5.2 snapshot (2026-09-07)"
 gpt-5.2 (xhigh),gpt-5.2,xhigh,,2025-12-11,,,"Scale SEAL alias (auto, verified checkpoint)"
-gpt-5.2-2025-12-11,gpt-5.2,,,2025-12-11,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
-gpt-5.2-2025-12-11 (default),gpt-5.2,,,2025-12-11,unknown-effort,,Scale SEAL alias (round 2: new boards)
+gpt-5.2-2025-12-11,gpt-5.2,,,2025-12-11,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+gpt-5.2-2025-12-11 (default),gpt-5.2,,,2025-12-11,,,Scale SEAL alias (round 2: new boards)
 gpt-5.2-2025-12-11 (medium),gpt-5.2,medium,,2025-12-11,,,Scale SEAL alias (round 2: new boards)
 gpt-5.2-codex,gpt-5.2-codex,,,,,,REVIEW: auto-slicé
 gpt-5.2-pro-2025-12-11,gpt-5.2-pro,,,2025-12-11,,,REVIEW: auto-slicé
-GPT-5.4 (Codex) xHigh,gpt-5.4,xhigh,,2026-03-05,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
+GPT-5.4 (Codex) xHigh,gpt-5.4,xhigh,,2026-03-05,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
 gpt-5.4 (High),gpt-5.4,high,,2026-03-05,,,Scale SEAL alias (round 2: new boards)
-GPT-5.4 (Mini-SWE) xHigh,gpt-5.4,xhigh,,2026-03-05,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04) | REVIEW: gpt-5.4 run in Codex CLI, or a codex variant? Epoch has no gpt-5.4-codex, so gpt-5.4 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
+GPT-5.4 (Mini-SWE) xHigh,gpt-5.4,xhigh,,2026-03-05,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04) | REVIEW: gpt-5.4 run in Codex CLI, or a codex variant? Epoch has no gpt-5.4-codex, so gpt-5.4 | snapshot 2026-03-05 = the sole GPT-5.4 snapshot (2026-09-07)"
 gpt-5.4 (xHigh),gpt-5.4,xhigh,,2026-03-05,,,case variant (markers stripped upstream)
 gpt-5.4 (xhigh),gpt-5.4,xhigh,,2026-03-05,,,leaderboard label -> versioned xhigh variant
 gpt-5.4(xHigh),gpt-5.4,xhigh,,2026-03-05,,,no-space variant
 gpt-5.4-2026-03-05 (reasoning effort = high),gpt-5.4,high,,2026-03-05,,,Scale SEAL alias (round 2: new boards)
 gpt-5.4-2026-03-05 (xhigh thinking),gpt-5.4,xhigh,,2026-03-05,,,"Scale SEAL alias (auto, high-confidence)"
 gpt-5.4-mini (xhigh),gpt-5.4-mini,xhigh,,2026-03-17,,,"Scale SEAL alias (auto, verified checkpoint)"
-gpt-5.4-pro-2026-03-05,gpt-5.4-pro,,,2026-03-05,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
-GPT-5.5 (Codex) xHigh,gpt-5.5,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04"
-GPT-5.5 (Codex) xhigh,gpt-5.5,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04"
-GPT-5.5 (mini-SWE-agent) xhigh,gpt-5.5,xhigh,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04) | REVIEW: gpt-5.5 run in Codex CLI, or gpt-5.5-codex (exists at Epoch)? mapped to the base model, harness recorded"
+gpt-5.4-pro-2026-03-05,gpt-5.4-pro,,,2026-03-05,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+GPT-5.5 (Codex) xHigh,gpt-5.5,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04"
+GPT-5.5 (Codex) xhigh,gpt-5.5,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04"
+GPT-5.5 (mini-SWE-agent) xhigh,gpt-5.5,xhigh,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04) | REVIEW: gpt-5.5 run in Codex CLI, or gpt-5.5-codex (exists at Epoch)? mapped to the base model, harness recorded"
 gpt-5.5 (xhigh),gpt-5.5,xhigh,,,,,"Scale SEAL alias (auto, high-confidence)"
 gpt-5.6 (sol),gpt-5.6-sol,,,,,,"REVIEW: rempli à la main (identité, cf. ancien repo)"
-GPT-5.6-Sol (Codex) xHigh,gpt-5.6-sol,xhigh,,,,Codex,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+GPT-5.6-Sol (Codex) xHigh,gpt-5.6-sol,xhigh,,,,Codex,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 gpt-5.6-sol (max),gpt-5.6-sol,max,,,,,SEAL effort spelling; underscore form is canonical
 gpt-oss-120b,gpt-oss-120b,,,,,,REVIEW: auto-slicé
 gpt-oss-20b,gpt-oss-20b,,,,,,REVIEW: auto-slicé
@@ -220,14 +220,14 @@ gpt-realtime-mini-2025-12-15,gpt-realtime-mini,,,2025-12-15,,,REVIEW: auto-slic�
 Inkling (Thinking),Inkling,,,,thinking,,SEAL thinking w/ unspecified budget -> _unknown effort bucket
 Inkling (xHigh),Inkling,xhigh,,,,,Scale SEAL alias; inline xHigh effort tag = Epoch's Inkling_xhigh
 Inkling-small,inkling-small,,,,,,Scale SEAL spelling; case variant of Epoch's inkling-small
-Kimi K2.5 (Mini-SWE-Agent),kimi-k2.5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Kimi K2.7 Code (mini-SWE-agent) xhigh,kimi-k2.7-code,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Kimi K2.5 (Mini-SWE-Agent),kimi-k2.5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Kimi K2.7 Code (mini-SWE-agent) xhigh,kimi-k2.7-code,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Kimi-Audio-7B-Instruct,Kimi-Audio-7B-Instruct,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
 kimi-k2-instruct,Kimi-K2-Instruct,,,,,,"Scale SEAL alias (auto, high-confidence)"
 kimi-k2-thinking,kimi-k2-thinking,,,,,,REVIEW: auto-slicé
 kimi-k2.5,kimi-k2.5,,,,,,REVIEW: auto-slicé
-Kimi-K2.5 (Mini-SWE),kimi-k2.5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Kimi-K2.5 (Mini-SWE-Agent),kimi-k2.5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Kimi-K2.5 (Mini-SWE),kimi-k2.5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Kimi-K2.5 (Mini-SWE-Agent),kimi-k2.5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 kimi-k2p5,kimi-k2.5,,,,,,"Scale SEAL alias (auto, high-confidence)"
 kimi-k3 (max),kimi-k3,max,,,,,SEAL effort spelling; underscore form is canonical
 LFM2-Audio-1.5B,LFM2-Audio-1.5B,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
@@ -249,31 +249,31 @@ Manus 1.5,Manus 1.5,,,,,,"REVIEW: rempli à la main (identité, cf. ancien repo)
 Manus_1.6 (Max),Manus 1.6,max,,,,,"Remote Labor Index label; spelled like Manus 1.0 / 1.5. 'Max' is the top agent tier, kept as reasoning_level max (2026-09-07)"
 MiMo-Audio-7B-Instruct,MiMo-Audio-7B-Instruct,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
 MiMo-Audio-7B-Instruct (Thinking),MiMo-Audio-7B-Instruct,,,,thinking,,REVIEW: auto (effort en parenthèses)
-Minimax M2.5 (Mini-SWE-Agent),MiniMax-M2.5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-MiniMax M3 (mini-SWE-agent) xhigh,MiniMax-M3,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Minimax M2.5 (Mini-SWE-Agent),MiniMax-M2.5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+MiniMax M3 (mini-SWE-agent) xhigh,MiniMax-M3,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 minimax-2.1,MiniMax-M2.1,,,,,,"Scale SEAL alias (auto, high-confidence)"
-Minimax-M2.5 (Mini-SWE),MiniMax-M2.5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Minimax-M2.5 (Mini-SWE-Agent),MiniMax-M2.5,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Minimax-M2.5 (Mini-SWE),MiniMax-M2.5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Minimax-M2.5 (Mini-SWE-Agent),MiniMax-M2.5,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Mistral Large,mistral-large-2402,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
 Mistral Large 2,mistral-large-2407,,,,,,"Scale SEAL alias (auto, verified checkpoint)"
 Mistral Medium 3,mistral-medium-2505,,,,,,"lineage_map already places both on node medium-2505 as bare, same date"
 mistral-medium-latest,mistral-medium-2508,,,,,,"PRBench row created 2025-11-13 (board JSON createdAt), when mistral-medium-latest pointed to mistral-medium-2508 (released 2025-08-12). Decision 2026-09-07"
 Muse Spark,muse-spark,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Muse Spark 1.1,muse-spark-1.1,,,,,,SEAL display name; slug form is canonical (muse-spark family)
-Muse Spark 1.1 (Mini-SWE-Agent) xHigh,muse-spark-1.1,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Muse Spark 1.1 (Mini-SWE-Agent) xHigh,muse-spark-1.1,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Nova LIte,amazon.nova-lite-v1:0,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Nova Lite,amazon.nova-lite-v1:0,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Nova Mirco,amazon.nova-micro-v1:0,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Nova Pro,amazon.nova-pro-v1:0,,,,,,"Scale SEAL alias (auto, high-confidence)"
 nova-premier,nova-premier,,,,,,REVIEW: auto-slicé
-o1 (December 2024),o1,,,2024-12-17,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
+o1 (December 2024),o1,,,2024-12-17,,,"Scale SEAL alias (effort-less -> _unknown/_none, user-approved)"
 o1 Pro (March 2025),o1-pro,,,2025-03-19,,,
 o1-preview,o1-preview,,,2024-09-12,,,sole o1-preview snapshot (2024-09-12). Decision 2026-09-07
 o3,o3,medium,,2025-04-16,,,RAND generic 'o3' -> default reasoning effort = medium
 o3 (high) (April 2025),o3,high,,2025-04-16,,,"Scale SEAL alias (auto, high-confidence)"
 o3 (medium) (April 2025),o3,medium,,2025-04-16,,,"Scale SEAL alias (auto, high-confidence)"
 o3 Pro (high) (June 2025),o3-pro,high,,2025-06-10,,,"Scale SEAL alias (auto, high-confidence)"
-o3-2025-04-16,o3,,,2025-04-16,unknown-effort,,Scale SEAL alias (round 2: new boards)
+o3-2025-04-16,o3,,,2025-04-16,,,Scale SEAL alias (round 2: new boards)
 o3-2025-04-16-high,o3,high,,2025-04-16,,,"Scale SEAL alias (auto, high-confidence)"
 o3-2025-04-16-medium,o3,medium,,2025-04-16,,,"Scale SEAL alias (auto, high-confidence)"
 o3-2025-04-16-reasoning-high,o3,high,,2025-04-16,,,"Scale SEAL alias (auto, high-confidence)"
@@ -292,21 +292,21 @@ o4-mini-high,o4-mini,high,,2025-04-16,,,"Scale SEAL alias (auto, high-confidence
 OpenAI GPT-4o,gpt-4o,,,2024-08-06,,,
 OpenAI GPT-5,gpt-5,medium,,2025-08-07,,,
 Opus 4.5,claude-opus-4-5,,,2025-11-01,,,"Scale SEAL alias (auto, high-confidence)"
-Opus 4.6 (Claude Code),claude-opus-4-6,,,,unknown-effort,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus 4.6 (Mini-SWE-Agent),claude-opus-4-6,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus 4.7 (Claude Code),claude-opus-4-7,,,,unknown-effort,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus 4.8,claude-opus-4-8,,,,unknown-effort,,"Scale SEAL alias (effort-less -> _unknown bucket, Remote Labor Index)"
-Opus 4.8 (Claude Code),claude-opus-4-8,,,,unknown-effort,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus 4.8 (Claude Code) xhigh,claude-opus-4-8,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus 5 (Claude Code) xHigh,claude-opus-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus-4.6 (Claude Code),claude-opus-4-6,,,,unknown-effort,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus-4.6 (Mini-SWE),claude-opus-4-6,,,,unknown-effort,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Opus-4.7 (Claude Code),claude-opus-4-7,,,,unknown-effort,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Opus 4.6 (Claude Code),claude-opus-4-6,,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus 4.6 (Mini-SWE-Agent),claude-opus-4-6,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus 4.7 (Claude Code),claude-opus-4-7,,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus 4.8,claude-opus-4-8,,,,,,"Scale SEAL alias (effort-less -> _unknown bucket, Remote Labor Index)"
+Opus 4.8 (Claude Code),claude-opus-4-8,,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus 4.8 (Claude Code) xhigh,claude-opus-4-8,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus 5 (Claude Code) xHigh,claude-opus-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus-4.6 (Claude Code),claude-opus-4-6,,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus-4.6 (Mini-SWE),claude-opus-4-6,,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Opus-4.7 (Claude Code),claude-opus-4-7,,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Phi 3.5 Vision-Instruct,Phi-3.5-vision-instruct,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Phi-4-multimodal-instruct,Phi-4-multimodal-instruct,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
 Pixtral 12B (September 2024),Pixtral-12B-2409,,,,,,
 Pixtral Large (November 2024),pixtral-large-2411,,,,,,display name with date; matches the Pixtral 12B (September 2024) precedent
-Qwen 3.7 Max (mini-SWE-agent) xhigh,qwen3.7-max,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Qwen 3.7 Max (mini-SWE-agent) xhigh,qwen3.7-max,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 qwen.qwen3-235b-a22b-2507-v1:0,Qwen3-235B-A22B-Instruct-2507,,,,,,Scale SEAL alias (round 2: new boards)
 Qwen2-VL-72B-Instruct,Qwen2-VL-72B-Instruct,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
 Qwen2.5-Omni-7B,Qwen2.5-Omni-7B,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
@@ -315,7 +315,7 @@ qwen3-235b-a22b,qwen3-235b-a22b,,,,,,REVIEW: auto-slicé
 Qwen3-235B-A22B-Thinking-2507,Qwen3-235B-A22B-Thinking-2507,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
 qwen3-coder-480b-a35b,Qwen3-Coder-480B-A35B-Instruct,,,,,,"Scale SEAL alias (auto, high-confidence)"
 Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni-30B-A3B-Instruct,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
-Sonnet 4.6 (Claude Code),claude-sonnet-4-6,,,,unknown-effort,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
-Sonnet-4.6 (Claude Code),claude-sonnet-4-6,,,,unknown-effort,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> unknown-effort (2026-09-04)
+Sonnet 4.6 (Claude Code),claude-sonnet-4-6,,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
+Sonnet-4.6 (Claude Code),claude-sonnet-4-6,,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 tml-interaction-small,tml-interaction-small,,,,,,REVIEW: auto-slicé
 Voxtral-Small-24B-2507,Voxtral-Small-24B-2507,,,,,,REVIEW: auto-identité (graphie HF mixed-case)
