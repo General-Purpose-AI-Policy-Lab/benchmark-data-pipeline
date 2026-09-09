@@ -19,7 +19,9 @@ jobs:
       - run: uv venv --python 3.11 .venv && uv pip install --python .venv/bin/python -e . --group dev
       - run: .venv/bin/python -m benchmark_data refresh
       - run: .venv/bin/python -m benchmark_data build
-      - run: .venv/bin/pytest -q
+      # The golden test compares the fresh build with the blessed copies, which a refresh is
+      # meant to change; `check` below reports that difference instead. Every other test runs.
+      - run: .venv/bin/pytest -q --deselect tests/test_build_golden.py
       # Differences against the blessed copies are expected after a refresh: report, do not fail.
       - run: .venv/bin/python -m benchmark_data check || true
       - run: .venv/bin/python -m benchmark_data parity

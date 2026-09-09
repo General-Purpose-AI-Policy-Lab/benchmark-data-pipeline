@@ -111,6 +111,21 @@ def _check_unit_range(result: IngestResult, feed: str) -> None:
     log.info("%s: %s scores, all in [0, 1]", feed, f"{len(got):,}")
 
 
+def _report_unused_aliases(result: IngestResult, aliases: dict[str, dict]) -> None:
+    """Alias rows whose identity produced no model: the raw name only occurs on excluded
+    benchmarks, or the row is stale (a spelling the feed no longer uses). Reported, not fatal."""
+    for feed, table in aliases.items():
+        unused = []
+        for raw in table:
+            status, ident, _ = resolve_model(raw, table, False)
+            if status == "ok" and model_id(ident) not in result.models:
+                unused.append(raw)
+        if unused:
+            log.info("%s: %d alias row(s) whose identity produced no model (excluded benchmarks "
+                     "only, or stale): %s%s", feed, len(unused), sorted(unused)[:10],
+                     " ..." if len(unused) > 10 else "")
+
+
 def ingest(feed_dir: Path = config.FEED_DIR,
            metadata_dir: Path = config.METADATA_DIR) -> IngestResult:
     """Single loop over the feeds, in `config.SOURCE_ORDER`.
@@ -142,6 +157,7 @@ def ingest(feed_dir: Path = config.FEED_DIR,
     if unknown_benchmarks:
         raise ValueError(f"benchmarks with no row in {config.BENCHMARKS_FILE}: "
                          f"{sorted(unknown_benchmarks)}")
+    _report_unused_aliases(result, aliases)
     if result.excluded:
         log.info("excluded benchmarks (records dropped): %s", dict(result.excluded))
     if result.completed:

@@ -12,6 +12,7 @@ jobs:
       - uses: astral-sh/setup-uv@v3
       - run: uv venv --python 3.11 .venv && uv pip install --python .venv/bin/python -e . --group dev
       - run: .venv/bin/ruff check .
-      # The golden and parity tests skip here: Scale's pages are not redistributed, so no build
-      # runs on a fresh checkout. They run in the `refresh` workflow, which fetches the feeds.
+      # The golden test skips here: Scale's pages are not redistributed, so no build runs on a
+      # fresh checkout (it runs in the `refresh` workflow, which fetches the feeds). The parity
+      # tests run against the committed views.
       - run: .venv/bin/pytest -q

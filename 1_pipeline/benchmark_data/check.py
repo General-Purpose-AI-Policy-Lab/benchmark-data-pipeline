@@ -1,4 +1,4 @@
-"""Regression test: `2_2_database/` against the blessed copy `tests/expected_database/`."""
+"""Regression test: `2_database/` and `3_views/` against their blessed copies under `tests/`."""
 
 import logging
 from pathlib import Path

@@ -86,8 +86,9 @@ class Refresher:
             try:
                 data = self.fetch(f"0_input/feed/seal/{slug}.html", SEAL_URL.format(slug),
                                   SEAL_HEADERS)
-            except urllib.error.HTTPError as e:
-                log.warning("seal/%s: HTTP %s, existing page kept", slug, e.code)
+            except (urllib.error.URLError, TimeoutError) as e:
+                # HTTPError is a URLError; a stalled connection raises TimeoutError.
+                log.warning("seal/%s: %s, existing page kept", slug, getattr(e, "code", e))
                 continue
             (self.feed_dir / "seal" / f"{slug}.html").write_bytes(data)
 

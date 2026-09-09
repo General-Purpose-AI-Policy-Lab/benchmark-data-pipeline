@@ -17,13 +17,21 @@ log = logging.getLogger(__name__)
 Leftovers = tuple[set, set]
 
 
+# Lines of each leftover list shown in the build log. Orphan metadata is expected for models
+# that only appeared on excluded benchmarks and for spellings later merged by an alias.
+LEFTOVER_LINES = 20
+
+
 def report_leftovers(label: str, meta_orphans: set, targets_without: set) -> None:
     """The two leftovers of a metadata join, logged the same way everywhere."""
     log.info("%s: %d metadata row(s) with no target, %d target(s) with no metadata",
              label, len(meta_orphans), len(targets_without))
-    for x in sorted(meta_orphans)[:8]:
+    for x in sorted(meta_orphans)[:LEFTOVER_LINES]:
         log.info("    orphan metadata : %s", x)
-    for x in sorted(targets_without)[:8]:
+    if len(meta_orphans) > LEFTOVER_LINES:
+        log.info("    ... %d more (see the note below the join for the usual causes)",
+                 len(meta_orphans) - LEFTOVER_LINES)
+    for x in sorted(targets_without)[:LEFTOVER_LINES]:
         log.info("    no metadata     : %s", x)
 
 
@@ -206,7 +214,8 @@ def add_sibling_dates(models: pandas.DataFrame):
 def add_model_version(models: pandas.DataFrame, names) -> pandas.DataFrame:
     """`model_version`: the machine name consumers key on.
 
-    The most frequent spelling the grammar parsed for that model (Epoch and Kaggle files) wins;
+    The most frequent spelling the grammar parsed for that model (the splittable feeds: Epoch,
+    the live feed and Kaggle) wins;
     a model seen only through aliases (Scale, RAND) gets `identity.machine_name` of its tuple.
     """
     counts = pandas.DataFrame([(m, n, c) for (m, n), c in names.items()],

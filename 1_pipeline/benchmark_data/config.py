@@ -42,7 +42,8 @@ ALL_SCORES_COLS = ["model_version", "score", "release_date", "organization", "be
                    "source", "source_url", "feed", "category", "lower_bound", "ceiling"]
 DATED_SCORES_COLS = ALL_SCORES_COLS
 VIEW_HUMAN_COLS = ["benchmark", "group", "score", "note", "source"]
-# feed -> coarse label, used when a row has no `source_label` of its own.
+# feed -> coarse label, used when a row has no `source_label` of its own (a defensive fallback:
+# every translator labels its rows today, so the views never show these).
 FEED_LABEL = {
     "epoch": "EpochAI", "epoch_live": "EpochAI (live feed)", "epoch_cyber": "EpochAI (cyber ECI)",
     "cybench_site": "Cybench leaderboard", "kaggle": "Kaggle Open Benchmarks",

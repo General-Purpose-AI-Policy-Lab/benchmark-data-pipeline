@@ -153,14 +153,3 @@ def model_id(ident: Identity) -> str:
 
 def benchmark_id(name: str) -> str:
     return str(uuid.uuid5(NAMESPACE, "benchmark|" + name))
-
-
-def write_aliases(path: Path, rows: list[dict]) -> None:
-    """Write a list of ALIAS_COLS dicts, sorted by raw_name."""
-    Path(path).parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        # Explicit lineterminator: csv defaults to CRLF, which .gitattributes (*.csv text
-        # eol=lf) then renormalizes, producing a phantom diff on every write.
-        w = csv.DictWriter(f, fieldnames=ALIAS_COLS, lineterminator="\n")
-        w.writeheader()
-        w.writerows(sorted(rows, key=lambda r: r["raw_name"].lower()))

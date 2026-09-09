@@ -38,14 +38,14 @@ Numérotés pour pouvoir y référer depuis les revues. État au 2026-09-09 : **
 | D4 | `build_report.md` et diff vs build précédent | **partiel** : le build journalise tout, `parity` écrit `reports/parity_<consommateur>.md`, le workflow mensuel joint ces rapports à sa PR ; pas de diff persistant entre deux builds (le diff git de la PR en tient lieu) |
 | D5 | Identité structurée, vide = inconnu, uuid5 | **fait** ; le harness reste hors du tuple (A3 : meilleur score toutes harness confondues, harness porté par le score) |
 | D6 | Une fonction unique dérive `model_version` depuis le tuple | **fait** (`identity.machine_name` ; la graphie observée chez Epoch ou Kaggle l'emporte) |
-| D7 | Table `model_names.csv` de toutes les graphies vues | **fait** (`2_database/model_names.csv`, 1 536 graphies) |
+| D7 | Table `model_names.csv` de toutes les graphies vues | **fait** (`2_database/model_names.csv`) |
 | D8 | Quatre couches de décision séparées | **fait**, le périmètre étant tranché dans `benchmarks.csv` (`status`, `exclusion_criterion`) plutôt que chez les consommateurs (A5) |
 | D9 | Un benchmark retiré reste dans la base avec un statut | **abandonné** (A5) : le statut vit dans `benchmarks.csv`, les scores exclus sont écartés à l'ingestion et comptés dans `excluded_benchmarks.csv` |
 | D10 | `score_raw` et `transform` réversibles | **abandonné** (décision du 2026-09-07) : les diviseurs restent dans les `_SPEC` |
 | D11 | Build hors-ligne et déterministe | **fait** (golden, double build) |
 | D12 | Provenance par artefact et `build_manifest.json` | **fait** (`0_input/feed/provenance.json`, `2_database/build_manifest.json` : schéma, commit, hachages des entrées, comptes) |
 | D13 | Golden et parité avec les deux consommateurs | **fait** (`python -m benchmark_data parity`, écarts par cause) |
-| D14 | Paquet Python, style Google, ruff, pytest, CI | **fait** (72 tests, `ci.yml` ruff + pytest) |
+| D14 | Paquet Python, style Google, ruff, pytest, CI | **fait** (`ci.yml` ruff + pytest) |
 | D15 | CLI `refresh`, `build`, `check`, `diff` | **fait** avec `parity` à la place de `diff` |
 | D16 | Ajouter une source = un module, une spec, un `aliases.csv` | **fait** (sept feeds : epoch, epoch_live, epoch_cyber, cybench_site, kaggle, rand, seal) |
 | D17 | Aucune boucle `iterrows` | **fait** |
@@ -113,9 +113,8 @@ Ce qui a changé par rapport au plan initial : le harness n'est pas entré dans 
 - **Échelle humaine de Multiaxis sur les nouvelles données.** Top Performer repose sur le score parfait d'EBR-bench (1,000), ce qui le porte à ECI 204 et repousse son franchissement de mai 2025 à juin 2027 ; Average Human ne tient plus qu'à MMLU (34,5 %), TriviaQA et EBR-bench ; Committee of Average Humans n'a plus aucun benchmark dans le périmètre (ARC-AGI, HellaSwag, WinoGrande, OpenBookQA exclus par `1_curated/excluded_benchmarks.txt`). Retirer ou borner la ligne EBR, ou accepter.
 - **Catégorie de NL2Bash** (Cyber, provisoire).
 - **Sort des traces publiées avant le pipeline** (`5_outputs/pre_pipeline/`, 21 Go, non régénérables sans les anciennes données) une fois les nouveaux résultats validés.
-- **`lineage_map.csv` régénéré** (699 lignes changées), `sota_models.txt` et `benchmark_score_clips.csv` à relire.
+- **`lineage_map.csv` régénéré** (699 lignes changées) et `benchmark_score_clips.csv` à relire ; la liste SOTA est désormais calculée par familles depuis le fit canonique (2026-09-09), plus rien à relire de ce côté.
 - **Métadonnées orphelines** signalées par le build (`Aria`, `ByteVideoLLM-14B`) : alias manquant ou lignes à retirer d'`organizations.csv`.
-- **Suffixe `_unknown` d'Epoch.** Un effort inconnu et un effort absent sont le même état de connaissance mais deux identités (`gpt-5-2025-08-07` et `gpt-5-2025-08-07_unknown` sont deux SOTA distincts). Fusionner à l'ingestion ou laisser.
 
 ### 4.2 Travail restant
 

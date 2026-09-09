@@ -1,6 +1,6 @@
 # benchmark-data-pipeline
 
-Turns public benchmark score feeds (Epoch AI, Kaggle, RAND, Scale SEAL) into CSV tables linked by UUID (`2_database/`: scores, models, benchmarks, human baselines, plus the excluded benchmarks and every raw model name) and two flat consumer views (`3_views/`).
+Turns public benchmark score feeds (Epoch AI, Kaggle, RAND, Scale SEAL, the Cybench leaderboard) into CSV tables linked by UUID (`2_database/`: scores, models, benchmarks, human baselines, plus the excluded benchmarks and every raw model name) and two flat consumer views (`3_views/`).
 
 Public scores are scattered across a handful of sources that each name models their own way: `claude-opus-4-5-20251101-thinking` here, `Claude Opus 4.5 (Thinking)` there, without saying whether the reasoning effort is known or simply missing. Reconciling those tables is where the time goes, and it usually happens by hand in a notebook that keeps no record of what was merged or why.
 
@@ -21,7 +21,7 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 2_database/                 the tables (+ excluded_benchmarks.csv, model_names.csv, build_manifest.json)
 3_views/                    all_scores_flat.csv, dated_scores_flat.csv, human_baselines.csv
 docs/                       decisions.md (settled), decisions_pending.md (open), plan_fusion.md
-tests/                      unit tests, golden copy (tests/expected_database), parity goldens
+tests/                      unit tests, golden copies (tests/expected_database, tests/expected_views), parity goldens
 ```
 
 Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (19 HTML pages). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
@@ -76,7 +76,7 @@ Derived from the four tables at every build, never edited by hand:
 | `dated_scores_flat.csv` | the same columns (benchmark-forecasting's input) | scores of dated models only |
 | `human_baselines.csv` | `benchmark, group, score, note, source` | every baseline |
 
-`lower_bound` is the benchmark floor (chance level or documented minimum, `0_input/metadata/benchmarks.csv`); `ceiling` is a known upper limit on achievable scores, empty when none is established. Today it is `1.0` for the six benchmarks whose full range is demonstrably attainable (ARC-AGI, ARC-AGI-2, EBR-bench, VPCT: a human baseline reaches the top; FrontierMath Tiers 1-3 v2 and Tier 4 v2: verified exact-match answers), the asymptotes benchmark-forecasting pins. Epoch's `score_ceiling` estimates are not recorded (too approximate); `ceiling_reason` in `benchmarks.csv` documents each value. `model_version` is the machine name consumers key on: the most frequent spelling Epoch or Kaggle used for the model, else `identity.machine_name` of the identity tuple (snapshot written the developer's way, effort or budget as `_high` / `_16K`, `_unknown` / `_thinking` for the run variants). `source` is the fine label the feed publishes for the row (a leaderboard, a technical report, Epoch's evaluation log), the feed's name when it publishes none (`config.FEED_LABEL`); `source_url` and `feed` travel with it. Sibling boards are already merged, so the views carry no merge option.
+`lower_bound` is the benchmark floor (chance level or documented minimum, `0_input/metadata/benchmarks.csv`); `ceiling` is a known upper limit on achievable scores, empty when none is established. Today it is `1.0` for the 13 benchmarks whose full range is demonstrably attainable (a human baseline reaches the top, every problem has a verified solution, or every task is a capture-the-flag with a known flag: ARC-AGI, ARC-AGI-2, EBR-bench, VPCT, Cybench, the two FrontierMath v2 sets, the six AISI CTF and Cyber Range sets), the asymptotes benchmark-forecasting pins. Epoch's `score_ceiling` estimates are not recorded (too approximate); `ceiling_reason` in `benchmarks.csv` documents each value. `model_version` is the machine name consumers key on: the most frequent spelling Epoch or Kaggle used for the model, else `identity.machine_name` of the identity tuple (snapshot written the developer's way, effort or budget as `_high` / `_16K`, `_thinking` for the run variant, `_prounknown` for a pro variant whose effort is unknown). `source` is the fine label the feed publishes for the row (a leaderboard, a technical report, Epoch's evaluation log), the feed's name when it publishes none (`config.FEED_LABEL`, a defensive fallback: every feed labels its rows today); `source_url` and `feed` travel with it. Sibling boards are already merged, so the views carry no merge option.
 
 `python -m benchmark_data parity` compares the views with the last files the two repositories built on their own (`tests/parity/golden/`, commits 55687ce and 2ed2c34) and writes `reports/parity_<consumer>.md`: lost pairs by cause (benchmark excluded, board merged, model renamed, other), new pairs, scores and dates that moved. Every golden benchmark name must map through `previous_names` (tested); the other buckets are reviewed, not asserted.
 
@@ -112,7 +112,7 @@ One row per benchmark in `0_input/metadata/benchmarks.csv`, with a `status`:
 | `review` | new upstream benchmark not yet examined; dropped until decided |
 | `no_source` | no feed supplies it today; the row keeps its metadata |
 
-The four inclusion criteria, shared by every downstream analysis: (1) scores are a proportion in [0, 1]; (2) the benchmark measures a capability, not a propensity; (3) it was run on a good share of the frontier models of its evaluation period; (4) its quality is sufficient for the ranking of scores to be informative. Being old, saturated or no longer evaluated is not a reason to exclude, and errors in the item set are tolerated. Files whose score is not a proportion at all never get a row: they sit in the source's `_SKIP` dictionary with the reason.
+The four inclusion criteria, shared by every downstream analysis: (1) scores are a proportion in [0, 1]; (2) the benchmark measures a capability, not a propensity; (3) it was run on a good share of the frontier models of its evaluation period; (4) its quality is sufficient for the ranking of scores to be informative. Being old, saturated or no longer evaluated is not a reason to exclude, and errors in the item set are tolerated. Files whose score is not a proportion at all never get a score: they sit in the source's `_SKIP` dictionary with the reason, and carry an `excluded` row in `benchmarks.csv` so that `excluded_benchmarks.csv` lists them too.
 
 Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the benchmark, otherwise the authors' spelling, with the version number in the name (`FrontierMath Tiers 1-3 v2`, `OSWorld 2.0`). Former names are listed in the `previous_names` column.
 
@@ -121,7 +121,9 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 | Source | Field | Format | Strategy |
 |---|---|---|---|
 | `epoch` (ZIP) | `Model version` | machine name `[provider/]base[-date][_suffix]` | grammar + `aliases.csv` for the exceptions |
-| `epoch_live` | `model` | same, 100 % clean | grammar only (`aliases.csv` empty) |
+| `epoch_live` | `model` | same | grammar + `aliases.csv` for a few spellings |
+| `epoch_cyber` | `model` (display name) | Epoch's cyber long table, display names | full enumeration in `aliases.csv` |
+| `cybench_site` | `Model` | display names of the Cybench leaderboard | full enumeration in `aliases.csv` |
 | `kaggle` | `modelVersionSlug` | pure machine name, `-default` stripped, never an effort | grammar + `aliases.csv` for lower-case spellings of Epoch names |
 | `rand` | `Model` | free display names (`Amazon Nova 1.0 Lite`) | full enumeration in `aliases.csv` |
 | `seal` | `model` (JSON in the HTML) | five incompatible encodings, plus `model (harness) effort` on the agentic boards | full enumeration in `aliases.csv` (with `harness`) |
@@ -161,7 +163,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 4. A row per new benchmark in `0_input/metadata/benchmarks.csv` (the build refuses an unlisted one).
 5. `python -m benchmark_data build`.
 
-**`_SPEC` / `_SKIP` rule**: anything in neither dictionary is **reported**. Never ingested silently, never dropped silently. A feed that changes shape is seen.
+**`_SPEC` / `_SKIP` rule**: anything in neither dictionary is **reported**. Never ingested silently, never dropped silently. A feed that changes shape is seen, for the feeds that enumerate their own content (the Epoch ZIP, the live feed, the cyber table); Kaggle and Scale boards are fetched by name from `KAGGLE_SPEC` and `SEAL_SPEC`, so a board they add is discovered by hand, not by the build.
 
 ### Add or exclude a benchmark
 
@@ -179,7 +181,7 @@ Add a row to `0_input/metadata/release_dates.csv` (`base_model`, `snapshot`, `va
 
 ## Continuous integration
 
-`.github/workflows/ci.yml` runs ruff and pytest on every push and pull request; the golden and parity tests skip there because Scale's pages are not redistributed. `.github/workflows/refresh.yml` runs monthly and on demand: refresh, build, tests, `check` (differences expected, reported not failed), `parity`, then opens a pull request with the data changes and the parity reports attached for review.
+`.github/workflows/ci.yml` runs ruff and pytest on every push and pull request; the golden test skips there because Scale's pages are not redistributed, the parity tests run against the committed views. `.github/workflows/refresh.yml` runs monthly and on demand: refresh, build, the tests except the golden one (a refresh is meant to change the tables), `check` (differences expected, reported not failed), `parity`, then opens a pull request with the data changes and the parity reports attached for review.
 
 The build logs every score below its benchmark floor (kept as published: chance-level or weaker models); `1_pipeline/scripts/release_dates_consistency.py` regenerates `docs/release_dates_consistency.csv`, the table of models whose date sources disagree and the date kept.
 
@@ -189,18 +191,18 @@ The build logs every score below its benchmark floor (kept as published: chance-
 uv venv --python 3.11 .venv && uv pip install -e . --group dev
 python -m benchmark_data refresh      # required on a fresh clone: fetches the SEAL pages
 python -m benchmark_data build        # offline, deterministic
-python -m benchmark_data check        # 2_database/ == tests/expected_database/ ?
+python -m benchmark_data check        # 2_database/ and 3_views/ == their blessed copies under tests/ ?
 pytest                                # unit tests + golden + determinism
-ruff check benchmark_data tests
+ruff check .
 ```
 
-The build only needs `pandas`; `refresh` uses the standard library only. Two successive builds must produce a **byte-identical** `2_database/`; a divergence means an unsorted `dict`/`set` somewhere (`tests/test_build_golden.py` checks it).
+The build only needs `pandas`. Two successive builds must produce a **byte-identical** `2_database/`; a divergence means an unsorted `dict`/`set` somewhere (`tests/test_build_golden.py` checks it).
 
-`check` compares `2_database/` with the blessed copy `tests/expected_database/` (regression test). An intended difference (new feed, corrected alias, refreshed data) is re-blessed with `cp 2_database/*.csv tests/expected_database/`.
+`check` compares `2_database/` and `3_views/` with their blessed copies `tests/expected_database/` and `tests/expected_views/` (regression test). An intended difference (new feed, corrected alias, refreshed data) is re-blessed with `cp 2_database/*.csv tests/expected_database/ && cp 3_views/*.csv tests/expected_views/`.
 
 ### Refresh the feeds
 
-`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report). Novelties are never ingested quietly: unknown files / tasks / boards and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files. Provenance (URL, date, sha256): `0_input/feed/provenance.json`.
+`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report). Novelties are never ingested quietly: unknown files and tasks of the Epoch feeds and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files (new Kaggle or Scale boards are added to `KAGGLE_SPEC` / `SEAL_SPEC` by hand, see above). Provenance (URL, date, sha256): `0_input/feed/provenance.json`.
 
 ## License and sources
 

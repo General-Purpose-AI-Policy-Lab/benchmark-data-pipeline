@@ -25,7 +25,6 @@ gemma-2-9b,,,2024-06-27,https://blog.google/technology/developers/google-gemma-2
 gemma-2-9b-it,,,2024-06-27,https://blog.google/technology/developers/google-gemma-2/,Gemma 2 released 2024-06-27. Epoch: 06-24.
 grok-4-1-fast-reasoning,,,2025-11-19,https://docs.x.ai/developers/release-notes,API release 2025-11-19 (Grok 4.1 itself: 11-17).
 grok-4-1-fast-non-reasoning,,,2025-11-19,https://docs.x.ai/developers/release-notes,API release 2025-11-19 (Grok 4.1 itself: 11-17).
-qwen2.5-max,,,2025-01-28,https://qwenlm.github.io/blog/qwen2.5-max/,Announcement 2025-01-28; the API snapshot is named qwen-max-2025-01-25.
 Qwen-14B,,,2023-09-25,https://github.com/QwenLM/Qwen,"README news: 2023.9.25, Qwen-14B and Qwen-14B-Chat released on ModelScope and Hugging Face. Epoch: 09-28."
 Qwen-14B-Chat,,,2023-09-25,https://github.com/QwenLM/Qwen,"README news: 2023.9.25, Qwen-14B and Qwen-14B-Chat released on ModelScope and Hugging Face. Epoch: 09-24."
 Qwen2-VL-72B-Instruct,,,2024-08-29,https://qwenlm.github.io/blog/qwen2-vl/,Announced 2024-08-29 with the 72B model served through the API; weights published 2024-09-17/18.
@@ -67,7 +66,6 @@ T5-Large,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and check
 Voxtral-Small-24B-2507,,,2025-07-15,https://mistral.ai/news/voxtral,Voxtral announced and weights released 2025-07-15.
 gemini-2.5-flash,2025-04,,2025-04-17,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-04-17 (Scale board label 'April 2025').
 gemini-2.5-flash,2025-05,,2025-05-20,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-05-20 (Scale board label 'Preview (May 2025)').
-gemini-3.1-flash-lite-preview,,,2026-03-03,https://ai.google.dev/gemini-api/docs/changelog,Gemini API changelog 2026-03-03.
 gemini-3.1-flash-live-preview,,,2026-03-26,https://ai.google.dev/gemini-api/docs/changelog,Gemini API changelog 2026-03-26.
 gemma-3n-E4B-it,,,2025-06-26,https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/,Gemma 3n full release 2025-06-26 (preview 05-20).
 glm-4.7-flash,,,2026-01-19,https://docs.z.ai/release-notes/new-released,Released 2026-01-19.
@@ -78,10 +76,7 @@ gpt-realtime-mini,2025-12-15,,2025-12-15,https://x.com/juberti/status/2000690180
 gpt-realtime-1.5,,,2026-02-23,https://news.ycombinator.com/item?id=47129942,"Released 2026-02-23 (TestingCatalog 19:44 UTC, Hacker News thread)."
 gpt-realtime-2,,,2026-05-07,https://vercel.com/ai-gateway/models/gpt-realtime-2,Released 2026-05-07.
 granite-4.0-h-small,,,2025-10-02,https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models,Granite 4.0 launch 2025-10-02 (Epoch dates granite-4.0-micro the same day).
-grok-4-fast-reasoning,,,2025-09-19,https://x.ai/news/grok-4-fast,Grok 4 Fast released 2025-09-19 (Epoch model_metadata: grok-4-fast).
-grok-4.5-0708,,,2026-07-08,https://x.ai/news,Grok 4.5 released on the xAI API 2026-07-08 (Epoch model_metadata: grok-4.5_*).
 nova-premier,,,2025-04-30,https://aws.amazon.com/blogs/aws/amazon-nova-premier-our-most-capable-model-for-complex-tasks-and-teacher-for-model-distillation/,Amazon Nova Premier released 2025-04-30.
-open-mixtral-8x22b-2404,,,2024-04-17,https://mistral.ai/news/mixtral-8x22b,Mixtral 8x22B released 2024-04-17 (Epoch model_metadata: open-mixtral-8x22b).
 Llama-3.1-405B-Instruct,,Bio Llama,2024-10-01,https://www.rand.org/pubs/research_reports/RRA3797-1.html,"Never released. Fine-tuned by Palisade Research for RAND in fall 2024 (RR-A3797-1, ch. 2); approximate date, user decision 2026-09-07."
 Llama-3.1-405B-Instruct,,Unsafety Llama,2024-10-01,https://www.rand.org/pubs/research_reports/RRA3797-1.html,"Never released. Fine-tuned by Palisade Research for RAND in fall 2024 (RR-A3797-1, ch. 2); approximate date, user decision 2026-09-07."
 Switch-Base,,,2021-01-11,https://arxiv.org/abs/2101.03961,"Switch Transformers paper (SuperGLUE results) 2021-01-11; weights only reached Hugging Face in 2022-10/11. Academic paper: results date, user decision 2026-09-07."

@@ -80,8 +80,10 @@ FILE_SPEC = {
 }
 
 # Files set aside, with the reason. Files that are not scores, or whose score is not a
-# proportion in [0, 1] (criterion 1), never get a benchmark row; judgement-based exclusions
-# (criteria 2-4) live in 0_input/metadata/benchmarks.csv instead.
+# proportion in [0, 1] (criterion 1), never get a score; the benchmarks among them also carry an
+# `excluded` row in 0_input/metadata/benchmarks.csv, where the judgement-based exclusions
+# (criteria 2-4) live, so excluded_benchmarks.csv is complete. Files listed here that the current
+# ZIP no longer ships would be reported again if they came back.
 FILE_SKIP = {
     'ale_bench_external.csv':                    'competition points (~138-2041), not a proportion in [0, 1]',
     'algotune_external.csv':                     'harmonic-mean speedup >= 1x against a reference implementation; a 1 - 1/speedup rescaling puts it on a scale no other benchmark shares (criterion 1)',
@@ -105,7 +107,6 @@ FILE_SKIP = {
     'model_metadata.csv':                        "Epoch's model metadata table (date, organization, country, accessibility), not scores; read by the metadata pass",
     'mystery_game_puzzles.csv':                  'Epoch internal evaluation; ingested from the live feed (epoch_live)',
     'otis_mock_aime_2024_2025.csv':              'Epoch internal evaluation; ingested from the live feed (epoch_live)',
-    'README.md':                                 'not a data file',
     'simpleqa_verified.csv':                     'Epoch internal evaluation; ingested from the live feed (epoch_live)',
     'swe_bench_verified.csv':                    'Epoch internal evaluation; ingested from the live feed (epoch_live)',
     'vending_bench_2_external.csv':              'end-of-year balance in dollars, not a proportion in [0, 1]',

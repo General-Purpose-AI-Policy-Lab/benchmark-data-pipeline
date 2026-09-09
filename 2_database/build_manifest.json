@@ -1,7 +1,7 @@
 {
   "schema_version": "2.1",
-  "built_at": "2026-09-09T09:39:22+00:00",
-  "git_commit": "b2070d9e9e12cdc0141ec96085d038ac64f03b5c",
+  "built_at": "2026-09-09T11:14:34+00:00",
+  "git_commit": "b6076607ae1c24aa2c32f04d4f500200e2f263c9",
   "feeds": {
     "0_input/feed/cybench_site/cybench_leaderboard.csv": {
       "byte_size": 1179,
@@ -179,7 +179,7 @@
     "0_input/metadata/benchmarks.csv": "d3bb2ddde07f212b599071aec7a918eca148dee00f2fce6c60d6da2e8a4007ec",
     "0_input/metadata/human_baselines.csv": "ee69d8a79b966aa3dab00cb5e064cefff42c1c1cf058f7986eda4b2e7a90e239",
     "0_input/metadata/organizations.csv": "ba662cfd3e38ae77c1eda3159672da5b79d0ba024343eead5ca7470eca55ff40",
-    "0_input/metadata/release_dates.csv": "07eedbd0fd6c6266cba16c7cf091994a0b8e9bae5abd795810454bc2c90fc337",
+    "0_input/metadata/release_dates.csv": "9ed1d55e40ea117f15fbb212fe904cf65088e45b79b9308f97375351b04101e1",
     "0_input/metadata/sibling_merges.csv": "fd85935b300c00a9eae14b6300e9ad0a48d4c25dfc3021a219c4dc2ad4af5bb6"
   },
   "rows": {

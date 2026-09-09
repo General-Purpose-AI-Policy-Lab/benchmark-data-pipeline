@@ -46,8 +46,10 @@ def test_export_writes_every_table_and_view_with_the_declared_columns(tmp_path):
     for f, cols in (("models.csv", config.MODEL_COLS), ("benchmarks.csv", config.BENCH_COLS),
                     ("scores.csv", config.SCORE_COLS), ("human_baselines.csv", config.HUMAN_COLS)):
         assert list(pandas.read_csv(tmp_path / "db" / f).columns) == cols
-    for f in config.VIEW_FILES:
-        assert (tmp_path / "views" / f).exists()
+    for f, cols in (("all_scores_flat.csv", config.ALL_SCORES_COLS),
+                    ("dated_scores_flat.csv", config.ALL_SCORES_COLS),
+                    ("human_baselines.csv", config.VIEW_HUMAN_COLS)):
+        assert list(pandas.read_csv(tmp_path / "views" / f).columns) == cols
     flat = pandas.read_csv(tmp_path / "views" / "all_scores_flat.csv")
     assert flat["source"].tolist() == ["Paper"], "the fine source label reaches the view"
 
