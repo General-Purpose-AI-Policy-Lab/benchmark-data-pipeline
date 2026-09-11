@@ -1,9 +1,13 @@
-"""Human baselines: one row per published measurement, attached to the benchmark table.
+"""Human baselines: one row per measurement, attached to the benchmark table.
 
 The file `0_input/metadata/human_baselines.csv` is copied as is: no clipping (a 1.0 stays 1.0; a
-consumer that needs 1 - epsilon clips downstream), no rounding, the figure as published, with
-its source. Rows for a benchmark absent from the database (excluded, or never ingested) are
-dropped and reported, never written.
+consumer that needs 1 - epsilon clips downstream), no rounding, the figure as its source states it.
+Rows for a benchmark absent from the database (excluded, or never ingested) are dropped and
+reported, never written.
+
+Most rows quote a publication. One is derived: the METR Time Horizons committee figure, recomputed
+by `sources.metr_human_baseline` from METR's run table because no publication states it (see that
+module, and `docs/decisions.md` of 2026-09-11). The `source` column carries the distinction.
 """
 
 import logging

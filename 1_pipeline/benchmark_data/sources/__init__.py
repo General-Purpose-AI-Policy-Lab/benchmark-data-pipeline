@@ -1,5 +1,8 @@
 """Feed registry. A source is a module exposing `translate(feed_dir) -> Iterator[Record]`.
 
+One module here is not a feed and is not imported below: `metr_human_baseline` derives a row
+of `0_input/metadata/human_baselines.csv` from METR's run table, and produces no score.
+
 Adding a source: a module here, an entry in TRANSLATE, an `0_input/feed/<name>/aliases.csv` (even
 empty, with the header), and entries in `config.SOURCE_ORDER` / `config.SPLITTABLE`.
 """

@@ -14,6 +14,7 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 1_pipeline/benchmark_data/  the package: python -m benchmark_data {refresh,build,check,parity}
   identity.py               machine-name grammar, aliases, uuid5
   sources/<feed>.py         one module per feed: its _SPEC / _SKIP dictionaries and translate()
+  sources/metr_human_baseline.py  not a feed: derives the METR row of human_baselines.csv
   steps/                    ingest -> dedup -> merge_siblings -> enrich -> human_baselines -> validate -> export
   views/                    all_scores_flat.py, dated_scores_flat.py: the consumer views
   parity.py                 views against the consumers' frozen outputs (tests/parity/golden)
@@ -64,7 +65,7 @@ Only benchmarks whose `status` is `included` in `0_input/metadata/benchmarks.csv
 
 ### human_baselines.csv
 
-`benchmark_id`, `name`, `group`, `score`, `note`, `source`. One row per **published measurement** of human performance, copied from `0_input/metadata/human_baselines.csv` exactly as published: no clipping (a panel that solves everything is `1.0`; a consumer that needs `1 - ε` clips downstream), no rounding, several rows when several measurements exist for one group. `group` is one of the nine tiers of `config.HUMAN_GROUPS` (Average Human, Skilled Generalist, Domain Expert, Top Performer, committees, High School Qualifier / Top Performer). Rows for benchmarks absent from the database are dropped and reported.
+`benchmark_id`, `name`, `group`, `score`, `note`, `source`. One row per **measurement** of human performance, copied from `0_input/metadata/human_baselines.csv` exactly as stated by its source: no clipping (a panel that solves everything is `1.0`; a consumer that needs `1 - ε` clips downstream), no rounding, several rows when several measurements exist for one group. `group` is one of the nine tiers of `config.HUMAN_GROUPS` (Average Human, Skilled Generalist, Domain Expert, Top Performer, committees, High School Qualifier / Top Performer). Rows for benchmarks absent from the database are dropped and reported. One row is not a published figure but a derivation: `METR Time Horizons / Committee of Domain Experts`, recomputed from METR's run table by `sources/metr_human_baseline.py`, which documents the weighting, verifies it against the `average_score` the pipeline ingests, and states the caveats (user decision of 2026-09-11, `docs/decisions.md`). Its `source` column says so.
 
 ## Consumer views (`3_views/`)
 
