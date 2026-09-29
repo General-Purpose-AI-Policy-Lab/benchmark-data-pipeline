@@ -84,7 +84,7 @@ cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,Mathematics,0.001,
 3fc71c52-e332-547b-9bc0-2d0f6573f39f,SWE Atlas,Autonomous SWE,0,,public
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,General Reasoning,0.167,,semi_private
 989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Domain Specific Questions,0.0,,public
-ff689821-ffdf-5bd8-b976-65dd53db24d4,Surface Evolver Bench,Autonomous SWE,0.0,,semi_private
+ff689821-ffdf-5bd8-b976-65dd53db24d4,Surface Evolver Bench,Autonomous SWE,0.0,,private
 acddb832-1a34-5820-a2d3-05681c5161e3,Terminal Bench 2.0,Agentic Computer Use,0.0,,public
 0d000f4a-0739-550a-a784-c6582ec2a427,The Agent Company,Agentic Computer Use,0.0,,public
 be2c3adb-c271-55d1-8747-16d672997b80,TriviaQA,Trivia & Commonsense QA,0.127,,public

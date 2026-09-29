@@ -53,7 +53,7 @@ Adding a metadata column changes no ID. Correcting an identity column changes on
 
 Only benchmarks whose `status` is `included` in `0_input/metadata/benchmarks.csv` reach the database (see "Benchmark scope"). The justification columns (`floor_reason`, `floor_source`, `access_evidence_url`, `note`) stay in the metadata file.
 
-`access` says how exposed the scored items are to training data (`config.ACCESS_CLASSES`): `public` (the scored set can be downloaded without human review: no gate, or an automatic one such as Hugging Face's `gated: auto`), `semi_private` (public sample or training split, scored set held out), `private` (never released, or available on request only, i.e. after a human reviews the request), `dynamic` (items regenerated or refreshed), `open_problems` (statements public but unsolved, so nothing to memorise: FrontierMath Erdos, OEIS Open Lite).
+`access` says how exposed the scored items are to training data (`config.ACCESS_CLASSES`): `public` (the scored set can be downloaded without human review: no gate, or an automatic one such as Hugging Face's `gated: auto`), `semi_private` (public sample or training split, scored set held out; an illustrative example alone is not a sample), `private` (never released, or available on request only, i.e. after a human reviews the request), `dynamic` (items regenerated or refreshed), `open_problems` (statements public but unsolved, so nothing to memorise: FrontierMath Erdos, OEIS Open Lite).
 
 ### scores.csv
 
