@@ -1,4 +1,8 @@
 Model version,Score,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,id
+gpt-6-astra_unknown,15514.701666666668,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,recIHrj7IZwngZzmG
 claude-opus-5_unknown,11181.87333333333,2026-07-24,Anthropic,United States of America,,,Claude Opus 5,rec7OZVF0EN5vImL0
 claude-opus-4-7_unknown,10936.763333333334,2026-04-16,Anthropic,United States of America,,,Claude Opus 4.7,rec63xBZ1e3RaKLVW
 gpt-5.6-sol_unknown,9619.367999999999,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol,rec7Hn7Mhf7zcb5Ks
@@ -24,6 +28,7 @@ kimi-k3_unknown,5165.035000000001,2026-07-16,Moonshot,China,2.0001e+25,"Based on
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3 (Moonshot),recYBYYTXhJssG2iO
 qwen3.6-plus,5114.872000000001,2026-03-31,Alibaba,China,,,Qwen 3.6 Plus,recPQSBvNZDIIMmiC
+gemini-3.8-flash_unknown,5093.793333333332,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,recMM8D3w2MMvKJ7p
 kimi-k2.7-code,5082.936,2026-06-12,Moonshot,China,,,Kimi K2.7 Code,rec3kjMcwIY0FFwTU
 claude-fable-5_low,5018.519999999999,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 - Low,recafcEMcOdb67ldo
 claude-opus-4-5-20251101_unknown,4967.056666666668,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Opus 4.5,recxXzuUEqT3XSx5J

@@ -79,7 +79,8 @@ EPOCH_MODEL_METADATA = FEED_DIR / "epoch" / "model_metadata.csv"
 # Country names Epoch uses -> ISO 3166-1 alpha-2. An unknown name stops the build (add it here).
 EPOCH_COUNTRY_ISO = {
     "United States of America": "US", "China": "CN", "France": "FR", "United Arab Emirates": "AE",
-    "Canada": "CA", "United Kingdom": "GB", "Korea (Republic of)": "KR", "Germany": "DE",
+    "Canada": "CA", "United Kingdom": "GB", "Korea (Republic of)": "KR", "South Korea": "KR",
+    "Germany": "DE",
     "Hong Kong": "HK", "Israel": "IL", "Japan": "JP", "Singapore": "SG", "India": "IN",
     "Switzerland": "CH", "Netherlands": "NL", "Taiwan": "TW", "Russia": "RU", "Australia": "AU",
 }

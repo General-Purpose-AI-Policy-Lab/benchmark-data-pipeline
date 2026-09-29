@@ -1,11 +1,35 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+claude-sonnet-5-5_max,0.8048780487804879,0.8048780487804879,2026-09-28,Anthropic,United States of America,,,0.06265967111543964,,,2026-09-29T15:15:14.000Z,Xo7ecFEMqPJ4HicvJTvWZZ
+claude-opus-5-5_max,0.95,0.95,2026-09-22,Anthropic,United States of America,,,0.041175470771058854,,,2026-09-22T18:27:39.000Z,9qKrTxPhpfW985gieKU56x
+muse-spark-1.3_max,0.4634146341463415,0.4634146341463415,2026-09-02,Meta AI,United States of America,,,0.07884502378168105,,,2026-09-18T16:34:54.000Z,naZno5TPpgMJfv2b5mhvUW
+muse-spark-1.3_xhigh,0.4146341463414634,0.4146341463414634,2026-09-02,Meta AI,United States of America,,,0.07789619230571372,,,2026-09-16T02:51:59.000Z,UdTt275jahRApXURferb9i
+qwen3.8-max-0902_xhigh,0.34146341463414637,0.34146341463414637,2026-09-01,Alibaba,China,,,0.07497768853141171,,,2026-09-02T18:04:58.000Z,kZUdrqdGtCEJa3ip6L9YnH
+gemini-3.8-flash_high,0.21951219512195122,0.21951219512195122,2026-09-02,Google DeepMind,United States of America,,,0.06544589202438408,,,2026-09-02T17:15:36.000Z,Lgy52ZT4YpFrUqqKVu2qUs
 claude-fable-5-1_max,0.8780487804878049,0.8780487804878049,2026-09-01,Anthropic,United States of America,,,0.051739520574625435,,,2026-09-01T18:38:24.000Z,T56N3X4KLA3xz7tf5aCMGb
-gpt-6-astra_none,0.8292682926829268,0.8292682926829268,2026-09-03,OpenAI,United States of America,,,0.05949419959829497,,,2026-08-30T02:22:12.000Z,4BCZTu7HQKmhdwRR2W4bzT
-gpt-6-astra_low,0.8780487804878049,0.8780487804878049,2026-09-03,OpenAI,United States of America,,,0.051739520574625435,,,2026-08-30T02:22:12.000Z,kRPSnHnDdheajNdqmKsMjs
-gpt-6-astra_medium,0.975609756097561,0.975609756097561,2026-09-03,OpenAI,United States of America,,,0.024390243902439022,,,2026-08-30T02:22:12.000Z,5sNRWemuVwb4adBaSwrLFf
-gpt-6-astra_high,0.9512195121951219,0.9512195121951219,2026-09-03,OpenAI,United States of America,,,0.03405912205797303,,,2026-08-30T02:22:12.000Z,f46NQY9jSxyKqo9qzrmk6F
-gpt-6-astra_xhigh,0.9512195121951219,0.9512195121951219,2026-09-03,OpenAI,United States of America,,,0.03405912205797303,,,2026-08-30T02:22:12.000Z,AfKJ2DGMhkjZmeFZxGoY3w
-gpt-6-astra_max,0.9512195121951219,0.9512195121951219,2026-09-03,OpenAI,United States of America,,,0.03405912205797303,,,2026-08-30T02:22:12.000Z,f7BCT27LzcAtaLDP2tcrWF
+gpt-6-astra_none,0.8292682926829268,0.8292682926829268,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.05949419959829497,,,2026-08-30T02:22:12.000Z,4BCZTu7HQKmhdwRR2W4bzT
+gpt-6-astra_low,0.8780487804878049,0.8780487804878049,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.051739520574625435,,,2026-08-30T02:22:12.000Z,kRPSnHnDdheajNdqmKsMjs
+gpt-6-astra_medium,0.975609756097561,0.975609756097561,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.024390243902439022,,,2026-08-30T02:22:12.000Z,5sNRWemuVwb4adBaSwrLFf
+gpt-6-astra_high,0.976,0.976,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.024,,,2026-08-30T02:22:12.000Z,f46NQY9jSxyKqo9qzrmk6F
+gpt-6-astra_xhigh,0.976,0.976,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.024,,,2026-08-30T02:22:12.000Z,AfKJ2DGMhkjZmeFZxGoY3w
+gpt-6-astra_max,0.976,0.976,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.024,,,2026-08-30T02:22:12.000Z,f7BCT27LzcAtaLDP2tcrWF
 glm-5.3-flash_max,0.17073170731707318,0.17073170731707318,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"6 * 18e9 active parameters * 30e12 tokens = 3.24e24 FLOP. 
 
 https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-token multimodal pre-training corpus, these changes let GLM-5.3-Flash produce more intelligence with less compute."", which is not definitive in saying that all 30T tokens were used exactly once; likely confidence.",0.05949419959829495,,,2026-08-27T13:29:52.000Z,iCysWvFJevNyw2dbYosU6J
@@ -66,4 +90,4 @@ claude-opus-4-7_max,0.3170731707317073,0.3170731707317073,2026-04-16,Anthropic,U
 kimi-k2.6,0.2564102564102564,0.2564102564102564,2026-04-20,Moonshot,China,,,0.07083413480167725,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FeVKA2eavdRAbSN6AnzyBxA.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/eVKA2eavdRAbSN6AnzyBxA.eval,2026-06-10T19:47:36.000Z,eVKA2eavdRAbSN6AnzyBxA
 gemini-3.5-flash_high,0.2682926829268293,0.2682926829268293,2026-05-19,Google DeepMind,United States of America,,,0.07005564203095158,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FcXn5zzns6VFwbTgotDwZjV.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/cXn5zzns6VFwbTgotDwZjV.eval,2026-06-10T17:32:38.000Z,cXn5zzns6VFwbTgotDwZjV
 claude-opus-4-8_max,0.5609756097560976,0.5609756097560976,2026-05-28,Anthropic,United States of America,,,0.07846686801046543,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FJiqgqBTfkGx797uowZgJbk.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/JiqgqBTfkGx797uowZgJbk.eval,2026-06-10T15:25:15.000Z,JiqgqBTfkGx797uowZgJbk
-claude-fable-5_max,0.8780487804878049,0.8780487804878049,2026-06-09,Anthropic,United States of America,,,0.051739520574625435,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FReDAtJGGfRtrEGGWf4Zbsd.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ReDAtJGGfRtrEGGWf4Zbsd.eval,2026-06-09T18:12:35.000Z,ReDAtJGGfRtrEGGWf4Zbsd
+claude-fable-5_max,0.902,0.902,2026-06-09,Anthropic,United States of America,,,0.046,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FReDAtJGGfRtrEGGWf4Zbsd.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ReDAtJGGfRtrEGGWf4Zbsd.eval,2026-06-09T18:12:35.000Z,ReDAtJGGfRtrEGGWf4Zbsd

@@ -76,6 +76,7 @@ FILE_SPEC = {
     'video_mme_external.csv':             ('VideoMME', 'Overall (no subtitles)', 1.0),
     'vpct_external.csv':                  ('VPCT', 'Correct', 1.0),
     'weirdml_external.csv':               ('WeirdML v2', 'Accuracy', 1.0),
+    'weirdml_v3_external.csv':            ('WeirdML v3', 'Score', 1.0),
     'wino_grande_external.csv':           ('WinoGrande', 'Accuracy', 1.0),
 }
 
@@ -96,6 +97,7 @@ FILE_SKIP = {
     'ebr_bench.csv':                             'Epoch internal evaluation; ingested from the live feed (epoch_live)',
     'eci_benchmark_difficulties_and_slopes.csv': 'IRT parameters fitted by Epoch, downstream of this pipeline',
     'epoch_capabilities_index.csv':              "Epoch's ECI: an output downstream of this pipeline, not a benchmark",
+    'furniture_assembly.csv':                    'Epoch internal evaluation; ingested from the live feed (epoch_live)',
     'frontiermath.csv':                          'FrontierMath Tiers 1-3 v1; ingested from the live feed (epoch_live), which pins the problem-set version',
     'frontiermath_erdos.csv':                    'Epoch internal evaluation; ingested from the live feed (epoch_live)',
     'frontiermath_tier_4.csv':                   'FrontierMath Tier 4 v1; ingested from the live feed (epoch_live)',

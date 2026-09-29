@@ -89,7 +89,7 @@ base model was reported 3.14e+23 FLOP
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3         ,0,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,recam11tENdCcJOOT
 Gopher (280B),0.745,2021-12-08,DeepMind,United Kingdom,6.31e+23,"Table A26
 6.31E+08 Train PFLOPs",Gopher        ,0,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,recnJL8PNsKurWZQJ
-Megatron-Turing NLG 530B,0.7656,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.7656,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
@@ -102,7 +102,7 @@ text-davinci-001,0.725,2022-01-27,OpenAI,United States of America,3.19181e+23,""
 base model was reported 3.14e+23 FLOP
 
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3         ,1,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,rec9y9ui3cTNMI7fL
-Megatron-Turing NLG 530B,0.7306,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.7306,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
@@ -115,7 +115,7 @@ text-davinci-001,0.864,2022-01-27,OpenAI,United States of America,3.19181e+23,""
 base model was reported 3.14e+23 FLOP
 
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3         ,few,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,rec0YBtMZPv6PvP3L
-Megatron-Turing NLG 530B,0.8715,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.8715,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
@@ -177,7 +177,7 @@ Gopher (280B),0.745,2021-12-08,DeepMind,United Kingdom,6.31e+23,"Table A26
 Chinchilla (70B),0.774,2022-03-29,DeepMind,United Kingdom,5.76e+23,"""Both Chinchilla and Gopher have been trained for the same number of FLOPs but differ in the size of the model and the number of training tokens.""
 
 We see the number of flops in table 3",Chinchilla,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,,recs8hCOMtPRefESy
-Megatron-Turing NLG 530B,0.766,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.766,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23

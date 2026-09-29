@@ -167,19 +167,19 @@ base model was reported 3.14e+23 FLOP
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3,few,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,recjUybr3sNM10801
 Gopher (280B),0.818,2021-12-08,DeepMind,United Kingdom,6.31e+23,"Table A26
 6.31E+08 Train PFLOPs",Gopher,0,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,recHKitk77SUFNClZ
-Megatron-Turing NLG 530B,0.8199,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.8199,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
 
 6ND estimate: 6 * 530B * 270B = 8.586000e+23",MT-NLG,0,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,recC47h8xcapcI419
-Megatron-Turing NLG 530B,0.8096,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.8096,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
 
 6ND estimate: 6 * 530B * 270B = 8.586000e+23",MT-NLG,1,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,,reccY8xsB8E7wx6VM
-Megatron-Turing NLG 530B,0.8319,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.8319,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
@@ -315,7 +315,7 @@ Per SemiAnalysis TPU v5e uses ~ 5x less power than H100, so ~140 W TDP
 
 In bf16 precision, TPUv5e has peak performance of 197 TF/s, so:
 2.15e6 * 3600 * 197e12 * 0.3 = 4.57e23",Gemma 7B,,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819,,recQvIlDdbnoPnv0d
-Nemotron-4 15B,0.824,2024-02-26,NVIDIA,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
+Nemotron-4 15B,0.824,2024-02-26,Nvidia,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
 
 ""Nemotron-4 was trained using 384 DGX H100 nodes; each node contains 8 H100 80GB SXM5 GPUs based on the NVIDIA Hopper architecture (NVIDIA, 2022). Each H100 GPU has a peak throughput of 989 teraFLOP/s when doing 16-bit floating point (bfloat16) arithmetic without sparsity.
 
@@ -372,7 +372,7 @@ Gopher (280B),0.818,2021-12-08,DeepMind,United Kingdom,6.31e+23,"Table A26
 Chinchilla (70B),0.818,2022-03-29,DeepMind,United Kingdom,5.76e+23,"""Both Chinchilla and Gopher have been trained for the same number of FLOPs but differ in the size of the model and the number of training tokens.""
 
 We see the number of flops in table 3",Chinchilla,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,,recqTziBWCcXeSuRY
-Megatron-Turing NLG 530B,0.82,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.82,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23

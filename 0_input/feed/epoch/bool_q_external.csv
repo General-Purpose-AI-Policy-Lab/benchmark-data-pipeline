@@ -272,19 +272,19 @@ text-davinci-001,0.775,2022-01-27,OpenAI,United States of America,3.19181e+23,""
 base model was reported 3.14e+23 FLOP
 
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3,few,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,recRdRHAlrhly8hu3
-Megatron-Turing NLG 530B,0.782,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.782,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
 
 6ND estimate: 6 * 530B * 270B = 8.586000e+23",MT-NLG,0,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,recSrLGObTDXVTGLX
-Megatron-Turing NLG 530B,0.8251,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.8251,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
 
 6ND estimate: 6 * 530B * 270B = 8.586000e+23",MT-NLG,1,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,recvGG1jljsdpWBxK
-Megatron-Turing NLG 530B,0.8483,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.8483,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
@@ -451,7 +451,7 @@ Gopher (280B),0.794,2021-12-08,DeepMind,United Kingdom,6.31e+23,"Table A26
 Chinchilla (70B),0.837,2022-03-29,DeepMind,United Kingdom,5.76e+23,"""Both Chinchilla and Gopher have been trained for the same number of FLOPs but differ in the size of the model and the number of training tokens.""
 
 We see the number of flops in table 3",Chinchilla,,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,recd1SuMlPypqXymS
-Megatron-Turing NLG 530B,0.782,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.782,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
@@ -516,7 +516,7 @@ text-davinci-001,0.605,2022-01-27,OpenAI,United States of America,3.19181e+23,""
 base model was reported 3.14e+23 FLOP
 
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3,0,,Training Compute-Optimal Large Language Models,http://arxiv.org/abs/2203.15556,rec4Pxnfze9hfW9Rv
-Megatron-Turing NLG 530B,0.782,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.782,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23

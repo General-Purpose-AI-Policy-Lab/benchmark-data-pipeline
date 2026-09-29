@@ -1,9 +1,14 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
-claude-fable-5-1_max,0.47619047619047616,0.47619047619047616,2026-09-01,Anthropic,United States of America,,,0.02608202654786505,,,2026-09-02T14:22:25.000Z,3FMKWi2PsUMiRkNRTVfVfv
-gpt-6-astra_max,0.7619047619047619,0.7619047619047619,2026-09-03,OpenAI,United States of America,,,0.08384198505551908,,,2026-08-30T15:38:49.000Z,GhVYxWxttDxZ7akiJQPYsE
+claude-opus-5-5_max,0.7142857142857142,0.7142857142857142,2026-09-22,Anthropic,United States of America,,,0.07063046178186345,,,2026-09-22T21:38:58.000Z,iKWWUmcuzRjqisoshKVEpL
+gpt-6-sol_max,0.5333333333333333,0.5333333333333333,2026-09-22,OpenAI,United States of America,,,0.04616837959444122,,,2026-09-22T21:35:18.000Z,gM5SADcEixdr2P6PkseLeF
+claude-fable-5-1_max,0.5714285714285714,0.5714285714285714,2026-09-01,Anthropic,United States of America,,,0.06023386019368341,,,2026-09-08T14:59:49.000Z,8JukffGviNAYHXSdTJvswB
+claude-opus-5_max,0.45714285714285713,0.45714285714285713,2026-07-24,Anthropic,United States of America,,,0.03563483225498992,,,2026-09-05T20:22:12.000Z,mtHToEb2uzbaekANakjkJZ
+gpt-5.6-sol_max,0.4476190476190475,0.4476190476190475,2026-07-09,OpenAI,United States of America,,,0.041513323271815936,,,2026-09-04T22:22:24.000Z,SjeXjsdda4NKRBTrPiJVM8
+gpt-6-astra_max,0.7619047619047619,0.7619047619047619,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.08384198505551908,,,2026-08-30T15:38:49.000Z,GhVYxWxttDxZ7akiJQPYsE
 grok-4.6_xhigh,0.30476190476190473,0.30476190476190473,2026-08-12,xAI,United States of America,,,0.016187363535215188,,,2026-08-18T14:42:38.000Z,VvXTUMGEJiQqgvGMVmaL4m
-gpt-5.6-sol_max,0.3904761904761905,0.3904761904761905,2026-07-09,OpenAI,United States of America,,,0.03314383018701762,,,2026-08-07T15:45:06.000Z,8wvdmfHbNAtGikpk7BNKMn
-claude-opus-5_max,0.5,0.5,2026-07-24,Anthropic,United States of America,,,0.02272670010043866,,,2026-08-07T15:44:38.000Z,7xUoqG54xi6RXLgrUutaGi
 claude-opus-4-8_max,0.2857142857142857,0.2857142857142857,2026-05-28,Anthropic,United States of America,,,0.014197256999998662,,,2026-08-07T15:44:07.000Z,3zda4kRmrZfxiafpk8BtMM
 gpt-5.5_xhigh,0.3428571428571428,0.3428571428571428,2026-04-23,OpenAI,United States of America,,,0.01982539047110602,,,2026-07-27T13:22:32.000Z,RESzhBbTKsxwmsbBNyXCEz
 claude-fable-5_max,0.395238,0.395238,2026-06-09,Anthropic,United States of America,,,0.020141,,,2026-07-17T06:36:20.000Z,h6c9FVqkCj88ZD7ohCipuR

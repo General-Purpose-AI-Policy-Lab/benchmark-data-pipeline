@@ -528,7 +528,7 @@ mpt-7b,0.2793,2023-05-05,MosaicML,United States of America,4.2000000000000004e+2
 mpt-7b,0.268,2023-05-05,MosaicML,United States of America,4.2000000000000004e+22,"""As shown in Table 3, nearly all of the training budget was spent on the base MPT-7B model, which took ~9.5 days to train on 440xA100-40GB GPUs, and cost ~$200k.""",MPT-7B,2,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,,recThSGOCYopyGBAn
 mpt-7b,0.267,2023-05-05,MosaicML,United States of America,4.2000000000000004e+22,"""As shown in Table 3, nearly all of the training budget was spent on the base MPT-7B model, which took ~9.5 days to train on 440xA100-40GB GPUs, and cost ~$200k.""",MPT-7B,5,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recnP0IxuIUI5wyAV
 mpt-7b,0.274,2023-05-05,MosaicML,United States of America,4.2000000000000004e+22,"""As shown in Table 3, nearly all of the training budget was spent on the base MPT-7B model, which took ~9.5 days to train on 440xA100-40GB GPUs, and cost ~$200k.""",MPT-7B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recjktWCt7fCSUqIu
-Nemotron-4 15B,0.587,2024-02-26,NVIDIA,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
+Nemotron-4 15B,0.587,2024-02-26,Nvidia,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
 
 ""Nemotron-4 was trained using 384 DGX H100 nodes; each node contains 8 H100 80GB SXM5 GPUs based on the NVIDIA Hopper architecture (NVIDIA, 2022). Each H100 GPU has a peak throughput of 989 teraFLOP/s when doing 16-bit floating point (bfloat16) arithmetic without sparsity.
 
@@ -648,9 +648,9 @@ RedPajama-INCITE-7B-Base,0.263,2023-05-04,,,,,Redpajama-7B,5,XGen-7B Technical R
 RedPajama-INCITE-7B-Base,0.258,2023-05-04,,,,,Redpajama-7B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recQGR1shnVCw79MB
 ,0.776,,,,,,Solar Pro,5,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,,recvPdPH4F3YB9X2m
 StableBeluga2,0.686,2023-07-20,Stability AI,United Kingdom,,,StableBeluga2 70B,5,Qwen Technical Report,https://arxiv.org/pdf/2309.16609,,reca4GRikJuwzhgQj
-starcoder2-3b,0.366,2024-02-22,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,5.94e+22,estimation is given in Table 6 ,StarCoder2-3B,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,,rec7SmDXXVMzS12UD
-starcoder2-7b,0.388,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,1.55e+23,estimation is given in Table 6 ,StarCoder2-7B,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,,recbF6EudRQDiZM0w
-starcoder2-15b,0.641,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,3.87e+23,estimation is given in Table 6 ,StarCoder2-15B,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,,recslUwoLlToAjB27
+starcoder2-3b,0.366,2024-02-22,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,5.94e+22,estimation is given in Table 6 ,StarCoder2-3B,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,,rec7SmDXXVMzS12UD
+starcoder2-7b,0.388,2024-02-20,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,1.55e+23,estimation is given in Table 6 ,StarCoder2-7B,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,,recbF6EudRQDiZM0w
+starcoder2-15b,0.641,2024-02-20,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,3.87e+23,estimation is given in Table 6 ,StarCoder2-15B,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,,recslUwoLlToAjB27
 ,0.52,,,,,,Vicuna-13B,5,Baichuan 2: Open Large-scale Language Models,http://arxiv.org/abs/2309.10305,,recjDwTuCMcGYnymQ
 xgen-7b-8k-base,0.363,2023-06-27,Salesforce,United States of America,8.02e+22,"270,336 TPUv4-hours per the carbon emissions section. They must mean chip-hours, not core-hours, because they multiply by 192W, which is the max power consumption of a TPU-v4 chip.
 

@@ -21,6 +21,7 @@ LIVE_TASK_SPEC = {
     'FrontierMath-Tier-4-2025-07-01-Private': ('FrontierMath Tier 4 v1', '1.'),
     'FrontierMath-Tier-4-v2-Private':         ('FrontierMath Tier 4 v2', '2.'),
     'FrontierMath-Tiers-1-3-v2-Private':      ('FrontierMath Tiers 1-3 v2', '2.'),
+    'Furniture Assembly':                     ('Furniture Assembly', None),
     'GPQA diamond':                           ('GPQA Diamond', None),
     'MATH level 5':                           ('MATH Level 5', None),
     'MirrorCode':                             ('MirrorCode', None),

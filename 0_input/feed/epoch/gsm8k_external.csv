@@ -135,7 +135,7 @@ In bf16 precision, TPUv5e has peak performance of 197 TF/s, so:
 Qwen-14B,0.601,2023-09-28,Alibaba,China,2.5e+23,"3T tokens per Table 1
 
 14B*3T*6 = 2.5e23",QWEN 14B,8,,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819,recAv3zIYd8lTYBBs
-Nemotron-4 15B,0.46,2024-02-26,NVIDIA,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
+Nemotron-4 15B,0.46,2024-02-26,Nvidia,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
 
 ""Nemotron-4 was trained using 384 DGX H100 nodes; each node contains 8 H100 80GB SXM5 GPUs based on the NVIDIA Hopper architecture (NVIDIA, 2022). Each H100 GPU has a peak throughput of 989 teraFLOP/s when doing 16-bit floating point (bfloat16) arithmetic without sparsity.
 
@@ -445,14 +445,14 @@ Qwen2.5-Coder-32B-Instruct,0.93,2024-11-21,Alibaba,China,1.0725e+24,"Assuming 1 
 Qwen2.5-Coder-0.5B,0.345,2024-09-18,,,,,Qwen2.5-Coder-0.5B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recriWzkW7RWIJpUI
 deepseek-coder-1.3b-base,0.044,2023-11-02,"DeepSeek,Peking University",China,1.56e+22,2T tokens * 1.3B parameters * 6 FLOP / parameter / token = 15.6 * 10^21 = 1.56 * 10^22 FLOP,DS-Coder-1.3B-Base,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recfazKRlIPHIqw4y
 Qwen2.5-Coder-1.5B,0.658,2024-09-18,Alibaba,China,5.082e+22,6ND =  6*1540000000 parameters *5.5T tokens =5.082e+22,Qwen2.5-Coder-1.5B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recIikbIv1ZKuCk4E
-starcoder2-3b,0.216,2024-02-22,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,5.94e+22,estimation is given in Table 6 ,StarCoder2-3B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recoPSMZ3BwAx0twb
+starcoder2-3b,0.216,2024-02-22,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,5.94e+22,estimation is given in Table 6 ,StarCoder2-3B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recoPSMZ3BwAx0twb
 Qwen2.5-Coder-3B,0.757,2024-09-18,,,,,Qwen2.5-Coder-3B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,reccwWD5uXqA4L3aV
-starcoder2-7b,0.327,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,1.55e+23,estimation is given in Table 6 ,StarCoder2-7B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recAA2soUr8CvLUav
+starcoder2-7b,0.327,2024-02-20,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,1.55e+23,estimation is given in Table 6 ,StarCoder2-7B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recAA2soUr8CvLUav
 deepseek-coder-6.7b-base,0.213,2023-11-02,"DeepSeek,Peking University",China,8.04e+22,2T tokens * 6.7B parameters * 6 FLOP / parameter / token = 8.04*10^22 FLOP,DS-Coder-6.7B-Base,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recBna1XK3H5DgEs2
 DeepSeek-Coder-V2-Lite-Base,0.671,2024-06-13,,,,,DS-Coder-V2-Lite-Base,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recJu2UPUTDAbeHPS
 CodeQwen1.5-7B,0.377,2024-04-15,,,,,CodeQwen1.5-7B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recK2XPT7uEmiN3aQ
 Qwen2.5-Coder-7B,0.839,2024-09-18,Alibaba,China,2.5113e+23,6ND = 6 FLOP / token / parameter *7610000000 parameters *5.5T tokens =2.5113e+23 FLOP,Qwen2.5-Coder-7B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recvzqMLC4OK292e5
-starcoder2-15b,0.577,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,3.87e+23,estimation is given in Table 6 ,StarCoder2-15B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,reclAG14Sox6ongVu
+starcoder2-15b,0.577,2024-02-20,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,3.87e+23,estimation is given in Table 6 ,StarCoder2-15B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,reclAG14Sox6ongVu
 Qwen2.5-Coder-14B,0.887,2024-09-18,,,,,Qwen2.5-Coder-14B,4,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,recE8WEXVD6mou9Pa
 deepseek-coder-33b-base,0.354,2023-11-02,"DeepSeek,Peking University",China,3.96e+23,"""Step 1: Initially pre-trained with a dataset consisting of 87% code, 10% code-related language (Github Markdown and StackExchange), and 3% non-code-related Chinese language. Models are pre-trained using 1.8T tokens and a 4K window size in this step.
 Step 2: Further Pre-training using an extended 16K window size on an additional 200B tokens, resulting in foundational models (DeepSeek-Coder-Base).

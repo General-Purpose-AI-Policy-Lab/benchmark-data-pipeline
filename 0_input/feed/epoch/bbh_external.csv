@@ -70,7 +70,7 @@ Per SemiAnalysis TPU v5e uses ~ 5x less power than H100, so ~140 W TDP
 
 In bf16 precision, TPUv5e has peak performance of 197 TF/s, so:
 2.15e6 * 3600 * 197e12 * 0.3 = 4.57e23",Gemma 7B,3,,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819,recAL9kUMxLJLFs1G
-Nemotron-4 15B,0.587,2024-02-26,NVIDIA,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
+Nemotron-4 15B,0.587,2024-02-26,Nvidia,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
 
 ""Nemotron-4 was trained using 384 DGX H100 nodes; each node contains 8 H100 80GB SXM5 GPUs based on the NVIDIA Hopper architecture (NVIDIA, 2022). Each H100 GPU has a peak throughput of 989 teraFLOP/s when doing 16-bit floating point (bfloat16) arithmetic without sparsity.
 

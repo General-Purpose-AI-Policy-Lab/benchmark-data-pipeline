@@ -36,6 +36,7 @@ d80bc08d-49f5-5867-80e2-b07ba03ce16d,FrontierCode,Autonomous SWE,0.0,,semi_priva
 d4dcbdf2-860d-5814-b065-ef42b4848fa9,FrontierMath Tier 4 v2,Mathematics,0.0,1.0,semi_private
 bbe73a4e-1e37-5698-ae79-cbc09f59358d,FrontierMath Tiers 1-3 v2,Mathematics,0.0,1.0,semi_private
 b0a745aa-cd20-5efb-9f86-070da7847d57,FrontierSWE v2,Autonomous SWE,0,,public
+e2a2cd9f-5017-552b-9a42-c18fa0451622,Furniture Assembly,Multimodal Understanding,0.3,,private
 5a9a1867-e08c-518d-b86b-522ac5fb71a4,GBAEval,Autonomous SWE,0.0,,public
 002296d5-5ab0-56d5-8956-1571ecc1fb2d,GDP.pdf,Domain Specific Questions,0.0,,public
 8a97e2c9-3e8d-5f84-9da4-5d502d664ddd,GDPval,Core AGI Progress,0.0,,public
@@ -95,4 +96,5 @@ e7b97299-f0e2-581b-a8de-b19d816be80c,VisualToolBench,Multimodal Understanding,0.
 bfcf9383-ffc8-518e-83f7-18e9ec3154d6,WMDP Biology,Biology,0.25,,public
 6246759f-70d0-5a8e-b557-6e04e8c5b556,WMDP Chemistry,Chemistry,0.25,,public
 ce4b877c-a9d5-595b-a14a-ec9edab40b95,WeirdML v2,Autonomous SWE,0.0,,semi_private
+31c7cb66-4b47-5d6e-917d-632a6af5c129,WeirdML v3,Autonomous SWE,0.0,,semi_private
 b812b198-64a0-5b54-bdd2-018cbce4626b,WinoGrande,Trivia & Commonsense QA,0.5,,public

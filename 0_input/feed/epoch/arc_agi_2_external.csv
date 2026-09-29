@@ -1,9 +1,23 @@
 Model version,Score,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Cost per task,Notes,id
-gpt-6-astra_max,0.9500000000000001,2026-09-03,OpenAI,United States of America,,,GPT-6 Astra (Max),,,recqWVwwNamfxF1zu
-gpt-6-astra_xhigh,0.9333333333333333,2026-09-03,OpenAI,United States of America,,,GPT-6 Astra (XHigh),,,recuO4X9wY6J0GPRP
+gpt-6-astra_max,0.9500000000000001,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Max),,,recqWVwwNamfxF1zu
+gpt-6-astra_xhigh,0.9333333333333333,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (XHigh),,,recuO4X9wY6J0GPRP
 gpt-5.6-sol_max,0.925,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (Max),1.44,,recIQjZYogw8GYgLW
-gpt-6-astra_high,0.9208333333333333,2026-09-03,OpenAI,United States of America,,,GPT-6 Astra (High),,,rec2IrmPOhpgWZ3Zl
-gpt-6-astra_medium,0.9208333333333333,2026-09-03,OpenAI,United States of America,,,GPT-6 Astra (Medium),,,recQLii7vQCYRgYaO
+claude-opus-5-5_xhigh,0.925,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5 (XHigh),,,recjdCxN2bD3djTOO
+gpt-6-astra_high,0.9208333333333333,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (High),,,rec2IrmPOhpgWZ3Zl
+gpt-6-astra_medium,0.9208333333333333,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Medium),,,recQLii7vQCYRgYaO
+claude-opus-5-5_max,0.9166666666666666,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5 (Max),,,reciGvWCfQIQzEmnO
 claude-opus-5_max,0.9042,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (Max),,,recRyRMLEzUUt9Acr
 gpt-5.6-sol_xhigh,0.9,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (xHigh),1.04,,recjEDHJMdFvdEoxY
 gpt-5.6-sol_xhigh,0.9,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (XHigh),,,rechqnvfszeSZZcTx
@@ -17,11 +31,14 @@ claude-opus-5_high,0.8833,2026-07-24,Anthropic,United States of America,,,Claude
 claude-fable-5_high,0.875,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (High),,,recoGNnJQf5s62aEC
 claude-fable-5-1_medium,0.8625,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (Medium),,,recT6vtsKxK14oaiK
 gpt-5.6-sol_high,0.8542000000000001,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (High),0.74,,recLS6d8WS2n1rGSY
-gpt-6-astra_low,0.8541666666666666,2026-09-03,OpenAI,United States of America,,,GPT-6 Astra (Low),,,recG9zf5LfCTMpwnb
+gpt-6-astra_low,0.8541666666666666,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Low),,,recG9zf5LfCTMpwnb
 gpt-5.5_xhigh,0.85,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (xHigh),1.87,,recPMkvFz7bdsGYig
 gpt-5.5_xhigh,0.85,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (XHigh),,,recQa67QhUbEC1Z8v
 gemini-3.7-flash_high,0.8458333333333333,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (High),,,reczv0UYeDcnI7XYG
-gemini-3-deep-think-preview,0.8458,2026-02-12,,,,,Gemini 3 Deep Think (2/26),,,recMlHyQpZ45OKxQ0
+gemini-3-deep-think-preview,0.8458,2026-02-12,Google DeepMind,United States of America,,,Gemini 3 Deep Think (2/26),,,recMlHyQpZ45OKxQ0
 gpt-5.5-pro_high,0.8458,2026-04-23,OpenAI,United States of America,,,GPT-5.5 Pro (High),10.51,,recE8W46kbiuOPGxo
 gpt-5.5-pro_xhigh,0.8416,2026-04-23,OpenAI,United States of America,,,GPT-5.5 Pro (xHigh),10.76,,recgSWEl9GTw04NMC
 gpt-5.5-pro_xhigh,0.8416,2026-04-23,OpenAI,United States of America,,,GPT-5.5 Pro (XHigh),,,recCsqWAVFHQVM3mx
@@ -71,7 +88,10 @@ kimi-k3_max,0.6041666666666666,2026-07-16,Moonshot,China,2.0001e+25,"Based on pe
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3 (Max),1.5926940250000003,,rec4wHjT7MjgYLj9Q
 gemini-3.6-flash_high,0.6041666666666666,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash (High),,,recbJYchGoqumGxjl
 deepseek-v4-pro-0813_high,0.5972222222222221,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (High),,,recOlpjOWSD4HNdzV
-gpt-6-astra_none,0.5958333333333333,2026-09-03,OpenAI,United States of America,,,GPT-6 Astra (None),,,recrfBvJzhO8K1XGJ
+gpt-6-astra_none,0.5958333333333333,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (None),,,recrfBvJzhO8K1XGJ
 gpt-5.6-luna_max,0.5954,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (Max),0.67,,rec0Or1yRuToQETpO
 claude-sonnet-4-6_max,0.5833,2026-02-17,Anthropic,United States of America,,,Claude Sonnet 4.6 (Max),2.7179,,reco6ICSvrm675Zqs
 deepseek-v4-pro-0813_low,0.5625,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (Low),,,recnvqDqZzZ6fLyzg
@@ -95,7 +115,7 @@ gpt-5.6-luna_xhigh,0.4764,2026-07-09,OpenAI,United States of America,,,GPT-5.6 L
 deepseek-v4-flash-0731_low,0.4597222222222222,2026-07-31,DeepSeek,China,2.496e+24,"From https://api-docs.deepseek.com/updates/: ""DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-Preview, and was only re-post-trained.""
 
 6 * 13e9 active parameters * 32e12 tokens = 2.496E24 for pre-training",DeepSeek V4 Flash 0731 (Low),,,rec6M7tXqk2R8OtRT
-gemini-3-deep-think-preview,0.4514,2026-02-12,,,,,Gemini 3 Deep Think (Preview) ²,,,recQNM7laEXnYaZlu
+gemini-3-deep-think-preview,0.4514,2026-02-12,Google DeepMind,United States of America,,,Gemini 3 Deep Think (Preview) ²,,,recQNM7laEXnYaZlu
 gpt-5.2-2025-12-11_high,0.4333,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (High),1.393,,recZgpSoatzOtn3rb
 gpt-5.6-sol_low,0.425,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (Low),0.32,,recYYBTJBos18GflF
 inkling-small_xhigh,0.40138888888888885,2026-07-15,Thinking Machines,United States of America,,,Inkling Small (XHigh),,,recsPDzpQmPtMA77v

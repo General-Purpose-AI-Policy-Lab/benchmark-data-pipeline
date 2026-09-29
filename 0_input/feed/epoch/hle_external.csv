@@ -1,6 +1,11 @@
 Model version,Accuracy,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Accuracy Standard Error,Calibration Error,Notes,id
+gpt-6-astra_unknown,0.5479999999999999,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT 6 Astra,0.0194,39,,recbv6dU38s3cvqyO
 claude-fable-5-1_xhigh,0.465,2026-09-01,Anthropic,United States of America,,,Fable 5.1 (xhigh),0.02,20,,rec1P9SLLAtCSdTMk
 gemini-3.1-pro-preview,0.4644,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro Preview (thinking high),0.0196,51,,recuBCQLkHd2mOtrr
+gemini-3.8-flash_unknown,0.44520000000000004,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,0.0196,51,,recIqVer2D18rE192
 gpt-5.4-pro-2026-03-05_unknown,0.4432,2026-03-05,OpenAI,United States of America,,,GPT-5.4 Pro,0.0195,38,,recreMdBwgtJ8NoJL
 muse-spark,0.4056,2026-04-08,Meta AI,United States of America,,,Muse Spark,0.0192,50,,recvslFSn9YBYB4kI
 gemini-3-pro-preview,0.37520000000000003,2025-11-18,Google DeepMind,United States of America,,Almost certainly >1e25,gemini-3-pro-preview,0.019,57,,recXvAi7z6kYifmzb
@@ -14,7 +19,7 @@ gpt-5-2025-08-07_high,0.2532,2025-08-07,OpenAI,United States of America,6.6e+25,
 https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",gpt-5-2025-08-07,0.017,50,,recWhEbJqDmLaXyxu
 gpt-5-2025-08-07_unknown,0.2532,2025-08-07,OpenAI,United States of America,6.6e+25,"Fairly speculative, possibly around 6e25 [CI: 2e25 to 2e26] FLOP. See document below for details
 
-https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",gpt-5-2025-08-07,0.017,50,,rec0Au5y8wm5UM7QY
+https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",gpt-5-2025-08-07,0.017,50,,recQ4tGIHl6FByXLl
 claude-opus-4-5-20251101_unknown,0.252,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,claude-opus-4-5-20251101-thinking,0.017,55,,recfMdmXCFFRUCxHi
 kimi-k2.5,0.24370000000000003,2026-01-27,Moonshot,China,5.8e+24,"Per section 3.2, ""The joint pre-training stage continues from a near-end Kimi K2 checkpoint over additional 15T vision-text tokens at 4K sequence length""
 

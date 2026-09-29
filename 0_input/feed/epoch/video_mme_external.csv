@@ -24,7 +24,7 @@ gpt-4o-mini-2024-07-18,0.648,2024-07-18,OpenAI,United States of America,,"Traini
 
 90% CI [3.23e+24, 2.05e+25]",GPT-4o mini,0.689,0.725,0.749,0.631,0.683,0.586,0.634,250.0,,Video-MME Leaderboard,https://video-mme.github.io/home_page.html#leaderboard,recXpV4vq3BApmF47
 ByteVideoLLM-14B,0.646,2024-10-13,,,,,ByteVideoLLM,0.688,0.744,0.771,0.629,0.691,0.564,0.602,100.0,,Video-MME Leaderboard,https://video-mme.github.io/home_page.html#leaderboard,recMPYOeXatYatbmF
-NVILA-8B,0.642,2024-12-10,"NVIDIA,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University","United States of America,China",2.2794518e+21,"""We train all models using 128 NVIDIA H100 GPUs with a global batch size of 2048 across all stages.""
+NVILA-8B,0.642,2024-12-10,"Nvidia,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University","United States of America,China",2.2794518e+21,"""We train all models using 128 NVIDIA H100 GPUs with a global batch size of 2048 across all stages.""
 
 from Figure 1
 NVILA 8B takes 4.5x times less gpu hours than LLAVA OneVision which is reported to take 400 GPU days (""For example, training a state-of-the-art 7B VLM [5] can take up to 400 GPU days"")

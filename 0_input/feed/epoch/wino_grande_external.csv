@@ -198,12 +198,12 @@ Qwen2.5-Coder-32B,0.808,2024-09-18,Alibaba,China,1.0725e+24,"Assuming 1 epoch
 
 6ND = 6*32.5 parameters *10^9*5.5*10^12 tokens = 1.0725e+24",Qwen2.5-Coder-32B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,rec8gc150DTSOhEKr
 deepseek-coder-1.3b-base,0.533,2023-11-02,"DeepSeek,Peking University",China,1.56e+22,2T tokens * 1.3B parameters * 6 FLOP / parameter / token = 15.6 * 10^21 = 1.56 * 10^22 FLOP,DS-Coder-1.3B-Base,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recVHFqbsrGnj2Vx2
-starcoder2-3b,0.571,2024-02-22,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,5.94e+22,estimation is given in Table 6 ,StarCoder2-3B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recyselPDxHqK6S7m
-starcoder2-7b,0.571,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,1.55e+23,estimation is given in Table 6 ,StarCoder2-7B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recXQnGi8m8ri82zZ
+starcoder2-3b,0.571,2024-02-22,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,5.94e+22,estimation is given in Table 6 ,StarCoder2-3B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recyselPDxHqK6S7m
+starcoder2-7b,0.571,2024-02-20,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,1.55e+23,estimation is given in Table 6 ,StarCoder2-7B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recXQnGi8m8ri82zZ
 deepseek-coder-6.7b-base,0.576,2023-11-02,"DeepSeek,Peking University",China,8.04e+22,2T tokens * 6.7B parameters * 6 FLOP / parameter / token = 8.04*10^22 FLOP,DS-Coder-6.7B-Base,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recjz7QSFeeZcphoR
 DeepSeek-Coder-V2-Lite-Base,0.729,2024-06-13,,,,,DS-Coder-V2-Lite-Base,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,rec8sY5AZGjTEHSIb
 CodeQwen1.5-7B,0.598,2024-04-15,,,,,CodeQwen1.5-7B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recZQWDgmY6X1bV95
-starcoder2-15b,0.643,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",United States of America,3.87e+23,estimation is given in Table 6 ,StarCoder2-15B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recr8hrjiAzMZKfoe
+starcoder2-15b,0.643,2024-02-20,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,3.87e+23,estimation is given in Table 6 ,StarCoder2-15B,,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,recr8hrjiAzMZKfoe
 deepseek-coder-33b-base,0.62,2023-11-02,"DeepSeek,Peking University",China,3.96e+23,"""Step 1: Initially pre-trained with a dataset consisting of 87% code, 10% code-related language (Github Markdown and StackExchange), and 3% non-code-related Chinese language. Models are pre-trained using 1.8T tokens and a 4K window size in this step.
 Step 2: Further Pre-training using an extended 16K window size on an additional 200B tokens, resulting in foundational models (DeepSeek-Coder-Base).
 Step 3: Instruction Fine-tuning on 2B tokens of instruction data, resulting in instruction-tuned models (DeepSeek-Coder-Instruct).""
@@ -326,7 +326,7 @@ gpt-4-32k-0314,0.875,2023-03-14,OpenAI,United States of America,2.1e+25,"90% CI:
 NOTE: this is a rough estimate based on public information, much less information than most other systems in the database.
 
 Calculation and confidence intervals here: https://colab.research.google.com/drive/1O99z9b1I5O66bT78r9ScslE_nOj5irN9?usp=sharing",GPT-4,5,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,recHX5MxEY42Quo60
-Nemotron-4 15B,0.78,2024-02-26,NVIDIA,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
+Nemotron-4 15B,0.78,2024-02-26,Nvidia,United States of America,7.5005116e+23,"6ND = 6 FLOP/token/parameter * 15*10^9 parameters * 8*10^12 tokens = 7.2e+23 FLOP
 
 ""Nemotron-4 was trained using 384 DGX H100 nodes; each node contains 8 H100 80GB SXM5 GPUs based on the NVIDIA Hopper architecture (NVIDIA, 2022). Each H100 GPU has a peak throughput of 989 teraFLOP/s when doing 16-bit floating point (bfloat16) arithmetic without sparsity.
 
@@ -397,7 +397,7 @@ base model was reported 3.14e+23 FLOP
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3 (175B),16,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,recQ2RjlzBCPbvsAn
 Gopher (280B),0.701,2021-12-08,DeepMind,United Kingdom,6.31e+23,"Table A26
 6.31E+08 Train PFLOPs",Gopher (280B),0,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,recMniA3bIw2cxmTk
-Megatron-Turing NLG 530B,0.789,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.789,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
@@ -434,19 +434,19 @@ text-davinci-001,0.777,2022-01-27,OpenAI,United States of America,3.19181e+23,""
 base model was reported 3.14e+23 FLOP
 
 3.14e+23 * 1.0165 = 319181000000000000000000",GPT-3 Few-Shot,few,,Language Models are Few-Shot Learners,http://arxiv.org/abs/2005.14165,recLMdsVONh2oFds1
-Megatron-Turing NLG 530B,0.7301,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.7301,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
 
 6ND estimate: 6 * 530B * 270B = 8.586000e+23",MT-NLG,0,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,rec0czb9iRGEYELDL
-Megatron-Turing NLG 530B,0.7372,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.7372,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23
 
 6ND estimate: 6 * 530B * 270B = 8.586000e+23",MT-NLG,1,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,recdxz6xNRRDR3Ect
-Megatron-Turing NLG 530B,0.7301,2021-10-11,"Microsoft,NVIDIA",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
+Megatron-Turing NLG 530B,0.7301,2021-10-11,"Microsoft,Nvidia",United States of America,8.586e+23,"https://www.lesswrong.com/posts/bGuMrzhJdENCo8BxX/nvidia-and-microsoft-releases-530b-parameter-transformer?commentId=HSJSNspKp94tFcSCx
 
 source: https://lair.lighton.ai/akronomicon/
 9938 PF-days * 3600 * 24 * 10^15  = 8.586432e+23

@@ -12,15 +12,15 @@ gpt-5.5-pro_xhigh,0.96,93.3333,3.2993,0.8158,2026-04-23,OpenAI,United States of 
 claude-opus-4-7_max,0.9465000000000001,91.0833,3.7893,0.8709,2026-04-16,Anthropic,United States of America,,,Claude Opus 4.7,https://conceptualreasoning.ai/dtbench,
 gpt-5.4-2026-03-05_xhigh,0.9440000000000001,90.6667,3.8873,0.6316,2026-03-05,OpenAI,United States of America,,,GPT-5.4,https://conceptualreasoning.ai/dtbench,
 gemini-3.7-flash_high,0.968,94.6667,2.9726,0.7467,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash,https://conceptualreasoning.ai/dtbench,
-gemini-3.1-pro-preview_high,0.9547,92.45,3.5279,0.8133,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro,https://conceptualreasoning.ai/dtbench,
+gemini-3.1-pro-preview_high,0.9547,92.45,3.5279,0.76,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro,https://conceptualreasoning.ai/dtbench,
 muse-spark-1.1_high,0.9440000000000001,90.6667,3.8873,0.6,2026-07-09,Meta AI,United States of America,,,Muse Spark 1.1,https://conceptualreasoning.ai/dtbench,
-gpt-5.6-terra_max,0.9253,87.55,4.4426,0.6842,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra,https://conceptualreasoning.ai/dtbench,
+gpt-5.6-terra_max,0.9333,88.8833,4.214,0.6974,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra,https://conceptualreasoning.ai/dtbench,
 kimi-k3_max,0.912,85.3333,4.7692,0.6842,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3,https://conceptualreasoning.ai/dtbench,
 muse-spark-1.2_xhigh,0.9467,91.1167,3.7893,0.5658,2026-08-05,Meta AI,United States of America,,,Muse Spark 1.2,https://conceptualreasoning.ai/dtbench,
 grok-4.6_xhigh,0.9733,95.55,2.7113,0.8267,2026-08-12,xAI,United States of America,,,Grok 4.6,https://conceptualreasoning.ai/dtbench,
-claude-sonnet-5_max,0.9248000000000001,87.4667,4.5405,0.7973,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5,https://conceptualreasoning.ai/dtbench,
+claude-sonnet-5_max,0.9248000000000001,87.4667,4.5405,0.8,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5,https://conceptualreasoning.ai/dtbench,
 grok-4.5_high,0.9653,94.2167,3.1033,0.84,2026-07-08,xAI,United States of America,,,Grok 4.5,https://conceptualreasoning.ai/dtbench,
 gemini-3.5-flash_high,0.9467,91.1167,3.7893,0.777,2026-05-19,Google DeepMind,United States of America,,,Gemini 3.5 Flash,https://conceptualreasoning.ai/dtbench,
 gemini-3.6-flash_high,0.9547,92.45,3.5279,0.75,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash,https://conceptualreasoning.ai/dtbench,
@@ -28,7 +28,7 @@ qwen3.8-max_xhigh,0.92,86.6667,4.5733,0.6933,2026-08-02,Alibaba,China,,,Qwen3.8-
 claude-sonnet-4-6_max,0.8987,83.1167,5.0959,0.7625,2026-02-17,Anthropic,United States of America,,,Claude Sonnet 4.6,https://conceptualreasoning.ai/dtbench,
 gpt-5.2-2025-12-11_xhigh,0.9093000000000001,84.8833,4.8346,0.8108,2025-12-11,OpenAI,United States of America,,,GPT-5.2,https://conceptualreasoning.ai/dtbench,
 claude-opus-4-5-20251101_high,0.8987,83.1167,5.0959,0.8206,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Opus 4.5,https://conceptualreasoning.ai/dtbench,
-gpt-5.6-luna_max,0.8906999999999999,81.7833,5.2592,0.68,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna,https://conceptualreasoning.ai/dtbench,
+gpt-5.6-luna_max,0.888,81.3333,5.3246,0.6933,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna,https://conceptualreasoning.ai/dtbench,
 glm-5.2_max,0.9359999999999999,89.3333,4.1486,0.7763,2026-06-16,Z.ai (Zhipu AI),China,,,GLM-5.2,https://conceptualreasoning.ai/dtbench,
 gpt-5.1-2025-11-13_high,0.9013,83.55,5.0306,0.7763,2025-11-13,OpenAI,United States of America,,"Almost certainly > 1e25
 ",GPT-5.1,https://conceptualreasoning.ai/dtbench,
@@ -50,7 +50,7 @@ grok-4.3_high,0.9067000000000001,84.45,4.8999,0.7733,2026-04-17,xAI,United State
 Inkling_xhigh,0.8747,79.1167,5.5859,0.5789,2026-07-15,Thinking Machines,United States of America,1.845e+24,6ND = 41e9 active parameters * 45e12 tokens = 1.845e+24 FLOP,Inkling,https://conceptualreasoning.ai/dtbench,
 gpt-5.4-mini-2026-03-17_xhigh,0.8,66.6667,6.7618,0.4533,2026-03-17,OpenAI,United States of America,,,GPT-5.4 mini,https://conceptualreasoning.ai/dtbench,
 claude-sonnet-4-5-20250929_unknown,0.8320000000000001,72.0,6.3046,0.7946,2025-09-29,Anthropic,United States of America,,,Claude Sonnet 4.5,https://conceptualreasoning.ai/dtbench,
-nemotron-3-ultra,0.9013,83.55,5.0306,0.7333,2026-06-04,NVIDIA,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",Nemotron 3 Ultra,https://conceptualreasoning.ai/dtbench,
+nemotron-3-ultra,0.9013,83.55,5.0306,0.7333,2026-06-04,Nvidia,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",Nemotron 3 Ultra,https://conceptualreasoning.ai/dtbench,
 gemini-3.5-flash-lite_high,0.8347,72.45,6.2719,0.6974,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.5 Flash-Lite,https://conceptualreasoning.ai/dtbench,
 gemma-4-31b-it,0.8267,71.1167,6.4025,0.7467,2026-04-02,Google DeepMind,United States of America,,,Gemma 4 31B,https://conceptualreasoning.ai/dtbench,
 qwen3.5-397b-a17b,0.8747,79.1167,5.5859,0.7867,2026-02-13,Alibaba,China,,,Qwen3.5 397B-A17B,https://conceptualreasoning.ai/dtbench,
@@ -299,3 +299,69 @@ Llama-2-70b-chat,0.4165,2.7556,5.5358,0.5095,2023-07-18,Meta AI,United States of
 311.84 BF16 TFLOP/s * 1720320 hours * 0.40 utilization = 7.725e+23 FLOP.
 
 Alternatively: the model was trained for 1 epoch on 2 trillion tokens and has 70B parameters. C = 6ND = 6*70B*2T = 8.4e+23 FLOP.",Llama 2 70B,https://conceptualreasoning.ai/dtbench,
+claude-fable-5-1_medium,0.9707,95.1167,2.842,,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (medium),https://conceptualreasoning.ai/dtbench,
+claude-fable-5-1_unknown,0.976,96.0,2.5806,0.8289,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1,https://conceptualreasoning.ai/dtbench,
+claude-opus-5_xhigh,0.9787,96.45,2.45,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (xhigh),https://conceptualreasoning.ai/dtbench,
+claude-fable-5-1_xhigh,0.976,96.0,2.5806,,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (xhigh),https://conceptualreasoning.ai/dtbench,
+claude-opus-5_high,0.9787,96.45,2.45,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (high),https://conceptualreasoning.ai/dtbench,
+gpt-6-astra_xhigh,0.9733,95.55,2.7113,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (xhigh),https://conceptualreasoning.ai/dtbench,
+claude-fable-5-1_high,0.9653,94.2167,3.1033,,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (high),https://conceptualreasoning.ai/dtbench,
+gpt-6-astra_unknown,0.9707,95.1167,2.842,0.8158,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,https://conceptualreasoning.ai/dtbench,
+gpt-6-astra_high,0.9653,94.2167,3.1033,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (high),https://conceptualreasoning.ai/dtbench,
+gpt-6-astra_medium,0.9707,95.1167,2.842,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (medium),https://conceptualreasoning.ai/dtbench,
+claude-opus-5_medium,0.9493,91.55,3.6913,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (medium),https://conceptualreasoning.ai/dtbench,
+claude-fable-5-1_low,0.9413,90.2167,3.9853,,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (low),https://conceptualreasoning.ai/dtbench,
+claude-fable-5_xhigh,0.9733,95.55,2.7113,,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (xhigh),https://conceptualreasoning.ai/dtbench,
+claude-opus-5_low,0.9307,88.45,4.2793,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (low),https://conceptualreasoning.ai/dtbench,
+gpt-6-astra_low,0.9493,91.55,3.6913,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (low),https://conceptualreasoning.ai/dtbench,
+claude-fable-5_high,0.9653,94.2167,3.1033,,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (high),https://conceptualreasoning.ai/dtbench,
+claude-fable-5_medium,0.9573,92.8833,3.4299,,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (medium),https://conceptualreasoning.ai/dtbench,
+claude-fable-5_low,0.9147,85.7833,4.7039,,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (low),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-sol_xhigh,0.9573,92.8833,3.4299,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (xhigh),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-sol_high,0.9547,92.45,3.5279,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (high),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-sol_medium,0.9520000000000001,92.0,3.6259,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (medium),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-sol_low,0.9387000000000001,89.7833,4.0506,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (low),https://conceptualreasoning.ai/dtbench,
+muse-spark-1.3_unknown,0.9653,94.2167,3.1033,0.5333,2026-09-02,Meta AI,United States of America,,,Muse Spark 1.3,https://conceptualreasoning.ai/dtbench,
+gemini-3.8-flash_medium,0.9493,91.55,3.6913,,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (medium),https://conceptualreasoning.ai/dtbench,
+gemini-3.1-pro-preview_medium,0.9707,95.1167,2.842,,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro (medium),https://conceptualreasoning.ai/dtbench,
+gemini-3.8-flash_unknown,0.9572,92.8667,3.4299,0.6711,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,https://conceptualreasoning.ai/dtbench,
+gemini-3.8-flash_low,0.9493,91.55,3.6913,,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (low),https://conceptualreasoning.ai/dtbench,
+glm-5.3_unknown,0.8767,79.45,5.5532,0.7733,2026-08-14,Z.ai (Zhipu AI),China,,,GLM-5.3,https://conceptualreasoning.ai/dtbench,
+gemini-3.1-pro-preview_low,0.9493,91.55,3.6913,,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro (low),https://conceptualreasoning.ai/dtbench,
+gemini-3.7-flash_medium,0.9467,91.1167,3.7893,,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (medium),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-terra_xhigh,0.9253,87.55,4.4426,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (xhigh),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-terra_high,0.912,85.3333,4.7692,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (high),https://conceptualreasoning.ai/dtbench,
+claude-sonnet-5_xhigh,0.8951000000000001,82.5167,5.0632,,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5 (xhigh),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-terra_medium,0.9013,83.55,5.0306,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (medium),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-sol_none,0.8373,72.8833,6.2393,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (off),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-terra_low,0.9013,83.55,5.0306,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (low),https://conceptualreasoning.ai/dtbench,
+gemini-3.7-flash_low,0.9333,88.8833,4.214,,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (low),https://conceptualreasoning.ai/dtbench,
+claude-sonnet-5_high,0.8453,74.2167,6.1086,,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5 (high),https://conceptualreasoning.ai/dtbench,
+deepseek-v4-pro-0813_unknown,0.9387000000000001,89.7833,4.0506,0.6842,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro (0813),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-luna_xhigh,0.8906999999999999,81.7833,5.2592,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (xhigh),https://conceptualreasoning.ai/dtbench,
+deepseek-v4.1-flash_unknown,0.8987,83.1167,5.0959,0.75,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+",DeepSeek V4.1 Flash,https://conceptualreasoning.ai/dtbench,
+gpt-5.6-luna_high,0.8667,77.7833,5.7493,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (high),https://conceptualreasoning.ai/dtbench,
+claude-sonnet-5_medium,0.792,65.3333,6.8599,,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5 (medium),https://conceptualreasoning.ai/dtbench,
+qwen3.8-27b,0.88,80.0,5.4879,0.6184,2026-08-14,Alibaba,China,,,Qwen3.8-27B,https://conceptualreasoning.ai/dtbench,
+claude-sonnet-5_low,0.736,56.0,7.4479,,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5 (low),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-luna_medium,0.8320000000000001,72.0,6.3046,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (medium),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-terra_none,0.7867000000000001,64.45,6.9252,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (off),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-luna_low,0.8,66.6667,6.7618,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (low),https://conceptualreasoning.ai/dtbench,
+gpt-5.6-luna_none,0.6925,48.75,7.8072,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (off),https://conceptualreasoning.ai/dtbench,
+claude-opus-5-5_max,0.9893000000000001,98.2167,1.7313,0.9211,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,https://conceptualreasoning.ai/dtbench,

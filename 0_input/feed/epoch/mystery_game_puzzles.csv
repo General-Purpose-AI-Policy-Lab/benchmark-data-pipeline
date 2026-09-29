@@ -1,9 +1,17 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+claude-opus-5-5_max,0.71,0.71,2026-09-22,Anthropic,United States of America,,,0.04560480215720687,,,2026-09-29T17:34:54.000Z,fREi6AAmnfqUWkDqUhLLtw
+claude-sonnet-5-5_max,0.65,0.65,2026-09-28,Anthropic,United States of America,,,0.04793724854411022,,,2026-09-29T15:15:14.000Z,3PVdaSEYFJKgYUgHnF4DBu
+muse-spark-1.3_max,0.25,0.25,2026-09-02,Meta AI,United States of America,,,0.044640484731156636,,,2026-09-18T19:12:25.000Z,6Rcc2q3USiUNB6U44bpvGH
+muse-spark-1.3_xhigh,0.1414141414141414,0.1414141414141414,2026-09-02,Meta AI,United States of America,,,0.03519858850692775,,,2026-09-16T23:26:24.000Z,n6X597deBgzpbDSyxvhUAB
+gemini-3.8-flash_high,0.47,0.47,2026-09-02,Google DeepMind,United States of America,,,0.05016135580465918,,,2026-09-02T17:15:36.000Z,5yyuCCi2Dpfh6xLBMxqFyB
 claude-fable-5-1_max,0.58,0.58,2026-09-01,Anthropic,United States of America,,,0.04960449637488583,,,2026-09-01T18:45:06.000Z,dBHxnnTzLGz3nHis5LET6t
 glm-5.3_max,0.33,0.33,2026-08-14,Z.ai (Zhipu AI),China,,,0.04725815626252608,,,2026-08-30T23:33:33.000Z,UUq99Qhq3qizcoJo5vdhuK
 gpt-5.4-2026-03-05_none,0.16,0.16,2026-03-05,OpenAI,United States of America,,,0.03684529491774706,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/GtW2cWyAXZPCszLi63e4yJ.eval,2026-08-30T22:33:48.000Z,GtW2cWyAXZPCszLi63e4yJ
 gpt-5.6-luna_none,0.2,0.2,2026-07-09,OpenAI,United States of America,,,0.04020151261036849,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/PBrQpAgRCXeUSNveEn4aDE.eval,2026-08-30T22:33:31.000Z,PBrQpAgRCXeUSNveEn4aDE
-gpt-6-astra_max,0.84,0.84,2026-09-03,OpenAI,United States of America,,,0.036845294917747066,,,2026-08-30T14:57:43.000Z,FA7pM9hKdkgTXmGHptcno7
+gpt-6-astra_max,0.84,0.84,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.036845294917747066,,,2026-08-30T14:57:43.000Z,FA7pM9hKdkgTXmGHptcno7
 kimi-k3_low,0.12,0.12,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",0.032659863237109045,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/CAoLSNkdR27AmHb84fnr8B.eval,2026-08-29T11:05:21.000Z,CAoLSNkdR27AmHb84fnr8B
@@ -81,7 +89,7 @@ glm-5.2_minimal,0.18,0.18,2026-06-16,Z.ai (Zhipu AI),China,,,0.03861229196653691
 qwen3.5-flash_none,0.16,0.16,2026-02-25,Alibaba,China,,,0.036845294917747066,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/DjFkVt62QwqQ4xXwzYR5Ng.eval,2026-08-27T18:01:12.000Z,DjFkVt62QwqQ4xXwzYR5Ng
 deepseek-v4-pro_none,0.17,0.17,2026-04-24,DeepSeek,China,9.702e+24,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training,0.03775251680686369,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/BmvJaHMCnZzb24ErpAsozU.eval,2026-08-27T18:01:08.000Z,BmvJaHMCnZzb24ErpAsozU
 gpt-5.4-nano-2026-03-17_low,0.03,0.03,2026-03-17,OpenAI,United States of America,,,0.01714466079977653,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/aAAtrj4DqLUuEY6P7W5yLe.eval,2026-08-27T18:01:04.000Z,aAAtrj4DqLUuEY6P7W5yLe
-nemotron-3-ultra,0.2,0.2,2026-06-04,NVIDIA,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",0.04020151261036849,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/U8H8juE3Ko83jsR6TRntbh.eval,2026-08-27T18:00:58.000Z,U8H8juE3Ko83jsR6TRntbh
+nemotron-3-ultra,0.2,0.2,2026-06-04,Nvidia,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",0.04020151261036849,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/U8H8juE3Ko83jsR6TRntbh.eval,2026-08-27T18:00:58.000Z,U8H8juE3Ko83jsR6TRntbh
 gpt-5.6-terra_none,0.14,0.14,2026-07-09,OpenAI,United States of America,,,0.0348735088019777,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/8grv57UmR89LXkEYhyssr9.eval,2026-08-27T18:00:41.000Z,8grv57UmR89LXkEYhyssr9
 gpt-5-nano-2025-08-07_medium,0.09,0.09,2025-08-07,OpenAI,United States of America,,,0.028762349126466143,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ZwQdGcba6Hez4ztMzmZP9j.eval,2026-08-27T18:00:36.000Z,ZwQdGcba6Hez4ztMzmZP9j
 gpt-5-2025-08-07_minimal,0.14,0.14,2025-08-07,OpenAI,United States of America,6.6e+25,"Fairly speculative, possibly around 6e25 [CI: 2e25 to 2e26] FLOP. See document below for details

@@ -264,6 +264,8 @@ e399bbba-49d5-5333-a78a-6fa4c174504b,claude-opus-5,high,,,,claude-opus-5_high,An
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,claude-opus-5,max,,,,claude-opus-5_max,Anthropic,US,2026-07-24,
 a94d7bf7-0244-536b-bd58-d1143c4088ac,claude-opus-5,medium,,,,claude-opus-5_medium,Anthropic,US,2026-07-24,
 064d6bba-cf57-5cd0-b569-ab2110036c8c,claude-opus-5,xhigh,,,,claude-opus-5_xhigh,Anthropic,US,2026-07-24,
+8a83e82a-0f12-53c7-afff-759fa6ede2f8,claude-opus-5-5,max,,,,claude-opus-5-5_max,Anthropic,US,2026-09-22,
+4a070a90-41c9-5c50-9ad9-61d076a7586f,claude-opus-5-5,xhigh,,,,claude-opus-5-5_xhigh,Anthropic,US,2026-09-22,
 5dee249b-019f-5f65-83e1-5009325d080f,claude-sonnet-4,,,2025-05-14,,claude-sonnet-4-20250514,Anthropic,US,2025-05-22,
 eeca198f-e209-5cbc-9332-e554b980a9d7,claude-sonnet-4,,,2025-05-14,thinking,claude-sonnet-4-20250514_thinking,Anthropic,US,2025-05-22,
 15e18500-4bd0-5566-9d4e-892e18065643,claude-sonnet-4,,1000,2025-05-14,,claude-sonnet-4-20250514_1K,Anthropic,US,2025-05-22,
@@ -296,6 +298,7 @@ bde0df97-257e-5185-b67a-18b51cffb082,claude-sonnet-5,,,,,claude-sonnet-5,Anthrop
 80732116-ffa5-5aad-85a8-529ec9b01a7e,claude-sonnet-5,max,,,,claude-sonnet-5_max,Anthropic,US,2026-06-30,
 143a5aec-9f98-55c5-b07f-a36915e8d63e,claude-sonnet-5,medium,,,,claude-sonnet-5_medium,Anthropic,US,2026-06-30,
 ad080eb8-573c-579d-9744-07e44f7af21c,claude-sonnet-5,xhigh,,,,claude-sonnet-5_xhigh,Anthropic,US,2026-06-30,
+a1daf361-b5e6-5a18-a07c-5d24f089bf4b,claude-sonnet-5-5,max,,,,claude-sonnet-5-5_max,Anthropic,US,2026-09-28,
 c2841849-f7d4-5a71-bfe3-5e5d79c60d40,code-davinci-002,,,,,code-davinci-002,OpenAI,US,2022-03-15,2.578e+24
 a5e24a43-5780-5edc-bb7d-28f37b2958d1,codestral-2501,,,,,codestral-2501,Mistral AI,FR,2025-01-13,
 828a2089-0cb2-541c-b1d2-e358ae58f599,codex-mini,,,2025-05-16,,codex-mini-2025-05-16,OpenAI,US,2025-05-16,
@@ -332,6 +335,9 @@ a3735a58-72bf-5c2e-9d6a-6248f5383462,deepseek-v4-pro,none,,,,deepseek-v4-pro_non
 df688f05-9678-5e43-9dda-267958d09bf0,deepseek-v4-pro-0813,low,,,,deepseek-v4-pro-0813_low,DeepSeek,CN,2026-08-13,9.702e+24
 bfd896ae-8b2b-52d7-8bd8-3eede5d82c7f,deepseek-v4-pro-0813,max,,,,deepseek-v4-pro-0813_max,DeepSeek,CN,2026-08-13,9.702e+24
 3866e9da-f347-52e4-8594-d08878bb017a,deepseek-v4-pro-0813,none,,,,deepseek-v4-pro-0813_none,DeepSeek,CN,2026-08-13,9.702e+24
+4527b7b1-5ea3-5424-b003-0b03d59f1860,deepseek-v4.1-flash,,,,,deepseek-v4.1-flash,DeepSeek,CN,2026-09-09,4.32e+24
+79a987b4-486a-5ebb-9d83-0b961b067d59,deepseek-v4.1-flash,high,,,,deepseek-v4.1-flash_high,DeepSeek,CN,2026-09-09,4.32e+24
+90a060e2-e4f8-5e28-b07b-35bd70580164,deepseek-v4.1-flash,max,,,,deepseek-v4.1-flash_max,DeepSeek,CN,2026-09-09,4.32e+24
 05297414-7b2e-57fe-b071-6a226e3e06b4,devstral-small-2512,,,,,devstral-small-2512,Mistral AI,FR,2025-12-09,
 c0e82288-d8ea-5fe4-9fb9-3fbd3028517a,dolly-v2-12b,,,,,dolly-v2-12b,Databricks,US,2023-04-11,
 ae2ba523-d13a-56b7-a9f8-ddc9a9586f04,falcon-11b,,,,,falcon-11b,Technology Innovation Institute,AE,2024-05-09,3.6e+23
@@ -459,6 +465,7 @@ e487f2bd-a899-5792-8fd4-4a5d68fdc742,glm-5.2,medium,,,,glm-5.2_medium,Z.ai (Zhip
 9affe9e9-6b21-5500-b7b7-7e3e56e0e871,glm-5.2,minimal,,,,glm-5.2_minimal,Z.ai (Zhipu AI),CN,2026-06-16,
 d2b66162-2f5e-5f61-9a9c-71af455a4091,glm-5.2,none,,,,glm-5.2_none,Z.ai (Zhipu AI),CN,2026-06-16,
 6b0d22fa-352e-5272-ac4e-ccff612d06b2,glm-5.2,xhigh,,,,glm-5.2_xhigh,Z.ai (Zhipu AI),CN,2026-06-16,
+bced6b45-0c46-5e65-87ec-084e31c8395b,glm-5.3,,,,,glm-5.3,Z.ai (Zhipu AI),CN,2026-08-14,
 4da8fd41-ac04-528d-8f29-7944a162802a,glm-5.3,max,,,,glm-5.3_max,Z.ai (Zhipu AI),CN,2026-08-14,
 9af32c96-c90e-5e1d-b7d1-628fdc5b22bf,glm-5.3-flash,,,,,glm-5.3-flash,Z.ai (Zhipu AI),CN,2026-08-20,3.24e+24
 f774eb3f-8d0f-531c-8b88-23e84e3414be,glm-5.3-flash,max,,,,glm-5.3-flash_max,Z.ai (Zhipu AI),CN,2026-08-20,3.24e+24
@@ -541,7 +548,6 @@ da49c25c-399f-5fe2-ac9a-2e860fd051d9,gpt-5.4-mini,low,,2026-03-17,,gpt-5.4-mini-
 d4d5de40-e4f4-55be-b270-a7ed2853072a,gpt-5.4-mini,medium,,2026-03-17,,gpt-5.4-mini-2026-03-17_medium,OpenAI,US,2026-03-17,
 ccf6e536-04d0-58bb-b4f2-af546244f465,gpt-5.4-mini,none,,2026-03-17,,gpt-5.4-mini-2026-03-17_none,OpenAI,US,2026-03-17,
 121561f5-02bd-5b1a-95c5-8e6b2e6251f8,gpt-5.4-mini,xhigh,,2026-03-17,,gpt-5.4-mini-2026-03-17_xhigh,OpenAI,US,2026-03-17,
-2be09181-94e8-5284-9f6f-d86e6cfcf4cd,gpt-5.4-nano,,,2026-03-17,,gpt-5.4-nano-2026-03-17,OpenAI,US,2026-03-17,
 aa66bc9e-914b-556e-9bb3-62936700b1c9,gpt-5.4-nano,high,,2026-03-17,,gpt-5.4-nano-2026-03-17_high,OpenAI,US,2026-03-17,
 1d5cf778-967c-5e4b-9558-30ff77afc7c0,gpt-5.4-nano,low,,2026-03-17,,gpt-5.4-nano-2026-03-17_low,OpenAI,US,2026-03-17,
 42346a5d-f7fa-56e6-981c-3c19f5efacce,gpt-5.4-nano,medium,,2026-03-17,,gpt-5.4-nano-2026-03-17_medium,OpenAI,US,2026-03-17,
@@ -587,13 +593,16 @@ c04ed4ab-9cda-56a2-9056-c3f5d0d19f05,gpt-5.6-terra,,,,,gpt-5.6-terra,OpenAI,US,2
 5d7701b6-0615-5e82-85a4-9788551b4ce2,gpt-5.6-terra,medium,,,,gpt-5.6-terra_medium,OpenAI,US,2026-07-09,
 436ebe2b-8951-5777-854f-5530da237753,gpt-5.6-terra,none,,,,gpt-5.6-terra_none,OpenAI,US,2026-07-09,
 7463e790-65c7-57fc-aef8-1882d6bbad53,gpt-5.6-terra,xhigh,,,,gpt-5.6-terra_xhigh,OpenAI,US,2026-07-09,
-c61bc40a-403f-5ca2-8886-38dedb2c83ee,gpt-6-astra,,,,,gpt-6-astra,OpenAI,US,2026-09-03,
-0fec690a-4610-534d-99c6-5b0609a87077,gpt-6-astra,high,,,,gpt-6-astra_high,OpenAI,US,2026-09-03,
-def63ae0-e298-5355-914e-f526556f360f,gpt-6-astra,low,,,,gpt-6-astra_low,OpenAI,US,2026-09-03,
-4448d84f-be9f-5480-8495-5d4295b752a6,gpt-6-astra,max,,,,gpt-6-astra_max,OpenAI,US,2026-09-03,
-350e822e-8fae-516e-803b-1a3656706b95,gpt-6-astra,medium,,,,gpt-6-astra_medium,OpenAI,US,2026-09-03,
-49d8baae-616b-5b74-adbf-ef134749010f,gpt-6-astra,none,,,,gpt-6-astra_none,OpenAI,US,2026-09-03,
-a1b483f0-187a-54b4-9c75-2f61d6fc9436,gpt-6-astra,xhigh,,,,gpt-6-astra_xhigh,OpenAI,US,2026-09-03,
+c61bc40a-403f-5ca2-8886-38dedb2c83ee,gpt-6-astra,,,,,gpt-6-astra,OpenAI,US,2026-09-03,1.0001e+27
+0fec690a-4610-534d-99c6-5b0609a87077,gpt-6-astra,high,,,,gpt-6-astra_high,OpenAI,US,2026-09-03,1.0001e+27
+def63ae0-e298-5355-914e-f526556f360f,gpt-6-astra,low,,,,gpt-6-astra_low,OpenAI,US,2026-09-03,1.0001e+27
+4448d84f-be9f-5480-8495-5d4295b752a6,gpt-6-astra,max,,,,gpt-6-astra_max,OpenAI,US,2026-09-03,1.0001e+27
+87ee54dd-1b2a-5024-96c5-56c9824ba6e8,gpt-6-astra,max,,,pro,gpt-6-astra_promax,OpenAI,US,2026-09-03,1.0001e+27
+350e822e-8fae-516e-803b-1a3656706b95,gpt-6-astra,medium,,,,gpt-6-astra_medium,OpenAI,US,2026-09-03,1.0001e+27
+49d8baae-616b-5b74-adbf-ef134749010f,gpt-6-astra,none,,,,gpt-6-astra_none,OpenAI,US,2026-09-03,1.0001e+27
+a1b483f0-187a-54b4-9c75-2f61d6fc9436,gpt-6-astra,xhigh,,,,gpt-6-astra_xhigh,OpenAI,US,2026-09-03,1.0001e+27
+619a9c7d-3b2e-5290-98d4-7fddddd4e68b,gpt-6-luna,max,,,,gpt-6-luna_max,OpenAI,US,2026-09-22,
+07ef50ba-5709-5983-8cd1-bdcab048bc41,gpt-6-sol,max,,,,gpt-6-sol_max,OpenAI,US,2026-09-22,
 2b4771da-53fc-56a4-82ca-0f1558911b94,gpt-j-6b,,,,,gpt-j-6b,"EleutherAI,LAION","DE,US",2021-08-05,1.5e+22
 49a8f0b6-4d32-5270-8f23-d77804c5555b,gpt-neo-2.7B,,,,,gpt-neo-2.7B,EleutherAI,US,2021-03-30,7.9e+21
 6f7da00e-2269-518d-9c16-1739b3f681d0,gpt-neox-20b,,,,,gpt-neox-20b,EleutherAI,US,2022-04-07,9.31627008e+22
@@ -647,8 +656,11 @@ cb8fdec5-c706-5ab2-8ef6-966f84289dc1,grok-4.6,,,,,grok-4.6,xAI,US,2026-08-12,
 049a847d-a731-5a1c-a6b6-593e8bc6d7fa,grok-4.6,low,,,,grok-4.6_low,xAI,US,2026-08-12,
 d99c1341-190a-5038-a17b-1bb9c6e036e3,grok-4.6,medium,,,,grok-4.6_medium,xAI,US,2026-08-12,
 ef6e7801-9304-5c13-b031-de20797f0046,grok-4.6,xhigh,,,,grok-4.6_xhigh,xAI,US,2026-08-12,
+9e6781e8-0021-54e4-bf15-41071ac8b1c3,grok-4.7,,,,,grok-4.7,xAI,US,2026-09-21,
+07d72422-dde1-5c96-9e9b-5c36c32d02fe,grok-4.7,xhigh,,,,grok-4.7_xhigh,xAI,US,2026-09-21,
 10c5e4a8-15c5-54f6-96d7-a247f370affc,grok-build-0.1,,,,,grok-build-0.1,xAI,US,2026-05-29,
 1cbe5f70-c17d-5722-a80b-a027eb37e29e,grok-code-fast-1,,,,,grok-code-fast-1,xAI,US,2025-08-28,
+185e9e89-b62d-5af1-80a7-43dcfbd5136f,hy4-preview,,,,,hy4-preview,Tencent,CN,2026-08-28,
 d5702354-30a4-5ddb-af1b-5eaff61d36f5,inkling-small,,,,,inkling-small,Thinking Machines,US,2026-07-15,
 74b2f207-0a21-5fb9-aa99-66f6698f5df4,inkling-small,high,,,,inkling-small_high,Thinking Machines,US,2026-07-15,
 9de9f714-80a8-57f2-b164-bc4de7a81216,inkling-small,low,,,,inkling-small_low,Thinking Machines,US,2026-07-15,
@@ -678,6 +690,7 @@ d59867d4-bd36-519e-bd47-98900e1b4542,magistral-medium-2506,,,,,magistral-medium-
 9604c07f-bcea-5acf-b9f3-52d3a290e20d,magistral-small-2506,,,,,magistral-small-2506,Mistral AI,FR,2025-06-10,
 8dd7d776-4252-5efd-8a20-6ca333ad8768,magistral-small-2509,,,,,magistral-small-2509,Mistral AI,FR,2025-09-18,
 e61545e2-f852-50b3-85c9-71bf0543c280,mercury-2,,,,,mercury-2,Inception Labs,US,2026-02-24,
+3e8db570-8e49-53dd-8854-ff87af2c6824,mercury-2.5,,,,,mercury-2.5,Inception Labs,US,2026-09-08,
 b1f08ada-95f8-547e-8609-c7eeed161f86,mimo-v2-flash,,,,,mimo-v2-flash,Xiaomi Corp,CN,2025-12-16,2.43e+24
 9c943923-7a2d-5457-ac84-a16bbc847d18,mimo-v2-pro,,,,,mimo-v2-pro,Xiaomi Corp,CN,2026-03-18,
 3987e171-5f10-59b2-ab14-b09b2e2c5f52,mimo-v2-pro,high,,,,mimo-v2-pro_high,Xiaomi Corp,CN,2026-03-18,
@@ -711,8 +724,13 @@ fb0e91a9-efb4-54a6-8e06-f651ee939f56,muse-spark-1.1,high,,,,muse-spark-1.1_high,
 6c15bd38-0769-5768-bbf5-7861618b6d7a,muse-spark-1.1,xhigh,,,,muse-spark-1.1_xhigh,Meta AI,US,2026-07-09,
 1831e931-618c-5b55-a104-293539785d3b,muse-spark-1.2,,,,,muse-spark-1.2,Meta AI,US,2026-08-05,
 128ede12-88c7-593d-8908-4db39a34ab6f,muse-spark-1.2,xhigh,,,,muse-spark-1.2_xhigh,Meta AI,US,2026-08-05,
+a5a1118c-c262-5a1e-843c-aa5723fa223a,muse-spark-1.3,,,,,muse-spark-1.3,Meta AI,US,2026-09-02,
+4313af9a-f79b-5e93-a527-e80de0473264,muse-spark-1.3,high,,,,muse-spark-1.3_high,Meta AI,US,2026-09-02,
+ea4730d4-27d4-52e2-a7fe-c5273cb2b4e3,muse-spark-1.3,max,,,,muse-spark-1.3_max,Meta AI,US,2026-09-02,
+077de9e5-6192-53f4-91ca-dec21e8a0d76,muse-spark-1.3,xhigh,,,,muse-spark-1.3_xhigh,Meta AI,US,2026-09-02,
 cba5a87f-824b-559e-be3d-9cc983c9c710,nemotron-3-super,,,,,nemotron-3-super,NVIDIA,US,2026-03-11,
 3ea09ff0-a28e-5168-a661-2f9801c6a586,nemotron-3-ultra,,,,,nemotron-3-ultra,NVIDIA,US,2026-06-04,6.6e+24
+b70013d8-5198-5c40-9741-a81905f73c6b,nemotron-3-ultra,,,,thinking,nemotron-3-ultra_thinking,NVIDIA,US,2026-06-04,
 c030d184-2d47-53f7-9bbf-59f6d3f41d3e,nova-2.0-pro-preview,,,,,nova-2.0-pro-preview,Amazon,US,2025-12-02,
 53e85515-216f-59cc-bad1-2d747e466a66,nova-2.0-pro-preview,low,,,,nova-2.0-pro-preview_low,Amazon,US,2025-12-02,
 749473c4-3aad-5c88-8c88-26a53f054487,nova-2.0-pro-preview,medium,,,,nova-2.0-pro-preview_medium,Amazon,US,2025-12-02,
@@ -819,8 +837,11 @@ bfc2dfee-8230-5085-889a-e91d77a883f6,qwen3.8-27b,low,,,,qwen3.8-27b_low,Alibaba,
 21a1980b-e331-512a-9141-181e99c0241a,qwen3.8-27b,medium,,,,qwen3.8-27b_medium,Alibaba,CN,2026-08-14,
 02c815e3-13ad-5cf3-9aa1-9feb9b8e9763,qwen3.8-27b,none,,,,qwen3.8-27b_none,Alibaba,CN,2026-08-14,
 b7578544-e049-5b72-953a-d85ff2df281f,qwen3.8-27b,xhigh,,,,qwen3.8-27b_xhigh,Alibaba,CN,2026-08-14,
+ce4f4002-94c1-5357-8350-cb316c9972f4,qwen3.8-flash,xhigh,,,,qwen3.8-flash_xhigh,Alibaba,CN,2026-08-26,
 6baedc17-ec8a-5dee-9b22-d12ea240e956,qwen3.8-max,,,,,qwen3.8-max,Alibaba,CN,2026-08-02,
 7319b511-d3bf-5d03-8195-9ca00e689997,qwen3.8-max,xhigh,,,,qwen3.8-max_xhigh,Alibaba,CN,2026-08-02,
+bb56a698-56bd-5ef5-9690-726ce1c87ca8,qwen3.8-max-0902,,,,,qwen3.8-max-0902,Alibaba,CN,2026-09-01,
+cd6165a8-2737-5cf9-9152-383786cb1248,qwen3.8-max-0902,xhigh,,,,qwen3.8-max-0902_xhigh,Alibaba,CN,2026-09-01,
 6edb36d7-ff23-51c4-9bf9-f21f6b4c0285,qwq-plus,,,,,qwq-plus,Alibaba,CN,2025-04-08,
 7338e6da-a106-58d5-906a-41efd1754885,reka-flash-3,,,,,reka-flash-3,Reka AI,US,2025-03-10,
 7be5b569-f2f7-564e-aa3b-cbfa5e7bc68e,seed-oss-36b-instruct,,,,,seed-oss-36b-instruct,ByteDance,CN,2025-08-20,
@@ -830,8 +851,10 @@ b7578544-e049-5b72-953a-d85ff2df281f,qwen3.8-27b,xhigh,,,,qwen3.8-27b_xhigh,Alib
 fe118602-7980-5b85-bbd9-4feb9e7eb9ca,starcoder2-3b,,,,,starcoder2-3b,"Hugging Face,ServiceNow,NVIDIA,BigCode",US,2024-02-22,5.94e+22
 7563a4cf-26e5-529b-82db-ac7ef2bb6b84,starcoder2-7b,,,,,starcoder2-7b,"Hugging Face,ServiceNow,NVIDIA,BigCode",US,2024-02-20,1.55e+23
 f02ed5ff-7ca1-56e1-964c-070b350292b3,step-3.7-flash,,,,,step-3.7-flash,StepFun,CN,2026-05-29,
+32661c1e-9055-5695-ad95-2a062f4e4547,step-5-preview,,,,,step-5-preview,StepFun,CN,2026-09-18,
 fbab4124-9b4e-59bf-bf32-880eb7a8a6b2,swe-1.6,,,,,swe-1.6,Cognition,US,2026-04-07,
 120881b5-9b10-5c27-8e5d-42c8c2b6a57a,swe-1.7,,,,,swe-1.7,Cognition,US,2026-07-08,
+8d0fe565-f965-5403-b74f-fa92de341521,swe-2,max,,,,swe-2_max,Cognition,US,2026-09-10,
 59555f6e-c36b-5786-b0b7-82f180b801d1,text-ada-001,,,,,text-ada-001,OpenAI,US,2022-01-27,
 f18adaa7-8b62-534c-bb61-6e2609f073e4,text-babbage-001,,,,,text-babbage-001,OpenAI,US,2022-01-27,
 39453e91-c716-5830-91a2-1e6f775d6dae,text-curie-001,,,,,text-curie-001,OpenAI,US,2022-01-27,

@@ -1,4 +1,9 @@
 Model version,Score,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Notes,id
+gpt-6-astra_unknown,0.20829999999999999,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT 6 Astra,,recgQnocVAluxtaGu
+claude-fable-5-1_unknown,0.17920000000000003,2026-09-01,Anthropic,United States of America,,,Fable 5.1,,recjGFecys5ECoyQg
 claude-fable-5,0.161,2026-06-09,Anthropic,United States of America,,,Fable-5,,recuSPVAbyN1m9xpA
 claude-fable-5_unknown,0.158,2026-06-09,Anthropic,United States of America,,,Fable-5,,recViBWyhB5Kow9VY
 claude-opus-4-8_unknown,0.0833,2026-05-28,Anthropic,United States of America,,,Opus 4.8,,reca1681E9WeV4Fcd
