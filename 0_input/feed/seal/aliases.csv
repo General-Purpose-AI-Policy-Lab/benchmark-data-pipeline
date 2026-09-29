@@ -155,7 +155,7 @@ Gpt 5.4 xHigh (Mini-SWE-Agent),gpt-5.4,xhigh,,2026-03-05,,mini-SWE-agent,"Scale 
 GPT 5.5 (Codex) xHigh,gpt-5.5,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated. '(Codex)' is the native Codex CLI scaffold, not the gpt-5.x-codex model (Scale: 'GPT-5.5 in Codex', 'its native Codex'; harness label alongside Claude Code / Gemini CLI / mini-SWE-agent). Validated 2026-09-04"
 GPT-4,gpt-4-0613,,,,,,
 GPT-4 (November 2024),gpt-4o,,,2024-11-20,,,
-GPT-4 Turbo Preview,gpt-4-turbo,,,,,,"Scale SEAL alias (auto, high-confidence)"
+GPT-4 Turbo Preview,gpt-4-0125-preview,,,,,,"ToolComp (Nath et al. 2025, Table 2) names 'GPT-4 Turbo Preview' without a snapshot; OpenAI's gpt-4-turbo-preview API name served gpt-4-0125-preview from 2024-01-25, before the paper's runs, so 0125 is the most likely snapshot (1106 is the other preview). Was the auto alias gpt-4-turbo, which after the 2024-04-09 re-attribution of Epoch's rows would have been a one-score identity dated 2023-11-06. alias review of the open/closed frontier note, 2026-09-29"
 GPT-4.1,gpt-4.1,,,2025-04-14,,,"Scale SEAL alias (auto, high-confidence)"
 gpt-4.1,gpt-4.1,,,2025-04-14,,,"Scale SEAL alias (auto, high-confidence)"
 GPT-4.1 mini,gpt-4.1-mini,,,2025-04-14,,,"Scale SEAL alias (auto, high-confidence)"

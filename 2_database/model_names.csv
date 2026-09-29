@@ -74,10 +74,9 @@ model_id,feed,raw_name,n_records
 0f4c509b-64de-599a-a793-c5bb8bd49ae3,epoch_live,phi-4,4
 0f650a33-dc38-52de-9f1c-a3bff1f0fde4,epoch,gemini-3.8-flash_unknown,1
 0f752481-e609-514a-b140-2ed9978ceb46,epoch_live,gemini-3.5-flash_low,4
-0fd9b636-d28b-5f46-80ef-c2c715a93893,epoch,open-mixtral-8x7b,1
-0fd9b636-d28b-5f46-80ef-c2c715a93893,epoch_live,open-mixtral-8x7b,2
 0fec690a-4610-534d-99c6-5b0609a87077,epoch,gpt-6-astra_high,5
 0fec690a-4610-534d-99c6-5b0609a87077,epoch_live,gpt-6-astra_high,2
+10210055-d63c-5213-878a-802705130916,epoch_live,deepseek-reasoner,3
 10524a65-e119-5863-8c22-d51ea587a368,epoch,Qwen2.5-Coder-14B-Instruct,1
 107b0b36-d79f-5e30-8078-71f3191428b7,epoch_live,gpt-5.5-pro-pre-release_xhigh,3
 10c5e4a8-15c5-54f6-96d7-a247f370affc,epoch,grok-build-0.1,2
@@ -131,6 +130,7 @@ model_id,feed,raw_name,n_records
 1831982e-f01a-5023-81b4-b83023d5d79f,epoch,claude-sonnet-4-20250514_32K,3
 1831982e-f01a-5023-81b4-b83023d5d79f,epoch_live,claude-sonnet-4-20250514_32K,2
 1831e931-618c-5b55-a104-293539785d3b,epoch,muse-spark-1.2,3
+185b46f5-e39c-58ea-b086-afb5ec027872,epoch_live,deepseek-chat,3
 1904c6c6-37f8-5757-b843-a30ae56ee373,epoch,ada,2
 190c9256-dd6b-58f3-a4ba-8a1b61734bec,epoch,gemini-2.0-flash-001,7
 190c9256-dd6b-58f3-a4ba-8a1b61734bec,epoch,gemini-2.0-flash-02-05,1
@@ -194,8 +194,6 @@ model_id,feed,raw_name,n_records
 2100e63c-ec66-532d-bb4a-0443dfa8914f,seal,Gemini 1.5 Flash 002,1
 211d87a3-a319-52a9-a65c-622f10f6cfe4,epoch,falcon-40b,25
 21a1980b-e331-512a-9141-181e99c0241a,epoch,qwen3.8-27b_medium,1
-2217d30b-260b-5df1-9c4d-6799e22fcadc,epoch,grok-3-beta,4
-2217d30b-260b-5df1-9c4d-6799e22fcadc,epoch_live,grok-3-beta,3
 221eb942-ffb1-5e7b-a004-600f2240047e,epoch,gemma-2b,7
 226cc003-cea3-52af-8a76-60aeccd137f2,epoch,gpt-5.4-nano-2026-03-17_xhigh,7
 238554ce-9fb9-517a-aeca-84288b659a60,epoch,kimi-k3_unknown,7
@@ -275,7 +273,6 @@ model_id,feed,raw_name,n_records
 31a200c8-d0e6-5040-b603-5d2ea8d58414,epoch_live,mistral-large-2407,3
 31a200c8-d0e6-5040-b603-5d2ea8d58414,rand,Mistral Large 2407,15
 31a200c8-d0e6-5040-b603-5d2ea8d58414,seal,Mistral Large 2,1
-324f475c-1659-5cd2-bd29-115a51e2bd4c,epoch_live,Llama-4-Maverick-17B-128E-Instruct-FP8,3
 3301782a-e4e3-5c93-b2d5-2c5b18e4b23e,epoch,claude-3-7-sonnet-20250219_32K,1
 3301782a-e4e3-5c93-b2d5-2c5b18e4b23e,epoch_live,claude-3-7-sonnet-20250219_32K,3
 3353183a-cb0a-5c36-9007-efc9c016f468,seal,Kimi-Audio-7B-Instruct,2
@@ -448,6 +445,7 @@ model_id,feed,raw_name,n_records
 4f423e9a-035f-588f-b024-6639ef5e6ba2,epoch,gpt-oss-20b_high,4
 4f423e9a-035f-588f-b024-6639ef5e6ba2,epoch_live,gpt-oss-20b_high,3
 4f55f66c-f89b-5a17-b3b6-178033bf0924,epoch,Baichuan-13B-Base,2
+4f56abbe-b10b-539b-9a43-4ee29f7e33e2,epoch_live,mistral-small-2501,3
 4f56abbe-b10b-539b-9a43-4ee29f7e33e2,epoch_live,mistral-small-3-2501,3
 4f5d7473-db32-5637-9591-0d41e9edaf4b,epoch,gemini-2.5-pro-preview-06-05_32K,1
 4f83d073-ae61-5ed2-b4b1-acfbf9494fee,epoch,gemini-2.5-flash-lite-preview-06-17-thinking,4
@@ -530,7 +528,7 @@ model_id,feed,raw_name,n_records
 5a7b1282-ed74-59f3-9084-e0ccc0583a17,epoch_live,qwen3-14b_none,3
 5ad1e345-f04c-5ba7-9337-53fe6d1a4828,epoch_live,qwen3.5-2b_none,1
 5c614787-146a-5875-a5ff-a1d131b17b84,epoch,DeepSeek-V3.2-Exp_thinking,7
-5d29050b-4abe-5081-a0db-50776155e0c4,epoch_live,mistral-small-2501,3
+5c614787-146a-5875-a5ff-a1d131b17b84,epoch,deepseek-reasoner,1
 5d4e2dac-11e8-5284-8cb1-829f247634ff,epoch,GLaM (MoE),12
 5d7701b6-0615-5e82-85a4-9788551b4ce2,epoch,gpt-5.6-terra_medium,5
 5d7701b6-0615-5e82-85a4-9788551b4ce2,epoch_live,gpt-5.6-terra_medium,1
@@ -572,6 +570,7 @@ model_id,feed,raw_name,n_records
 6021526e-96c9-5a69-b4bb-a3364b585af7,epoch,Qwen2.5-Coder-32B,6
 60a59eee-6cdd-5727-92e5-72d89bbad697,epoch,gpt-4-0125-preview,1
 60a59eee-6cdd-5727-92e5-72d89bbad697,epoch_live,gpt-4-0125-preview,2
+60a59eee-6cdd-5727-92e5-72d89bbad697,seal,GPT-4 Turbo Preview,1
 60b5b7fd-5ad4-5fbe-b32a-ebb27a8f6c98,kaggle,granite-4.0-h-small,3
 60c69d35-e254-5912-b470-a99b1a9322e8,epoch,tiny-recursion-model,2
 6198360b-50b9-5e09-bcb6-ca51097257b2,seal,Gemini 2.0 Flash Thinking Experimental,1
@@ -688,7 +687,6 @@ model_id,feed,raw_name,n_records
 7319b511-d3bf-5d03-8195-9ca00e689997,epoch_live,qwen3.8-max_xhigh,7
 7338e6da-a106-58d5-906a-41efd1754885,epoch,reka-flash-3,1
 73c1debc-e12f-5d1a-acbc-06b1ce8d63b8,epoch,Llama-3.1-405B,6
-7402c74e-a1a9-5450-98b2-b7084c21f007,epoch_live,fireworks/kimi-k2p5,3
 7410d386-29ee-5d20-89ca-12baf77706fc,epoch,gemini-2.5-pro-preview-06-05,10
 7410d386-29ee-5d20-89ca-12baf77706fc,epoch_live,gemini-2.5-pro-preview-06-05,1
 7410d386-29ee-5d20-89ca-12baf77706fc,kaggle,gemini-2.5-pro-preview-06-05,2
@@ -945,6 +943,8 @@ model_id,feed,raw_name,n_records
 97ebca52-d1b5-5737-b4c3-2c6b041d48d9,kaggle,open-mixtral-8x22b-2404,3
 97f2b236-7a8f-5f7a-bab9-a58276d102fa,epoch,deepseek-v4-flash-0731_unknown,3
 982cd923-8d9b-5b30-bd2f-dcad42b603e1,epoch,grok-4.3_none,1
+986b644b-f6a6-52d4-9d5c-5ca0dc5a0692,epoch,mistral-small-2503,2
+986b644b-f6a6-52d4-9d5c-5ca0dc5a0692,epoch_live,mistral-small-2503,3
 986b644b-f6a6-52d4-9d5c-5ca0dc5a0692,epoch_live,mistral-small-3.1-2503,3
 98709b5f-ed78-59d9-adf5-1c37c990c7e2,epoch,gpt-5.1-2025-11-13_none,4
 98709b5f-ed78-59d9-adf5-1c37c990c7e2,epoch_live,gpt-5.1-2025-11-13_none,4
@@ -993,6 +993,7 @@ model_id,feed,raw_name,n_records
 9de7f20b-93b2-55d8-a1a9-ba660fd2da3d,epoch,DeepSeek-V3.2-Speciale,2
 9de9f714-80a8-57f2-b164-bc4de7a81216,epoch,inkling-small_low,2
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,epoch,kimi-k2.5,12
+9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,epoch_live,fireworks/kimi-k2p5,3
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,epoch_live,kimi-k2.5,1
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,seal,Kimi K2.5 (Mini-SWE-Agent),1
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,seal,Kimi-K2.5 (Mini-SWE),1
@@ -1017,6 +1018,7 @@ a03d9c47-b17b-58ae-88a7-04b268e56074,seal,Gemini 2.0 Flash Lite Preview (Februar
 a120762c-aee1-5715-acf9-be09166761d9,epoch,qwen3.5-flash,2
 a120762c-aee1-5715-acf9-be09166761d9,epoch_live,qwen3.5-flash,6
 a13b962a-9e0b-59fe-a577-89e9d377c09e,epoch,Mistral-Nemo-Instruct-2407,2
+a13b962a-9e0b-59fe-a577-89e9d377c09e,epoch_live,open-mistral-nemo-2407,2
 a147126b-5c8d-528d-a880-61412bdb9df5,epoch,claude-opus-4-8_none,2
 a147126b-5c8d-528d-a880-61412bdb9df5,epoch_live,claude-opus-4-8_none,3
 a157dae7-3d76-55ac-b54c-d64d5b0749e2,epoch,gemini-2.5-pro_16K,3
@@ -1064,6 +1066,7 @@ a72dc748-98c8-5db6-9319-6173a1b88da0,epoch,grok-4.3_high,5
 a72dc748-98c8-5db6-9319-6173a1b88da0,epoch,grok-4.3_unknown,1
 a72dc748-98c8-5db6-9319-6173a1b88da0,epoch_live,grok-4.3_high,6
 a735c069-6efe-58ad-88af-397f1b5e36fb,epoch,qwen2.5-14b-instruct,1
+a73fe160-4ed3-5b13-94ee-0bd9cbbd8017,epoch,mistral-small-2506,2
 a73fe160-4ed3-5b13-94ee-0bd9cbbd8017,epoch_live,mistral-small-3.2-2506,3
 a7b4a094-c112-5ee3-9dbd-9cbf34ec64e1,epoch_live,qwen3.7-max_none,1
 a7cbc42f-81df-5e89-a20d-b2d34bbcad40,epoch,inkling-small_none,2
@@ -1078,6 +1081,7 @@ a8994e7b-220b-5ad3-b2e8-9c64c1ec7d0b,seal,glm-5p2,1
 a8ebd9d0-bfc1-5d30-a256-cbd06e15e86f,epoch,claude-haiku-4-5-20251001_1K,3
 a94d7bf7-0244-536b-bd58-d1143c4088ac,epoch,claude-opus-5_medium,3
 a9a74307-33b1-5c1f-a5eb-f3f3b5c07292,seal,tml-interaction-small,1
+aa171667-405f-5abd-ba45-085ecbe4dddb,epoch,gpt-4-turbo,4
 aa171667-405f-5abd-ba45-085ecbe4dddb,epoch,gpt-4-turbo-2024-04-09,4
 aa171667-405f-5abd-ba45-085ecbe4dddb,epoch_cyber,GPT-4 Turbo,2
 aa171667-405f-5abd-ba45-085ecbe4dddb,epoch_live,gpt-4-turbo-2024-04-09,5
@@ -1139,6 +1143,8 @@ b28eb646-9c56-5f70-9fa3-6ce81b769dd0,epoch,CodeQwen1.5-7B,4
 b28fb558-d1e2-51d9-b207-0f6acd92c948,seal,gemini-2.5-flash-native-audio-preview-12-2025 (thinking),1
 b30dd13c-0391-5ba5-b1c0-119e706da158,epoch,computer-use-preview-2025-03-11,3
 b32fb225-1781-5336-80b6-9506ad9e2452,epoch,grok-3,5
+b32fb225-1781-5336-80b6-9506ad9e2452,epoch,grok-3-beta,4
+b32fb225-1781-5336-80b6-9506ad9e2452,epoch_live,grok-3-beta,3
 b32fb225-1781-5336-80b6-9506ad9e2452,kaggle,grok-3,3
 b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch,Qwen3-235B-A22B-Thinking-2507,5
 b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch,chutes/Qwen3-235B-A22B-Thinking-2507,1
@@ -1146,7 +1152,6 @@ b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch,qwen/qwen3-235b-a22b-thinking-2507,2
 b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch_live,Qwen3-235B-A22B-Thinking-2507,5
 b35da3fc-cf68-5251-9b87-93fd08a6347d,kaggle,qwen3-235b-a22b-thinking-2507,3
 b35da3fc-cf68-5251-9b87-93fd08a6347d,seal,Qwen3-235B-A22B-Thinking-2507,1
-b3a87b05-8856-5f4b-bd88-fea32369b7c2,epoch_live,open-mistral-nemo-2407,2
 b4677557-9503-5cef-93b3-601751435538,epoch,o3-pro-2025-06-10_low,2
 b4ec49ae-5496-5ac9-a1a3-c9b6cfc960a6,epoch,Llama-2-70b-chat,5
 b4ec49ae-5496-5ac9-a1a3-c9b6cfc960a6,epoch_live,Llama-2-70b-chat-hf,3
@@ -1161,14 +1166,13 @@ b6f4cd1f-b377-545f-ab3c-d74a0fc596e3,epoch,gemma-2-9b-it,1
 b6f4cd1f-b377-545f-ab3c-d74a0fc596e3,epoch_live,gemma-2-9b-it,3
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,epoch,claude-opus-5_max,14
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,epoch_live,claude-opus-5_max,8
-b6faa07f-c1cf-50e4-89f8-a2b846fe136b,epoch,gpt-4-turbo,4
-b6faa07f-c1cf-50e4-89f8-a2b846fe136b,seal,GPT-4 Turbo Preview,1
 b725f682-a665-5e78-b1d6-d40e1cf71fe8,epoch,gpt-5-mini-2025-08-07_unknown,8
 b725f682-a665-5e78-b1d6-d40e1cf71fe8,epoch_cyber,GPT-5 mini,1
 b725f682-a665-5e78-b1d6-d40e1cf71fe8,seal,gpt-5-mini-2025-08-07,2
 b7578544-e049-5b72-953a-d85ff2df281f,epoch,qwen3.8-27b_xhigh,2
 b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,epoch,kimi-k2-thinking,6
 b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,epoch,moonshotai/Kimi-K2-Thinking,1
+b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,epoch_live,kimi-k2-thinking-turbo,3
 b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,seal,kimi-k2-thinking,3
 b80757f1-5185-5b61-a00b-5531a56e021c,epoch,qwen3-8b,3
 b80757f1-5185-5b61-a00b-5531a56e021c,epoch_live,qwen3-8b,3
@@ -1284,8 +1288,6 @@ c9846f37-0aca-50be-b0a5-7a9aa1463d5c,epoch_live,gpt-5.4-nano-2026-03-17_none,5
 c9d1b5c5-bb9f-5deb-9413-5c2011161c1a,epoch,claude-opus-4-7_max,13
 c9d1b5c5-bb9f-5deb-9413-5c2011161c1a,epoch_live,claude-opus-4-7_max,7
 c9d1b5c5-bb9f-5deb-9413-5c2011161c1a,seal,claude-opus-4-7 (max),1
-ca701bc5-0932-51e2-bc21-749b1b752f93,epoch,deepseek-reasoner,1
-ca701bc5-0932-51e2-bc21-749b1b752f93,epoch_live,deepseek-reasoner,3
 cab91ded-f808-5d9b-9c27-ac193424d109,epoch,mistral-small-2603,2
 cad065ec-b84d-57bf-a419-ed36317a86c4,epoch,gpt-5.6-luna_high,5
 caf13123-b6ac-5e1b-a12c-160af30d3c53,epoch,gpt-5-nano-2025-08-07_high,7
@@ -1297,6 +1299,7 @@ cb9c41f2-b5a0-5530-aadd-97b691c0ce17,epoch,qwen3.7-plus,5
 cb9c41f2-b5a0-5530-aadd-97b691c0ce17,epoch_live,qwen3.7-plus,4
 cba2ed31-eaef-563a-a241-280fedc2b807,epoch,Llama-4-Maverick-17B-128E-Instruct,12
 cba2ed31-eaef-563a-a241-280fedc2b807,epoch,chutes/Llama-4-Maverick-17B-128E-Instruct,2
+cba2ed31-eaef-563a-a241-280fedc2b807,epoch_live,Llama-4-Maverick-17B-128E-Instruct-FP8,3
 cba2ed31-eaef-563a-a241-280fedc2b807,rand,Llama 4 Maverick,15
 cba2ed31-eaef-563a-a241-280fedc2b807,seal,Llama 4 Maverick,1
 cba2ed31-eaef-563a-a241-280fedc2b807,seal,Llama-4-Maverick,1
@@ -1370,7 +1373,9 @@ d6a3862e-554d-5351-bd84-564bb1df3fcd,epoch_live,qwen1.5-32b-chat,1
 d74cdcff-da5a-5bfe-96d2-d916960474d3,epoch,gemini-3.1-flash-lite,6
 d74cdcff-da5a-5bfe-96d2-d916960474d3,kaggle,gemini-3.1-flash-lite-preview,1
 d74cdcff-da5a-5bfe-96d2-d916960474d3,seal,gemini-3.1-flash-lite-preview,4
+d78d0734-95a3-57d1-876c-cd11b66e9b27,epoch,open-mixtral-8x7b,1
 d78d0734-95a3-57d1-876c-cd11b66e9b27,epoch_live,Mixtral-8x7B-Instruct-v0.1,2
+d78d0734-95a3-57d1-876c-cd11b66e9b27,epoch_live,open-mixtral-8x7b,2
 d78d0734-95a3-57d1-876c-cd11b66e9b27,rand,Mixtral 8x7b,15
 d7bf5579-afe8-503e-80a7-6009572bf0e2,epoch,openai/gpt-oss-120b_low,1
 d7fc6eac-b749-56f3-ad44-0523249219bf,epoch,Llama-2-13b-chat,5
@@ -1499,7 +1504,6 @@ eeca198f-e209-5cbc-9332-e554b980a9d7,seal,claude-sonnet-4-thinking,1
 ef6e7801-9304-5c13-b031-de20797f0046,epoch,grok-4.6_xhigh,8
 ef6e7801-9304-5c13-b031-de20797f0046,epoch_live,grok-4.6_xhigh,8
 efc6d28a-d826-5c78-86e6-82e98b8ecf55,epoch,deepseek-chat,3
-efc6d28a-d826-5c78-86e6-82e98b8ecf55,epoch_live,deepseek-chat,3
 f02ed5ff-7ca1-56e1-964c-070b350292b3,epoch,step-3.7-flash,1
 f0a043af-905f-58a7-82fd-a492d5edf7a1,epoch,chutes/Qwen3-Next-80B-A3B-Instruct,1
 f0a043af-905f-58a7-82fd-a492d5edf7a1,epoch,deepinfra/Qwen3-Next-80B-A3B-Instruct,1
@@ -1530,7 +1534,6 @@ f4da164f-bed2-56a8-996c-d9e4a63284a2,epoch,Baichuan2-13B-Chat,4
 f525c6a7-0b9d-5822-9988-8c7ee00e8e7e,epoch,Baichuan-2-13B-Base,10
 f5511fa3-1e3c-5e08-95be-0bfc96e5ab7c,epoch,nova-2.0-pro-preview_none,2
 f58ed103-2670-5d10-a6da-5774627db5a3,epoch,deepseek-v4-flash_unknown,1
-f5f6435d-fc25-5b14-bd30-a8ce7b3f7efb,epoch_live,kimi-k2-thinking-turbo,3
 f603f731-bd9b-51e6-b40b-0e4569091392,epoch,LLaMA-7B,43
 f6521b57-572c-5c47-a59c-cdc9298174e0,epoch,RedPajama-INCITE-7B-Base,7
 f68b0e59-157b-5116-9755-81edb45f60bd,epoch,o1-2024-12-17_high,6
@@ -1589,9 +1592,6 @@ fde65c8e-7992-52fe-854f-0439e4245541,epoch,Mistral-7B-Instruct-v0.3,1
 fde65c8e-7992-52fe-854f-0439e4245541,epoch_live,Mistral-7B-Instruct-v0.3,4
 fe118602-7980-5b85-bbd9-4feb9e7eb9ca,epoch,starcoder2-3b,4
 fe2cfe5f-5e97-53fd-b978-553ae1b37ff9,epoch,gemini-3-pro-preview_low,1
-fe4240a2-c923-50b2-a0ee-dfdc37ed6f69,epoch,mistral-small-2503,2
-fe4240a2-c923-50b2-a0ee-dfdc37ed6f69,epoch_live,mistral-small-2503,3
-fe9600d2-9dfb-58ba-a2cf-34c619f875ad,epoch,mistral-small-2506,2
 fed155d2-f6ea-5e34-99da-0f5a37e6ab09,epoch,gpt-3.5-turbo-0125,4
 fed155d2-f6ea-5e34-99da-0f5a37e6ab09,epoch_live,gpt-3.5-turbo-0125,6
 fed155d2-f6ea-5e34-99da-0f5a37e6ab09,rand,gpt-3.5-turbo-0125,5

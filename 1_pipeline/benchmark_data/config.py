@@ -97,9 +97,9 @@ STATUS_INCLUDED = "included"
 
 # `access` classes in benchmarks.csv: how exposed the scored items are to training data.
 ACCESS_CLASSES = frozenset({
-    "public",         # the scored item set is downloadable
+    "public",         # the scored set downloads without human review (automatic gate included)
     "semi_private",   # a public sample or training split; the scored set is held out
-    "private",        # never released (results only, or available on request)
+    "private",        # never released (results only, or on request, reviewed by a human)
     "dynamic",        # items regenerated or refreshed over time
     "open_problems",  # statements public but unsolved: nothing to memorise (Erdos, OEIS)
 })
