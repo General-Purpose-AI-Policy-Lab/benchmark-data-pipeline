@@ -77,7 +77,6 @@ b9ebbe3a-3aea-5306-a334-d3cf42d1db31,OSWorld,Agentic Computer Use,0.0,,public
 cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,Mathematics,0.001,,public
 362fe089-970b-5a6d-b539-ab9245f63878,OpenBookQA,Trivia & Commonsense QA,0.25,,public
 52dbd75e-8f17-5888-a0de-00593c63a0a0,PIQA,Trivia & Commonsense QA,0.5,,public
-20485e14-925b-5252-b6c3-148a7a12c629,PRBench,Domain Specific Questions,0,,public
 09d827ed-6ae3-5b60-8641-66a733170178,PostTrainBench v1.1,Autonomous SWE,0.0,,public
 612673c9-c8bb-5f0a-b8f9-07f27a325173,ProofBench,Mathematics,0.0,,semi_private
 8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,Remote Labor Index,Core AGI Progress,0.0,,semi_private

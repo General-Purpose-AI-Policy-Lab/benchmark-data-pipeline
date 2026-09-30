@@ -38,7 +38,6 @@ cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,High School Qualif
 cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,High School Top Performer,0.93,top scorer from the OTIS program (percentage from number of questions answered),https://web.evanchen.cc/exams/sols-OTIS-Mock-AIME-2025.pdf
 362fe089-970b-5a6d-b539-ab9245f63878,OpenBookQA,Average Human,0.92,probability from random human subjects,https://arxiv.org/pdf/1809.02789
 52dbd75e-8f17-5888-a0de-00593c63a0a0,PIQA,Committee of Skilled Generalists,0.949,majority vote of top annotators,https://arxiv.org/pdf/1911.11641
-20485e14-925b-5252-b6c3-148a7a12c629,PRBench,Committee of Domain Experts,0.796,agreement between human experts (same figure for the Finance and Legal boards),https://arxiv.org/pdf/2511.11562v1
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,Average Human,0.837,nine non-specialized humans,https://simple-bench.com/
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,Top Performer,0.954,Highest human score reported on the official leaderboard.,https://simple-bench.com/
 989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Skilled Generalist,0.944,Grader Going through the test,OpenAI arXiv 2411.04368 §2.2

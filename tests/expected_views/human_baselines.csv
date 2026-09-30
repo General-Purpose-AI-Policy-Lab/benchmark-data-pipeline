@@ -38,7 +38,6 @@ OTIS Mock AIME 2024-2025,High School Qualifier,0.53,average score by high school
 OTIS Mock AIME 2024-2025,High School Top Performer,0.93,top scorer from the OTIS program (percentage from number of questions answered),https://web.evanchen.cc/exams/sols-OTIS-Mock-AIME-2025.pdf
 OpenBookQA,Average Human,0.92,probability from random human subjects,https://arxiv.org/pdf/1809.02789
 PIQA,Committee of Skilled Generalists,0.949,majority vote of top annotators,https://arxiv.org/pdf/1911.11641
-PRBench,Committee of Domain Experts,0.796,agreement between human experts (same figure for the Finance and Legal boards),https://arxiv.org/pdf/2511.11562v1
 SimpleBench,Average Human,0.837,nine non-specialized humans,https://simple-bench.com/
 SimpleBench,Top Performer,0.954,Highest human score reported on the official leaderboard.,https://simple-bench.com/
 SimpleQA Verified,Skilled Generalist,0.944,Grader Going through the test,OpenAI arXiv 2411.04368 §2.2

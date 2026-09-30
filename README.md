@@ -100,7 +100,7 @@ Derived from the four tables at every build, never edited by hand:
 - **Harness is not identity.** A model's score on a benchmark is its best score across harnesses; the winning harness is recorded on the score row.
 - **`score ∈ [0, 1]`** (no percentages).
 - **Dedup**, in this order: exact duplicates merged; otherwise `max`. Kaggle's independent re-runs are recorded as a harness (`Kaggle Open Benchmarks`), so they compete like any other run.
-- **Sibling boards** listed in `0_input/metadata/sibling_merges.csv` (PRBench Finance + Legal, the three SWE Atlas boards) are averaged per model into one series after deduplication.
+- **Sibling boards** listed in `0_input/metadata/sibling_merges.csv` (the three SWE Atlas boards; PRBench Finance + Legal too, though PRBench is excluded since 2026-09-30) are averaged per model into one series after deduplication.
 
 ## Benchmark scope
 
