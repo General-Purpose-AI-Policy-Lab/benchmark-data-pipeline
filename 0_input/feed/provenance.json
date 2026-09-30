@@ -67,6 +67,12 @@
     "sha256": "76a9087d064f607796aa11fd0b0ccb249ce78765de4ea131845e3aa26391a4f3",
     "url": "https://labs.scale.com/leaderboard/hil"
   },
+  "0_input/feed/seal/hle-diamond.html": {
+    "byte_size": 105070,
+    "fetched_at": "2026-09-30T12:20:30.571583+00:00",
+    "sha256": "73ba2341e606a371ba4ade94dc6415a84c7f66a74b9b2553e636c8872e028ca3",
+    "url": "https://labs.scale.com/leaderboard/hle-diamond"
+  },
   "0_input/feed/seal/instruction_following.html": {
     "byte_size": 116155,
     "fetched_at": "2026-09-29T20:25:31.423430+00:00",
@@ -120,6 +126,12 @@
     "fetched_at": "2026-09-29T20:18:20.627463+00:00",
     "sha256": "214692a80a25aecdce6d5505488b7974e7391aec16a4eacae57d59d82c289c66",
     "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
+  },
+  "0_input/feed/seal/swe_bench_pro_public_v2.html": {
+    "byte_size": 134298,
+    "fetched_at": "2026-09-30T12:20:30.571583+00:00",
+    "sha256": "2eedbcedbed15cb5a23db594f89d97365b1aea8cf880a7ffca375d2f29290bf7",
+    "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_v2"
   },
   "0_input/feed/seal/sweatlas-qna.html": {
     "byte_size": 142485,

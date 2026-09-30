@@ -18,7 +18,7 @@ model_id,feed,raw_name,n_records
 02c815e3-13ad-5cf3-9aa1-9feb9b8e9763,epoch,qwen3.8-27b_none,1
 03ac9333-e111-5a50-8ee5-850feae1b8f4,epoch,o1-pro-2025-03-19_low,1
 0413d73c-7ab7-5a13-992e-0dfa97b70b2a,epoch,INTELLECT-1-Instruct,5
-0467e0f7-4248-522e-9509-dad2d9fc1b10,epoch,o3-2025-04-16_high,13
+0467e0f7-4248-522e-9509-dad2d9fc1b10,epoch,o3-2025-04-16_high,12
 0467e0f7-4248-522e-9509-dad2d9fc1b10,epoch_live,o3-2025-04-16_high,7
 0467e0f7-4248-522e-9509-dad2d9fc1b10,seal,o3 (high) (April 2025),1
 0467e0f7-4248-522e-9509-dad2d9fc1b10,seal,o3-2025-04-16-high,2
@@ -34,14 +34,15 @@ model_id,feed,raw_name,n_records
 063d677b-8efb-5050-b0e2-5510654c05a9,epoch_live,claude-sonnet-4-6_medium,3
 064d6bba-cf57-5cd0-b569-ab2110036c8c,epoch,claude-opus-5_xhigh,6
 064d6bba-cf57-5cd0-b569-ab2110036c8c,seal,Opus 5 (Claude Code) xHigh,2
+064d6bba-cf57-5cd0-b569-ab2110036c8c,seal,Opus 5 (Claude Code) xhigh,1
 064d6bba-cf57-5cd0-b569-ab2110036c8c,seal,claude-opus-5 (xhigh),1
 06b1d506-8ef8-5630-9824-5ceb3ca9df60,epoch,deepseek-coder-6.7b-base,4
 06eeabcc-3949-538e-ade2-18c52db2ed18,epoch,openhands-lm-32b-v0.1,1
 077de9e5-6192-53f4-91ca-dec21e8a0d76,epoch,muse-spark-1.3_xhigh,1
 077de9e5-6192-53f4-91ca-dec21e8a0d76,epoch_live,muse-spark-1.3_xhigh,5
-07bc8271-6431-5b0d-b122-6fcc0d10aac3,epoch,gemini-2.5-flash-preview-04-17,5
+07bc8271-6431-5b0d-b122-6fcc0d10aac3,epoch,gemini-2.5-flash-preview-04-17,4
 07bc8271-6431-5b0d-b122-6fcc0d10aac3,epoch_live,gemini-2.5-flash-preview-04-17,1
-07bdb7d6-dfe1-5cb9-ac0a-c63afc461cf7,epoch,gemini-3-pro-preview,23
+07bdb7d6-dfe1-5cb9-ac0a-c63afc461cf7,epoch,gemini-3-pro-preview,22
 07bdb7d6-dfe1-5cb9-ac0a-c63afc461cf7,epoch_cyber,Gemini 3 Pro,1
 07bdb7d6-dfe1-5cb9-ac0a-c63afc461cf7,epoch_live,gemini-3-pro-preview,3
 07bdb7d6-dfe1-5cb9-ac0a-c63afc461cf7,kaggle,gemini-3-pro-preview,2
@@ -64,7 +65,7 @@ model_id,feed,raw_name,n_records
 0c6fd64b-5df2-53aa-a2df-79253d8f3f55,epoch,inkling-small_minimal,2
 0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,cybench_site,Claude Opus 4.5,1
 0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,epoch,claude-opus-4-5-20251101,8
-0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,epoch,claude-opus-4-5-20251101_unknown,18
+0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,epoch,claude-opus-4-5-20251101_unknown,16
 0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,epoch_cyber,Claude Opus 4.5,7
 0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,epoch_live,claude-opus-4-5-20251101,3
 0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,kaggle,claude-opus-4-5-20251101,1
@@ -77,23 +78,27 @@ model_id,feed,raw_name,n_records
 0f47e29e-4cd2-5e9a-92b5-cad6606881fe,epoch_live,gpt-5-mini-2025-08-07_minimal,5
 0f4c509b-64de-599a-a793-c5bb8bd49ae3,epoch,phi-4,3
 0f4c509b-64de-599a-a793-c5bb8bd49ae3,epoch_live,phi-4,4
-0f650a33-dc38-52de-9f1c-a3bff1f0fde4,epoch,gemini-3.8-flash_unknown,6
+0f650a33-dc38-52de-9f1c-a3bff1f0fde4,epoch,gemini-3.8-flash_unknown,5
 0f650a33-dc38-52de-9f1c-a3bff1f0fde4,kaggle,gemini-3.8-flash,3
 0f650a33-dc38-52de-9f1c-a3bff1f0fde4,seal,Gemini 3.8 Flash,1
 0f650a33-dc38-52de-9f1c-a3bff1f0fde4,seal,Gemini 3.8 Flash (Mini-SWE-Agent),3
+0f650a33-dc38-52de-9f1c-a3bff1f0fde4,seal,gemini-3.8-flash,1
 0f752481-e609-514a-b140-2ed9978ceb46,epoch_live,gemini-3.5-flash_low,4
 0fec690a-4610-534d-99c6-5b0609a87077,epoch,gpt-6-astra_high,7
 0fec690a-4610-534d-99c6-5b0609a87077,epoch_live,gpt-6-astra_high,2
+0fec690a-4610-534d-99c6-5b0609a87077,seal,GPT-6 Astra (Codex) high,1
 10210055-d63c-5213-878a-802705130916,epoch_live,deepseek-reasoner,3
 10524a65-e119-5863-8c22-d51ea587a368,epoch,Qwen2.5-Coder-14B-Instruct,1
 107b0b36-d79f-5e30-8078-71f3191428b7,epoch_live,gpt-5.5-pro-pre-release_xhigh,3
 10c5e4a8-15c5-54f6-96d7-a247f370affc,epoch,grok-build-0.1,2
 11686f68-ca79-59b2-be91-97458bc5e8cc,epoch,deepseek-v4-flash-0731_none,2
 118a77a9-34a8-565a-a5ba-264c7f821cce,epoch,gpt-5.6-sol_xhigh,11
+118a77a9-34a8-565a-a5ba-264c7f821cce,seal,GPT-5.6 Sol (Codex) xhigh,1
 118a77a9-34a8-565a-a5ba-264c7f821cce,seal,GPT-5.6-Sol (Codex) xHigh,2
 118b930b-342d-5c7f-9de6-37b80ecb6e1b,epoch,claude-sonnet-4-5-20250929_8K,2
 11fa2262-1e64-5e53-b0db-6ed4d1de3c0d,epoch,kimi-k3_max,11
 11fa2262-1e64-5e53-b0db-6ed4d1de3c0d,epoch_live,kimi-k3_max,8
+11fa2262-1e64-5e53-b0db-6ed4d1de3c0d,seal,Kimi-K3 (mini-swe-agent) max,1
 11fa2262-1e64-5e53-b0db-6ed4d1de3c0d,seal,kimi-k3 (max),1
 120881b5-9b10-5c27-8e5d-42c8c2b6a57a,epoch,swe-1.7,1
 121561f5-02bd-5b1a-95c5-8e6b2e6251f8,epoch,gpt-5.4-mini-2026-03-17_xhigh,8
@@ -106,7 +111,7 @@ model_id,feed,raw_name,n_records
 12a86b28-183b-576b-945c-7e451907290f,epoch_live,qwen3.6-plus,5
 12c9d283-d7c8-5516-acc8-1ab17dc95512,epoch,claude-sonnet-4-5-20250929_12K,1
 12cd417d-b91c-5d69-89be-ac98bfe25dc5,epoch,claude-haiku-4-5-20251001_8K,2
-12d3d541-0737-514e-9413-19ccf2d4eadd,epoch,gemini-2.0-flash-thinking-exp-01-21,6
+12d3d541-0737-514e-9413-19ccf2d4eadd,epoch,gemini-2.0-flash-thinking-exp-01-21,5
 12d3d541-0737-514e-9413-19ccf2d4eadd,epoch_live,gemini-2.0-flash-thinking-exp-01-21,2
 12d3d541-0737-514e-9413-19ccf2d4eadd,seal,Gemini 2.0 Flash Thinking Experimental (January 2025),1
 12f17606-8492-5140-8837-a1de1f2a9211,epoch,mistral-medium-2508,4
@@ -163,11 +168,12 @@ model_id,feed,raw_name,n_records
 1b9972b8-5e8e-5113-b881-1dced6e024ff,epoch,qwen3-30b-a3b-thinking-2507,3
 1b9972b8-5e8e-5113-b881-1dced6e024ff,epoch_live,qwen3-30b-a3b-thinking-2507,3
 1bc5c2c3-b434-5ab8-8635-7a044ae52697,epoch,bloom,2
-1c449230-2b68-53ba-8d2d-aa9a5d626314,epoch,gemini-2.5-pro-preview-05-06,9
+1c449230-2b68-53ba-8d2d-aa9a5d626314,epoch,gemini-2.5-pro-preview-05-06,8
 1c449230-2b68-53ba-8d2d-aa9a5d626314,epoch_live,gemini-2.5-pro-preview-05-06,2
 1c449230-2b68-53ba-8d2d-aa9a5d626314,seal,Gemini 2.5 Pro Preview (May 06 2025),1
 1c922516-3585-503a-8965-2f65aaff0550,epoch,gemini-3.8-flash_high,6
 1c922516-3585-503a-8965-2f65aaff0550,epoch_live,gemini-3.8-flash_high,8
+1c922516-3585-503a-8965-2f65aaff0550,seal,Gemini 3.8 Flash (mini-swe-agent) high,1
 1c922516-3585-503a-8965-2f65aaff0550,seal,gemini-3.8-flash (high),1
 1cbe5f70-c17d-5722-a80b-a027eb37e29e,epoch,grok-code-fast-1,5
 1ce86ac8-9fb9-5fb7-90b6-87cfe5315b0b,epoch,Inkling,6
@@ -179,7 +185,7 @@ model_id,feed,raw_name,n_records
 1df830e6-9551-5055-8ae0-76466bea7987,epoch,zai-org/glm-4.7,1
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,cybench_site,Claude Opus 4.1,1
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,epoch,claude-opus-4-1-20250805,11
-1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,epoch,claude-opus-4-1-20250805_unknown,10
+1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,epoch,claude-opus-4-1-20250805_unknown,8
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,epoch_cyber,Claude Opus 4.1,2
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,epoch_live,claude-opus-4-1-20250805,4
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,kaggle,claude-opus-4-1-20250805,3
@@ -207,6 +213,7 @@ model_id,feed,raw_name,n_records
 221eb942-ffb1-5e7b-a004-600f2240047e,epoch,gemma-2b,7
 226cc003-cea3-52af-8a76-60aeccd137f2,epoch,gpt-5.4-nano-2026-03-17_xhigh,7
 238554ce-9fb9-517a-aeca-84288b659a60,epoch,kimi-k3_unknown,7
+238554ce-9fb9-517a-aeca-84288b659a60,seal,kimi-k3,1
 23922039-5399-53c8-b080-f15680159c89,epoch,kimi-k2.5,1
 239914c4-2ef7-588b-8182-326dabf082cb,epoch,Qwen3-235B-A22B,4
 239914c4-2ef7-588b-8182-326dabf082cb,epoch,qwen3-235b-a22b,2
@@ -274,6 +281,7 @@ model_id,feed,raw_name,n_records
 315f1a07-56b2-5fcb-9bdb-f28716a16d02,epoch,claude-opus-5_unknown,4
 315f1a07-56b2-5fcb-9bdb-f28716a16d02,epoch_live,claude-opus-5,4
 315f1a07-56b2-5fcb-9bdb-f28716a16d02,kaggle,claude-opus-5,3
+315f1a07-56b2-5fcb-9bdb-f28716a16d02,seal,claude-opus-5,1
 318de742-7d7e-5306-a6f4-3a8a02ef8cae,epoch,grok-4.5_unknown,6
 318de742-7d7e-5306-a6f4-3a8a02ef8cae,kaggle,grok-4.5-0708,3
 318e1057-09ba-5729-9d62-91d8ff8dc165,epoch,gemini-3.5-flash-lite_minimal,2
@@ -308,7 +316,7 @@ model_id,feed,raw_name,n_records
 36245fe9-a558-5665-b8b3-60953f394cf8,seal,gpt-realtime-mini-2025-12-15,2
 362f651c-89c0-5695-b6f4-9f506f07c44a,rand,Unsafety Llama,15
 3653a9c7-329a-5229-ba85-3bfdde8f258d,epoch,Qwen-7B,5
-367af7ab-6a2d-56d5-b1e0-308932246010,epoch,o4-mini-2025-04-16_medium,10
+367af7ab-6a2d-56d5-b1e0-308932246010,epoch,o4-mini-2025-04-16_medium,9
 367af7ab-6a2d-56d5-b1e0-308932246010,epoch_live,o4-mini-2025-04-16_medium,4
 367af7ab-6a2d-56d5-b1e0-308932246010,rand,o4 Mini,15
 367af7ab-6a2d-56d5-b1e0-308932246010,seal,o4-mini (medium) (April 2025),1
@@ -328,9 +336,10 @@ model_id,feed,raw_name,n_records
 391836ae-8a87-5e69-8a84-2015a38bad88,epoch,qwen3.8-27b,3
 39453e91-c716-5830-91a2-1e6f775d6dae,epoch,text-curie-001,2
 3987e171-5f10-59b2-ab14-b09b2e2c5f52,epoch,mimo-v2-pro,1
+39bbc212-b924-545f-af28-a227674747c1,seal,gpt-6-sol,1
 3a4d9ba0-8a0c-5e6d-8ecb-77766cb0a33e,seal,Manus_1.6 (Max),1
 3a6ddf43-bed3-527c-b659-5290a5e7a411,epoch,gemini-3.5-flash-lite_medium,2
-3ae3be7a-98cf-500b-b96a-8f2cc42cb508,epoch,o3-2025-04-16_medium,16
+3ae3be7a-98cf-500b-b96a-8f2cc42cb508,epoch,o3-2025-04-16_medium,15
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,epoch_live,o3-2025-04-16_medium,5
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,rand,o3,15
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,seal,o3,2
@@ -349,7 +358,7 @@ model_id,feed,raw_name,n_records
 3d1b7395-02a1-5d64-93f5-2773fa3dc247,epoch_live,o3-mini-2025-01-31_medium,5
 3d1b7395-02a1-5d64-93f5-2773fa3dc247,rand,o3 Mini,15
 3d1b7395-02a1-5d64-93f5-2773fa3dc247,seal,o3-mini (medium),1
-3daa088c-0460-52bb-9885-f0a9488ce842,epoch,gpt-5.1-2025-11-13_unknown,5
+3daa088c-0460-52bb-9885-f0a9488ce842,epoch,gpt-5.1-2025-11-13_unknown,4
 3daa088c-0460-52bb-9885-f0a9488ce842,epoch_cyber,GPT-5.1,1
 3daa088c-0460-52bb-9885-f0a9488ce842,kaggle,gpt-5.1-2025-11-13,1
 3db125e8-9042-5e9b-a9c3-0659eede4f58,epoch,grok-4.5_medium,2
@@ -420,6 +429,7 @@ model_id,feed,raw_name,n_records
 47074565-ab4c-5510-9867-172d77a733b5,seal,Llama 3.1 70B Instruct,1
 47703064-5ddb-5a1a-a6cd-c32ee3fe0786,epoch,Inkling_xhigh,4
 47703064-5ddb-5a1a-a6cd-c32ee3fe0786,epoch_live,Inkling_xhigh,6
+47703064-5ddb-5a1a-a6cd-c32ee3fe0786,seal,Inkling (mini-swe-agent) xhigh,1
 47703064-5ddb-5a1a-a6cd-c32ee3fe0786,seal,Inkling (xHigh),1
 478028ef-b9e3-510d-9c64-c708e9855b98,seal,Qwen 3.7 Max (mini-SWE-agent) xhigh,1
 481d5f25-a5dc-526d-bc09-df38fac19028,epoch,gpt-5-pro-2025-10-06_high,3
@@ -454,6 +464,7 @@ model_id,feed,raw_name,n_records
 4d954779-ad1e-5d2b-9cb9-242672f84c66,epoch_live,gpt-5.6-sol_none,4
 4da8fd41-ac04-528d-8f29-7944a162802a,epoch,glm-5.3_max,6
 4da8fd41-ac04-528d-8f29-7944a162802a,epoch_live,glm-5.3_max,7
+4da8fd41-ac04-528d-8f29-7944a162802a,seal,GLM-5.3 (mini-swe-agent) max,1
 4db0655c-d431-51aa-9522-8cef774c35a0,epoch_live,qwen-plus-2025-01-25,3
 4dcc1c3d-d6f3-5b40-a0cf-f95ac6f81ac0,epoch,gpt-5.6-sol_low,6
 4dcc1c3d-d6f3-5b40-a0cf-f95ac6f81ac0,epoch_live,gpt-5.6-sol_low,4
@@ -482,7 +493,7 @@ model_id,feed,raw_name,n_records
 51ecf54c-193e-5223-ac0b-917993054698,epoch,claude-opus-4-6_medium,1
 51f8a52b-96a1-51ce-bacc-56a855cf0164,cybench_site,Claude 3.7 Sonnet,1
 51f8a52b-96a1-51ce-bacc-56a855cf0164,epoch,claude-3-7-sonnet-20250219,18
-51f8a52b-96a1-51ce-bacc-56a855cf0164,epoch,claude-3-7-sonnet-20250219_unknown,4
+51f8a52b-96a1-51ce-bacc-56a855cf0164,epoch,claude-3-7-sonnet-20250219_unknown,3
 51f8a52b-96a1-51ce-bacc-56a855cf0164,epoch_cyber,Claude 3.7 Sonnet,5
 51f8a52b-96a1-51ce-bacc-56a855cf0164,epoch_live,claude-3-7-sonnet-20250219,3
 51f8a52b-96a1-51ce-bacc-56a855cf0164,kaggle,claude-3-7-sonnet-20250219,2
@@ -522,6 +533,7 @@ model_id,feed,raw_name,n_records
 5680f719-6af7-56ac-9fa8-561357fbfe14,epoch_cyber,GPT-5.6 Sol,5
 5680f719-6af7-56ac-9fa8-561357fbfe14,kaggle,gpt-5.6-sol,2
 5680f719-6af7-56ac-9fa8-561357fbfe14,seal,gpt-5.6 (sol),1
+5680f719-6af7-56ac-9fa8-561357fbfe14,seal,gpt-5.6-sol,1
 56cbdc52-943f-5d2b-8c99-0543356c1ea2,epoch_live,claude-sonnet-4-5-20250929_59K,3
 56ccff5a-c5ab-5d27-9b95-55c634bf0917,seal,LFM2-Audio-1.5B,1
 56f72247-d867-501b-a569-7903ee26a60d,epoch_live,claude-opus-4-6_32K,3
@@ -552,7 +564,7 @@ model_id,feed,raw_name,n_records
 5d812c04-74c7-52f8-9cfc-ce7e402800ed,epoch_live,gpt-5.6-terra_low,4
 5dee249b-019f-5f65-83e1-5009325d080f,cybench_site,Claude Sonnet 4,1
 5dee249b-019f-5f65-83e1-5009325d080f,epoch,claude-sonnet-4-20250514,14
-5dee249b-019f-5f65-83e1-5009325d080f,epoch,claude-sonnet-4-20250514_unknown,8
+5dee249b-019f-5f65-83e1-5009325d080f,epoch,claude-sonnet-4-20250514_unknown,6
 5dee249b-019f-5f65-83e1-5009325d080f,epoch_cyber,Claude Sonnet 4,2
 5dee249b-019f-5f65-83e1-5009325d080f,epoch_live,claude-sonnet-4-20250514,3
 5dee249b-019f-5f65-83e1-5009325d080f,kaggle,claude-sonnet-4-20250514,2
@@ -572,7 +584,7 @@ model_id,feed,raw_name,n_records
 5e538b9d-bf72-57c4-b07d-61b64c1b5f31,epoch,deepseek-v4-pro-0813_high,3
 5f41b045-fc87-5552-9dfd-d1b07ec44ddf,cybench_site,Claude Opus 4.7,1
 5f41b045-fc87-5552-9dfd-d1b07ec44ddf,epoch,claude-opus-4-7,4
-5f41b045-fc87-5552-9dfd-d1b07ec44ddf,epoch,claude-opus-4-7_unknown,7
+5f41b045-fc87-5552-9dfd-d1b07ec44ddf,epoch,claude-opus-4-7_unknown,6
 5f41b045-fc87-5552-9dfd-d1b07ec44ddf,epoch_cyber,Claude Opus 4.7,5
 5f41b045-fc87-5552-9dfd-d1b07ec44ddf,epoch_live,claude-opus-4-7,1
 5f41b045-fc87-5552-9dfd-d1b07ec44ddf,seal,Opus 4.7 (Claude Code),2
@@ -584,6 +596,7 @@ model_id,feed,raw_name,n_records
 5fc62113-b987-5a16-b82f-7b3a8d83109b,seal,GPT-4.1 mini,1
 5fc62113-b987-5a16-b82f-7b3a8d83109b,seal,gpt-4.1-mini,2
 6021526e-96c9-5a69-b4bb-a3364b585af7,epoch,Qwen2.5-Coder-32B,6
+608036c5-b072-5c93-b894-9f5e26b2a73c,seal,Haiku 4.5 (Claude Code) xhigh,1
 60a59eee-6cdd-5727-92e5-72d89bbad697,epoch,gpt-4-0125-preview,1
 60a59eee-6cdd-5727-92e5-72d89bbad697,epoch_live,gpt-4-0125-preview,2
 60a59eee-6cdd-5727-92e5-72d89bbad697,seal,GPT-4 Turbo Preview,1
@@ -634,12 +647,12 @@ model_id,feed,raw_name,n_records
 67e53df5-5398-5b75-9ed9-c2f5ccac41e8,epoch,gpt-5.6-terra_max,8
 67e53df5-5398-5b75-9ed9-c2f5ccac41e8,epoch_live,gpt-5.6-terra_max,8
 68234935-1d21-54ea-9288-18a3ec1de754,epoch,claude-instant-1.1,6
-6847be80-1aba-53a9-b573-5bf4e3ac3d41,epoch,gpt-5.4-pro-2026-03-05_unknown,3
+6847be80-1aba-53a9-b573-5bf4e3ac3d41,epoch,gpt-5.4-pro-2026-03-05_unknown,2
 6847be80-1aba-53a9-b573-5bf4e3ac3d41,seal,gpt-5.4-pro-2026-03-05,4
 6850cfcb-e6a3-5af4-af60-5dc27a6c10d4,epoch,gpt-5.2-2025-12-11_medium,6
 6850cfcb-e6a3-5af4-af60-5dc27a6c10d4,epoch_live,gpt-5.2-2025-12-11_medium,5
 6850cfcb-e6a3-5af4-af60-5dc27a6c10d4,seal,gpt-5.2-2025-12-11 (medium),1
-68d306f4-b122-5f89-9d4a-63530ced57ca,epoch,gpt-5.2-2025-12-11_unknown,11
+68d306f4-b122-5f89-9d4a-63530ced57ca,epoch,gpt-5.2-2025-12-11_unknown,10
 68d306f4-b122-5f89-9d4a-63530ced57ca,epoch_cyber,GPT-5.2,1
 68d306f4-b122-5f89-9d4a-63530ced57ca,seal,gpt-5.2-2025-12-11,3
 68d306f4-b122-5f89-9d4a-63530ced57ca,seal,gpt-5.2-2025-12-11 (default),1
@@ -666,11 +679,12 @@ model_id,feed,raw_name,n_records
 6c45daf1-b7b0-5024-8a90-c4e943accd6e,epoch,claude-opus-4-8_low,4
 6c45daf1-b7b0-5024-8a90-c4e943accd6e,epoch_live,claude-opus-4-8_low,3
 6c4bc89c-df7e-5713-ac5b-93e9f0e37d87,epoch,Baichuan-7B,3
-6cfe95c0-5e74-53e7-8639-a22305eb33c6,epoch,amazon.nova-pro-v1:0,4
+6cfe95c0-5e74-53e7-8639-a22305eb33c6,epoch,amazon.nova-pro-v1:0,3
 6cfe95c0-5e74-53e7-8639-a22305eb33c6,rand,Amazon Nova 1.0 Pro,15
 6cfe95c0-5e74-53e7-8639-a22305eb33c6,seal,Nova Pro,2
 6db2d995-cd7e-5b1e-bd94-11f1f86b44ae,epoch,claude-fable-5-1_high,8
 6db2d995-cd7e-5b1e-bd94-11f1f86b44ae,epoch_live,claude-fable-5-1_high,1
+6db2d995-cd7e-5b1e-bd94-11f1f86b44ae,seal,Fable 5.1 (Claude Code) high,1
 6e670a0d-408c-5a4b-a75b-91dca7a5ee80,epoch_live,claude-opus-4-1-20250805_32K,2
 6e6c8e69-c604-5a59-bc25-d61806c2f762,epoch,gpt-5.6-sol_high,8
 6e6c8e69-c604-5a59-bc25-d61806c2f762,epoch_live,gpt-5.6-sol_high,1
@@ -705,12 +719,12 @@ model_id,feed,raw_name,n_records
 7319b511-d3bf-5d03-8195-9ca00e689997,epoch_live,qwen3.8-max_xhigh,7
 7338e6da-a106-58d5-906a-41efd1754885,epoch,reka-flash-3,1
 73c1debc-e12f-5d1a-acbc-06b1ce8d63b8,epoch,Llama-3.1-405B,6
-7410d386-29ee-5d20-89ca-12baf77706fc,epoch,gemini-2.5-pro-preview-06-05,10
+7410d386-29ee-5d20-89ca-12baf77706fc,epoch,gemini-2.5-pro-preview-06-05,9
 7410d386-29ee-5d20-89ca-12baf77706fc,epoch_live,gemini-2.5-pro-preview-06-05,1
 7410d386-29ee-5d20-89ca-12baf77706fc,kaggle,gemini-2.5-pro-preview-06-05,2
 7410d386-29ee-5d20-89ca-12baf77706fc,seal,Gemini-2.5-Pro-Preview-06-05,1
 7410d386-29ee-5d20-89ca-12baf77706fc,seal,gemini-2.5-pro-preview-06-05,4
-744a4413-480f-5cd1-a82e-de29142c9b0e,epoch,gpt-4.1-2025-04-14,12
+744a4413-480f-5cd1-a82e-de29142c9b0e,epoch,gpt-4.1-2025-04-14,11
 744a4413-480f-5cd1-a82e-de29142c9b0e,epoch_cyber,GPT-4.1,1
 744a4413-480f-5cd1-a82e-de29142c9b0e,epoch_live,gpt-4.1-2025-04-14,6
 744a4413-480f-5cd1-a82e-de29142c9b0e,kaggle,gpt-4.1-2025-04-14,2
@@ -718,6 +732,7 @@ model_id,feed,raw_name,n_records
 744a4413-480f-5cd1-a82e-de29142c9b0e,seal,gpt-4.1,3
 744a4413-480f-5cd1-a82e-de29142c9b0e,seal,gpt-4.1-2025-04-14,1
 7463e790-65c7-57fc-aef8-1882d6bbad53,epoch,gpt-5.6-terra_xhigh,11
+7463e790-65c7-57fc-aef8-1882d6bbad53,seal,GPT-5.6 Terra (Codex) xhigh,1
 749473c4-3aad-5c88-8c88-26a53f054487,epoch,nova-2.0-pro-preview_medium,1
 74b2f207-0a21-5fb9-aa99-66f6698f5df4,epoch,inkling-small_high,2
 74e215b7-9abd-5028-8805-cfd17d748c10,epoch,Phi-3-mini-4k-instruct,8
@@ -759,7 +774,7 @@ model_id,feed,raw_name,n_records
 7be5b569-f2f7-564e-aa3b-cbfa5e7bc68e,epoch_live,seed-oss-36b-instruct,3
 7bee4203-61ac-56b9-aea7-f78f7676c3e7,epoch,claude-3-7-sonnet-20250219_2K,1
 7c1cabfe-0f9f-5341-8a4d-e1e02e55eae9,epoch,gemini-exp-1206,2
-7c37a985-d0af-5754-964c-572841204b2c,epoch,gemini-2.5-pro-exp-03-25,8
+7c37a985-d0af-5754-964c-572841204b2c,epoch,gemini-2.5-pro-exp-03-25,7
 7c37a985-d0af-5754-964c-572841204b2c,epoch,gemini-2.5-pro-preview-03-25,6
 7c37a985-d0af-5754-964c-572841204b2c,epoch_live,gemini-2.5-pro-exp-03-25,1
 7c37a985-d0af-5754-964c-572841204b2c,epoch_live,gemini-2.5-pro-preview-03-25,1
@@ -837,7 +852,7 @@ model_id,feed,raw_name,n_records
 889d8957-edfb-53c4-9791-6c29a8c260f7,rand,Claude 3.0 Opus,15
 889d8957-edfb-53c4-9791-6c29a8c260f7,seal,Claude 3 Opus,2
 8973adc7-3e2e-5413-af9d-f2b551e19e72,cybench_site,Muse Spark,1
-8973adc7-3e2e-5413-af9d-f2b551e19e72,epoch,muse-spark,3
+8973adc7-3e2e-5413-af9d-f2b551e19e72,epoch,muse-spark,2
 8973adc7-3e2e-5413-af9d-f2b551e19e72,epoch_cyber,Muse Spark,2
 8973adc7-3e2e-5413-af9d-f2b551e19e72,epoch_live,muse-spark,2
 8973adc7-3e2e-5413-af9d-f2b551e19e72,seal,Muse Spark,8
@@ -863,7 +878,7 @@ model_id,feed,raw_name,n_records
 8b913c5a-1801-55b7-96bd-6f6910c8350b,epoch,claude-fable-5-1_low,5
 8b9419f5-3eca-5dc4-9e7f-ee51db004f72,epoch,gpt-5.6-luna_max,8
 8b9419f5-3eca-5dc4-9e7f-ee51db004f72,epoch_live,gpt-5.6-luna_max,8
-8bbeb26e-4de4-5385-a54f-10ebe3e46349,epoch,o4-mini-2025-04-16_high,13
+8bbeb26e-4de4-5385-a54f-10ebe3e46349,epoch,o4-mini-2025-04-16_high,12
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,epoch_live,o4-mini-2025-04-16_high,8
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,seal,o4-mini (high) (April 2025),1
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,seal,o4-mini-2025-04-16-reasoning-high,1
@@ -882,19 +897,19 @@ model_id,feed,raw_name,n_records
 8cac752e-06b4-5fd9-ba2e-f225b3c0bd56,epoch_cyber,GPT-5.1 Codex Max,4
 8d0fe565-f965-5403-b74f-fa92de341521,epoch,swe-2_max,1
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,cybench_site,GPT-4.5-preview,1
-8d476f3b-4b92-5bcd-b637-a223b98de9b7,epoch,gpt-4.5-preview-2025-02-27,11
+8d476f3b-4b92-5bcd-b637-a223b98de9b7,epoch,gpt-4.5-preview-2025-02-27,10
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,epoch_cyber,GPT-4.5,1
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,epoch_live,gpt-4.5-preview-2025-02-27,3
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,rand,GPT 4.5 Preview,15
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,seal,GPT-4.5 Preview (February 2025),2
 8d5f1e9e-327c-59f4-b231-a48cd3313042,epoch,Pixtral-12B-2409,1
 8d5f1e9e-327c-59f4-b231-a48cd3313042,seal,Pixtral 12B (September 2024),1
-8d6be96f-eddc-5542-9bde-62bd296941de,epoch,glm-4.5,2
+8d6be96f-eddc-5542-9bde-62bd296941de,epoch,glm-4.5,1
 8d6be96f-eddc-5542-9bde-62bd296941de,seal,glm-4p5,1
 8dd7d776-4252-5efd-8a20-6ca333ad8768,epoch,magistral-small-2509,2
 8dd7d776-4252-5efd-8a20-6ca333ad8768,epoch_live,magistral-small-2509,3
 8eff84b1-5cc4-58c4-9311-ab9689eda07f,epoch_live,DeepSeek-R1-Distill-Qwen-14B,4
-8f302dbd-50ab-5d2a-8c46-6275d59d8c90,epoch,gpt-5.4-2026-03-05_xhigh,16
+8f302dbd-50ab-5d2a-8c46-6275d59d8c90,epoch,gpt-5.4-2026-03-05_xhigh,15
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,epoch_live,gpt-5.4-2026-03-05_xhigh,9
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,seal,GPT 5.4 (Codex) xHigh,2
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,seal,GPT-5.4 (Codex) xHigh,1
@@ -920,7 +935,7 @@ model_id,feed,raw_name,n_records
 914f6797-105d-59dd-99f4-7466458efac6,epoch_live,deepseek-v4-pro_max,6
 916a78df-d4b1-511e-8a37-9c5d37fd4c4c,epoch,deepseek-coder-33b-base,4
 91c91813-1601-56c9-a24c-d7bede4477fe,epoch,Inflection-1,2
-922cb4ee-b93d-509f-8d7a-f7cc81880715,epoch,gemini-2.5-flash-preview-05-20,7
+922cb4ee-b93d-509f-8d7a-f7cc81880715,epoch,gemini-2.5-flash-preview-05-20,6
 922cb4ee-b93d-509f-8d7a-f7cc81880715,epoch_live,gemini-2.5-flash-preview-05-20,1
 922cb4ee-b93d-509f-8d7a-f7cc81880715,kaggle,gemini-2.5-flash-preview-05-20,1
 92ac4a1d-4284-562a-aa21-9a66c1f94337,epoch,gpt-5.2-pro-2025-12-11_high,2
@@ -938,11 +953,11 @@ model_id,feed,raw_name,n_records
 93b1574c-80d5-535f-897f-28b64a0eaab8,epoch,gemini-3-flash-preview_minimal,1
 93b1574c-80d5-535f-897f-28b64a0eaab8,epoch_live,gemini-3-flash-preview_minimal,1
 94efe9e3-1371-5593-9cfa-575bd2dd5d0e,epoch,stablelm-tuned-alpha-7b,5
-950c4b68-919a-590e-bba1-e63fdc87c6c5,epoch,gpt-5-pro-2025-10-06_unknown,5
+950c4b68-919a-590e-bba1-e63fdc87c6c5,epoch,gpt-5-pro-2025-10-06_unknown,4
 950c4b68-919a-590e-bba1-e63fdc87c6c5,seal,gpt-5-pro,2
 950c4b68-919a-590e-bba1-e63fdc87c6c5,seal,gpt-5-pro-2025-10-06,2
 954c29d4-0620-548b-b332-0267ea627b5d,epoch,glm-4.6,3
-95b716a4-ffb8-5772-b6bd-497b4b6ed751,epoch,o1-2024-12-17_unknown,2
+95b716a4-ffb8-5772-b6bd-497b4b6ed751,epoch,o1-2024-12-17_unknown,1
 95b716a4-ffb8-5772-b6bd-497b4b6ed751,epoch_cyber,o1,2
 95b716a4-ffb8-5772-b6bd-497b4b6ed751,kaggle,o1-2024-12-17,2
 95b716a4-ffb8-5772-b6bd-497b4b6ed751,seal,o1 (December 2024),2
@@ -971,7 +986,7 @@ model_id,feed,raw_name,n_records
 986b644b-f6a6-52d4-9d5c-5ca0dc5a0692,epoch,mistral-small-2503,2
 986b644b-f6a6-52d4-9d5c-5ca0dc5a0692,epoch_live,mistral-small-2503,3
 986b644b-f6a6-52d4-9d5c-5ca0dc5a0692,epoch_live,mistral-small-3.1-2503,3
-98709b5f-ed78-59d9-adf5-1c37c990c7e2,epoch,gpt-5.1-2025-11-13_none,4
+98709b5f-ed78-59d9-adf5-1c37c990c7e2,epoch,gpt-5.1-2025-11-13_none,3
 98709b5f-ed78-59d9-adf5-1c37c990c7e2,epoch_live,gpt-5.1-2025-11-13_none,4
 98709b5f-ed78-59d9-adf5-1c37c990c7e2,seal,gpt-5.1-2025-11-13-instant,1
 98709b5f-ed78-59d9-adf5-1c37c990c7e2,seal,gpt-5.1-instant,3
@@ -981,7 +996,7 @@ model_id,feed,raw_name,n_records
 99e1aff3-b66a-5d75-8047-a63b5969b3e7,epoch_live,Llama-3.1-Tulu-3-70B-DPO,3
 9a2729d3-565c-58f2-bb17-8a47c9126f1c,epoch,claude-opus-4-6_120K,9
 9a2729d3-565c-58f2-bb17-8a47c9126f1c,epoch_live,claude-opus-4-6_120K,1
-9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,epoch,gpt-5-2025-08-07_unknown,7
+9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,epoch,gpt-5-2025-08-07_unknown,6
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,epoch_cyber,GPT-5,5
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,kaggle,gpt-5-2025-08-07,2
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,seal,gpt-5,2
@@ -1017,7 +1032,8 @@ model_id,feed,raw_name,n_records
 9de7f20b-93b2-55d8-a1a9-ba660fd2da3d,epoch,DeepSeek-V3.2-Speciale,2
 9de9f714-80a8-57f2-b164-bc4de7a81216,epoch,inkling-small_low,2
 9e6781e8-0021-54e4-bf15-41071ac8b1c3,epoch,grok-4.7_unknown,1
-9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,epoch,kimi-k2.5,11
+9e6781e8-0021-54e4-bf15-41071ac8b1c3,seal,grok-4.7,1
+9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,epoch,kimi-k2.5,10
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,epoch_live,fireworks/kimi-k2p5,3
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,epoch_live,kimi-k2.5,1
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,seal,Kimi K2.5 (Mini-SWE-Agent),1
@@ -1026,7 +1042,7 @@ model_id,feed,raw_name,n_records
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,seal,kimi-k2.5,6
 9f19e54e-5cdb-55fc-b1f4-24fb0bd47def,seal,kimi-k2p5,1
 9f63bd89-4226-5a73-99a7-9e6351a74550,epoch,gemini-2.5-flash-lite-preview-06-17_16K,1
-9face4e0-d3e0-5d5d-a105-ec7bfac529cb,epoch,mistral-medium-2505,3
+9face4e0-d3e0-5d5d-a105-ec7bfac529cb,epoch,mistral-medium-2505,2
 9face4e0-d3e0-5d5d-a105-ec7bfac529cb,epoch_live,mistral-medium-2505,3
 9face4e0-d3e0-5d5d-a105-ec7bfac529cb,seal,Mistral Medium 3,1
 9fb50c87-9d4f-5056-b3ff-0ef85db7b1b8,epoch,qwen3-14b,3
@@ -1055,8 +1071,9 @@ a202cc43-3e07-5f06-bd3a-85840cc73723,epoch,Phi-3-medium-128k-instruct,9
 a202cc43-3e07-5f06-bd3a-85840cc73723,epoch_live,Phi-3-medium-128k-instruct,2
 a20f799b-f42f-5bbc-b785-7320d3276bc0,epoch,PaLM 2-S,7
 a25ed5eb-0eda-50ee-9f9d-42995bf60434,epoch,gemini-1.5-flash-0514,1
+a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,seal,claude-opus-5-5,1
 a2d3d91b-e43c-5ab9-afea-8d38250148b2,epoch,ml-elephant,1
-a30435c9-0f32-5bad-9e84-32acb0c8933f,epoch,claude-3-5-sonnet-20241022,15
+a30435c9-0f32-5bad-9e84-32acb0c8933f,epoch,claude-3-5-sonnet-20241022,14
 a30435c9-0f32-5bad-9e84-32acb0c8933f,epoch_live,claude-3-5-sonnet-20241022,3
 a30435c9-0f32-5bad-9e84-32acb0c8933f,kaggle,claude-3-5-sonnet-20241022,2
 a30435c9-0f32-5bad-9e84-32acb0c8933f,rand,Claude 3.5 Sonnet V2,15
@@ -1083,6 +1100,7 @@ a51a210a-6d30-5193-8a32-b5681e7e2b3c,epoch,Llama-3.2-1B-Instruct,1
 a51a210a-6d30-5193-8a32-b5681e7e2b3c,epoch_live,Llama-3.2-1B-Instruct,3
 a5a1118c-c262-5a1e-843c-aa5723fa223a,epoch,muse-spark-1.3_unknown,4
 a5a1118c-c262-5a1e-843c-aa5723fa223a,seal,Muse Spark 1.3,1
+a5a1118c-c262-5a1e-843c-aa5723fa223a,seal,muse-spark-1.3,1
 a5df70a2-d291-5bcc-af82-6f109707da2d,epoch,gpt-3.5-turbo-instruct,1
 a5e24a43-5780-5edc-bb7d-28f37b2958d1,epoch,codestral-2501,1
 a5e24a43-5780-5edc-bb7d-28f37b2958d1,kaggle,codestral-2501,3
@@ -1130,12 +1148,14 @@ ac41d9fa-393a-57f1-bbc6-dbc69a8e9aa3,epoch,gemini-robotics-er-1.5-preview,1
 acdda095-0e8c-54c1-8402-e58a5f324dea,epoch_live,claude-opus-4-1-20250805_27K,2
 ad080eb8-573c-579d-9744-07e44f7af21c,epoch,claude-sonnet-5_xhigh,3
 ad080eb8-573c-579d-9744-07e44f7af21c,epoch_live,claude-sonnet-5_xhigh,4
+ad080eb8-573c-579d-9744-07e44f7af21c,seal,Sonnet 5 (Claude Code) xhigh,1
 ae2ba523-d13a-56b7-a9f8-ddc9a9586f04,epoch,falcon-11b,8
 ae4ce49a-3ce6-55ce-b7b3-212feb1a8b7d,epoch_live,qwen3-4b_none,2
 aeb46fa5-cf5e-5951-9948-d1790fe0d57b,epoch,gemini-3.5-flash-lite_low,2
 aeb46fa5-cf5e-5951-9948-d1790fe0d57b,epoch_live,gemini-3.5-flash-lite_low,4
 af434d5f-3215-5aee-854a-de70850a350c,epoch,claude-fable-5-1_unknown,5
 af434d5f-3215-5aee-854a-de70850a350c,seal,Fable 5.1,3
+af434d5f-3215-5aee-854a-de70850a350c,seal,claude-fable-5-1,1
 af79be37-fd69-592b-9c54-49643fa8fdc9,epoch,grok-3-mini-beta_high,2
 af79be37-fd69-592b-9c54-49643fa8fdc9,epoch_live,grok-3-mini-beta_high,3
 af9ac6b1-d23a-579e-9879-53a27d79f8c9,epoch,gpt-5.5-pro_high,3
@@ -1197,7 +1217,7 @@ b6f978a6-fd4f-581e-ace3-a860f8d75aeb,epoch,claude-opus-5_max,16
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,epoch_live,claude-opus-5_max,9
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,seal,Claude Opus 5 (Claude Code) max,1
 b70013d8-5198-5c40-9741-a81905f73c6b,seal,Nemotron 3 Ultra (thinking),1
-b725f682-a665-5e78-b1d6-d40e1cf71fe8,epoch,gpt-5-mini-2025-08-07_unknown,8
+b725f682-a665-5e78-b1d6-d40e1cf71fe8,epoch,gpt-5-mini-2025-08-07_unknown,7
 b725f682-a665-5e78-b1d6-d40e1cf71fe8,epoch_cyber,GPT-5 mini,1
 b725f682-a665-5e78-b1d6-d40e1cf71fe8,seal,gpt-5-mini-2025-08-07,2
 b7578544-e049-5b72-953a-d85ff2df281f,epoch,qwen3.8-27b_xhigh,2
@@ -1213,7 +1233,7 @@ b862c712-107b-5406-b6dc-e7bdc8f065d9,epoch_cyber,o1-mini,1
 b862c712-107b-5406-b6dc-e7bdc8f065d9,kaggle,o1-mini-2024-09-12,2
 b88cadfd-5d93-5a88-af3c-c5f91f123fe9,epoch,claude-sonnet-4-5-20250929_low,1
 b8a411b4-c4c1-5bf2-b826-a73532ccd438,epoch,gemma-2-9b,2
-b8d7bbbf-bfb4-5daa-ac90-340ac1818169,epoch,gemini-3.1-pro-preview,25
+b8d7bbbf-bfb4-5daa-ac90-340ac1818169,epoch,gemini-3.1-pro-preview,24
 b8d7bbbf-bfb4-5daa-ac90-340ac1818169,epoch_cyber,Gemini 3.1 Pro,1
 b8d7bbbf-bfb4-5daa-ac90-340ac1818169,epoch_live,gemini-3.1-pro-preview,6
 b8d7bbbf-bfb4-5daa-ac90-340ac1818169,kaggle,gemini-3.1-pro-preview,2
@@ -1246,16 +1266,17 @@ bc7607d7-fc31-5ff5-8c6d-97295c6a3ad1,epoch,Qwen3-32B,4
 bc7607d7-fc31-5ff5-8c6d-97295c6a3ad1,epoch_live,Qwen3-32B,3
 bced6b45-0c46-5e65-87ec-084e31c8395b,epoch,glm-5.3_unknown,3
 bced6b45-0c46-5e65-87ec-084e31c8395b,seal,GLM 5.3,1
+bced6b45-0c46-5e65-87ec-084e31c8395b,seal,glm-5.3,1
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,cybench_site,Claude Opus 4,1
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,epoch,claude-opus-4-20250514,8
-bcf7840d-ba7f-5091-8aa2-8b537890fa74,epoch,claude-opus-4-20250514_unknown,9
+bcf7840d-ba7f-5091-8aa2-8b537890fa74,epoch,claude-opus-4-20250514_unknown,7
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,epoch_cyber,Claude Opus 4,5
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,epoch_live,claude-opus-4-20250514,3
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,kaggle,claude-opus-4-20250514,2
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,seal,Claude Opus 4,1
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,seal,Claude-4-Opus-20250514,1
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,seal,claude-opus-4-20250514,1
-bd8c2c09-1ff7-5eb7-88af-af27ff485507,epoch,gpt-5-2025-08-07_high,14
+bd8c2c09-1ff7-5eb7-88af-af27ff485507,epoch,gpt-5-2025-08-07_high,13
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,epoch_live,gpt-5-2025-08-07_high,9
 bda27011-9a8a-57c1-a6d5-a06ac6714ff5,epoch,claude-fable-5-1_medium,6
 bde0df97-257e-5185-b67a-18b51cffb082,epoch,claude-sonnet-5_unknown,6
@@ -1264,9 +1285,10 @@ bde0df97-257e-5185-b67a-18b51cffb082,kaggle,claude-sonnet-5,1
 be1f69db-0624-58b9-b160-4e6e6e742cb7,epoch_live,qwen2.5-32b-instruct,4
 be77f5d1-27f2-5b4d-ab8d-1fcb08f492ba,epoch,claude-fable-5_low,5
 be77f5d1-27f2-5b4d-ab8d-1fcb08f492ba,epoch_live,claude-fable-5_low,3
+befdd1c8-5304-53e8-ac41-d9f21dfbf009,seal,Qwen3.8-2.4T-A95B (xHigh),1
 bf49d8d4-437f-506c-a017-b8eebaa9ee90,seal,MiMo-Audio-7B-Instruct,1
 bf781e44-bcee-59a8-bb3c-3ebaf8c915c2,epoch,Phi-3.5-MoE-instruct,2
-bf8299bc-1700-5c37-a53a-813a27bc5273,epoch,claude-fable-5-1_xhigh,7
+bf8299bc-1700-5c37-a53a-813a27bc5273,epoch,claude-fable-5-1_xhigh,6
 bf8299bc-1700-5c37-a53a-813a27bc5273,seal,Fable 5.1 (xHigh),1
 bf8299bc-1700-5c37-a53a-813a27bc5273,seal,Fable-5.1 (Claude Code) xHigh,3
 bfc2dfee-8230-5085-889a-e91d77a883f6,epoch,qwen3.8-27b_low,1
@@ -1303,9 +1325,10 @@ c5ee24bd-546e-5a83-bed1-ec83d183d4e7,seal,Claude 3.7 Sonnet Thinking (February 2
 c5ee24bd-546e-5a83-bed1-ec83d183d4e7,seal,Claude-3.7-Sonnet-thinking,1
 c5ee24bd-546e-5a83-bed1-ec83d183d4e7,seal,claude-3-7-sonnet-thinking,1
 c5ee24bd-546e-5a83-bed1-ec83d183d4e7,seal,claude-37-sonnet-thinking,1
-c61bc40a-403f-5ca2-8886-38dedb2c83ee,epoch,gpt-6-astra_unknown,7
+c61bc40a-403f-5ca2-8886-38dedb2c83ee,epoch,gpt-6-astra_unknown,6
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,kaggle,gpt-6-astra,1
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,seal,GPT 6 Astra,2
+c61bc40a-403f-5ca2-8886-38dedb2c83ee,seal,gpt-6-astra,1
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,cybench_site,OpenAI o1-mini,1
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,epoch,o1-mini-2024-09-12_medium,5
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,epoch_live,o1-mini-2024-09-12_medium,3
@@ -1333,7 +1356,7 @@ cb05d92b-9bca-5520-bf88-fe3ee03737a5,epoch_live,gemini-3.6-flash_high,8
 cb8fdec5-c706-5ab2-8ef6-966f84289dc1,epoch,grok-4.6_unknown,5
 cb9c41f2-b5a0-5530-aadd-97b691c0ce17,epoch,qwen3.7-plus,5
 cb9c41f2-b5a0-5530-aadd-97b691c0ce17,epoch_live,qwen3.7-plus,4
-cba2ed31-eaef-563a-a241-280fedc2b807,epoch,Llama-4-Maverick-17B-128E-Instruct,12
+cba2ed31-eaef-563a-a241-280fedc2b807,epoch,Llama-4-Maverick-17B-128E-Instruct,11
 cba2ed31-eaef-563a-a241-280fedc2b807,epoch,chutes/Llama-4-Maverick-17B-128E-Instruct,2
 cba2ed31-eaef-563a-a241-280fedc2b807,epoch_live,Llama-4-Maverick-17B-128E-Instruct-FP8,3
 cba2ed31-eaef-563a-a241-280fedc2b807,rand,Llama 4 Maverick,15
@@ -1349,6 +1372,7 @@ cbca8607-d03c-50f1-8b60-7b780d05eca3,epoch,gemini-3-flash-preview_low,1
 cbca8607-d03c-50f1-8b60-7b780d05eca3,epoch_live,gemini-3-flash-preview_low,1
 cc40cf96-f510-5760-915e-8e79e6fee976,seal,DeepSeek V4 Pro (Mini-SWE-Agent),1
 cc40cf96-f510-5760-915e-8e79e6fee976,seal,Deepseek V4 Pro (Mini-SWE-Agent),1
+cc40cf96-f510-5760-915e-8e79e6fee976,seal,deepseek-v4-pro,1
 ccacd233-2d75-5c99-8f77-042569b07a1d,epoch,opt-13b,7
 ccdafc64-74d9-5676-9cab-f1eecbbbd8b2,epoch,claude-sonnet-4-20250514_2K,1
 cceb5fba-bf7d-5d81-9ea6-b91c24ac85db,epoch,mpt-7b,31
@@ -1360,7 +1384,7 @@ cd6165a8-2737-5cf9-9152-383786cb1248,epoch_live,qwen3.8-max-0902_xhigh,7
 cdaa556e-ea33-5b62-aa45-35218efff90b,epoch_cyber,Claude Mythos 5,4
 ce4f4002-94c1-5357-8350-cb316c9972f4,epoch,qwen3.8-flash_xhigh,1
 cf1b7899-529d-57c8-8974-3a0d44fa5ce6,epoch,Qwen-14B-Chat,4
-cf394de9-03a9-55f7-a129-bfdf60f6c55a,epoch,GLM-4.5-Air,2
+cf394de9-03a9-55f7-a129-bfdf60f6c55a,epoch,GLM-4.5-Air,1
 cf394de9-03a9-55f7-a129-bfdf60f6c55a,seal,glm-4p5-air,1
 cf4c06da-093b-5e9d-af6c-403971a22fa3,epoch,mistral-medium-2312,1
 cff3b6dd-1ba6-5de3-9f01-56cf7783abb5,epoch,Yi-6B,6
@@ -1375,7 +1399,7 @@ d1daf468-a9d9-59b3-923b-be379522f7ab,kaggle,ministral-8b-2410,3
 d1e6c05f-f389-50eb-928a-7451aa92dcb9,epoch,Nemotron-4 15B,6
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,cybench_site,Claude Sonnet 4.5,1
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,epoch,claude-sonnet-4-5-20250929,14
-d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,epoch,claude-sonnet-4-5-20250929_unknown,19
+d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,epoch,claude-sonnet-4-5-20250929_unknown,17
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,epoch_cyber,Claude Sonnet 4.5,9
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,epoch_live,claude-sonnet-4-5-20250929,5
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,kaggle,claude-sonnet-4-5-20250929,1
@@ -1408,7 +1432,7 @@ d5702354-30a4-5ddb-af1b-5eaff61d36f5,seal,Inkling-small,2
 d59867d4-bd36-519e-bd47-98900e1b4542,epoch,magistral-medium-2506,4
 d62a85e2-0be1-5a76-b9ca-4b66d16f204a,epoch,Megatron-Turing NLG 530B,12
 d6a3862e-554d-5351-bd84-564bb1df3fcd,epoch_live,qwen1.5-32b-chat,1
-d74cdcff-da5a-5bfe-96d2-d916960474d3,epoch,gemini-3.1-flash-lite,5
+d74cdcff-da5a-5bfe-96d2-d916960474d3,epoch,gemini-3.1-flash-lite,4
 d74cdcff-da5a-5bfe-96d2-d916960474d3,kaggle,gemini-3.1-flash-lite-preview,1
 d74cdcff-da5a-5bfe-96d2-d916960474d3,seal,gemini-3.1-flash-lite-preview,4
 d78d0734-95a3-57d1-876c-cd11b66e9b27,epoch,open-mixtral-8x7b,1
@@ -1431,7 +1455,7 @@ da49c25c-399f-5fe2-ac9a-2e860fd051d9,epoch_live,gpt-5.4-mini-2026-03-17_low,2
 da6f4c94-5304-5ad2-814c-436d2117d79c,epoch,claude-opus-4-20250514_8K,2
 db1947ae-ffb2-5b14-92af-ee1ad90938c9,epoch_live,Qwen3-32B_none,3
 db210d2d-9fd6-5b51-b481-16d038c73444,cybench_site,GPT-4o,1
-db210d2d-9fd6-5b51-b481-16d038c73444,epoch,gpt-4o-2024-11-20,16
+db210d2d-9fd6-5b51-b481-16d038c73444,epoch,gpt-4o-2024-11-20,15
 db210d2d-9fd6-5b51-b481-16d038c73444,epoch_live,gpt-4o-2024-11-20,3
 db210d2d-9fd6-5b51-b481-16d038c73444,seal,ChatGPT-4o-latest (November 2024),1
 db38174a-55d2-537a-824c-5d3ade16f6bb,epoch,MiniMax-M2.7,8
@@ -1446,7 +1470,7 @@ dcbd382d-7020-5888-8210-1dcadbec6a84,seal,Gemini 2.5 Flash Preview (May 2025),1
 dcd153b8-2430-58c8-9890-b3ac487f38d3,epoch,gpt-5.5_medium,6
 dcd153b8-2430-58c8-9890-b3ac487f38d3,epoch_live,gpt-5.5_medium,1
 dd145c0d-450b-556b-b300-bb4e554772a8,epoch,Mistral-7B-Instruct-v0.2,3
-dd85d6b7-917f-551c-a424-557f7e9b8c7d,epoch,o1-pro-2025-03-19,2
+dd85d6b7-917f-551c-a424-557f7e9b8c7d,epoch,o1-pro-2025-03-19,1
 dd85d6b7-917f-551c-a424-557f7e9b8c7d,seal,o1 Pro (March 2025),2
 dda26396-a581-575a-9a48-3f78a568b501,epoch,gemma-2-27b,2
 ddfdcdd4-bc16-55fe-8b0d-b2840d586572,epoch_live,granite-4.0-1b,3
@@ -1550,7 +1574,7 @@ f0a043af-905f-58a7-82fd-a492d5edf7a1,epoch,chutes/Qwen3-Next-80B-A3B-Instruct,1
 f0a043af-905f-58a7-82fd-a492d5edf7a1,epoch,deepinfra/Qwen3-Next-80B-A3B-Instruct,1
 f0bda079-d5fc-5b16-898e-d85650c0d484,epoch,chatgpt-4o-01-29-2025,2
 f10541cc-1355-5756-a6ec-f9df35c1b9fa,epoch_live,qwen3.7-flash_none,5
-f15989aa-56c0-5f11-9d65-d3267ad4f026,epoch,amazon.nova-lite-v1:0,2
+f15989aa-56c0-5f11-9d65-d3267ad4f026,epoch,amazon.nova-lite-v1:0,1
 f15989aa-56c0-5f11-9d65-d3267ad4f026,rand,Amazon Nova 1.0 Lite,15
 f15989aa-56c0-5f11-9d65-d3267ad4f026,seal,Nova LIte,1
 f15989aa-56c0-5f11-9d65-d3267ad4f026,seal,Nova Lite,1
@@ -1604,7 +1628,7 @@ f99a025b-f74b-5298-ab3a-63583d8c6a8e,seal,Minimax M2.5 (Mini-SWE-Agent),1
 f99a025b-f74b-5298-ab3a-63583d8c6a8e,seal,Minimax-M2.5 (Mini-SWE),1
 f99a025b-f74b-5298-ab3a-63583d8c6a8e,seal,Minimax-M2.5 (Mini-SWE-Agent),1
 f9b72039-4005-5c41-8e54-52795f854850,kaggle,grok-4-fast-reasoning,1
-f9d0bea8-4c49-5762-b85c-253ef349024b,epoch,claude-opus-4-6_max,6
+f9d0bea8-4c49-5762-b85c-253ef349024b,epoch,claude-opus-4-6_max,5
 f9d0bea8-4c49-5762-b85c-253ef349024b,epoch_live,claude-opus-4-6_max,9
 f9d0bea8-4c49-5762-b85c-253ef349024b,seal,Claude Opus 4.6 (Claude Code) max,1
 f9d0bea8-4c49-5762-b85c-253ef349024b,seal,claude-opus-4-6 (max),1
@@ -1623,7 +1647,7 @@ fb822e69-9563-5a18-952e-ae60ad877a95,epoch,claude-sonnet-4-5-20250929_1K,2
 fb928501-8a20-5caa-961e-7cf67de03d51,seal,o3-pro,3
 fb928501-8a20-5caa-961e-7cf67de03d51,seal,o3-pro-2025-06-10,1
 fbab4124-9b4e-59bf-bf32-880eb7a8a6b2,epoch,swe-1.6,1
-fc88657c-e2e7-5b8a-9e77-87845fd09a28,epoch,gemini-1.5-pro-002,9
+fc88657c-e2e7-5b8a-9e77-87845fd09a28,epoch,gemini-1.5-pro-002,8
 fc88657c-e2e7-5b8a-9e77-87845fd09a28,epoch_live,gemini-1.5-pro-002,3
 fc88657c-e2e7-5b8a-9e77-87845fd09a28,kaggle,gemini-1.5-pro-002,2
 fc88657c-e2e7-5b8a-9e77-87845fd09a28,seal,"Gemini 1.5 Pro (August 27, 2024)",1
@@ -1637,7 +1661,7 @@ fed155d2-f6ea-5e34-99da-0f5a37e6ab09,epoch,gpt-3.5-turbo-0125,4
 fed155d2-f6ea-5e34-99da-0f5a37e6ab09,epoch_live,gpt-3.5-turbo-0125,6
 fed155d2-f6ea-5e34-99da-0f5a37e6ab09,rand,gpt-3.5-turbo-0125,5
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,cybench_site,Claude Opus 4.6,1
-ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,epoch,claude-opus-4-6,6
+ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,epoch,claude-opus-4-6,5
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,epoch,claude-opus-4-6_unknown,20
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,epoch_cyber,Claude Opus 4.6,11
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,epoch_live,claude-opus-4-6,1

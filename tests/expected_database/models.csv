@@ -204,6 +204,7 @@ a8ebd9d0-bfc1-5d30-a256-cbd06e15e86f,claude-haiku-4-5,,1000,2025-10-01,,claude-h
 6525d03f-1974-5cc0-a63b-28545e91d9e9,claude-haiku-4-5,,32000,2025-10-01,,claude-haiku-4-5-20251001_32K,Anthropic,US,2025-10-15,
 12cd417d-b91c-5d69-89be-ac98bfe25dc5,claude-haiku-4-5,,8000,2025-10-01,,claude-haiku-4-5-20251001_8K,Anthropic,US,2025-10-15,
 57add62e-6920-54ca-b60f-cd5722ac9cc8,claude-haiku-4-5,low,,2025-10-01,,claude-haiku-4-5-20251001_low,Anthropic,US,2025-10-15,
+608036c5-b072-5c93-b894-9f5e26b2a73c,claude-haiku-4-5,xhigh,,2025-10-01,,claude-haiku-4-5-20251001_xhigh,Anthropic,US,2025-10-15,
 68234935-1d21-54ea-9288-18a3ec1de754,claude-instant-1.1,,,,,claude-instant-1.1,Anthropic,US,2023-05-11,
 e5fb2d63-cc91-567b-825b-8fdabf591cd3,claude-instant-1.2,,,,,claude-instant-1.2,Anthropic,US,2023-08-09,
 cdaa556e-ea33-5b62-aa45-35218efff90b,claude-mythos-5,,,,,claude-mythos-5,Anthropic,US,2026-06-09,
@@ -264,6 +265,7 @@ e399bbba-49d5-5333-a78a-6fa4c174504b,claude-opus-5,high,,,,claude-opus-5_high,An
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,claude-opus-5,max,,,,claude-opus-5_max,Anthropic,US,2026-07-24,
 a94d7bf7-0244-536b-bd58-d1143c4088ac,claude-opus-5,medium,,,,claude-opus-5_medium,Anthropic,US,2026-07-24,
 064d6bba-cf57-5cd0-b569-ab2110036c8c,claude-opus-5,xhigh,,,,claude-opus-5_xhigh,Anthropic,US,2026-07-24,
+a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,claude-opus-5-5,,,,,claude-opus-5-5,,,2026-09-22,
 8a83e82a-0f12-53c7-afff-759fa6ede2f8,claude-opus-5-5,max,,,,claude-opus-5-5_max,Anthropic,US,2026-09-22,
 4a070a90-41c9-5c50-9ad9-61d076a7586f,claude-opus-5-5,xhigh,,,,claude-opus-5-5_xhigh,Anthropic,US,2026-09-22,
 5dee249b-019f-5f65-83e1-5009325d080f,claude-sonnet-4,,,2025-05-14,,claude-sonnet-4-20250514,Anthropic,US,2025-05-22,
@@ -602,6 +604,7 @@ def63ae0-e298-5355-914e-f526556f360f,gpt-6-astra,low,,,,gpt-6-astra_low,OpenAI,U
 49d8baae-616b-5b74-adbf-ef134749010f,gpt-6-astra,none,,,,gpt-6-astra_none,OpenAI,US,2026-09-03,1.0001e+27
 a1b483f0-187a-54b4-9c75-2f61d6fc9436,gpt-6-astra,xhigh,,,,gpt-6-astra_xhigh,OpenAI,US,2026-09-03,1.0001e+27
 619a9c7d-3b2e-5290-98d4-7fddddd4e68b,gpt-6-luna,max,,,,gpt-6-luna_max,OpenAI,US,2026-09-22,
+39bbc212-b924-545f-af28-a227674747c1,gpt-6-sol,,,,,gpt-6-sol,,,2026-09-22,
 07ef50ba-5709-5983-8cd1-bdcab048bc41,gpt-6-sol,max,,,,gpt-6-sol_max,OpenAI,US,2026-09-22,
 2b4771da-53fc-56a4-82ca-0f1558911b94,gpt-j-6b,,,,,gpt-j-6b,"EleutherAI,LAION","DE,US",2021-08-05,1.5e+22
 49a8f0b6-4d32-5270-8f23-d77804c5555b,gpt-neo-2.7B,,,,,gpt-neo-2.7B,EleutherAI,US,2021-03-30,7.9e+21
@@ -832,6 +835,7 @@ a7b4a094-c112-5ee3-9dbd-9cbf34ec64e1,qwen3.7-max,none,,,,qwen3.7-max_none,Alibab
 478028ef-b9e3-510d-9c64-c708e9855b98,qwen3.7-max,xhigh,,,,qwen3.7-max_xhigh,Alibaba,CN,2026-05-19,
 cb9c41f2-b5a0-5530-aadd-97b691c0ce17,qwen3.7-plus,,,,,qwen3.7-plus,Alibaba,CN,2026-06-02,
 f76e65a4-12f5-5e94-ba04-bb341c289bc3,qwen3.7-plus,none,,,,qwen3.7-plus_none,Alibaba,CN,2026-06-02,
+befdd1c8-5304-53e8-ac41-d9f21dfbf009,qwen3.8-2.4t-a95b,xhigh,,,,qwen3.8-2.4t-a95b_xhigh,Alibaba,CN,2026-08-12,
 391836ae-8a87-5e69-8a84-2015a38bad88,qwen3.8-27b,,,,,qwen3.8-27b,Alibaba,CN,2026-08-14,
 bfc2dfee-8230-5085-889a-e91d77a883f6,qwen3.8-27b,low,,,,qwen3.8-27b_low,Alibaba,CN,2026-08-14,
 21a1980b-e331-512a-9141-181e99c0241a,qwen3.8-27b,medium,,,,qwen3.8-27b_medium,Alibaba,CN,2026-08-14,

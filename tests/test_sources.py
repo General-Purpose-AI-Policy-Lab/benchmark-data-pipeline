@@ -113,6 +113,18 @@ def test_seal_entries_reads_the_streaming_chunks_not_the_table():
     assert seal.seal_entries("<html>nothing</html>") == []
 
 
+def test_seal_entries_picks_the_labelled_table():
+    full = [{"model": f"M{i}", "score": 90} for i in range(3)]
+    hard = [{"model": "M0", "score": 50}, {"model": "M1", "score": 40}]
+    payload = json.dumps([{"key": "full", "label": "Board Full", "entries": full},
+                          {"key": "hard", "label": "Board HARD", "entries": hard}])
+    html = ('<html><script>self.__next_f.push([1,"' + payload.replace('"', '\\"')
+            + '"])</script></html>')
+    assert seal.seal_entries(html) == full                    # the largest table by default
+    assert seal.seal_entries(html, "Board HARD") == hard
+    assert seal.seal_entries(html, "Board Other") == []
+
+
 def test_seal_translate_scales_scores_and_skips_unknown_boards(tmp_path, caplog):
     d = tmp_path / "seal"
     d.mkdir()

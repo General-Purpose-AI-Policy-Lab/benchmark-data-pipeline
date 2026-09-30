@@ -19,6 +19,7 @@ SEAL_SPEC = {
     'audiomc':                       'AudioMultiChallenge',
     'drugdiscoverybench':            'DrugDiscoveryBench',
     'hil':                           'HiL-Bench',
+    'hle-diamond':                   'HLE Diamond',
     'instruction_following':         'SEAL Instruction Following',
     'mcp_atlas':                     'MCP Atlas',
     'multichallenge':                'MultiChallenge',
@@ -28,6 +29,7 @@ SEAL_SPEC = {
     'rli':                           'Remote Labor Index',
     'swe_bench_pro_private':         'SWE-Bench Pro (Private)',
     'swe_bench_pro_public':          'SWE-Bench Pro',
+    'swe_bench_pro_public_v2':       'SWE-Bench Pro V2',
     'sweatlas-qna':                  'SWE Atlas Codebase QnA',
     'sweatlas-refactoring':          'SWE Atlas Refactoring',
     'sweatlas-tw':                   'SWE Atlas Test Writing',
@@ -37,12 +39,19 @@ SEAL_SPEC = {
     'vtb':                           'VisualToolBench',
 }
 
+# Boards whose page holds several tables: the `label` of the table to read. Elsewhere the largest
+# `entries` array is the board. SWE-Bench Pro V2 shows a Full table and a HARD one; HARD is the
+# board Scale ranks on and the one with more models (user, 2026-09-30).
+SEAL_TABLE = {
+    'swe_bench_pro_public_v2':       'SWE-Bench Pro V2 HARD',
+}
+
 # Boards set aside, with the reason.
 SEAL_SKIP = {
     'arabic':                        'multilingual Elo score, not a proportion in [0, 1]',
     'chinese':                       'multilingual Elo score, not a proportion in [0, 1]',
     'coding':                        'Elo score (~600-1240), not a proportion in [0, 1]',
-    'humanitys_last_exam_text_only': 'text-only subset; not comparable to the full HLE ingested from Epoch',
+    'humanitys_last_exam_text_only': 'text-only subset of HLE, which is itself replaced by HLE Diamond (2026-09-30)',
     'japanese':                      'multilingual Elo score, not a proportion in [0, 1]',
     'spanish':                       'multilingual Elo score, not a proportion in [0, 1]',
 }
@@ -54,13 +63,14 @@ _SCORE_SCALE = 100  # scores are published on 100
 BOARD_URL = "https://labs.scale.com/leaderboard/{}"
 
 
-def seal_entries(html: str) -> list[dict]:
+def seal_entries(html: str, label: str | None = None) -> list[dict]:
     """SEAL page -> list of {model, score, ...} entries, or [].
 
     The data lives in the Next.js streaming chunks (`self.__next_f.push([...])`); the visible
     <table> is a stale snapshot. json.loads per chunk handles the \\uXXXX escapes AND keeps
     literal UTF-8 (unicode_escape would mangle it into mojibake). The largest `"entries":[...]`
-    array whose items have a `model` key is kept.
+    array whose items have a `model` key is kept, or, with `label`, the array of the table carrying
+    that label (`{"key": ..., "label": ..., "entries": [...]}`); [] when no table has it.
     """
     decoded = []
     for chunk in re.findall(r'self\.__next_f\.push\(\[\d+,\s*"((?:[^"\\]|\\.)*)"\]\)', html):
@@ -71,6 +81,7 @@ def seal_entries(html: str) -> list[dict]:
     text = "".join(decoded)
 
     arrays = []
+    labelled = []
     for m in re.finditer(r'"entries"\s*:\s*\[', text):
         start = m.end() - 1
         depth, i = 0, start
@@ -88,6 +99,11 @@ def seal_entries(html: str) -> list[dict]:
             continue
         if arr and isinstance(arr[0], dict) and "model" in arr[0]:
             arrays.append(arr)
+            if label is not None and re.search(r'"label"\s*:\s*' + re.escape(json.dumps(label))
+                                               + r'\s*,\s*$', text[max(0, m.start() - 200):m.start()]):
+                labelled.append(arr)
+    if label is not None:
+        return max(labelled, key=len) if labelled else []
     return max(arrays, key=len) if arrays else []
 
 
@@ -108,7 +124,7 @@ def translate(feed_dir: Path) -> Iterator[Record]:
         if path.stem not in SEAL_SPEC:
             log.warning("seal: ? %s: in neither SEAL_SPEC nor SEAL_SKIP", path.name)
             continue
-        entries = seal_entries(path.read_text())
+        entries = seal_entries(path.read_text(), SEAL_TABLE.get(path.stem))
         if not entries:
             log.warning("seal: ! %s: no `entries` array in the page", path.name)
             continue

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.1",
-  "built_at": "2026-09-29T20:26:49+00:00",
-  "git_commit": "ab88fee81b83ee91290ceb802185b977774b8438",
+  "built_at": "2026-09-30T12:22:19+00:00",
+  "git_commit": "0604dd750aef57ecdfccc8314952d234df277872",
   "feeds": {
     "0_input/feed/cybench_site/cybench_leaderboard.csv": {
       "byte_size": 1179,
@@ -71,6 +71,12 @@
       "sha256": "76a9087d064f607796aa11fd0b0ccb249ce78765de4ea131845e3aa26391a4f3",
       "url": "https://labs.scale.com/leaderboard/hil"
     },
+    "0_input/feed/seal/hle-diamond.html": {
+      "byte_size": 105070,
+      "fetched_at": "2026-09-30T12:20:30.571583+00:00",
+      "sha256": "73ba2341e606a371ba4ade94dc6415a84c7f66a74b9b2553e636c8872e028ca3",
+      "url": "https://labs.scale.com/leaderboard/hle-diamond"
+    },
     "0_input/feed/seal/instruction_following.html": {
       "byte_size": 116155,
       "fetched_at": "2026-09-29T20:25:31.423430+00:00",
@@ -125,6 +131,12 @@
       "sha256": "214692a80a25aecdce6d5505488b7974e7391aec16a4eacae57d59d82c289c66",
       "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
     },
+    "0_input/feed/seal/swe_bench_pro_public_v2.html": {
+      "byte_size": 134298,
+      "fetched_at": "2026-09-30T12:20:30.571583+00:00",
+      "sha256": "2eedbcedbed15cb5a23db594f89d97365b1aea8cf880a7ffca375d2f29290bf7",
+      "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_v2"
+    },
     "0_input/feed/seal/sweatlas-qna.html": {
       "byte_size": 142485,
       "fetched_at": "2026-09-29T20:18:20.627463+00:00",
@@ -175,19 +187,19 @@
     "0_input/feed/epoch_live/aliases.csv": "6d166e3bbe0b22b5d327b948ad6590c4f7bf2cc093e63be32e4cb508423416e5",
     "0_input/feed/kaggle/aliases.csv": "237c46993abc0ef02cae4806314a43ff94f27c46c78ee746435f6797d3ecff46",
     "0_input/feed/rand/aliases.csv": "1c9936a71988decb7af3673e306efc2221b4d3617ba74f25bedeb036e76e9550",
-    "0_input/feed/seal/aliases.csv": "a32c8dcad7829a2a88a6f63cb53cb093d4dd7d56a653ac97e69dbb468a002786",
-    "0_input/metadata/benchmarks.csv": "6fff7853f3feba5f1a2e2ab71547fd42c092fee7994c93b766c9204c59faaa9f",
+    "0_input/feed/seal/aliases.csv": "70487f2d8da74d9d1947fa75597c638afacc096db2ae0b3290fc297576afab92",
+    "0_input/metadata/benchmarks.csv": "d4cb3bf0fc8f0aee85416beea193464a773d98e0264a75d31e444752a27cb83a",
     "0_input/metadata/human_baselines.csv": "562d846f34a4ecdb6441270be74fe2a2a8a289125efb87487ae3a62e3953d227",
-    "0_input/metadata/organizations.csv": "ba662cfd3e38ae77c1eda3159672da5b79d0ba024343eead5ca7470eca55ff40",
-    "0_input/metadata/release_dates.csv": "d4723975097b443669530da1e7ec5d141c5106d85cec59a06a9206cbce588a20",
+    "0_input/metadata/organizations.csv": "3c3418256772a4e8bb9dc92a53716aef66f262b6a641ba4365e54c6dc2bc5f14",
+    "0_input/metadata/release_dates.csv": "8597567782873c20d261f09e0200dfd46afde71a7bf95caf5cabf262964b9c4e",
     "0_input/metadata/sibling_merges.csv": "fd85935b300c00a9eae14b6300e9ad0a48d4c25dfc3021a219c4dc2ad4af5bb6"
   },
   "rows": {
-    "models.csv": 869,
-    "benchmarks.csv": 99,
-    "scores.csv": 5526,
+    "models.csv": 873,
+    "benchmarks.csv": 100,
+    "scores.csv": 5501,
     "human_baselines.csv": 49,
-    "model_names.csv": 1652,
-    "excluded_benchmarks.csv": 38
+    "model_names.csv": 1676,
+    "excluded_benchmarks.csv": 39
   }
 }

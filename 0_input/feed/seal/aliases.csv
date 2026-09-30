@@ -335,3 +335,26 @@ gemini-3.8-flash (high),gemini-3.8-flash,high,,,,,SEAL effort spelling (refresh 
 Muse Spark 1.3,muse-spark-1.3,,,,,,SEAL display name (refresh of 2026-09-29)
 Muse-Spark 1.3 (mini-SWE-agent) high,muse-spark-1.3,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29)
 Nemotron 3 Ultra (thinking),nemotron-3-ultra,,,,thinking,,"SEAL: thinking enabled, effort unknown (refresh of 2026-09-29)"
+Qwen3.8-2.4T-A95B (xHigh),qwen3.8-2.4t-a95b,xhigh,,,,,"open-weight checkpoint of Qwen3.8-Max (weights 2026-08-12; Qwen: Max is the official version based on it, with vision and non-thinking added): its own identity, as qwen3.5-397b-a17b beside Qwen3.5-Plus (user, 2026-09-30)"
+Fable 5.1 (Claude Code) high,claude-fable-5-1,high,,,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+GLM-5.3 (mini-swe-agent) max,glm-5.3,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+GPT-5.6 Sol (Codex) xhigh,gpt-5.6-sol,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30). '(Codex)' is the native Codex CLI scaffold"
+GPT-5.6 Terra (Codex) xhigh,gpt-5.6-terra,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30). '(Codex)' is the native Codex CLI scaffold"
+GPT-6 Astra (Codex) high,gpt-6-astra,high,,,,Codex,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30). '(Codex)' is the native Codex CLI scaffold"
+Gemini 3.8 Flash (mini-swe-agent) high,gemini-3.8-flash,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+Haiku 4.5 (Claude Code) xhigh,claude-haiku-4-5,xhigh,,2025-10-01,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30) | snapshot 2025-10-01 = the sole Haiku 4.5 snapshot
+Inkling (mini-swe-agent) xhigh,Inkling,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+Kimi-K3 (mini-swe-agent) max,kimi-k3,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+Opus 5 (Claude Code) xhigh,claude-opus-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+Sonnet 5 (Claude Code) xhigh,claude-sonnet-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+claude-opus-5,claude-opus-5,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+claude-opus-5-5,claude-opus-5-5,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+deepseek-v4-pro,deepseek-v4-pro,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+gemini-3.8-flash,gemini-3.8-flash,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+glm-5.3,glm-5.3,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+gpt-5.6-sol,gpt-5.6-sol,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+gpt-6-astra,gpt-6-astra,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+gpt-6-sol,gpt-6-sol,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+grok-4.7,grok-4.7,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+kimi-k3,kimi-k3,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+muse-spark-1.3,muse-spark-1.3,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)

@@ -48,7 +48,7 @@ e2a2cd9f-5017-552b-9a42-c18fa0451622,Furniture Assembly,Multimodal Understanding
 9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,GSM8K,Mathematics,0.0,,public
 7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,GSO-Bench,Autonomous SWE,0.0,,public
 3ecbd533-f135-5b46-bf5c-d21ded89b961,GeoBench,Multimodal Understanding,0.0,,private
-18602361-b0c5-5003-8be2-305cdf03b9ca,HLE,Domain Specific Questions,0.048,,public
+9933af01-a7db-544e-9e82-a1a7f7c1b291,HLE Diamond,Domain Specific Questions,0.048,,public
 534366c9-d667-5dcb-9778-e42e12abc813,HellaSwag,Trivia & Commonsense QA,0.25,,public
 bd4da3d5-8651-5b55-915f-3dafdc7078b9,InterCode-CTF,Cyber,0.0,,public
 c6cec6f2-a484-5b21-9596-7fde61cebfda,LAB-Bench Cloning,Biology,0.2,,public
@@ -83,6 +83,7 @@ cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,Mathematics,0.001,
 8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,Remote Labor Index,Core AGI Progress,0.0,,semi_private
 20b11c15-b9b8-553c-8115-d7b33508d624,SEAL Tool Use (Enterprise),Agentic Computer Use,0.0,,public
 3fc71c52-e332-547b-9bc0-2d0f6573f39f,SWE Atlas,Autonomous SWE,0,,public
+b2fc2970-a814-5b52-b3bf-859541eb947d,SWE-Bench Pro V2,Autonomous SWE,0.0,,public
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,General Reasoning,0.167,,semi_private
 989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Domain Specific Questions,0.0,,public
 ff689821-ffdf-5bd8-b976-65dd53db24d4,Surface Evolver Bench,Autonomous SWE,0.0,,private
@@ -96,5 +97,5 @@ e7b97299-f0e2-581b-a8de-b19d816be80c,VisualToolBench,Multimodal Understanding,0.
 bfcf9383-ffc8-518e-83f7-18e9ec3154d6,WMDP Biology,Biology,0.25,,public
 6246759f-70d0-5a8e-b557-6e04e8c5b556,WMDP Chemistry,Chemistry,0.25,,public
 ce4b877c-a9d5-595b-a14a-ec9edab40b95,WeirdML v2,Autonomous SWE,0.0,,semi_private
-31c7cb66-4b47-5d6e-917d-632a6af5c129,WeirdML v3,Autonomous SWE,0.0,,semi_private
+31c7cb66-4b47-5d6e-917d-632a6af5c129,WeirdML v3,Autonomous SWE,0.0,,private
 b812b198-64a0-5b54-bdd2-018cbce4626b,WinoGrande,Trivia & Commonsense QA,0.5,,public

@@ -25,7 +25,7 @@ docs/                       decisions.md (settled), decisions_pending.md (open),
 tests/                      unit tests, golden copies (tests/expected_database, tests/expected_views), parity goldens
 ```
 
-Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (19 HTML pages). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
+Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (21 HTML pages). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
 
 **SEAL pages are not versioned.** Scale AI publishes its leaderboards under no open license, so `0_input/feed/seal/*.html` is gitignored (see `NOTICE.md`). On a fresh clone run `python -m benchmark_data refresh` **before** the build; otherwise the build stops with an explicit message. Everything else about the SEAL feed (aliases, sha256, derived scores in `2_database/`) stays tracked.
 
