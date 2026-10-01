@@ -61,6 +61,7 @@ SIBLING_MERGES_FILE = "sibling_merges.csv"  # merged_name, part: boards averaged
 RELEASE_DATES_FILE = "release_dates.csv"    # (base_model, snapshot) -> researched publication_date
 BENCHMARK_RELEASE_DATES_FILE = "benchmark_release_dates.csv"  # benchmark -> researched release_date
 HUMAN_BASELINES_FILE = "human_baselines.csv"  # benchmark, group, score, note, source
+SCORE_CORRECTIONS_FILE = "score_corrections.csv"  # a feed value replaced by the published one
 
 # Human reference groups, from the least to the most demanding along each branch (Multiaxis_ECI's
 # HUMAN_ORDER): value = the group it dominates, None = a root.

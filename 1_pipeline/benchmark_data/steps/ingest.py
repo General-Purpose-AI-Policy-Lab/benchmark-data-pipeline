@@ -130,6 +130,33 @@ def _report_unused_aliases(result: IngestResult, aliases: dict[str, dict]) -> No
                      " ..." if len(unused) > 10 else "")
 
 
+def load_score_corrections(metadata_dir: Path = config.METADATA_DIR) -> dict:
+    """(feed, benchmark, raw_name) -> row of score_corrections.csv: a feed value known to be wrong
+    (the wrong metric, a misread figure), replaced by the published one with its source; an empty
+    `corrected_score` drops the row (no comparable value is published).
+    `translated_score` is the value as the feed's translator yields it (after any rescale it
+    undoes), so a correction stops applying, and is reported, as soon as the feed changes it."""
+    path = metadata_dir / config.SCORE_CORRECTIONS_FILE
+    if not path.exists():
+        return {}
+    table = pandas.read_csv(path, dtype={"feed": str, "benchmark": str, "raw_name": str})
+    return {(r.feed, r.benchmark, r.raw_name): r for r in table.itertuples()}
+
+
+def _corrected(rec: Record, feed: str, corrections: dict, applied: set) -> Record | None:
+    """`rec` with its corrected score (None when the correction drops it), when the feed still
+    carries the value the correction was written against; a correction whose feed value has moved
+    is left unapplied (and reported)."""
+    key = (feed, rec.benchmark, str(rec.raw_name))
+    row = corrections.get(key)
+    if row is None or abs(float(rec.score) - float(row.translated_score)) > 1e-6:
+        return rec
+    applied.add(key)
+    if pandas.isna(row.corrected_score):
+        return None
+    return rec._replace(score=float(row.corrected_score), source_url=row.source_url)
+
+
 def ingest(feed_dir: Path = config.FEED_DIR,
            metadata_dir: Path = config.METADATA_DIR) -> IngestResult:
     """Single loop over the feeds, in `config.SOURCE_ORDER`.
@@ -145,9 +172,13 @@ def ingest(feed_dir: Path = config.FEED_DIR,
     result = IngestResult(unmapped={s: set() for s in config.SOURCE_ORDER},
                           dropped={s: set() for s in config.SOURCE_ORDER})
     unknown_benchmarks: set[str] = set()
+    corrections, applied = load_score_corrections(metadata_dir), set()
     for feed in config.SOURCE_ORDER:
         log.info("%s:", feed)
         for rec in TRANSLATE[feed](feed_dir):
+            rec = _corrected(rec, feed, corrections, applied)
+            if rec is None:
+                continue
             if rec.benchmark not in status:
                 unknown_benchmarks.add(rec.benchmark)
                 continue
@@ -162,6 +193,11 @@ def ingest(feed_dir: Path = config.FEED_DIR,
         raise ValueError(f"benchmarks with no row in {config.BENCHMARKS_FILE}: "
                          f"{sorted(unknown_benchmarks)}")
     _report_unused_aliases(result, aliases)
+    stale = sorted(set(corrections) - applied)
+    if stale:
+        log.warning("%s: %d correction(s) not applied, the feed value has moved or the row is "
+                    "gone (review them): %s", config.SCORE_CORRECTIONS_FILE, len(stale), stale)
+    log.info("score corrections applied: %d", len(applied))
     if result.excluded:
         log.info("excluded benchmarks (records dropped): %s", dict(result.excluded))
     if result.completed:

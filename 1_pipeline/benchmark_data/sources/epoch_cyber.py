@@ -23,6 +23,12 @@ FILE = "cyber_benchmarks.csv"
 SOURCE_LABEL = "Epoch AI cyber ECI (values partly read off published plots)"
 SOURCE_URL = "https://epoch.ai/data/cyber/processed_data_for_eci.csv"
 
+# Benchmarks Epoch rescales: CyberGym is divided by 0.95, a cap for the ~5% of under-specified task
+# descriptions (its post on Mythos's cyber capabilities, appendix). The project keeps the published
+# pass@1 over the 1,507 tasks and declares no ceiling: one estimated by Epoch, it is left to the
+# consumers to estimate (user, 2026-10-01).
+EPOCH_RESCALED = {"CyberGym": 0.95}
+
 # Benchmarks of the table, Epoch's name -> the project's name. Everything else is reported.
 CYBER_SPEC = {
     'AISI CTF Suites - Apprentice':             'AISI CTF Suites - Apprentice',
@@ -59,5 +65,6 @@ def translate(feed_dir: Path) -> Iterator[Record]:
         bench = CYBER_SPEC.get(table["benchmark"][i])
         if bench is None or pandas.isna(raw) or pandas.isna(score[i]):
             continue
-        yield Record(raw, bench, score[i], "", "", "",
+        value = score[i] * EPOCH_RESCALED.get(bench, 1.0)
+        yield Record(raw, bench, value, "", "", "",
                      {"publication_date": table["date"][i]}, SOURCE_LABEL, SOURCE_URL)
