@@ -6,7 +6,7 @@ BBH,excluded,frontier_coverage,88,"Excluded: Developer-reported numbers stopped 
 BTF3,excluded,scale,0,"Epoch btf3_external.csv: pooled Brier / RPS loss with no published chance baseline, the floor cannot be derived (criterion 1). File in FILE_SKIP."
 BoolQ,excluded,frontier_coverage,136,"Excluded: Developer-reported numbers stopped in 2024; 45 % of the frontier of its period covered. User decision 2026-09-07 (decisions.md, cyber batch)."
 CSQA2,excluded,frontier_coverage,6,"Excluded: six scores, 2019-2023, covering at most 1 of the 7 frontier models of its period (14 %, text-davinci-001 counted for GPT-3), below the third of BBH and the 45 % of BoolQ already excluded. Decision 2026-09-07 (decisions.md)."
-CursorBench,excluded,quality,49,successive 3.x versions not comparable; doubts about the benchmark since Cursor's acquisition
+CursorBench,excluded,quality,54,successive 3.x versions not comparable; doubts about the benchmark since Cursor's acquisition
 ExploitGym,excluded,frontier_coverage,8,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber): 8 models, 2026-02-05 to 2026-07-09, mean score 0.13, 0% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance).  Excluded: 8 models, 2026 only, one third of the frontier covered. User decision 2026-09-07 (decisions.md, cyber batch)."
 ForecastBench,excluded,scale,82,Brier skill index whose ceiling is by construction far below 100 %: not a proportion of solved items; decision of 2026-09-04
 FrontierMath Tier 4 v1,excluded,quality,72,"defective v1 problem set (errors in 42 % of items), superseded by v2; decision of 2026-09-04"
@@ -25,14 +25,14 @@ OpenAI NYU CTF Professional (Original),excluded,deprecated,4,"Epoch cyber ECI (0
 OpenAI NYU CTF Professional (Refactored),excluded,frontier_coverage,6,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber): 6 models, 2025-08-07 to 2026-04-23, mean score 0.81, 17% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance).  Excluded: 6 models from OpenAI's system cards only. User decision 2026-09-07 (decisions.md, cyber batch)."
 PRBench,excluded,quality,0,"per-model mean of PRBench Finance and PRBench Legal (sibling_merges.csv) | excluded: its evaluation mode makes the results a poor reflection of model capabilities (user, 2026-09-30)"
 PRBench Finance,excluded,quality,35,"excluded: its evaluation mode makes the results a poor reflection of model capabilities (user, 2026-09-30)"
-PRBench Legal,excluded,quality,32,"excluded: its evaluation mode makes the results a poor reflection of model capabilities (user, 2026-09-30)"
+PRBench Legal,excluded,quality,39,"excluded: its evaluation mode makes the results a poor reflection of model capabilities (user, 2026-09-30)"
 SCONE-Bench,excluded,frontier_coverage,11,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber): 11 models, 2024-04-18 to 2026-04-07, mean score 0.26, 9% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance).  Excluded: 11 models, one third of the frontier covered; score is a share of exploitable value rather than of tasks. User decision 2026-09-07 (decisions.md, cyber batch)."
 SEAL Instruction Following,excluded,deprecated,19,"board marked deprecated by Scale, no longer updated; decision of 2026-09-04"
 SWE-Bench Bash Only,no_source,,0,no feed supplies this benchmark today (row kept for its metadata)
 SWE-Bench Pro,excluded,quality,25,"benchmark quality judged insufficient (benchmark-forecasting, Sept 2026)"
 SWE-Bench Pro (Private),excluded,quality,25,"benchmark quality judged insufficient (benchmark-forecasting, Sept 2026)"
 SWE-Bench Verified,excluded,quality,35,"benchmark quality judged insufficient for the ranking to be informative (benchmark-forecasting, Sept 2026)"
-SciCode,excluded,quality,176,error level in problem statements and reference tests judged unmanageable; decision of 2026-09-04
+SciCode,excluded,quality,198,error level in problem statements and reference tests judged unmanageable; decision of 2026-09-04
 ScienceQA,excluded,frontier_coverage,26,"leaderboard dominated by academic models fine-tuned on the training split; 6 frontier models out of 97, all below the specialised ones"
 SimpleQA,no_source,,0,no feed supplies this benchmark today (row kept for its metadata)
 SpatialViz-Bench,excluded,frontier_coverage,8,"8 rows, 2024-01..2025-06 models only, no frontier release of its period"
