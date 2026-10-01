@@ -14,7 +14,8 @@ from benchmark_data import config
 def join_scores(models: pandas.DataFrame, benchmarks: pandas.DataFrame,
                 scores: pandas.DataFrame) -> pandas.DataFrame:
     """Scores with their model and benchmark columns; consumer names for the shared columns."""
-    bench = benchmarks.rename(columns={"name": "benchmark", "floor": "lower_bound"})
+    bench = benchmarks.rename(columns={"name": "benchmark", "floor": "lower_bound",
+                                       "release_date": "benchmark_release_date"})
     out = (scores.merge(models, on="model_id", how="left")
                  .merge(bench, on="benchmark_id", how="left"))
     return out.rename(columns={"publication_date": "release_date"})

@@ -15,7 +15,8 @@ MODELS = pandas.DataFrame({"model_id": ["m1"], "base_model": ["x"], "reasoning_l
                            "model_version": ["x"], "organization": ["O"], "country": ["US"],
                            "publication_date": ["2025-01-01"], "training_flop": [""]})
 BENCH = pandas.DataFrame({"benchmark_id": ["b1"], "name": ["B"], "category": ["C"], "floor": [0.0],
-                          "ceiling": [""], "access": ["public"]})
+                          "ceiling": [""], "access": ["public"],
+                          "release_date": ["2024-01-01"]})
 SCORES = pandas.DataFrame({"model_id": ["m1"], "benchmark_id": ["b1"], "score": [0.5],
                            "stderr": [""], "harness": [""], "feed": ["epoch"],
                            "source_label": ["Paper"], "source_url": [""]})

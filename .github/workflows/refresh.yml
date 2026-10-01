@@ -35,9 +35,10 @@ jobs:
           title: "Data refresh ${{ github.run_started_at }}"
           commit-message: "Refresh feeds and rebuild"
           body: |
-            Automated refresh. Review the build log, `2_database/build_manifest.json` and the
-            parity reports (workflow artifact), then re-bless the golden copies if intended:
-            `cp 2_database/*.csv tests/expected_database/ && cp 3_views/*.csv tests/expected_views/`.
+            Automated refresh, built into `2_database/<date of the run>/` and `3_views/<date>/`.
+            Review the build log, that run's `build_manifest.json` and the parity reports
+            (workflow artifact), then re-bless the golden copies if intended with the `cp`
+            command the `check` step printed.
           add-paths: |
             0_input/feed/
             2_database/

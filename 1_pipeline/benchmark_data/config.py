@@ -3,6 +3,7 @@
 from pathlib import Path
 
 # Repository layout, numbered in processing order: 0_input -> 1_pipeline -> 2_database -> 3_views.
+# 2_database/ and 3_views/ hold one subfolder per build, named by the date it ran (runs.py).
 ROOT = Path(__file__).resolve().parent.parent.parent
 FEED_DIR = ROOT / "0_input" / "feed"
 METADATA_DIR = ROOT / "0_input" / "metadata"
@@ -22,7 +23,7 @@ MODEL_COLS = [
     "model_id", "base_model", "reasoning_level", "reasoning_tokens", "snapshot", "variant",
     "model_version", "organization", "country", "publication_date", "training_flop",
 ]
-BENCH_COLS = ["benchmark_id", "name", "category", "floor", "ceiling", "access"]
+BENCH_COLS = ["benchmark_id", "name", "category", "floor", "ceiling", "access", "release_date"]
 SCORE_COLS = ["model_id", "benchmark_id", "score", "stderr", "harness", "feed", "source_label",
               "source_url"]
 HUMAN_COLS = ["benchmark_id", "name", "group", "score", "note", "source"]
@@ -33,7 +34,8 @@ TABLE_FILES = ("models.csv", "benchmarks.csv", "scores.csv", "human_baselines.cs
                "model_names.csv", "excluded_benchmarks.csv")
 MANIFEST_FILE = "build_manifest.json"  # written next to the tables, not part of the golden
 
-# Consumer views (3_views/): flat files in the schemas Multiaxis_ECI and benchmark-forecasting read.
+# Consumer views (3_views/<YYYYMMDD>/): flat files in the schemas Multiaxis_ECI and
+# benchmark-forecasting read.
 VIEWS_DIR = ROOT / "3_views"
 EXPECTED_VIEWS_DIR = ROOT / "tests" / "expected_views"
 VIEW_FILES = ("all_scores_flat.csv", "dated_scores_flat.csv", "human_baselines.csv")
@@ -57,6 +59,7 @@ BENCHMARKS_FILE = "benchmarks.csv"          # one row per benchmark: status, cat
 ORGANIZATIONS_FILE = "organizations.csv"    # base_model -> organization, country (ISO alpha-2)
 SIBLING_MERGES_FILE = "sibling_merges.csv"  # merged_name, part: boards averaged into one series
 RELEASE_DATES_FILE = "release_dates.csv"    # (base_model, snapshot) -> researched publication_date
+BENCHMARK_RELEASE_DATES_FILE = "benchmark_release_dates.csv"  # benchmark -> researched release_date
 HUMAN_BASELINES_FILE = "human_baselines.csv"  # benchmark, group, score, note, source
 
 # Human reference groups, from the least to the most demanding along each branch (Multiaxis_ECI's
@@ -76,6 +79,8 @@ HUMAN_GROUPS = {
 # Epoch's model table, shipped in the ZIP: fallback source of publication_date, organization and
 # country for models the score files and organizations.csv leave blank (see enrich).
 EPOCH_MODEL_METADATA = FEED_DIR / "epoch" / "model_metadata.csv"
+# Epoch's benchmark table, shipped in the ZIP: first source of a benchmark's release_date.
+EPOCH_BENCHMARK_METADATA = FEED_DIR / "epoch" / "benchmark_metadata.csv"
 # Country names Epoch uses -> ISO 3166-1 alpha-2. An unknown name stops the build (add it here).
 EPOCH_COUNTRY_ISO = {
     "United States of America": "US", "China": "CN", "France": "FR", "United Arab Emirates": "AE",

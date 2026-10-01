@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pandas
 
-from benchmark_data import config
+from benchmark_data import config, runs
 
 log = logging.getLogger(__name__)
 
@@ -73,10 +73,11 @@ def compare(golden: pandas.DataFrame, candidate: pandas.DataFrame, status: dict[
     return out
 
 
-def run(consumer: str, views_dir: Path = config.VIEWS_DIR,
+def run(consumer: str, views_dir: Path | None = None,
         golden_dir: Path = config.PARITY_GOLDEN_DIR, metadata_dir: Path = config.METADATA_DIR,
         tol: float = 1e-3) -> dict[str, pandas.DataFrame]:
-    """Compare one consumer's golden with the matching view."""
+    """Compare one consumer's golden with the matching view (by default of the latest run)."""
+    views_dir = views_dir or runs.latest(config.VIEWS_DIR)
     golden_file, view_file = GOLDENS[consumer]
     golden = pandas.read_csv(golden_dir / golden_file, dtype=str).fillna("")
     golden["benchmark"] = golden["benchmark"].replace(name_map(metadata_dir))
@@ -108,6 +109,6 @@ def parity(reports_dir: Path = config.REPORTS_DIR) -> None:
     for consumer, (golden_file, view_file) in GOLDENS.items():
         res = run(consumer)
         n_g = len(pandas.read_csv(config.PARITY_GOLDEN_DIR / golden_file))
-        n_v = len(pandas.read_csv(config.VIEWS_DIR / view_file))
+        n_v = len(pandas.read_csv(runs.latest(config.VIEWS_DIR) / view_file))
         log.info("%s: %s", consumer, ", ".join(f"{k} {len(v):,}" for k, v in res.items()))
         (reports_dir / f"parity_{consumer}.md").write_text(report(consumer, res, n_g, n_v))

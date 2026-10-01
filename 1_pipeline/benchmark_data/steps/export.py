@@ -64,7 +64,8 @@ def build_manifest(tables: dict[str, pandas.DataFrame], feed_dir: Path = config.
     inputs = sorted([*metadata_dir.glob("*.csv"), *feed_dir.glob("*/aliases.csv")])
     return {
         "schema_version": benchmark_data.SCHEMA_VERSION,
-        "built_at": datetime.datetime.now(datetime.UTC).isoformat(timespec="seconds"),
+        # Local time with its offset: the date part is the run folder's name (runs.today).
+        "built_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
         "git_commit": _git_commit(),
         "feeds": provenance,
         "inputs_sha256": {str(p.relative_to(config.ROOT)): _sha256(p) for p in inputs},
@@ -72,17 +73,17 @@ def build_manifest(tables: dict[str, pandas.DataFrame], feed_dir: Path = config.
     }
 
 
-def export_views(views: dict[str, pandas.DataFrame], out_dir: Path = config.VIEWS_DIR) -> None:
+def export_views(views: dict[str, pandas.DataFrame], out_dir: Path) -> None:
     """Write the consumer views (already sorted by their builders)."""
     out_dir.mkdir(parents=True, exist_ok=True)
     for name in config.VIEW_FILES:
         views[name].fillna("").to_csv(out_dir / name, index=False, encoding="utf-8")
-        log.info("3_views/%s: %s rows x %d columns", name, f"{len(views[name]):,}",
+        log.info("views/%s: %s rows x %d columns", name, f"{len(views[name]):,}",
                  len(views[name].columns))
 
 
 def export(models: pandas.DataFrame, benchmarks: pandas.DataFrame, scores: pandas.DataFrame,
-           human: pandas.DataFrame, out_dir: Path = config.DATABASE_DIR,
+           human: pandas.DataFrame, out_dir: Path,
            names: pandas.DataFrame | None = None, excluded: pandas.DataFrame | None = None,
            manifest: dict | None = None) -> None:
     """Write the tables given (the optional ones when provided) and the manifest."""

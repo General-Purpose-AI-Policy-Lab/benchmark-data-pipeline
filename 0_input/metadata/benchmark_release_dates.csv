@@ -1,0 +1,48 @@
+name,release_date,source,note
+AISI CTF Suites - Apprentice,2024-11-19,https://www.nist.gov/system/files/documents/2024/11/19/Upgraded%20Sonnet-Publication-US.pdf,"US/UK AISI joint pre-deployment report on Claude 3.5 Sonnet (new): first public naming of the four CTF tiers (Table 6.2). Not dated by Epoch."
+AISI CTF Suites - Expert,2024-11-19,https://www.nist.gov/system/files/documents/2024/11/19/Upgraded%20Sonnet-Publication-US.pdf,"Tier defined in the 2024-11-19 joint report; first per-tier results only in the Frontier AI Trends Report (2025-12-18). Tier definition kept, user decision 2026-10-01."
+AISI CTF Suites - Practitioner,2024-11-19,https://www.nist.gov/system/files/documents/2024/11/19/Upgraded%20Sonnet-Publication-US.pdf,"Tier defined in the 2024-11-19 joint report; first per-tier results only in the Frontier AI Trends Report (2025-12-18). Tier definition kept, user decision 2026-10-01."
+AISI CTF Suites - Technical Non-Expert,2024-11-19,https://www.nist.gov/system/files/documents/2024/11/19/Upgraded%20Sonnet-Publication-US.pdf,"First public naming of the tier (90% pass@10 on 29 tasks). AISI's May 2024 update described the CTF set without tiers."
+AISI Cyber Ranges - Cooling Tower,2026-03-11,https://arxiv.org/abs/2603.11214,"arXiv v1, Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios (AISI): first public naming of the range."
+AISI Cyber Ranges - The Last Ones,2026-03-11,https://arxiv.org/abs/2603.11214,"arXiv v1, same paper. An unnamed nine-flag range already appears in the Frontier AI Trends Report (2025-12-18), probably this one."
+AudioMultiChallenge,2025-12-16,https://arxiv.org/abs/2512.14865,"arXiv v1; SEAL leaderboard and blog 2025-12-17."
+BioLP-bench,2024-08-26,https://www.biorxiv.org/content/10.1101/2024.08.21.608694v1,"bioRxiv v1 posted (the DOI's 08.21 is the submission date)."
+CTI-REALM,2026-03-13,https://arxiv.org/abs/2603.13517,"arXiv v1, one week before Microsoft's blog post (2026-03-20)."
+CyberGym,2025-06-03,https://arxiv.org/abs/2506.02548,arXiv v1.
+CyScenarioBench,2025-12-05,https://www.irregular.com/publications/cyscenariobench,"Launch by Irregular (formerly Pattern Labs), no paper; the page's header metadata carries a later revision date."
+DrugDiscoveryBench,2026-06-30,https://scale.com/blog/drugdiscoverybench,"Scale blog and leaderboard (with Phylo); the gated HF repo was created 2026-06-26, before it was public."
+FrontierMath Erdos,2026-09-01,https://epoch.ai/latest/announcing-frontiermath-erdos,"Epoch's announcement; Epoch's benchmark_metadata.csv says 2026-09-03, arXiv v1 is 2026-09-06."
+FrontierMath Tier 4 v2,2025-07-11,https://x.com/EpochAIResearch/status/1943744462972215305,"v2 (2026-06-12) is a revision of the same problems: date of Tier 4 itself, as Epoch dates Tier 4 v1. User decision 2026-10-01."
+FrontierMath Tiers 1-3 v2,2024-11-07,https://arxiv.org/abs/2411.04872,"v2 (2026-06-12) corrects 42% of the problems and drops 12 of 350: a revision, dated by FrontierMath's arXiv v1. User decision 2026-10-01."
+GPQA Diamond Biology,2023-11-20,https://arxiv.org/abs/2311.12022,GPQA arXiv v1; the Diamond and Main splits were in the original release.
+GPQA Diamond Chemistry,2023-11-20,https://arxiv.org/abs/2311.12022,GPQA arXiv v1.
+GPQA Main Biology,2023-11-20,https://arxiv.org/abs/2311.12022,GPQA arXiv v1.
+GPQA Main Chemistry,2023-11-20,https://arxiv.org/abs/2311.12022,GPQA arXiv v1.
+HLE Diamond,2026-09-22,https://lastexam.ai/blog/hle-diamond,"CAIS announcement of the 1,000-question HLE subset; HF dataset 2026-09-23 UTC."
+InterCode-CTF,2023-10-30,https://arxiv.org/abs/2306.14898v3,"arXiv v3 of InterCode, the first version with the 100-task picoCTF split; v1 (2023-06-26) had a 4-task toy set."
+LAB-Bench Cloning,2024-07-14,https://arxiv.org/abs/2407.10362,LAB-Bench arXiv v1.
+LAB-Bench LitQA2,2024-07-14,https://arxiv.org/abs/2407.10362,"LAB-Bench arXiv v1; LitQA2 is a named subset of that paper, before PaperQA2."
+LAB-Bench Protocol,2024-07-14,https://arxiv.org/abs/2407.10362,LAB-Bench arXiv v1.
+LAB-Bench SeqQA,2024-07-14,https://arxiv.org/abs/2407.10362,LAB-Bench arXiv v1.
+Lech Mazur Writing,2025-01-06,https://github.com/lechmazur/writing,"Announcement of the benchmark (repo created 2025-01-05). Epoch's 2025-01-31 is a commit that only added models; the April 2025 grader update is a revision, origin date kept (user decision 2026-10-01)."
+MCP Atlas,2025-09-19,https://scale.com/blog/mcp-atlas,"SEAL leaderboard launch; HF dataset 2025-12-12, arXiv 2026-01-31."
+MMLU Biology,2020-09-07,https://arxiv.org/abs/2009.03300,MMLU arXiv v1.
+MMLU Chemistry,2020-09-07,https://arxiv.org/abs/2009.03300,MMLU arXiv v1.
+MMLU Pro Biology,2024-05-15,https://x.com/WenhuChen/status/1790597967319007564,"MMLU-Pro announcement with the HF dataset and leaderboard; arXiv v1 2024-06-03."
+MMLU Pro Chemistry,2024-05-15,https://x.com/WenhuChen/status/1790597967319007564,"MMLU-Pro announcement with the HF dataset and leaderboard; arXiv v1 2024-06-03."
+MMLU-Pro,2024-05-15,https://x.com/WenhuChen/status/1790597967319007564,"Announcement with the HF dataset and leaderboard; arXiv v1 2024-06-03."
+MultiChallenge,2025-01-29,https://arxiv.org/abs/2501.17399,"arXiv v1; the 2026-03-23 update (new judge, about 54 tasks revised) is a revision."
+MultiNRC,2025-07-23,https://arxiv.org/abs/2507.17476,"arXiv v1, leaderboard and blog the same day."
+NL2Bash,2018-02-25,https://arxiv.org/abs/1802.08979,arXiv v1 (LREC 2018).
+OEIS Open Lite,2026-08-12,https://arxiv.org/abs/2608.11941,"arXiv v1 of OEIS Open, whose abstract defines the 100-conjecture Lite subset."
+SEAL Tool Use (Enterprise),2024-09-19,https://x.com/scale_AI/status/1836859717253202341,"SEAL leaderboard launch (Agentic Tool Use Chat and Enterprise); the ToolComp paper came later (arXiv 2025-01-02)."
+SimpleBench,2024-08-20,https://simple-bench.com/,"Public leaderboard (reported the next day as released 'yesterday'); Epoch's 2024-10-31 is the technical report. Preliminary results tweeted 2024-07-23."
+SWE Atlas,2026-03-04,https://x.com/scale_AI/status/2029244660905095359,"First board (Codebase QnA) announced and live; the three boards were complete on 2026-05-07, arXiv 2026-05-08."
+SWE-Bench Pro V2,2026-09-22,https://labs.scale.com/blog/swe-bench-pro-v2,"Scale's V2: 642 tasks (731 in v1) and the new 51-task Hard subset, the table this series reads."
+Terminal Bench 2.0,2025-11-07,https://www.tbench.ai/news/announcement-2-0,"Terminal-Bench 2.0 with Harbor, a new task set; Epoch's 2025-05-19 is Terminal-Bench 1.0."
+TutorBench,2025-09-12,https://scale.com/blog/tutorbench,"SEAL leaderboard and blog; arXiv 2025-10-03."
+Visual Task Assessment (VISTA),2024-12-18,https://x.com/scale_AI/status/1869484643323662506,"SEAL leaderboard launch (visual_language_understanding); no paper, private dataset."
+VisualToolBench,2025-10-14,https://arxiv.org/abs/2510.12712,"arXiv v1; HF dataset 2025-10-17."
+WeirdML v2,2025-06-27,https://htihle.github.io/weirdml.html,"v2 is a new task set ('WeirdML v2 is now out', page added 2025-06-27); Epoch's 2025-01-16 is v1."
+WMDP Biology,2024-03-05,https://arxiv.org/abs/2403.03218,WMDP arXiv v1.
+WMDP Chemistry,2024-03-05,https://arxiv.org/abs/2403.03218,WMDP arXiv v1.

@@ -3,9 +3,9 @@ differences must fall into the documented buckets."""
 
 import pytest
 
-from benchmark_data import config, parity
+from benchmark_data import config, parity, runs
 
-pytestmark = pytest.mark.skipif(not (config.VIEWS_DIR / "all_scores_flat.csv").exists(),
+pytestmark = pytest.mark.skipif(not runs.dates(config.VIEWS_DIR),
                                 reason="3_views/ absent: run the build first")
 
 

@@ -3,7 +3,7 @@
 import pandas
 import pytest
 
-from benchmark_data import config
+from benchmark_data import config, runs
 from benchmark_data.steps.human_baselines import attach_human_baselines, load_human_baselines
 
 HEADER = "benchmark,group,score,note,source\n"
@@ -43,6 +43,7 @@ def test_bad_files_are_rejected(tmp_path, body):
 
 def test_shipped_file_matches_the_database():
     table = load_human_baselines()
-    names = set(pandas.read_csv(config.DATABASE_DIR / "benchmarks.csv", dtype=str)["name"])
+    benchmarks = runs.latest(config.DATABASE_DIR) / "benchmarks.csv"
+    names = set(pandas.read_csv(benchmarks, dtype=str)["name"])
     assert set(table["benchmark"]) <= names, sorted(set(table["benchmark"]) - names)
     assert (table["source"] != "").all()

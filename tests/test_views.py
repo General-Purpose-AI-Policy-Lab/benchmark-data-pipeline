@@ -3,7 +3,7 @@
 import pandas
 import pytest
 
-from benchmark_data import config
+from benchmark_data import config, runs
 from benchmark_data.identity import IDENT_COLS, machine_name, split_name
 from benchmark_data.views import build_views
 
@@ -57,7 +57,7 @@ def test_reconstructed_names_split_back_to_their_identity():
     Named fine-tunes (`Bio Llama`) and month-only snapshots (`2025-04`) are out of the grammar
     on purpose: their reconstructed name only has to be stable, not parseable.
     """
-    models = pandas.read_csv(config.DATABASE_DIR / "models.csv", dtype=str).fillna("")
+    models = pandas.read_csv(runs.latest(config.DATABASE_DIR) / "models.csv", dtype=str).fillna("")
     in_grammar = (models["variant"].isin(config.RUN_VARIANTS)
                   & models["snapshot"].str.fullmatch(r"|\d{4}-\d{2}-\d{2}"))
     bad = [(r["model_version"], dict(r[IDENT_COLS])) for _, r in models[in_grammar].iterrows()

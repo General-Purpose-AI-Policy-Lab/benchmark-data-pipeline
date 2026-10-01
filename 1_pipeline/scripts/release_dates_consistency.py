@@ -12,7 +12,7 @@ import sys
 
 import pandas
 
-from benchmark_data import config
+from benchmark_data import config, runs
 from benchmark_data.identity import IDENT_COLS
 from benchmark_data.steps.enrich import load_epoch_model_metadata
 from benchmark_data.steps.ingest import ingest
@@ -34,7 +34,7 @@ def main() -> int:
     manual = pandas.read_csv(config.METADATA_DIR / config.RELEASE_DATES_FILE, dtype=str).fillna("")
     manual_by = {(r.base_model, r.snapshot, r.variant): r.publication_date
                  for r in manual.itertuples()}
-    final = pandas.read_csv(config.DATABASE_DIR / "models.csv", dtype=str).fillna("")
+    final = pandas.read_csv(runs.latest(config.DATABASE_DIR) / "models.csv", dtype=str).fillna("")
     final = final.set_index("model_id")["publication_date"]
 
     rows = []

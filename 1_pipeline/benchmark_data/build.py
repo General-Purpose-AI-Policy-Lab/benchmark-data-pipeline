@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pandas
 
-from benchmark_data import config
+from benchmark_data import config, runs
 from benchmark_data.steps.dedup import dedup
 from benchmark_data.steps.enrich import enrich
 from benchmark_data.steps.export import (
@@ -63,8 +63,19 @@ def _log_new_models(new_names: list[dict], previous_models: Path) -> None:
 
 
 def build(feed_dir: Path = config.FEED_DIR, metadata_dir: Path = config.METADATA_DIR,
-          out_dir: Path = config.DATABASE_DIR, views_dir: Path = config.VIEWS_DIR) -> None:
-    """Build the tables of `out_dir` and the views of `views_dir` from the feeds and metadata."""
+          out_dir: Path | None = None, views_dir: Path | None = None) -> None:
+    """Build the tables of `out_dir` and the views of `views_dir` from the feeds and metadata.
+
+    By default both go to the folders of today's run, `2_database/<YYYYMMDD>/` and
+    `3_views/<YYYYMMDD>/` (a rebuild the same day replaces them).
+    """
+    previous = runs.dates(config.DATABASE_DIR)
+    previous_models = (config.DATABASE_DIR / previous[-1] / "models.csv" if previous
+                       else config.DATABASE_DIR / "models.csv")
+    date = runs.today()
+    out_dir = out_dir or config.DATABASE_DIR / date
+    views_dir = views_dir or config.VIEWS_DIR / date
+    log.info("run %s: tables -> %s, views -> %s", date, out_dir, views_dir)
     result = ingest(feed_dir, metadata_dir)
 
     scores = pandas.DataFrame(result.scores, columns=config.SCORE_COLS)
@@ -92,7 +103,7 @@ def build(feed_dir: Path = config.FEED_DIR, metadata_dir: Path = config.METADATA
              f"{len(models):,}", f"{len(benchmarks):,}", f"{len(deduped):,}", f"{len(human):,}")
     for feed, names in result.unmapped.items():
         log.info("unresolved [%s]: %s", feed, sorted(names) if names else "none")
-    _log_new_models(result.new_names, out_dir / "models.csv")
+    _log_new_models(result.new_names, previous_models)
 
     names = model_names_table(result.raw_names)
     excluded = excluded_table(metadata_dir, result.excluded)

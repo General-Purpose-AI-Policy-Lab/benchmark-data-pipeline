@@ -10,7 +10,7 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 
 ```
 0_input/feed/<source>/      one source's raw data + its aliases.csv (one per source, never shared)
-0_input/metadata/           benchmarks.csv, organizations.csv, sibling_merges.csv, release_dates.csv, human_baselines.csv
+0_input/metadata/           benchmarks.csv, organizations.csv, sibling_merges.csv, release_dates.csv, benchmark_release_dates.csv, human_baselines.csv
 1_pipeline/benchmark_data/  the package: python -m benchmark_data {refresh,build,check,parity}
   identity.py               machine-name grammar, aliases, uuid5
   sources/<feed>.py         one module per feed: its _SPEC / _SKIP dictionaries and translate()
@@ -19,8 +19,8 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
   views/                    all_scores_flat.py, dated_scores_flat.py: the consumer views
   parity.py                 views against the consumers' frozen outputs (tests/parity/golden)
   build.py  check.py  refresh.py
-2_database/                 the tables (+ excluded_benchmarks.csv, model_names.csv, build_manifest.json)
-3_views/                    all_scores_flat.csv, dated_scores_flat.csv, human_baselines.csv
+2_database/<YYYYMMDD>/      the tables of the build run that day (+ excluded_benchmarks.csv, model_names.csv, build_manifest.json)
+3_views/<YYYYMMDD>/         all_scores_flat.csv, dated_scores_flat.csv, human_baselines.csv, same run
 docs/                       decisions.md (settled), decisions_pending.md (open), plan_fusion.md
 tests/                      unit tests, golden copies (tests/expected_database, tests/expected_views), parity goldens
 ```
@@ -50,6 +50,7 @@ Adding a metadata column changes no ID. Correcting an identity column changes on
 | `benchmark_id` | uuid5 of `name`. Primary key. |
 | `name` | identity (the only column in the ID) |
 | `category`, `floor`, `ceiling`, `access` | metadata, from `0_input/metadata/benchmarks.csv` (`ceiling` empty when no upper limit is published) |
+| `release_date` | first public release of the benchmark (arXiv v1, announcement, leaderboard or dataset, whichever came first), not its first score: Epoch's `benchmark_metadata.csv`, overridden by `0_input/metadata/benchmark_release_dates.csv` (one source URL per row). A revision keeps the date of the benchmark it revises; a new task set under a new version takes its own. |
 
 Only benchmarks whose `status` is `included` in `0_input/metadata/benchmarks.csv` reach the database (see "Benchmark scope"). The justification columns (`floor_reason`, `floor_source`, `access_evidence_url`, `note`) stay in the metadata file.
 
@@ -151,7 +152,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 
 ### Fix a mistranslated name
 
-1. In `2_database/scores.csv`, find the faulty row → the `feed` column is the source.
+1. In `2_database/<YYYYMMDD>/scores.csv` (the latest run), find the faulty row → the `feed` column is the source.
 2. Edit `0_input/feed/<feed>/aliases.csv`. Columns: `raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note`. `raw_name` is the exact raw string (after stripping trailing `*`/`†` and whitespace).
 3. Empty `base_model` = **deliberate DROP** (e.g. `Unsafety Llama` in `rand`). Put the reason in `note`.
 4. `python -m benchmark_data build`. The alias always wins over the grammar, with one nuance on Epoch: an effort read from the displayed `Name` may complete an identity the alias left empty.
@@ -174,11 +175,15 @@ Edit its row in `0_input/metadata/benchmarks.csv`: `status`, `exclusion_criterio
 
 Add a row to `0_input/metadata/release_dates.csv` (`base_model`, `snapshot`, `variant`, ISO date, source URL, note). With an empty `variant` the row wins over Epoch for every effort level and run variant of that exact snapshot; name the variant to date a fine-tune. A row matching no model is reported by the build. Record the reasoning in `docs/decisions.md`.
 
+### Correct a benchmark's release date
+
+Add a row to `0_input/metadata/benchmark_release_dates.csv` (`name`, ISO `release_date`, source URL, note). It wins over Epoch's date; a row naming no benchmark of the build, and an included benchmark left undated, are reported. Record the reasoning in `docs/decisions.md`.
+
 ### Add a metadata column
 
 1. A column in `0_input/metadata/benchmarks.csv` or `organizations.csv`.
 2. Add it to the join in `1_pipeline/benchmark_data/steps/enrich.py` and to `BENCH_COLS` or `MODEL_COLS` in `config.py`; without the latter it is silently absent from the written CSV.
-3. `python -m benchmark_data build`. No ID moves. The golden test flags the new column: intended, re-bless with `cp 2_database/*.csv tests/expected_database/`.
+3. `python -m benchmark_data build`. No ID moves. The golden test flags the new column: intended, re-bless with `cp 2_database/<YYYYMMDD>/*.csv tests/expected_database/` (the run just built).
 
 ## Continuous integration
 
@@ -191,15 +196,17 @@ The build logs every score below its benchmark floor (kept as published: chance-
 ```bash
 uv venv --python 3.11 .venv && uv pip install -e . --group dev
 python -m benchmark_data refresh      # required on a fresh clone: fetches the SEAL pages
-python -m benchmark_data build        # offline, deterministic
-python -m benchmark_data check        # 2_database/ and 3_views/ == their blessed copies under tests/ ?
+python -m benchmark_data build        # offline, deterministic; writes 2_database/<today>/ and 3_views/<today>/
+python -m benchmark_data check        # the latest run == the blessed copies under tests/ ?
 pytest                                # unit tests + golden + determinism
 ruff check .
 ```
 
-The build only needs `pandas`. Two successive builds must produce a **byte-identical** `2_database/`; a divergence means an unsorted `dict`/`set` somewhere (`tests/test_build_golden.py` checks it).
+**Dated runs.** Every build writes its tables to `2_database/<YYYYMMDD>/` and its views to `3_views/<YYYYMMDD>/`, named by the local date the build ran (`benchmark_data/runs.py`); `build_manifest.json` records the same moment in `built_at`, with its offset. A second build the same day replaces that day's folders; earlier days stay. `check`, `parity` and the consumers' `sync` (Multiaxis_ECI, benchmark-forecasting) read the most recent date, and the consumers name their outputs after it, so the date carried by a result folder is the day the pipeline ran, not the day the analysis was done.
 
-`check` compares `2_database/` and `3_views/` with their blessed copies `tests/expected_database/` and `tests/expected_views/` (regression test). An intended difference (new feed, corrected alias, refreshed data) is re-blessed with `cp 2_database/*.csv tests/expected_database/ && cp 3_views/*.csv tests/expected_views/`.
+The build only needs `pandas`. Two successive builds must produce a **byte-identical** set of tables; a divergence means an unsorted `dict`/`set` somewhere (`tests/test_build_golden.py` checks it).
+
+`check` compares the latest `2_database/<YYYYMMDD>/` and `3_views/<YYYYMMDD>/` with their blessed copies `tests/expected_database/` and `tests/expected_views/` (regression test). An intended difference (new feed, corrected alias, refreshed data) is re-blessed with the command `check` prints, `cp 2_database/<YYYYMMDD>/*.csv tests/expected_database/ && cp 3_views/<YYYYMMDD>/*.csv tests/expected_views/`.
 
 ### Refresh the feeds
 

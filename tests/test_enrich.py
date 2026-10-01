@@ -6,9 +6,11 @@ import pytest
 
 from benchmark_data import config
 from benchmark_data.steps.enrich import (
+    add_benchmark_release_dates,
     add_epoch_model_metadata_dates,
     add_manual_dates,
     add_sibling_dates,
+    load_epoch_benchmark_dates,
     load_epoch_model_metadata,
 )
 
@@ -99,3 +101,41 @@ def test_model_metadata_fills_only_undated_models(tmp_path):
     assert epoch.set_index("model_id").loc[model_id(ident), "country"] == "", "no country given"
     out, _ = add_epoch_model_metadata_dates(models, epoch)
     assert out["publication_date"].tolist() == ["2024-06-01", "2025-01-01"]
+
+
+def test_benchmark_dates_researched_win_over_epoch_and_gaps_are_reported(tmp_path):
+    (tmp_path / config.BENCHMARK_RELEASE_DATES_FILE).write_text(
+        "name,release_date,source,note\nB,2024-03-01,src,\nGhost,2024-01-01,src,\n")
+    bench = pandas.DataFrame({"name": ["A", "B", "C"]})
+    out, (orphans, undated) = add_benchmark_release_dates(
+        bench, tmp_path, epoch={"A": "2023-01-01", "B": "2023-06-01"})
+    assert out["release_date"].tolist() == ["2023-01-01", "2024-03-01", ""]
+    assert orphans == {"Ghost"} and undated == {"C"}
+    (tmp_path / config.BENCHMARK_RELEASE_DATES_FILE).write_text(
+        "name,release_date,source,note\nB,03/2024,src,\n")
+    with pytest.raises(ValueError, match="non-ISO"):
+        add_benchmark_release_dates(bench, tmp_path, epoch={})
+
+
+def test_epoch_benchmark_dates_match_by_file_live_task_or_exact_name(tmp_path):
+    meta = tmp_path / "benchmark_metadata.csv"
+    meta.write_text("benchmark,source_file,release_date\n"
+                    "Aider polyglot,aider_polyglot_external.csv,2024-12-21\n"
+                    "GPQA diamond,gpqa_diamond.csv,2023-11-20\n"
+                    "CritPt,,2025-09-30\n"
+                    "Blueprint-Bench 2,,2026-05-04\n"
+                    "Unknown,,2020-01-01\n")
+    assert load_epoch_benchmark_dates(meta) == {
+        "Aider Polyglot": "2024-12-21", "GPQA Diamond": "2023-11-20", "CritPt": "2025-09-30",
+        "BlueprintBench 2": "2026-05-04"}
+
+
+def test_every_included_benchmark_has_a_release_date_with_a_source():
+    meta = pandas.read_csv(config.METADATA_DIR / config.BENCHMARKS_FILE, dtype=str).fillna("")
+    researched = pandas.read_csv(config.METADATA_DIR / config.BENCHMARK_RELEASE_DATES_FILE,
+                                 dtype=str).fillna("")
+    assert (researched["source"] != "").all()
+    dated = set(researched["name"]) | set(load_epoch_benchmark_dates())
+    included = set(meta.loc[meta["status"] == config.STATUS_INCLUDED, "name"])
+    merged_parts = set(pandas.read_csv(config.METADATA_DIR / config.SIBLING_MERGES_FILE)["part"])
+    assert included - merged_parts - dated == set()

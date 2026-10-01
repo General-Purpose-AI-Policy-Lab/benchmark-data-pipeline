@@ -4,4 +4,4 @@ The build is offline and deterministic (it only reads `0_input/feed/` and `0_inp
 only `refresh` touches the network. Entry point: `python -m benchmark_data build`.
 """
 
-SCHEMA_VERSION = "2.1"
+SCHEMA_VERSION = "2.2"

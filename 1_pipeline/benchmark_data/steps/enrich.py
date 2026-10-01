@@ -11,6 +11,8 @@ import pandas
 
 from benchmark_data import config
 from benchmark_data.identity import IDENT_COLS, load_aliases, machine_name, model_id, resolve_model
+from benchmark_data.sources.epoch_live import LIVE_TASK_SPEC
+from benchmark_data.sources.epoch_zip import FILE_SPEC
 
 log = logging.getLogger(__name__)
 
@@ -55,6 +57,73 @@ def add_benchmark_metadata(benchmarks: pandas.DataFrame,
             log.warning("benchmarks.csv: %d included benchmark(s) with an empty %s: %s",
                         len(names), c, sorted(names)[:8])
     return b.drop(columns="_merge").fillna({c: "" for c in cols}), leftovers
+
+
+# Epoch's spelling in benchmark_metadata.csv -> ours, for rows matched by name only.
+EPOCH_BENCHMARK_NAMES = {"Blueprint-Bench 2": "BlueprintBench 2"}
+
+
+def load_epoch_benchmark_dates(path: Path = config.EPOCH_BENCHMARK_METADATA) -> dict[str, str]:
+    """Epoch's `release_date` per benchmark, keyed on our names.
+
+    A row is matched through its `source_file` (the ZIP translator's `FILE_SPEC`); a row without
+    one (Epoch's benchmarks outside the ECI) or an internal evaluation, through its `benchmark`
+    column: the live feed's `LIVE_TASK_SPEC`, a `FILE_SPEC` name spelled the same, or
+    `EPOCH_BENCHMARK_NAMES`. Rows with no date or no match are left out.
+    """
+    if not path.exists():
+        log.warning("%s absent: no Epoch benchmark dates", path)
+        return {}
+    table = pandas.read_csv(path, dtype=str).fillna("")
+    zip_names = {spec[0] for spec in FILE_SPEC.values()}
+    out = {}
+    for _, r in table[table["release_date"] != ""].iterrows():
+        if r["source_file"] in FILE_SPEC:
+            name = FILE_SPEC[r["source_file"]][0]
+        elif r["benchmark"] in LIVE_TASK_SPEC:
+            name = LIVE_TASK_SPEC[r["benchmark"]][0]
+        elif r["benchmark"] in zip_names:
+            name = r["benchmark"]
+        elif r["benchmark"] in EPOCH_BENCHMARK_NAMES:
+            name = EPOCH_BENCHMARK_NAMES[r["benchmark"]]
+        else:
+            continue
+        out[name] = r["release_date"]
+    return out
+
+
+def add_benchmark_release_dates(benchmarks: pandas.DataFrame,
+                                metadata_dir: Path = config.METADATA_DIR,
+                                epoch: dict[str, str] | None = None):
+    """release_date: the benchmark's first public release, not its first score.
+
+    Epoch's `benchmark_metadata.csv` first; `benchmark_release_dates.csv` (key: name, one source
+    URL per row) wins over it, for the benchmarks Epoch does not date and those where Epoch dates
+    another version or event (`docs/decisions.md`).
+
+    Raises:
+        ValueError: duplicated name, or a date that is not ISO `YYYY-MM-DD`.
+    """
+    epoch = load_epoch_benchmark_dates() if epoch is None else epoch
+    manual = pandas.read_csv(metadata_dir / config.BENCHMARK_RELEASE_DATES_FILE,
+                             dtype=str).fillna("")
+    if manual["name"].duplicated().any():
+        raise ValueError(f"duplicated name in {config.BENCHMARK_RELEASE_DATES_FILE}: "
+                         f"{sorted(manual.loc[manual['name'].duplicated(), 'name'])}")
+    bad = manual.loc[~manual["release_date"].str.fullmatch(r"\d{4}-\d{2}-\d{2}"), "name"]
+    if len(bad):
+        raise ValueError(f"{config.BENCHMARK_RELEASE_DATES_FILE}: non-ISO date for {sorted(bad)}")
+    researched = dict(zip(manual["name"], manual["release_date"], strict=True))
+    b = benchmarks.copy()
+    from_epoch = b["name"].map(epoch)
+    from_file = b["name"].map(researched)
+    b["release_date"] = from_file.fillna(from_epoch).fillna("")
+    log.info("benchmark release dates: %d from Epoch, %d from %s (%d of them replace Epoch's), "
+             "%d undated", int((from_epoch.notna() & from_file.isna()).sum()),
+             int(from_file.notna().sum()), config.BENCHMARK_RELEASE_DATES_FILE,
+             int((from_file.notna() & from_epoch.notna() & (from_file != from_epoch)).sum()),
+             int((b["release_date"] == "").sum()))
+    return b, (set(researched) - set(b["name"]), set(b.loc[b["release_date"] == "", "name"]))
 
 
 def add_organizations(models: pandas.DataFrame, metadata_dir: Path = config.METADATA_DIR):
@@ -296,4 +365,6 @@ def enrich(models: pandas.DataFrame, benchmarks: pandas.DataFrame, meta_obs: lis
     report_leftovers("sibling dates", *lo)
     benchmarks, lo = add_benchmark_metadata(benchmarks, metadata_dir, merged_parts)
     report_leftovers("benchmarks.csv", *lo)
+    benchmarks, lo = add_benchmark_release_dates(benchmarks, metadata_dir)
+    report_leftovers("benchmark release dates", *lo)
     return models, benchmarks
