@@ -239,3 +239,10 @@ A sweep of every model for one release split across spellings (same organisation
 ## 2026-10-01, organization of Claude Fable 5.1's thinking runs
 
 - `claude-fable-5-1_thinking` (5 scores, an identity of the hybrid split above) had no organization or country: `organizations.csv` had no `claude-fable-5-1` row, the bare and effort runs took theirs from Epoch's `model_metadata.csv`, which has no row for the thinking identity (its `_unknown` row is keyed on the machine name, not on the split identity). A refresh and rebuild on 2026-10-01 left it empty, so the row `claude-fable-5-1,Anthropic,US` is added, as for Fable 5.
+
+## 2026-10-01, feeds refreshed
+
+- Epoch (ZIP, live feed, cyber table), Kaggle and SEAL fetched again; RAND and the Cybench snapshot stay frozen. SEAL's `sweatlas-qna` and `visual_language_understanding` pages answer 404: the captured pages are kept, their scores unchanged.
+- Purely additive: 22 new identities (GPT-6.1 Sol, released 2026-09-29 per Epoch, its effort runs; the effort runs of GPT-6 Sol / Luna, Claude Sonnet 5.5 and Opus 5.5) and 92 new scores, every raw name resolved; no existing score, date or identity changed. `gpt-6-sol` (bare) now takes OpenAI / US from Epoch's model table.
+- `organizations.csv`: `claude-opus-5-5` and `claude-sonnet-5-5` (Anthropic, US); the bare Opus 5.5 run (one SEAL score) had neither, the effort runs took theirs from Epoch.
+- Result: 912 models, 99 benchmarks, 5,588 scores, 48 human baselines.

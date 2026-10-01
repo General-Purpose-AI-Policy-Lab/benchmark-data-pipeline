@@ -48,10 +48,12 @@ claude-opus-4-6,Anthropic,US
 claude-opus-4-7,Anthropic,US
 claude-opus-4-8,Anthropic,US
 claude-opus-5,Anthropic,US
+claude-opus-5-5,Anthropic,US
 claude-sonnet-4,Anthropic,US
 claude-sonnet-4-5,Anthropic,US
 claude-sonnet-4-6,Anthropic,US
 claude-sonnet-5,Anthropic,US
+claude-sonnet-5-5,Anthropic,US
 code-davinci-002,OpenAI,US
 CodeQwen1.5-7B,Alibaba,CN
 codestral-2501,Mistral AI,FR
