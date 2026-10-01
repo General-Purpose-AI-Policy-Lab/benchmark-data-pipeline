@@ -57,9 +57,9 @@ b4ec49ae-5496-5ac9-a1a3-c9b6cfc960a6,Llama-2-70b-chat,,,,,Llama-2-70b-chat,Meta 
 5df9f1ed-d840-5ac8-b9bf-544d0c4f711b,Llama-2-7b,,,,,Llama-2-7b,Meta AI,US,2023-07-18,8.4e+22
 73c1debc-e12f-5d1a-acbc-06b1ce8d63b8,Llama-3.1-405B,,,,,Llama-3.1-405B,Meta AI,US,2024-07-23,3.8e+25
 8c1b440f-1bbf-5fd1-a8bb-d87867fc52ac,Llama-3.1-405B-Instruct,,,,,Llama-3.1-405B-Instruct,Meta AI,US,2024-07-23,3.8e+25
-677f9fa9-1a44-5a22-b1e5-61a4e6d5f679,Llama-3.1-405B-Instruct,,,,Bio Llama,Llama-3.1-405B-Instruct,Meta AI,US,2024-10-01,
-59d015ca-46f0-5675-814e-c9aec1abfc18,Llama-3.1-405B-Instruct,,,,Hermes 3,Llama-3.1-405B-Instruct,Meta AI,US,2024-08-15,
-362f651c-89c0-5695-b6f4-9f506f07c44a,Llama-3.1-405B-Instruct,,,,Unsafety Llama,Llama-3.1-405B-Instruct,Meta AI,US,2024-10-01,
+677f9fa9-1a44-5a22-b1e5-61a4e6d5f679,Llama-3.1-405B-Instruct,,,,Bio Llama,Llama-3.1-405B-Instruct_bio-llama,Meta AI,US,2024-10-01,
+59d015ca-46f0-5675-814e-c9aec1abfc18,Llama-3.1-405B-Instruct,,,,Hermes 3,Llama-3.1-405B-Instruct_hermes-3,Meta AI,US,2024-08-15,
+362f651c-89c0-5695-b6f4-9f506f07c44a,Llama-3.1-405B-Instruct,,,,Unsafety Llama,Llama-3.1-405B-Instruct_unsafety-llama,Meta AI,US,2024-10-01,
 47074565-ab4c-5510-9867-172d77a733b5,Llama-3.1-70B-Instruct,,,,,Llama-3.1-70B-Instruct,Meta AI,US,2024-07-23,7.929e+24
 4967b8bf-c70b-5249-bb31-08771919d430,Llama-3.1-8B-Instruct,,,,,Llama-3.1-8B-Instruct,Meta AI,US,2024-07-23,1.224e+24
 99e1aff3-b66a-5d75-8047-a63b5969b3e7,Llama-3.1-Tulu-3-70B-DPO,,,,,Llama-3.1-Tulu-3-70B-DPO,"Allen Institute for AI,University of Washington",US,2024-11-21,
@@ -172,8 +172,8 @@ a4f8025e-fc35-586f-a361-2ae32162be1c,claude-2.0,,,,,claude-2.0,Anthropic,US,2023
 ab599934-758d-5c9b-a2d5-be23ea38cf4d,claude-3-5-haiku,,,2024-10-22,,claude-3-5-haiku-20241022,Anthropic,US,2024-10-22,
 eb51562e-effb-5407-91ca-9fc4d497f59d,claude-3-5-sonnet,,,2024-06-20,,claude-3-5-sonnet-20240620,Anthropic,US,2024-06-20,2.700000000000001e+25
 a30435c9-0f32-5bad-9e84-32acb0c8933f,claude-3-5-sonnet,,,2024-10-22,,claude-3-5-sonnet-20241022,Anthropic,US,2024-10-22,
-51f8a52b-96a1-51ce-bacc-56a855cf0164,claude-3-7-sonnet,,,2025-02-19,,claude-3-7-sonnet-20250219,Anthropic,US,2025-02-24,3.3499999999999998e+25
-c5ee24bd-546e-5a83-bed1-ec83d183d4e7,claude-3-7-sonnet,,,2025-02-19,thinking,claude-3-7-sonnet-20250219_thinking,Anthropic,US,2025-02-24,
+51f8a52b-96a1-51ce-bacc-56a855cf0164,claude-3-7-sonnet,,,2025-02-19,,claude-3-7-sonnet-20250219,Anthropic,US,2025-02-24,3.35e+25
+c5ee24bd-546e-5a83-bed1-ec83d183d4e7,claude-3-7-sonnet,,,2025-02-19,thinking,claude-3-7-sonnet-20250219_thinking,Anthropic,US,2025-02-24,3.3499999999999998e+25
 3c6fed1b-1965-557d-beb6-13d27d2d435b,claude-3-7-sonnet,,1000,2025-02-19,,claude-3-7-sonnet-20250219_1K,Anthropic,US,2025-02-24,3.3499999999999998e+25
 8b86e275-6132-5c54-8737-8455f4a4b655,claude-3-7-sonnet,,12000,2025-02-19,,claude-3-7-sonnet-20250219_12K,Anthropic,US,2025-02-24,3.3499999999999998e+25
 b0026a20-cb3f-5a8e-9404-8d2b052445d5,claude-3-7-sonnet,,15000,2025-02-19,,claude-3-7-sonnet-20250219_15K,Anthropic,US,2025-02-24,3.3499999999999998e+25
@@ -182,16 +182,20 @@ b0026a20-cb3f-5a8e-9404-8d2b052445d5,claude-3-7-sonnet,,15000,2025-02-19,,claude
 3301782a-e4e3-5c93-b2d5-2c5b18e4b23e,claude-3-7-sonnet,,32000,2025-02-19,,claude-3-7-sonnet-20250219_32K,Anthropic,US,2025-02-24,3.3499999999999998e+25
 79b40520-a0f4-5108-8aae-df26b0e61946,claude-3-7-sonnet,,64000,2025-02-19,,claude-3-7-sonnet-20250219_64K,Anthropic,US,2025-02-24,3.3499999999999998e+25
 061556c4-d8bb-56dc-ba43-c7fa68d5f3b7,claude-3-7-sonnet,,8000,2025-02-19,,claude-3-7-sonnet-20250219_8K,Anthropic,US,2025-02-24,3.3499999999999998e+25
+70fc2cc7-dc79-5630-9dbc-d377d009f441,claude-3-7-sonnet,none,,2025-02-19,,claude-3-7-sonnet-20250219_none,Anthropic,US,2025-02-24,3.3499999999999998e+25
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,claude-3-haiku,,,2024-03-07,,claude-3-haiku-20240307,Anthropic,US,2024-03-07,
 889d8957-edfb-53c4-9791-6c29a8c260f7,claude-3-opus,,,2024-02-29,,claude-3-opus-20240229,Anthropic,US,2024-02-29,
 648b9ec1-f0e4-58ee-ab8a-a72f1b866619,claude-3-sonnet,,,2024-02-29,,claude-3-sonnet-20240229,Anthropic,US,2024-02-29,
 f49a7465-1957-5bb1-a54d-6d8088830b0b,claude-fable-5,,,,,claude-fable-5,Anthropic,US,2026-06-09,
+d40640b2-c4d7-56cb-8a90-7cac352a3c9c,claude-fable-5,,,,thinking,claude-fable-5_thinking,Anthropic,US,2026-06-09,
 1e999e30-3c11-5f84-a52a-f5da0969a79f,claude-fable-5,high,,,,claude-fable-5_high,Anthropic,US,2026-06-09,
 be77f5d1-27f2-5b4d-ab8d-1fcb08f492ba,claude-fable-5,low,,,,claude-fable-5_low,Anthropic,US,2026-06-09,
 2f004284-f9c4-5ca9-8138-b4c6a80b2ee8,claude-fable-5,max,,,,claude-fable-5_max,Anthropic,US,2026-06-09,
 a44291d1-3922-5b63-8538-d6b584680c54,claude-fable-5,medium,,,,claude-fable-5_medium,Anthropic,US,2026-06-09,
+861c1c07-4212-5420-8a45-1f1350da25d3,claude-fable-5,none,,,,claude-fable-5_none,Anthropic,US,2026-06-09,
 1f3fccb4-0a04-5113-992e-7e9bf72b63d1,claude-fable-5,xhigh,,,,claude-fable-5_xhigh,Anthropic,US,2026-06-09,
 af434d5f-3215-5aee-854a-de70850a350c,claude-fable-5-1,,,,,claude-fable-5-1,Anthropic,US,2026-09-01,
+8f6c0f48-eb1d-5a48-a59e-4c6cb0777591,claude-fable-5-1,,,,thinking,claude-fable-5-1_thinking,,,2026-09-01,
 6db2d995-cd7e-5b1e-bd94-11f1f86b44ae,claude-fable-5-1,high,,,,claude-fable-5-1_high,Anthropic,US,2026-09-01,
 8b913c5a-1801-55b7-96bd-6f6910c8350b,claude-fable-5-1,low,,,,claude-fable-5-1_low,Anthropic,US,2026-09-01,
 40de7350-1962-5868-b516-5aa074b95815,claude-fable-5-1,max,,,,claude-fable-5-1_max,Anthropic,US,2026-09-01,
@@ -204,6 +208,7 @@ a8ebd9d0-bfc1-5d30-a256-cbd06e15e86f,claude-haiku-4-5,,1000,2025-10-01,,claude-h
 6525d03f-1974-5cc0-a63b-28545e91d9e9,claude-haiku-4-5,,32000,2025-10-01,,claude-haiku-4-5-20251001_32K,Anthropic,US,2025-10-15,
 12cd417d-b91c-5d69-89be-ac98bfe25dc5,claude-haiku-4-5,,8000,2025-10-01,,claude-haiku-4-5-20251001_8K,Anthropic,US,2025-10-15,
 57add62e-6920-54ca-b60f-cd5722ac9cc8,claude-haiku-4-5,low,,2025-10-01,,claude-haiku-4-5-20251001_low,Anthropic,US,2025-10-15,
+d0b2782b-0f66-55dd-a7e4-e4b5196b19bd,claude-haiku-4-5,none,,2025-10-01,,claude-haiku-4-5-20251001_none,Anthropic,US,2025-10-15,
 608036c5-b072-5c93-b894-9f5e26b2a73c,claude-haiku-4-5,xhigh,,2025-10-01,,claude-haiku-4-5-20251001_xhigh,Anthropic,US,2025-10-15,
 68234935-1d21-54ea-9288-18a3ec1de754,claude-instant-1.1,,,,,claude-instant-1.1,Anthropic,US,2023-05-11,
 e5fb2d63-cc91-567b-825b-8fdabf591cd3,claude-instant-1.2,,,,,claude-instant-1.2,Anthropic,US,2023-08-09,
@@ -219,12 +224,14 @@ a016ca21-a2b9-5eb7-b151-44798d75ea29,claude-opus-4,,,2025-05-14,thinking,claude-
 432d8dd2-57cc-5ea2-b129-e29b77ed5bc3,claude-opus-4,,27000,2025-05-14,,claude-opus-4-20250514_27K,Anthropic,US,2025-05-22,
 154be41d-0aa6-50cf-8676-2e6559f6ba27,claude-opus-4,,32000,2025-05-14,,claude-opus-4-20250514_32K,Anthropic,US,2025-05-22,
 da6f4c94-5304-5ad2-814c-436d2117d79c,claude-opus-4,,8000,2025-05-14,,claude-opus-4-20250514_8K,Anthropic,US,2025-05-22,
+1f85e0a1-f915-595d-9f09-5943bd435fe6,claude-opus-4,none,,2025-05-14,,claude-opus-4-20250514_none,Anthropic,US,2025-05-22,
 1e2ddb3c-135f-5a8e-8568-954b5bcfa19f,claude-opus-4-1,,,2025-08-05,,claude-opus-4-1-20250805,Anthropic,US,2025-08-05,
 33a8eb2d-e110-5dbb-a96c-37442011bef0,claude-opus-4-1,,,2025-08-05,thinking,claude-opus-4-1-20250805_thinking,Anthropic,US,2025-08-05,
 92c419cb-b17c-5bd2-a990-baaa61dcf8d1,claude-opus-4-1,,16000,2025-08-05,,claude-opus-4-1-20250805_16K,Anthropic,US,2025-08-05,
 7c4cd62f-640c-5142-9331-38466f9bcdb3,claude-opus-4-1,,24000,2025-08-05,,claude-opus-4-1-20250805_24K,Anthropic,US,2025-08-05,
 acdda095-0e8c-54c1-8402-e58a5f324dea,claude-opus-4-1,,27000,2025-08-05,,claude-opus-4-1-20250805_27K,Anthropic,US,2025-08-05,
 6e670a0d-408c-5a4b-a75b-91dca7a5ee80,claude-opus-4-1,,32000,2025-08-05,,claude-opus-4-1-20250805_32K,Anthropic,US,2025-08-05,
+ab094032-5f8a-543c-912c-d48fb9e09d63,claude-opus-4-1,none,,2025-08-05,,claude-opus-4-1-20250805_none,Anthropic,US,2025-08-05,
 0d3892a9-4ce7-5f70-9e8f-e24c283a7c06,claude-opus-4-5,,,2025-11-01,,claude-opus-4-5-20251101,Anthropic,US,2025-11-24,
 9986c95c-85d7-5f41-a5a2-c6b1e9ef4a8a,claude-opus-4-5,,,2025-11-01,thinking,claude-opus-4-5-20251101_thinking,Anthropic,US,2025-11-24,
 9fd43f8e-dea3-5eec-b580-34a45a75da5f,claude-opus-4-5,,128000,2025-11-01,,claude-opus-4-5-20251101_128K,Anthropic,US,2025-11-24,
@@ -247,12 +254,15 @@ f9d0bea8-4c49-5762-b85c-253ef349024b,claude-opus-4-6,max,,,,claude-opus-4-6_max,
 51ecf54c-193e-5223-ac0b-917993054698,claude-opus-4-6,medium,,,,claude-opus-4-6_medium,Anthropic,US,2026-02-05,
 fcf431b0-7ba1-574e-aea7-449bc578ba24,claude-opus-4-6,none,,,,claude-opus-4-6_none,Anthropic,US,2026-02-05,
 5f41b045-fc87-5552-9dfd-d1b07ec44ddf,claude-opus-4-7,,,,,claude-opus-4-7,Anthropic,US,2026-04-16,
+a1aba5df-ad83-5100-9a6d-8317b89935aa,claude-opus-4-7,,,,thinking,claude-opus-4-7_thinking,Anthropic,US,2026-04-16,
 6394deb1-16b9-5b7f-a3bd-0f0c768f785a,claude-opus-4-7,high,,,,claude-opus-4-7_high,Anthropic,US,2026-04-16,
 2626f048-ade3-5f0d-b8cd-c00174e1cf2d,claude-opus-4-7,low,,,,claude-opus-4-7_low,Anthropic,US,2026-04-16,
 c9d1b5c5-bb9f-5deb-9413-5c2011161c1a,claude-opus-4-7,max,,,,claude-opus-4-7_max,Anthropic,US,2026-04-16,
 7671e59c-c436-5ddc-a0c3-543f503514ab,claude-opus-4-7,medium,,,,claude-opus-4-7_medium,Anthropic,US,2026-04-16,
+9e1dad88-f2f2-5c0e-a0da-4dcce21575e1,claude-opus-4-7,none,,,,claude-opus-4-7_none,Anthropic,US,2026-04-16,
 7d1769d9-0344-50c6-94eb-8553089e54dd,claude-opus-4-7,xhigh,,,,claude-opus-4-7_xhigh,Anthropic,US,2026-04-16,
 7d9a20a3-ca5f-5c24-a57b-a57372d827f1,claude-opus-4-8,,,,,claude-opus-4-8,Anthropic,US,2026-05-28,
+8a84c43a-d5a6-564f-a98b-1e56e24b7828,claude-opus-4-8,,,,thinking,claude-opus-4-8_thinking,Anthropic,US,2026-05-28,
 350562da-a1a5-5722-aacb-19a373eadcb6,claude-opus-4-8,high,,,,claude-opus-4-8_high,Anthropic,US,2026-05-28,
 6c45daf1-b7b0-5024-8a90-c4e943accd6e,claude-opus-4-8,low,,,,claude-opus-4-8_low,Anthropic,US,2026-05-28,
 8a4bbbda-d03a-5b5e-87a5-6e972ec8bdd8,claude-opus-4-8,max,,,,claude-opus-4-8_max,Anthropic,US,2026-05-28,
@@ -260,10 +270,12 @@ a6a70e05-2c01-5761-ae5d-e11578d4bfcd,claude-opus-4-8,medium,,,,claude-opus-4-8_m
 a147126b-5c8d-528d-a880-61412bdb9df5,claude-opus-4-8,none,,,,claude-opus-4-8_none,Anthropic,US,2026-05-28,
 281e8c94-3fab-56d7-af36-820548397ce3,claude-opus-4-8,xhigh,,,,claude-opus-4-8_xhigh,Anthropic,US,2026-05-28,
 315f1a07-56b2-5fcb-9bdb-f28716a16d02,claude-opus-5,,,,,claude-opus-5,Anthropic,US,2026-07-24,
+a66eaeab-c898-5ee8-baa5-a5c01352eb57,claude-opus-5,,,,thinking,claude-opus-5_thinking,Anthropic,US,2026-07-24,
 e399bbba-49d5-5333-a78a-6fa4c174504b,claude-opus-5,high,,,,claude-opus-5_high,Anthropic,US,2026-07-24,
 7b756678-239d-5374-995e-6533d26a3474,claude-opus-5,low,,,,claude-opus-5_low,Anthropic,US,2026-07-24,
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,claude-opus-5,max,,,,claude-opus-5_max,Anthropic,US,2026-07-24,
 a94d7bf7-0244-536b-bd58-d1143c4088ac,claude-opus-5,medium,,,,claude-opus-5_medium,Anthropic,US,2026-07-24,
+9e66552e-f4ec-5b3c-be9d-3037cfb94d5f,claude-opus-5,none,,,,claude-opus-5_none,Anthropic,US,2026-07-24,
 064d6bba-cf57-5cd0-b569-ab2110036c8c,claude-opus-5,xhigh,,,,claude-opus-5_xhigh,Anthropic,US,2026-07-24,
 a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,claude-opus-5-5,,,,,claude-opus-5-5,,,2026-09-22,
 8a83e82a-0f12-53c7-afff-759fa6ede2f8,claude-opus-5-5,max,,,,claude-opus-5-5_max,Anthropic,US,2026-09-22,
@@ -277,6 +289,7 @@ ccdafc64-74d9-5676-9cab-f1eecbbbd8b2,claude-sonnet-4,,2000,2025-05-14,,claude-so
 1831982e-f01a-5023-81b4-b83023d5d79f,claude-sonnet-4,,32000,2025-05-14,,claude-sonnet-4-20250514_32K,Anthropic,US,2025-05-22,
 7664155a-a147-50d4-aa08-17c9bcc29c6c,claude-sonnet-4,,59000,2025-05-14,,claude-sonnet-4-20250514_59K,Anthropic,US,2025-05-22,
 3907a552-0ad6-5bc9-9d40-577793a07f37,claude-sonnet-4,,8000,2025-05-14,,claude-sonnet-4-20250514_8K,Anthropic,US,2025-05-22,
+def8f283-1576-562c-81c8-3db93aa5a7c3,claude-sonnet-4,none,,2025-05-14,,claude-sonnet-4-20250514_none,Anthropic,US,2025-05-22,
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,claude-sonnet-4-5,,,2025-09-29,,claude-sonnet-4-5-20250929,Anthropic,US,2025-09-29,
 a47ab0fe-3885-5b4e-a41a-4e31abcf3181,claude-sonnet-4-5,,,2025-09-29,thinking,claude-sonnet-4-5-20250929_thinking,Anthropic,US,2025-09-29,
 fb822e69-9563-5a18-952e-ae60ad877a95,claude-sonnet-4-5,,1000,2025-09-29,,claude-sonnet-4-5-20250929_1K,Anthropic,US,2025-09-29,
@@ -288,17 +301,21 @@ cd033a72-b40d-54a2-891a-5f21c4abc392,claude-sonnet-4-5,,48000,2025-09-29,,claude
 56cbdc52-943f-5d2b-8c99-0543356c1ea2,claude-sonnet-4-5,,59000,2025-09-29,,claude-sonnet-4-5-20250929_59K,Anthropic,US,2025-09-29,
 118b930b-342d-5c7f-9de6-37b80ecb6e1b,claude-sonnet-4-5,,8000,2025-09-29,,claude-sonnet-4-5-20250929_8K,Anthropic,US,2025-09-29,
 b88cadfd-5d93-5a88-af3c-c5f91f123fe9,claude-sonnet-4-5,low,,2025-09-29,,claude-sonnet-4-5-20250929_low,Anthropic,US,2025-09-29,
+b339ecb6-520a-580e-9039-ba8d35bbb996,claude-sonnet-4-5,none,,2025-09-29,,claude-sonnet-4-5-20250929_none,Anthropic,US,2025-09-29,
 33be4070-e5b8-558b-b876-fd8ad377ad1a,claude-sonnet-4-6,,,,,claude-sonnet-4-6,Anthropic,US,2026-02-17,
+174472b1-cdd2-5240-a84e-c408c69f17ec,claude-sonnet-4-6,,,,thinking,claude-sonnet-4-6_thinking,Anthropic,US,2026-02-17,
 3b6d8ea8-bf57-5690-94bb-6d6d83a00f2e,claude-sonnet-4-6,,32000,,,claude-sonnet-4-6_32K,Anthropic,US,2026-02-17,
 49e29e3e-eca4-5604-a29b-8e1c6630193c,claude-sonnet-4-6,high,,,,claude-sonnet-4-6_high,Anthropic,US,2026-02-17,
 c7d872ab-14fa-5875-be5c-76009dd371de,claude-sonnet-4-6,low,,,,claude-sonnet-4-6_low,Anthropic,US,2026-02-17,
 662980f9-93c5-5540-b67f-12f5e574576e,claude-sonnet-4-6,max,,,,claude-sonnet-4-6_max,Anthropic,US,2026-02-17,
 063d677b-8efb-5050-b0e2-5510654c05a9,claude-sonnet-4-6,medium,,,,claude-sonnet-4-6_medium,Anthropic,US,2026-02-17,
-bde0df97-257e-5185-b67a-18b51cffb082,claude-sonnet-5,,,,,claude-sonnet-5,Anthropic,US,2026-06-30,
+4353d92d-b418-58a9-8dc3-a3ec8eb88387,claude-sonnet-4-6,none,,,,claude-sonnet-4-6_none,Anthropic,US,2026-02-17,
+e786d6a8-c139-5f33-86ee-2485b6552d92,claude-sonnet-5,,,,thinking,claude-sonnet-5_thinking,Anthropic,US,2026-06-30,
 4290c4e4-50d9-570f-a3d8-1f15ba1fe085,claude-sonnet-5,high,,,,claude-sonnet-5_high,Anthropic,US,2026-06-30,
 64a44914-f4b4-57c4-aaae-2714611e5e93,claude-sonnet-5,low,,,,claude-sonnet-5_low,Anthropic,US,2026-06-30,
 80732116-ffa5-5aad-85a8-529ec9b01a7e,claude-sonnet-5,max,,,,claude-sonnet-5_max,Anthropic,US,2026-06-30,
 143a5aec-9f98-55c5-b07f-a36915e8d63e,claude-sonnet-5,medium,,,,claude-sonnet-5_medium,Anthropic,US,2026-06-30,
+3fc45ddd-de2f-529c-b131-f9ca7c31057c,claude-sonnet-5,none,,,,claude-sonnet-5_none,Anthropic,US,2026-06-30,
 ad080eb8-573c-579d-9744-07e44f7af21c,claude-sonnet-5,xhigh,,,,claude-sonnet-5_xhigh,Anthropic,US,2026-06-30,
 a1daf361-b5e6-5a18-a07c-5d24f089bf4b,claude-sonnet-5-5,max,,,,claude-sonnet-5-5_max,Anthropic,US,2026-09-28,
 c2841849-f7d4-5a71-bfe3-5e5d79c60d40,code-davinci-002,,,,,code-davinci-002,OpenAI,US,2022-03-15,2.578e+24
@@ -494,7 +511,7 @@ d00ee0a2-233a-5cec-9e30-a0fdd979c0a7,gpt-4o-audio-preview,,,2025-06-03,,gpt-4o-a
 85718c2a-4aea-5b1d-8377-e52a1e078ff8,gpt-4o-mini,,,2024-07-18,,gpt-4o-mini-2024-07-18,OpenAI,US,2024-07-18,
 28a69a05-0468-52bf-ad15-b8117ce30116,gpt-4o-mini-audio-preview,,,2024-12-17,,gpt-4o-mini-audio-preview-2024-12-17,OpenAI,US,2024-12-17,
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,gpt-5,,,2025-08-07,,gpt-5-2025-08-07,OpenAI,US,2025-08-07,6.6e+25
-6b839ed8-a4fa-5fb5-8f95-8ab09125a482,gpt-5,,,2025-08-07,chat,gpt-5-2025-08-07,OpenAI,US,2025-08-07,6.6e+25
+6b839ed8-a4fa-5fb5-8f95-8ab09125a482,gpt-5,,,2025-08-07,chat,gpt-5-2025-08-07_chat,OpenAI,US,2025-08-07,6.6e+25
 57d1f5f1-a7b0-574a-8206-94212337f244,gpt-5,,,2025-08-07,thinking,gpt-5-2025-08-07_thinking,OpenAI,US,2025-08-07,
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,gpt-5,high,,2025-08-07,,gpt-5-2025-08-07_high,OpenAI,US,2025-08-07,6.6e+25
 c928fb95-ec6c-51b3-89a3-399a087d731f,gpt-5,low,,2025-08-07,,gpt-5-2025-08-07_low,OpenAI,US,2025-08-07,6.6e+25
@@ -538,7 +555,7 @@ f33305f4-7736-53c7-883d-1eaa32a9f6b1,gpt-5.2-pro,medium,,2025-12-11,,gpt-5.2-pro
 3b66e402-349a-5045-adf4-71340cd15333,gpt-5.3-codex,,,,,gpt-5.3-codex,OpenAI,US,2026-02-05,
 e1926c8a-2a11-516f-a551-5c624888ea56,gpt-5.3-codex,xhigh,,,,gpt-5.3-codex_xhigh,OpenAI,US,2026-02-05,
 1702d63f-e6ca-553a-86ba-02ede394ca14,gpt-5.4,,,2026-03-05,,gpt-5.4-2026-03-05,OpenAI,US,2026-03-05,
-12326d46-2b2a-5cfe-a2ae-c386db17a4f2,gpt-5.4,,,2026-03-05,Cyber,gpt-5.4-2026-03-05,OpenAI,US,2026-04-14,
+12326d46-2b2a-5cfe-a2ae-c386db17a4f2,gpt-5.4,,,2026-03-05,Cyber,gpt-5.4-2026-03-05_cyber,OpenAI,US,2026-04-14,
 96edcc51-a125-5f22-8dd6-c4f487c0a795,gpt-5.4,high,,2026-03-05,,gpt-5.4-2026-03-05_high,OpenAI,US,2026-03-05,
 30fc97b2-d356-59ed-b282-a86797decc72,gpt-5.4,low,,2026-03-05,,gpt-5.4-2026-03-05_low,OpenAI,US,2026-03-05,
 1715f82b-a537-5c2a-a15e-c016f9e748a6,gpt-5.4,medium,,2026-03-05,,gpt-5.4-2026-03-05_medium,OpenAI,US,2026-03-05,
@@ -559,7 +576,7 @@ c9846f37-0aca-50be-b0a5-7a9aa1463d5c,gpt-5.4-nano,none,,2026-03-17,,gpt-5.4-nano
 9d9e3552-557a-5e4c-858d-ed5917c39bee,gpt-5.4-pro,none,,2026-03-05,,gpt-5.4-pro-2026-03-05_none,OpenAI,US,2026-03-05,
 dcaf24f5-b587-536a-a220-a7655b11dacc,gpt-5.4-pro,xhigh,,2026-03-05,,gpt-5.4-pro-2026-03-05_xhigh,OpenAI,US,2026-03-05,
 6f19902d-57ce-5960-b943-0538acb4c7ff,gpt-5.5,,,,,gpt-5.5,OpenAI,US,2026-04-23,
-083139da-5ced-59c5-9378-1dc58342276c,gpt-5.5,,,,Cyber,gpt-5.5,OpenAI,US,2026-05-07,
+083139da-5ced-59c5-9378-1dc58342276c,gpt-5.5,,,,Cyber,gpt-5.5_cyber,OpenAI,US,2026-05-07,
 e6c7cd5c-aced-5cc7-af38-28efa1a1ae26,gpt-5.5,high,,,,gpt-5.5_high,OpenAI,US,2026-04-23,
 42a48c78-2cbc-541e-97d1-70f560282a44,gpt-5.5,low,,,,gpt-5.5_low,OpenAI,US,2026-04-23,
 dcd153b8-2430-58c8-9890-b3ac487f38d3,gpt-5.5,medium,,,,gpt-5.5_medium,OpenAI,US,2026-04-23,

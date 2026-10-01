@@ -37,9 +37,9 @@ kimi-k2-0711-preview,Kimi-K2-Instruct,,,,,,API id of the 2025-07-11 release that
 qwen2.5-max,qwen-max,,,2025-01-25,,,Qwen2.5-Max is the qwen-max-2025-01-25 API snapshot (Alibaba release note of 2025-01-28) (2026-09-08)
 gemini-2.5-flash-lite-preview-06-17-thinking,gemini-2.5-flash-lite-preview-06-17,,,,thinking,,thinking mode of the same 06-17 preview; the _16K rows are its token budgets (2026-09-08)
 gemini-2.0-flash-02-05,gemini-2.0-flash-001,,,,,,2025-02-05 is the GA release date of gemini-2.0-flash-001 (2026-09-08)
-gemini-2.5-pro-preview-03-25,gemini-2.5-pro-exp-03-25,,,,,,Google: the 03-25 preview is the experimental model with higher rate limits (2025-04-04); same weights under another spelling; alias pass over every model, 2026-09-08
-chatgpt-4o-01-29-2025,gpt-4o,,,2025-01-29,,,snapshot of chatgpt-4o-latest, the ChatGPT model behind the API alias; same weights under another spelling; alias pass over every model, 2026-09-08
-chatgpt-4o-03-27-2025,gpt-4o,,,2025-03-27,,,snapshot of chatgpt-4o-latest; same weights under another spelling; alias pass over every model, 2026-09-08
+gemini-2.5-pro-preview-03-25,gemini-2.5-pro-exp-03-25,,,,,,"Google: the 03-25 preview is the experimental model with higher rate limits (2025-04-04); same weights under another spelling; alias pass over every model, 2026-09-08"
+chatgpt-4o-01-29-2025,gpt-4o,,,2025-01-29,,,"snapshot of chatgpt-4o-latest, the ChatGPT model behind the API alias; same weights under another spelling; alias pass over every model, 2026-09-08"
+chatgpt-4o-03-27-2025,gpt-4o,,,2025-03-27,,,"snapshot of chatgpt-4o-latest; same weights under another spelling; alias pass over every model, 2026-09-08"
 davinci-002,davinci,,,,,,"METR's GPT-3 stand-in in the Time Horizons series (Epoch labels it GPT-3 175B); joins the davinci identity, already dated 2020-06-11 by decision. User decision 2026-09-08"
 gpt-5-chat,gpt-5,,,2025-08-07,chat,,"gpt-5-chat-latest, the non-reasoning ChatGPT build of GPT-5 released the same day (2025-08-07): the gpt-5 family with a named variant, like the fine-tune variants. User decision 2026-09-08"
 deepseek-reasoner,DeepSeek-V3.2-Exp,,,,thinking,,"the only row is Aider Polyglot, evaluated 2025-10-03 (Epoch's 'Date of evaluation'): DeepSeek's API alias then served V3.2-Exp in thinking mode, not the V3.2 of 2025-12-01 Epoch dates it to; alias review of the open/closed frontier note, 2026-09-29"

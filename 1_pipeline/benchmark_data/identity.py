@@ -14,7 +14,10 @@ columns without a dictionary (split_name):
 - '_' introduces a configuration knob, '-' is part of the name (kimi-k2-thinking is a NAME).
 - suffix (case-insensitive): effort minimal|low|medium|high|xhigh|max|none; budget <N>K;
   thinking -> variant='thinking'; unknown -> dropped (Epoch's "effort unknown" and a bare name
-  are the same state of knowledge, one identity; user decision 2026-09-09); pro<effort> ->
+  are the same state of knowledge, one identity; user decision 2026-09-09), except for the
+  hybrid Claude families of `config.CLAUDE_HYBRID_BASES`, where the sources' convention makes
+  `_unknown` a thinking run and the bare name a run without thinking (`hybrid_mode`, applied at
+  ingestion; user decision 2026-10-01); pro<effort> ->
   variant='pro' plus the effort (gpt-5.6-sol_promax). A suffix outside the vocabulary is part
   of the name.
 - the date is extracted only in the YYYY-MM-DD / YYYYMMDD forms at the end of the base (short
@@ -84,6 +87,22 @@ def split_name(name: str) -> Identity:
     return ident
 
 
+def hybrid_mode(raw, hybrid_bases, notes: str = "") -> str:
+    """Thinking mode a splittable source's convention gives a hybrid model's machine name:
+    'thinking' for `_unknown`, 'none' for the bare name (unless `notes` say the thinking level is
+    unknown, as Epoch's rows copied from system cards do), '' otherwise or for another base."""
+    name = strip_name(raw)
+    ident = split_name(name)
+    if ident["base_model"] not in hybrid_bases:
+        return ""
+    if name.lower().endswith("_unknown"):
+        return "thinking"
+    bare = not (ident["reasoning_level"] or ident["reasoning_tokens"] or ident["variant"])
+    if bare and "thinking level unknown" not in str(notes).lower():
+        return "none"
+    return ""
+
+
 def load_aliases(path: Path) -> dict[str, dict[str, str]]:
     """aliases.csv -> {raw_name: {*IDENT_COLS, harness}}. Empty base_model = DROP (still returned).
 
@@ -144,6 +163,9 @@ def machine_name(ident: Identity) -> str:
         name += f"_{int(ident['reasoning_tokens']) // 1000}K"
     elif ident["variant"] == "thinking":
         name += "_thinking"
+    if ident["variant"] not in ("", "pro", "thinking"):
+        # a named variant (chat, Cyber, a fine-tune) keeps its own machine name
+        name += "_" + re.sub(r"[^a-z0-9.]+", "-", ident["variant"].lower()).strip("-")
     return name
 
 

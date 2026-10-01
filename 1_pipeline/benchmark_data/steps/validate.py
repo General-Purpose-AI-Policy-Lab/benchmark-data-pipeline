@@ -18,6 +18,7 @@ def validate(models: pandas.DataFrame, benchmarks: pandas.DataFrame,
     """
     checks = [
         (not models.duplicated(IDENT_COLS).any(), "duplicated identity tuple"),
+        (not models.duplicated("model_version").any(), "duplicated model_version"),
         (not benchmarks.duplicated("name").any(), "duplicated benchmark name"),
         (not scores.duplicated(["model_id", "benchmark_id"]).any(), "duplicated score"),
         (set(scores["model_id"]) <= set(models["model_id"]), "orphan model_id"),

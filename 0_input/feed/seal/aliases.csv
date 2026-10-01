@@ -5,17 +5,17 @@ Claude 3 Opus,claude-3-opus,,,2024-02-29,,,"Scale SEAL alias (auto, high-confide
 Claude 3 Sonnet,claude-3-sonnet,,,2024-02-29,,,"Scale SEAL alias (auto, verified checkpoint)"
 Claude 3.5 Sonnet (June 2024),claude-3-5-sonnet,,,2024-06-20,,,"Scale SEAL alias (auto, high-confidence)"
 Claude 3.5 Sonnet (October 2024),claude-3-5-sonnet,,,2024-10-22,,,"Scale SEAL alias (auto, high-confidence)"
-Claude 3.7 Sonnet (February 2025),claude-3-7-sonnet,,,2025-02-19,,,"Scale SEAL alias (auto, high-confidence)"
+Claude 3.7 Sonnet (February 2025),claude-3-7-sonnet,none,,2025-02-19,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
 Claude 3.7 Sonnet Thinking (Feb 2025),claude-3-7-sonnet,,,2025-02-19,thinking,,leaderboard label; thinking w/ unspecified budget -> _unknown effort bucket
 Claude 3.7 Sonnet Thinking (February 2025),claude-3-7-sonnet,,,2025-02-19,thinking,,same as Feb 2025 spelling
 Claude Fable 5,claude-fable-5,,,,,,"Scale SEAL alias (auto, high-confidence)"
-Claude Opus 4,claude-opus-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
+Claude Opus 4,claude-opus-4,none,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
 Claude Opus 4 (Thinking),claude-opus-4,,,2025-05-14,thinking,,Scale SEAL; thinking=_unknown effort
-Claude Opus 4.1,claude-opus-4-1,,,2025-08-05,,,"Scale SEAL alias (auto, high-confidence)"
+Claude Opus 4.1,claude-opus-4-1,none,,2025-08-05,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
 Claude Opus 4.6 (Claude Code) max,claude-opus-4-6,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Claude Opus 4.8 (Claude Code) max,claude-opus-4-8,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Claude Opus 4.8 (mini-SWE-agent) max,claude-opus-4-8,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
-Claude Sonnet 4,claude-sonnet-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
+Claude Sonnet 4,claude-sonnet-4,none,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
 Claude Sonnet 4 (Thinking),claude-sonnet-4,,,2025-05-14,thinking,,Scale SEAL; thinking=_unknown effort
 Claude Sonnet 4.6 (Claude Code) max,claude-sonnet-4-6,max,,,,Claude Code,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 Claude Sonnet 4.6 (mini-SWE-agent) max,claude-sonnet-4-6,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
@@ -24,26 +24,26 @@ Claude Sonnet 5.0 (Claude Code) max,claude-sonnet-5,max,,,,Claude Code,Scale SEA
 claude-3-7-sonnet-thinking,claude-3-7-sonnet,,,2025-02-19,thinking,,spelling variant
 Claude-3.7-Sonnet-thinking,claude-3-7-sonnet,,,2025-02-19,thinking,,spelling variant
 claude-37-sonnet-thinking,claude-3-7-sonnet,,,2025-02-19,thinking,,spelling variant
-claude-4-5-haiku,claude-haiku-4-5,,,2025-10-01,,,"Scale SEAL alias (auto, high-confidence)"
-claude-4-5-Sonnet,claude-sonnet-4-5,,,2025-09-29,,,"Scale SEAL alias (auto, high-confidence)"
-Claude-4-Opus-20250514,claude-opus-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
+claude-4-5-haiku,claude-haiku-4-5,none,,2025-10-01,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
+claude-4-5-Sonnet,claude-sonnet-4-5,none,,2025-09-29,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
+Claude-4-Opus-20250514,claude-opus-4,none,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
 Claude-4-Opus-20250514-thinking,claude-opus-4,,,2025-05-14,thinking,,defrag: case-only duplicate (was claude-4-opus-20250514-thinking)
 claude-4-opus-20250514-thinking,claude-opus-4,,,2025-05-14,thinking,,LiveBench thinking → _unknown effort
 claude-4-opus-thinking,claude-opus-4,,,2025-05-14,thinking,,LiveBench short form; sole Opus 4
-claude-4-Sonnet,claude-sonnet-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
-Claude-4-Sonnet-20250514,claude-sonnet-4,,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence)"
+claude-4-Sonnet,claude-sonnet-4,none,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
+Claude-4-Sonnet-20250514,claude-sonnet-4,none,,2025-05-14,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
 claude-4-sonnet-thinking,claude-sonnet-4,,,2025-05-14,thinking,,LiveBench short form; sole Sonnet 4
 claude-fable 5,claude-fable-5,,,,,,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (2026-09-04)
 claude-fable-5 (max),claude-fable-5,max,,,,,SEAL effort spelling; underscore form is canonical
 claude-fable-5-1,claude-fable-5-1,,,,,,MCP Atlas machine-style label without effort; Epoch names the same model claude-fable-5-1_<effort>. Effort-less reasoning model -> no effort stated (refresh of 2026-09-07)
-claude-haiku-4-5,claude-haiku-4-5,,,2025-10-01,,,"Scale SEAL alias (auto, high-confidence)"
+claude-haiku-4-5,claude-haiku-4-5,none,,2025-10-01,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
 claude-haiku-4-5-20251001-thinking,claude-haiku-4-5,,,2025-10-01,thinking,,LiveBench thinking → _unknown effort
-claude-opus-4-1-20250805,claude-opus-4-1,,,2025-08-05,,,REVIEW: auto-slicé
+claude-opus-4-1-20250805,claude-opus-4-1,none,,2025-08-05,,,REVIEW: auto-slicé | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)
 claude-opus-4-1-20250805-thinking,claude-opus-4-1,,,2025-08-05,thinking,,LiveBench thinking → _unknown effort
-claude-opus-4-1-20250805_anthropic,claude-opus-4-1,,,2025-08-05,,,"Scale SEAL alias (auto, high-confidence)"
-claude-opus-4-20250514,claude-opus-4,,,2025-05-14,,,REVIEW: auto-slicé
+claude-opus-4-1-20250805_anthropic,claude-opus-4-1,none,,2025-08-05,,,"Scale SEAL alias (auto, high-confidence) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)"
+claude-opus-4-20250514,claude-opus-4,none,,2025-05-14,,,REVIEW: auto-slicé | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)
 claude-opus-4-5 (high),claude-opus-4-5,high,,2025-11-01,,,SEAL display; sole opus-4-5 = 20251101
-claude-opus-4-5-20251101,claude-opus-4-5,,,2025-11-01,,,REVIEW: auto-slicé
+claude-opus-4-5-20251101,claude-opus-4-5,none,,2025-11-01,,,REVIEW: auto-slicé | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)
 claude-opus-4-5-20251101-thinking,claude-opus-4-5,,,2025-11-01,thinking,,LiveBench thinking → _unknown effort
 claude-opus-4-6 (CoWork),claude-opus-4-6,,,,,,SEAL display; CoWork config = base model
 claude-opus-4-6 (max),claude-opus-4-6,max,,,,,"Scale SEAL alias (auto, high-confidence)"
@@ -54,9 +54,9 @@ claude-opus-4-6-thinking-max,claude-opus-4-6,max,,,,,"Scale SEAL alias (auto, hi
 claude-opus-4-7 (max),claude-opus-4-7,max,,,,,"Scale SEAL alias (auto, high-confidence)"
 claude-opus-4-8 (max),claude-opus-4-8,max,,,,,"Scale SEAL alias (auto, high-confidence)"
 claude-opus-5 (xhigh),claude-opus-5,xhigh,,,,,SEAL MCP Atlas spelling; paren effort -> standard suffix
-claude-sonnet-4,claude-sonnet-4,,,2025-05-14,,,Scale SEAL alias (round 2: new boards)
+claude-sonnet-4,claude-sonnet-4,none,,2025-05-14,,,Scale SEAL alias (round 2: new boards) | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)
 claude-sonnet-4-5 (thinking),claude-sonnet-4-5,,,2025-09-29,thinking,,SEAL display; thinking → _unknown effort
-claude-sonnet-4-5-20250929,claude-sonnet-4-5,,,2025-09-29,,,REVIEW: auto-slicé
+claude-sonnet-4-5-20250929,claude-sonnet-4-5,none,,2025-09-29,,,REVIEW: auto-slicé | no thinking: Scale lists this model's thinking run under its own name (user decision 2026-10-01)
 claude-sonnet-4-5-20250929-thinking,claude-sonnet-4-5,,,2025-09-29,thinking,,LiveBench thinking → _unknown effort
 claude-sonnet-4-6,claude-sonnet-4-6,,,,,,REVIEW: auto-slicé
 claude-sonnet-4-thinking,claude-sonnet-4,,,2025-05-14,thinking,,LiveBench thinking → _unknown effort
@@ -323,10 +323,10 @@ Claude Opus 5 (Claude Code) max,claude-opus-5,max,,,,Claude Code,Scale SEAL agen
 Fable 5,claude-fable-5,,,,,,SEAL display name without the Claude prefix (refresh of 2026-09-29)
 Fable 5.1,claude-fable-5-1,,,,,,SEAL display name without the Claude prefix (refresh of 2026-09-29)
 GLM 5.3,glm-5.3,,,,,,SEAL display name (refresh of 2026-09-29)
-GPT 5.6 Sol (Codex) max,gpt-5.6-sol,max,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29). '(Codex)' is the native Codex CLI scaffold"
+GPT 5.6 Sol (Codex) max,gpt-5.6-sol,max,,,,Codex,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29). '(Codex)' is the native Codex CLI scaffold
 GPT 6 Astra,gpt-6-astra,,,,,,SEAL display name (refresh of 2026-09-29)
-GPT 6 Astra (Codex) max,gpt-6-astra,max,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29). '(Codex)' is the native Codex CLI scaffold"
-GPT 6 Astra (Codex) xHigh,gpt-6-astra,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29). '(Codex)' is the native Codex CLI scaffold"
+GPT 6 Astra (Codex) max,gpt-6-astra,max,,,,Codex,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29). '(Codex)' is the native Codex CLI scaffold
+GPT 6 Astra (Codex) xHigh,gpt-6-astra,xhigh,,,,Codex,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29). '(Codex)' is the native Codex CLI scaffold
 GPT 6 Astra (mini-SWE-agent) max,gpt-6-astra,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29)
 Gemini 3.5 Flash (high),gemini-3.5-flash,high,,,,,SEAL effort spelling (refresh of 2026-09-29)
 Gemini 3.8 Flash,gemini-3.8-flash,,,,,,SEAL display name (refresh of 2026-09-29)
@@ -336,17 +336,17 @@ Muse Spark 1.3,muse-spark-1.3,,,,,,SEAL display name (refresh of 2026-09-29)
 Muse-Spark 1.3 (mini-SWE-agent) high,muse-spark-1.3,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort; effort-less -> no effort stated (refresh of 2026-09-29)
 Nemotron 3 Ultra (thinking),nemotron-3-ultra,,,,thinking,,"SEAL: thinking enabled, effort unknown (refresh of 2026-09-29)"
 Qwen3.8-2.4T-A95B (xHigh),qwen3.8-2.4t-a95b,xhigh,,,,,"open-weight checkpoint of Qwen3.8-Max (weights 2026-08-12; Qwen: Max is the official version based on it, with vision and non-thinking added): its own identity, as qwen3.5-397b-a17b beside Qwen3.5-Plus (user, 2026-09-30)"
-Fable 5.1 (Claude Code) high,claude-fable-5-1,high,,,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
-GLM-5.3 (mini-swe-agent) max,glm-5.3,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+Fable 5.1 (Claude Code) high,claude-fable-5-1,high,,,,Claude Code,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)"
+GLM-5.3 (mini-swe-agent) max,glm-5.3,max,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)"
 GPT-5.6 Sol (Codex) xhigh,gpt-5.6-sol,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30). '(Codex)' is the native Codex CLI scaffold"
 GPT-5.6 Terra (Codex) xhigh,gpt-5.6-terra,xhigh,,,,Codex,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30). '(Codex)' is the native Codex CLI scaffold"
 GPT-6 Astra (Codex) high,gpt-6-astra,high,,,,Codex,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30). '(Codex)' is the native Codex CLI scaffold"
-Gemini 3.8 Flash (mini-swe-agent) high,gemini-3.8-flash,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
-Haiku 4.5 (Claude Code) xhigh,claude-haiku-4-5,xhigh,,2025-10-01,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30) | snapshot 2025-10-01 = the sole Haiku 4.5 snapshot
-Inkling (mini-swe-agent) xhigh,Inkling,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
-Kimi-K3 (mini-swe-agent) max,kimi-k3,max,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
-Opus 5 (Claude Code) xhigh,claude-opus-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
-Sonnet 5 (Claude Code) xhigh,claude-sonnet-5,xhigh,,,,Claude Code,Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)
+Gemini 3.8 Flash (mini-swe-agent) high,gemini-3.8-flash,high,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)"
+Haiku 4.5 (Claude Code) xhigh,claude-haiku-4-5,xhigh,,2025-10-01,,Claude Code,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30) | snapshot 2025-10-01 = the sole Haiku 4.5 snapshot"
+Inkling (mini-swe-agent) xhigh,Inkling,xhigh,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)"
+Kimi-K3 (mini-swe-agent) max,kimi-k3,max,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)"
+Opus 5 (Claude Code) xhigh,claude-opus-5,xhigh,,,,Claude Code,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)"
+Sonnet 5 (Claude Code) xhigh,claude-sonnet-5,xhigh,,,,Claude Code,"Scale SEAL agentic board: model (harness) effort (SWE-Bench Pro V2, 2026-09-30)"
 claude-opus-5,claude-opus-5,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
 claude-opus-5-5,claude-opus-5-5,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
 deepseek-v4-pro,deepseek-v4-pro,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)

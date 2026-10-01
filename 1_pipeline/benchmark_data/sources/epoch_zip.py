@@ -10,6 +10,8 @@ from pathlib import Path
 
 import pandas
 
+from benchmark_data.config import CLAUDE_HYBRID_BASES
+from benchmark_data.identity import hybrid_mode
 from benchmark_data.sources.record import Record
 
 log = logging.getLogger(__name__)
@@ -173,6 +175,8 @@ def translate(feed_dir: Path) -> Iterator[Record]:
                  else pandas.Series("", index=df.index))
         url = (df["Source link"].fillna("").astype(str).str.strip() if "Source link" in df.columns
                else pandas.Series("", index=df.index))
+        notes = (df["Notes"].fillna("").astype(str) if "Notes" in df.columns
+                 else pandas.Series("", index=df.index))
         for i, raw in df["Model version"].items():
             if pandas.isna(score[i]):
                 continue
@@ -181,7 +185,8 @@ def translate(feed_dir: Path) -> Iterator[Record]:
                 continue
             yield Record(raw, bench, score[i], se[i] if se is not None else "",
                          effort[i], harness[i], {k: v[i] for k, v in meta_cols.items()},
-                         label[i] or SOURCE_LABEL, url[i])
+                         label[i] or SOURCE_LABEL, url[i],
+                         hybrid_mode(raw, CLAUDE_HYBRID_BASES, notes[i]))
     log.info("epoch: %d row(s) dropped for a blank `Model version`, %d file(s) skipped",
              blank, skipped)
     for name in unrecognized:

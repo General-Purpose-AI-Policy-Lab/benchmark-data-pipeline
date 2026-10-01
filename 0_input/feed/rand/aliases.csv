@@ -7,7 +7,7 @@ Claude 3.0 Opus,claude-3-opus,,,2024-02-29,,,RAND name; sole Claude-3 Opus relea
 Claude 3.0 Sonnet,claude-3-sonnet,,,2024-02-29,,,RAND name; sole Claude-3 Sonnet release
 Claude 3.5 Sonnet,claude-3-5-sonnet,,,2024-06-20,,,RAND 'V1' = first 3.5 Sonnet release
 Claude 3.5 Sonnet V2,claude-3-5-sonnet,,,2024-10-22,,,RAND 'V2' = Oct 2024 refresh
-Claude 3.7 Sonnet V1,claude-3-7-sonnet,,,2025-02-19,,,RAND name; base (no reasoning budget)
+Claude 3.7 Sonnet V1,claude-3-7-sonnet,none,,2025-02-19,,,RAND name; base (no reasoning budget) | no thinking: RAND lists the thinking run as 'V1 - Reasoning 16000' (user decision 2026-10-01)
 Claude 3.7 Sonnet V1 - Reasoning 16000,claude-3-7-sonnet,,16000,2025-02-19,,,16K reasoning budget
 DeepSeek R1,DeepSeek-R1,,,,,,RAND name; base R1 release
 DeepSeek V3,DeepSeek-V3,,,,,,RAND name; base V3 release

@@ -6,6 +6,8 @@ from pathlib import Path
 
 import pandas
 
+from benchmark_data.config import CLAUDE_HYBRID_BASES
+from benchmark_data.identity import hybrid_mode
 from benchmark_data.sources.record import Record
 
 log = logging.getLogger(__name__)
@@ -74,4 +76,4 @@ def translate(feed_dir: Path) -> Iterator[Record]:
                 continue
             yield Record(raw, bench, score[i], stderr[i], "", "",
                          {"publication_date": sub["Version release date"][i]},
-                         SOURCE_LABEL, url[i])
+                         SOURCE_LABEL, url[i], hybrid_mode(raw, CLAUDE_HYBRID_BASES))

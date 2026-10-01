@@ -6,6 +6,8 @@ import re
 from collections.abc import Iterator
 from pathlib import Path
 
+from benchmark_data.config import CLAUDE_HYBRID_BASES
+from benchmark_data.identity import hybrid_mode
 from benchmark_data.sources.record import Record
 
 log = logging.getLogger(__name__)
@@ -46,4 +48,5 @@ def translate(feed_dir: Path) -> Iterator[Record]:
                     continue
                 ci = num["confidenceInterval"] if num.get("hasConfidenceInterval") else ""
                 yield Record(raw, bench, num["value"], ci / _CI_TO_SD if ci != "" else "", "", HARNESS,
-                             {}, f"Kaggle Open Benchmarks ({board})", BOARD_URL.format(board))
+                             {}, f"Kaggle Open Benchmarks ({board})", BOARD_URL.format(board),
+                             hybrid_mode(raw, CLAUDE_HYBRID_BASES))

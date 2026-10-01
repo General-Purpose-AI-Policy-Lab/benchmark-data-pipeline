@@ -91,3 +91,25 @@ def test_known_effort_or_budget_makes_thinking_implicit():
 def test_strip_name_removes_superscript_footnotes():
     assert strip_name("Claude Opus 4.7 ⁸") == "Claude Opus 4.7"
     assert strip_name("OpenAI o3-mini ¹†") == "OpenAI o3-mini"
+
+
+def test_hybrid_mode_reads_the_epoch_convention():
+    from benchmark_data.identity import hybrid_mode
+    bases = {"claude-opus-4-6", "claude-opus-4"}
+    assert hybrid_mode("claude-opus-4-6_unknown", bases) == "thinking"
+    assert hybrid_mode("claude-opus-4-6", bases) == "none"
+    assert hybrid_mode("claude-opus-4-20250514", bases) == "none"
+    card = "Thinking level unknown. From the system card"
+    assert hybrid_mode("claude-opus-4-20250514", bases, card) == ""
+    assert hybrid_mode("claude-opus-4-6_max", bases) == ""          # the name says it already
+    assert hybrid_mode("gpt-5.5_unknown", bases) == ""              # not a hybrid base
+
+
+def test_machine_name_keeps_named_variants_apart():
+    from benchmark_data.identity import machine_name
+    base = {"base_model": "gpt-5", "reasoning_level": "", "reasoning_tokens": "",
+            "snapshot": "2025-08-07", "variant": ""}
+    assert machine_name(base) == "gpt-5-2025-08-07"
+    assert machine_name({**base, "variant": "chat"}) == "gpt-5-2025-08-07_chat"
+    cyber = {**base, "base_model": "gpt-5.5", "snapshot": "", "variant": "Cyber"}
+    assert machine_name(cyber) == "gpt-5.5_cyber"

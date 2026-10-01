@@ -16,6 +16,8 @@ class Record(NamedTuple):
         meta: metadata gleaned for the second pass (publication_date, training_flop), {} otherwise.
         source_label: where the number was published (a leaderboard, a paper), as the feed says it.
         source_url: link to that publication, '' when the feed gives none.
+        mode: thinking mode the source's convention establishes for a hybrid model when the
+            name does not ('thinking' or 'none', `config.CLAUDE_HYBRID_BASES`), '' otherwise.
     """
 
     raw_name: Any
@@ -27,3 +29,4 @@ class Record(NamedTuple):
     meta: dict = {}
     source_label: str = ""
     source_url: str = ""
+    mode: str = ""

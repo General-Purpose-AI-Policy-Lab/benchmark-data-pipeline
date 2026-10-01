@@ -80,10 +80,14 @@ def _take(result: IngestResult, feed: str, rec: Record, aliases: dict) -> str | 
             and ident["variant"] != "thinking"):
         result.completed[ident["variant"] or "bare"] += 1
         ident = {**ident, "reasoning_level": rec.effort}
+    if rec.mode and not (ident["reasoning_level"] or ident["reasoning_tokens"] or ident["variant"]):
+        # the source's convention for a hybrid model (`config.CLAUDE_HYBRID_BASES`)
+        ident = ({**ident, "variant": "thinking"} if rec.mode == "thinking"
+                 else {**ident, "reasoning_level": "none"})
     mid = model_id(ident)
     name = strip_name(rec.raw_name)
     result.raw_names[(mid, feed, name)] += 1
-    if config.SPLITTABLE[feed] and name not in aliases and not rec.effort:
+    if config.SPLITTABLE[feed] and name not in aliases and not rec.effort and not rec.mode:
         result.names[(mid, name.split("/", 1)[1] if name.count("/") == 1 else name)] += 1
     if mid not in result.models:
         result.models[mid] = {"model_id": mid, **ident}

@@ -93,6 +93,19 @@ EPOCH_ORGANIZATION_CANON = {
 # Variants that only describe how a model was run; a date found on one sibling applies to all.
 RUN_VARIANTS = frozenset({"", "thinking"})
 
+# Claude families that run with or without extended thinking (user decision 2026-10-01). Epoch,
+# its live feed and Kaggle write a thinking run with a budget, an effort or `_unknown` ("unknown
+# thinking": thinking on, budget not recorded) and a run without thinking with the bare name
+# ("Claude Opus 4.6 (no thinking)"), so for these bases `_unknown` is variant `thinking` and the
+# bare name effort `none` (`sources.hybrid_mode`). Third-party rows of unknown mode (system cards,
+# agent harnesses) keep the bare name.
+CLAUDE_HYBRID_BASES = frozenset({
+    "claude-3-7-sonnet", "claude-sonnet-4", "claude-opus-4", "claude-opus-4-1", "claude-sonnet-4-5",
+    "claude-haiku-4-5", "claude-opus-4-5", "claude-opus-4-6", "claude-opus-4-7", "claude-opus-4-8",
+    "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5", "claude-opus-5-5", "claude-fable-5",
+    "claude-fable-5-1",
+})
+
 # `status` values in benchmarks.csv. Only `included` rows reach the database.
 STATUS_INCLUDED = "included"
 
