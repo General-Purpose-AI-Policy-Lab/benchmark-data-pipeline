@@ -528,7 +528,7 @@ model_id,feed,raw_name,n_records
 5653ca20-cca4-54a0-90d7-2a596e7dabcf,epoch,gpt-5-2025-08-07_medium,14
 5653ca20-cca4-54a0-90d7-2a596e7dabcf,epoch_live,gpt-5-2025-08-07_medium,5
 5680f719-6af7-56ac-9fa8-561357fbfe14,epoch,gpt-5.6-sol_unknown,5
-5680f719-6af7-56ac-9fa8-561357fbfe14,epoch_cyber,GPT-5.6 Sol,5
+5680f719-6af7-56ac-9fa8-561357fbfe14,epoch_cyber,GPT-5.6 Sol,4
 5680f719-6af7-56ac-9fa8-561357fbfe14,kaggle,gpt-5.6-sol,2
 5680f719-6af7-56ac-9fa8-561357fbfe14,seal,gpt-5.6 (sol),1
 5680f719-6af7-56ac-9fa8-561357fbfe14,seal,gpt-5.6-sol,1
