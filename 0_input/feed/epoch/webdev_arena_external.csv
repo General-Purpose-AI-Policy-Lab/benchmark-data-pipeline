@@ -1,9 +1,13 @@
 Model version,Arena Score,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Score 95% CI,Votes,Last updated,Source,Source link (site from table),Notes,95% CI High,95% CI Low,id
+claude-opus-5-5_max,1820.31,2026-09-22,Anthropic,United States of America,,,,1887,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1837.24,1803.38,recmgLSDio5a8hfWC
 gpt-6-astra_max,1800.28,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
 This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",,2281,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1816.76,1783.81,rec5pxBoPZ09DjlAl
+gpt-6.1-sol_max,1758.72,2026-09-29,OpenAI,United States of America,,,,1264,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1777.82,1739.63,recxV1YByh3vPMhLz
 claude-fable-5-1_max,1758.05,2026-09-01,Anthropic,United States of America,,,,3036,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1771.65,1744.44,recW7c6YS46DN6aYk
+claude-sonnet-5-5_high,1698.82,2026-09-28,Anthropic,United States of America,,,,1205,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1717.81,1679.82,recToBiKpCTvPAk25
+gpt-6-sol_max,1689.33,2026-09-22,OpenAI,United States of America,,,,3197,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1701.14,1677.53,rec7T9l5XF7aKZFWM
 claude-opus-5_max,1686.99,2026-07-24,Anthropic,United States of America,,,,12087,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1694.48,1679.51,recNUvyfQc6Bik8Uv
 kimi-k3_max,1674.26,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
 
@@ -25,6 +29,7 @@ https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-t
 qwen3.8-27b,1593.29,2026-08-14,Alibaba,China,,,,4913,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1602.77,1583.81,rec67p0NIVtVh8Fw2
 glm-5.2_max,1593.25,2026-06-16,Z.ai (Zhipu AI),China,,,,1994,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1607.98,1578.51,recluUH4AYBO78ZCx
 gemini-3.7-flash_high,1587.26,2026-08-13,Google DeepMind,United States of America,,,,3007,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1599.36,1575.17,recu8zmVvQ8mmZVig
+gpt-6-luna_max,1581.95,2026-09-22,OpenAI,United States of America,,,,5577,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1590.96,1572.94,recRcRpkzCQ1tA6zz
 deepseek-v4-pro-0813_high,1580.53,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,,4258,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1590.48,1570.59,rec65iBl9WzLAM7JB
 deepseek-v4-flash-0731_high,1580.2,2026-07-31,DeepSeek,China,2.496e+24,"From https://api-docs.deepseek.com/updates/: ""DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-Preview, and was only re-post-trained.""
 

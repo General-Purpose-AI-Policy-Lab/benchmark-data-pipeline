@@ -1,12 +1,16 @@
 Model version,Main score,Harness,Reasoning effort,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Aggregation,Source,Notes
+claude-opus-5-5_medium,0.5464,claude-code,medium,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,Mean@5,https://cognition.com/frontiercode,
 claude-fable-5_unknown,0.5348,claude-code,xhigh,2026-06-09,Anthropic,United States of America,,,Claude Fable 5,Mean@5,https://cognition.com/frontiercode,
 claude-opus-5_max,0.5338,claude-code,medium,2026-07-24,Anthropic,United States of America,,,Claude Opus 5,Mean@5,https://cognition.com/frontiercode,
 gpt-6-astra_max,0.5326,codex,max,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
 This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,Mean@5,https://cognition.com/frontiercode,
+claude-sonnet-5-5_xhigh,0.5209,claude-code,xhigh,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5,Mean@5,https://cognition.com/frontiercode,
 claude-fable-5-1_medium,0.5091,claude-code,medium,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1,Mean@5,https://cognition.com/frontiercode,
+gpt-6.1-sol_medium,0.5023,codex,medium,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol,Mean@5,https://cognition.com/frontiercode,
 swe-2_max,0.5,devin,max,2026-09-10,Cognition,United States of America,,,SWE-2,Mean@5,https://cognition.com/frontiercode,
+gpt-6-sol_max,0.4927,codex,max,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,Mean@5,https://cognition.com/frontiercode,
 grok-4.6_unknown,0.4801000000000001,grok-build,high,2026-08-12,xAI,United States of America,,,Grok 4.6,Mean@5,https://cognition.com/frontiercode,
 gpt-5.6-sol_unknown,0.47490000000000004,codex,max,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol,Mean@5,https://cognition.com/frontiercode,
 claude-opus-4-8_unknown,0.465,claude-code,max,2026-05-28,Anthropic,United States of America,,,Claude Opus 4.8,Mean@5,https://cognition.com/frontiercode,
@@ -17,6 +21,7 @@ gemini-3.7-flash_unknown,0.43590000000000007,chisel,medium,2026-08-13,Google Dee
 gpt-5.5_unknown,0.42960000000000004,codex,xhigh,2026-04-23,OpenAI,United States of America,,,GPT-5.5,Mean@5,https://cognition.com/frontiercode,
 claude-sonnet-5_unknown,0.42730000000000007,claude-code,xhigh,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5,Mean@5,https://cognition.com/frontiercode,
 grok-4.5_unknown,0.4244,grok-build,high,2026-07-08,xAI,United States of America,,,Grok 4.5,Mean@5,https://cognition.com/frontiercode,
+gpt-6-luna_max,0.4242,codex,max,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,Mean@5,https://cognition.com/frontiercode,
 ,0.4233,devin,none,,,,,,SWE-1.7,Mean@5,https://cognition.com/frontiercode,
 swe-1.7,0.41990000000000005,chisel,none,2026-07-08,Cognition,United States of America,,,SWE-1.7,Mean@5,https://cognition.com/frontiercode,
 gpt-5.6-terra_unknown,0.4131,codex,max,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra,Mean@5,https://cognition.com/frontiercode,

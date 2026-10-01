@@ -80,7 +80,7 @@ Since these are close, we will use the 6NC estimate and derive hardware utilizat
 
 Later they say they measured 326W power usage per chip, which could maybe be used to estimate utilization.",GLaM,0,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,,recEoJmc12bQ9cfIJ
 gpt-3.5-turbo-1106,0.86,2023-11-06,OpenAI,United States of America,,,GPT-3.5 version 1106   ,10,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,,rec39keFceUY6rwsC
-gpt-j-6b,0.382,2021-08-05,"EleutherAI,LAION","United States of America,Germany",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,"0
+gpt-j-6b,0.382,2021-08-05,"EleutherAI,LAION","Germany,United States of America",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,"0
 ",XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,rec9RxSC1PV3tdeZJ
 gpt-neo-2.7B,0.232,2021-03-30,EleutherAI,United States of America,7.9e+21,"source: https://www.aitracker.org/
 

@@ -48,3 +48,8 @@ gpt-5.6-luna_medium,0.222,Medium,0.08,7642,32,2026-07-09,OpenAI,United States of
 gpt-5.6-luna_low,0.16,Low,0.03,3288,18,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna Low,47,https://cursor.com/cursorbench,
 claude-opus-5-5_max,0.578,Max,13.43,218363,185,2026-09-22,Anthropic,United States of America,,,Opus 5.5 Max,1,https://cursor.com/cursorbench,
 claude-opus-5-5_xhigh,0.56,Extra High,6.98,101083,109,2026-09-22,Anthropic,United States of America,,,Opus 5.5 Extra High,2,https://cursor.com/cursorbench,
+claude-sonnet-5-5_max,0.555,Max,9.67,271920,170,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 Max,4,https://cursor.com/cursorbench,
+claude-sonnet-5-5_xhigh,0.531,Extra High,3.88,100158,78,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 Extra High,5,https://cursor.com/cursorbench,
+claude-sonnet-5-5_high,0.478,High,1.67,37391,41,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 High,10,https://cursor.com/cursorbench,
+claude-sonnet-5-5_medium,0.392,Medium,0.7,16036,22,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 Medium,29,https://cursor.com/cursorbench,
+claude-sonnet-5-5_low,0.358,Low,0.5,11668,18,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 Low,37,https://cursor.com/cursorbench,

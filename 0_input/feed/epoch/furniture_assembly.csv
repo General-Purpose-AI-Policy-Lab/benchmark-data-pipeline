@@ -1,4 +1,5 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-sol_max,0.8,0.8,2026-09-29,OpenAI,United States of America,,,0.04928872620664329,,,2026-09-29T18:29:32.000Z,R4vjsSfDrDo6ECQWGTUdWe
 claude-sonnet-5-5_max,0.75,0.75,2026-09-28,Anthropic,United States of America,,,0.05510647116121488,,,2026-09-29T15:17:08.000Z,5xgoV6NXxdDqscnFNpP2vv
 gpt-6-luna_max,0.44166666666666665,0.44166666666666665,2026-09-22,OpenAI,United States of America,,,0.06410142328406845,,,2026-09-28T03:08:57.000Z,GVtcaKADdbkuPoydqpKm3E
 grok-4.5_high,0.225,0.225,2026-07-08,xAI,United States of America,,,0.053711144147650755,,,2026-09-24T17:36:22.000Z,BFVFWpAaax3RDTXT7apuZE

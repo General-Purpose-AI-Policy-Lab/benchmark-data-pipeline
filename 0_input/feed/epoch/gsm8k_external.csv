@@ -50,7 +50,7 @@ Alternatively: the model was trained for 1 epoch on 2 trillion tokens and has 70
 ,0.112,,,,,,Luminous Supreme (70B),5,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/gsm,recF0xxpBLdkHHTBY
 ,0.1,,,,,,Cohere xlarge v20221108 (52.4B),5,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/gsm,rect1yJAE3NqA5La5
 ,0.096,,,,,,J1-Grande v2 beta (17B),5,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/gsm,recgExIqpdbU2tFdY
-bloom,0.095,2022-07-06,"Hugging Face,BigScience","United States of America,France",3.65664e+23,"https://bigscience.huggingface.co/blog/bloom Blog post says 117 days.
+bloom,0.095,2022-07-06,"Hugging Face,BigScience","France,United States of America",3.65664e+23,"https://bigscience.huggingface.co/blog/bloom Blog post says 117 days.
 
 384 A100 GPUs * 314 TFLOPS throughput per GPU * 117 days * 0.3 (utilization assumption) = 3.65664e23
 https://www.wolframalpha.com/input?i=384+*+314+TFLOPS+*+117+days+*+0.3",BLOOM (176B),5,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/gsm,recAoaesoiJO7uTlT

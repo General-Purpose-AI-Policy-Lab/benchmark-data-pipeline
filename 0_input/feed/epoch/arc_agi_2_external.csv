@@ -23,6 +23,7 @@ gpt-5.6-sol_xhigh,0.9,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (
 gpt-5.6-sol_xhigh,0.9,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (XHigh),,,rechqnvfszeSZZcTx
 claude-fable-5-1_max,0.9,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (Max),,,recI68BcNmOFzBN1F
 claude-fable-5-1_xhigh,0.9,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (XHigh),,,recZtv97M9zVWp43I
+gpt-6-sol_max,0.8958333333333335,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Max),,,reclgf5ruPfGJvCNf
 claude-fable-5_max,0.8916666666666667,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (Max),,,recu2ZdK004X3AWeO
 claude-fable-5-1_high,0.8875000000000001,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (High),,,recHs8jTkcWuXJSC9
 claude-fable-5_xhigh,0.8833333333333333,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (XHigh),,,rectyLB4NFarEdw0u
@@ -48,6 +49,7 @@ gpt-5.5_high,0.8333,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (High),
 gpt-5.4-pro-2026-03-05_xhigh,0.8333,2026-03-05,OpenAI,United States of America,,,GPT-5.4 Pro (XHigh),,,recoggJGwWvf6rzzm
 claude-fable-5_medium,0.8250000000000001,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (Medium),,,recOj0wdwD2kU9r8l
 claude-fable-5-1_low,0.7833333333333333,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (Low),,,recgGXbNz9PP5hyy2
+gpt-6-sol_xhigh,0.7805555555555556,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (XHigh),,,recaxpOe7WYYOhEHv
 gemini-3.1-pro-preview,0.771,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro (Preview,0.9622,,recqiypjdc93Zi185
 gemini-3.1-pro-preview,0.7708,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro (Preview),0.9622,,recbE2tiH9D8MeBaF
 claude-fable-5_low,0.7680555555555555,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (Low),,,rech4ukMMdk3W0Q5a
@@ -62,6 +64,7 @@ claude-opus-4-8_high,0.7208,2026-05-28,Anthropic,United States of America,,,Clau
 claude-opus-4-8_medium,0.7167,2026-05-28,Anthropic,United States of America,,,Claude Opus 4.8 (Medium),2.3896,,recmL22XFCsheVQDp
 gpt-5.5_medium,0.7042,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (Medium),0.86,,recdw1w2Kk0j96ky7
 claude-opus-4-6_120K,0.6917,2026-02-05,Anthropic,United States of America,,,"Claude Opus 4.6 (120K, High)",,,recudCqZO2yzH6CbV
+gpt-6-sol_high,0.6888888888888888,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (High),,,recd2qURgAkummpTb
 claude-opus-4-6_120K,0.6875,2026-02-05,Anthropic,United States of America,,,"Claude Opus 4.6 (120K, Max)",,,recZU5GRhR5s7GfZQ
 claude-opus-4-7_high,0.6833,2026-04-16,Anthropic,United States of America,,,Claude 4.7 (High),,,recvk5AeE5Go58i7M
 claude-opus-4-7_high,0.683,2026-04-16,Anthropic,United States of America,,,Claude Opus 4.7 (High),3.17,,recPv91tJnBXcqcnw
@@ -93,7 +96,9 @@ gpt-6-astra_none,0.5958333333333333,2026-09-03,OpenAI,United States of America,1
 This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (None),,,recrfBvJzhO8K1XGJ
 gpt-5.6-luna_max,0.5954,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (Max),0.67,,rec0Or1yRuToQETpO
+gpt-6-luna_max,0.5930555555555556,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Max),,,rec1kIxgw33n3cMDe
 claude-sonnet-4-6_max,0.5833,2026-02-17,Anthropic,United States of America,,,Claude Sonnet 4.6 (Max),2.7179,,reco6ICSvrm675Zqs
+gpt-6-sol_medium,0.5777777777777778,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Medium),,,recAivokOQtVjz9ub
 deepseek-v4-pro-0813_low,0.5625,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (Low),,,recnvqDqZzZ6fLyzg
 deepseek-v4-flash-0731_high,0.5597222222222221,2026-07-31,DeepSeek,China,2.496e+24,"From https://api-docs.deepseek.com/updates/: ""DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-Preview, and was only re-post-trained.""
 
@@ -118,6 +123,7 @@ deepseek-v4-flash-0731_low,0.4597222222222222,2026-07-31,DeepSeek,China,2.496e+2
 gemini-3-deep-think-preview,0.4514,2026-02-12,Google DeepMind,United States of America,,,Gemini 3 Deep Think (Preview) ²,,,recQNM7laEXnYaZlu
 gpt-5.2-2025-12-11_high,0.4333,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (High),1.393,,recZgpSoatzOtn3rb
 gpt-5.6-sol_low,0.425,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (Low),0.32,,recYYBTJBos18GflF
+gpt-6-luna_xhigh,0.41944444444444445,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (XHigh),,,rec02FpVp3L8dwBgu
 inkling-small_xhigh,0.40138888888888885,2026-07-15,Thinking Machines,United States of America,,,Inkling Small (XHigh),,,recsPDzpQmPtMA77v
 gpt-5.2-pro-2025-12-11_medium,0.3847,2025-12-11,OpenAI,United States of America,,,GPT-5.2 Pro (Medium),8.9928,,recNfd2GOThl8JJsR
 claude-opus-4-5-20251101_64K,0.3764,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,"Opus 4.5 (Thinking, 64K)",2.4,,recv5sJsLP2dDw5bN
@@ -127,6 +133,8 @@ gemini-3-flash-preview,0.3361,2025-12-17,Google DeepMind,United States of Americ
 gpt-5.5_low,0.3333,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (Low),0.35,,recIDNd1cnFpANX8V
 grok-4.5_low,0.3306,2026-07-08,xAI,United States of America,,,Grok 4.5 (Low),0.4,,recyCgaKaJtUJErQt
 inkling-small_high,0.3305555555555556,2026-07-15,Thinking Machines,United States of America,,,Inkling Small (High),,,reck4VZ8pzUebO0an
+gpt-6-sol_low,0.3152777777777777,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Low),,,recM1EPIRyZXTR6Eu
+gpt-6-luna_high,0.3138888888888889,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (High),,,recx0dGdcO2qqWceL
 gemini-3-pro-preview,0.3111,2025-11-18,Google DeepMind,United States of America,,Almost certainly >1e25,Gemini 3 Pro,,,recpfIvjpQ9j5qjkw
 gemini-3.6-flash_low,0.30416666666666664,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash (Low),,,rec3i0ahAD3ypm5Zn
 gpt-5.6-luna_high,0.2931,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (High),0.29,,recPiIGgsFkyUNMRY
@@ -139,6 +147,7 @@ gpt-5.4-mini-2026-03-17_xhigh,0.189,2026-03-17,OpenAI,United States of America,,
 gpt-5.4-mini-2026-03-17_xhigh,0.189,2026-03-17,OpenAI,United States of America,,,GPT-5.4 Mini (XHigh),,,recOyW5fmk9px98go
 gpt-5.6-terra_low,0.1875,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (Low),0.17,,recBmdT4RIrE6PjQC
 gpt-5-pro-2025-10-06_unknown,0.1833,2025-10-07,OpenAI,United States of America,,,GPT-5 Pro,7.1432,,recEX7lSg0Egk0RAh
+gpt-6-luna_medium,0.18055555555555555,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Medium),,,reciIrQlX6rvHdQv3
 gpt-5.1-2025-11-13_high,0.1764,2025-11-13,OpenAI,United States of America,,"Almost certainly > 1e25
 ","GPT-5.1 (Thinking, High)",1.1704,,rec0q3XOoL5ig2rmC
 grok-4-0709,0.15975,2025-07-09,xAI,United States of America,5.0000000000001e+26,"We think that RL relative to pre-compute is between our estimate for o3 (10% of pre-training) and the 100% implied by this slide in the launch ( https://archive.is/f0vJU ). Assuming the same pre-training as Grok 3 (also implied by that slide, and much more consistent) and that Grok 3 used a tenth as much RL, we get:
@@ -195,6 +204,7 @@ o3-pro-2025-06-10_high,0.0486,2025-06-10,OpenAI,United States of America,,,o3-Pr
 gemini-2.5-pro_32K,0.0486,2025-06-17,Google DeepMind,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Gemini 2.5 Pro (Thinking 32K),0.757,,recwTBxP1gSo6ob15
 MiniMax-M2.5,0.0486,2026-02-12,MiniMax,China,,,Minimax M2.5,0.17,,recvWNVGtC7Qa9iB1
 glm-5,0.0486,2026-02-11,Z.ai (Zhipu AI),China,6.84e+24,6 * 40B parameters * 28.5e12 tokens = 6.84e24 FLOP estimated,GLM-5,0.27,,recqRJ9q9MWn4yawx
+gpt-6-luna_low,0.04583333333333333,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Low),,,recnMvDSNo5pUrqE6
 claude-opus-4-20250514_8K,0.0452,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Opus 4 (Thinking 8K),1.1569,,recgJTyUSx4UkgSdV
 gpt-5-mini-2025-08-07_high,0.0444,2025-08-07,OpenAI,United States of America,,,GPT-5 Mini (High),0.1977,,recMKGnQgFOoIKBTQ
 gpt-5.4-mini-2026-03-17_medium,0.0444,2026-03-17,OpenAI,United States of America,,,GPT-5.4 Mini (Medium),0.33,,recFStDaPJA1WgZ7p
@@ -242,6 +252,7 @@ gemini-2.5-flash-preview-05-20,0.0169,2025-05-20,Google DeepMind,United States o
 o4-mini-2025-04-16_low,0.0167,2025-04-16,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",o4-mini (Low),0.05,,recooai9u1xla5nXC
 gpt-5-mini-2025-08-07_minimal,0.0167,2025-08-07,OpenAI,United States of America,,,GPT-5 Mini (Minimal),0.0094,,recIEWFxMvibFys75
 claude-haiku-4-5-20251001_8K,0.0167,2025-10-15,Anthropic,United States of America,,,Claude Haiku 4.5 (Thinking 8K),0.0909,,rec3Bb2paOld3N4s0
+gpt-6-sol_none,0.016666666666666666,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (None),,,recAdUSYrL4QnHxKf
 gpt-5.4-nano-2026-03-17_low,0.015300000000000001,2026-03-17,OpenAI,United States of America,,,GPT-5.4 Nano (Low),0.01,,rec62ZrX5hl15IxAl
 gemini-3.5-flash-lite_low,0.015277777777777777,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.5 Flash-Lite (Low),,,reccKj7kqdUYGxFcd
 gemini-2.0-flash-001,0.013000000000000001,2025-02-05,"Google DeepMind,Google",United States of America,,"""We used Trillium TPUs to train the new Gemini 2.0, Google’s most capable AI model yet"" according to https://cloud.google.com/blog/products/compute/trillium-tpu-is-ga",Gemini 2.0 Flash,0.004,,recmtA3PiKSki7Pff
@@ -337,3 +348,4 @@ gpt-4o-2024-11-20,0.0,2024-11-20,OpenAI,United States of America,,Training compu
 gpt-5-nano-2025-08-07_minimal,0.0,2025-08-07,OpenAI,United States of America,,,GPT-5 Nano (Minimal),0.0025,,recvfjus4uMwZPSYy
 magistral-medium-2506,0.0,2025-06-10,Mistral AI,France,,,Magistral Medium (Thinking),,,recIb0Zl4pxpR9ELk
 inkling-small_none,0.0,2026-07-15,Thinking Machines,United States of America,,,Inkling Small (None),,,recovw8MqEuXF8DWr
+gpt-6-luna_none,0.0,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (None),,,reciGPGUnAyc9ZsrU

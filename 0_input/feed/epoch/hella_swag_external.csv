@@ -9,7 +9,7 @@ Also mentions 1,024 NVIDIA A800 GPUs at 180 TFLOPS per GPU",Baichuan2 7B,0,,Qwen
 Baichuan-2-13B-Base,0.708,2023-09-06,Baichuan,China,2.03e+23,"They describe the dataset as having 2.6T tokens, but the checkpoint graph makes it clear that's also the number of tokens the model was trained on.
 
 13b * 2.6t * 6 = 2.03e23",Baichuan2 13B,0,,Qwen Technical Report,http://arxiv.org/abs/2309.16609,recKMHyLo7iHhIm9m
-bloom,0.744,2022-07-06,"Hugging Face,BigScience","United States of America,France",3.65664e+23,"https://bigscience.huggingface.co/blog/bloom Blog post says 117 days.
+bloom,0.744,2022-07-06,"Hugging Face,BigScience","France,United States of America",3.65664e+23,"https://bigscience.huggingface.co/blog/bloom Blog post says 117 days.
 
 384 A100 GPUs * 314 TFLOPS throughput per GPU * 117 days * 0.3 (utilization assumption) = 3.65664e23
 https://www.wolframalpha.com/input?i=384+*+314+TFLOPS+*+117+days+*+0.3",BLOOM (176B),0,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,recQSVqDaut5Qbuj2
@@ -252,7 +252,7 @@ NOTE: this is a rough estimate based on public information, much less informatio
 
 Calculation and confidence intervals here: https://colab.research.google.com/drive/1O99z9b1I5O66bT78r9ScslE_nOj5irN9?usp=sharing",GPT-4,10,,GPT-4 Technical Report,http://arxiv.org/abs/2303.08774,recGg30WxShdoma6K
 ,0.663,,,,,,GPT-J (6B),0,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,recgEHai1fuGSnQ6U
-gpt-j-6b,0.662,2021-08-05,"EleutherAI,LAION","United States of America,Germany",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,0,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,reckIFCQgW9j4dxIA
+gpt-j-6b,0.662,2021-08-05,"EleutherAI,LAION","Germany,United States of America",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,0,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,reckIFCQgW9j4dxIA
 gpt-neo-2.7B,0.427,2021-03-30,EleutherAI,United States of America,7.9e+21,"source: https://www.aitracker.org/
 
 6 FLOP / token / parameter * 2.7 * 10^9 parameters * 420000000000 tokens [see dataset size notes] = 6.804e+21 FLOP",GPT-Neo-2.7B,,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,recdUHL8y6j09NCyI

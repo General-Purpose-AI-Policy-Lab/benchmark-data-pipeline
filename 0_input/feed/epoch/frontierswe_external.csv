@@ -19,3 +19,4 @@ claude-fable-5_max,proximus,0.4696449352941177,0.6177,0.33899999999999997,0.6369
 gemini-3.8-flash_high,proximus,0.19626902941176463,0.3164,0.0951,0.2304,0.14880000000000002,0.16469999999999999,38.75,7.18,Mean@5,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,,,,,https://www.frontierswe.com/,
 claude-opus-5-5_max,proximus,0.623309882352941,0.7152,0.5199,0.8039000000000001,0.4529,0.5733,98.87,14.25,Mean@5,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,,,,,https://www.frontierswe.com/,
 grok-4.7_xhigh,proximus,0.2950476117647059,0.4106,0.1587,0.3639,0.1822,0.23760000000000003,318.77,12.06,Mean@5,2026-09-21,xAI,United States of America,,,Grok 4.7,,,,,https://www.frontierswe.com/,
+claude-sonnet-5-5_max,proximus,0.618892994117647,0.7169,0.5093,0.8109999999999999,0.4806,0.5452,110.45,16.01,Mean@5,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5,,,,,https://www.frontierswe.com/,

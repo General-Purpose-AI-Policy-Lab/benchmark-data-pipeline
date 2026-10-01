@@ -365,3 +365,5 @@ gpt-5.6-terra_none,0.7867000000000001,64.45,6.9252,,2026-07-09,OpenAI,United Sta
 gpt-5.6-luna_low,0.8,66.6667,6.7618,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (low),https://conceptualreasoning.ai/dtbench,
 gpt-5.6-luna_none,0.6925,48.75,7.8072,,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (off),https://conceptualreasoning.ai/dtbench,
 claude-opus-5-5_max,0.9893000000000001,98.2167,1.7313,0.9211,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,https://conceptualreasoning.ai/dtbench,
+gpt-6-sol_max,0.9733,95.55,2.7113,0.7763,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,https://conceptualreasoning.ai/dtbench,
+gpt-6-luna_max,0.9013,83.55,5.0306,0.64,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,https://conceptualreasoning.ai/dtbench,

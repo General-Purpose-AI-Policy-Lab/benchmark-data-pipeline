@@ -1,4 +1,5 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-sol_max,0.5428571428571429,0.5428571428571429,2026-09-29,OpenAI,United States of America,,,0.05753831415997416,,,2026-09-29T18:13:25.000Z,LRUWNzFDcScwkTYuZYdeiV
 claude-opus-5-5_max,0.7142857142857142,0.7142857142857142,2026-09-22,Anthropic,United States of America,,,0.07063046178186345,,,2026-09-22T21:38:58.000Z,iKWWUmcuzRjqisoshKVEpL
 gpt-6-sol_max,0.5333333333333333,0.5333333333333333,2026-09-22,OpenAI,United States of America,,,0.04616837959444122,,,2026-09-22T21:35:18.000Z,gM5SADcEixdr2P6PkseLeF
 claude-fable-5-1_max,0.5714285714285714,0.5714285714285714,2026-09-01,Anthropic,United States of America,,,0.06023386019368341,,,2026-09-08T14:59:49.000Z,8JukffGviNAYHXSdTJvswB

@@ -1,6 +1,8 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-sol_max,0.8,0.8,2026-09-29,OpenAI,United States of America,,,0.04020151261036849,,,2026-09-29T22:00:34.000Z,fQzkNRV69sKaJX7o9KKneQ
 claude-opus-5-5_max,0.71,0.71,2026-09-22,Anthropic,United States of America,,,0.04560480215720687,,,2026-09-29T17:34:54.000Z,fREi6AAmnfqUWkDqUhLLtw
 claude-sonnet-5-5_max,0.65,0.65,2026-09-28,Anthropic,United States of America,,,0.04793724854411022,,,2026-09-29T15:15:14.000Z,3PVdaSEYFJKgYUgHnF4DBu
+gpt-6-sol_max,0.56,0.56,2026-09-22,OpenAI,United States of America,,,0.049888765156985884,,,2026-09-22T19:59:24.000Z,DnFTaE9qNsmBdYNqohhynY
 muse-spark-1.3_max,0.25,0.25,2026-09-02,Meta AI,United States of America,,,0.044640484731156636,,,2026-09-18T19:12:25.000Z,6Rcc2q3USiUNB6U44bpvGH
 muse-spark-1.3_xhigh,0.1414141414141414,0.1414141414141414,2026-09-02,Meta AI,United States of America,,,0.03519858850692775,,,2026-09-16T23:26:24.000Z,n6X597deBgzpbDSyxvhUAB
 gemini-3.8-flash_high,0.47,0.47,2026-09-02,Google DeepMind,United States of America,,,0.05016135580465918,,,2026-09-02T17:15:36.000Z,5yyuCCi2Dpfh6xLBMxqFyB

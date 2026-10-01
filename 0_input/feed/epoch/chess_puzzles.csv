@@ -1,4 +1,5 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-sol_max,0.61,0.61,2026-09-29,OpenAI,United States of America,,,0.04902071300001973,,,2026-09-29T22:00:34.000Z,d9TWVVwaH6vgp36FM7qGJ5
 muse-spark-1.3_max,0.38,0.38,2026-09-02,Meta AI,United States of America,,,0.04878317312145634,,,2026-09-18T19:12:25.000Z,iPdvXwCfjkWX8AcpsjR4sZ
 muse-spark-1.3_xhigh,0.35,0.35,2026-09-02,Meta AI,United States of America,,,0.047937248544110224,,,2026-09-16T13:39:25.000Z,LGWtZA9WGoRRnebM4Q7VCV
 qwen3.8-max-0902_xhigh,0.4,0.4,2026-09-01,Alibaba,China,,,0.0492365963917331,,,2026-09-02T18:04:58.000Z,8qGBfpdQXMmLcSqPwz7ofm

@@ -1,5 +1,8 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-sol_max,1.0,1.0,2026-09-29,OpenAI,United States of America,,,0.0,,,2026-09-29T22:00:34.000Z,Di7y6sES4PGQbXNkXYhdqM
 claude-sonnet-5-5_max,1.0,1.0,2026-09-28,Anthropic,United States of America,,,0.0,,,2026-09-29T15:15:14.000Z,bSEaZLPehiNVDQL7HP9EJS
+gpt-6-luna_max,0.9888888888888889,0.9888888888888889,2026-09-22,OpenAI,United States of America,,,0.006674027922425511,,,2026-09-22T22:14:05.000Z,4uDz9b6SosxDSZf7swMD9D
+gpt-6-sol_max,1.0,1.0,2026-09-22,OpenAI,United States of America,,,0.0,,,2026-09-22T19:59:24.000Z,VZAUcNkzeMSMm9paxBhj6B
 claude-opus-5-5_max,1.0,1.0,2026-09-22,Anthropic,United States of America,,,0.0,,,2026-09-22T18:27:39.000Z,LSfona7P3jCAnZFXJ2YA7F
 muse-spark-1.3_xhigh,0.9916666666666667,0.9916666666666667,2026-09-02,Meta AI,United States of America,,,0.006154574548966636,,,2026-09-17T13:30:27.000Z,Wmxkx5m3qaQuwzem6gzZmg
 qwen3.8-max-0902_xhigh,1.0,1.0,2026-09-01,Alibaba,China,,,0.0,,,2026-09-02T18:04:58.000Z,2f8Vn5QBdJnc9i5y9jzXS7

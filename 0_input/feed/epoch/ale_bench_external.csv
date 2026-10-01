@@ -3,16 +3,19 @@ gpt-6-astra_max,2951.32,2026-09-03,OpenAI,United States of America,1.0001e+27,"p
 
 This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra-max,2.86415,,60.1042,2.98,57.1242,17.98,recie6OeSzfrEhXOW
+gpt-6-sol_max,2462.0,2026-09-22,OpenAI,United States of America,,,gpt-6-sol-max,0.843984,,87.3183,2.98,84.3383,61.83,receiDDkmha5O2EgZ
 gpt-5.6-sol_max,2176.88,2026-07-09,OpenAI,United States of America,,,gpt-5.6-sol-max,1.534078,,58.6964,8.6708,50.0256,98.33,recB9LSLRE0ygr7gb
 claude-opus-5_high,2164.57,2026-07-24,Anthropic,United States of America,,,claude-opus-5-high,1.890512,,78.9511,4.1632,74.7878,125.35,reczXRrSMMBAUjHxZ
 claude-fable-5-1_high,2143.2,2026-09-01,Anthropic,United States of America,,,claude-fable-5.1-high,2.294856,,49.2293,4.1652,45.0641,113.95,recoromAv2aFG1mQC
 claude-fable-5_high,2041.3,2026-06-09,Anthropic,United States of America,,,claude-fable-5-high,2.108822,,45.507,4.1632,41.3438,120.92,recOJYPyImXeBu5y6
 gpt-5.6-terra_max,1951.42,2026-07-09,OpenAI,United States of America,,,gpt-5.6-terra-max,1.254047,,86.4774,2.98,83.4974,155.97,recy6tGLt0oXl5Z3t
 gpt-5.5_xhigh,1942.97,2026-04-23,OpenAI,United States of America,,,gpt-5.5-xhigh,1.517132,,54.0908,3.9703,50.1206,174.53,recvu236lk6eJfew6
+claude-sonnet-5-5_high,1819.12,2026-09-28,Anthropic,United States of America,,,claude-sonnet-5.5-high,0.110921,,14.4243,4.1652,10.2591,222.05,recYjibuLhTTZDmIz
 gpt-5.6-luna_max,1667.4,2026-07-09,OpenAI,United States of America,,,gpt-5.6-luna-max,0.359171,,85.1796,30.0081,55.1714,265.73,rechpIYckpxNmorqX
 gpt-5.3-codex_xhigh,1655.22,2026-02-05,OpenAI,United States of America,,,gpt-5.3-codex-xhigh,0.559265,,49.2862,10.4666,38.8195,260.93,recjPl07t1MvmNgDm
 gpt-5.4-2026-03-05_high,1607.0,2026-03-05,OpenAI,United States of America,,,gpt-5.4-high,0.612174,,45.4606,5.2245,40.2361,290.27,recJ9Hqsyml44GqRp
 gpt-5.5_medium,1589.38,2026-04-23,OpenAI,United States of America,,,gpt-5.5-medium,0.328965,,13.7061,2.98,10.7261,277.35,rec8dhBUXYFTQ1qEi
+gpt-6-luna_xhigh,1576.92,2026-09-22,OpenAI,United States of America,,,gpt-6-luna-xhigh,0.018045,,38.9844,2.98,36.0044,306.98,rec922KTi4fs6PkF3
 claude-opus-4-8_high,1563.83,2026-05-28,Anthropic,United States of America,,,claude-4.8-opus-high,0.963945,,41.8884,4.1632,37.7251,297.35,rec9PMFOTHSfxdEBy
 kimi-k3_max,1524.47,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
 

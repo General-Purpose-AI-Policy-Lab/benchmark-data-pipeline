@@ -53,3 +53,5 @@ gemini-3.8-flash_medium,0.23399999999999999,2026-09-02,Google DeepMind,United St
 gemini-3.8-flash_high,0.23199999999999998,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (High reasoning),Google,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recf9BdIGPShsbpnb
 qwen3.8-flash_xhigh,0.166,2026-08-26,Alibaba,China,,,Qwen 3.8 Flash (xHigh reasoning),Qwen,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recrz0p5LnyKdILVL
 claude-opus-5-5_max,0.306,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5 (Adaptive/Max),Anthropic,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,rec7dEXMmBbh7vcYv
+gpt-6-sol_max,0.264,2026-09-22,OpenAI,United States of America,,,GPT 6 Sol (Max reasoning),OpenAI,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recNioYpcVH6vDVRS
+gpt-6-luna_max,0.23,2026-09-22,OpenAI,United States of America,,,GPT 6 Luna (Max reasoning),OpenAI,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,rec1mcsu2XY89LcY7

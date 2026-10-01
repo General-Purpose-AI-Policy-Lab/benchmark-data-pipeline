@@ -1,4 +1,5 @@
 Model version,Pass@1 score,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Pass@1 Standard Error,Mean score,Mean Standard Error,Notes,id
+claude-sonnet-5-5_max,0.755,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 [claude-sonnet-5-5],4.7,0.8370000000000001,3.6,,recwsmBXqLEgJjkrE
 claude-opus-5-5_max,0.735,2026-09-22,Anthropic,United States of America,,,Opus 5.5 [claude-opus-5-5],4.9,0.813,4.0,,rec6TErVzXnuNRUoV
 claude-fable-5-1_unknown,0.6859999999999999,2026-09-01,Anthropic,United States of America,,,Fable 5.1 [claude-fable-5.1],4.9,0.7709999999999999,4.3,,reciHu2R0cgIa9tz3
 gemini-3.7-flash_unknown,0.6779999999999999,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash,5.1,0.794,3.8,,recW38cKLjAptrWAQ
@@ -10,6 +11,7 @@ This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,5.6,0.751,4.6,,rec8tVCWwIBymY5yY
 gemini-3.8-flash_unknown,0.643,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,5.3,0.746,4.3,,recsEbJSODxwEhWql
 claude-fable-5,0.636,2026-06-09,Anthropic,United States of America,,,Fable 5,5.3,0.745,4.3,,reckaD0wz9XOvArFA
+gpt-6.1-sol_max,0.6,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol,5.6,0.7320000000000001,4.6,,reciOAOiuYHbbtCcU
 claude-fable-5-1_high,0.5970000000000001,2026-09-01,Anthropic,United States of America,,,Fable 5.1 (High),5.6,0.718,4.6,,recNL6V1sB2zRy2vL
 gpt-5.6-terra_max,0.5820000000000001,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra,5.3,0.718,4.2,,recIl7G6eKw5AFuMv
 muse-spark-1.3_unknown,0.578,2026-09-02,Meta AI,United States of America,,,Muse Spark 1.3,5.5,0.6990000000000001,4.5,,reczj4OgICoiocuwT
@@ -17,6 +19,7 @@ glm-5.3_unknown,0.5660000000000001,2026-08-14,Z.ai (Zhipu AI),China,,,GLM-5.3,5.
 grok-4.5_unknown,0.562,2026-07-08,xAI,United States of America,,,Grok 4.5,5.4,0.705,4.3,,rececsj9bbRs6VG4W
 gpt-5.5_unknown,0.551,2026-04-23,OpenAI,United States of America,,,GPT-5.5,5.5,0.703,4.4,,recAtyT31eNSS0yck
 claude-sonnet-5_unknown,0.545,2026-06-30,Anthropic,United States of America,,,Sonnet 5,5.5,0.674,4.5,,recDITjv4rt440qU6
+gpt-6-sol_max,0.543,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,5.6,0.687,4.7,,recLBjIuBBmwMbz6o
 glm-5.3-flash_unknown,0.528,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"6 * 18e9 active parameters * 30e12 tokens = 3.24e24 FLOP. 
 
 https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-token multimodal pre-training corpus, these changes let GLM-5.3-Flash produce more intelligence with less compute."", which is not definitive in saying that all 30T tokens were used exactly once; likely confidence.",GLM-5.3-Flash,5.3,0.668,4.4,,recoUnuvNXMuPUypv
@@ -30,6 +33,8 @@ claude-opus-4-8_max,0.489,2026-05-28,Anthropic,United States of America,,,Opus 4
 deepseek-v4-pro-0813_unknown,0.473,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek-V4-Pro-0813,5.6,0.623,4.9,,recZWJ893wBDvmzR7
 gemini-3.6-flash_unknown,0.469,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash,5.2,0.634,4.4,,recrKr7XmbXXZO8qD
 claude-opus-4-6_max,0.46299999999999997,2026-02-05,Anthropic,United States of America,,,Opus 4.6,5.5,0.618,4.8,,recfKa2RdTGFZh3gQ
+claude-sonnet-5-5_medium,0.446,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 (Medium),5.6,0.594,4.9,,recWY8vFxRRaVvJK3
+gpt-6-luna_max,0.443,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,5.5,0.59,4.9,,rec1U23OkfwoEOepV
 claude-sonnet-4-6_high,0.43,2026-02-17,Anthropic,United States of America,,,Sonnet 4.6,5.5,0.5760000000000001,4.9,,recNKXGqIBBG6Q12j
 glm-5.1,0.409,2026-04-07,Z.ai (Zhipu AI),China,,,GLM-5.1,5.4,0.568,4.6,,recB78P8U9128Kwmw
 MiniMax-M3,0.37700000000000006,2026-06-01,MiniMax,China,,,MiniMax-M3,4.9,0.535,4.5,,recddMEKJx52F4GnA

@@ -30,3 +30,5 @@ gpt-6-astra_unknown,0.4967462039045553,0.768,2026-09-03,OpenAI,United States of 
 This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,0.004,https://andonlabs.com/evals/blueprint-bench-2,
 gemini-3.8-flash_unknown,0.3861171366594359,0.7170000000000001,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,0.005,https://andonlabs.com/evals/blueprint-bench-2,
+gpt-6-sol_unknown,0.36876355748373096,0.709,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,0.007000000000000001,https://andonlabs.com/evals/blueprint-bench-2,
+gpt-6-luna_unknown,0.31236442516268986,0.6830000000000002,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,0.009,https://andonlabs.com/evals/blueprint-bench-2,
