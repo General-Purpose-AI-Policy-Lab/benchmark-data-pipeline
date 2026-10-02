@@ -120,6 +120,8 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 
 ## Naming conventions, per source
 
+**Hybrid Claude models** (`config.CLAUDE_HYBRID_BASES`, 3.7 Sonnet to Opus 5.5 and Fable 5.1) run with or without extended thinking, and the sources write the two modes apart: in Epoch, its live feed and Kaggle the bare name is the run without thinking (effort `none`; Epoch's own labels say "no thinking") and `_unknown` a thinking run of unknown budget (`thinking`). Rows of unknown mode (system cards, agent harnesses, SEAL's 2026 models) keep the bare name (`identity.hybrid_mode`).
+
 | Source | Field | Format | Strategy |
 |---|---|---|---|
 | `epoch` (ZIP) | `Model version` | machine name `[provider/]base[-date][_suffix]` | grammar + `aliases.csv` for the exceptions |
@@ -148,7 +150,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 - **Date** extracted only at the end of the base, in the `-YYYY-MM-DD` or `-YYYYMMDD` forms → `snapshot`. Deliberate under-extraction: `2507`, `0528`, `03-2025` stay in `base_model`.
 - The `provider/` prefix (a single `/`) is removed.
 
-## The four gestures
+## Common gestures
 
 ### Fix a mistranslated name
 
@@ -166,6 +168,10 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 5. `python -m benchmark_data build`.
 
 **`_SPEC` / `_SKIP` rule**: anything in neither dictionary is **reported**. Never ingested silently, never dropped silently. A feed that changes shape is seen, for the feeds that enumerate their own content (the Epoch ZIP, the live feed, the cyber table); Kaggle and Scale boards are fetched by name from `KAGGLE_SPEC` and `SEAL_SPEC`, so a board they add is discovered by hand, not by the build.
+
+### Correct or drop a published score
+
+Add a row to `0_input/metadata/score_corrections.csv` (`feed`, `benchmark`, the feed's raw name, the value the feed's translator yields, the corrected value or empty to drop the row, source URL, note). A correction stops applying when the feed changes that value, and the build reports it for review. Record the reasoning in `docs/decisions.md`.
 
 ### Add or exclude a benchmark
 
@@ -202,7 +208,7 @@ pytest                                # unit tests + golden + determinism
 ruff check .
 ```
 
-**Dated runs.** Every build writes its tables to `2_database/<YYYYMMDD>/` and its views to `3_views/<YYYYMMDD>/`, named by the local date the build ran (`benchmark_data/runs.py`); `build_manifest.json` records the same moment in `built_at`, with its offset. A second build the same day replaces that day's folders; earlier days stay. `check`, `parity` and the consumers' `sync` (Multiaxis_ECI, benchmark-forecasting) read the most recent date, and the consumers name their outputs after it, so the date carried by a result folder is the day the pipeline ran, not the day the analysis was done.
+**Dated runs.** Every build writes its tables to `2_database/<YYYYMMDD>/` and its views to `3_views/<YYYYMMDD>/`, named by the local date the build ran (`benchmark_data/runs.py`); `build_manifest.json` records the same moment in `built_at`, with its offset. A second build the same day replaces that day's folders; earlier days stay. A rebuild with no feed refresh since a run (a metadata or code fix) writes into that run instead, `python -m benchmark_data build --date YYYYMMDD`: its data still date from then. `check`, `parity` and the consumers' `sync` (Multiaxis_ECI, benchmark-forecasting) read the most recent date, and the consumers name their outputs after it, so the date carried by a result folder is the day the pipeline ran, not the day the analysis was done.
 
 The build only needs `pandas`. Two successive builds must produce a **byte-identical** set of tables; a divergence means an unsorted `dict`/`set` somewhere (`tests/test_build_golden.py` checks it).
 
