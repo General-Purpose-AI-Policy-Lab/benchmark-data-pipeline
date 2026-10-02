@@ -9,7 +9,11 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="benchmark_data", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("refresh", help="download the feeds into 0_input/feed/ (network)")
-    sub.add_parser("build", help="build 2_database/ from 0_input/feed/ (offline)")
+    b = sub.add_parser("build", help="build 2_database/ from 0_input/feed/ (offline)")
+    b.add_argument("--date", metavar="YYYYMMDD",
+                   help="write into the run of that date instead of today's: a rebuild with "
+                        "no feed refresh in between (a metadata or code fix) keeps the date of "
+                        "the run whose feeds it reads, its data still dating from then")
     sub.add_parser("check", help="compare 2_database/ and 3_views/ with their expected copies")
     sub.add_parser("parity", help="compare 3_views/ with the consumers' frozen outputs (reports/)")
     parser.add_argument("-v", "--verbose", action="store_true")
@@ -22,7 +26,7 @@ def main(argv=None) -> int:
         refresh()
     elif args.command == "build":
         from benchmark_data.build import build
-        build()
+        build(date=args.date)
     elif args.command == "check":
         from benchmark_data.check import check
         return 0 if check() else 1

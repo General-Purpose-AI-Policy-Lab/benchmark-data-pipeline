@@ -2,6 +2,7 @@
 -> export (tables, then consumer views)."""
 
 import logging
+import re
 from pathlib import Path
 
 import pandas
@@ -63,16 +64,20 @@ def _log_new_models(new_names: list[dict], previous_models: Path) -> None:
 
 
 def build(feed_dir: Path = config.FEED_DIR, metadata_dir: Path = config.METADATA_DIR,
-          out_dir: Path | None = None, views_dir: Path | None = None) -> None:
+          out_dir: Path | None = None, views_dir: Path | None = None,
+          date: str | None = None) -> None:
     """Build the tables of `out_dir` and the views of `views_dir` from the feeds and metadata.
 
     By default both go to the folders of today's run, `2_database/<YYYYMMDD>/` and
-    `3_views/<YYYYMMDD>/` (a rebuild the same day replaces them).
+    `3_views/<YYYYMMDD>/` (a rebuild the same day replaces them). `date` names another run: a
+    rebuild with no feed refresh since that run replaces it, its data still dating from then.
     """
     previous = runs.dates(config.DATABASE_DIR)
     previous_models = (config.DATABASE_DIR / previous[-1] / "models.csv" if previous
                        else config.DATABASE_DIR / "models.csv")
-    date = runs.today()
+    if date is not None and not re.fullmatch(r"\d{8}", date):
+        raise ValueError(f"--date {date!r}: expected YYYYMMDD")
+    date = date or runs.today()
     out_dir = out_dir or config.DATABASE_DIR / date
     views_dir = views_dir or config.VIEWS_DIR / date
     log.info("run %s: tables -> %s, views -> %s", date, out_dir, views_dir)
