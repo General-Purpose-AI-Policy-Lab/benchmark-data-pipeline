@@ -1217,7 +1217,7 @@ b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch,Qwen3-235B-A22B-Thinking-2507,5
 b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch,chutes/Qwen3-235B-A22B-Thinking-2507,1
 b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch,qwen/qwen3-235b-a22b-thinking-2507,2
 b35da3fc-cf68-5251-9b87-93fd08a6347d,epoch_live,Qwen3-235B-A22B-Thinking-2507,5
-b35da3fc-cf68-5251-9b87-93fd08a6347d,kaggle,qwen3-235b-a22b-thinking-2507,3
+b35da3fc-cf68-5251-9b87-93fd08a6347d,kaggle,qwen3-235b-a22b-thinking-2507,1
 b35da3fc-cf68-5251-9b87-93fd08a6347d,seal,Qwen3-235B-A22B-Thinking-2507,1
 b4677557-9503-5cef-93b3-601751435538,epoch,o3-pro-2025-06-10_low,2
 b4ec49ae-5496-5ac9-a1a3-c9b6cfc960a6,epoch,Llama-2-70b-chat,5
