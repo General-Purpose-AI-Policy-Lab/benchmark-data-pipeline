@@ -1,7 +1,7 @@
 Copyright (c) 2026 General-Purpose AI Policy Lab
 
-This work, including the source code, the notebooks, the curated dictionaries
-and the produced datasets, is licensed under the
+This work, including the source code, the curated dictionaries and the
+produced datasets, is licensed under the
 
     Creative Commons Attribution 4.0 International License (CC-BY-4.0)
     SPDX-License-Identifier: CC-BY-4.0
@@ -15,8 +15,8 @@ Summary:         https://creativecommons.org/licenses/by/4.0/
 
 Suggested attribution:
 
-    General-Purpose AI Policy Lab, "eval-data-pipeline", CC-BY-4.0,
-    https://github.com/General-Purpose-AI-Policy-Lab/eval-data-pipeline
+    General-Purpose AI Policy Lab, "benchmark-data-pipeline", CC-BY-4.0,
+    https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline
 
 THIS LICENSE COVERS THE MATERIAL PRODUCED BY THIS PROJECT ONLY. Third-party
 data redistributed or referenced here carries its own terms. See NOTICE.md.
