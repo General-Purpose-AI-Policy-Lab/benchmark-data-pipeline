@@ -1,6 +1,6 @@
 # Decision log
 
-One entry per decision that changes the data or the schema. Open points live in `decisions_pending.md`; once settled they move here with their date. Repositories are abbreviated MX (Multiaxis_ECI), MBF (benchmark-forecasting), BDP (this one).
+One entry per decision that changes the data or the schema, with its date; an open point is noted in the entry that found it. "(user)" marks a choice made by the maintainer. Repositories are abbreviated MX (Multiaxis_ECI), MBF (benchmark-forecasting), BDP (this one).
 
 ## 2026-09-04, first batch
 
@@ -226,7 +226,7 @@ A sweep of every model for one release split across spellings (same organisation
 ## 2026-10-01, build folders dated by the day the pipeline ran
 
 - **One folder per run (user).** The consumers named their result folders after `built_at` of the build they synced, and since a build was rerun just before each sync, that date followed the analysis rather than the data. Every build now writes `2_database/<YYYYMMDD>/` and `3_views/<YYYYMMDD>/`, named by the local date it ran (`benchmark_data/runs.py`); a second build the same day replaces that day's folders, earlier days stay. `built_at` is written in local time with its offset, so its date part is the folder's name.
-- `check`, `parity`, the tests that read the database and `scripts/release_dates_consistency.py` take the most recent run; the consumers' `sync` copies that run and records its date (`pipeline_run_date` in their `provenance.json`), which names their outputs. The committed tables of d3197d3 moved to `2_database/20261001/` and `3_views/20261001/` unchanged.
+- `check`, `parity`, the tests that read the database and `scripts/release_dates_consistency.py` take the most recent run; the consumers' `sync` copies that run and records its date (`pipeline_run_date` in their `provenance.json`), which names their outputs. The committed tables of 20be52b moved to `2_database/20261001/` and `3_views/20261001/` unchanged.
 
 ## 2026-10-01, benchmark release dates
 
@@ -283,7 +283,6 @@ A sweep of every model for one release split across spellings (same organisation
 
 - **Excluded (user), `exclusion_criterion = quality`.** The puzzles draw reasoning long enough to outrun the output cap of Epoch's high-effort runs, which then leave most answers empty: Claude Opus 4.6 / 4.7 and Sonnet 4.6 / 5 at `max` (0.03 to 0.16 against 0.13 to 0.35 at lower efforts), Qwen3.5-9B and 35B-A3B in thinking mode (0.02, 0.01 against 0.12, 0.10 with reasoning off). Five of the twelve effort inversions found came from this benchmark, and runs with no lower-effort comparator could not be checked at all. In the 2026-10-02 Multiaxis K=4 fit it led a latent axis on its own (64 % of the axis's loading share). Its five rows in `score_corrections.csv` are gone with it. GBAEval, whose goose-harness runs score near zero, stays (user).
 
-
 ## 2026-10-05, efforts of the scores whose run named none: score_variant_fixes.csv
 
 - **The problem.** A score with no effort suffix sits in the data as its release's bare run, which the Multiaxis fits read as "setting unknown" (a hybrid release) or "reasoning on" (a release that always reasons). Its source often states the setting, and a share of these scores are copies of a labelled score already in the data (Epoch's `_unknown` records beside the labelled ones), counted twice. In the 2026-10-03 Multiaxis K=4 fit, `gpt-5.2-2025-12-11` bare sat 3.7 sd below its release on the effort axis in every chain: its ARC-AGI and ARC-AGI-2 scores are ARC Prize's `thinking-none` runs, its CL-bench score the paper's lowest-effort run, its CTI-REALM score the paper's medium run, its SimpleBench and Terminal-Bench scores copies of the `_high` and `_medium` rows.
@@ -325,3 +324,5 @@ A sweep of every model for one release split across spellings (same organisation
 
 - **One run, two labels (user):** Epoch's GSO, SimpleBench and WeirdML files carry six Claude board rows twice, bare and `_unknown`, read `_none` and `_thinking` by the hybrid convention; each is kept once, bare (`remodel` and `drop` in `score_variant_fixes.csv`). SimpleBench's single "Grok 4.1 Fast" row (56%) is kept as the reasoning model only; the GPT-4 32k rows on HellaSwag and WinoGrande (the GPT-4 report's figures, quoted by the Falcon paper) go; GPT-5.2's WeirdML `_low` row goes (WeirdML lists xhigh, medium and no thinking only, and the row has the no-thinking run's cost and tokens). GPT-6 Astra's equal scores are saturation (40 of 41 on FrontierMath Tier 4 at medium and above) and keep.
 - **GeoBench runs that refuse (user):** its country accuracy counts a refused image as a miss and its average score skips it, so a run refusing part of the set is measured on neither scale. `sources/epoch_zip.FILE_REFUSAL` leaves out a run refusing 5% of the images or more: o3 at high effort (18%), o4-mini at medium and high (10%, 9%), Llama 3.2 90B Vision (7%); every other run refuses none. Two effort inversions of the round keep: o3's GeoBench one is this refusal, and Opus 4.6's MultiChallenge 37.15 at max against 56.02 without thinking is Scale's own board.
+
+Result (run 20261001 rebuilt at 956c91b): 950 models, 98 benchmarks, 5,213 scores, 48 human baselines.

@@ -1,8 +1,8 @@
 # Open decisions
 
-Each point below is a place where two of the three repositories (Multiaxis_ECI = **MX**, benchmark-forecasting = **MBF**, this one = **BDP**) made a different choice, or where the right value is in doubt. Nothing here is settled: "Reco" is a proposal; the decision goes in the "Decision" column and is then moved to `decisions.md`.
+Each point below is a place where two of the three repositories (Multiaxis_ECI = **MX**, benchmark-forecasting = **MBF**, this one = **BDP**) made a different choice, or where the right value is in doubt. No point is open today: every section below was settled, and its decision is in `decisions.md`.
 
-Figures computed on 2026-09-04 against MX `55687ce`, MBF `2ed2c34`, BDP `f2ae39c` (feeds of 2026-08-28), then refreshed feeds of 2026-09-04. Settled items of the two 2026-09-04 batches (A1-A5, B2, B3, B6, most of B1) have been removed; see `decisions.md`.
+Figures computed on 2026-09-04 against MX `55687ce`, MBF `2ed2c34`, BDP `9326f84` (feeds of 2026-08-28), then refreshed feeds of 2026-09-04. Settled items of the two 2026-09-04 batches (A1-A5, B2, B3, B6, most of B1) have been removed; see `decisions.md`.
 
 ## B. Benchmark vocabulary
 

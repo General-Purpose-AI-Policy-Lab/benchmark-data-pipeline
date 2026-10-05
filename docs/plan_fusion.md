@@ -1,5 +1,7 @@
 # Fusion des pipelines de données : diagnostic, désidérata, état d'avancement
 
+> Historical planning note, in French, last updated 2026-09-09. The merge it plans is done: both modelling repositories read this pipeline's views. The current state is in the README.
+
 Rédigé le 2026-09-04 après lecture complète de `Multiaxis_ECI/1_data/`, `eval-data-pipeline/` (devenu `benchmark-data-pipeline`) et `Model_Benchmark_forecasting/0_Process_benchmarks.ipynb`. Mis à jour le 2026-09-09 : les phases 0 à 5 sont faites, les deux dépôts de modélisation consomment les vues du pipeline et partagent la même organisation ; la section 4 liste ce qui reste et ce qui mérite encore une décision. Les décisions détaillées sont dans `benchmark-data-pipeline/docs/decisions.md` ; ce fichier est recopié dans `benchmark-data-pipeline/docs/plan_fusion.md`.
 
 ## 1. Diagnostic : ce que faisaient les trois pipelines
@@ -120,5 +122,5 @@ Ce qui a changé par rapport au plan initial : le harness n'est pas entré dans 
 
 - Multiaxis : fin du K=4 sur la génération 2026-09-08 et déplacement de son dossier dans `5_outputs/` ; régénération des figures des deux canoniques et de la frontière pays avec le nouveau code (`--skip-sampling`) ; tests lents ; `--censor-bounds` diverge encore (plancher dur du log-vraisemblance), à corriger seulement si le mode censuré est voulu ; `index.html` et les figures du billet restent ceux des données d'avant pipeline.
 - MBF : relancer `2_analyses/forecasts.py` (les caches ne correspondent plus aux données resynchronisées après les corrections d'alias) puis `revision_analyses.py`.
-- Pousser les trois dépôts (pipeline après `a5770d1`, Multiaxis et MBF jamais poussés depuis la restructuration).
+- Pousser les trois dépôts (pipeline après `0d2a84b`, Multiaxis et MBF jamais poussés depuis la restructuration).
 - Phase 6 : CI ruff + pytest dans Multiaxis et MBF (le pipeline en a) ; diff persistant entre deux builds si la PR mensuelle ne suffit pas à la relecture.

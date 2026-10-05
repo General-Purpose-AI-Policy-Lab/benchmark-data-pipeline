@@ -10,7 +10,8 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 
 ```
 0_input/feed/<source>/      one source's raw data + its aliases.csv (one per source, never shared)
-0_input/metadata/           benchmarks.csv, organizations.csv, sibling_merges.csv, release_dates.csv, benchmark_release_dates.csv, human_baselines.csv
+0_input/metadata/           benchmarks.csv, organizations.csv, sibling_merges.csv, release_dates.csv, benchmark_release_dates.csv,
+                            human_baselines.csv, score_corrections.csv, score_drop_rules.csv, score_variant_fixes.csv
 1_pipeline/benchmark_data/  the package: python -m benchmark_data {refresh,build,check,parity}
   identity.py               machine-name grammar, aliases, uuid5
   sources/<feed>.py         one module per feed: its _SPEC / _SKIP dictionaries and translate()
@@ -21,7 +22,8 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
   build.py  check.py  refresh.py
 2_database/<YYYYMMDD>/      the tables of the build run that day (+ excluded_benchmarks.csv, model_names.csv, build_manifest.json)
 3_views/<YYYYMMDD>/         all_scores_flat.csv, dated_scores_flat.csv, human_baselines.csv, same run
-docs/                       decisions.md (settled), decisions_pending.md (open), plan_fusion.md
+docs/                       decisions.md (decision log), decisions_pending.md (none open today), plan_fusion.md (merge plan, historical),
+                            reviews/ (score reviews), frontier_models.csv, release_dates_consistency.csv
 tests/                      unit tests, golden copies (tests/expected_database, tests/expected_views), parity goldens
 ```
 
@@ -36,6 +38,7 @@ Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal ev
 | column | role |
 |---|---|
 | `model_id` | uuid5 of the identity tuple. Primary key. |
+| `model_version` | the machine name consumers key on (see "Consumer views") |
 | `base_model`, `reasoning_level`, `reasoning_tokens`, `snapshot`, `variant` | **identity** — part of the ID |
 | `organization`, `country`, `publication_date`, `training_flop` | **metadata** — NOT part of the ID |
 
@@ -49,7 +52,7 @@ Adding a metadata column changes no ID. Correcting an identity column changes on
 |---|---|
 | `benchmark_id` | uuid5 of `name`. Primary key. |
 | `name` | identity (the only column in the ID) |
-| `category`, `floor`, `ceiling`, `access` | metadata, from `0_input/metadata/benchmarks.csv` (`ceiling` empty when no upper limit is published) |
+| `category`, `floor`, `ceiling`, `access` | metadata, from `0_input/metadata/benchmarks.csv` (`ceiling` empty unless the full range is demonstrably attainable) |
 | `release_date` | first public release of the benchmark (arXiv v1, announcement, leaderboard or dataset, whichever came first), not its first score: Epoch's `benchmark_metadata.csv`, overridden by `0_input/metadata/benchmark_release_dates.csv` (one source URL per row). A revision keeps the date of the benchmark it revises; a new task set under a new version takes its own. |
 
 Only benchmarks whose `status` is `included` in `0_input/metadata/benchmarks.csv` reach the database (see "Benchmark scope"). The justification columns (`floor_reason`, `floor_source`, `access_evidence_url`, `note`) stay in the metadata file.
@@ -80,7 +83,7 @@ Derived from the four tables at every build, never edited by hand:
 
 `lower_bound` is the benchmark floor (chance level or documented minimum, `0_input/metadata/benchmarks.csv`); `ceiling` is a known upper limit on achievable scores, empty when none is established. Today it is `1.0` for the 13 benchmarks whose full range is demonstrably attainable (a human baseline reaches the top, every problem has a verified solution, or every task is a capture-the-flag with a known flag: ARC-AGI, ARC-AGI-2, EBR-bench, VPCT, Cybench, the two FrontierMath v2 sets, the six AISI CTF and Cyber Range sets), the asymptotes benchmark-forecasting pins. Epoch's `score_ceiling` estimates are not recorded (too approximate); `ceiling_reason` in `benchmarks.csv` documents each value. `model_version` is the machine name consumers key on: the most frequent spelling Epoch or Kaggle used for the model, else `identity.machine_name` of the identity tuple (snapshot written the developer's way, effort or budget as `_high` / `_16K`, `_thinking` for the run variant, `_prounknown` for a pro variant whose effort is unknown). `source` is the fine label the feed publishes for the row (a leaderboard, a technical report, Epoch's evaluation log), the feed's name when it publishes none (`config.FEED_LABEL`, a defensive fallback: every feed labels its rows today); `source_url` and `feed` travel with it. Sibling boards are already merged, so the views carry no merge option.
 
-`python -m benchmark_data parity` compares the views with the last files the two repositories built on their own (`tests/parity/golden/`, commits 55687ce and 2ed2c34) and writes `reports/parity_<consumer>.md`: lost pairs by cause (benchmark excluded, board merged, model renamed, other), new pairs, scores and dates that moved. Every golden benchmark name must map through `previous_names` (tested); the other buckets are reviewed, not asserted.
+`python -m benchmark_data parity` compares the views with the last files the two repositories built on their own (`tests/parity/golden/`, Multiaxis_ECI `55687ce` and benchmark-forecasting `2ed2c34`) and writes `reports/parity_<consumer>.md`: lost pairs by cause (benchmark excluded, board merged, model renamed, other), new pairs, scores and dates that moved. Every golden benchmark name must map through `previous_names` (tested); the other buckets are reviewed, not asserted.
 
 ## Schema versions
 
@@ -90,17 +93,16 @@ Derived from the four tables at every build, never edited by hand:
 |---|---|
 | 2.0 | uuid5 identities, four tables, harness on scores, benchmark scope at ingestion (2026-09-04) |
 | 2.1 | `models.model_version`, `benchmarks.ceiling`, `scores.source_label` / `source_url`, consumer views in `3_views/` (2026-09-07) |
+| 2.2 | `benchmarks.release_date` (2026-10-01) |
 
 ## Conventions (non-negotiable)
 
 - **Empty cell = unknown.** `unknown ≠ known`: `opus-5` (empty level) and `opus-5_high` (level `high`) are two distinct models, two rows, two IDs. An unknown never merges with a known value.
 - **Deterministic IDs.** `uuid5(NAMESPACE, "model|" + join(identity tuple, "|"))`. Re-run → same IDs. Correcting an alias changes the ID: intended, the ID follows the identity, not the history.
-- **`variant`**:
-- `thinking` = thinking enabled, effort and budget unknown;
-- empty when `reasoning_level` or `reasoning_tokens` is known — thinking is then implicit.
+- **`variant`**: `thinking` = thinking enabled, effort and budget unknown; a named variant (`pro`, `chat`, `Cyber`, a fine-tune such as `Hermes 3`) is part of the identity and of `model_version`; empty otherwise (thinking is implicit when `reasoning_level` or `reasoning_tokens` is known).
 - **Harness is not identity.** A model's score on a benchmark is its best score across harnesses; the winning harness is recorded on the score row.
 - **`score ∈ [0, 1]`** (no percentages).
-- **Dedup**, in this order: exact duplicates merged; otherwise `max`. Kaggle's independent re-runs are recorded as a harness (`Kaggle Open Benchmarks`), so they compete like any other run.
+- **Dedup**, in this order: exact duplicates merged; otherwise `max`; then two equal scores of one release on one benchmark keep a single row (`steps/dedup.drop_bare_copies`, see "Move a score to the effort its run used"). Kaggle's independent re-runs are recorded as a harness (`Kaggle Open Benchmarks`), so they compete like any other run.
 - **Sibling boards** listed in `0_input/metadata/sibling_merges.csv` (the three SWE Atlas boards; PRBench Finance + Legal too, though PRBench is excluded since 2026-09-30) are averaged per model into one series after deduplication.
 
 ## Benchmark scope
@@ -156,7 +158,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 
 1. In `2_database/<YYYYMMDD>/scores.csv` (the latest run), find the faulty row → the `feed` column is the source.
 2. Edit `0_input/feed/<feed>/aliases.csv`. Columns: `raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note`. `raw_name` is the exact raw string (after stripping trailing `*`/`†` and whitespace).
-3. Empty `base_model` = **deliberate DROP** (e.g. `Unsafety Llama` in `rand`). Put the reason in `note`.
+3. Empty `base_model` = **deliberate DROP** (no alias file uses it today; the mechanism stays). Put the reason in `note`.
 4. `python -m benchmark_data build`. The alias always wins over the grammar, with one nuance on Epoch: an effort read from the displayed `Name` may complete an identity the alias left empty.
 
 ### Add a source (e.g. MazeBench)
@@ -172,6 +174,10 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 ### Correct or drop a published score
 
 Add a row to `0_input/metadata/score_corrections.csv` (`feed`, `benchmark`, the feed's raw name, the value the feed's translator yields, the corrected value or empty to drop the row, source URL, note). A correction stops applying when the feed changes that value, and the build reports it for review. Record the reasoning in `docs/decisions.md`.
+
+### Drop a type of run
+
+A row in `0_input/metadata/score_drop_rules.csv` (`rule`, `feeds`, `benchmark`, `raw_name_regex`, `keep_at_or_above`, `note`) drops every matching run scoring below the bar, for a whole class of runs known to be truncated or misconfigured (e.g. maximum-effort runs cut off by the harness's token limit). It applies after `score_corrections.csv`.
 
 ### Move a score to the effort its run used
 
@@ -197,7 +203,7 @@ Add a row to `0_input/metadata/benchmark_release_dates.csv` (`name`, ISO `releas
 
 ## Continuous integration
 
-`.github/workflows/ci.yml` runs ruff and pytest on every push and pull request; the golden test skips there because Scale's pages are not redistributed, the parity tests run against the committed views. `.github/workflows/refresh.yml` runs monthly and on demand: refresh, build, the tests except the golden one (a refresh is meant to change the tables), `check` (differences expected, reported not failed), `parity`, then opens a pull request with the data changes and the parity reports attached for review.
+`.github/workflows/ci.yml` runs ruff and pytest on every push and pull request; the golden test skips there because Scale's pages are not redistributed, the parity tests run against the committed views. `.github/workflows/refresh.yml` runs monthly and on demand: refresh, build, the tests except the golden one (a refresh is meant to change the tables), `check` (differences expected, reported not failed), `parity`, then opens a pull request with the data changes, the parity reports uploaded as a workflow artifact.
 
 The build logs every score below its benchmark floor (kept as published: chance-level or weaker models); `1_pipeline/scripts/release_dates_consistency.py` regenerates `docs/release_dates_consistency.csv`, the table of models whose date sources disagree and the date kept.
 
@@ -230,4 +236,4 @@ Upstream scores carry their own terms: Epoch AI is CC-BY, Kaggle under its terms
 
 ## Related repositories
 
-Formerly `eval-data-pipeline` (renamed 2026-09-04). This repository is the **successor of the internal data pipelines** of [`Multiaxis_ECI`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI) (a Bayesian re-creation of the Epoch Capabilities Index) and of [`benchmark-forecasting`](https://github.com/General-Purpose-AI-Policy-Lab/benchmark-forecasting) (forecasting benchmark saturation). Their data-preparation notebooks are meant to disappear in favour of this one; the merge is in progress, the plan and the open decisions are in [`docs/`](docs/).
+Formerly `eval-data-pipeline` (renamed 2026-09-04). This repository is the **successor of the internal data pipelines** of [`Multiaxis_ECI`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI) (a Bayesian re-creation of the Epoch Capabilities Index) and of [`benchmark-forecasting`](https://github.com/General-Purpose-AI-Policy-Lab/benchmark-forecasting) (forecasting benchmark saturation). Both now read its views; the history of the merge is in [`docs/plan_fusion.md`](docs/plan_fusion.md).

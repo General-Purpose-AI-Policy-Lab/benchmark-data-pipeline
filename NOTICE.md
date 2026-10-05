@@ -2,7 +2,7 @@
 
 The `LICENSE` (CC-BY-4.0) covers what this project produces: the code, the curated dictionaries under `0_input/`, and the CSV tables in `2_database/` and `3_views/`.
 
-It does **not** cover the upstream scores those files are derived from. Each feed carries its own terms, listed below. Anyone republishing `2_database/` or an analysis built on it must credit Epoch AI, Kaggle, the RAND report and Scale AI.
+It does **not** cover the upstream scores those files are derived from. Each feed carries its own terms, listed below. Anyone republishing `2_database/` or an analysis built on it must credit Epoch AI, Kaggle, the RAND report, Scale AI and the Cybench authors.
 
 Per-artifact URL, fetch date, sha256 and byte size: `0_input/feed/provenance.json`.
 
