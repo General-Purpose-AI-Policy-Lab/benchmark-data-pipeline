@@ -17,3 +17,6 @@ __pycache__/
 
 # derived parity reports (python -m benchmark_data parity)
 reports/
+
+# Private feedback notes for Epoch AI, never committed.
+EPOCH_FEEDBACK.md
