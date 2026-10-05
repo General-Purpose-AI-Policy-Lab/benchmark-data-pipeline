@@ -171,3 +171,14 @@ def test_cybench_site_scales_percentages_and_labels_subsets(tmp_path):
     recs = list(cybench_site.translate(tmp_path))
     assert [(r.raw_name, r.benchmark, r.score) for r in recs] == [("Model A ⁶", "Cybench", 0.96)]
     assert "35/40 tasks" in recs[0].source_label
+
+
+def test_geobench_runs_refusing_too_many_images_are_left_out():
+    """FILE_REFUSAL: a GeoBench run refusing 5% of the images or more is no measurement of the
+    model on the set (country accuracy counts a refusal as a miss; the average score skips it)."""
+    from benchmark_data import config
+    from benchmark_data.sources.epoch_zip import FILE_REFUSAL, translate
+    geo = [r for r in translate(config.FEED_DIR) if r.benchmark == "GeoBench"]
+    names = {str(r.raw_name) for r in geo}
+    assert FILE_REFUSAL["geobench_external.csv"] == ("ACW Refusal", 0.05)
+    assert "o3-2025-04-16_medium" in names and "o3-2025-04-16_high" not in names

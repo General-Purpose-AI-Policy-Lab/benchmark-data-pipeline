@@ -173,6 +173,10 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 
 Add a row to `0_input/metadata/score_corrections.csv` (`feed`, `benchmark`, the feed's raw name, the value the feed's translator yields, the corrected value or empty to drop the row, source URL, note). A correction stops applying when the feed changes that value, and the build reports it for review. Record the reasoning in `docs/decisions.md`.
 
+### Move a score to the effort its run used
+
+A score whose run names no effort although its source states it (a board label, a paper's settings table, the model arguments of an Inspect log), or that copies a labelled score of the same model, gets a row in `0_input/metadata/score_variant_fixes.csv`: `feed`, `benchmark`, the score's `model_id` before the fix (`model_version` beside it for the reader), the `score` it carries, `fix` (`relabel` with the effort `suffix` in machine-name grammar, `_none`, `_high`, `_thinking`, `_16K`; or `drop`), source URL, note. Ingest applies it on the resolved identity, so it works for every feed whatever its raw spelling; a fix whose value the feed has changed stops applying and is reported. An empty `score` matches every value, for a benchmark published as the mean of several records (SWE Atlas, keyed on its three sub-boards). A third action, `remodel`, moves the score to another model (`new_model`, a machine name: an API alias such as `deepseek-chat` served a different release at each date). After deduplication, two equal scores (to 1e-6, away from 0 and 1) of one release on one benchmark are one data point (`steps/dedup.drop_bare_copies`), even when the two are separate runs: the row whose effort its source states is kept, then the bare row, then a row whose effort only a feed's hybrid-model convention gave (Epoch's `_unknown` read as thinking on a Claude hybrid). Record the reasoning in `docs/decisions.md`.
+
 ### Add or exclude a benchmark
 
 Edit its row in `0_input/metadata/benchmarks.csv`: `status`, `exclusion_criterion`, `note`. A new Epoch file also needs a `FILE_SPEC` entry (benchmark name, score column, divisor).

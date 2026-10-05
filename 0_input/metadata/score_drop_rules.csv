@@ -1,0 +1,11 @@
+rule,feeds,benchmark,raw_name_regex,keep_at_or_above,note
+max-effort,epoch|epoch_live,OTIS Mock AIME 2024-2025,_(pro)?(xhigh|max)$,0.97,"Epoch runs at xhigh or max effort, any vendor: at these efforts the reasoning can outrun the output cap and the run stops before answering (verified 2026-10-02 on Claude Opus 4.6 / 4.7, Sonnet 4.6 / 5 at max and GPT-5.2 at xhigh). Kept at or above 0.97, just above the highest verified failure (GPT-5.2 xhigh, 0.961: empty answers and API errors)."
+max-effort,epoch|epoch_live,GPQA Diamond,_(pro)?(xhigh|max)$,0.95,"Same rule; GPQA kept at or above 0.95 (user), above the highest verified failure (GPT-5.4 xhigh, 0.933: API errors) and at the benchmark's ceiling."
+max-effort,epoch|epoch_live,MATH Level 5,_(pro)?(xhigh|max)$,0.97,Same rule.
+claude-high,epoch|epoch_live,OTIS Mock AIME 2024-2025,^claude-.*_high$,0.97,"Claude runs at high effort, whose budget sits close to the cap: Sonnet 4.6 at high verified truncated on OTIS (2026-10-02)."
+claude-high,epoch|epoch_live,GPQA Diamond,^claude-.*_high$,0.95,Same rule.
+claude-high,epoch|epoch_live,MATH Level 5,^claude-.*_high$,0.97,Same rule.
+qwen-thinking,epoch|epoch_live,OTIS Mock AIME 2024-2025,^qwen3\.[56]-[^_]+$,0.97,"Qwen3.5 and Qwen3.6 runs in thinking mode (the bare name, thinking on by default for these hybrids; `_none` runs keep): verified 2026-10-02 on Qwen3.5-9B and 35B-A3B, whose thinking runs stop at the 30,000-token output cap (stop_reason max_tokens) and leave most OTIS answers empty; widened to the whole family (user). Same keep bar as max-effort."
+qwen-thinking,epoch|epoch_live,GPQA Diamond,^qwen3\.[56]-[^_]+$,0.95,Same rule.
+qwen-thinking,epoch|epoch_live,MATH Level 5,^qwen3\.[56]-[^_]+$,0.97,Same rule.
+gemini-3-default,epoch|epoch_live,GPQA Diamond,^gemini-3(-flash|\.1-pro)-preview$,0.95,"Epoch's Gemini 3 Flash and 3.1 Pro preview runs at the API default (no effort argument, thinking at its default level high): on GPQA Diamond many wrong answers are empty (user, 2026-10-05: 3 Flash 0.832 and 3.1 Pro 0.941 checked in the samples). Gemini 3 Pro's run (0.926) checked clean and kept. Runs naming an effort (_high) keep."

@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas
 
 from benchmark_data import config, runs
-from benchmark_data.steps.dedup import dedup
+from benchmark_data.steps.dedup import dedup, drop_bare_copies
 from benchmark_data.steps.enrich import enrich
 from benchmark_data.steps.export import (
     build_manifest,
@@ -83,7 +83,9 @@ def build(feed_dir: Path = config.FEED_DIR, metadata_dir: Path = config.METADATA
     log.info("run %s: tables -> %s, views -> %s", date, out_dir, views_dir)
     result = ingest(feed_dir, metadata_dir)
 
-    scores = pandas.DataFrame(result.scores, columns=config.SCORE_COLS)
+    # `effort_by_convention` (an effort the feed's hybrid-model convention gave, not its label)
+    # serves drop_bare_copies only.
+    scores = pandas.DataFrame(result.scores, columns=[*config.SCORE_COLS, "effort_by_convention"])
     models = pandas.DataFrame(result.models.values())
     benchmarks = pandas.DataFrame(result.benchmarks.values())
 
@@ -92,6 +94,12 @@ def build(feed_dir: Path = config.FEED_DIR, metadata_dir: Path = config.METADATA
     log.info("scores before %s -> after %s (%s exact duplicates + %s disagreements)",
              f"{len(scores):,}", f"{len(deduped):,}", f"{n_exact:,}", f"{n_disagree:,}")
     _log_disagreements(dups, models, benchmarks)
+    deduped, copies = drop_bare_copies(deduped, models)
+    deduped = deduped.drop(columns="effort_by_convention")
+    names_of = models.set_index("model_id")
+    log.info("copies of one score under two labels dropped: %d %s", len(copies),
+             sorted(names_of.loc[copies["model_id"], "base_model"].unique())[:12])
+    models = models[models["model_id"].isin(deduped["model_id"])]
 
     merges = load_sibling_merges(metadata_dir)
     deduped, benchmarks = merge_siblings(deduped, benchmarks, merges)

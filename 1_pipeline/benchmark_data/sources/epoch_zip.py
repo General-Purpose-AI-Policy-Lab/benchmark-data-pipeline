@@ -129,6 +129,13 @@ FILE_HARNESS_COLUMN = {
     'terminalbench_external.csv':  'Agent',
 }
 
+# Refusal-rate column of the files whose score counts a refused item as wrong, and the rate from
+# which a run is left out (user, 2026-10-05): GeoBench's country accuracy treats a refused image as
+# a miss, and its average score is taken over the answered images only, so neither measures the
+# model on the full set. o3 at high effort refuses 18% of the images (country accuracy 0.60, against
+# 0.74 at medium with no refusal), o4-mini 9-10%, Llama 3.2 90B Vision 7%; every other run 0%.
+FILE_REFUSAL = {'geobench_external.csv': ('ACW Refusal', 0.05)}
+
 # Effort sometimes hidden in the displayed `Name`: "Gemini 3 Flash Preview (High)".
 EFFORT_RE = r"(?i)\((?:thinking,\s*)?(minimal|low|medium|high|x-high|xhigh|max|none)\)\s*$"
 
@@ -146,7 +153,7 @@ def translate(feed_dir: Path) -> Iterator[Record]:
 
     Files in neither FILE_SPEC nor FILE_SKIP are reported and never ingested.
     """
-    unrecognized, blank, skipped = [], 0, 0
+    unrecognized, blank, skipped, refused = [], 0, 0, 0
     for path in sorted((feed_dir / "epoch").glob("*.csv")):
         if path.name == "aliases.csv":  # the dictionary is not data
             continue
@@ -177,6 +184,11 @@ def translate(feed_dir: Path) -> Iterator[Record]:
                else pandas.Series("", index=df.index))
         notes = (df["Notes"].fillna("").astype(str) if "Notes" in df.columns
                  else pandas.Series("", index=df.index))
+        if path.name in FILE_REFUSAL:
+            col, cap = FILE_REFUSAL[path.name]
+            out = pandas.to_numeric(df[col], errors="coerce").fillna(0.0) >= cap
+            refused += int((out & score.notna()).sum())
+            score = score.where(~out)
         for i, raw in df["Model version"].items():
             if pandas.isna(score[i]):
                 continue
@@ -187,7 +199,7 @@ def translate(feed_dir: Path) -> Iterator[Record]:
                          effort[i], harness[i], {k: v[i] for k, v in meta_cols.items()},
                          label[i] or SOURCE_LABEL, url[i],
                          hybrid_mode(raw, CLAUDE_HYBRID_BASES, notes[i]))
-    log.info("epoch: %d row(s) dropped for a blank `Model version`, %d file(s) skipped",
-             blank, skipped)
+    log.info("epoch: %d row(s) dropped for a blank `Model version`, %d file(s) skipped, "
+             "%d run(s) left out for refusing too many items (FILE_REFUSAL)", blank, skipped, refused)
     for name in unrecognized:
         log.warning("epoch: ? %s: in neither FILE_SPEC nor FILE_SKIP", name)
