@@ -20,3 +20,6 @@ reports/
 
 # Private feedback notes for Epoch AI, never committed.
 EPOCH_FEEDBACK.md
+
+# Local uv resolution, not part of the build.
+uv.lock
