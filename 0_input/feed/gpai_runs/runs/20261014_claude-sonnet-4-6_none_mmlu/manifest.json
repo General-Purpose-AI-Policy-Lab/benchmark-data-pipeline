@@ -103,14 +103,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "8c9c7831e51d0be937bb3c321a1787fe2ab66c8378a817efb7b1a460e4bb1c32",
-    "transcripts.zip": "cb278b8702981ace0b2a210365e4fd2848d59a768396c83edf4b04a326ede977"
+    "transcripts.zip": "2523a77e80507c6aa692d73c20b0447a5096867fcca5433fff8be29e0d74607f"
   },
   "results": {
     "MMLU Biology": {

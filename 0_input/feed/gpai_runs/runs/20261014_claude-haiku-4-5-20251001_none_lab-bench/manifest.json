@@ -76,14 +76,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "bf7a79576da20ba0c1dd8b742c91a81bcbe8f93d3f56e6f1323d9853753944bc",
-    "transcripts.zip": "189005ccdad484892897ce62f1c0638eed49118a1d6702ca103f5e1b712ecb7f"
+    "transcripts.zip": "8364ad7991742abd3f9af657c1f0c429c394ffd18f5034be004f8efaf69e936b"
   },
   "results": {
     "LAB-Bench Cloning": {

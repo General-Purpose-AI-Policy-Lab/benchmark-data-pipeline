@@ -218,6 +218,7 @@ a8ebd9d0-bfc1-5d30-a256-cbd06e15e86f,claude-haiku-4-5,,1000,2025-10-01,,claude-h
 57add62e-6920-54ca-b60f-cd5722ac9cc8,claude-haiku-4-5,low,,2025-10-01,,claude-haiku-4-5-20251001_low,Anthropic,US,2025-10-15,
 d0b2782b-0f66-55dd-a7e4-e4b5196b19bd,claude-haiku-4-5,none,,2025-10-01,,claude-haiku-4-5-20251001_none,Anthropic,US,2025-10-15,
 608036c5-b072-5c93-b894-9f5e26b2a73c,claude-haiku-4-5,xhigh,,2025-10-01,,claude-haiku-4-5-20251001_xhigh,Anthropic,US,2025-10-15,
+8b530392-f550-51fc-bc13-4e8fa2323925,claude-haiku-5-5,low,,,,claude-haiku-5-5_low,Anthropic,US,2026-10-07,
 68234935-1d21-54ea-9288-18a3ec1de754,claude-instant-1.1,,,,,claude-instant-1.1,Anthropic,US,2023-05-11,
 e5fb2d63-cc91-567b-825b-8fdabf591cd3,claude-instant-1.2,,,,,claude-instant-1.2,Anthropic,US,2023-08-09,
 cdaa556e-ea33-5b62-aa45-35218efff90b,claude-mythos-5,,,,,claude-mythos-5,Anthropic,US,2026-06-09,

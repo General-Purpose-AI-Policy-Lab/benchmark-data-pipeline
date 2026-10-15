@@ -24,10 +24,10 @@
     "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "refusal_imputation": {
       "GPQA Diamond Biology": {
-        "theta": 0.6445,
+        "theta": 0.6688,
         "n_refused_calls": 4,
         "n_refused_items": 1,
-        "mean_credit_refused": 0.97,
+        "mean_credit_refused": 0.9799,
         "accuracy_answered": 0.7917,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -39,14 +39,16 @@
           "20261014_claude-sonnet-5-5_low_gpqa",
           "20261014_claude-sonnet-5_low_gpqa",
           "20261014_claude-sonnet-5_medium_gpqa",
-          "20261014_claude-sonnet-5_none_gpqa-biology"
+          "20261014_claude-sonnet-5_none_gpqa-biology",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-opus-5-5_medium_gpqa"
         ]
       },
       "GPQA Diamond Chemistry": {
-        "theta": 0.7775,
+        "theta": 0.5753,
         "n_refused_calls": 1,
         "n_refused_items": 1,
-        "mean_credit_refused": 0.9939,
+        "mean_credit_refused": 0.9943,
         "accuracy_answered": 0.8113,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -58,14 +60,17 @@
           "20261014_claude-sonnet-5-5_low_gpqa",
           "20261014_claude-sonnet-5_low_gpqa",
           "20261014_claude-sonnet-5_medium_gpqa",
-          "20261014_claude-sonnet-5_none_gpqa-chemistry"
+          "20261014_claude-sonnet-5_none_gpqa-chemistry",
+          "20261015_claude-fable-5-1_medium_gpqa-chemistry",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-opus-5-5_medium_gpqa"
         ]
       },
       "GPQA Main Biology": {
-        "theta": 0.9057,
+        "theta": 0.8668,
         "n_refused_calls": 4,
         "n_refused_items": 1,
-        "mean_credit_refused": 0.9768,
+        "mean_credit_refused": 0.9835,
         "accuracy_answered": 0.8377,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -77,14 +82,16 @@
           "20261014_claude-sonnet-5-5_low_gpqa",
           "20261014_claude-sonnet-5_low_gpqa",
           "20261014_claude-sonnet-5_medium_gpqa",
-          "20261014_claude-sonnet-5_none_gpqa-biology"
+          "20261014_claude-sonnet-5_none_gpqa-biology",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-opus-5-5_medium_gpqa"
         ]
       },
       "GPQA Main Chemistry": {
-        "theta": 1.0573,
+        "theta": 0.8124,
         "n_refused_calls": 1,
         "n_refused_items": 1,
-        "mean_credit_refused": 0.9639,
+        "mean_credit_refused": 0.9631,
         "accuracy_answered": 0.8208,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -96,7 +103,10 @@
           "20261014_claude-sonnet-5-5_low_gpqa",
           "20261014_claude-sonnet-5_low_gpqa",
           "20261014_claude-sonnet-5_medium_gpqa",
-          "20261014_claude-sonnet-5_none_gpqa-chemistry"
+          "20261014_claude-sonnet-5_none_gpqa-chemistry",
+          "20261015_claude-fable-5-1_medium_gpqa-chemistry",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-opus-5-5_medium_gpqa"
         ]
       }
     },
@@ -151,26 +161,26 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "106b44b9a8971a5ec027e1ce7bd952ae2c57e14bc53c316d574e8022bd616cf4",
-    "transcripts.zip": "145e9698ff7ad19090890a346b1cac2f1ac02a50e5da279b0ffd305540db3e14"
+    "samples.csv": "265f5e675c391c719f3aa883a6cc71e9de913e1bc16ef9aa85a629399e6a4073",
+    "transcripts.zip": "7e7958fc3352b07543420a87ac9c3139ee12a00617fab8f5e0510c2f786dde18"
   },
   "results": {
     "GPQA Diamond Biology": {
-      "score": 0.801055,
-      "stderr": 0.079956,
+      "score": 0.801575,
+      "stderr": 0.080019,
       "n_items": 19,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.840529,
-        "1": 0.787897,
-        "2": 0.840529,
-        "3": 0.735266
+        "0": 0.841048,
+        "1": 0.788417,
+        "2": 0.841048,
+        "3": 0.735785
       },
       "score_refusals_wrong": 0.75,
       "stop_reasons": {
@@ -185,7 +195,7 @@
       "visible_reasoning_share": 0.171
     },
     "GPQA Diamond Chemistry": {
-      "score": 0.811812,
+      "score": 0.811813,
       "stderr": 0.034749,
       "n_items": 93,
       "n_epochs": 4,
@@ -193,7 +203,7 @@
         "0": 0.827957,
         "1": 0.817204,
         "2": 0.827957,
-        "3": 0.774128
+        "3": 0.774133
       },
       "score_refusals_wrong": 0.80914,
       "stop_reasons": {
@@ -209,15 +219,15 @@
       "visible_reasoning_share": 0.575
     },
     "GPQA Main Biology": {
-      "score": 0.839446,
-      "stderr": 0.03732,
+      "score": 0.839532,
+      "stderr": 0.037324,
       "n_items": 78,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.845856,
-        "1": 0.833036,
-        "2": 0.845856,
-        "3": 0.833036
+        "0": 0.845942,
+        "1": 0.833121,
+        "2": 0.845942,
+        "3": 0.833121
       },
       "score_refusals_wrong": 0.826923,
       "stop_reasons": {
@@ -232,7 +242,7 @@
       "visible_reasoning_share": 0.41
     },
     "GPQA Main Chemistry": {
-      "score": 0.820989,
+      "score": 0.820988,
       "stderr": 0.024396,
       "n_items": 183,
       "n_epochs": 4,
@@ -240,7 +250,7 @@
         "0": 0.825137,
         "1": 0.830601,
         "2": 0.84153,
-        "3": 0.786688
+        "3": 0.786683
       },
       "score_refusals_wrong": 0.819672,
       "stop_reasons": {

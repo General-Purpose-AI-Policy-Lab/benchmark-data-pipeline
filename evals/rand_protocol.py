@@ -292,7 +292,7 @@ def prompt_for(item: dict, epoch: int) -> tuple[str, str, int]:
 
 
 def run(args) -> None:
-    items = [dict(it, subset=b) for b in args.bench for it in load(b)[0]]
+    items = [dict(it, subset=b) for b in args.bench for it in load(b)[0][:args.limit or None]]
     params = regime_params(args.regime)
     client = anthropic.Anthropic(max_retries=8)
     out = Path(args.out)
@@ -570,6 +570,7 @@ def main() -> None:
     r.add_argument("--epochs", type=int, default=4)
     r.add_argument("--out", required=True)
     r.add_argument("--workers", type=int, default=8)
+    r.add_argument("--limit", type=int, help="first N questions per benchmark (a cost pilot)")
     r.set_defaults(func=run)
     p = sub.add_parser("package")
     p.add_argument("raw")

@@ -35,13 +35,14 @@
         ]
       },
       "MMLU Pro Chemistry": {
-        "theta": 1.2841,
+        "theta": 0.7551,
         "n_refused_calls": 1,
         "n_refused_items": 1,
-        "mean_credit_refused": 0.9702,
+        "mean_credit_refused": 0.9731,
         "accuracy_answered": 0.8765,
         "reference_runs": [
-          "20261014_claude-haiku-4-5-20251001_none_mmlu"
+          "20261014_claude-haiku-4-5-20251001_none_mmlu",
+          "20261015_claude-haiku-5-5_low_rand-family"
         ]
       }
     },
@@ -128,14 +129,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "9e4565ea36481cf4513cdc06eb32784cc64de17da9a42959cbdd99de81b30a71",
-    "transcripts.zip": "3a7363dd53199658e056cc2e9a6277fed35f0ec1f5c44578d14765f1569ee021"
+    "samples.csv": "426477e1cac339f3bd1ebde76a59a0c4ed8fcd0e11c5abdaff3ac2d148847ad7",
+    "transcripts.zip": "ffca07274329c2bbb2de83e6af4238033bdda29c3b44c57fc1e3f68cd239fb84"
   },
   "results": {
     "MMLU Biology": {
@@ -206,13 +207,13 @@
       "visible_reasoning_share": 0.111
     },
     "MMLU Pro Chemistry": {
-      "score": 0.876539,
+      "score": 0.87654,
       "stderr": 0.00848,
       "n_items": 1132,
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.874558,
-        "1": 0.869232,
+        "1": 0.869234,
         "2": 0.873675,
         "3": 0.888693
       },

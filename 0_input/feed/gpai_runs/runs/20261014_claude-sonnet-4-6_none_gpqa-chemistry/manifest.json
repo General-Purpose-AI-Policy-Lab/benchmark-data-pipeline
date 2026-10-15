@@ -27,10 +27,10 @@
     "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "refusal_imputation": {
       "GPQA Main Chemistry": {
-        "theta": -0.0601,
+        "theta": -0.2758,
         "n_refused_calls": 1,
         "n_refused_items": 1,
-        "mean_credit_refused": 0.8974,
+        "mean_credit_refused": 0.8978,
         "accuracy_answered": 0.7004,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -42,7 +42,10 @@
           "20261014_claude-sonnet-5-5_low_gpqa",
           "20261014_claude-sonnet-5_low_gpqa",
           "20261014_claude-sonnet-5_medium_gpqa",
-          "20261014_claude-sonnet-5_none_gpqa-chemistry"
+          "20261014_claude-sonnet-5_none_gpqa-chemistry",
+          "20261015_claude-fable-5-1_medium_gpqa-chemistry",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-opus-5-5_medium_gpqa"
         ]
       }
     },
@@ -81,14 +84,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "07b9b3a39cccc32f3e72e5213e956143ba84b5b0d34396d6ed10d6eea8b32e24",
-    "transcripts.zip": "6da3d83d14a8a0f8ce2930938c77f5a043c5137409be6d728a08522756d94bc5"
+    "samples.csv": "1df46ab0713f2e1b08efa302b03457f35199c71b63eed81372a3f2db0feadcdd",
+    "transcripts.zip": "7637a76a7d40d0b974b28f14315db8cd4f2dc6dcddc60f81735a7ccfaf7e7f8c"
   },
   "results": {
     "GPQA Diamond Chemistry": {
@@ -114,13 +117,13 @@
       "visible_reasoning_share": 1.0
     },
     "GPQA Main Chemistry": {
-      "score": 0.700679,
+      "score": 0.70068,
       "stderr": 0.027625,
       "n_items": 183,
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.721311,
-        "1": 0.677035,
+        "1": 0.677037,
         "2": 0.715847,
         "3": 0.688525
       },

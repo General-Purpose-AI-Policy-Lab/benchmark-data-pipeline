@@ -27,10 +27,10 @@
     "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "refusal_imputation": {
       "GPQA Diamond Biology": {
-        "theta": 0.043,
+        "theta": 0.0802,
         "n_refused_calls": 5,
         "n_refused_items": 2,
-        "mean_credit_refused": 0.9547,
+        "mean_credit_refused": 0.9692,
         "accuracy_answered": 0.7324,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -42,14 +42,16 @@
           "20261014_claude-sonnet-4-6_none_gpqa-biology",
           "20261014_claude-sonnet-5-5_low_gpqa",
           "20261014_claude-sonnet-5_medium_gpqa",
-          "20261014_claude-sonnet-5_none_gpqa-biology"
+          "20261014_claude-sonnet-5_none_gpqa-biology",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-opus-5-5_medium_gpqa"
         ]
       },
       "GPQA Main Biology": {
-        "theta": -0.4667,
+        "theta": -0.4711,
         "n_refused_calls": 6,
         "n_refused_items": 3,
-        "mean_credit_refused": 0.9029,
+        "mean_credit_refused": 0.9262,
         "accuracy_answered": 0.7386,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -61,7 +63,9 @@
           "20261014_claude-sonnet-4-6_none_gpqa-biology",
           "20261014_claude-sonnet-5-5_low_gpqa",
           "20261014_claude-sonnet-5_medium_gpqa",
-          "20261014_claude-sonnet-5_none_gpqa-biology"
+          "20261014_claude-sonnet-5_none_gpqa-biology",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-opus-5-5_medium_gpqa"
         ]
       }
     },
@@ -116,26 +120,26 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "07b99466a14e1e2a3860488fda530347e18e3e43b915ebd0837fb8234d17b7de",
-    "transcripts.zip": "5984282b15ed28ce29e2855ad5f7d8ebc0c97597ffcdf623f4efda2d91ef372f"
+    "samples.csv": "d48fbbdf28932263ccc7b9b05d02b4fb0796c863fdf0ae23474b991fe37c2535",
+    "transcripts.zip": "9a63a68e20cc5dcc49bf6ba3b8705253582ae2e98f415462ac0e197aaf5aabbf"
   },
   "results": {
     "GPQA Diamond Biology": {
-      "score": 0.747017,
-      "stderr": 0.089252,
+      "score": 0.747974,
+      "stderr": 0.089377,
       "n_items": 19,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.734035,
-        "1": 0.734035,
-        "2": 0.785966,
-        "3": 0.734035
+        "0": 0.734968,
+        "1": 0.734968,
+        "2": 0.786992,
+        "3": 0.734968
       },
       "score_refusals_wrong": 0.684211,
       "stop_reasons": {
@@ -174,15 +178,15 @@
       "visible_reasoning_share": 0.005
     },
     "GPQA Main Biology": {
-      "score": 0.741722,
-      "stderr": 0.042034,
+      "score": 0.74217,
+      "stderr": 0.042043,
       "n_items": 78,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.768131,
-        "1": 0.752518,
-        "2": 0.755029,
-        "3": 0.691208
+        "0": 0.768459,
+        "1": 0.7533,
+        "2": 0.755384,
+        "3": 0.691536
       },
       "score_refusals_wrong": 0.724359,
       "stop_reasons": {

@@ -58,14 +58,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "c51ee35f79cf72ad7e1fb6f1bd5df3fc8676e43a3112c135282b57de8ddca284",
-    "transcripts.zip": "0e7406391e6d83eff7014eba771c2d1fab7803e2fd09aa1e47db8e551b32ed85"
+    "transcripts.zip": "d249330dd9c259413aaf708b2e0a7637b76300f4f8e3767432e1d765bda7e40a"
   },
   "results": {
     "GPQA Diamond Biology": {
