@@ -1,0 +1,70 @@
+model,benchmark,score,stderr,n_items,n_epochs,run_id
+claude-haiku-4-5-20251001_none,GPQA Diamond Biology,0.631579,0.092418,19,4,20261014_claude-haiku-4-5-20251001_none_gpqa-biology
+claude-haiku-4-5-20251001_none,GPQA Main Biology,0.669872,0.041184,78,4,20261014_claude-haiku-4-5-20251001_none_gpqa-biology
+claude-haiku-4-5-20251001_none,GPQA Diamond Chemistry,0.486559,0.039605,93,4,20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry
+claude-haiku-4-5-20251001_none,GPQA Main Chemistry,0.459016,0.0289,183,4,20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry
+claude-haiku-4-5-20251001_none,LAB-Bench Cloning,0.416667,0.070229,33,4,20261014_claude-haiku-4-5-20251001_none_lab-bench
+claude-haiku-4-5-20251001_none,LAB-Bench LitQA2,0.393216,0.026915,199,4,20261014_claude-haiku-4-5-20251001_none_lab-bench
+claude-haiku-4-5-20251001_none,LAB-Bench Protocol,0.488426,0.040198,108,4,20261014_claude-haiku-4-5-20251001_none_lab-bench
+claude-haiku-4-5-20251001_none,LAB-Bench SeqQA,0.599583,0.014872,600,4,20261014_claude-haiku-4-5-20251001_none_lab-bench
+claude-haiku-4-5-20251001_none,MMLU Pro Biology,0.891911,0.009657,717,4,20261014_claude-haiku-4-5-20251001_none_mmlu
+claude-haiku-4-5-20251001_none,MMLU Pro Chemistry,0.827518,0.009519,1132,4,20261014_claude-haiku-4-5-20251001_none_mmlu
+claude-haiku-4-5-20251001_none,WMDP Biology,0.819717,0.009385,1273,4,20261014_claude-haiku-4-5-20251001_none_wmdp
+claude-haiku-4-5-20251001_none,WMDP Chemistry,0.670343,0.02039,408,4,20261014_claude-haiku-4-5-20251001_none_wmdp
+claude-opus-4-6_none,GPQA Diamond Biology,0.7472,0.080678,19,4,20261014_claude-opus-4-6_none_gpqa
+claude-opus-4-6_none,GPQA Diamond Chemistry,0.771505,0.035581,93,4,20261014_claude-opus-4-6_none_gpqa
+claude-opus-4-6_none,GPQA Main Biology,0.810423,0.039001,78,4,20261014_claude-opus-4-6_none_gpqa
+claude-opus-4-6_none,GPQA Main Chemistry,0.73224,0.028143,183,4,20261014_claude-opus-4-6_none_gpqa
+claude-opus-4-7_none,GPQA Diamond Biology,0.841121,0.079209,19,4,20261014_claude-opus-4-7_none_gpqa
+claude-opus-4-7_none,GPQA Diamond Chemistry,0.774194,0.035665,93,4,20261014_claude-opus-4-7_none_gpqa
+claude-opus-4-7_none,GPQA Main Biology,0.836221,0.037555,78,4,20261014_claude-opus-4-7_none_gpqa
+claude-opus-4-7_none,GPQA Main Chemistry,0.777322,0.025912,183,4,20261014_claude-opus-4-7_none_gpqa
+claude-opus-4-8_none,GPQA Diamond Biology,0.679209,0.098286,19,4,20261014_claude-opus-4-8_none_gpqa
+claude-opus-4-8_none,GPQA Diamond Chemistry,0.774194,0.036475,93,4,20261014_claude-opus-4-8_none_gpqa
+claude-opus-4-8_none,GPQA Main Biology,0.784585,0.041454,78,4,20261014_claude-opus-4-8_none_gpqa
+claude-opus-4-8_none,GPQA Main Chemistry,0.76776,0.026281,183,4,20261014_claude-opus-4-8_none_gpqa
+claude-opus-4-8_none,LAB-Bench Cloning,0.681818,0.065526,33,4,20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry
+claude-opus-4-8_none,LAB-Bench LitQA2,0.42948,0.028999,199,4,20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry
+claude-opus-4-8_none,LAB-Bench Protocol,0.773558,0.033136,108,4,20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry
+claude-opus-4-8_none,LAB-Bench SeqQA,0.737634,0.013747,600,4,20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry
+claude-opus-4-8_none,WMDP Chemistry,0.802008,0.016214,408,4,20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry
+claude-opus-5_none,GPQA Diamond Biology,0.801055,0.079956,19,4,20261014_claude-opus-5_none_gpqa
+claude-opus-5_none,GPQA Diamond Chemistry,0.811812,0.034749,93,4,20261014_claude-opus-5_none_gpqa
+claude-opus-5_none,GPQA Main Biology,0.839446,0.03732,78,4,20261014_claude-opus-5_none_gpqa
+claude-opus-5_none,GPQA Main Chemistry,0.820989,0.024396,183,4,20261014_claude-opus-5_none_gpqa
+claude-sonnet-4-6_low,GPQA Diamond Biology,0.624568,0.112646,19,1,20261014_claude-sonnet-4-6_low_gpqa
+claude-sonnet-4-6_low,GPQA Diamond Chemistry,0.677419,0.048736,93,1,20261014_claude-sonnet-4-6_low_gpqa
+claude-sonnet-4-6_low,GPQA Main Biology,0.755482,0.048866,78,1,20261014_claude-sonnet-4-6_low_gpqa
+claude-sonnet-4-6_low,GPQA Main Chemistry,0.633082,0.035673,183,1,20261014_claude-sonnet-4-6_low_gpqa
+claude-sonnet-4-6_none,GPQA Diamond Biology,0.665463,0.102204,19,4,20261014_claude-sonnet-4-6_none_gpqa-biology
+claude-sonnet-4-6_none,GPQA Main Biology,0.8072,0.040758,78,4,20261014_claude-sonnet-4-6_none_gpqa-biology
+claude-sonnet-4-6_none,GPQA Diamond Chemistry,0.698925,0.039084,93,4,20261014_claude-sonnet-4-6_none_gpqa-chemistry
+claude-sonnet-4-6_none,GPQA Main Chemistry,0.700679,0.027625,183,4,20261014_claude-sonnet-4-6_none_gpqa-chemistry
+claude-sonnet-4-6_none,LAB-Bench Cloning,0.636364,0.085038,33,1,20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry
+claude-sonnet-4-6_none,LAB-Bench LitQA2,0.406642,0.033845,199,1,20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry
+claude-sonnet-4-6_none,LAB-Bench Protocol,0.728302,0.042776,108,1,20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry
+claude-sonnet-4-6_none,LAB-Bench SeqQA,0.74,0.017922,600,1,20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry
+claude-sonnet-4-6_none,WMDP Chemistry,0.775406,0.018856,408,1,20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry
+claude-sonnet-5-5_low,GPQA Diamond Biology,0.828947,0.081229,19,4,20261014_claude-sonnet-5-5_low_gpqa
+claude-sonnet-5-5_low,GPQA Diamond Chemistry,0.857527,0.032969,93,4,20261014_claude-sonnet-5-5_low_gpqa
+claude-sonnet-5-5_low,GPQA Main Biology,0.855769,0.03831,78,4,20261014_claude-sonnet-5-5_low_gpqa
+claude-sonnet-5-5_low,GPQA Main Chemistry,0.836066,0.023857,183,4,20261014_claude-sonnet-5-5_low_gpqa
+claude-sonnet-5_low,GPQA Diamond Biology,0.747017,0.089252,19,4,20261014_claude-sonnet-5_low_gpqa
+claude-sonnet-5_low,GPQA Diamond Chemistry,0.698925,0.038329,93,4,20261014_claude-sonnet-5_low_gpqa
+claude-sonnet-5_low,GPQA Main Biology,0.741722,0.042034,78,4,20261014_claude-sonnet-5_low_gpqa
+claude-sonnet-5_low,GPQA Main Chemistry,0.654372,0.028314,183,4,20261014_claude-sonnet-5_low_gpqa
+claude-sonnet-5_medium,GPQA Diamond Biology,0.814303,0.087116,19,4,20261014_claude-sonnet-5_medium_gpqa
+claude-sonnet-5_medium,GPQA Diamond Chemistry,0.741935,0.03695,93,4,20261014_claude-sonnet-5_medium_gpqa
+claude-sonnet-5_medium,GPQA Main Biology,0.77088,0.041007,78,4,20261014_claude-sonnet-5_medium_gpqa
+claude-sonnet-5_medium,GPQA Main Chemistry,0.731497,0.02665,183,4,20261014_claude-sonnet-5_medium_gpqa
+claude-sonnet-5_none,GPQA Diamond Biology,0.760532,0.083991,19,4,20261014_claude-sonnet-5_none_gpqa-biology
+claude-sonnet-5_none,GPQA Main Biology,0.758641,0.039029,78,4,20261014_claude-sonnet-5_none_gpqa-biology
+claude-sonnet-5_none,GPQA Diamond Chemistry,0.706989,0.037766,93,4,20261014_claude-sonnet-5_none_gpqa-chemistry
+claude-sonnet-5_none,GPQA Main Chemistry,0.670765,0.027657,183,4,20261014_claude-sonnet-5_none_gpqa-chemistry
+claude-sonnet-5_none,LAB-Bench Cloning,0.487515,0.068269,33,4,20261014_claude-sonnet-5_none_lab-bench
+claude-sonnet-5_none,LAB-Bench LitQA2,0.390629,0.027623,199,4,20261014_claude-sonnet-5_none_lab-bench
+claude-sonnet-5_none,LAB-Bench Protocol,0.707305,0.038988,108,4,20261014_claude-sonnet-5_none_lab-bench
+claude-sonnet-5_none,LAB-Bench SeqQA,0.713683,0.01419,600,4,20261014_claude-sonnet-5_none_lab-bench
+claude-sonnet-5_none,MMLU Pro Biology,0.9341,0.007701,717,4,20261014_claude-sonnet-5_none_mmlu
+claude-sonnet-5_none,MMLU Pro Chemistry,0.876539,0.00848,1132,4,20261014_claude-sonnet-5_none_mmlu
+claude-sonnet-5_none,WMDP Chemistry,0.755917,0.017093,408,4,20261014_claude-sonnet-5_none_wmdp

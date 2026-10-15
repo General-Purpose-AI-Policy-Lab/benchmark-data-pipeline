@@ -1,7 +1,8 @@
 """Refresh `0_input/feed/` from the network. The build itself stays offline.
 
-RAND is not refreshed: frozen report (Dev et al. 2025). The board lists (Kaggle, SEAL) are
-those of the source modules: one source of truth.
+RAND is not refreshed: frozen report (Dev et al. 2025); neither are the lab's own runs
+(`gpai_runs`, written by `evals/`), whose hashes are only recorded. The board lists (Kaggle,
+SEAL) are those of the source modules: one source of truth.
 """
 
 import hashlib
@@ -28,6 +29,8 @@ KAGGLE_URL = "https://www.kaggle.com/api/v1/benchmarks/{}/leaderboard"
 SEAL_URL = "https://labs.scale.com/leaderboard/{}"
 SEAL_HEADERS = {"User-Agent": "Mozilla/5.0"}  # without a browser header the page does not render
 RAND_URL = "https://www.rand.org/pubs/research_reports/RRA3797-1.html"
+RUNS_URL = ("https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/"
+            "0_input/feed/")
 TIMEOUT_S = 60  # a stalled connection fails instead of hanging
 
 
@@ -110,6 +113,18 @@ class Refresher:
             "byte_size": path.stat().st_size}
         log.info("rand: not refreshed (frozen report, Dev et al. 2025)")
 
+    def gpai_runs(self) -> None:
+        """The lab's own runs: nothing to fetch, each file's hash recorded (evals/ writes them)."""
+        for path in sorted((self.feed_dir / "gpai_runs").rglob("*")):
+            if path.is_file() and path.name != "aliases.csv":
+                rel = path.relative_to(self.feed_dir).as_posix()
+                self.provenance[f"0_input/feed/{rel}"] = {
+                    "url": RUNS_URL + rel, "fetched_at": "own run",
+                    "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+                    "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                    "byte_size": path.stat().st_size}
+        log.info("gpai_runs: not refreshed (own measurements)")
+
     def write_provenance(self) -> None:
         self.prov_path.write_text(json.dumps(self.provenance, indent=2, sort_keys=True) + "\n")
         log.info("provenance.json: %d artifact(s). Data diff: git diff --stat 0_input/feed/",
@@ -127,4 +142,5 @@ def refresh(feed_dir: Path = config.FEED_DIR) -> None:
     r.kaggle()
     r.seal()
     r.rand()
+    r.gpai_runs()
     r.write_provenance()

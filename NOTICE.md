@@ -16,6 +16,7 @@ Per-artifact URL, fetch date, sha256 and byte size: `0_input/feed/provenance.jso
 | `cybench_site` | [`cybench.github.io`](https://cybench.github.io) leaderboard, frozen snapshot | No license stated on the leaderboard; cite the Cybench paper (Zhang et al., ICLR 2025) | Yes, 1 CSV under `0_input/feed/cybench_site/` |
 | `kaggle` | `kaggle.com/api/v1/benchmarks/<board>/leaderboard`, boards `open-benchmarks/mmlu`, `open-benchmarks/mmlu-pro`, `deepmind/simpleqa-verified` | Each board states "This benchmark has been released under the Apache 2.0 License"; cite the board and the benchmark paper. Kaggle's Terms of Service apply to the site | Yes, 3 JSON under `0_input/feed/kaggle/` |
 | `rand` | Digitized from RAND **RR-A3797-1** (Dev et al. 2025, *Toward Comprehensive Benchmarking of the Biological Knowledge of Frontier LLMs*) | Copyright RAND Corporation: only the numeric scores are reproduced, for non-commercial research and with citation of [RR-A3797-1](https://www.rand.org/pubs/research_reports/RRA3797-1.html); neither the report nor its figures are redistributed, and commercial reuse of these rows requires RAND's permission. Frozen: never refreshed | Yes, 1 CSV under `0_input/feed/rand/` |
+| `gpai_runs` | The lab's own measurements, run with `evals/` (protocol, model and dataset in each run's `manifest.json`) | **CC-BY-4.0**, like the rest of this project. The questions belong to their datasets (GPQA, Rein et al. 2023: CC-BY-4.0; WMDP, Li et al. 2024: MIT; LAB-Bench, Laurent et al. 2024: CC-BY-SA-4.0; MMLU, Hendrycks et al. 2021: MIT; MMLU-Pro, Wang et al. 2024: MIT) and are not redistributed: `samples.csv` carries ids and outcomes only, and the transcripts, which quote the questions, are in a zip behind GPQA's published password with the datasets' canary strings | Yes, under `0_input/feed/gpai_runs/` |
 | `seal` | [`labs.scale.com/leaderboard/<slug>`](https://labs.scale.com/leaderboard), scores parsed from the page's Next.js payload | **No open license.** Scale AI Terms of Service apply | **No**, see below |
 
 ## Scale SEAL
@@ -29,5 +30,5 @@ If you redistribute those scores, attribute Scale AI and confirm the current ter
 ## Attribution when citing
 
 > Benchmark scores aggregated from Epoch AI (CC-BY 4.0), Kaggle Open Benchmarks (Apache 2.0),
-> RAND RR-A3797-1 (Dev et al. 2025), Scale AI SEAL and the Cybench leaderboard, via the
-> General-Purpose AI Policy Lab `benchmark-data-pipeline` (CC-BY-4.0).
+> RAND RR-A3797-1 (Dev et al. 2025), Scale AI SEAL, the Cybench leaderboard and the lab's own
+> runs, via the General-Purpose AI Policy Lab `benchmark-data-pipeline` (CC-BY-4.0).

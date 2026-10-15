@@ -12,12 +12,13 @@ EXPECTED_DIR = ROOT / "tests" / "expected_database"
 
 # Ingestion order of the feeds. It matters: exact duplicates keep the first occurrence, so
 # the first feed seen supplies the kept row.
-SOURCE_ORDER = ("epoch", "epoch_live", "epoch_cyber", "cybench_site", "kaggle", "rand", "seal")
+SOURCE_ORDER = ("epoch", "epoch_live", "epoch_cyber", "cybench_site", "kaggle", "rand", "seal",
+                "gpai_runs")
 
 # feed -> do its model names follow the machine-name grammar (identity.split_name)? Otherwise
 # only aliases.csv is trusted ("enumeration").
 SPLITTABLE = {"epoch": True, "epoch_live": True, "epoch_cyber": False, "cybench_site": False,
-              "kaggle": True, "rand": False, "seal": False}
+              "kaggle": True, "rand": False, "seal": False, "gpai_runs": True}
 
 MODEL_COLS = [
     "model_id", "base_model", "reasoning_level", "reasoning_tokens", "snapshot", "variant",
@@ -50,6 +51,7 @@ FEED_LABEL = {
     "epoch": "EpochAI", "epoch_live": "EpochAI (live feed)", "epoch_cyber": "EpochAI (cyber ECI)",
     "cybench_site": "Cybench leaderboard", "kaggle": "Kaggle Open Benchmarks",
     "rand": "RAND (Dev et al. 2025) — RR-A3797-1", "seal": "Scale SEAL",
+    "gpai_runs": "GPAI Policy Lab runs",
 }
 PARITY_GOLDEN_DIR = ROOT / "tests" / "parity" / "golden"
 REPORTS_DIR = ROOT / "reports"

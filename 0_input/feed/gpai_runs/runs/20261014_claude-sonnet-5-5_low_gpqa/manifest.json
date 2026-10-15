@@ -1,0 +1,180 @@
+{
+  "run_id": "20261014_claude-sonnet-5-5_low_gpqa",
+  "purpose": "Data wishlist of the Multiaxis_ECI K=4 flagship (sampler study, 2026-10-12): the unobserved model x benchmark cells whose predictions differ most between the five NUTS modes, extended on 2026-10-14 to the rest of the rand feed's biology / chemistry benchmarks with team API credits.",
+  "operator": "GPAI Policy Lab (Claude Code session for J. Andreoletti)",
+  "audit": "Automated audit of every cell (2026-10-14): stop reasons, API refusals and their categories, refusals written in the answer, answers cut by max_tokens, unparsed answers read one by one. No API error left; the one failed call of the campaign (claude-sonnet-5_none, LAB-Bench SeqQA, HTTP 400 'Output blocked by content filtering policy') succeeded on retry. Answers cut at max_tokens (16,000 tokens, thinking included) are scored wrong, as are answers that decline in words.",
+  "model": [
+    "claude-sonnet-5-5"
+  ],
+  "requested_model": "claude-sonnet-5-5",
+  "regime": "low",
+  "request_params": {
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "adaptive"
+    },
+    "output_config": {
+      "effort": "low"
+    },
+    "other": "provider defaults (no temperature, top_p, system prompt)"
+  },
+  "protocol": {
+    "reference": "RAND RR-A3797-1 (Dev et al. 2025), chapter 2, appendices B and D",
+    "solver": "inspect_ai multiple_choice(), single-answer template, no CoT, no few-shot",
+    "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
+    "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
+    "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "refusal_imputation": {},
+    "notes": {}
+  },
+  "datasets": {
+    "GPQA Diamond Biology": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_diamond.csv",
+        "Biology"
+      ],
+      "n_items": 19
+    },
+    "GPQA Diamond Chemistry": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_diamond.csv",
+        "Chemistry"
+      ],
+      "n_items": 93
+    },
+    "GPQA Main Biology": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_main.csv",
+        "Biology"
+      ],
+      "n_items": 78
+    },
+    "GPQA Main Chemistry": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_main.csv",
+        "Chemistry"
+      ],
+      "n_items": 183
+    }
+  },
+  "files": {
+    "gpqa": {
+      "url": "https://github.com/idavidrein/gpqa/raw/main/dataset.zip",
+      "sha256": "461ae7329f15a3e35f8184d2dac24b990f34fdf12f366ca4062d8e6638cd08dc"
+    }
+  },
+  "transcripts_password": "deserted-untie-orchid",
+  "n_samples": 1492,
+  "started": "2026-10-14T15:16:10+00:00",
+  "tokens": {
+    "input": 586340,
+    "output": 758187
+  },
+  "software": {
+    "script": "evals/rand_protocol.py",
+    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "anthropic": "1.13.0",
+    "pandas": "3.0.6",
+    "python": "3.11.15"
+  },
+  "output_files": {
+    "samples.csv": "5aeb68630d9b30a18dd8290308f2a5d2fd874c5848dfe5ce26051e852724bca0",
+    "transcripts.zip": "cfa67362bde7f8610aa11b9f88d8e69f1d43884427ddbfc7100cab1e11f6084a"
+  },
+  "results": {
+    "GPQA Diamond Biology": {
+      "score": 0.828947,
+      "stderr": 0.081229,
+      "n_items": 19,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.789474,
+        "1": 0.842105,
+        "2": 0.842105,
+        "3": 0.842105
+      },
+      "score_refusals_wrong": 0.828947,
+      "stop_reasons": {
+        "end_turn": 76
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.828947,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.934
+    },
+    "GPQA Diamond Chemistry": {
+      "score": 0.857527,
+      "stderr": 0.032969,
+      "n_items": 93,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.870968,
+        "1": 0.860215,
+        "2": 0.860215,
+        "3": 0.83871
+      },
+      "score_refusals_wrong": 0.857527,
+      "stop_reasons": {
+        "end_turn": 372
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.857527,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.989
+    },
+    "GPQA Main Biology": {
+      "score": 0.855769,
+      "stderr": 0.03831,
+      "n_items": 78,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.846154,
+        "1": 0.871795,
+        "2": 0.858974,
+        "3": 0.846154
+      },
+      "score_refusals_wrong": 0.855769,
+      "stop_reasons": {
+        "end_turn": 312
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.855769,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.933
+    },
+    "GPQA Main Chemistry": {
+      "score": 0.836066,
+      "stderr": 0.023857,
+      "n_items": 183,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.84153,
+        "1": 0.825137,
+        "2": 0.84153,
+        "3": 0.836066
+      },
+      "score_refusals_wrong": 0.836066,
+      "stop_reasons": {
+        "end_turn": 732
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.836066,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.995
+    }
+  },
+  "excluded_from_scores": {}
+}

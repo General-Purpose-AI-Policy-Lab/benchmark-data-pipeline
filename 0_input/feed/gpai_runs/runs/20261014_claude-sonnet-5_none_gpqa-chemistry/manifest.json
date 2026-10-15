@@ -1,0 +1,125 @@
+{
+  "run_id": "20261014_claude-sonnet-5_none_gpqa-chemistry",
+  "purpose": "Data wishlist of the Multiaxis_ECI K=4 flagship (sampler study, 2026-10-12): the cells whose predictions differ most between the five NUTS modes; GPQA Main Chemistry x claude-sonnet-5_none ranked first.",
+  "operator": "GPAI Policy Lab (Claude Code session for J. Andreoletti), API credits made available to the lab",
+  "audit": "Automated audit of every cell (2026-10-14): stop reasons, API refusals and their categories, refusals written in the answer, answers cut by max_tokens, unparsed answers read one by one. No API error left; the one failed call of the campaign (claude-sonnet-5_none, LAB-Bench SeqQA, HTTP 400 'Output blocked by content filtering policy') succeeded on retry. Answers cut at max_tokens (16,000 tokens, thinking included) are scored wrong, as are answers that decline in words. Epoch 1's 83 wrong answers read in full (2026-10-14): no API error, no refusal, every ANSWER line single and final; the one completion without an answer (recTQMrJxdpZhDCBk, Main) loops in visible reasoning up to max_tokens in every epoch and is scored incorrect, as RAND's protocol does.",
+  "history": [
+    "Pilot of 6 calls (3 questions per subset, max_tokens 4096) excluded from the run.",
+    "Epochs 0-3 were run 2026-10-14 with an earlier, single-command version of evals/gpqa_rand_protocol.py (sha256 7f890b8dd232e9bdc09d19698fcb07a9e834aeb6a24aac4f35fdd6fa3ad8ebda): same template, parser, shuffle, request parameters and max_tokens 16000; it read the dataset from the authors' zip by hand (same sha256) instead of downloading it.",
+    "Epoch 0's log kept only the first 200 characters of each completion: its transcripts are truncated and its completion_chars / completion_sha256 are empty. Its scores come from the parser run on the full completion at call time.",
+    "Epochs 0 and 1 did not log message_id, request_id or start time (added from epoch 2)."
+  ],
+  "caveat": "With thinking disabled the model still writes visible step-by-step reasoning in most answers despite the answer-only template; the protocol scores the answers as given.",
+  "model": [
+    "claude-sonnet-5"
+  ],
+  "requested_model": "claude-sonnet-5",
+  "regime": "none",
+  "request_params": {
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "disabled"
+    },
+    "other": "provider defaults (no temperature, top_p, system prompt)"
+  },
+  "protocol": {
+    "reference": "RAND RR-A3797-1 (Dev et al. 2025), chapter 2, appendices B and D",
+    "solver": "inspect_ai multiple_choice(), single-answer template, no CoT, no few-shot",
+    "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
+    "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
+    "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "refusal_imputation": {},
+    "notes": {}
+  },
+  "datasets": {
+    "GPQA Diamond Chemistry": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_diamond.csv",
+        "Chemistry"
+      ],
+      "n_items": 93
+    },
+    "GPQA Main Chemistry": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_main.csv",
+        "Chemistry"
+      ],
+      "n_items": 183
+    }
+  },
+  "files": {
+    "gpqa": {
+      "url": "https://github.com/idavidrein/gpqa/raw/main/dataset.zip",
+      "sha256": "461ae7329f15a3e35f8184d2dac24b990f34fdf12f366ca4062d8e6638cd08dc"
+    }
+  },
+  "transcripts_password": "deserted-untie-orchid",
+  "n_samples": 1104,
+  "started": "2026-10-14T14:55:38+00:00",
+  "tokens": {
+    "input": 383740,
+    "output": 688458
+  },
+  "software": {
+    "script": "evals/rand_protocol.py",
+    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "anthropic": "1.13.0",
+    "pandas": "3.0.6",
+    "python": "3.11.15"
+  },
+  "output_files": {
+    "samples.csv": "f74818877a6df791ce2d9490de7eb193532f1f1548e058882680756f63c8520d",
+    "transcripts.zip": "d3d998ce73399484c917a73ffdcd8f86d436abca11e2f6c6a1fc1a267240a072"
+  },
+  "results": {
+    "GPQA Diamond Chemistry": {
+      "score": 0.706989,
+      "stderr": 0.037766,
+      "n_items": 93,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.666667,
+        "1": 0.752688,
+        "2": 0.688172,
+        "3": 0.72043
+      },
+      "score_refusals_wrong": 0.706989,
+      "stop_reasons": {
+        "end_turn": 372
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.706989,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.634
+    },
+    "GPQA Main Chemistry": {
+      "score": 0.670765,
+      "stderr": 0.027657,
+      "n_items": 183,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.661202,
+        "1": 0.672131,
+        "2": 0.68306,
+        "3": 0.666667
+      },
+      "score_refusals_wrong": 0.670765,
+      "stop_reasons": {
+        "end_turn": 729,
+        "max_tokens": 3
+      },
+      "n_unparsed": 3,
+      "score_inspect_strict": 0.670765,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.634
+    }
+  },
+  "excluded_from_scores": {}
+}

@@ -1,0 +1,166 @@
+{
+  "run_id": "20261014_claude-sonnet-4-6_none_mmlu",
+  "purpose": "Data wishlist of the Multiaxis_ECI K=4 flagship (sampler study, 2026-10-12): the unobserved model x benchmark cells whose predictions differ most between the five NUTS modes, extended on 2026-10-14 to the rest of the rand feed's biology / chemistry benchmarks with team API credits.",
+  "operator": "GPAI Policy Lab (Claude Code session for J. Andreoletti)",
+  "audit": "Automated audit of every cell (2026-10-14): stop reasons, API refusals and their categories, refusals written in the answer, answers cut by max_tokens, unparsed answers read one by one. No API error left; the one failed call of the campaign (claude-sonnet-5_none, LAB-Bench SeqQA, HTTP 400 'Output blocked by content filtering policy') succeeded on retry. Answers cut at max_tokens (16,000 tokens, thinking included) are scored wrong, as are answers that decline in words.",
+  "model": [
+    "claude-sonnet-4-6"
+  ],
+  "requested_model": "claude-sonnet-4-6",
+  "regime": "none",
+  "request_params": {
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "disabled"
+    },
+    "other": "provider defaults (no temperature, top_p, system prompt)"
+  },
+  "protocol": {
+    "reference": "RAND RR-A3797-1 (Dev et al. 2025), chapter 2, appendices B and D",
+    "solver": "inspect_ai multiple_choice(), single-answer template, no CoT, no few-shot",
+    "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
+    "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
+    "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "refusal_imputation": {
+      "MMLU Biology": {
+        "theta": 0.7843,
+        "n_refused_calls": 14,
+        "n_refused_items": 5,
+        "mean_credit_refused": 0.6028,
+        "accuracy_answered": 0.8235,
+        "reference_runs": [
+          "20261014_claude-haiku-4-5-20251001_none_mmlu",
+          "20261014_claude-sonnet-5_none_mmlu"
+        ]
+      }
+    },
+    "notes": {
+      "mmlu": "RAND reports using an existing Inspect implementation of MMLU, whose current version reads the test split only and caps non-CoT answers at a few tokens; RAND's question counts need all three splits, so the appendix-D template is used on all splits, with the same max_tokens as the other benchmarks."
+    }
+  },
+  "datasets": {
+    "MMLU Biology": {
+      "loader": "mmlu",
+      "subset": [
+        "high_school_biology",
+        "virology"
+      ],
+      "n_items": 536
+    },
+    "MMLU Chemistry": {
+      "loader": "mmlu",
+      "subset": [
+        "high_school_chemistry"
+      ],
+      "n_items": 230
+    }
+  },
+  "files": {
+    "cais/mmlu/high_school_biology/dev-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/high_school_biology/dev-00000-of-00001.parquet",
+      "sha256": "4ae1c2d737b60977c22645093846ee6b9642c84480fde8ea39d8654630682aa4"
+    },
+    "cais/mmlu/high_school_biology/test-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/high_school_biology/test-00000-of-00001.parquet",
+      "sha256": "73600cc5c8032ffd20115887ec4f2c868d75c403c70ac1d115295e72cb8d80e3"
+    },
+    "cais/mmlu/high_school_biology/validation-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/high_school_biology/validation-00000-of-00001.parquet",
+      "sha256": "5c7a4d5bbb0a94e1af2759b13a9c39936de35485ef20bdc9e9e5e6db7003a9ae"
+    },
+    "cais/mmlu/high_school_chemistry/dev-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/high_school_chemistry/dev-00000-of-00001.parquet",
+      "sha256": "9ff0a32009626a305c800e347bd5b943898b112b7bd5575f90a5137890c02768"
+    },
+    "cais/mmlu/high_school_chemistry/test-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/high_school_chemistry/test-00000-of-00001.parquet",
+      "sha256": "fde2345147be31d8df06ad66200521d7e47588490ab59c09fd78861c8a373ccb"
+    },
+    "cais/mmlu/high_school_chemistry/validation-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/high_school_chemistry/validation-00000-of-00001.parquet",
+      "sha256": "0caed54736757cba15b7fcf6dedb84196c795b4e42baa1f55658407ae3803593"
+    },
+    "cais/mmlu/virology/dev-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/virology/dev-00000-of-00001.parquet",
+      "sha256": "2790f42d02f08f6dafb5aa45f28343eb6c79e1ffa184d7737f202f06e96a91d8"
+    },
+    "cais/mmlu/virology/test-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/virology/test-00000-of-00001.parquet",
+      "sha256": "c59ea23f72b405b180a3135c3a5240f8594af6f3c03e5c7784345914253a4928"
+    },
+    "cais/mmlu/virology/validation-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/virology/validation-00000-of-00001.parquet",
+      "sha256": "fcc8b6cd99a01757293f521cc2394f1998620e981cd2cae8de7360f2b6b731f8"
+    }
+  },
+  "transcripts_password": "deserted-untie-orchid",
+  "n_samples": 3064,
+  "started": "2026-10-14T15:19:12+00:00",
+  "tokens": {
+    "input": 408100,
+    "output": 206165
+  },
+  "software": {
+    "script": "evals/rand_protocol.py",
+    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "anthropic": "1.13.0",
+    "pandas": "3.0.6",
+    "python": "3.11.15"
+  },
+  "output_files": {
+    "samples.csv": "8c9c7831e51d0be937bb3c321a1787fe2ab66c8378a817efb7b1a460e4bb1c32",
+    "transcripts.zip": "cb278b8702981ace0b2a210365e4fd2848d59a768396c83edf4b04a326ede977"
+  },
+  "results": {
+    "MMLU Biology": {
+      "score": 0.822034,
+      "stderr": 0.015766,
+      "n_items": 536,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.818968,
+        "1": 0.818665,
+        "2": 0.828049,
+        "3": 0.822452
+      },
+      "score_refusals_wrong": 0.818097,
+      "stop_reasons": {
+        "end_turn": 2130,
+        "refusal": 14
+      },
+      "n_unparsed": 14,
+      "score_inspect_strict": 0.583955,
+      "n_normalised": 559,
+      "n_refusals": 14,
+      "refusal_share": 0.0065,
+      "visible_reasoning_share": 0.11
+    },
+    "MMLU Chemistry": {
+      "score": 0.957609,
+      "stderr": 0.011752,
+      "n_items": 230,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.965217,
+        "1": 0.952174,
+        "2": 0.956522,
+        "3": 0.956522
+      },
+      "score_refusals_wrong": 0.957609,
+      "stop_reasons": {
+        "end_turn": 920
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.730435,
+      "n_normalised": 219,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.611
+    }
+  },
+  "excluded_from_scores": {
+    "MMLU Biology": "RAND's MMLU subsets plateau at about 77% for its strongest models (o1, o3 and DeepSeek-R1 all at 77.0 in chemistry, 75.8-76.8 in biology), while weaker current models score up to 0.96 here: RAND's subset or harness is not the one reproduced, so these scores are not on the scale of the rand rows (user, 2026-10-15)",
+    "MMLU Chemistry": "RAND's MMLU subsets plateau at about 77% for its strongest models (o1, o3 and DeepSeek-R1 all at 77.0 in chemistry, 75.8-76.8 in biology), while weaker current models score up to 0.96 here: RAND's subset or harness is not the one reproduced, so these scores are not on the scale of the rand rows (user, 2026-10-15)"
+  }
+}

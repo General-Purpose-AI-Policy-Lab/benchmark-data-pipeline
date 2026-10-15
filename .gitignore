@@ -23,3 +23,8 @@ EPOCH_FEEDBACK.md
 
 # Local uv resolution, not part of the build.
 uv.lock
+
+# Own evaluation runs (evals/): raw API logs and the downloaded datasets stay local; a run is
+# shared through 0_input/feed/gpai_runs/runs/<run_id>/ (`package`).
+evals/raw/
+evals/.cache/

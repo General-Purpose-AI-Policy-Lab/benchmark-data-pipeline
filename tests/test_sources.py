@@ -5,7 +5,7 @@ import json
 import pandas
 import pytest
 
-from benchmark_data.sources import epoch_live, epoch_zip, kaggle, rand, seal
+from benchmark_data.sources import epoch_live, epoch_zip, gpai_runs, kaggle, rand, seal
 
 
 def _epoch_file():
@@ -99,6 +99,19 @@ def test_rand_melts_the_wide_table_and_skips_human_rows_and_na(tmp_path):
         ("GPT X", "BenchA", 0.5), ("Model Y", "BenchB", 0.125)]
     assert recs[0].source_url == rand.SOURCE_URL
 
+
+
+def test_gpai_runs_yields_one_record_per_row_with_its_run(tmp_path):
+    d = tmp_path / "gpai_runs"
+    d.mkdir()
+    pandas.DataFrame({
+        "model": ["m_none"], "benchmark": ["BenchA"], "score": [0.67], "stderr": [0.03],
+        "n_items": [183], "n_epochs": [4], "run_id": ["20261014_m_none_bencha"],
+    }).to_csv(d / "scores.csv", index=False)
+    [r] = list(gpai_runs.translate(tmp_path))
+    assert (r.raw_name, r.benchmark, r.score, r.stderr) == ("m_none", "BenchA", 0.67, 0.03)
+    assert "20261014_m_none_bencha" in r.source_label and "4 epochs x 183" in r.source_label
+    assert r.source_url.endswith("/runs/20261014_m_none_bencha")
 
 def _seal_page(entries):
     payload = json.dumps({"entries": entries})

@@ -1,7 +1,7 @@
 [project]
 name = "benchmark-data-pipeline"
 version = "0.1.0"
-description = "Benchmark score feeds (Epoch, Kaggle, RAND, Scale SEAL, Cybench) -> tables linked by uuid, plus consumer views"
+description = "Benchmark score feeds (Epoch, Kaggle, RAND, Scale SEAL, Cybench, own runs) -> tables linked by uuid, plus consumer views"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "CC-BY-4.0"

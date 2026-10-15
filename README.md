@@ -1,6 +1,6 @@
 # benchmark-data-pipeline
 
-Turns public benchmark score feeds (Epoch AI, Kaggle, RAND, Scale SEAL, the Cybench leaderboard) into CSV tables linked by UUID (`2_database/`: scores, models, benchmarks, human baselines, plus the excluded benchmarks and every raw model name) and two flat consumer views (`3_views/`).
+Turns public benchmark score feeds (Epoch AI, Kaggle, RAND, Scale SEAL, the Cybench leaderboard), plus the lab's own runs, into CSV tables linked by UUID (`2_database/`: scores, models, benchmarks, human baselines, plus the excluded benchmarks and every raw model name) and two flat consumer views (`3_views/`).
 
 Public scores are scattered across a handful of sources that each name models their own way: `claude-opus-4-5-20251101-thinking` here, `Claude Opus 4.5 (Thinking)` there, without saying whether the reasoning effort is known or simply missing. Reconciling those tables is where the time goes, and it usually happens by hand in a notebook that keeps no record of what was merged or why.
 
@@ -20,6 +20,7 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
   views/                    all_scores_flat.py, dated_scores_flat.py: the consumer views
   parity.py                 views against the consumers' frozen outputs (tests/parity/golden)
   build.py  check.py  refresh.py
+evals/                      the lab's own runs: protocols, run / package commands (feed gpai_runs, evals/README.md)
 2_database/<YYYYMMDD>/      the tables of the build run that day (+ excluded_benchmarks.csv, model_names.csv, build_manifest.json)
 3_views/<YYYYMMDD>/         all_scores_flat.csv, dated_scores_flat.csv, human_baselines.csv, same run
 docs/                       decisions.md (decision log), decisions_pending.md (none open today), plan_fusion.md (merge plan, historical),
@@ -27,7 +28,7 @@ docs/                       decisions.md (decision log), decisions_pending.md (n
 tests/                      unit tests, golden copies (tests/expected_database, tests/expected_views), parity goldens
 ```
 
-Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (21 HTML pages). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
+Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (21 HTML pages), `gpai_runs` (the lab's own runs: one `scores.csv`, and per run a manifest, per-question samples and a password-protected transcript archive, see [`evals/README.md`](evals/README.md)). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
 
 **SEAL pages are not versioned.** Scale AI publishes its leaderboards under no open license, so `0_input/feed/seal/*.html` is gitignored (see `NOTICE.md`). On a fresh clone run `python -m benchmark_data refresh` **before** the build; otherwise the build stops with an explicit message. Everything else about the SEAL feed (aliases, sha256, derived scores in `2_database/`) stays tracked.
 
@@ -133,6 +134,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 | `kaggle` | `modelVersionSlug` | pure machine name, `-default` stripped, never an effort | grammar + `aliases.csv` for lower-case spellings of Epoch names |
 | `rand` | `Model` | free display names (`Amazon Nova 1.0 Lite`) | full enumeration in `aliases.csv` |
 | `seal` | `model` (JSON in the HTML) | five incompatible encodings, plus `model (harness) effort` on the agentic boards | full enumeration in `aliases.csv` (with `harness`) |
+| `gpai_runs` | `model` | the pipeline's own machine names (`claude-sonnet-5_none`), regime always explicit | grammar; `aliases.csv` empty |
 
 ### Machine-name grammar (`identity.split_name`)
 
@@ -165,7 +167,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 
 1. `0_input/feed/mazebench/`: the raw data + an `aliases.csv` (even empty, with the header).
 2. A module `1_pipeline/benchmark_data/sources/mazebench.py` with its dictionaries (`MAZEBENCH_SPEC`: what is ingested; `MAZEBENCH_SKIP`: what is set aside, with the reason) and a `translate(feed_dir)` function yielding `Record`s.
-3. An entry in `sources.TRANSLATE`, in `config.SOURCE_ORDER` and in `config.SPLITTABLE`.
+3. An entry in `sources.TRANSLATE`, in `config.SOURCE_ORDER`, `config.SPLITTABLE` and `config.FEED_LABEL`, and a `refresh.Refresher` method that fetches the feed or records its provenance.
 4. A row per new benchmark in `0_input/metadata/benchmarks.csv` (the build refuses an unlisted one).
 5. `python -m benchmark_data build`.
 
@@ -226,13 +228,13 @@ The build only needs `pandas`. Two successive builds must produce a **byte-ident
 
 ### Refresh the feeds
 
-`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report). Novelties are never ingested quietly: unknown files and tasks of the Epoch feeds and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files (new Kaggle or Scale boards are added to `KAGGLE_SPEC` / `SEAL_SPEC` by hand, see above). Provenance (URL, date, sha256): `0_input/feed/provenance.json`.
+`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report), and so do the lab's own runs (`gpai_runs`), whose hashes `refresh` records. Novelties are never ingested quietly: unknown files and tasks of the Epoch feeds and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files (new Kaggle or Scale boards are added to `KAGGLE_SPEC` / `SEAL_SPEC` by hand, see above). Provenance (URL, date, sha256): `0_input/feed/provenance.json`.
 
 ## License and sources
 
 The code, the curated dictionaries and the CSV files in `2_database/` and `3_views/` are under **CC-BY-4.0** (`LICENSE`).
 
-Upstream scores carry their own terms: Epoch AI is CC-BY, Kaggle under its terms of service, RAND by citation of RR-A3797-1, Scale SEAL with no open license. Per-feed detail and what to credit when republishing: [`NOTICE.md`](NOTICE.md).
+The lab's own runs (`gpai_runs`) fall under the same license. Upstream scores carry their own terms: Epoch AI is CC-BY, Kaggle under its terms of service, RAND by citation of RR-A3797-1, Scale SEAL with no open license. Per-feed detail and what to credit when republishing: [`NOTICE.md`](NOTICE.md).
 
 ## Related repositories
 

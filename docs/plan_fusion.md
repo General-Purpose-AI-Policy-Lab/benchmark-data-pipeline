@@ -49,7 +49,7 @@ Numérotés pour pouvoir y référer depuis les revues. État au 2026-09-09 : **
 | D13 | Golden et parité avec les deux consommateurs | **fait** (`python -m benchmark_data parity`, écarts par cause) |
 | D14 | Paquet Python, style Google, ruff, pytest, CI | **fait** (`ci.yml` ruff + pytest) |
 | D15 | CLI `refresh`, `build`, `check`, `diff` | **fait** avec `parity` à la place de `diff` |
-| D16 | Ajouter une source = un module, une spec, un `aliases.csv` | **fait** (sept feeds : epoch, epoch_live, epoch_cyber, cybench_site, kaggle, rand, seal) |
+| D16 | Ajouter une source = un module, une spec, un `aliases.csv` | **fait** (huit feeds : epoch, epoch_live, epoch_cyber, cybench_site, kaggle, rand, seal, gpai_runs) |
 | D17 | Aucune boucle `iterrows` | **fait** |
 | D18 | Tables normalisées versionnées et vues documentées | **fait** (schéma 2.1 ; `3_views/all_scores_flat.csv`, `dated_scores_flat.csv`, `human_baselines.csv`) |
 | D19 | Colonnes complètes | **fait** pour ce qui a été retenu (`source_label`, `source_url`, `model_version`, `ceiling`, `access`, `country` ISO, `training_flop`) ; `score_raw`, `transform`, `measurement_date`, `task_version`, `n_items`, `tier` abandonnés (2026-09-07) |

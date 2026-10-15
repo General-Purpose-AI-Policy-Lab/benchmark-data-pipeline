@@ -1,0 +1,245 @@
+{
+  "run_id": "20261014_claude-sonnet-5_medium_gpqa",
+  "purpose": "Data wishlist of the Multiaxis_ECI K=4 flagship (sampler study, 2026-10-12): the unobserved model x benchmark cells whose predictions differ most between the five NUTS modes, extended on 2026-10-14 to the rest of the rand feed's biology / chemistry benchmarks with team API credits.",
+  "operator": "GPAI Policy Lab (Claude Code session for J. Andreoletti)",
+  "audit": "Automated audit of every cell (2026-10-14): stop reasons, API refusals and their categories, refusals written in the answer, answers cut by max_tokens, unparsed answers read one by one. No API error left; the one failed call of the campaign (claude-sonnet-5_none, LAB-Bench SeqQA, HTTP 400 'Output blocked by content filtering policy') succeeded on retry. Answers cut at max_tokens (16,000 tokens, thinking included) are scored wrong, as are answers that decline in words.",
+  "model": [
+    "claude-sonnet-5"
+  ],
+  "requested_model": "claude-sonnet-5",
+  "regime": "medium",
+  "request_params": {
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "adaptive"
+    },
+    "output_config": {
+      "effort": "medium"
+    },
+    "other": "provider defaults (no temperature, top_p, system prompt)"
+  },
+  "protocol": {
+    "reference": "RAND RR-A3797-1 (Dev et al. 2025), chapter 2, appendices B and D",
+    "solver": "inspect_ai multiple_choice(), single-answer template, no CoT, no few-shot",
+    "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
+    "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
+    "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "refusal_imputation": {
+      "GPQA Diamond Biology": {
+        "theta": 0.7659,
+        "n_refused_calls": 5,
+        "n_refused_items": 2,
+        "mean_credit_refused": 0.9774,
+        "accuracy_answered": 0.8028,
+        "reference_runs": [
+          "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
+          "20261014_claude-opus-4-6_none_gpqa",
+          "20261014_claude-opus-4-7_none_gpqa",
+          "20261014_claude-opus-4-8_none_gpqa",
+          "20261014_claude-opus-5_none_gpqa",
+          "20261014_claude-sonnet-4-6_low_gpqa",
+          "20261014_claude-sonnet-4-6_none_gpqa-biology",
+          "20261014_claude-sonnet-5-5_low_gpqa",
+          "20261014_claude-sonnet-5_low_gpqa",
+          "20261014_claude-sonnet-5_none_gpqa-biology"
+        ]
+      },
+      "GPQA Main Biology": {
+        "theta": -0.116,
+        "n_refused_calls": 6,
+        "n_refused_items": 3,
+        "mean_credit_refused": 0.9191,
+        "accuracy_answered": 0.768,
+        "reference_runs": [
+          "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
+          "20261014_claude-opus-4-6_none_gpqa",
+          "20261014_claude-opus-4-7_none_gpqa",
+          "20261014_claude-opus-4-8_none_gpqa",
+          "20261014_claude-opus-5_none_gpqa",
+          "20261014_claude-sonnet-4-6_low_gpqa",
+          "20261014_claude-sonnet-4-6_none_gpqa-biology",
+          "20261014_claude-sonnet-5-5_low_gpqa",
+          "20261014_claude-sonnet-5_low_gpqa",
+          "20261014_claude-sonnet-5_none_gpqa-biology"
+        ]
+      },
+      "GPQA Main Chemistry": {
+        "theta": 0.1969,
+        "n_refused_calls": 1,
+        "n_refused_items": 1,
+        "mean_credit_refused": 0.4562,
+        "accuracy_answered": 0.7319,
+        "reference_runs": [
+          "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
+          "20261014_claude-opus-4-6_none_gpqa",
+          "20261014_claude-opus-4-7_none_gpqa",
+          "20261014_claude-opus-4-8_none_gpqa",
+          "20261014_claude-opus-5_none_gpqa",
+          "20261014_claude-sonnet-4-6_low_gpqa",
+          "20261014_claude-sonnet-4-6_none_gpqa-chemistry",
+          "20261014_claude-sonnet-5-5_low_gpqa",
+          "20261014_claude-sonnet-5_low_gpqa",
+          "20261014_claude-sonnet-5_none_gpqa-chemistry"
+        ]
+      }
+    },
+    "notes": {}
+  },
+  "datasets": {
+    "GPQA Diamond Biology": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_diamond.csv",
+        "Biology"
+      ],
+      "n_items": 19
+    },
+    "GPQA Diamond Chemistry": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_diamond.csv",
+        "Chemistry"
+      ],
+      "n_items": 93
+    },
+    "GPQA Main Biology": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_main.csv",
+        "Biology"
+      ],
+      "n_items": 78
+    },
+    "GPQA Main Chemistry": {
+      "loader": "gpqa",
+      "subset": [
+        "gpqa_main.csv",
+        "Chemistry"
+      ],
+      "n_items": 183
+    }
+  },
+  "files": {
+    "gpqa": {
+      "url": "https://github.com/idavidrein/gpqa/raw/main/dataset.zip",
+      "sha256": "461ae7329f15a3e35f8184d2dac24b990f34fdf12f366ca4062d8e6638cd08dc"
+    }
+  },
+  "transcripts_password": "deserted-untie-orchid",
+  "n_samples": 1492,
+  "started": "2026-10-14T15:19:13+00:00",
+  "tokens": {
+    "input": 583356,
+    "output": 2453413
+  },
+  "software": {
+    "script": "evals/rand_protocol.py",
+    "script_sha256": "df640a666ccc75a53b2d562efa78d0b130ebd62939b6470a509a6e4e549001a6",
+    "anthropic": "1.13.0",
+    "pandas": "3.0.6",
+    "python": "3.11.15"
+  },
+  "output_files": {
+    "samples.csv": "fbe3fbbecbc0b28f6923ee9db5a130c6804248ea8e49d7b446e7c81d808601a8",
+    "transcripts.zip": "0a32974bc050506ecaa0c8375f9381a1c43960e90e37418e88912fe0f3273ba9"
+  },
+  "results": {
+    "GPQA Diamond Biology": {
+      "score": 0.814303,
+      "stderr": 0.087116,
+      "n_items": 19,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.788073,
+        "1": 0.840704,
+        "2": 0.840362,
+        "3": 0.788073
+      },
+      "score_refusals_wrong": 0.75,
+      "stop_reasons": {
+        "end_turn": 67,
+        "refusal": 5,
+        "max_tokens": 4
+      },
+      "n_unparsed": 9,
+      "score_inspect_strict": 0.75,
+      "n_normalised": 0,
+      "n_refusals": 5,
+      "refusal_share": 0.0658,
+      "visible_reasoning_share": 0.145
+    },
+    "GPQA Diamond Chemistry": {
+      "score": 0.741935,
+      "stderr": 0.03695,
+      "n_items": 93,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.763441,
+        "1": 0.741935,
+        "2": 0.731183,
+        "3": 0.731183
+      },
+      "score_refusals_wrong": 0.741935,
+      "stop_reasons": {
+        "end_turn": 359,
+        "max_tokens": 13
+      },
+      "n_unparsed": 13,
+      "score_inspect_strict": 0.741935,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "visible_reasoning_share": 0.07
+    },
+    "GPQA Main Biology": {
+      "score": 0.77088,
+      "stderr": 0.041007,
+      "n_items": 78,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.781257,
+        "1": 0.742795,
+        "2": 0.781057,
+        "3": 0.77841
+      },
+      "score_refusals_wrong": 0.753205,
+      "stop_reasons": {
+        "end_turn": 301,
+        "refusal": 6,
+        "max_tokens": 5
+      },
+      "n_unparsed": 11,
+      "score_inspect_strict": 0.753205,
+      "n_normalised": 0,
+      "n_refusals": 6,
+      "refusal_share": 0.0192,
+      "visible_reasoning_share": 0.042
+    },
+    "GPQA Main Chemistry": {
+      "score": 0.731497,
+      "stderr": 0.02665,
+      "n_items": 183,
+      "n_epochs": 4,
+      "score_by_epoch": {
+        "0": 0.726776,
+        "1": 0.743169,
+        "2": 0.743169,
+        "3": 0.712875
+      },
+      "score_refusals_wrong": 0.730874,
+      "stop_reasons": {
+        "end_turn": 701,
+        "max_tokens": 30,
+        "refusal": 1
+      },
+      "n_unparsed": 31,
+      "score_inspect_strict": 0.730874,
+      "n_normalised": 0,
+      "n_refusals": 1,
+      "refusal_share": 0.0014,
+      "visible_reasoning_share": 0.094
+    }
+  },
+  "excluded_from_scores": {}
+}

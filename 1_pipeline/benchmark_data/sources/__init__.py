@@ -4,7 +4,8 @@ One module here is not a feed and is not imported below: `metr_human_baseline` d
 of `0_input/metadata/human_baselines.csv` from METR's run table, and produces no score.
 
 Adding a source: a module here, an entry in TRANSLATE, an `0_input/feed/<name>/aliases.csv` (even
-empty, with the header), and entries in `config.SOURCE_ORDER` / `config.SPLITTABLE`.
+empty, with the header), and entries in `config.SOURCE_ORDER` / `config.SPLITTABLE` / `config.FEED_LABEL`, and a
+`refresh.Refresher` method that records its provenance (or fetches it).
 """
 
 from benchmark_data.sources import (
@@ -12,6 +13,7 @@ from benchmark_data.sources import (
     epoch_cyber,
     epoch_live,
     epoch_zip,
+    gpai_runs,
     kaggle,
     rand,
     seal,
@@ -26,6 +28,7 @@ TRANSLATE = {
     "kaggle": kaggle.translate,
     "rand": rand.translate,
     "seal": seal.translate,
+    "gpai_runs": gpai_runs.translate,
 }
 
 __all__ = ["Record", "TRANSLATE"]
