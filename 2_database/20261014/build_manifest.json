@@ -1,0 +1,700 @@
+{
+  "schema_version": "2.2",
+  "built_at": "2026-10-15T10:22:09+02:00",
+  "git_commit": "653f630cf80a2eff1dbaccd819059398032f6efc",
+  "feeds": {
+    "0_input/feed/cybench_site/cybench_leaderboard.csv": {
+      "byte_size": 1179,
+      "fetched_at": "2026-09-07",
+      "note": "frozen snapshot: the benchmark is saturated, no further rows expected",
+      "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45",
+      "url": "https://cybench.github.io/data/leaderboard.csv"
+    },
+    "0_input/feed/epoch (benchmark_data.zip)": {
+      "byte_size": 2352989,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "d1bc9d96ac8dc233c72503e6ed40c9d0208342ff469403e37978630e3e892b36",
+      "url": "https://epoch.ai/data/benchmark_data.zip"
+    },
+    "0_input/feed/epoch_cyber/cyber_benchmarks.csv": {
+      "byte_size": 19190,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "f5680eb6c0751c7c6b785c56d73cc83892a857a253cb4845b3b688dda3e5ab21",
+      "url": "https://epoch.ai/data/cyber/processed_data_for_eci.csv"
+    },
+    "0_input/feed/epoch_live/epoch_live_benchmarks.csv": {
+      "byte_size": 3851880,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "f68bb729c170a0321f0cda43f8ccb9e083e8fe3ff75a9ddef85778e86242933c",
+      "url": "https://epoch.ai/data/benchmarks.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-biology/manifest.json": {
+      "byte_size": 4491,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "438f04cc20a53c7081105424a43fd62f61b7763a569d468fe4e87a835904c4d7",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-biology/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-biology/samples.csv": {
+      "byte_size": 101513,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "c51ee35f79cf72ad7e1fb6f1bd5df3fc8676e43a3112c135282b57de8ddca284",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-biology/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-biology/transcripts.zip": {
+      "byte_size": 177795,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "0e7406391e6d83eff7014eba771c2d1fab7803e2fd09aa1e47db8e551b32ed85",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-biology/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry/manifest.json": {
+      "byte_size": 4736,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "003cb89ead5cc18244081078efbb07c1b5b84892a368185b19a5804e56501466",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry/samples.csv": {
+      "byte_size": 292782,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "4747f41366e32c45d20390a807ec63f52b4d12519bdb96d3bc5dab9ed4cc72d9",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry/transcripts.zip": {
+      "byte_size": 680685,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "7538c83da30d37ecfa99951e94b16b626adcc6a093c7afce0a3bcb0681528f23",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_lab-bench/manifest.json": {
+      "byte_size": 7040,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "a4657f9c0f8d7c04fab922aad3c199d3ee72ee1d1812ee0edd4a4e305694dd0d",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_lab-bench/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_lab-bench/samples.csv": {
+      "byte_size": 1047857,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "bf7a79576da20ba0c1dd8b742c91a81bcbe8f93d3f56e6f1323d9853753944bc",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_lab-bench/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_lab-bench/transcripts.zip": {
+      "byte_size": 1432579,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "189005ccdad484892897ce62f1c0638eed49118a1d6702ca103f5e1b712ecb7f",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_lab-bench/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_mmlu/manifest.json": {
+      "byte_size": 9806,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "9cee30aa53af365ea1d07ba1b0300aca41d8829c9a927232cc5de5fea9142e8d",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_mmlu/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_mmlu/samples.csv": {
+      "byte_size": 2631778,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "5c01094e0d858108d51dc4700d35a56deb9c2a749c961236aad5a7bd4517b456",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_mmlu/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_mmlu/transcripts.zip": {
+      "byte_size": 2785781,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "a4ede8644aed825ae15103db9c8053659341b133914f270f7921b9d95f7d7bd3",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_mmlu/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_wmdp/manifest.json": {
+      "byte_size": 4792,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "0d771d03ea9ac4c67e67bdb300c1eca93132601a3c92b1fea919d21601ea408a",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_wmdp/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_wmdp/samples.csv": {
+      "byte_size": 1670234,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "dd9984c9b0a3edfacd66ce3ef93b3d05a80206925c2b1065e22aaee0565f54ef",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_wmdp/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_wmdp/transcripts.zip": {
+      "byte_size": 515272,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "f10b8d773d2ae3d68929033529c611151b1bcc3d71a677e70fc25179d6c0aad9",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_wmdp/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-6_none_gpqa/manifest.json": {
+      "byte_size": 7388,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "177972f27beb329a574383389176237af33b797e9f65a810be609924f8c0216e",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-6_none_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-6_none_gpqa/samples.csv": {
+      "byte_size": 379175,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "87608efb0c997160ae7f1c29ab527ff724897ba64c7644629e6c484a243b9f2d",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-6_none_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-6_none_gpqa/transcripts.zip": {
+      "byte_size": 1248000,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "5d2c18399437813aae6b1de02ba745ba2b02318402c8a19254c14cb0201c591f",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-6_none_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-7_none_gpqa/manifest.json": {
+      "byte_size": 7468,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "7ba99c8d77fc39c1322bdc259b238e9dd9b8c8b5151232736c7ea105eda2de29",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-7_none_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-7_none_gpqa/samples.csv": {
+      "byte_size": 377014,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "c64c6fce29d66083f2238527e3c4053f22b54ff0c14745850119144cebedbecb",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-7_none_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-7_none_gpqa/transcripts.zip": {
+      "byte_size": 979431,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "904c7f333af432cc6599924f380edda86ab7757f8d17bcd09ba86180661db5c1",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-7_none_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_gpqa/manifest.json": {
+      "byte_size": 7388,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "8a640f9f3bc87bd42296dd961436007404955943b96a35f16bf244b7198088cc",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_gpqa/samples.csv": {
+      "byte_size": 375729,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "fff52bad09ab4513bbae2a7e386d4b0e4dffe552657106dab3cf2356547e95ec",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_gpqa/transcripts.zip": {
+      "byte_size": 426865,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "29f0c6909447257c1606411cdfd8c581bdb4720237604575d316261f2eb5f744",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry/manifest.json": {
+      "byte_size": 9723,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "08fcdbb0c8aa0797d7fc2695a7ec1da2afac653834003f756e635cc9bb72734b",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry/samples.csv": {
+      "byte_size": 1403394,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "04ad58122f42e0c252ff4e0306227766b1dd1981601e6025cc875bf6755c1d7e",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry/transcripts.zip": {
+      "byte_size": 1272156,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "b0ff210119cb41a85fbf23aee2b56726590b3b889405de4fa4e6898238d8f919",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-5_none_gpqa/manifest.json": {
+      "byte_size": 9011,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "f3b21f6b1ad61841b8db0303c22b71349d57dc9ecca87ca50f1b72a5c1ca931b",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-5_none_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-5_none_gpqa/samples.csv": {
+      "byte_size": 372787,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "106b44b9a8971a5ec027e1ce7bd952ae2c57e14bc53c316d574e8022bd616cf4",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-5_none_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-opus-5_none_gpqa/transcripts.zip": {
+      "byte_size": 868304,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "145e9698ff7ad19090890a346b1cac2f1ac02a50e5da279b0ffd305540db3e14",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-opus-5_none_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_low_gpqa/manifest.json": {
+      "byte_size": 8199,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "5140e247b5eb0fd2f63d019da38f869e9a4e3b6a0cc69fd980aee1bad032a0ba",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_low_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_low_gpqa/samples.csv": {
+      "byte_size": 95206,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "d3b0dd3bb1f557325670d2714a01908e345311674c59ff296a31b34e5b5d78c0",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_low_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_low_gpqa/transcripts.zip": {
+      "byte_size": 103905,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "3d3b38c021b8804562ba4b3f86454b1309cb02742075e7f1e2957383ddb630ff",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_low_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-biology/manifest.json": {
+      "byte_size": 6005,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "60c8db2fd13f984e40b646eebc53eebae655a208b5b67a6f97257f7a45a63c93",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-biology/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-biology/samples.csv": {
+      "byte_size": 98621,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "df5d2855b2373c5e1a051b10ee6a14d1697b8df0a2561d19c421d2dbae9db0ac",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-biology/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-biology/transcripts.zip": {
+      "byte_size": 256136,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "c43ca3c8b45a811bb5f87e7f9f13cca0787a6ec36e97e5e07f42cc2618d42aea",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-biology/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-chemistry/manifest.json": {
+      "byte_size": 5517,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "78a7ed28c21a3a1a3296ef5dea2432d544781de51b422b5953ae61cb71fe3930",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-chemistry/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-chemistry/samples.csv": {
+      "byte_size": 284093,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "07b9b3a39cccc32f3e72e5213e956143ba84b5b0d34396d6ed10d6eea8b32e24",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-chemistry/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-chemistry/transcripts.zip": {
+      "byte_size": 1031887,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "6da3d83d14a8a0f8ce2930938c77f5a043c5137409be6d728a08522756d94bc5",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_gpqa-chemistry/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry/manifest.json": {
+      "byte_size": 9105,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "80d7471da41a0f99eb63968addfcad79643f1047311e0853fea7ebf4dd096368",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry/samples.csv": {
+      "byte_size": 355426,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "663e5528727e0bc70dedadb5b4e23a34174beee3bdd3599ef185729ed41d06d9",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry/transcripts.zip": {
+      "byte_size": 595929,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "a678f94d3263b5264cdd4eb9d7f3e213627aecd91857d343c7970ec616ad5d61",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_mmlu/manifest.json": {
+      "byte_size": 8419,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "66f03baba9b380e09f8d5ed3487be1a2a004266e80511549280d039deb059e75",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_mmlu/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_mmlu/samples.csv": {
+      "byte_size": 780397,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "8c9c7831e51d0be937bb3c321a1787fe2ab66c8378a817efb7b1a460e4bb1c32",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_mmlu/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_mmlu/transcripts.zip": {
+      "byte_size": 368240,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "cb278b8702981ace0b2a210365e4fd2848d59a768396c83edf4b04a326ede977",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-4-6_none_mmlu/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5-5_low_gpqa/manifest.json": {
+      "byte_size": 5882,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "7df1abaafd2d316c6de2ecc284bbe644557d2a2766c374f465c0a375f32a469d",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5-5_low_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5-5_low_gpqa/samples.csv": {
+      "byte_size": 380985,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "5aeb68630d9b30a18dd8290308f2a5d2fd874c5848dfe5ce26051e852724bca0",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5-5_low_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5-5_low_gpqa/transcripts.zip": {
+      "byte_size": 727429,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "cfa67362bde7f8610aa11b9f88d8e69f1d43884427ddbfc7100cab1e11f6084a",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5-5_low_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_low_gpqa/manifest.json": {
+      "byte_size": 7545,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "45ec916b0cbdf22761895e60f1ead09f7dae876aee3c92b339ee19c051d7288d",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_low_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_low_gpqa/samples.csv": {
+      "byte_size": 374634,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "07b99466a14e1e2a3860488fda530347e18e3e43b915ebd0837fb8234d17b7de",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_low_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_low_gpqa/transcripts.zip": {
+      "byte_size": 82925,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "5984282b15ed28ce29e2855ad5f7d8ebc0c97597ffcdf623f4efda2d91ef372f",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_low_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_medium_gpqa/manifest.json": {
+      "byte_size": 8324,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "be2a9c12d20e0f84130e8d5fba7c224d63915bd72f1154be52c200ae1c3641c6",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_medium_gpqa/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_medium_gpqa/samples.csv": {
+      "byte_size": 375784,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "fbe3fbbecbc0b28f6923ee9db5a130c6804248ea8e49d7b446e7c81d808601a8",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_medium_gpqa/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_medium_gpqa/transcripts.zip": {
+      "byte_size": 130313,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "0a32974bc050506ecaa0c8375f9381a1c43960e90e37418e88912fe0f3273ba9",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_medium_gpqa/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-biology/manifest.json": {
+      "byte_size": 6029,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "e7372f2a7ffbbc5eee651aa8501fd5b1d95aaeb72da475ec7c392ccb87b4f75b",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-biology/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-biology/samples.csv": {
+      "byte_size": 96768,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "1156f628e4b5408cdcde70e66063ba0859a7327ed18d7f0ce035a9687ab4e090",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-biology/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-biology/transcripts.zip": {
+      "byte_size": 70239,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "86e5f2cf5c254373c63d4ac38f1a1cb5b1ea8effdafe5cfe098519c1c1042692",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-biology/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-chemistry/manifest.json": {
+      "byte_size": 5718,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "a0f1d7b69969b3ce4615def185086a1ff06c47f1947621e3d06f0e2b057f48d2",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-chemistry/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-chemistry/samples.csv": {
+      "byte_size": 216734,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "f74818877a6df791ce2d9490de7eb193532f1f1548e058882680756f63c8520d",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-chemistry/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-chemistry/transcripts.zip": {
+      "byte_size": 466765,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "d3d998ce73399484c917a73ffdcd8f86d436abca11e2f6c6a1fc1a267240a072",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_gpqa-chemistry/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_lab-bench/manifest.json": {
+      "byte_size": 8904,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "bd5967b4e167a21207420d380607786fced71abfbbaa60da1f186cdb12586351",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_lab-bench/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_lab-bench/samples.csv": {
+      "byte_size": 1007820,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "ca484823520f3e6e720db2e4e9a18bc508cb8085ada47415eced6bddf49e8fda",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_lab-bench/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_lab-bench/transcripts.zip": {
+      "byte_size": 1244237,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "16cf4f27d582ea68efcade426346761ecdd5146fc202e08e9bb000a3ef00edd8",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_lab-bench/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_mmlu/manifest.json": {
+      "byte_size": 10454,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "1705b84b6c31549821edd0d82ae3765f84f81847c42c10bbc3f40f1e414800ff",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_mmlu/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_mmlu/samples.csv": {
+      "byte_size": 2516453,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "9e4565ea36481cf4513cdc06eb32784cc64de17da9a42959cbdd99de81b30a71",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_mmlu/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_mmlu/transcripts.zip": {
+      "byte_size": 1229811,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "3a7363dd53199658e056cc2e9a6277fed35f0ec1f5c44578d14765f1569ee021",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_mmlu/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_wmdp/manifest.json": {
+      "byte_size": 5708,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "0ecacb715c123884a61788b0c94fbc61f986e770af71e110838744913358ad99",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_wmdp/manifest.json"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_wmdp/samples.csv": {
+      "byte_size": 1620877,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "8f55d8f389b728ec325061120e83ddbf7df3a2e5b40cd8dc7bb7b46459590dea",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_wmdp/samples.csv"
+    },
+    "0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_wmdp/transcripts.zip": {
+      "byte_size": 281660,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "365ac7e833214bdd5183a4232364807b80c7a7d4556c9b0ae4076cd4ce437094",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_none_wmdp/transcripts.zip"
+    },
+    "0_input/feed/gpai_runs/scores.csv": {
+      "byte_size": 7475,
+      "fetched_at": "own run",
+      "note": "GPAI Policy Lab measurement, see the run's manifest.json",
+      "sha256": "c1311bac16cca166f73a1297133ee9478465c7751fc2e54a0b92b2e1399afcd9",
+      "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/scores.csv"
+    },
+    "0_input/feed/kaggle/deepmind_simpleqa-verified.json": {
+      "byte_size": 68135,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "138ac60cbaa01d30414cd9e4af242f771f1bd8057dda488bad76ef09f2e5d6e6",
+      "url": "https://www.kaggle.com/api/v1/benchmarks/deepmind/simpleqa-verified/leaderboard"
+    },
+    "0_input/feed/kaggle/open-benchmarks_mmlu-pro.json": {
+      "byte_size": 78233,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "a910e1ade69bd73ed91b4171df1b0a60f49c27b4c466120a58ecae76738b457e",
+      "url": "https://www.kaggle.com/api/v1/benchmarks/open-benchmarks/mmlu-pro/leaderboard"
+    },
+    "0_input/feed/kaggle/open-benchmarks_mmlu.json": {
+      "byte_size": 72317,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "00959f9643bc5d68420e22d2cde1feb0db6cd60f02065f6bc776ed74a57bd1c9",
+      "url": "https://www.kaggle.com/api/v1/benchmarks/open-benchmarks/mmlu/leaderboard"
+    },
+    "0_input/feed/rand/rand_benchmark_scores.csv": {
+      "byte_size": 4350,
+      "fetched_at": "frozen",
+      "note": "RAND RR-A3797-1 (Dev et al. 2025), never refreshed",
+      "sha256": "adbfe8d1a72b2b50d1e16d91b5e9981edfb69fbd12cfae7bf97a1a2b4b5d682b",
+      "url": "https://www.rand.org/pubs/research_reports/RRA3797-1.html"
+    },
+    "0_input/feed/seal/audiomc.html": {
+      "byte_size": 143249,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "f275a8282438d840f07273ecda29720d208633559fb8f378fc6123d25bc45ce5",
+      "url": "https://labs.scale.com/leaderboard/audiomc"
+    },
+    "0_input/feed/seal/drugdiscoverybench.html": {
+      "byte_size": 130622,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "20a8d390255156a96a119eb62651e95d008432b4d06da8f7f84f7d67beb3f376",
+      "url": "https://labs.scale.com/leaderboard/drugdiscoverybench"
+    },
+    "0_input/feed/seal/hil.html": {
+      "byte_size": 116849,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "0e88665c8c7217559f793cfca4a0ee15a3436ba0034dea0f9560ea6d393e6bf8",
+      "url": "https://labs.scale.com/leaderboard/hil"
+    },
+    "0_input/feed/seal/hle-diamond.html": {
+      "byte_size": 105070,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "c956b3bbf215951c1cfaae7e734e6d5b018408acbda9cef1c4056a0be42ae090",
+      "url": "https://labs.scale.com/leaderboard/hle-diamond"
+    },
+    "0_input/feed/seal/instruction_following.html": {
+      "byte_size": 116155,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "6d89581fda846012a656e1cacf28246c48882824f88151deee50de87be4959b7",
+      "url": "https://labs.scale.com/leaderboard/instruction_following"
+    },
+    "0_input/feed/seal/mcp_atlas.html": {
+      "byte_size": 206450,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "de79aa71945845da71524a7aafd6ab9fb4d56fb1376ec840450560ac9b029771",
+      "url": "https://labs.scale.com/leaderboard/mcp_atlas"
+    },
+    "0_input/feed/seal/multichallenge.html": {
+      "byte_size": 133347,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "c5aa9a19d1e9f610f5383123d58a4bc8b561b718aca7cb120b96e658c8a23449",
+      "url": "https://labs.scale.com/leaderboard/multichallenge"
+    },
+    "0_input/feed/seal/multinrc.html": {
+      "byte_size": 162289,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "100f040ba603c5a5067b5c5999acc030387bd7b8969e1cff75f30bddb0aa3116",
+      "url": "https://labs.scale.com/leaderboard/multinrc"
+    },
+    "0_input/feed/seal/prbench-finance.html": {
+      "byte_size": 134418,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "7a07802b2746084c830e326909d24b5d36048f2183121b9ac526889f487b2957",
+      "url": "https://labs.scale.com/leaderboard/prbench-finance"
+    },
+    "0_input/feed/seal/prbench-legal.html": {
+      "byte_size": 141887,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "c823e7992517796733f9f568d93151caeaa85ef2a587fd4e8a51ed637c7583e1",
+      "url": "https://labs.scale.com/leaderboard/prbench-legal"
+    },
+    "0_input/feed/seal/rli.html": {
+      "byte_size": 116323,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "2b63b8bafe11c74720d4e8e7c554f1bcfc53c989ebf24b103ea4173097484583",
+      "url": "https://labs.scale.com/leaderboard/rli"
+    },
+    "0_input/feed/seal/swe_bench_pro_private.html": {
+      "byte_size": 149202,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "a7d3c05f35175ee9dea802e5ba4125800e80a4d1f4f778b403f85001f0e7264d",
+      "url": "https://labs.scale.com/leaderboard/swe_bench_pro_private"
+    },
+    "0_input/feed/seal/swe_bench_pro_public.html": {
+      "byte_size": 149202,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "9993ea29d47d16128cb929a414731605d47de5977dae074dd7ff72dac51e8d6c",
+      "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
+    },
+    "0_input/feed/seal/swe_bench_pro_public_v2.html": {
+      "byte_size": 134308,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "cc0b60b263d7e2920845fab2a179ad062c182f29370869d30ee7dded6543b0ed",
+      "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_v2"
+    },
+    "0_input/feed/seal/sweatlas-qna.html": {
+      "byte_size": 142485,
+      "fetched_at": "2026-09-29T20:18:20.627463+00:00",
+      "sha256": "577983c41acd48efd396c14c21cfc8e7ade6fd0972ce7936c5968e04cf6bbef1",
+      "url": "https://labs.scale.com/leaderboard/sweatlas-qna"
+    },
+    "0_input/feed/seal/sweatlas-refactoring.html": {
+      "byte_size": 150725,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "ee158a1686b9390ad4026c756f7b48a336d3dac2dba291444d1a5bff49a60554",
+      "url": "https://labs.scale.com/leaderboard/sweatlas-refactoring"
+    },
+    "0_input/feed/seal/sweatlas-tw.html": {
+      "byte_size": 160398,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "2eeacb4949d3b3428bccfb67cb619eab34f21f56fd75100548eb70b3c3f9718f",
+      "url": "https://labs.scale.com/leaderboard/sweatlas-tw"
+    },
+    "0_input/feed/seal/tool_use_enterprise.html": {
+      "byte_size": 173834,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "303e8b5e5b489c3f96f5e2f6313743d829e1aadc9f80f7a0fa63597f6179bdac",
+      "url": "https://labs.scale.com/leaderboard/tool_use_enterprise"
+    },
+    "0_input/feed/seal/tutorbench.html": {
+      "byte_size": 131838,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "56462e83a785729012f5b144d75d2cc9059dda5793e614e90a7c1978a8914594",
+      "url": "https://labs.scale.com/leaderboard/tutorbench"
+    },
+    "0_input/feed/seal/visual_language_understanding.html": {
+      "byte_size": 228562,
+      "fetched_at": "2026-09-29T20:18:20.627463+00:00",
+      "sha256": "9d02e096b8238e962f51f0a5111569e35ed1ab5b39ac4c812db63de8ffe5a60f",
+      "url": "https://labs.scale.com/leaderboard/visual_language_understanding"
+    },
+    "0_input/feed/seal/vtb.html": {
+      "byte_size": 112704,
+      "fetched_at": "2026-10-01T09:53:05.216989+00:00",
+      "sha256": "3d841d4cc2617cfa85807e665ebc06997e2a4924860477c4be8313e833a4e34c",
+      "url": "https://labs.scale.com/leaderboard/vtb"
+    }
+  },
+  "inputs_sha256": {
+    "0_input/feed/cybench_site/aliases.csv": "e1be60525c10056c6d9f5c32280b3ca53f01397554339a0e3d60603fe5f5af84",
+    "0_input/feed/epoch/aliases.csv": "0e0f5f9e286428fa22ff29a9ff72ff840d0e18bcca4964590d5a90fb092c67c6",
+    "0_input/feed/epoch_cyber/aliases.csv": "8a50339b2db89a07cc1ea7a7a5bb8e242ae06973f3378690961dad06b31c4594",
+    "0_input/feed/epoch_live/aliases.csv": "f253f2d0f3307819dd55b9e95b272e81881dbc8499ae4477547a3a2013eb6665",
+    "0_input/feed/gpai_runs/aliases.csv": "bfb9e1a53b16a09f93c357f0ff6e6bb88a2d89da66f07bcb34718b762efcd75f",
+    "0_input/feed/kaggle/aliases.csv": "390d06d870014f3826015c688c1d9bc33b355f0fbaed31d39d480ce4a93edf0d",
+    "0_input/feed/rand/aliases.csv": "4f341eebe565f13bf09755234ac72913e74804b0bbaad0ef17e596db2d1c00f0",
+    "0_input/feed/seal/aliases.csv": "bb58884d8963716a992ff2a6e2b36ac4a499ed2a9a28d62d3fde9fa6743a2a00",
+    "0_input/metadata/benchmark_release_dates.csv": "f937ab30fc9709e168b646d1b8b5d8be6d56fc8ff1af42777bf67d78e1795bb9",
+    "0_input/metadata/benchmarks.csv": "482887a8097e15aef6e8f4b431d693d5cda55f0dfa4870d77f37bcb3488a03b8",
+    "0_input/metadata/human_baselines.csv": "c9a9aee30757ef3f1ce7f199cbb7a31917c9160b0bf248ae2909703fc14e320c",
+    "0_input/metadata/organizations.csv": "da584c605aeabfa17a11a2a32f396f2ac86a1a92c5ef4e5d8f1a3f71d11695d5",
+    "0_input/metadata/release_dates.csv": "8597567782873c20d261f09e0200dfd46afde71a7bf95caf5cabf262964b9c4e",
+    "0_input/metadata/score_corrections.csv": "1b26d1210c06316b7a88922d677db62b241f10243e7792167e5ea3a32e092f0d",
+    "0_input/metadata/score_drop_rules.csv": "84205f6316431f6d354d6fd482fb7da33d9f463ac54f57bec609b1cf5f4aca50",
+    "0_input/metadata/score_variant_fixes.csv": "fdc2cc57dbe4fbb77bd1a8ac9d5b46ed4ab23365f961cdd7e5c89d8d80417e4e",
+    "0_input/metadata/sibling_merges.csv": "fd85935b300c00a9eae14b6300e9ad0a48d4c25dfc3021a219c4dc2ad4af5bb6"
+  },
+  "rows": {
+    "models.csv": 950,
+    "benchmarks.csv": 98,
+    "scores.csv": 5282,
+    "human_baselines.csv": 56,
+    "model_names.csv": 1782,
+    "excluded_benchmarks.csv": 43
+  }
+}
