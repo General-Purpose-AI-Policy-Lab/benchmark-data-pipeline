@@ -21,13 +21,17 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "missing_imputation": {
       "GPQA Diamond Biology": {
-        "theta": -0.6274,
         "n_missing_calls": 4,
         "n_missing_items": 1,
+        "methods": {
+          "rasch": 4
+        },
         "mean_credit_missing": 0.9393,
+        "theta_all": -0.6274,
+        "theta_long_answers": null,
         "accuracy_answered": 0.6528,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -46,10 +50,14 @@
         ]
       },
       "GPQA Main Biology": {
-        "theta": 0.3114,
         "n_missing_calls": 4,
         "n_missing_items": 1,
+        "methods": {
+          "rasch": 4
+        },
         "mean_credit_missing": 0.9715,
+        "theta_all": 0.3114,
+        "theta_long_answers": null,
         "accuracy_answered": 0.8052,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -104,14 +112,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
+    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "17817d4ed8624a336e869fc60ea381a4d5acb84524c3b94423b45941bf543062",
-    "transcripts.zip": "900043d15a94516a04c0d45cad28a667fcbd91aec44caca4a2dc593ac36fd013"
+    "samples.csv": "46c257d77589879649655b44aa97974f4e640bc477e82420f7e6989afacbacb9",
+    "transcripts.zip": "4ffe1fa1ce47eab7dbd1d710bbf28f66ab473f4199804470ae21cacc4e99ac16"
   },
   "results": {
     "GPQA Diamond Biology": {

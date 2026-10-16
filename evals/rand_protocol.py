@@ -393,16 +393,43 @@ def _sigmoid(x: float) -> float:
     return 1 / (1 + math.exp(-x))
 
 
+def _fit_theta(logits: list[float], ys: list) -> float:
+    """The logit shift theta making the mean of sigmoid(logit_i + theta) equal the accuracy."""
+    acc = sum(ys) / len(ys)
+    acc = min(max(acc, 0.5 / len(ys)), 1 - 0.5 / len(ys))
+    lo, hi = -15.0, 15.0
+    for _ in range(100):  # the mean is increasing in theta: bisection
+        theta = (lo + hi) / 2
+        if sum(_sigmoid(x + theta) for x in logits) / len(logits) < acc:
+            lo = theta
+        else:
+            hi = theta
+    return theta
+
+
+MIN_LONG_ANSWERS = 10
+
+
 def impute_missing(samples: list[dict], run_id: str) -> dict:
     """Fill `credit` for every sample: 0/1 for an answer, an expected score for a missing call
-    (a refusal or an answer cut at max_tokens).
+    (a refusal or an answer cut at max_tokens), and `imputation` naming how it was set.
 
-    Item difficulty comes from every other published run on the benchmark (their answered
-    calls, smoothed (k + 0.5) / (n + 1)); the model's level is the logit shift theta that makes
-    the mean of sigmoid(logit(d_i) + theta) over its answered calls equal its accuracy on them
-    (a Rasch model with fixed item difficulties); a missing call on item i gets
-    sigmoid(logit(d_i) + theta). Questions no other run answered take the benchmark's mean
-    difficulty. Returns, per benchmark with missing calls, theta and the runs used."""
+    - `own`: the run finished the same question in other epochs; the credit is its mean
+      score there.
+    - Otherwise a Rasch model with fixed item difficulties: the difficulty of item i comes from
+      every other published run (their answered calls, smoothed (k + 0.5) / (n + 1); questions
+      no other run answered take the benchmark's mean), the model's level is the logit shift
+      theta that makes the mean of sigmoid(logit(d_i) + theta) match its accuracy, and the call
+      gets sigmoid(logit(d_i) + theta).
+      - `rasch_long` for a cut answer: theta is fitted on the run's answers to this benchmark
+        that finished with more than half the cut call's max_tokens, comparable in length (a
+        model finishes its easy questions and runs out on its hard ones, so theta fitted on all
+        its answers overrates it on the cut ones; all answers if fewer than MIN_LONG_ANSWERS).
+      - `rasch` for a refusal: theta fitted on all the run's answers to the benchmark (a
+        refusal follows the question's topic, not its difficulty for the model).
+    Simulated cuts on the 2026-10 runs (answers longer than 2,000 / 4,000 / 8,000 tokens hidden,
+    then predicted): `rasch_long` errs by +0.012 / +0.018 / +0.004 on average, `rasch` by
+    +0.032 / +0.036 / +0.031, scoring them wrong by -0.7. Returns per-benchmark details."""
     refs = defaultdict(list)
     used = defaultdict(set)
     benches = {s["subset"] for s in samples}
@@ -418,34 +445,53 @@ def impute_missing(samples: list[dict], run_id: str) -> dict:
     out = {}
     for s in samples:
         s["credit"] = float(s["correct"])
+        s["imputation"] = None
     for bench in sorted(benches):
         rows = [s for s in samples if s["subset"] == bench]
-        refused = [s for s in rows if s["stop_reason"] in MISSING]
-        if not refused:
+        missing = [s for s in rows if s["stop_reason"] in MISSING]
+        if not missing:
             continue
-        diff = {k[1]: (sum(v) + 0.5) / (len(v) + 1) for k, v in refs.items() if k[0] == bench}
-        if not diff:
-            raise SystemExit(f"{bench}: missing calls but no other run to take difficulty from")
-        mean_d = sum(diff.values()) / len(diff)
         answered = [s for s in rows if s["stop_reason"] not in MISSING]
-        acc = sum(s["correct"] for s in answered) / len(answered)
-        acc = min(max(acc, 0.5 / len(answered)), 1 - 0.5 / len(answered))
-        logits = [_logit(diff.get(s["record_id"], mean_d)) for s in answered]
-        lo, hi = -15.0, 15.0
-        for _ in range(100):  # the mean is increasing in theta: bisection
-            theta = (lo + hi) / 2
-            if sum(_sigmoid(x + theta) for x in logits) / len(logits) < acc:
-                lo = theta
+        own = defaultdict(list)
+        for s in answered:
+            own[s["record_id"]].append(int(s["correct"]))
+        diff = {k[1]: (sum(v) + 0.5) / (len(v) + 1) for k, v in refs.items() if k[0] == bench}
+        mean_d = sum(diff.values()) / len(diff) if diff else None
+        def logit_d(s, diff=diff, mean_d=mean_d):
+            return _logit(diff.get(s["record_id"], mean_d))
+        theta_all, theta_long = None, {}  # theta_long per max_tokens budget
+        for s in missing:
+            if own[s["record_id"]]:
+                v = own[s["record_id"]]
+                s["credit"], s["imputation"] = round(sum(v) / len(v), 6), "own"
+                continue
+            if mean_d is None:
+                raise SystemExit(f"{bench}: a missing call with no own answer and no other run "
+                                 "to take item difficulty from")
+            if s["stop_reason"] == "max_tokens":
+                budget = int(s.get("max_tokens") or MAX_TOKENS)
+                if budget not in theta_long:
+                    long = [a for a in answered if int(a["output_tokens"]) > budget / 2]
+                    pool = long if len(long) >= MIN_LONG_ANSWERS else answered
+                    theta_long[budget] = (
+                        _fit_theta([logit_d(a) for a in pool], [int(a["correct"]) for a in pool]),
+                        "rasch_long" if pool is long else "rasch")
+                theta, s["imputation"] = theta_long[budget]
             else:
-                hi = theta
-        for s in refused:
-            s["credit"] = round(_sigmoid(_logit(diff.get(s["record_id"], mean_d)) + theta), 6)
-        out[bench] = dict(theta=round(theta, 4), n_missing_calls=len(refused),
-                          n_missing_items=len({s["record_id"] for s in refused}),
-                          mean_credit_missing=round(
-                              sum(s["credit"] for s in refused) / len(refused), 4),
-                          accuracy_answered=round(acc, 4),
-                          reference_runs=sorted(used[bench]))
+                if theta_all is None:
+                    theta_all = _fit_theta([logit_d(a) for a in answered],
+                                           [int(a["correct"]) for a in answered])
+                theta, s["imputation"] = theta_all, "rasch"
+            s["credit"] = round(_sigmoid(logit_d(s) + theta), 6)
+        out[bench] = dict(
+            n_missing_calls=len(missing),
+            n_missing_items=len({s["record_id"] for s in missing}),
+            methods=dict(Counter(s["imputation"] for s in missing)),
+            mean_credit_missing=round(sum(s["credit"] for s in missing) / len(missing), 4),
+            theta_all=None if theta_all is None else round(theta_all, 4),
+            theta_long_answers={b: round(t, 4) for b, (t, _) in theta_long.items()} or None,
+            accuracy_answered=round(sum(int(a["correct"]) for a in answered) / len(answered), 4),
+            reference_runs=sorted(used[bench]))
     return out
 
 
@@ -481,7 +527,7 @@ def summarize(samples: list[dict]) -> dict:
 
 
 SAMPLE_COLS = ["subset", "record_id", "epoch", "target", "answer", "correct", "answer_strict",
-               "correct_strict", "credit", "stop_reason",
+               "correct_strict", "credit", "imputation", "stop_reason",
                "refusal_category", "input_tokens", "output_tokens", "visible_reasoning",
                "completion_chars", "completion_sha256", "model", "message_id", "request_id",
                "started", "max_tokens"]
@@ -553,7 +599,8 @@ def package(args) -> None:
             "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
             "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
             "scoring": "unparseable answers incorrect; a refused call earns the credit the "
-                       "model is expected to earn on that question (impute_missing: Rasch "
+                       "model is expected to earn on that question (impute_missing: its own "
+                       "score on the question in other epochs, else a Rasch "
                        "model, item difficulties from the other published runs); score = mean "
                        "credit over questions and epochs; stderr = sd of per-question means / "
                        "sqrt(n_items), imputation uncertainty not included. RAND's refusal = "

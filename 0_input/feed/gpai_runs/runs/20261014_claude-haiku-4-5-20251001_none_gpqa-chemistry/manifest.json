@@ -24,7 +24,7 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "missing_imputation": {},
     "truncated_calls": [],
     "notes": {}
@@ -62,14 +62,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
+    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "1c18ec458f38581e9a1efbef4fab778302c8cd241a0e29d7ee49af6787a1da7d",
-    "transcripts.zip": "1fc66b763ff657a11d9b9eb312a6866140edc516946b11f6a1a1f1f89d248501"
+    "samples.csv": "30913e89bde0fee822bdf0a440989d267ebc66d41fa38c22d8496bb54fdd2937",
+    "transcripts.zip": "a2a388def46017f9968794d107222c42ad001ab71411892e05e9de11fc4dc012"
   },
   "results": {
     "GPQA Diamond Chemistry": {

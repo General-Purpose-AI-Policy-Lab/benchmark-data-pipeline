@@ -28,13 +28,17 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "missing_imputation": {
       "GPQA Diamond Biology": {
-        "theta": -0.9034,
         "n_missing_calls": 1,
         "n_missing_items": 1,
+        "methods": {
+          "rasch": 1
+        },
         "mean_credit_missing": 0.9216,
+        "theta_all": -0.9034,
+        "theta_long_answers": null,
         "accuracy_answered": 0.6111,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -53,10 +57,16 @@
         ]
       },
       "GPQA Diamond Chemistry": {
-        "theta": -0.4199,
         "n_missing_calls": 6,
         "n_missing_items": 6,
+        "methods": {
+          "rasch": 6
+        },
         "mean_credit_missing": 0.4073,
+        "theta_all": null,
+        "theta_long_answers": {
+          "16000": -0.4199
+        },
         "accuracy_answered": 0.7241,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -76,10 +86,14 @@
         ]
       },
       "GPQA Main Biology": {
-        "theta": -0.3363,
         "n_missing_calls": 1,
         "n_missing_items": 1,
+        "methods": {
+          "rasch": 1
+        },
         "mean_credit_missing": 0.947,
+        "theta_all": -0.3363,
+        "theta_long_answers": null,
         "accuracy_answered": 0.7532,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -98,10 +112,16 @@
         ]
       },
       "GPQA Main Chemistry": {
-        "theta": -0.6572,
         "n_missing_calls": 11,
         "n_missing_items": 11,
+        "methods": {
+          "rasch": 11
+        },
         "mean_credit_missing": 0.4449,
+        "theta_all": -0.6572,
+        "theta_long_answers": {
+          "16000": -0.6572
+        },
         "accuracy_answered": 0.6686,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -270,14 +290,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
+    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "47d95e44fe05d4e19b51e07a0868e6c65bc7ba114a9e2424390ed171aec28703",
-    "transcripts.zip": "18ca25eb1da1e4b49e06e11c260b425db934470f1f9ad4817719fb2ee3054345"
+    "samples.csv": "56f79ec37ff3d9e65c22dbc849b5d658ece669f0eb7e03eb3965c55e8787e40d",
+    "transcripts.zip": "8bb3b169b8600d243e8cbc443a33d206c36293782754cbe539943ed3d2d37ffa"
   },
   "results": {
     "GPQA Diamond Biology": {

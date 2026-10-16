@@ -24,13 +24,18 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "missing_imputation": {
       "GPQA Diamond Biology": {
-        "theta": 0.2114,
         "n_missing_calls": 5,
         "n_missing_items": 2,
-        "mean_credit_missing": 0.9764,
+        "methods": {
+          "rasch": 4,
+          "own": 1
+        },
+        "mean_credit_missing": 0.9783,
+        "theta_all": 0.2114,
+        "theta_long_answers": null,
         "accuracy_answered": 0.7465,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -49,10 +54,15 @@
         ]
       },
       "GPQA Main Biology": {
-        "theta": -0.3248,
         "n_missing_calls": 5,
         "n_missing_items": 2,
-        "mean_credit_missing": 0.9548,
+        "methods": {
+          "rasch": 4,
+          "own": 1
+        },
+        "mean_credit_missing": 0.958,
+        "theta_all": -0.3248,
+        "theta_long_answers": null,
         "accuracy_answered": 0.7557,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -107,25 +117,25 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
+    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "1c4eab4099c2f77d9c1aaef74ef4064d9added6e69ed3bf33ca9b6b0aef2d310",
-    "transcripts.zip": "103e2f29d8f009d5a3c0b76e8fa93734fc992f9a2afdb180e3ac1b0d924d57e4"
+    "samples.csv": "fe425e9d37ca70912c55bd7368a2fd674486e46b2e7f1d27a33a6fead5c0993a",
+    "transcripts.zip": "fe051e892c23167af19dcaa54dbc34e63292fbc4103de772b0188f4edfd54196"
   },
   "results": {
     "GPQA Diamond Biology": {
-      "score": 0.761605,
-      "stderr": 0.084135,
+      "score": 0.761729,
+      "stderr": 0.084155,
       "n_items": 19,
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.735413,
         "1": 0.788044,
-        "2": 0.787548,
+        "2": 0.788044,
         "3": 0.735413
       },
       "score_refusals_wrong": 0.697368,
@@ -143,14 +153,14 @@
       "visible_reasoning_share": 0.237
     },
     "GPQA Main Biology": {
-      "score": 0.758892,
-      "stderr": 0.039044,
+      "score": 0.758943,
+      "stderr": 0.039048,
       "n_items": 78,
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.794199,
         "1": 0.755738,
-        "2": 0.70425,
+        "2": 0.704456,
         "3": 0.781379
       },
       "score_refusals_wrong": 0.74359,

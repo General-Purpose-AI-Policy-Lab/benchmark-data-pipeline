@@ -24,13 +24,17 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
     "missing_imputation": {
       "GPQA Diamond Chemistry": {
-        "theta": 1.0119,
         "n_missing_calls": 2,
         "n_missing_items": 1,
-        "mean_credit_missing": 0.5587,
+        "methods": {
+          "own": 2
+        },
+        "mean_credit_missing": 0.0,
+        "theta_all": null,
+        "theta_long_answers": null,
         "accuracy_answered": 0.8622,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -50,10 +54,15 @@
         ]
       },
       "GPQA Main Chemistry": {
-        "theta": 1.2104,
         "n_missing_calls": 6,
         "n_missing_items": 2,
-        "mean_credit_missing": 0.867,
+        "methods": {
+          "rasch": 4,
+          "own": 2
+        },
+        "mean_credit_missing": 0.9854,
+        "theta_all": 1.2104,
+        "theta_long_answers": null,
         "accuracy_answered": 0.8609,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -134,26 +143,26 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
+    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "8516f059c48d2a83a9b8e42da6cf7b1d3d874615274c0f50692ffdce284117fd",
-    "transcripts.zip": "48f7f7b57c8d5b278bdcd58ac3eb616c8c30bbb05304ba6beb6b423880391cc5"
+    "samples.csv": "2da5f12004c5cf1678ef77d2937db1ecb3594c0666e57c5c0b42224cea292060",
+    "transcripts.zip": "dc98866780d8622b240763a6df4d0720edde5e97c066d2c34b2eed4927faa498"
   },
   "results": {
     "GPQA Diamond Chemistry": {
-      "score": 0.860531,
-      "stderr": 0.032921,
+      "score": 0.857527,
+      "stderr": 0.033627,
       "n_items": 93,
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.83871,
-        "1": 0.844718,
+        "1": 0.83871,
         "2": 0.860215,
-        "3": 0.898481
+        "3": 0.892473
       },
       "score_refusals_wrong": 0.857527,
       "stop_reasons": {
@@ -170,14 +179,14 @@
       "visible_reasoning_share": 0.884
     },
     "GPQA Main Chemistry": {
-      "score": 0.860931,
-      "stderr": 0.022379,
+      "score": 0.861902,
+      "stderr": 0.022391,
       "n_items": 183,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.866791,
+        "0": 0.868733,
         "1": 0.852339,
-        "2": 0.87772,
+        "2": 0.879662,
         "3": 0.846875
       },
       "score_refusals_wrong": 0.853825,
