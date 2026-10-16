@@ -31,8 +31,7 @@
           "rasch": 16
         },
         "mean_credit_missing": 0.7106,
-        "theta_all": 0.679,
-        "theta_long_answers": null,
+        "theta": 0.679,
         "accuracy_answered": 0.8176,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_mmlu",
@@ -46,13 +45,13 @@
           "own": 1
         },
         "mean_credit_missing": 1.0,
-        "theta_all": null,
-        "theta_long_answers": null,
+        "theta": null,
         "accuracy_answered": 0.8765,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_mmlu",
           "20261015_claude-haiku-5-5_low_rand-family",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -140,14 +139,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "7bbbdc6c3a8629a35c8de45cb281346ad54669525fe34defe13905224a25f32d",
-    "transcripts.zip": "f7e1f4aad9b031527d5f049a8170d1207c7f285c6b1e1a5acc16194f756f984e"
+    "transcripts.zip": "63c6d51efd9191166824c747d58d771fb2d810f3cd9f964520332dda7f9c752c"
   },
   "results": {
     "MMLU Biology": {

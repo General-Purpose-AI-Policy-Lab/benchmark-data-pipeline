@@ -31,8 +31,7 @@
           "rasch": 8
         },
         "mean_credit_missing": 0.6093,
-        "theta_all": 0.7843,
-        "theta_long_answers": null,
+        "theta": 0.7843,
         "accuracy_answered": 0.8235,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_mmlu",
@@ -109,14 +108,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "eb4d540fa3ca888a560f8d0d49d08d8d3487e7863610eec9f80a9a1eb9e320f2",
-    "transcripts.zip": "66883afafc961af951138bd84700ca2ffc87741f751c090c43a9cb2abd1066e5"
+    "transcripts.zip": "ee7b2f119368439357ee871b0bf15730578098bf213f4b6e871170fc2489a364"
   },
   "results": {
     "MMLU Biology": {

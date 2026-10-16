@@ -62,11 +62,11 @@ def test_samples_carry_no_item_text(run_id):
 @pytest.mark.parametrize("run_id", RUN_IDS)
 def test_missing_calls_say_how_they_were_imputed(run_id):
     """A missing call is imputed from the run's own finished epochs of the question when there
-    are some (`own`, their mean score), else by the Rasch model (`rasch`, `rasch_long`)."""
+    are some (`own`, their mean score), else by the Rasch model (`rasch`)."""
     samples = pandas.read_csv(FEED / "runs" / run_id / "samples.csv")
     missing = samples["stop_reason"].isin(["refusal", "max_tokens"])
     assert samples.loc[~missing, "imputation"].isna().all()
-    assert samples.loc[missing, "imputation"].isin(["own", "rasch", "rasch_long"]).all()
+    assert samples.loc[missing, "imputation"].isin(["own", "rasch"]).all()
     answered = samples[~missing]
     own_mean = answered.groupby(["subset", "record_id"])["correct"].mean()
     for row in samples[missing & (samples["imputation"] == "own")].itertuples():

@@ -57,14 +57,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "749638cf696c4bf0bf68d62f63dab16b671ec88614e449d5e96c2277cfc7db19",
-    "transcripts.zip": "89d562d0d428eec7a84a91f62f8d228fa3315ea7566420dd18cf0e39af2ca81a"
+    "transcripts.zip": "e152a816d0f8ff7c2823f4cf24018fcf76d2e871f83b788c8f7c386accf4f271"
   },
   "results": {
     "WMDP Biology": {

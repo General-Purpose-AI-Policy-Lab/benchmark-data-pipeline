@@ -71,19 +71,17 @@ expected to earn on that question (`impute_missing`; the `credit` and `imputatio
 `samples.csv`):
 
 - `own`: when the run finished the same question in other epochs, its mean score there;
-- `rasch_long`, for an answer cut at `max_tokens` on a question the run never finished: a Rasch
-  model with fixed item difficulties (taken from every other published run on the benchmark)
-  whose model level is fitted on the run's finished answers longer than half the budget. A
-  model finishes its easy questions and runs out on its hard ones, so a level fitted on all its
-  answers overrates it there. Hiding the answers longer than 2,000, 4,000 or 8,000 tokens of the
-  2026-10 runs and predicting them, this errs by +0.01 to +0.02 on average (the level fitted on
-  all answers: +0.03 to +0.04; accuracy against answer length alone: -0.05 to +0.05 and twice
-  as noisy per cell; scoring them wrong: -0.7). On the 25 cut answers read by hand, a forced
-  answer would have scored about 0.30 and the answers obtained with a 32,000-token budget scored
-  0.40: the imputation targets the latter, the capability, since the cut is the budget's;
-- `rasch`, for a refusal on a question the run never answered: the same model with the level
-  fitted on all the run's answers, a refusal following the question's topic, not its
-  difficulty for the model.
+- `rasch` otherwise: a Rasch model with fixed item difficulties, taken from every other
+  published run on the benchmark, and the model's level fitted on the run's answers to it.
+
+Checked on the cut calls later run again with a larger budget (16,000 to 32,000 tokens for
+Sonnet and Opus, 32,000 to 64,000 for Haiku 5.5 at max effort; 165 finished): the imputation
+stays within a few points of the scores measured, where scoring the cut calls wrong is off by
+0.4 to 0.8. A forced answer would score less (about 0.30 on the 25 cut answers read by hand,
+against 0.40 measured with more budget): the imputation targets the capability, since the cut
+is the budget's. A variant fitting the level on the long answers only did better on cuts
+simulated at 2,000-4,000 tokens but worse at 8,000 and above, where real cuts happen, and was
+dropped (2026-10-16).
 
 The manifest keeps
 RAND's score (`score_refusals_wrong`, missing = wrong), the refusal and cut shares, the fitted

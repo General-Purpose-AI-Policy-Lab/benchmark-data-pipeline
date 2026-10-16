@@ -38,8 +38,7 @@
           "own": 2
         },
         "mean_credit_missing": 0.0,
-        "theta_all": null,
-        "theta_long_answers": null,
+        "theta": null,
         "accuracy_answered": 0.6726,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -55,7 +54,8 @@
           "20261015_claude-fable-5-1_medium_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -108,14 +108,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "84fa8763056dfdbdad0e21773e6433727ad83d960deaf89605139e850cb35c0b",
-    "transcripts.zip": "51afcdae7ab8f7203ae7f3ed9943d9613a96015b9293e50673c2af663e923678"
+    "transcripts.zip": "d41dce13a7cdc461d505d6ecd3d0990d8c1a65b6e1bece6227189e6648a7d9c5"
   },
   "results": {
     "GPQA Diamond Chemistry": {

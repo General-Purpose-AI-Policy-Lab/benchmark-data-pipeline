@@ -36,9 +36,8 @@
         "methods": {
           "rasch": 1
         },
-        "mean_credit_missing": 0.9216,
-        "theta_all": -0.9034,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.9413,
+        "theta": -0.8368,
         "accuracy_answered": 0.6111,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -53,7 +52,8 @@
           "20261014_claude-sonnet-5_none_gpqa-biology",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "GPQA Diamond Chemistry": {
@@ -62,11 +62,8 @@
         "methods": {
           "rasch": 6
         },
-        "mean_credit_missing": 0.4073,
-        "theta_all": null,
-        "theta_long_answers": {
-          "16000": -0.4199
-        },
+        "mean_credit_missing": 0.4057,
+        "theta": -0.38,
         "accuracy_answered": 0.7241,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -82,7 +79,8 @@
           "20261015_claude-fable-5-1_medium_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "GPQA Main Biology": {
@@ -91,9 +89,8 @@
         "methods": {
           "rasch": 1
         },
-        "mean_credit_missing": 0.947,
-        "theta_all": -0.3363,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.9632,
+        "theta": -0.2315,
         "accuracy_answered": 0.7532,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -108,7 +105,8 @@
           "20261014_claude-sonnet-5_none_gpqa-biology",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "GPQA Main Chemistry": {
@@ -117,11 +115,8 @@
         "methods": {
           "rasch": 11
         },
-        "mean_credit_missing": 0.4449,
-        "theta_all": -0.6572,
-        "theta_long_answers": {
-          "16000": -0.6572
-        },
+        "mean_credit_missing": 0.4574,
+        "theta": -0.5967,
         "accuracy_answered": 0.6686,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -137,7 +132,8 @@
           "20261015_claude-fable-5-1_medium_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -290,23 +286,23 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "56f79ec37ff3d9e65c22dbc849b5d658ece669f0eb7e03eb3965c55e8787e40d",
-    "transcripts.zip": "8bb3b169b8600d243e8cbc443a33d206c36293782754cbe539943ed3d2d37ffa"
+    "samples.csv": "8f065ca7226c80e6476042185edb8bc028e697afc615f0b9c63070522e6ff9d2",
+    "transcripts.zip": "cf4d962dded8b50093dc26573b790ccb7eb2e8d5290124b219ae694fc0e88886"
   },
   "results": {
     "GPQA Diamond Biology": {
-      "score": 0.627451,
-      "stderr": 0.113027,
+      "score": 0.628488,
+      "stderr": 0.113182,
       "n_items": 19,
       "n_epochs": 1,
       "score_by_epoch": {
-        "0": 0.627451
+        "0": 0.628488
       },
       "score_refusals_wrong": 0.578947,
       "stop_reasons": {
@@ -323,12 +319,12 @@
       "visible_reasoning_share": 0.263
     },
     "GPQA Diamond Chemistry": {
-      "score": 0.703699,
-      "stderr": 0.046248,
+      "score": 0.703595,
+      "stderr": 0.046242,
       "n_items": 93,
       "n_epochs": 1,
       "score_by_epoch": {
-        "0": 0.703699
+        "0": 0.703595
       },
       "score_refusals_wrong": 0.677419,
       "stop_reasons": {
@@ -345,12 +341,12 @@
       "visible_reasoning_share": 0.731
     },
     "GPQA Main Biology": {
-      "score": 0.75573,
-      "stderr": 0.048878,
+      "score": 0.755939,
+      "stderr": 0.048889,
       "n_items": 78,
       "n_epochs": 1,
       "score_by_epoch": {
-        "0": 0.75573
+        "0": 0.755939
       },
       "score_refusals_wrong": 0.74359,
       "stop_reasons": {
@@ -367,12 +363,12 @@
       "visible_reasoning_share": 0.141
     },
     "GPQA Main Chemistry": {
-      "score": 0.65516,
-      "stderr": 0.034247,
+      "score": 0.655909,
+      "stderr": 0.034232,
       "n_items": 183,
       "n_epochs": 1,
       "score_by_epoch": {
-        "0": 0.65516
+        "0": 0.655909
       },
       "score_refusals_wrong": 0.628415,
       "stop_reasons": {

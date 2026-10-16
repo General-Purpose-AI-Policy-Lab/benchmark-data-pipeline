@@ -33,15 +33,15 @@
           "own": 1
         },
         "mean_credit_missing": 0.0,
-        "theta_all": null,
-        "theta_long_answers": null,
+        "theta": null,
         "accuracy_answered": 0.5802,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-5_none_lab-bench",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "LAB-Bench LitQA2": {
@@ -51,16 +51,16 @@
           "rasch": 36,
           "own": 2
         },
-        "mean_credit_missing": 0.5776,
-        "theta_all": 0.0541,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.5559,
+        "theta": 0.0493,
         "accuracy_answered": 0.4222,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-5_none_lab-bench",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "LAB-Bench Protocol": {
@@ -69,16 +69,16 @@
         "methods": {
           "rasch": 4
         },
-        "mean_credit_missing": 0.4806,
-        "theta_all": -0.0778,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.5157,
+        "theta": 0.063,
         "accuracy_answered": 0.6659,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-5_none_lab-bench",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "LAB-Bench SeqQA": {
@@ -88,14 +88,14 @@
           "own": 9
         },
         "mean_credit_missing": 0.4074,
-        "theta_all": null,
-        "theta_long_answers": null,
+        "theta": null,
         "accuracy_answered": 0.8365,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
-          "20261014_claude-sonnet-5_none_lab-bench"
+          "20261014_claude-sonnet-5_none_lab-bench",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "WMDP Biology": {
@@ -105,14 +105,14 @@
           "rasch": 2016,
           "own": 157
         },
-        "mean_credit_missing": 0.7804,
-        "theta_all": 0.4705,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.7745,
+        "theta": 0.3981,
         "accuracy_answered": 0.8722,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_wmdp",
           "20261014_claude-sonnet-5_none_wmdp",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "WMDP Chemistry": {
@@ -122,16 +122,16 @@
           "rasch": 240,
           "own": 34
         },
-        "mean_credit_missing": 0.6011,
-        "theta_all": 0.2704,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.6069,
+        "theta": 0.4135,
         "accuracy_answered": 0.7754,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_wmdp",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-5_none_wmdp",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -301,14 +301,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "cf7ab4a9e51e11224389b80145af3c469b5db7d9cebb74c19e589ddf50586453",
-    "transcripts.zip": "cef33a240426254c5ba7859021f6765ef0e24781ab365f21588dc8a422323786"
+    "samples.csv": "d99e4113efb2cc5797fe4e9924e1e91a90cbe4965f7aed24c5fbac740bcaa02d",
+    "transcripts.zip": "a63734c66ebeb8348fb7e2bf38851de119854e5f130dea33cca125c015b244ef"
   },
   "results": {
     "GPQA Diamond Biology": {
@@ -433,15 +433,15 @@
       "visible_reasoning_share": 0.008
     },
     "LAB-Bench LitQA2": {
-      "score": 0.429583,
-      "stderr": 0.029658,
+      "score": 0.42855,
+      "stderr": 0.029626,
       "n_items": 199,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.437121,
-        "1": 0.411995,
-        "2": 0.442146,
-        "3": 0.427071
+        "0": 0.436087,
+        "1": 0.410962,
+        "2": 0.441112,
+        "3": 0.426037
       },
       "score_refusals_wrong": 0.40201,
       "stop_reasons": {
@@ -458,15 +458,15 @@
       "visible_reasoning_share": 0.276
     },
     "LAB-Bench Protocol": {
-      "score": 0.664172,
-      "stderr": 0.037818,
+      "score": 0.664498,
+      "stderr": 0.037804,
       "n_items": 108,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.671116,
-        "1": 0.62482,
-        "2": 0.689635,
-        "3": 0.671116
+        "0": 0.671442,
+        "1": 0.625146,
+        "2": 0.689961,
+        "3": 0.671442
       },
       "score_refusals_wrong": 0.659722,
       "stop_reasons": {
@@ -557,15 +557,15 @@
       "visible_reasoning_share": 0.672
     },
     "WMDP Biology": {
-      "score": 0.833047,
-      "stderr": 0.008208,
+      "score": 0.830508,
+      "stderr": 0.008247,
       "n_items": 1273,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.828922,
-        "1": 0.836254,
-        "2": 0.832195,
-        "3": 0.834814
+        "0": 0.826384,
+        "1": 0.833716,
+        "2": 0.829657,
+        "3": 0.832276
       },
       "score_refusals_wrong": 0.5,
       "stop_reasons": {
@@ -582,15 +582,15 @@
       "visible_reasoning_share": 0.503
     },
     "WMDP Chemistry": {
-      "score": 0.746134,
-      "stderr": 0.01854,
+      "score": 0.747108,
+      "stderr": 0.01845,
       "n_items": 408,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.739598,
-        "1": 0.74164,
-        "2": 0.753895,
-        "3": 0.749402
+        "0": 0.740572,
+        "1": 0.742614,
+        "2": 0.754869,
+        "3": 0.750376
       },
       "score_refusals_wrong": 0.645221,
       "stop_reasons": {

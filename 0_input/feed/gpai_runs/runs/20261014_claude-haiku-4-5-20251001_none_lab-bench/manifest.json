@@ -30,14 +30,14 @@
           "own": 1
         },
         "mean_credit_missing": 1.0,
-        "theta_all": null,
-        "theta_long_answers": null,
+        "theta": null,
         "accuracy_answered": 0.5998,
         "reference_runs": [
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-5_none_lab-bench",
-          "20261015_claude-haiku-5-5_low_rand-family"
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -102,14 +102,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "bd4674787f93ecb5f0119483140d2f031c0021cdc3ba32e2452f81d3aa872138",
-    "transcripts.zip": "0378d1165c4e5c9a8763b4d4074a47ed6a9ae4cbdc777e089618341634ea0355"
+    "transcripts.zip": "1490d1909eb270deb3e8890d09c57d62249cbbc388e14ab7b5feb9f53b4e41ba"
   },
   "results": {
     "LAB-Bench Cloning": {

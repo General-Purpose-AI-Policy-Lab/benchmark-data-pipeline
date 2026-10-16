@@ -407,29 +407,23 @@ def _fit_theta(logits: list[float], ys: list) -> float:
     return theta
 
 
-MIN_LONG_ANSWERS = 10
-
-
 def impute_missing(samples: list[dict], run_id: str) -> dict:
     """Fill `credit` for every sample: 0/1 for an answer, an expected score for a missing call
     (a refusal or an answer cut at max_tokens), and `imputation` naming how it was set.
 
     - `own`: the run finished the same question in other epochs; the credit is its mean
       score there.
-    - Otherwise a Rasch model with fixed item difficulties: the difficulty of item i comes from
-      every other published run (their answered calls, smoothed (k + 0.5) / (n + 1); questions
-      no other run answered take the benchmark's mean), the model's level is the logit shift
-      theta that makes the mean of sigmoid(logit(d_i) + theta) match its accuracy, and the call
-      gets sigmoid(logit(d_i) + theta).
-      - `rasch_long` for a cut answer: theta is fitted on the run's answers to this benchmark
-        that finished with more than half the cut call's max_tokens, comparable in length (a
-        model finishes its easy questions and runs out on its hard ones, so theta fitted on all
-        its answers overrates it on the cut ones; all answers if fewer than MIN_LONG_ANSWERS).
-      - `rasch` for a refusal: theta fitted on all the run's answers to the benchmark (a
-        refusal follows the question's topic, not its difficulty for the model).
-    Simulated cuts on the 2026-10 runs (answers longer than 2,000 / 4,000 / 8,000 tokens hidden,
-    then predicted): `rasch_long` errs by +0.012 / +0.018 / +0.004 on average, `rasch` by
-    +0.032 / +0.036 / +0.031, scoring them wrong by -0.7. Returns per-benchmark details."""
+    - `rasch` otherwise: a Rasch model with fixed item difficulties. The difficulty of item i
+      comes from every other published run (their answered calls, smoothed (k + 0.5) / (n + 1);
+      questions no other run answered take the benchmark's mean), the model's level is the
+      logit shift theta that makes the mean of sigmoid(logit(d_i) + theta) over the run's
+      answers to the benchmark match their accuracy, and the call gets
+      sigmoid(logit(d_i) + theta).
+    Checked on the cut calls later run again with a larger budget (16,000 -> 32,000 and
+    32,000 -> 64,000 tokens; 165 finished): `own` and `rasch` both within a few points of the
+    scores measured. A level fitted on the long answers only, tried on 2026-10-16, did better
+    on cuts simulated at 2,000-4,000 tokens but worse at 8,000 tokens and above, where the real
+    cuts happen. Returns per-benchmark details."""
     refs = defaultdict(list)
     used = defaultdict(set)
     benches = {s["subset"] for s in samples}
@@ -457,9 +451,7 @@ def impute_missing(samples: list[dict], run_id: str) -> dict:
             own[s["record_id"]].append(int(s["correct"]))
         diff = {k[1]: (sum(v) + 0.5) / (len(v) + 1) for k, v in refs.items() if k[0] == bench}
         mean_d = sum(diff.values()) / len(diff) if diff else None
-        def logit_d(s, diff=diff, mean_d=mean_d):
-            return _logit(diff.get(s["record_id"], mean_d))
-        theta_all, theta_long = None, {}  # theta_long per max_tokens budget
+        theta = None
         for s in missing:
             if own[s["record_id"]]:
                 v = own[s["record_id"]]
@@ -468,28 +460,17 @@ def impute_missing(samples: list[dict], run_id: str) -> dict:
             if mean_d is None:
                 raise SystemExit(f"{bench}: a missing call with no own answer and no other run "
                                  "to take item difficulty from")
-            if s["stop_reason"] == "max_tokens":
-                budget = int(s.get("max_tokens") or MAX_TOKENS)
-                if budget not in theta_long:
-                    long = [a for a in answered if int(a["output_tokens"]) > budget / 2]
-                    pool = long if len(long) >= MIN_LONG_ANSWERS else answered
-                    theta_long[budget] = (
-                        _fit_theta([logit_d(a) for a in pool], [int(a["correct"]) for a in pool]),
-                        "rasch_long" if pool is long else "rasch")
-                theta, s["imputation"] = theta_long[budget]
-            else:
-                if theta_all is None:
-                    theta_all = _fit_theta([logit_d(a) for a in answered],
-                                           [int(a["correct"]) for a in answered])
-                theta, s["imputation"] = theta_all, "rasch"
-            s["credit"] = round(_sigmoid(logit_d(s) + theta), 6)
+            if theta is None:
+                theta = _fit_theta([_logit(diff.get(a["record_id"], mean_d)) for a in answered],
+                                   [int(a["correct"]) for a in answered])
+            s["credit"] = round(_sigmoid(_logit(diff.get(s["record_id"], mean_d)) + theta), 6)
+            s["imputation"] = "rasch"
         out[bench] = dict(
             n_missing_calls=len(missing),
             n_missing_items=len({s["record_id"] for s in missing}),
             methods=dict(Counter(s["imputation"] for s in missing)),
             mean_credit_missing=round(sum(s["credit"] for s in missing) / len(missing), 4),
-            theta_all=None if theta_all is None else round(theta_all, 4),
-            theta_long_answers={b: round(t, 4) for b, (t, _) in theta_long.items()} or None,
+            theta=None if theta is None else round(theta, 4),
             accuracy_answered=round(sum(int(a["correct"]) for a in answered) / len(answered), 4),
             reference_runs=sorted(used[bench]))
     return out

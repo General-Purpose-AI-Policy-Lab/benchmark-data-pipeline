@@ -33,8 +33,7 @@
           "own": 2
         },
         "mean_credit_missing": 0.0,
-        "theta_all": null,
-        "theta_long_answers": null,
+        "theta": null,
         "accuracy_answered": 0.8622,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -50,7 +49,8 @@
           "20261014_claude-sonnet-5_none_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "GPQA Main Chemistry": {
@@ -60,9 +60,8 @@
           "rasch": 4,
           "own": 2
         },
-        "mean_credit_missing": 0.9854,
-        "theta_all": 1.2104,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.9831,
+        "theta": 1.2329,
         "accuracy_answered": 0.8609,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -78,7 +77,8 @@
           "20261014_claude-sonnet-5_none_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -143,14 +143,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "2da5f12004c5cf1678ef77d2937db1ecb3594c0666e57c5c0b42224cea292060",
-    "transcripts.zip": "dc98866780d8622b240763a6df4d0720edde5e97c066d2c34b2eed4927faa498"
+    "samples.csv": "218dad9f6a33ea706533d3168b22ba2557cc909d1a944bb499d76ca16e5e4f89",
+    "transcripts.zip": "4933bee7a4841032ec44bc8e897fbe7e85ef740b259c2b37cc30c61d7ca173e2"
   },
   "results": {
     "GPQA Diamond Chemistry": {
@@ -179,15 +179,15 @@
       "visible_reasoning_share": 0.884
     },
     "GPQA Main Chemistry": {
-      "score": 0.861902,
-      "stderr": 0.022391,
+      "score": 0.861884,
+      "stderr": 0.02239,
       "n_items": 183,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.868733,
-        "1": 0.852339,
-        "2": 0.879662,
-        "3": 0.846875
+        "0": 0.868714,
+        "1": 0.852321,
+        "2": 0.879643,
+        "3": 0.846856
       },
       "score_refusals_wrong": 0.853825,
       "stop_reasons": {

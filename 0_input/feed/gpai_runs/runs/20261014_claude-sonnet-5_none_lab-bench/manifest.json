@@ -33,15 +33,15 @@
           "own": 2
         },
         "mean_credit_missing": 0.5,
-        "theta_all": null,
-        "theta_long_answers": null,
+        "theta": null,
         "accuracy_answered": 0.5,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "LAB-Bench LitQA2": {
@@ -51,16 +51,16 @@
           "rasch": 72,
           "own": 2
         },
-        "mean_credit_missing": 0.3001,
-        "theta_all": -0.2724,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.2898,
+        "theta": -0.2653,
         "accuracy_answered": 0.3975,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "LAB-Bench Protocol": {
@@ -69,16 +69,16 @@
         "methods": {
           "rasch": 4
         },
-        "mean_credit_missing": 0.5811,
-        "theta_all": 0.3272,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.6128,
+        "theta": 0.4591,
         "accuracy_answered": 0.7079,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
-          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "LAB-Bench SeqQA": {
@@ -88,15 +88,15 @@
           "rasch": 60,
           "own": 24
         },
-        "mean_credit_missing": 0.8486,
-        "theta_all": 0.0221,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.8524,
+        "theta": 0.0198,
         "accuracy_answered": 0.7094,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_lab-bench",
           "20261014_claude-opus-4-8_none_lab-bench-wmdp-chemistry",
           "20261014_claude-sonnet-4-6_none_lab-bench-wmdp-chemistry",
-          "20261015_claude-haiku-5-5_low_rand-family"
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -167,14 +167,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "f990a6fac567706a2df54ce340bac47d1b47a60d475d3a1eb09422989e962e2f",
-    "transcripts.zip": "e65760d704bcbf05230ef1aeaf779e31bba9d726fe338617182454dcc58c1f76"
+    "samples.csv": "435b7e1849f9cc7d1f280c65ea7b66c2834d6c0ab3e80747d1b17383beedf18a",
+    "transcripts.zip": "53aa346e06c88e8e6bbce17f0d3e8a8abcb3f3d8d7d2dd87c7faae3e6df94399"
   },
   "results": {
     "LAB-Bench Cloning": {
@@ -204,15 +204,15 @@
       "visible_reasoning_share": 0.674
     },
     "LAB-Bench LitQA2": {
-      "score": 0.388451,
-      "stderr": 0.027686,
+      "score": 0.387493,
+      "stderr": 0.027646,
       "n_items": 199,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.406039,
-        "1": 0.380913,
-        "2": 0.383426,
-        "3": 0.383426
+        "0": 0.405081,
+        "1": 0.379955,
+        "2": 0.382468,
+        "3": 0.382468
       },
       "score_refusals_wrong": 0.360553,
       "stop_reasons": {
@@ -229,15 +229,15 @@
       "visible_reasoning_share": 0.093
     },
     "LAB-Bench Protocol": {
-      "score": 0.706769,
-      "stderr": 0.039,
+      "score": 0.707063,
+      "stderr": 0.038992,
       "n_items": 108,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.75538,
-        "1": 0.681306,
-        "2": 0.709084,
-        "3": 0.681306
+        "0": 0.755674,
+        "1": 0.6816,
+        "2": 0.709378,
+        "3": 0.6816
       },
       "score_refusals_wrong": 0.701389,
       "stop_reasons": {
@@ -254,15 +254,15 @@
       "visible_reasoning_share": 0.021
     },
     "LAB-Bench SeqQA": {
-      "score": 0.714283,
-      "stderr": 0.014178,
+      "score": 0.714419,
+      "stderr": 0.01418,
       "n_items": 600,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.715255,
-        "1": 0.7047,
-        "2": 0.698589,
-        "3": 0.738589
+        "0": 0.715391,
+        "1": 0.704835,
+        "2": 0.698724,
+        "3": 0.738724
       },
       "score_refusals_wrong": 0.684583,
       "stop_reasons": {

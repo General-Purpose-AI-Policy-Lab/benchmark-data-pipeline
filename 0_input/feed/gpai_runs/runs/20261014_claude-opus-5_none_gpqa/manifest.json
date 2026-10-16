@@ -32,9 +32,8 @@
         "methods": {
           "rasch": 4
         },
-        "mean_credit_missing": 0.9827,
-        "theta_all": 0.671,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.9875,
+        "theta": 0.7595,
         "accuracy_answered": 0.7917,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -49,7 +48,8 @@
           "20261014_claude-sonnet-5_none_gpqa-biology",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "GPQA Diamond Chemistry": {
@@ -57,13 +57,10 @@
         "n_missing_items": 4,
         "methods": {
           "own": 3,
-          "rasch_long": 4
+          "rasch": 4
         },
-        "mean_credit_missing": 0.8819,
-        "theta_all": null,
-        "theta_long_answers": {
-          "16000": 4.0146
-        },
+        "mean_credit_missing": 0.5794,
+        "theta": 0.6706,
         "accuracy_answered": 0.8329,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -79,7 +76,8 @@
           "20261015_claude-fable-5-1_medium_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "GPQA Main Biology": {
@@ -88,9 +86,8 @@
         "methods": {
           "rasch": 4
         },
-        "mean_credit_missing": 0.9828,
-        "theta_all": 0.8265,
-        "theta_long_answers": null,
+        "mean_credit_missing": 0.9881,
+        "theta": 0.9227,
         "accuracy_answered": 0.8377,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-biology",
@@ -105,7 +102,8 @@
           "20261014_claude-sonnet-5_none_gpqa-biology",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       },
       "GPQA Main Chemistry": {
@@ -113,13 +111,10 @@
         "n_missing_items": 3,
         "methods": {
           "own": 4,
-          "rasch_long": 4
+          "rasch": 4
         },
-        "mean_credit_missing": 0.9221,
-        "theta_all": null,
-        "theta_long_answers": {
-          "16000": 1.7314
-        },
+        "mean_credit_missing": 0.8342,
+        "theta": 0.852,
         "accuracy_answered": 0.8301,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -135,7 +130,8 @@
           "20261015_claude-fable-5-1_medium_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
           "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
-          "20261015_claude-opus-5-5_medium_gpqa"
+          "20261015_claude-opus-5-5_medium_gpqa",
+          "20261016_claude-haiku-5-5_none_rand-family"
         ]
       }
     },
@@ -270,26 +266,26 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "66cf034b1a42180c3ba675c05e90b526c6985fad04b467428ffade67971f3839",
-    "transcripts.zip": "670c3ddc81fa71328c8d6ac4e948e0d95c992e7b5fa548ae0d94b2ce629600c3"
+    "samples.csv": "b9cadc9b56b230f90eb07695c9a1ffc19b0df271c442001b986e6bc3c5ba2cd9",
+    "transcripts.zip": "6fb2b801b05ef2f31e42afa4396c3bb0110fff1c0d673c89211a234ecceb9d58"
   },
   "results": {
     "GPQA Diamond Biology": {
-      "score": 0.80172,
-      "stderr": 0.080037,
+      "score": 0.801974,
+      "stderr": 0.080069,
       "n_items": 19,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.841194,
-        "1": 0.788562,
-        "2": 0.841194,
-        "3": 0.73593
+        "0": 0.841448,
+        "1": 0.788816,
+        "2": 0.841448,
+        "3": 0.736185
       },
       "score_refusals_wrong": 0.75,
       "stop_reasons": {
@@ -306,15 +302,15 @@
       "visible_reasoning_share": 0.171
     },
     "GPQA Diamond Chemistry": {
-      "score": 0.833799,
-      "stderr": 0.032773,
+      "score": 0.828106,
+      "stderr": 0.033028,
       "n_items": 93,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.849032,
-        "1": 0.838279,
-        "2": 0.849032,
-        "3": 0.798853
+        "0": 0.843339,
+        "1": 0.832587,
+        "2": 0.843339,
+        "3": 0.79316
       },
       "score_refusals_wrong": 0.817204,
       "stop_reasons": {
@@ -332,15 +328,15 @@
       "visible_reasoning_share": 0.575
     },
     "GPQA Main Biology": {
-      "score": 0.839523,
-      "stderr": 0.037323,
+      "score": 0.839591,
+      "stderr": 0.037327,
       "n_items": 78,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.845933,
-        "1": 0.833113,
-        "2": 0.845933,
-        "3": 0.833113
+        "0": 0.846001,
+        "1": 0.833181,
+        "2": 0.846001,
+        "3": 0.833181
       },
       "score_refusals_wrong": 0.826923,
       "stop_reasons": {
@@ -357,15 +353,15 @@
       "visible_reasoning_share": 0.41
     },
     "GPQA Main Chemistry": {
-      "score": 0.831116,
-      "stderr": 0.023643,
+      "score": 0.830155,
+      "stderr": 0.023659,
       "n_items": 183,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.835214,
-        "1": 0.840679,
-        "2": 0.851608,
-        "3": 0.796963
+        "0": 0.834253,
+        "1": 0.839718,
+        "2": 0.850647,
+        "3": 0.796002
       },
       "score_refusals_wrong": 0.821038,
       "stop_reasons": {

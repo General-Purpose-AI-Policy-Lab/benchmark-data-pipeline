@@ -62,14 +62,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "17a1b8ceda2d02d564c1efa7f88e8a121cecd6cd6bca5ccbc11897b56e3efb1f",
+    "script_sha256": "22dd8633324cf6f4fbdad6ea3c685b721491727c3f54af46d3be40ade8352645",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
     "samples.csv": "30913e89bde0fee822bdf0a440989d267ebc66d41fa38c22d8496bb54fdd2937",
-    "transcripts.zip": "a2a388def46017f9968794d107222c42ad001ab71411892e05e9de11fc4dc012"
+    "transcripts.zip": "bf02b79cf4d1ba5595d3c7d42d14d3d9ce5cb7986a6b2db82a7a79ca47244fa6"
   },
   "results": {
     "GPQA Diamond Chemistry": {
