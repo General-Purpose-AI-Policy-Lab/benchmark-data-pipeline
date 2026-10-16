@@ -17,16 +17,16 @@ RUN_IDS = sorted(SCORES["run_id"].unique())
 def test_scores_are_the_samples_summary(run_id):
     """score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n).
 
-    The credit of an answer is its correctness; a refused call is scored wrong and carries the
-    expected credit the run's imputation gave it."""
+    The credit of an answer is its correctness; a call without an answer (refused, or cut at
+    max_tokens) is not scored and carries the expected credit the run's imputation gave it."""
     samples = pandas.read_csv(FEED / "runs" / run_id / "samples.csv")
-    refused = samples["stop_reason"] == "refusal"
-    assert (samples.loc[~refused, "credit"] == samples.loc[~refused, "correct"]).all()
-    assert (~samples.loc[refused, "correct"]).all()
-    assert samples.loc[refused, "credit"].between(0, 1).all()
+    missing = samples["stop_reason"].isin(["refusal", "max_tokens"])  # no answer to score
+    assert (samples.loc[~missing, "credit"] == samples.loc[~missing, "correct"]).all()
+    assert (~samples.loc[missing, "correct"]).all()
+    assert samples.loc[missing, "credit"].between(0, 1).all()
     for row in SCORES[SCORES["run_id"] == run_id].itertuples():
         s = samples[samples["subset"] == row.benchmark]
-        assert (s["stop_reason"] == "refusal").mean() <= 0.30
+        assert s["stop_reason"].isin(["refusal", "max_tokens"]).mean() <= 0.30
         per_item = s.groupby("record_id")["credit"].mean()
         assert len(per_item) == row.n_items
         assert s["epoch"].nunique() == row.n_epochs

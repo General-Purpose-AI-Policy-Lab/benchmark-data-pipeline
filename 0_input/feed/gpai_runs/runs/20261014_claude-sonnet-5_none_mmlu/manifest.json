@@ -21,13 +21,13 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
-    "refusal_imputation": {
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "missing_imputation": {
       "MMLU Biology": {
         "theta": 0.679,
-        "n_refused_calls": 17,
-        "n_refused_items": 5,
-        "mean_credit_refused": 0.7084,
+        "n_missing_calls": 17,
+        "n_missing_items": 5,
+        "mean_credit_missing": 0.7084,
         "accuracy_answered": 0.8176,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_mmlu",
@@ -35,17 +35,19 @@
         ]
       },
       "MMLU Pro Chemistry": {
-        "theta": 0.7551,
-        "n_refused_calls": 1,
-        "n_refused_items": 1,
-        "mean_credit_refused": 0.9731,
+        "theta": 0.4687,
+        "n_missing_calls": 1,
+        "n_missing_items": 1,
+        "mean_credit_missing": 0.9735,
         "accuracy_answered": 0.8765,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_mmlu",
-          "20261015_claude-haiku-5-5_low_rand-family"
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa"
         ]
       }
     },
+    "truncated_calls": [],
     "notes": {
       "mmlu": "RAND reports using an existing Inspect implementation of MMLU, whose current version reads the test split only and caps non-CoT answers at a few tokens; RAND's question counts need all three splits, so the appendix-D template is used on all splits, with the same max_tokens as the other benchmarks.",
       "mmlu_pro": "RAND reports using an existing Inspect implementation of MMLU-Pro; the appendix-D template is used here, with up to ten letters."
@@ -129,14 +131,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
+    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "426477e1cac339f3bd1ebde76a59a0c4ed8fcd0e11c5abdaff3ac2d148847ad7",
-    "transcripts.zip": "ffca07274329c2bbb2de83e6af4238033bdda29c3b44c57fc1e3f68cd239fb84"
+    "samples.csv": "f22c0e5a55a3c170539065119cdd2d40927016998cc129a25bb720d229148080",
+    "transcripts.zip": "fd6f2c6069f7525aaf086dafa55ab611154f09bd95e08cbd4e7552e1ef6a1c8e"
   },
   "results": {
     "MMLU Biology": {
@@ -160,6 +162,8 @@
       "n_normalised": 0,
       "n_refusals": 17,
       "refusal_share": 0.0079,
+      "n_truncated": 0,
+      "missing_share": 0.0079,
       "visible_reasoning_share": 0.015
     },
     "MMLU Chemistry": {
@@ -182,6 +186,8 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
       "visible_reasoning_share": 0.212
     },
     "MMLU Pro Biology": {
@@ -204,6 +210,8 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
       "visible_reasoning_share": 0.111
     },
     "MMLU Pro Chemistry": {
@@ -213,7 +221,7 @@
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.874558,
-        "1": 0.869234,
+        "1": 0.869235,
         "2": 0.873675,
         "3": 0.888693
       },
@@ -227,6 +235,8 @@
       "n_normalised": 0,
       "n_refusals": 1,
       "refusal_share": 0.0002,
+      "n_truncated": 0,
+      "missing_share": 0.0002,
       "visible_reasoning_share": 0.792
     }
   },

@@ -4,7 +4,8 @@
   "operator": "GPAI Policy Lab (Claude Code session for J. Andreoletti)",
   "audit": "Automated audit of every cell (2026-10-14): stop reasons, API refusals and their categories, refusals written in the answer, answers cut by max_tokens, unparsed answers read one by one. No API error left; the one failed call of the campaign (claude-sonnet-5_none, LAB-Bench SeqQA, HTTP 400 'Output blocked by content filtering policy') succeeded on retry. Answers cut at max_tokens (16,000 tokens, thinking included) are scored wrong, as are answers that decline in words.",
   "history": [
-    "Run with evals/gpqa_rand_protocol.py, the GPQA-only predecessor of evals/rand_protocol.py (same template, parser, shuffle and request parameters); its log is re-parsed by rand_protocol.py at packaging."
+    "Run with evals/gpqa_rand_protocol.py, the GPQA-only predecessor of evals/rand_protocol.py (same template, parser, shuffle and request parameters); its log is re-parsed by rand_protocol.py at packaging.",
+    "1 calls cut at 16,000 tokens and likely to finish (the model finished the same question in another epoch) were run again with max_tokens 32,000 on 2026-10-15 (run --retry-truncated --keys); 1 finished, 0 were cut again. The superseded rows stay in the raw log's .superseded.jsonl; calls still cut are missing, not wrong."
   ],
   "model": [
     "claude-sonnet-4-6"
@@ -24,13 +25,13 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
-    "refusal_imputation": {
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "missing_imputation": {
       "GPQA Main Chemistry": {
-        "theta": -0.2758,
-        "n_refused_calls": 1,
-        "n_refused_items": 1,
-        "mean_credit_refused": 0.8978,
+        "theta": -0.3449,
+        "n_missing_calls": 1,
+        "n_missing_items": 1,
+        "mean_credit_missing": 0.898,
         "accuracy_answered": 0.7004,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
@@ -45,10 +46,12 @@
           "20261014_claude-sonnet-5_none_gpqa-chemistry",
           "20261015_claude-fable-5-1_medium_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
           "20261015_claude-opus-5-5_medium_gpqa"
         ]
       }
     },
+    "truncated_calls": [],
     "notes": {}
   },
   "datasets": {
@@ -80,18 +83,18 @@
   "started": "2026-10-14T15:03:26+00:00",
   "tokens": {
     "input": 306080,
-    "output": 1089582
+    "output": 1074934
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
+    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "1df46ab0713f2e1b08efa302b03457f35199c71b63eed81372a3f2db0feadcdd",
-    "transcripts.zip": "7637a76a7d40d0b974b28f14315db8cd4f2dc6dcddc60f81735a7ccfaf7e7f8c"
+    "samples.csv": "7e7eeffab2d75ea00ff1942cd9c671094c977650fcc07abc2c67f0f50690737a",
+    "transcripts.zip": "584ab135014443d2cfc3203a788cad84fc027233aa71c77c9cd49eed34c99cea"
   },
   "results": {
     "GPQA Diamond Chemistry": {
@@ -114,6 +117,8 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
       "visible_reasoning_share": 1.0
     },
     "GPQA Main Chemistry": {
@@ -123,21 +128,22 @@
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.721311,
-        "1": 0.677037,
+        "1": 0.677038,
         "2": 0.715847,
         "3": 0.688525
       },
       "score_refusals_wrong": 0.699454,
       "stop_reasons": {
-        "end_turn": 730,
-        "refusal": 1,
-        "max_tokens": 1
+        "end_turn": 731,
+        "refusal": 1
       },
-      "n_unparsed": 2,
+      "n_unparsed": 1,
       "score_inspect_strict": 0.696721,
       "n_normalised": 2,
       "n_refusals": 1,
       "refusal_share": 0.0014,
+      "n_truncated": 0,
+      "missing_share": 0.0014,
       "visible_reasoning_share": 0.992
     }
   },

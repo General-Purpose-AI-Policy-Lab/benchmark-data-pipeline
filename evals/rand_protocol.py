@@ -148,13 +148,16 @@ TEMPLATE = (
 )
 LETTERS = "ABCDEFGHIJ"
 MAX_TOKENS = 16000
-# Refusals by the API's safety layer depend on the question (the same ones are refused in every
-# epoch) and fall on harder questions than average, so neither "refusal = wrong" (RAND) nor
-# "answered questions only" measures the capability. A refused call gets the credit the model
-# would be expected to earn on that question (impute_refusals); a cell where more than this share
-# of the calls was refused would rest mostly on the imputation: kept in the run's manifest, left
-# out of scores.csv.
-MAX_REFUSAL_SHARE = 0.30
+# Calls with no answer to score: refusals by the API's safety layer, and answers cut by their
+# max_tokens budget (user, 2026-10-15: a cut answer is a measurement gap, reported, never scored
+# wrong). Refusals depend on the question (the same ones are refused in every epoch) and fall on
+# harder questions than average, so neither "missing = wrong" (RAND) nor "answered questions
+# only" measures the capability. A missing call gets the credit the model would be expected to
+# earn on that question (impute_missing); a cell where more than this share of the calls is
+# missing would rest mostly on the imputation: kept in the run's manifest, left out of
+# scores.csv.
+MISSING = ("refusal", "max_tokens")
+MAX_MISSING_SHARE = 0.30
 EFFORTS = ("low", "medium", "high", "xhigh", "max")
 
 
@@ -297,20 +300,39 @@ def run(args) -> None:
     client = anthropic.Anthropic(max_retries=8)
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    done = set()
-    if out.exists():
-        for line in out.read_text().splitlines():
-            r = json.loads(line)
-            done.add((r["subset"], r["record_id"], r["epoch"]))
-    jobs = [(it, e) for e in range(args.epochs) for it in items
-            if (it["subset"], it["record_id"], e) not in done]
-    print(f"{len(items)} items x {args.epochs} epochs: {len(jobs)} calls to make", flush=True)
+    logged = [json.loads(line) for line in out.read_text().splitlines()] if out.exists() else []
+    done = {(r["subset"], r["record_id"], r["epoch"]) for r in logged}
+    if args.retry_truncated:
+        # Calls cut by their max_tokens are run again with a larger budget; the new rows replace
+        # them in the log and the old ones move to <out>.superseded.jsonl.
+        by_key = {(it["subset"], it["record_id"]): it for it in items}
+        only = None
+        if args.keys:  # a chosen subset of the cut calls, e.g. those likely to finish
+            only = {(k["subset"], k["record_id"], k["epoch"])
+                    for k in json.loads(Path(args.keys).read_text())}
+        redo = [r for r in logged if r["stop_reason"] == "max_tokens"
+                and r.get("max_tokens", MAX_TOKENS) < args.max_tokens
+                and (r["subset"], r["record_id"]) in by_key
+                and (only is None or (r["subset"], r["record_id"], r["epoch"]) in only)]
+        jobs = [(by_key[(r["subset"], r["record_id"])], r["epoch"]) for r in redo]
+    else:
+        jobs = [(it, e) for e in range(args.epochs) for it in items
+                if (it["subset"], it["record_id"], e) not in done]
+    print(f"{len(items)} items x {args.epochs} epochs: {len(jobs)} calls to make "
+          f"(max_tokens {args.max_tokens})", flush=True)
 
     def call(item: dict, epoch: int) -> dict:
         text, target, k = prompt_for(item, epoch)
         started = datetime.now(UTC).isoformat(timespec="seconds")
-        resp = client.messages.create(model=args.model, max_tokens=MAX_TOKENS,
-                                      messages=[{"role": "user", "content": text}], **params)
+        request = dict(model=args.model, max_tokens=args.max_tokens,
+                       messages=[{"role": "user", "content": text}], **params)
+        if args.max_tokens > MAX_TOKENS:  # long generations: streamed, so no HTTP timeout
+            with client.messages.stream(**request) as stream:
+                resp = stream.get_final_message()
+            request_id = getattr(stream, "request_id", None) or getattr(resp, "_request_id", None)
+        else:
+            resp = client.messages.create(**request)
+            request_id = resp._request_id
         completion = "".join(b.text for b in resp.content if b.type == "text")
         refused = resp.stop_reason == "refusal"
         answer = None if refused else parse_answer(completion, k)
@@ -322,10 +344,11 @@ def run(args) -> None:
                                       if refused and resp.stop_details else None),
                     completion=completion, input_tokens=resp.usage.input_tokens,
                     output_tokens=resp.usage.output_tokens, message_id=resp.id,
-                    request_id=resp._request_id, started=started)
+                    request_id=request_id, started=started, max_tokens=args.max_tokens)
 
-    lock, n_err = threading.Lock(), 0
-    with ThreadPoolExecutor(args.workers) as pool, open(out, "a") as f:
+    lock, n_err, new_rows = threading.Lock(), 0, []
+    sink = io.StringIO() if args.retry_truncated else open(out, "a")
+    with ThreadPoolExecutor(args.workers) as pool, sink as f:
         futs = {pool.submit(call, it, e): (it["subset"], it["record_id"], e) for it, e in jobs}
         for k, fut in enumerate(as_completed(futs), 1):
             try:
@@ -339,10 +362,26 @@ def run(args) -> None:
                 n_err += 1
                 continue
             with lock:
+                new_rows.append(row)
                 f.write(json.dumps(row) + "\n")
                 f.flush()
             if k % 100 == 0:
                 print(f"{k}/{len(jobs)}", flush=True)
+    if args.retry_truncated:
+        redone = {(r["subset"], r["record_id"], r["epoch"]) for r in new_rows}
+        old = [r for r in logged if (r["subset"], r["record_id"], r["epoch"]) in redone]
+        keep = [r for r in logged if (r["subset"], r["record_id"], r["epoch"]) not in redone]
+        with open(out.with_suffix(".superseded.jsonl"), "a") as f:
+            f.writelines(json.dumps(r) + "\n" for r in old)
+        out.write_text("".join(json.dumps(r) + "\n" for r in keep + new_rows))
+        print(f"{len(new_rows)} truncated calls run again with max_tokens {args.max_tokens}")
+    cut = [r for r in new_rows if r["stop_reason"] == "max_tokens"]
+    if cut:
+        print(f"WARNING: {len(cut)} calls cut at max_tokens {args.max_tokens}, not scored as "
+              "wrong (treated as missing at packaging); rerun with --retry-truncated and a "
+              "larger --max-tokens:", file=sys.stderr)
+        for r in cut:
+            print(f"  {r['subset']} {r['record_id']} epoch {r['epoch']}", file=sys.stderr)
     print(f"done, {n_err} failed calls (rerun the same command to retry them)")
 
 
@@ -354,15 +393,16 @@ def _sigmoid(x: float) -> float:
     return 1 / (1 + math.exp(-x))
 
 
-def impute_refusals(samples: list[dict], run_id: str) -> dict:
-    """Fill `credit` for every sample: 0/1 for an answer, an expected score for a refusal.
+def impute_missing(samples: list[dict], run_id: str) -> dict:
+    """Fill `credit` for every sample: 0/1 for an answer, an expected score for a missing call
+    (a refusal or an answer cut at max_tokens).
 
     Item difficulty comes from every other published run on the benchmark (their answered
     calls, smoothed (k + 0.5) / (n + 1)); the model's level is the logit shift theta that makes
     the mean of sigmoid(logit(d_i) + theta) over its answered calls equal its accuracy on them
-    (a Rasch model with fixed item difficulties); a refused call on item i gets
+    (a Rasch model with fixed item difficulties); a missing call on item i gets
     sigmoid(logit(d_i) + theta). Questions no other run answered take the benchmark's mean
-    difficulty. Returns, per benchmark with refusals, theta and the runs used."""
+    difficulty. Returns, per benchmark with missing calls, theta and the runs used."""
     refs = defaultdict(list)
     used = defaultdict(set)
     benches = {s["subset"] for s in samples}
@@ -372,7 +412,7 @@ def impute_refusals(samples: list[dict], run_id: str) -> dict:
             continue
         with open(path, newline="") as f:
             for r in csv.DictReader(f):
-                if r["subset"] in benches and r["stop_reason"] != "refusal":
+                if r["subset"] in benches and r["stop_reason"] not in MISSING:
                     refs[(r["subset"], r["record_id"])].append(r["correct"] == "True")
                     used[r["subset"]].add(other)
     out = {}
@@ -380,14 +420,14 @@ def impute_refusals(samples: list[dict], run_id: str) -> dict:
         s["credit"] = float(s["correct"])
     for bench in sorted(benches):
         rows = [s for s in samples if s["subset"] == bench]
-        refused = [s for s in rows if s["stop_reason"] == "refusal"]
+        refused = [s for s in rows if s["stop_reason"] in MISSING]
         if not refused:
             continue
         diff = {k[1]: (sum(v) + 0.5) / (len(v) + 1) for k, v in refs.items() if k[0] == bench}
         if not diff:
-            raise SystemExit(f"{bench}: refusals but no other run to take item difficulty from")
+            raise SystemExit(f"{bench}: missing calls but no other run to take difficulty from")
         mean_d = sum(diff.values()) / len(diff)
-        answered = [s for s in rows if s["stop_reason"] != "refusal"]
+        answered = [s for s in rows if s["stop_reason"] not in MISSING]
         acc = sum(s["correct"] for s in answered) / len(answered)
         acc = min(max(acc, 0.5 / len(answered)), 1 - 0.5 / len(answered))
         logits = [_logit(diff.get(s["record_id"], mean_d)) for s in answered]
@@ -400,9 +440,9 @@ def impute_refusals(samples: list[dict], run_id: str) -> dict:
                 hi = theta
         for s in refused:
             s["credit"] = round(_sigmoid(_logit(diff.get(s["record_id"], mean_d)) + theta), 6)
-        out[bench] = dict(theta=round(theta, 4), n_refused_calls=len(refused),
-                          n_refused_items=len({s["record_id"] for s in refused}),
-                          mean_credit_refused=round(
+        out[bench] = dict(theta=round(theta, 4), n_missing_calls=len(refused),
+                          n_missing_items=len({s["record_id"] for s in refused}),
+                          mean_credit_missing=round(
                               sum(s["credit"] for s in refused) / len(refused), 4),
                           accuracy_answered=round(acc, 4),
                           reference_runs=sorted(used[bench]))
@@ -433,6 +473,8 @@ def summarize(samples: list[dict]) -> dict:
             n_normalised=sum(s["answer"] != s["answer_strict"] for s in rows),
             n_refusals=sum(s["stop_reason"] == "refusal" for s in rows),
             refusal_share=round(sum(s["stop_reason"] == "refusal" for s in rows) / len(rows), 4),
+            n_truncated=sum(s["stop_reason"] == "max_tokens" for s in rows),
+            missing_share=round(sum(s["stop_reason"] in MISSING for s in rows) / len(rows), 4),
             visible_reasoning_share=round(
                 sum(bool(s["visible_reasoning"]) for s in rows) / len(rows), 3))
     return out
@@ -442,7 +484,7 @@ SAMPLE_COLS = ["subset", "record_id", "epoch", "target", "answer", "correct", "a
                "correct_strict", "credit", "stop_reason",
                "refusal_category", "input_tokens", "output_tokens", "visible_reasoning",
                "completion_chars", "completion_sha256", "model", "message_id", "request_id",
-               "started"]
+               "started", "max_tokens"]
 SCORE_COLS = ["model", "benchmark", "score", "stderr", "n_items", "n_epochs", "run_id"]
 
 
@@ -475,7 +517,10 @@ def package(args) -> None:
                         "completion_chars": len(c) if whole else None,
                         "completion_sha256": hashlib.sha256(c.encode()).hexdigest() if whole
                         else None})
-    imputation = impute_refusals(samples, args.run_id)
+    imputation = impute_missing(samples, args.run_id)
+    manifest_truncated = [dict(subset=r["subset"], record_id=r["record_id"], epoch=r["epoch"],
+                               max_tokens=r.get("max_tokens") or MAX_TOKENS)
+                          for r in samples if r["stop_reason"] == "max_tokens"]
     with open(run_dir / "samples.csv", "w", newline="") as f:
         w = csv.DictWriter(f, SAMPLE_COLS, lineterminator="\n")
         w.writeheader()
@@ -508,12 +553,13 @@ def package(args) -> None:
             "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
             "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
             "scoring": "unparseable answers incorrect; a refused call earns the credit the "
-                       "model is expected to earn on that question (impute_refusals: Rasch "
+                       "model is expected to earn on that question (impute_missing: Rasch "
                        "model, item difficulties from the other published runs); score = mean "
                        "credit over questions and epochs; stderr = sd of per-question means / "
                        "sqrt(n_items), imputation uncertainty not included. RAND's refusal = "
                        "wrong is results.<bench>.score_refusals_wrong",
-            "refusal_imputation": imputation,
+            "missing_imputation": imputation,
+            "truncated_calls": manifest_truncated,
             "notes": {k: PROTOCOL_NOTES[k] for k in kinds if k in PROTOCOL_NOTES},
         },
         datasets={b: {"loader": BENCHMARKS[b][0], "subset": BENCHMARKS[b][1],
@@ -533,11 +579,11 @@ def package(args) -> None:
                       for p in sorted(run_dir.glob("*")) if p.name != "manifest.json"},
         results=results,
     )
-    excluded = {b: f"{v['n_refusals']} of {v['n_items'] * v['n_epochs']} calls refused by the "
-                   f"API's safety layer (> {MAX_REFUSAL_SHARE:.0%}): the score would rest mostly "
-                   "on the imputation, left out of scores.csv"
-                for b, v in results.items()
-                if v["n_refusals"] > MAX_REFUSAL_SHARE * v["n_items"] * v["n_epochs"]}
+    excluded = {b: f"{v['n_refusals'] + v['n_truncated']} of {v['n_items'] * v['n_epochs']} calls "
+                   f"without an answer ({v['n_refusals']} refused by the API's safety layer, "
+                   f"{v['n_truncated']} cut at max_tokens; > {MAX_MISSING_SHARE:.0%}): the score "
+                   "would rest mostly on the imputation, left out of scores.csv"
+                for b, v in results.items() if v["missing_share"] > MAX_MISSING_SHARE}
     excluded.update({b: NOT_ON_RAND_SCALE[b] for b in results if b in NOT_ON_RAND_SCALE})
     manifest["excluded_from_scores"] = excluded
     (run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
@@ -558,6 +604,13 @@ def package(args) -> None:
                       for b, v in results.items()}, indent=1))
     if excluded:
         print("excluded:", json.dumps(excluded, indent=1))
+    if manifest_truncated:
+        print(f"WARNING: {len(manifest_truncated)} answers cut at max_tokens, scored as missing "
+              "(imputed), not wrong; run them again with `run --retry-truncated --max-tokens N`:",
+              file=sys.stderr)
+        for t in manifest_truncated:
+            print(f"  {t['subset']} {t['record_id']} epoch {t['epoch']} (max_tokens "
+                  f"{t['max_tokens']})", file=sys.stderr)
 
 
 def main() -> None:
@@ -571,6 +624,12 @@ def main() -> None:
     r.add_argument("--out", required=True)
     r.add_argument("--workers", type=int, default=8)
     r.add_argument("--limit", type=int, help="first N questions per benchmark (a cost pilot)")
+    r.add_argument("--max-tokens", type=int, default=MAX_TOKENS,
+                   help="output budget, thinking included; above 16,000 the call is streamed")
+    r.add_argument("--retry-truncated", action="store_true",
+                   help="run again only the logged calls cut at a smaller max_tokens")
+    r.add_argument("--keys", help="with --retry-truncated: JSON list of {subset, record_id, "
+                                  "epoch} restricting which cut calls are run again")
     r.set_defaults(func=run)
     p = sub.add_parser("package")
     p.add_argument("raw")

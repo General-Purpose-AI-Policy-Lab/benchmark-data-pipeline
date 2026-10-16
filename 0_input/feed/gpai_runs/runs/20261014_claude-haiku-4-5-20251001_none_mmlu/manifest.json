@@ -21,8 +21,9 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
-    "refusal_imputation": {},
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "missing_imputation": {},
+    "truncated_calls": [],
     "notes": {
       "mmlu": "RAND reports using an existing Inspect implementation of MMLU, whose current version reads the test split only and caps non-CoT answers at a few tokens; RAND's question counts need all three splits, so the appendix-D template is used on all splits, with the same max_tokens as the other benchmarks.",
       "mmlu_pro": "RAND reports using an existing Inspect implementation of MMLU-Pro; the appendix-D template is used here, with up to ten letters."
@@ -106,14 +107,14 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
+    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "5c01094e0d858108d51dc4700d35a56deb9c2a749c961236aad5a7bd4517b456",
-    "transcripts.zip": "91466c9bcb1537461ef100d8c3c07846f0a81237998c83e551322982c57c2ce0"
+    "samples.csv": "78cd118693c98a8e8adcdddb2910596ef842c4c089467760d2c3e3cf841c5a73",
+    "transcripts.zip": "8e5dc58369260753ad3e8f341fcc50160dd0133d8cc73a677decc092b9e93297"
   },
   "results": {
     "MMLU Biology": {
@@ -136,6 +137,8 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
       "visible_reasoning_share": 0.132
     },
     "MMLU Chemistry": {
@@ -158,6 +161,8 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
       "visible_reasoning_share": 0.671
     },
     "MMLU Pro Biology": {
@@ -180,6 +185,8 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
       "visible_reasoning_share": 0.324
     },
     "MMLU Pro Chemistry": {
@@ -202,6 +209,8 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
       "visible_reasoning_share": 0.971
     }
   },

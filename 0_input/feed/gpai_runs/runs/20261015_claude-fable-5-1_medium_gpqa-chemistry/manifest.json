@@ -24,14 +24,14 @@
     "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
     "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
     "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
-    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_refusals: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
-    "refusal_imputation": {
-      "GPQA Main Chemistry": {
-        "theta": 1.2592,
-        "n_refused_calls": 4,
-        "n_refused_items": 1,
-        "mean_credit_refused": 0.9777,
-        "accuracy_answered": 0.8585,
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "missing_imputation": {
+      "GPQA Diamond Chemistry": {
+        "theta": 1.0119,
+        "n_missing_calls": 2,
+        "n_missing_items": 1,
+        "mean_credit_missing": 0.5587,
+        "accuracy_answered": 0.8622,
         "reference_runs": [
           "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
           "20261014_claude-opus-4-6_none_gpqa",
@@ -45,10 +45,60 @@
           "20261014_claude-sonnet-5_medium_gpqa",
           "20261014_claude-sonnet-5_none_gpqa-chemistry",
           "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
+          "20261015_claude-opus-5-5_medium_gpqa"
+        ]
+      },
+      "GPQA Main Chemistry": {
+        "theta": 1.2104,
+        "n_missing_calls": 6,
+        "n_missing_items": 2,
+        "mean_credit_missing": 0.867,
+        "accuracy_answered": 0.8609,
+        "reference_runs": [
+          "20261014_claude-haiku-4-5-20251001_none_gpqa-chemistry",
+          "20261014_claude-opus-4-6_none_gpqa",
+          "20261014_claude-opus-4-7_none_gpqa",
+          "20261014_claude-opus-4-8_none_gpqa",
+          "20261014_claude-opus-5_none_gpqa",
+          "20261014_claude-sonnet-4-6_low_gpqa",
+          "20261014_claude-sonnet-4-6_none_gpqa-chemistry",
+          "20261014_claude-sonnet-5-5_low_gpqa",
+          "20261014_claude-sonnet-5_low_gpqa",
+          "20261014_claude-sonnet-5_medium_gpqa",
+          "20261014_claude-sonnet-5_none_gpqa-chemistry",
+          "20261015_claude-haiku-5-5_low_rand-family",
+          "20261015_claude-haiku-5-5_max_rand-family-no-seqqa",
           "20261015_claude-opus-5-5_medium_gpqa"
         ]
       }
     },
+    "truncated_calls": [
+      {
+        "subset": "GPQA Diamond Chemistry",
+        "record_id": "recWxGU8Q4YReJ1tb",
+        "epoch": 1,
+        "max_tokens": 16000
+      },
+      {
+        "subset": "GPQA Diamond Chemistry",
+        "record_id": "recWxGU8Q4YReJ1tb",
+        "epoch": 3,
+        "max_tokens": 16000
+      },
+      {
+        "subset": "GPQA Main Chemistry",
+        "record_id": "recWxGU8Q4YReJ1tb",
+        "epoch": 0,
+        "max_tokens": 16000
+      },
+      {
+        "subset": "GPQA Main Chemistry",
+        "record_id": "recWxGU8Q4YReJ1tb",
+        "epoch": 2,
+        "max_tokens": 16000
+      }
+    ],
     "notes": {}
   },
   "datasets": {
@@ -84,26 +134,26 @@
   },
   "software": {
     "script": "evals/rand_protocol.py",
-    "script_sha256": "57a65f0adece9ab3a5ce8670924f70bd531a3bb756fe40652a06b9a0b67fcd02",
+    "script_sha256": "6bb91a88b18e1873a243352a430cb8e7be93e5394feb26decbc797e3d95af54a",
     "anthropic": "1.13.0",
     "pandas": "3.0.6",
     "python": "3.11.15"
   },
   "output_files": {
-    "samples.csv": "93b611403bef140ccae44caf41180af0e0a3af9509ac8f05e5e37aa2f1471809",
-    "transcripts.zip": "15aec1e4daacc480aefbbe113c5a7f0e7faa400095a3544088742e86d422c378"
+    "samples.csv": "8516f059c48d2a83a9b8e42da6cf7b1d3d874615274c0f50692ffdce284117fd",
+    "transcripts.zip": "48f7f7b57c8d5b278bdcd58ac3eb616c8c30bbb05304ba6beb6b423880391cc5"
   },
   "results": {
     "GPQA Diamond Chemistry": {
-      "score": 0.857527,
-      "stderr": 0.033627,
+      "score": 0.860531,
+      "stderr": 0.032921,
       "n_items": 93,
       "n_epochs": 4,
       "score_by_epoch": {
         "0": 0.83871,
-        "1": 0.83871,
+        "1": 0.844718,
         "2": 0.860215,
-        "3": 0.892473
+        "3": 0.898481
       },
       "score_refusals_wrong": 0.857527,
       "stop_reasons": {
@@ -115,18 +165,20 @@
       "n_normalised": 0,
       "n_refusals": 0,
       "refusal_share": 0.0,
+      "n_truncated": 2,
+      "missing_share": 0.0054,
       "visible_reasoning_share": 0.884
     },
     "GPQA Main Chemistry": {
-      "score": 0.859168,
-      "stderr": 0.022465,
+      "score": 0.860931,
+      "stderr": 0.022379,
       "n_items": 183,
       "n_epochs": 4,
       "score_by_epoch": {
-        "0": 0.863266,
-        "1": 0.852337,
-        "2": 0.874195,
-        "3": 0.846873
+        "0": 0.866791,
+        "1": 0.852339,
+        "2": 0.87772,
+        "3": 0.846875
       },
       "score_refusals_wrong": 0.853825,
       "stop_reasons": {
@@ -139,6 +191,8 @@
       "n_normalised": 0,
       "n_refusals": 4,
       "refusal_share": 0.0055,
+      "n_truncated": 2,
+      "missing_share": 0.0082,
       "visible_reasoning_share": 0.869
     }
   },

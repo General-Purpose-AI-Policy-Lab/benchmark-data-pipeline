@@ -972,6 +972,7 @@ model_id,feed,raw_name,n_records
 8c4f200e-3563-53cc-b937-550eb24999aa,epoch,gemini-3.6-flash_unknown,1
 8cac752e-06b4-5fd9-ba2e-f225b3c0bd56,epoch,gpt-5.1-codex-max,2
 8cac752e-06b4-5fd9-ba2e-f225b3c0bd56,epoch_cyber,GPT-5.1 Codex Max,2
+8cff9f72-eb66-5eaa-b6d6-88f3d11e190d,gpai_runs,claude-haiku-5-5_max,8
 8d0fe565-f965-5403-b74f-fa92de341521,epoch,swe-2_max,1
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,cybench_site,GPT-4.5-preview,1
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,epoch,gpt-4.5-preview-2025-02-27,10
