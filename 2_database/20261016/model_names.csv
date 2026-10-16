@@ -1085,6 +1085,7 @@ model_id,feed,raw_name,n_records
 9caaf714-eade-592b-8112-0be79fde4361,epoch,DeepSeek-R1-Distill-Qwen-32B,1
 9caaf714-eade-592b-8112-0be79fde4361,epoch_live,DeepSeek-R1-Distill-Qwen-32B,2
 9cb800c4-f52a-5b4a-90b2-13e7bb075200,epoch,claude-opus-4-5-20251101_8K,2
+9cd75978-07bf-535e-893d-3ee9082e75b1,gpai_runs,claude-haiku-5-5_none,11
 9cf06ff3-483b-5582-95ad-b93bf1ee2f74,epoch,o1-2024-12-17_medium,8
 9cf06ff3-483b-5582-95ad-b93bf1ee2f74,epoch_live,o1-2024-12-17_medium,4
 9cf06ff3-483b-5582-95ad-b93bf1ee2f74,rand,o1,15
