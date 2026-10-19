@@ -25,10 +25,15 @@ gemini-robotics-er-1.6-preview,0.0,0.47500000000000003,2026-04-14,Google,United 
 grok-4.6_unknown,0.33188720173535774,0.692,2026-08-12,xAI,United States of America,,,Grok 4.6,0.009,https://andonlabs.com/evals/blueprint-bench-2,
 claude-sonnet-5_unknown,0.24945770065075923,0.654,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5,0.007000000000000001,https://andonlabs.com/evals/blueprint-bench-2,
 claude-fable-5-1_unknown,0.4186550976138828,0.7320000000000001,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1,0.008,https://andonlabs.com/evals/blueprint-bench-2,
-gpt-6-astra_unknown,0.4967462039045553,0.768,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_unknown,0.4967462039045553,0.768,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,0.004,https://andonlabs.com/evals/blueprint-bench-2,
 gemini-3.8-flash_unknown,0.3861171366594359,0.7170000000000001,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,0.005,https://andonlabs.com/evals/blueprint-bench-2,
 gpt-6-sol_unknown,0.36876355748373096,0.709,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,0.007000000000000001,https://andonlabs.com/evals/blueprint-bench-2,
 gpt-6-luna_unknown,0.31236442516268986,0.6830000000000002,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,0.009,https://andonlabs.com/evals/blueprint-bench-2,
+claude-opus-5-5_unknown,0.5119305856832972,0.775,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,0.01,https://andonlabs.com/evals/blueprint-bench-2,
+gemini-4-argon_unknown,0.5444685466377441,0.79,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon,0.006,https://andonlabs.com/evals/blueprint-bench-2,
+grok-4.7_unknown,0.3253796095444684,0.689,2026-09-21,xAI,United States of America,,,Grok 4.7,0.009,https://andonlabs.com/evals/blueprint-bench-2,
+claude-sonnet-5-5_unknown,0.3926247288503253,0.72,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5,0.006,https://andonlabs.com/evals/blueprint-bench-2,
+claude-haiku-5-5_unknown,0.32971800433839465,0.691,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5,0.006,https://andonlabs.com/evals/blueprint-bench-2,

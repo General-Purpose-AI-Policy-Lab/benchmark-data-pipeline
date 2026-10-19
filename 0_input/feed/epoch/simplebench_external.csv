@@ -67,7 +67,7 @@ Then, ""this framework allocates a
 post-training computational budget exceeding 10% of the pre-training cost"", so 4.18e24",SimpleBench Leaderboard,,,recADTeXCQKXTUdkk
 gemini-2.5-pro-exp-03-25,0.516,2025-03-25,Google DeepMind,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,https://simple-bench.com/,,reccAb0YstbYurrte
 gemini-2.5-pro-preview-03-25,0.516,2025-03-31,Google DeepMind,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,,,recpb2PdfImmfmr5y
-Inkling,0.5,2026-07-15,Thinking Machines,United States of America,1.845e+24,6ND = 41e9 active parameters * 45e12 tokens = 1.845e+24 FLOP,https://lmcouncil.ai/benchmarks,,,rect1J5rw9Pr5Q4Ww
+Inkling,0.5,2026-07-15,Thinking Machines,United States of America,1.1e+25,6ND = 6 * 41e9 active parameters * 45e12 tokens = 1.1e25 FLOP,https://lmcouncil.ai/benchmarks,,,rect1J5rw9Pr5Q4Ww
 gpt-5.6-terra_unknown,0.489,2026-07-09,OpenAI,United States of America,,,SimpleBench Leaderboard,,,recOLqv7N05mPCScD
 gpt-5.6-terra_xhigh,0.489,2026-07-09,OpenAI,United States of America,,,https://lmcouncil.ai/benchmarks,,,recFGmom3i9zQS6Wk
 zai-org/glm-4.7,0.47700000000000004,2025-12-22,Z.ai (Zhipu AI),China,4.42e+24,"Training tokens not disclosed.

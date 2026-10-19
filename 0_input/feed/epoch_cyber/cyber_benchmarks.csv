@@ -5,19 +5,15 @@ cyb_GPT-2-XL,cb11,0.0,InterCode-CTF,GPT-2-XL,GPT-2-XL,2019-11-05
 m24,cb4,0.0,AISI Cyber Ranges - Cooling Tower,Claude Sonnet 4.5,Claude Sonnet 4.5,2025-09-29
 m55,cb4,0.0,AISI Cyber Ranges - Cooling Tower,GPT-4o,GPT-4o,2024-05-13
 m13,cb4,0.0,AISI Cyber Ranges - Cooling Tower,Claude 3.7 Sonnet,Claude 3.7 Sonnet,2025-02-24
-m132,cb7,0.0,CyScenarioBench,Muse Spark,Muse Spark,2026-04-08
-m83,cb7,0.0,CyScenarioBench,Gemini 3 Pro,Gemini 3 Pro,2025-11-18
-cyb_GPT-5.3 Codex,cb7,0.0,CyScenarioBench,GPT-5.3 Codex,GPT-5.3 Codex,2026-02-05
-cyb_GPT-5.2 Codex,cb7,0.0,CyScenarioBench,GPT-5.2 Codex,GPT-5.2 Codex,2025-12-18
 m114,cb17,0.0005372403281032,SCONE-Bench,Llama 3-70B,Llama 3-70B,2024-04-18
 m47,cb0,0.0054708151174422,AISI CTF Suites - Apprentice,GPT-3.5 Turbo,GPT-3.5 Turbo,2023-06-13
-m45,cb10,0.006852835360630307,ExploitGym,GLM-5.1,GLM-5.1,2026-04-07
+m45,cb10,0.0055679287305121,ExploitGym,GLM-5.1,GLM-5.1,2026-04-07
 cyb_GPT-2-XL,cb12,0.0077519379844961,NL2Bash,GPT-2-XL,GPT-2-XL,2019-11-05
 m55,cb17,0.0102128252922828,SCONE-Bench,GPT-4o,GPT-4o,2024-05-13
-m21,cb10,0.01199246188110323,ExploitGym,Claude Opus 4.7,Claude Opus 4.7,2026-04-16
-m84,cb10,0.02055850608189123,ExploitGym,Gemini 3.1 Pro,Gemini 3.1 Pro,2026-02-19
+m21,cb10,0.0097438752783963,ExploitGym,Claude Opus 4.7,Claude Opus 4.7,2026-04-16
+m84,cb10,0.0167037861915365,ExploitGym,Gemini 3.1 Pro,Gemini 3.1 Pro,2026-02-19
 m55,cb15,0.03,OpenAI NYU CTF Professional (Original),GPT-4o,GPT-4o,2024-05-13
-m20,cb10,0.035977385643309844,ExploitGym,Claude Opus 4.6,Claude Opus 4.6,2026-02-05
+m20,cb10,0.0292316258351892,ExploitGym,Claude Opus 4.6,Claude Opus 4.6,2026-02-05
 m33,cb17,0.0379670036575585,SCONE-Bench,DeepSeek-V3,DeepSeek-V3,2024-12-26
 m114,b17,0.05,Cybench,Llama 3-70B,Llama 3-70B,2024-04-18
 m55,cb5,0.053125,AISI Cyber Ranges - The Last Ones,GPT-4o,GPT-4o,2024-05-13
@@ -25,8 +21,7 @@ m116,b17,0.075,Cybench,Llama 3.1-405B,Llama 3.1-405B,2024-07-23
 m130,b17,0.075,Cybench,Mixtral 8x22B,Mixtral 8x22B,2024-04-17
 m74,b17,0.075,Cybench,Gemini 1.5 Pro,Gemini 1.5 Pro,2024-05-14
 m19,cb4,0.0857142857142857,AISI Cyber Ranges - Cooling Tower,Claude Opus 4.5,Claude Opus 4.5,2025-11-24
-m63,cb7,0.09,CyScenarioBench,GPT-5.4,GPT-5.4,2026-03-05
-m63,cb10,0.09251327736851107,ExploitGym,GPT-5.4,GPT-5.4,2026-03-05
+m63,cb10,0.0751670378619151,ExploitGym,GPT-5.4,GPT-5.4,2026-03-05
 cyb_GPT-4 Turbo,cb0,0.0938231715448564,AISI CTF Suites - Apprentice,GPT-4 Turbo,GPT-4 Turbo,2024-04-09
 m164,b17,0.1,Cybench,o1-mini,o1-mini,2024-09-12
 m8,b17,0.1,Cybench,Claude 3 Opus,Claude 3 Opus,2024-02-29
@@ -40,7 +35,6 @@ cyb_MiniMax M2.7,cb9,0.1280487804878048,ExploitBench,MiniMax M2.7,MiniMax M2.7,2
 m15,cb9,0.1292682926829268,ExploitBench,Claude Haiku 4.5,Claude Haiku 4.5,2025-10-15
 m103,cb9,0.1554878048780487,ExploitBench,Kimi K2.6,Kimi K2.6,2026-04-20
 m45,cb9,0.1646341463414634,ExploitBench,GLM-5.1,GLM-5.1,2026-04-07
-m22,cb7,0.166,CyScenarioBench,Claude Opus 4.8,Claude Opus 4.8,2026-05-28
 cyb_GPT-5.3 Codex,cb4,0.1714285714285714,AISI Cyber Ranges - Cooling Tower,GPT-5.3 Codex,GPT-5.3 Codex,2026-02-05
 m23,cb17,0.1733714178749313,SCONE-Bench,Claude Sonnet 4,Claude Sonnet 4,2025-05-22
 m54,b17,0.175,Cybench,GPT-4.5,GPT-4.5,2025-02-27
@@ -48,7 +42,7 @@ m11,b17,0.175,Cybench,Claude 3.5 Sonnet,Claude 3.5 Sonnet,2024-06-20
 m84,cb9,0.1753048780487804,ExploitBench,Gemini 3.1 Pro,Gemini 3.1 Pro,2026-02-19
 m20,cb4,0.1999999999999999,AISI Cyber Ranges - Cooling Tower,Claude Opus 4.6,Claude Opus 4.6,2026-02-05
 m13,b17,0.2,Cybench,Claude 3.7 Sonnet,Claude 3.7 Sonnet,2025-02-24
-m67,cb10,0.20558506081891384,ExploitGym,GPT-5.5,GPT-5.5,2026-04-23
+m67,cb10,0.1670378619153674,ExploitGym,GPT-5.5,GPT-5.5,2026-04-23
 m25,cb9,0.2109756097560975,ExploitBench,Claude Sonnet 4.6,Claude Sonnet 4.6,2026-02-17
 cyb_GPT-3.5,cb11,0.2191780821917808,InterCode-CTF,GPT-3.5,GPT-3.5,2022-03-15
 cyb_GPT-3,cb12,0.2248062015503876,NL2Bash,GPT-3,GPT-3,2020-05-28
@@ -58,13 +52,10 @@ m163,cb15,0.23,OpenAI NYU CTF Professional (Original),o1,o1,2024-12-17
 m21,cb9,0.2317073170731707,ExploitBench,Claude Opus 4.7,Claude Opus 4.7,2026-04-16
 m18,cb17,0.2544507957799281,SCONE-Bench,Claude Opus 4.1,Claude Opus 4.1,2025-08-05
 m11,cb0,0.2571072732967866,AISI CTF Suites - Apprentice,Claude 3.5 Sonnet,Claude 3.5 Sonnet,2024-06-20
-m67,cb7,0.26,CyScenarioBench,GPT-5.5,GPT-5.5,2026-04-23
-cyb_Claude Mythos Preview (April),cb10,0.2689737879047455,ExploitGym,Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
+cyb_Claude Mythos Preview (April),cb10,0.2185412026726057,ExploitGym,Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
 m24,cb1,0.2772381899511335,AISI CTF Suites - Expert,Claude Sonnet 4.5,Claude Sonnet 4.5,2025-09-29
-m70,cb7,0.28,CyScenarioBench,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09
 m67,cb9,0.2835365853658536,ExploitBench,GPT-5.5,GPT-5.5,2026-04-23
-cyb_Claude Mythos Preview (April),cb7,0.292,CyScenarioBench,Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
-m24,cb5,0.29375,AISI Cyber Ranges - The Last Ones,Claude Sonnet 4.5,Claude Sonnet 4.5,2025-09-29
+m24,cb5,0.278125,AISI Cyber Ranges - The Last Ones,Claude Sonnet 4.5,Claude Sonnet 4.5,2025-09-29
 m93,b17,0.3,Cybench,Grok 4 Fast,Grok 4 Fast,2025-09-19
 m24,cb17,0.3036693880397431,SCONE-Bench,Claude Sonnet 4.5,Claude Sonnet 4.5,2025-09-29
 cyb_GPT-5.1 Codex Max,cb5,0.30625,AISI Cyber Ranges - The Last Ones,GPT-5.1 Codex Max,GPT-5.1 Codex Max,2025-11-19
@@ -77,10 +68,9 @@ m22,cb9,0.3475,ExploitBench,Claude Opus 4.8,Claude Opus 4.8,2026-05-28
 m21,cb5,0.3479710950528071,AISI Cyber Ranges - The Last Ones,Claude Opus 4.7,Claude Opus 4.7,2026-04-16
 m23,b17,0.35,Cybench,Claude Sonnet 4,Claude Sonnet 4,2025-05-22
 m169,cb6,0.3602,CTI-REALM,o4-mini,o4-mini,2025-04-16
-cyb_Claude Mythos 5,cb7,0.367,CyScenarioBench,Claude Mythos 5,Claude Mythos 5,2026-06-09
 m57,cb1,0.3767743889642963,AISI CTF Suites - Expert,GPT-5,GPT-5,2025-08-07
 m17,b17,0.38,Cybench,Claude Opus 4,Claude Opus 4,2025-05-22
-m70,cb10,0.38307692307692304,ExploitGym,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09
+m70,cb10,0.3112499999999999,ExploitGym,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09
 cyb_Grok 4.1,b17,0.39,Cybench,Grok 4.1,Grok 4.1,2025-11-17
 m169,cb15,0.41,OpenAI NYU CTF Professional (Original),o4-mini,o4-mini,2025-04-16
 m24,cb2,0.414809774415946,AISI CTF Suites - Practitioner,Claude Sonnet 4.5,Claude Sonnet 4.5,2025-09-29
@@ -99,7 +89,7 @@ m166,cb6,0.4707,CTI-REALM,o3,o3,2025-04-16
 m19,cb17,0.4836211957528594,SCONE-Bench,Claude Opus 4.5,Claude Opus 4.5,2025-11-24
 m21,cb1,0.4852576620460583,AISI CTF Suites - Expert,Claude Opus 4.7,Claude Opus 4.7,2026-04-16
 cyb_GPT-5.4-Cyber,cb1,0.4852576620460583,AISI CTF Suites - Expert,GPT-5.4-Cyber,GPT-5.4-Cyber,2026-04-14
-m20,cb5,0.4875,AISI Cyber Ranges - The Last Ones,Claude Opus 4.6,Claude Opus 4.6,2026-02-05
+m20,cb5,0.525,AISI Cyber Ranges - The Last Ones,Claude Opus 4.6,Claude Opus 4.6,2026-02-05
 cyb_GPT-4 Turbo,cb3,0.4886128148217835,AISI CTF Suites - Technical Non-Expert,GPT-4 Turbo,GPT-4 Turbo,2024-04-09
 m13,cb8,0.4968421052631579,CyberGym,Claude 3.7 Sonnet,Claude 3.7 Sonnet,2025-02-24
 m57,cb16,0.5,OpenAI NYU CTF Professional (Refactored),GPT-5,GPT-5,2025-08-07
@@ -224,3 +214,112 @@ m67,cb12,1.0,NL2Bash,GPT-5.5,GPT-5.5,2026-04-23
 m67,cb11,1.0,InterCode-CTF,GPT-5.5,GPT-5.5,2026-04-23
 cyb_Claude Mythos Preview (April),b17,1.0,Cybench,Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
 cyb_Claude Mythos Preview (April),cb17,1.0,SCONE-Bench,Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
+m15,new_b6,0.0,Anthropic Binary Exploitation / September / full exploitation,Claude Haiku 4.5,Claude Haiku 4.5,2025-10-15
+m15,new_b22,0.0,CyScenarioBench / Anthropic September 2026,Claude Haiku 4.5,Claude Haiku 4.5,2025-10-15
+new_m46,cb7,0.0,CyScenarioBench / Irregular,GLM-5.2,GLM-5.2,2026-06-16
+cyb_GPT-5.2 Codex,cb7,0.0,CyScenarioBench / Irregular,GPT-5.2 Codex,GPT-5.2 Codex,2025-12-18
+cyb_GPT-5.3 Codex,cb7,0.0,CyScenarioBench / Irregular,GPT-5.3 Codex,GPT-5.3 Codex,2026-02-05
+m83,cb7,0.0,CyScenarioBench / Irregular,Gemini 3 Pro,Gemini 3 Pro,2025-11-18
+m132,cb7,0.0,CyScenarioBench / Irregular,Muse Spark,Muse Spark,2026-04-08
+new_m13,new_b6,0.003610108303,Anthropic Binary Exploitation / September / full exploitation,Claude Haiku 5.5,Claude Haiku 5.5,2026-10-07
+new_m18,new_b6,0.003610108303,Anthropic Binary Exploitation / September / full exploitation,Claude Sonnet 5,Claude Sonnet 5,2026-06-30
+new_m18,new_b22,0.007,CyScenarioBench / Anthropic September 2026,Claude Sonnet 5,Claude Sonnet 5,2026-06-30
+new_m120,new_b16,0.024,CAISI OSS-Fuzz (September 2026),Kimi K3,Kimi K3,2026-07-16
+new_m120,new_b15,0.026,CAISI ExploitGym Userspace (September 2026),Kimi K3,Kimi K3,2026-07-16
+new_m13,new_b22,0.033,CyScenarioBench / Anthropic September 2026,Claude Haiku 5.5,Claude Haiku 5.5,2026-10-07
+m70,new_b54,0.035,OpenAI ExploitBench Internal Port / June–August 2026 / reported headline,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09
+new_m72,new_b54,0.055,OpenAI ExploitBench Internal Port / June–August 2026 / reported headline,GPT-6 Sol,GPT-6 Sol,2026-09-22
+new_m19,new_b6,0.06016847172,Anthropic Binary Exploitation / September / full exploitation,Claude Sonnet 5.5,Claude Sonnet 5.5,2026-09-28
+cyb_Claude Mythos Preview (April),new_b16,0.067,CAISI OSS-Fuzz (September 2026),Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
+new_m18,new_b8,0.0733601841249999,Anthropic ExploitGym / September 869 tasks / 6h,Claude Sonnet 5,Claude Sonnet 5,2026-06-30
+new_m47,new_b16,0.077,CAISI OSS-Fuzz (September 2026),GLM-5.3,GLM-5.3,2026-08-14
+new_m16,new_b6,0.07942238267,Anthropic Binary Exploitation / September / full exploitation,Claude Opus 5,Claude Opus 5,2026-07-24
+new_m30,new_b11,0.085,CAISI CTF-Archive (577 tasks),DeepSeek-R1,DeepSeek-R1,2025-01-20
+m63,cb7,0.09,CyScenarioBench / Irregular,GPT-5.4,GPT-5.4,2026-03-05
+new_m47,new_b15,0.094,CAISI ExploitGym Userspace (September 2026),GLM-5.3,GLM-5.3,2026-08-14
+cyb_Claude Mythos Preview (April),new_b15,0.096,CAISI ExploitGym Userspace (September 2026),Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
+new_m15,new_b6,0.09747292419,Anthropic Binary Exploitation / September / full exploitation,Claude Mythos 5.1,Claude Mythos 5.1,2026-09-01
+new_m13,new_b8,0.1179516685874999,Anthropic ExploitGym / September 869 tasks / 6h,Claude Haiku 5.5,Claude Haiku 5.5,2026-10-07
+new_m57,b17,0.125,Cybench,GPT-4o (Nov 2024),GPT-4o (Nov 2024),2024-11-20
+new_m17,new_b6,0.12755716,Anthropic Binary Exploitation / September / full exploitation,Claude Opus 5.5,Claude Opus 5.5,2026-09-22
+m15,new_b7,0.12875,Anthropic ExploitBench / September / AutoNudge mean,Claude Haiku 4.5,Claude Haiku 4.5,2025-10-15
+new_m71,new_b55,0.145,OpenAI ExploitGym / v1 869 tasks / token-capped / reported headline,GPT-6 Luna,GPT-6 Luna,2026-09-22
+new_m30,new_b14,0.167,CAISI Cybench (2025),DeepSeek-R1,DeepSeek-R1,2025-01-20
+m8,new_b70,0.183,UK AISI / 70-task subset / July 2026,Claude 3 Opus,Claude 3 Opus,2024-02-29
+new_m73,new_b54,0.215,OpenAI ExploitBench Internal Port / June–August 2026 / reported headline,GPT-6.1 Sol,GPT-6.1 Sol,2026-09-29
+new_m70,new_b16,0.232,CAISI OSS-Fuzz (September 2026),GPT-6 Astra,GPT-6 Astra,2026-09-03
+new_m39,cb5,0.25,AISI Cyber Ranges - The Last Ones,DeepSeek-V4-Pro,DeepSeek-V4-Pro,2026-04-24
+m67,cb7,0.26,CyScenarioBench / Irregular,GPT-5.5,GPT-5.5,2026-04-23
+new_m18,new_b7,0.265,Anthropic ExploitBench / September / AutoNudge mean,Claude Sonnet 5,Claude Sonnet 5,2026-06-30
+new_m31,new_b11,0.265,CAISI CTF-Archive (577 tasks),DeepSeek-R1 (May 2025),DeepSeek-R1 (May 2025),2025-05-28
+new_m30,new_b13,0.267,"CAISI CVE-Bench (15 tasks, 2025)",DeepSeek-R1,DeepSeek-R1,2025-01-20
+m70,cb7,0.27,CyScenarioBench / Irregular,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09
+new_m120,new_b17,0.273,CAISI SEC-Bench Pro (September 2026),Kimi K3,Kimi K3,2026-07-16
+new_m16,new_b8,0.27474108175,Anthropic ExploitGym / September 869 tasks / 6h,Claude Opus 5,Claude Opus 5,2026-07-24
+new_m72,new_b55,0.27625,OpenAI ExploitGym / v1 869 tasks / token-capped / reported headline,GPT-6 Sol,GPT-6 Sol,2026-09-22
+cyb_DeepSeek V3.1,new_b11,0.282,CAISI CTF-Archive (577 tasks),DeepSeek V3.1,DeepSeek V3.1,2025-08-21
+m163,new_b70,0.288,UK AISI / 70-task subset / July 2026,o1,o1,2024-12-17
+new_m70,new_b54,0.315,OpenAI ExploitBench Internal Port / June–August 2026 / reported headline,GPT-6 Astra,GPT-6 Astra,2026-09-03
+new_m39,new_b12,0.317,CAISI CTF-Archive-Diamond (285 tasks),DeepSeek-V4-Pro,DeepSeek-V4-Pro,2026-04-24
+new_m65,new_b12,0.32,CAISI CTF-Archive-Diamond (285 tasks),GPT-5.4 mini,GPT-5.4 mini,2026-03-17
+new_m19,new_b8,0.3322784809999999,Anthropic ExploitGym / September 869 tasks / 6h,Claude Sonnet 5.5,Claude Sonnet 5.5,2026-09-28
+m17,new_b11,0.341,CAISI CTF-Archive (577 tasks),Claude Opus 4,Claude Opus 4,2025-05-22
+new_m71,new_b56,0.342,OpenAI SEC-Bench Pro / May 183 tasks / revised grader / reported headline,GPT-6 Luna,GPT-6 Luna,2026-09-22
+new_m218,new_b11,0.343,CAISI CTF-Archive (577 tasks),gpt-oss-120b,gpt-oss-120b,2025-08-05
+new_m46,cb5,0.34375,AISI Cyber Ranges - The Last Ones,GLM-5.2,GLM-5.2,2026-06-16
+new_m31,new_b14,0.355,CAISI Cybench (2025),DeepSeek-R1 (May 2025),DeepSeek-R1 (May 2025),2025-05-28
+new_m31,new_b13,0.36,"CAISI CVE-Bench (15 tasks, 2025)",DeepSeek-R1 (May 2025),DeepSeek-R1 (May 2025),2025-05-28
+cyb_DeepSeek V3.1,new_b13,0.367,"CAISI CVE-Bench (15 tasks, 2025)",DeepSeek V3.1,DeepSeek V3.1,2025-08-21
+m70,new_b55,0.37875,OpenAI ExploitGym / v1 869 tasks / token-capped / reported headline,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09
+new_m15,new_b8,0.3797468355,Anthropic ExploitGym / September 869 tasks / 6h,Claude Mythos 5.1,Claude Mythos 5.1,2026-09-01
+m59,new_b11,0.381,CAISI CTF-Archive (577 tasks),GPT-5 mini,GPT-5 mini,2025-08-07
+new_m46,new_b12,0.393,CAISI CTF-Archive-Diamond (285 tasks),GLM-5.2,GLM-5.2,2026-06-16
+m166,new_b70,0.394,UK AISI / 70-task subset / July 2026,o3,o3,2025-04-16
+cyb_DeepSeek V3.1,new_b14,0.4,CAISI Cybench (2025),DeepSeek V3.1,DeepSeek V3.1,2025-08-21
+new_m117,new_b14,0.4,CAISI Cybench (2025),Kimi K2 Thinking,Kimi K2 Thinking,2025-11-06
+new_m47,new_b17,0.404,CAISI SEC-Bench Pro (September 2026),GLM-5.3,GLM-5.3,2026-08-14
+new_m13,new_b7,0.41,Anthropic ExploitBench / September / AutoNudge mean,Claude Haiku 5.5,Claude Haiku 5.5,2026-10-07
+new_m218,new_b13,0.422,"CAISI CVE-Bench (15 tasks, 2025)",gpt-oss-120b,gpt-oss-120b,2025-08-05
+new_m17,new_b8,0.4315304948749999,Anthropic ExploitGym / September 869 tasks / 6h,Claude Opus 5.5,Claude Opus 5.5,2026-09-22
+new_m73,new_b55,0.43875,OpenAI ExploitGym / v1 869 tasks / token-capped / reported headline,GPT-6.1 Sol,GPT-6.1 Sol,2026-09-29
+new_m70,new_b15,0.444,CAISI ExploitGym Userspace (September 2026),GPT-6 Astra,GPT-6 Astra,2026-09-03
+m20,new_b12,0.456,CAISI CTF-Archive-Diamond (285 tasks),Claude Opus 4.6,Claude Opus 4.6,2026-02-05
+new_m19,new_b22,0.461,CyScenarioBench / Anthropic September 2026,Claude Sonnet 5.5,Claude Sonnet 5.5,2026-09-28
+m17,new_b14,0.469,CAISI Cybench (2025),Claude Opus 4,Claude Opus 4,2025-05-22
+m22,new_b12,0.484,CAISI CTF-Archive-Diamond (285 tasks),Claude Opus 4.8,Claude Opus 4.8,2026-05-28
+new_m218,new_b14,0.495,CAISI Cybench (2025),gpt-oss-120b,gpt-oss-120b,2025-08-05
+new_m117,new_b13,0.505,"CAISI CVE-Bench (15 tasks, 2025)",Kimi K2 Thinking,Kimi K2 Thinking,2025-11-06
+m57,new_b11,0.506,CAISI CTF-Archive (577 tasks),GPT-5,GPT-5,2025-08-07
+m59,new_b14,0.515,CAISI Cybench (2025),GPT-5 mini,GPT-5 mini,2025-08-07
+m57,new_b70,0.526,UK AISI / 70-task subset / July 2026,GPT-5,GPT-5,2025-08-07
+new_m70,new_b55,0.5299999999999999,OpenAI ExploitGym / v1 869 tasks / token-capped / reported headline,GPT-6 Astra,GPT-6 Astra,2026-09-03
+new_m16,new_b22,0.53,CyScenarioBench / Anthropic September 2026,Claude Opus 5,Claude Opus 5,2026-07-24
+new_m120,cb5,0.53125,AISI Cyber Ranges - The Last Ones,Kimi K3,Kimi K3,2026-07-16
+m63,new_b12,0.544,CAISI CTF-Archive-Diamond (285 tasks),GPT-5.4,GPT-5.4,2026-03-05
+new_m39,new_b70,0.557,UK AISI / 70-task subset / July 2026,DeepSeek-V4-Pro,DeepSeek-V4-Pro,2026-04-24
+m59,new_b13,0.567,"CAISI CVE-Bench (15 tasks, 2025)",GPT-5 mini,GPT-5 mini,2025-08-07
+new_m70,cb7,0.59,CyScenarioBench / Irregular,GPT-6 Astra,GPT-6 Astra,2026-09-03
+cyb_Claude Mythos Preview (April),new_b17,0.607,CAISI SEC-Bench Pro (September 2026),Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
+new_m15,new_b22,0.617,CyScenarioBench / Anthropic September 2026,Claude Mythos 5.1,Claude Mythos 5.1,2026-09-01
+m19,new_b70,0.629,UK AISI / 70-task subset / July 2026,Claude Opus 4.5,Claude Opus 4.5,2025-11-24
+cyb_GPT-5.2 Codex,new_b70,0.649,UK AISI / 70-task subset / July 2026,GPT-5.2 Codex,GPT-5.2 Codex,2025-12-18
+cyb_Claude Mythos Preview (April),new_b12,0.656,CAISI CTF-Archive-Diamond (285 tasks),Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
+m57,new_b13,0.656,"CAISI CVE-Bench (15 tasks, 2025)",GPT-5,GPT-5,2025-08-07
+new_m72,new_b56,0.663,OpenAI SEC-Bench Pro / May 183 tasks / revised grader / reported headline,GPT-6 Sol,GPT-6 Sol,2026-09-22
+new_m16,new_b7,0.663125,Anthropic ExploitBench / September / AutoNudge mean,Claude Opus 5,Claude Opus 5,2026-07-24
+m17,new_b13,0.667,"CAISI CVE-Bench (15 tasks, 2025)",Claude Opus 4,Claude Opus 4,2025-05-22
+new_m17,new_b22,0.676,CyScenarioBench / Anthropic September 2026,Claude Opus 5.5,Claude Opus 5.5,2026-09-22
+m67,new_b12,0.705,CAISI CTF-Archive-Diamond (285 tasks),GPT-5.5,GPT-5.5,2026-04-23
+new_m19,new_b7,0.720625,Anthropic ExploitBench / September / AutoNudge mean,Claude Sonnet 5.5,Claude Sonnet 5.5,2026-09-28
+new_m46,new_b70,0.726,UK AISI / 70-task subset / July 2026,GLM-5.2,GLM-5.2,2026-06-16
+m57,new_b14,0.735,CAISI Cybench (2025),GPT-5,GPT-5,2025-08-07
+m20,new_b70,0.749,UK AISI / 70-task subset / July 2026,Claude Opus 4.6,Claude Opus 4.6,2026-02-05
+new_m15,new_b7,0.784375,Anthropic ExploitBench / September / AutoNudge mean,Claude Mythos 5.1,Claude Mythos 5.1,2026-09-01
+new_m73,new_b56,0.788,OpenAI SEC-Bench Pro / May 183 tasks / revised grader / reported headline,GPT-6.1 Sol,GPT-6.1 Sol,2026-09-29
+m70,new_b56,0.791,OpenAI SEC-Bench Pro / May 183 tasks / revised grader / reported headline,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09
+new_m70,new_b56,0.854,OpenAI SEC-Bench Pro / May 183 tasks / revised grader / reported headline,GPT-6 Astra,GPT-6 Astra,2026-09-03
+new_m17,new_b7,0.884375,Anthropic ExploitBench / September / AutoNudge mean,Claude Opus 5.5,Claude Opus 5.5,2026-09-22
+cyb_Claude Mythos Preview (April),new_b70,0.889,UK AISI / 70-task subset / July 2026,Claude Mythos Preview (April),Claude Mythos Preview (April),2026-04-07
+new_m70,new_b17,0.902,CAISI SEC-Bench Pro (September 2026),GPT-6 Astra,GPT-6 Astra,2026-09-03
+cyb_Claude Mythos 5,new_b70,0.904,UK AISI / 70-task subset / July 2026,Claude Mythos 5,Claude Mythos 5,2026-06-09
+m70,new_b70,0.929,UK AISI / 70-task subset / July 2026,GPT-5.6 Sol,GPT-5.6 Sol,2026-07-09

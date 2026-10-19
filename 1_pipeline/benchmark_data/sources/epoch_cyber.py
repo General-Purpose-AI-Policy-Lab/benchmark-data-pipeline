@@ -39,6 +39,28 @@ CYBER_SPEC = {
     'AISI Cyber Ranges - The Last Ones':        'AISI Cyber Ranges - The Last Ones',
     'CTI-REALM':                                'CTI-REALM',
     'CyScenarioBench':                          'CyScenarioBench',
+    # The October 2026 table splits CyScenarioBench by who ran it (user, 2026-10-19): Irregular's own
+    # runs keep the benchmark's name (same Epoch id cb7), Anthropic's September runs on its own
+    # challenge subset are a benchmark of their own.
+    'CyScenarioBench / Irregular':                'CyScenarioBench',
+    'CyScenarioBench / Anthropic September 2026': 'CyScenarioBench (Anthropic)',
+    # CAISI's evaluations (user, 2026-10-19: all of them; the US models of the September 2026
+    # report are not named by CAISI, Epoch attributes them).
+    'CAISI CTF-Archive (577 tasks)':               'CAISI CTF-Archive',
+    'CAISI CTF-Archive-Diamond (285 tasks)':       'CAISI CTF-Archive-Diamond',
+    'CAISI CVE-Bench (15 tasks, 2025)':            'CAISI CVE-Bench',
+    'CAISI Cybench (2025)':                        'CAISI Cybench',
+    'CAISI ExploitGym Userspace (September 2026)': 'CAISI ExploitGym Userspace',
+    'CAISI OSS-Fuzz (September 2026)':             'CAISI OSS-Fuzz',
+    'CAISI SEC-Bench Pro (September 2026)':        'CAISI SEC-Bench Pro',
+    # Series a developer reports on its own models only (excluded rows in benchmarks.csv,
+    # frontier_coverage, user 2026-10-19).
+    'Anthropic Binary Exploitation / September / full exploitation':                'Anthropic Binary Exploitation',
+    'Anthropic ExploitBench / September / AutoNudge mean':                          'Anthropic ExploitBench',
+    'Anthropic ExploitGym / September 869 tasks / 6h':                              'Anthropic ExploitGym',
+    'OpenAI ExploitBench Internal Port / June–August 2026 / reported headline':     'OpenAI ExploitBench',
+    'OpenAI ExploitGym / v1 869 tasks / token-capped / reported headline':          'OpenAI ExploitGym',
+    'OpenAI SEC-Bench Pro / May 183 tasks / revised grader / reported headline':    'OpenAI SEC-Bench Pro',
     'Cybench':                                  'Cybench',        # also in the ZIP: dedup keeps the max
     'CyberGym':                                 'CyberGym',
     'ExploitBench':                             'ExploitBench',   # also in the ZIP: dedup keeps the max
@@ -53,11 +75,22 @@ CYBER_SPEC = {
     'XBOW-Web':                                 'XBOW-Web',
 }
 
+# Series of the table set aside, with the reason.
+CYBER_SKIP = {
+    'UK AISI / 70-task subset / July 2026': "the mean over 70 of the 96 tasks of AISI's narrow cyber suite (18 technical "
+                                            "non-expert, 25 apprentice, 19 practitioner, 8 expert): the same tasks as the "
+                                            "four `AISI CTF Suites` levels already ingested, so a second count of them "
+                                            "(user, 2026-10-19: included only if not redundant)",
+}
+
+if set(CYBER_SPEC) & set(CYBER_SKIP):
+    raise ValueError("benchmark in both CYBER_SPEC and CYBER_SKIP")
+
 
 def translate(feed_dir: Path) -> Iterator[Record]:
     """One row = one measurement; the release date travels as metadata."""
     table = pandas.read_csv(feed_dir / "epoch_cyber" / FILE, dtype={"date": str})
-    unknown = sorted(set(table["benchmark"]) - set(CYBER_SPEC))
+    unknown = sorted(set(table["benchmark"]) - set(CYBER_SPEC) - set(CYBER_SKIP))
     for name in unknown:
         log.warning("epoch_cyber: ? benchmark %r: not in CYBER_SPEC", name)
     score = pandas.to_numeric(table["performance"], errors="coerce")

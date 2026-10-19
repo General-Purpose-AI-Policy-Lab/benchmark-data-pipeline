@@ -358,3 +358,18 @@ gpt-6-sol,gpt-6-sol,,,,,,HLE Diamond machine-style label without effort; effort-
 grok-4.7,grok-4.7,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
 kimi-k3,kimi-k3,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
 muse-spark-1.3,muse-spark-1.3,,,,,,HLE Diamond machine-style label without effort; effort-less -> no effort stated (2026-09-30)
+Claude Haiku 5.5,claude-haiku-5-5,,,,,,SEAL display name (refresh of 2026-10-19); no effort stated
+GPT 6.1 Sol,gpt-6.1-sol,,,,,,SEAL display name (refresh of 2026-10-19); no effort stated
+Gemini 4 Argon (mini-swe-agent) high,gemini-4-argon,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (refresh of 2026-10-19)
+Haiku 5.5 (mini-swe-agent) high,claude-haiku-5-5,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (refresh of 2026-10-19)
+Muse Spark Open (mini-swe-agent) xhigh,Muse-Spark-Open-816B-A42B,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (refresh of 2026-10-19); Epoch's spelling of the open-weights Muse Spark
+Muse Wonder 1.0 (mini-swe-agent) xhigh,muse-wonder-1.0,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (refresh of 2026-10-19)
+Opus 5.5,claude-opus-5-5,,,,,,SEAL display name (refresh of 2026-10-19); no effort stated
+Sonnet 5.5 (mini-swe-agent) xhigh,claude-sonnet-5-5,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (refresh of 2026-10-19)
+claude-sonnet-5-5,claude-sonnet-5-5,,,,,,SEAL slug (refresh of 2026-10-19); no effort stated
+gemini-4-argon,gemini-4-argon,,,,,,SEAL slug (refresh of 2026-10-19); no effort stated
+gemini-4-argon (high),gemini-4-argon,high,,,,,SEAL effort spelling (refresh of 2026-10-19)
+inkling,Inkling,,,,,,SEAL slug (refresh of 2026-10-19); Epoch's spelling
+muse-spark-open,Muse-Spark-Open-816B-A42B,,,,,,SEAL slug (refresh of 2026-10-19); Epoch's spelling of the open-weights Muse Spark
+muse-wonder-1.0,muse-wonder-1.0,,,,,,SEAL slug (refresh of 2026-10-19); no effort stated
+salesforce-launa-omni-1,launa-omni-1,,,,,,"SEAL slug (refresh of 2026-10-19); Salesforce's model, new to the pipeline"

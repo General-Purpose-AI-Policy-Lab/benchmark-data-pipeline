@@ -1,4 +1,10 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+muse-wonder-1.0_max,0.5416666666666666,0.5416666666666666,2026-10-12,Meta AI,United States of America,,,0.06432138878020231,,,2026-10-15T22:49:11.000Z,iuNhWVj65sV54m3cKVwv9x
+mistral-large-4-0_high,0.20833333333333334,0.20833333333333334,2026-10-06,Mistral AI,France,,,0.052199728697406675,,,2026-10-14T00:39:04.000Z,cETggiScYbsKGvPW5BAVWJ
+gemini-4-argon_high,0.725,0.725,2026-09-30,Google DeepMind,United States of America,,,0.056279417919483966,,,2026-10-13T17:15:28.000Z,bRw53PXBsZXrvWau95hb23
+deepseek-v4.1-flash_max,0.3416666666666667,0.3416666666666667,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+",0.06000431560123094,,,2026-10-08T19:02:18.000Z,JFQz7q3hxAKLV5pW6DmkGF
+claude-haiku-5-5_max,0.475,0.475,2026-10-07,Anthropic,United States of America,,,0.06446761548504554,,,2026-10-07T20:22:18.000Z,bZMMyetG9pAbKgpxghoTe8
 gpt-6.1-sol_max,0.8,0.8,2026-09-29,OpenAI,United States of America,,,0.04928872620664329,,,2026-09-29T18:29:32.000Z,R4vjsSfDrDo6ECQWGTUdWe
 claude-sonnet-5-5_max,0.75,0.75,2026-09-28,Anthropic,United States of America,,,0.05510647116121488,,,2026-09-29T15:17:08.000Z,5xgoV6NXxdDqscnFNpP2vv
 gpt-6-luna_max,0.44166666666666665,0.44166666666666665,2026-09-22,OpenAI,United States of America,,,0.06410142328406845,,,2026-09-28T03:08:57.000Z,GVtcaKADdbkuPoydqpKm3E
@@ -24,9 +30,9 @@ claude-opus-4-7_max,0.3333333333333333,0.3333333333333333,2026-04-16,Anthropic,U
 claude-opus-4-6_max,0.2833333333333333,0.2833333333333333,2026-02-05,Anthropic,United States of America,,,0.05866531842313124,,,2026-09-10T20:22:53.000Z,4Jq9M5CbuWMyxRHHxavMwA
 claude-opus-4-5-20251101_64K,0.2833333333333333,0.2833333333333333,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,0.05866531842313124,,,2026-09-10T20:22:43.000Z,E3gZb5amR7rcoRkqUGeQRG
 gpt-5.6-luna_max,0.425,0.425,2026-07-09,OpenAI,United States of America,,,0.06380695638890652,,,2026-09-10T20:22:42.000Z,UPAoeCG9AhQYyxCGc8C7Eq
-gpt-6-astra_max,0.8,0.8,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_max,0.8,0.8,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.04928872620664329,,,2026-09-10T20:22:39.000Z,BSzNeBCFhFUnZswSqHtAed
 gpt-5.6-sol_max,0.5666666666666667,0.5666666666666667,2026-07-09,OpenAI,United States of America,,,0.06340911315327727,,,2026-09-10T20:22:35.000Z,SqvYScyg9JZfiUdNLX6V9M
 gpt-5.6-terra_max,0.5416666666666666,0.5416666666666666,2026-07-09,OpenAI,United States of America,,,0.06432138878020231,,,2026-09-10T20:22:34.000Z,dxcm8tfHzGWR8sVJ6kUWMF

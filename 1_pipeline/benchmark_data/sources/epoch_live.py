@@ -33,6 +33,7 @@ LIVE_TASK_SPEC = {
     'OTIS Mock AIME 2024-2025':               ('OTIS Mock AIME 2024-2025', None),
     'SimpleQA Verified':                      ('SimpleQA Verified', None),
     'SWE-Bench verified':                     ('SWE-Bench Verified', None),
+    'SpireClimb':                             ('SpireClimb', None),
 }
 
 # Tasks set aside, with the reason.
@@ -40,6 +41,8 @@ LIVE_TASK_SKIP = {
     'FrontierMath-2025-02-28-Public':        '10-problem public split; the information would be manufactured by the clip at the bounds',
     'FrontierMath-Tier-4-2025-07-01-Public': '2-problem public split; only 3 distinct values',
     'SimpleQA Verified (anti-abstention)':   'protocol variant of SimpleQA Verified (abstention disallowed), same items; one series per benchmark',
+    'SpireClimb (Slay the Spire 1, Ascension 20 Heart)': "one of SpireClimb's two settings; the SpireClimb task is their mean (user, 2026-10-19: the main score only)",
+    'SpireClimb (Slay the Spire 2, Ascension 10)':       "one of SpireClimb's two settings; the SpireClimb task is their mean (user, 2026-10-19: the main score only)",
 }
 
 if set(LIVE_TASK_SPEC) & set(LIVE_TASK_SKIP):

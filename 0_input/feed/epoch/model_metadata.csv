@@ -32,7 +32,7 @@ Baichuan-7B,Baichuan1-7B,2023-06-01,,Baichuan,China,Open weights (non-commercial
 Baichuan-13B-Base,Baichuan 1-13B,2023-07-11,,Baichuan,China,Open weights (restricted use),9.36e+22
 Baichuan2-13B-Chat,Baichuan2-13B-Chat,2023-09-06,,,,,
 blip2-opt-2.7b,BLIP-2 (Q-Former),2023-02-06,,Salesforce Research,United States of America,Open weights (unrestricted),1.20000000001e+21
-bloom,BLOOM-176B,2022-07-06,,"Hugging Face,BigScience","France,United States of America",Open weights (restricted use),3.65664e+23
+bloom,BLOOM-176B,2022-07-06,,"Hugging Face,BigScience","United States of America,France",Open weights (restricted use),3.65664e+23
 ByteVideoLLM-14B,ByteVideoLLM-14B,2024-10-13,,,,,
 c4ai-command-a-03-2025,Cohere Command A,2025-03-13,,Cohere,Canada,Open weights (non-commercial),
 c4ai-command-r-08-2024,c4ai-command-r-08-2024,2024-08-30,,,,,
@@ -98,8 +98,15 @@ claude-haiku-4-5-20251001_1K,Claude Haiku 4.5,2025-10-15,,Anthropic,United State
 claude-haiku-4-5-20251001_8K,Claude Haiku 4.5,2025-10-15,,Anthropic,United States of America,API access,
 claude-haiku-4-5-20251001_16K,Claude Haiku 4.5,2025-10-15,,Anthropic,United States of America,API access,
 claude-haiku-4-5-20251001_32K,Claude Haiku 4.5,2025-10-15,,Anthropic,United States of America,API access,
+claude-haiku-4-5-20251001_59K,Claude Haiku 4.5,2025-10-15,Claude Haiku 4.5 (59k thinking),Anthropic,United States of America,API access,
 claude-haiku-4-5-20251001_low,Claude Haiku 4.5,2025-10-15,Claude Haiku 4.5 (low),Anthropic,United States of America,API access,
 claude-haiku-4-5-20251001_unknown,Claude Haiku 4.5,2025-10-15,Claude Haiku 4.5 (unknown thinking),Anthropic,United States of America,API access,
+claude-haiku-5-5_high,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (high),Anthropic,United States of America,API access,
+claude-haiku-5-5_low,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (low),Anthropic,United States of America,API access,
+claude-haiku-5-5_max,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (max),Anthropic,United States of America,API access,
+claude-haiku-5-5_medium,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (medium),Anthropic,United States of America,API access,
+claude-haiku-5-5_unknown,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (unknown),Anthropic,United States of America,API access,
+claude-haiku-5-5_xhigh,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (xhigh),Anthropic,United States of America,API access,
 claude-instant-1.1,Claude Instant,2023-08-09,,Anthropic,United States of America,API access,
 claude-instant-1.2,Claude Instant,2023-08-09,,Anthropic,United States of America,API access,
 claude-mythos-preview,Claude Mythos Preview,2026-04-07,Claude Mythos Preview (April),Anthropic,United States of America,Limited access,
@@ -161,8 +168,11 @@ claude-opus-5_max,Claude Opus 5,2026-07-24,Claude Opus 5 (max),Anthropic,United 
 claude-opus-5_medium,Claude Opus 5,2026-07-24,Claude Opus 5 (medium),Anthropic,United States of America,API access,
 claude-opus-5_unknown,Claude Opus 5,2026-07-24,Claude Opus 5 (unknown),Anthropic,United States of America,API access,
 claude-opus-5_xhigh,Claude Opus 5,2026-07-24,Claude Opus 5 (xhigh),Anthropic,United States of America,API access,
+claude-opus-5-5_high,Claude Opus 5.5,2026-09-22,Claude Opus 5.5 (high),Anthropic,United States of America,API access,
+claude-opus-5-5_low,Claude Opus 5.5,2026-09-22,Claude Opus 5.5 (low),Anthropic,United States of America,API access,
 claude-opus-5-5_max,Claude Opus 5.5,2026-09-22,Claude Opus 5.5 (max),Anthropic,United States of America,API access,
 claude-opus-5-5_medium,Claude Opus 5.5,2026-09-22,Claude Opus 5.5 (medium),Anthropic,United States of America,API access,
+claude-opus-5-5_unknown,Claude Opus 5.5,2026-09-22,Claude Opus 5.5 (unknown),Anthropic,United States of America,API access,
 claude-opus-5-5_xhigh,Claude Opus 5.5,2026-09-22,Claude Opus 5.5 (xhigh),Anthropic,United States of America,API access,
 claude-sonnet-4-5-20250929,Claude Sonnet 4.5,2025-09-29,Claude Sonnet 4.5 (no thinking),Anthropic,United States of America,API access,
 claude-sonnet-4-5-20250929_1K,Claude Sonnet 4.5,2025-09-29,Claude Sonnet 4.5 (1k thinking),Anthropic,United States of America,API access,
@@ -207,6 +217,7 @@ claude-sonnet-5-5_high,Claude Sonnet 5.5,2026-09-28,Claude Sonnet 5.5 (high),Ant
 claude-sonnet-5-5_low,Claude Sonnet 5.5,2026-09-28,Claude Sonnet 5.5 (low),Anthropic,United States of America,API access,
 claude-sonnet-5-5_max,Claude Sonnet 5.5,2026-09-28,Claude Sonnet 5.5 (max),Anthropic,United States of America,API access,
 claude-sonnet-5-5_medium,Claude Sonnet 5.5,2026-09-28,Claude Sonnet 5.5 (medium),Anthropic,United States of America,API access,
+claude-sonnet-5-5_unknown,Claude Sonnet 5.5,2026-09-28,Claude Sonnet 5.5 (unknown),Anthropic,United States of America,API access,
 claude-sonnet-5-5_xhigh,Claude Sonnet 5.5,2026-09-28,Claude Sonnet 5.5 (xhigh),Anthropic,United States of America,API access,
 claude-strudel-v4-p,claude-strudel-v4-p,2025-05-22,,Anthropic,United States of America,API access,
 claude-strudel-v4-p_high,claude-strudel-v4-p_high,2025-05-22,,Anthropic,United States of America,API access,
@@ -299,16 +310,18 @@ deepseek-v4-pro-0813_max,DeepSeek V4 Pro 0813,2026-08-13,DeepSeek V4 Pro 0813 (m
 deepseek-v4-pro-0813_none,DeepSeek V4 Pro 0813,2026-08-13,DeepSeek V4 Pro 0813 (none),DeepSeek,China,Open weights (unrestricted),9.702e+24
 deepseek-v4-pro-0813_unknown,DeepSeek V4 Pro 0813,2026-08-13,DeepSeek V4 Pro 0813 (unknown),DeepSeek,China,Open weights (unrestricted),9.702e+24
 deepseek-v4.1-flash_high,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (high),DeepSeek,China,Open weights (unrestricted),4.32e+24
+deepseek-v4.1-flash_low,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (low),DeepSeek,China,Open weights (unrestricted),4.32e+24
 deepseek-v4.1-flash_max,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (max),DeepSeek,China,Open weights (unrestricted),4.32e+24
+deepseek-v4.1-flash_none,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (none),DeepSeek,China,Open weights (unrestricted),4.32e+24
 deepseek-v4.1-flash_unknown,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (unknown),DeepSeek,China,Open weights (unrestricted),4.32e+24
 deepseek/deepseek-v3.2,DeepSeek-V3.2,2025-12-01,DeepSeek-V3.2 (Thinking; Novita),DeepSeek,China,Open weights (unrestricted),4.2e+24
-devstral-small-2505,Devstral Small,2025-05-21,,"Mistral AI,All Hands AI","France,United States of America",Open weights (unrestricted),
+devstral-small-2505,Devstral Small,2025-05-21,,"Mistral AI,All Hands AI","United States of America,France",Open weights (unrestricted),
 devstral-small-2512,Devstral Small 2,2025-12-09,Devstral Small 2,Mistral AI,France,Open weights (unrestricted),
 dolly-v2-12b,Dolly 2.0-12b,2023-04-11,,Databricks,United States of America,Open weights (unrestricted),
 doubao-pro-32k,Doubao-pro,2024-10-28,,ByteDance,China,API access,2.505e+25
 Dracarys2-72B-Instruct,Dracarys2-72B-Instruct,2024-09-30,,,,,
 Dracarys2-Llama-3.1-70B-Instruct,Dracarys2-Llama-3.1-70B-Instruct,2024-08-14,,,,,
-Eurus-2-7B-PRIME,Eurus-2-7B-PRIME,2024-12-31,,"Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute","China,United States of America",Open weights (unrestricted),4.01915904e+20
+Eurus-2-7B-PRIME,Eurus-2-7B-PRIME,2024-12-31,,"Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute","United States of America,China",Open weights (unrestricted),4.01915904e+20
 EXAONE-Deep-32B,EXAONE Deep 32B,2025-03-18,,LG AI Research,South Korea,Open weights (non-commercial),1.26e+24
 falcon-7b,Falcon-7B,2023-04-24,,Technology Innovation Institute,United Arab Emirates,Open weights (unrestricted),6.3e+22
 falcon-11b,Falcon 2 11B,2024-05-09,Falcon 2-11B,Technology Innovation Institute,United Arab Emirates,Open weights (restricted use),3.6e+23
@@ -407,6 +420,11 @@ gemini-3.8-flash_high,Gemini 3.8 Flash,2026-09-02,Gemini 3.8 Flash (high),Google
 gemini-3.8-flash_low,Gemini 3.8 Flash,2026-09-02,Gemini 3.8 Flash (low),Google DeepMind,United States of America,API access,
 gemini-3.8-flash_medium,Gemini 3.8 Flash,2026-09-02,Gemini 3.8 Flash (medium),Google DeepMind,United States of America,API access,
 gemini-3.8-flash_unknown,Gemini 3.8 Flash,2026-09-02,Gemini 3.8 Flash (unknown),Google DeepMind,United States of America,API access,
+gemini-4-argon_high,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (high),Google DeepMind,United States of America,Limited access,
+gemini-4-argon_low,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (low),Google DeepMind,United States of America,Limited access,
+gemini-4-argon_medium,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (medium),Google DeepMind,United States of America,Limited access,
+gemini-4-argon_minimal,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (minimal),Google DeepMind,United States of America,Limited access,
+gemini-4-argon_unknown,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (unknown),Google DeepMind,United States of America,Limited access,
 gemini-exp-1206,Gemini 2.0 Flash (Dec 2024),2024-12-06,,"Google DeepMind,Google",United States of America,API access,
 gemini-robotics-er-1.5-preview,gemini-robotics-er-1.5-preview,2025-09-26,,,,,
 gemini-robotics-er-1.6-preview,Gemini Robotics-ER 1.6,2026-04-14,Gemini Robotics-ER 1.6 Preview,Google,United States of America,API access,
@@ -448,10 +466,12 @@ glm-5.2_medium,GLM-5.2,2026-06-16,GLM-5.2,Z.ai (Zhipu AI),China,Open weights (un
 glm-5.2_minimal,GLM-5.2,2026-06-16,,Z.ai (Zhipu AI),China,Open weights (unrestricted),
 glm-5.2_none,GLM-5.2,2026-06-16,GLM-5.2,Z.ai (Zhipu AI),China,Open weights (unrestricted),
 glm-5.2_unknown,GLM-5.2,2026-06-16,GLM-5.2,Z.ai (Zhipu AI),China,Open weights (unrestricted),
-glm-5.3_high,GLM-5.3,2026-08-14,GLM-5.3 (high),Z.ai (Zhipu AI),China,API access,
-glm-5.3_max,GLM-5.3,2026-08-14,GLM-5.3 (max),Z.ai (Zhipu AI),China,API access,
-glm-5.3_unknown,GLM-5.3,2026-08-14,GLM-5.3 (unknown thinking),Z.ai (Zhipu AI),China,API access,
+glm-5.3_high,GLM-5.3,2026-08-14,GLM-5.3 (high),Z.ai (Zhipu AI),China,Open weights (restricted use),
+glm-5.3_low,GLM-5.3,2026-08-14,GLM-5.3 (low),Z.ai (Zhipu AI),China,Open weights (restricted use),
+glm-5.3_max,GLM-5.3,2026-08-14,GLM-5.3 (max),Z.ai (Zhipu AI),China,Open weights (restricted use),
+glm-5.3_unknown,GLM-5.3,2026-08-14,GLM-5.3 (unknown thinking),Z.ai (Zhipu AI),China,Open weights (restricted use),
 glm-5.3-flash_high,GLM-5.3-Flash,2026-08-20,GLM-5.3-Flash (high),Z.ai (Zhipu AI),China,Open weights (unrestricted),3.24e+24
+glm-5.3-flash_low,GLM-5.3-Flash,2026-08-20,GLM-5.3-Flash (low),Z.ai (Zhipu AI),China,Open weights (unrestricted),3.24e+24
 glm-5.3-flash_max,GLM-5.3-Flash,2026-08-20,GLM-5.3-Flash (max),Z.ai (Zhipu AI),China,Open weights (unrestricted),3.24e+24
 glm-5.3-flash_unknown,GLM-5.3-Flash,2026-08-20,GLM-5.3-Flash (unknown),Z.ai (Zhipu AI),China,Open weights (unrestricted),3.24e+24
 glm-z1-rumination-32b-0414,GLM-Z1-Rumination-32B-0414,2025-04-14,,Tsinghua University,China,Open weights (unrestricted),2.88e+24
@@ -584,14 +604,14 @@ gpt-5.6-terra_medium,GPT-5.6 Terra,2026-07-09,GPT-5.6 Terra (medium),OpenAI,Unit
 gpt-5.6-terra_none,GPT-5.6 Terra,2026-07-09,GPT-5.6 Terra (none),OpenAI,United States of America,API access,
 gpt-5.6-terra_unknown,GPT-5.6 Terra,2026-07-09,GPT-5.6 Terra (unknown thinking),OpenAI,United States of America,API access,
 gpt-5.6-terra_xhigh,GPT-5.6 Terra,2026-07-09,GPT-5.6 Terra (xhigh),OpenAI,United States of America,API access,
-gpt-6-astra_high,GPT-6 Astra,2026-09-03,GPT-6 Astra (high),OpenAI,United States of America,API access,1.0001e+27
-gpt-6-astra_low,GPT-6 Astra,2026-09-03,GPT-6 Astra (low),OpenAI,United States of America,API access,1.0001e+27
-gpt-6-astra_max,GPT-6 Astra,2026-09-03,GPT-6 Astra (max),OpenAI,United States of America,API access,1.0001e+27
-gpt-6-astra_medium,GPT-6 Astra,2026-09-03,GPT-6 Astra (medium),OpenAI,United States of America,API access,1.0001e+27
-gpt-6-astra_none,GPT-6 Astra,2026-09-03,GPT-6 Astra (none),OpenAI,United States of America,API access,1.0001e+27
-gpt-6-astra_promax,GPT-6 Astra,2026-09-03,"GPT-6 Astra (pro, max)",OpenAI,United States of America,API access,1.0001e+27
-gpt-6-astra_unknown,GPT-6 Astra,2026-09-03,GPT-6 Astra (unknown thinking),OpenAI,United States of America,API access,1.0001e+27
-gpt-6-astra_xhigh,GPT-6 Astra,2026-09-03,GPT-6 Astra (xhigh),OpenAI,United States of America,API access,1.0001e+27
+gpt-6-astra_high,GPT-6 Astra,2026-09-03,GPT-6 Astra (high),OpenAI,United States of America,API access,9.4e+26
+gpt-6-astra_low,GPT-6 Astra,2026-09-03,GPT-6 Astra (low),OpenAI,United States of America,API access,9.4e+26
+gpt-6-astra_max,GPT-6 Astra,2026-09-03,GPT-6 Astra (max),OpenAI,United States of America,API access,9.4e+26
+gpt-6-astra_medium,GPT-6 Astra,2026-09-03,GPT-6 Astra (medium),OpenAI,United States of America,API access,9.4e+26
+gpt-6-astra_none,GPT-6 Astra,2026-09-03,GPT-6 Astra (none),OpenAI,United States of America,API access,9.4e+26
+gpt-6-astra_promax,GPT-6 Astra,2026-09-03,"GPT-6 Astra (pro, max)",OpenAI,United States of America,API access,9.4e+26
+gpt-6-astra_unknown,GPT-6 Astra,2026-09-03,GPT-6 Astra (unknown thinking),OpenAI,United States of America,API access,9.4e+26
+gpt-6-astra_xhigh,GPT-6 Astra,2026-09-03,GPT-6 Astra (xhigh),OpenAI,United States of America,API access,9.4e+26
 gpt-6-luna_high,GPT-6 Luna,2026-09-22,GPT-6 Luna (high),OpenAI,United States of America,API access,
 gpt-6-luna_low,GPT-6 Luna,2026-09-22,GPT-6 Luna (low),OpenAI,United States of America,API access,
 gpt-6-luna_max,GPT-6 Luna,2026-09-22,GPT-6 Luna (max),OpenAI,United States of America,API access,
@@ -612,7 +632,7 @@ gpt-6.1-sol_max,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (max),OpenAI,United States of
 gpt-6.1-sol_medium,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (medium),OpenAI,United States of America,API access,
 gpt-6.1-sol_unknown,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (unknown thinking),OpenAI,United States of America,API access,
 gpt-6.1-sol_xhigh,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (xhigh),OpenAI,United States of America,API access,
-gpt-j-6b,GPT-J-6B,2021-08-05,,"EleutherAI,LAION","Germany,United States of America",Open weights (unrestricted),1.5e+22
+gpt-j-6b,GPT-J-6B,2021-08-05,,"EleutherAI,LAION","United States of America,Germany",Open weights (unrestricted),1.5e+22
 gpt-neo-2.7B,GPT-Neo-2.7B,2021-03-30,,EleutherAI,United States of America,Open weights (unrestricted),7.9e+21
 gpt-neox-20b,GPT-NeoX-20B,2022-04-07,,EleutherAI,United States of America,Open weights (unrestricted),9.31627008e+22
 gpt-oss-20b,gpt-oss-20b,2025-08-05,,OpenAI,United States of America,Open weights (unrestricted),5.49e+23
@@ -674,9 +694,9 @@ grok-code-fast-1,grok-code-fast-1,2025-08-28,,,,,
 Hermes-2-Theta-Llama-3-70B,Hermes 2 Theta Llama-3 70B,2024-06-20,,"Nous Research,Arcee AI",United States of America,Open weights (restricted use),
 hy4-preview_unknown,Tencent Hy4 preview,2026-08-28,Tencent Hy4 preview (unknown),Tencent,China,Open weights (unrestricted),
 Inflection-1,Inflection-1,2023-06-22,,Inflection AI,United States of America,Hosted access (no API),1.0001e+24
-Inkling,Inkling,2026-07-15,Inkling,Thinking Machines,United States of America,Open weights (unrestricted),1.845e+24
-Inkling_high,Inkling,2026-07-15,Inkling (high),Thinking Machines,United States of America,Open weights (unrestricted),1.845e+24
-Inkling_xhigh,Inkling,2026-07-15,Inkling (xhigh),Thinking Machines,United States of America,Open weights (unrestricted),1.845e+24
+Inkling,Inkling,2026-07-15,Inkling,Thinking Machines,United States of America,Open weights (unrestricted),1.1e+25
+Inkling_high,Inkling,2026-07-15,Inkling (high),Thinking Machines,United States of America,Open weights (unrestricted),1.1e+25
+Inkling_xhigh,Inkling,2026-07-15,Inkling (xhigh),Thinking Machines,United States of America,Open weights (unrestricted),1.1e+25
 inkling-small,Inkling-Small,2026-07-15,Inkling Small,Thinking Machines,United States of America,Open weights (unrestricted),
 inkling-small_high,Inkling-Small,2026-07-15,Inkling Small (high),Thinking Machines,United States of America,Open weights (unrestricted),
 inkling-small_low,Inkling-Small,2026-07-15,Inkling Small (low),Thinking Machines,United States of America,Open weights (unrestricted),
@@ -694,7 +714,7 @@ internlm-chat-20b,internlm-chat-20b,2023-09-17,,,,,
 InternVL-Chat-V1-5,InternVL-Chat-V1-5,2024-04-18,,,,,
 InternVL-Chat-ViT-6B-Vicuna-7B,InternVL-Chat-ViT-6B-Vicuna-7B,2023-12-25,,,,,
 InternVL-Chat-ViT-6B-Vicuna-13B,InternVL-Chat-ViT-6B-Vicuna-13B,2024-08-16,,,,,
-InternVL2_5-78B,InternVL2_5-78B,2024-12-06,,"Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University","Hong Kong,China",Open weights (restricted use),
+InternVL2_5-78B,InternVL2_5-78B,2024-12-06,,"Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University","China,Hong Kong",Open weights (restricted use),
 InternVL2-40B,InternVL2-40B,2024-07-08,,Shanghai AI Lab,China,Open weights (unrestricted),
 kangaroo,kangaroo,2024-11-13,,,,,
 Kimi-Dev-72B,Kimi Dev 72b,2025-06-16,,Moonshot,China,Open weights (unrestricted),
@@ -777,6 +797,8 @@ mimo-v2-flash,MiMo-V2-Flash,2025-12-16,,Xiaomi Corp,China,Open weights (unrestri
 mimo-v2-pro,MiMo-V2-Pro,2026-03-18,,Xiaomi Corp,China,API access,
 mimo-v2.5,MiMo-V2.5,2026-04-23,,Xiaomi Corp,China,Open weights (unrestricted),4.32e+24
 mimo-v2.5-pro,MiMo-V2.5-Pro,2026-04-23,,Xiaomi Corp,China,Open weights (unrestricted),6.804e+24
+mimo-v2.6-flash,MiMo-V2.6 Flash,2026-09-21,MiMo-V2.6 Flash,Xiaomi Corp,China,,
+mimo-v2.6-pro,MiMo-V2.6 Pro,2026-09-21,MiMo-V2.6 Pro,Xiaomi Corp,China,,
 MiniCPM-o-2_6,MiniCPM-o-2_6,2025-01-12,,,,,
 MiniCPM-V-2_6,MiniCPM-V-2_6,2024-08-03,,,,,
 MiniMax-M1-80k,MiniMax-M1-80k,2025-06-13,,MiniMax,China,Open weights (unrestricted),4.3240062e+24
@@ -795,6 +817,9 @@ Mistral-7B-Instruct-v0.2,Mistral 7B v0.2,2023-12-11,,Mistral AI,France,Open weig
 Mistral-7B-Instruct-v0.3,Mistral 7B v0.3,2024-05-27,,Mistral AI,France,Open weights (unrestricted),
 Mistral-7B-v0.1,Mistral 7B v0.1,2023-09-27,,Mistral AI,France,Open weights (unrestricted),
 Mistral-7B-v0.3,Mistral 7B v0.3,2024-05-27,,Mistral AI,France,Open weights (unrestricted),
+mistral-large-4-0_high,Mistral Large 4,2026-10-06,Mistral Large 4 (high),Mistral AI,France,,
+mistral-large-4-0_none,Mistral Large 4,2026-10-06,Mistral Large 4 (none),Mistral AI,France,,
+mistral-large-4-0_unknown,Mistral Large 4,2026-10-06,Mistral Large 4 (unknown),Mistral AI,France,,
 mistral-large-2402,Mistral Large,2024-02-26,,Mistral AI,France,API access,
 mistral-large-2407,Mistral Large 2 (Jul 2024),2024-07-24,,Mistral AI,France,Open weights (non-commercial),
 mistral-large-2411,Mistral Large 2 (Nov 2024),2024-11-18,,Mistral AI,France,Open weights (non-commercial),
@@ -834,10 +859,12 @@ mpt-7b,MPT-7B,2023-05-05,,MosaicML,United States of America,Open weights (unrest
 mpt-7b-instruct,MPT-7B,2023-05-05,,MosaicML,United States of America,Open weights (unrestricted),4.2000000000000004e+22
 mpt-30b,MPT-30B,2023-06-22,,MosaicML,United States of America,Open weights (unrestricted),1.8900000000001e+23
 mpt-30b-instruct,MPT-30B,2023-06-22,,MosaicML,United States of America,Open weights (unrestricted),1.8900000000001e+23
+muse-glimmer_high,Muse Glimmer,2026-08-10,Muse Glimmer (high),Meta AI,United States of America,Open weights (unrestricted),
 muse-spark,Muse Spark,2026-04-08,Muse Spark,Meta AI,United States of America,API access,
 muse-spark-1.1,Muse Spark 1.1,2026-07-09,Muse Spark 1.1,Meta AI,United States of America,API access,
 muse-spark-1.1_high,Muse Spark 1.1,2026-07-09,Muse Spark 1.1 (high),Meta AI,United States of America,API access,
 muse-spark-1.1_medium,Muse Spark 1.1,2026-07-09,Muse Spark 1.1 (medium),Meta AI,United States of America,API access,
+muse-spark-1.1_xhigh,Muse Spark 1.1,2026-07-09,Muse Spark 1.1 (xhigh),Meta AI,United States of America,API access,
 muse-spark-1.2,Muse Spark 1.2,2026-08-05,Muse Spark 1.2,Meta AI,United States of America,API access,
 muse-spark-1.2_xhigh,Muse Spark 1.2,2026-08-05,Muse Spark 1.2 (xhigh),Meta AI,United States of America,API access,
 muse-spark-1.3_high,Muse Spark 1.3,2026-09-02,Muse Spark 1.3 (high),Meta AI,United States of America,API access,
@@ -847,6 +874,18 @@ muse-spark-1.3_medium,Muse Spark 1.3,2026-09-02,Muse Spark 1.3 (medium),Meta AI,
 muse-spark-1.3_minimal,Muse Spark 1.3,2026-09-02,Muse Spark 1.3 (minimal),Meta AI,United States of America,API access,
 muse-spark-1.3_unknown,Muse Spark 1.3,2026-09-02,Muse Spark 1.3 (unknown),Meta AI,United States of America,API access,
 muse-spark-1.3_xhigh,Muse Spark 1.3,2026-09-02,Muse Spark 1.3 (xhigh),Meta AI,United States of America,API access,
+Muse-Spark-Open-816B-A42B_high,Muse Spark Open,2026-10-15,Muse Spark Open (high),Meta AI,United States of America,Open weights (restricted use),
+Muse-Spark-Open-816B-A42B_low,Muse Spark Open,2026-10-15,Muse Spark Open (low),Meta AI,United States of America,Open weights (restricted use),
+Muse-Spark-Open-816B-A42B_medium,Muse Spark Open,2026-10-15,Muse Spark Open (medium),Meta AI,United States of America,Open weights (restricted use),
+Muse-Spark-Open-816B-A42B_unknown,Muse Spark Open,2026-10-15,Muse Spark Open (unknown),Meta AI,United States of America,Open weights (restricted use),
+Muse-Spark-Open-816B-A42B_xhigh,Muse Spark Open,2026-10-15,Muse Spark Open (xhigh),Meta AI,United States of America,Open weights (restricted use),
+muse-wonder-1.0_high,Muse Wonder,2026-10-12,Muse Wonder (high),Meta AI,United States of America,API access,
+muse-wonder-1.0_low,Muse Wonder,2026-10-12,Muse Wonder (low),Meta AI,United States of America,API access,
+muse-wonder-1.0_max,Muse Wonder,2026-10-12,Muse Wonder (max),Meta AI,United States of America,API access,
+muse-wonder-1.0_medium,Muse Wonder,2026-10-12,Muse Wonder (medium),Meta AI,United States of America,API access,
+muse-wonder-1.0_minimal,Muse Wonder,2026-10-12,Muse Wonder (minimal),Meta AI,United States of America,API access,
+muse-wonder-1.0_unknown,Muse Wonder,2026-10-12,Muse Wonder (unknown),Meta AI,United States of America,API access,
+muse-wonder-1.0_xhigh,Muse Wonder,2026-10-12,Muse Wonder (xhigh),Meta AI,United States of America,API access,
 nemotron-3-super,Nemotron 3 Super,2026-03-11,Nemotron 3 Super,Nvidia,United States of America,Open weights (unrestricted),
 nemotron-3-ultra,Nemotron 3 Ultra,2026-06-04,,Nvidia,United States of America,Open weights (unrestricted),6.6e+24
 Nemotron-4 15B,Nemotron-4 15B,2024-02-26,,Nvidia,United States of America,Unreleased,7.5005116e+23
@@ -856,7 +895,7 @@ nova-2.0-pro-preview_medium,Nova 2.0 Pro Preview,2025-12-02,Nova 2.0 Pro Preview
 nova-2.0-pro-preview_none,Nova 2.0 Pro Preview,2025-12-02,Nova 2.0 Pro Preview (none),Amazon,United States of America,API access,
 nova-2.0-pro-preview_unknown,Nova 2.0 Pro Preview,2025-12-02,Nova 2.0 Pro Preview (unknown),Amazon,United States of America,API access,
 nvidia-nemotron-nano-9b-v2,nvidia-nemotron-nano-9b-v2,2025-08-18,,,,,
-NVILA-8B,NVILA 8B,2024-12-10,,"Nvidia,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University","China,United States of America",Open weights (non-commercial),2.2794518e+21
+NVILA-8B,NVILA 8B,2024-12-10,,"Nvidia,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University","United States of America,China",Open weights (non-commercial),2.2794518e+21
 o,Codex,2021-07-07,,OpenAI,United States of America,API access,7.344e+22
 o1-2024-12-17_high,o1,2024-12-17,o1 (high),OpenAI,United States of America,API access,
 o1-2024-12-17_low,o1,2024-12-17,o1 (low),OpenAI,United States of America,API access,
@@ -1064,6 +1103,7 @@ starcoder2-7b,StarCoder 2 7B,2024-02-20,,"Hugging Face,ServiceNow,Nvidia,BigCode
 starcoder2-15b,StarCoder 2 15B,2024-02-20,,"Hugging Face,ServiceNow,Nvidia,BigCode",United States of America,Open weights (restricted use),3.87e+23
 step-3.5-flash,Step 3.5 Flash,2026-02-02,Step 3.5 Flash,StepFun,China,Open weights (unrestricted),
 step-3.7-flash,Step 3.7 Flash,2026-05-29,Step 3.7 Flash,StepFun,China,Open weights (unrestricted),
+step-5-preview_high,Step 5 Preview,2026-09-18,Step 5 Preview (high),StepFun,China,API access,
 step-5-preview_unknown,Step 5 Preview,2026-09-18,Step 5 Preview (unknown),StepFun,China,API access,
 swe-1.6,SWE-1.6,2026-04-07,SWE-1.6,Cognition,United States of America,Hosted access (no API),
 swe-1.7,SWE-1.7,2026-07-08,SWE-1.7,Cognition,United States of America,,

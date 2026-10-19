@@ -1,16 +1,16 @@
 Model version,Accuracy,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Cost per run,Median code length (lines),Notes,Source,Source link,Accuracy SE,id
-gpt-6-astra_promax,0.9357,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_promax,0.9357,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",29.305755666666663,520.5,,https://htihle.github.io/weirdml.html,,2.6473963528335825e-05,recEy3l0e3fb7Ia3k
-gpt-6-astra_max,0.9328000000000001,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_max,0.9328000000000001,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",7.748507900000001,485.0,,https://htihle.github.io/weirdml.html,,1.5446475430902452e-05,rec133XekkfngA36k
 claude-fable-5-1_max,0.929,2026-09-01,Anthropic,United States of America,,,11.686583529411763,251.0,,https://htihle.github.io/weirdml.html,,1.280965433748779e-05,recrm7c71JFig2bUs
-gpt-6-astra_high,0.9287000000000001,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_high,0.9287000000000001,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",2.975405612244898,299.0,,https://htihle.github.io/weirdml.html,,1.648119724718335e-05,rect2MKJz3YKOcoxs
 claude-fable-5-1_high,0.923,2026-09-01,Anthropic,United States of America,,,3.2013411235955056,150.0,,https://htihle.github.io/weirdml.html,,1.376337560603623e-05,recfo5ksX2HG4Gkay
 claude-fable-5_max,0.9194,2026-06-09,Anthropic,United States of America,,,8.424409705882354,217.5,,https://htihle.github.io/weirdml.html,,2.4186536765080326e-05,recFU4S6sD5dKVLFF
@@ -22,6 +22,7 @@ claude-fable-5_high,0.8785,2026-06-09,Anthropic,United States of America,,,3.106
 gpt-5.6-sol_max,0.8697,2026-07-09,OpenAI,United States of America,,,2.3122075294117646,561.0,,https://htihle.github.io/weirdml.html,,8.443334076782342e-05,rec7UbzIyPljXighC
 claude-opus-5,0.8634000000000001,2026-07-24,Anthropic,United States of America,,,1.419572117647059,176.0,,https://htihle.github.io/weirdml.html,,0.0001453204125517409,recVNrTRYPu0FgJv9
 gpt-5.5_xhigh,0.8491,2026-04-23,OpenAI,United States of America,,,2.568345317647059,517.0,,https://htihle.github.io/weirdml.html,,0.0001091535447188698,recNJLmrITg65HnLP
+gemini-3.8-flash_high,0.8481000000000001,2026-09-02,Google DeepMind,United States of America,,,0.5072680071428571,438.5,,https://htihle.github.io/weirdml.html,,0.00010115853370778513,recRoiC6r1xCmmciK
 gpt-5.5_high,0.8390000000000001,2026-04-23,OpenAI,United States of America,,,2.221576529411765,474.0,,https://htihle.github.io/weirdml.html,,0.00010857064112429189,rece9m5QDHJk0kphX
 claude-opus-4-8_xhigh,0.8289,2026-05-28,Anthropic,United States of America,,,2.3498122772277226,129.0,,https://htihle.github.io/weirdml.html,,9.958824837467327e-05,recIQsIEKMmBYxvWF
 kimi-k3_max,0.8257,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
@@ -220,7 +221,7 @@ grok-code-fast-1,0.3506,2025-08-28,,,,,0.023491821454545456,120.5,,https://htihl
 qwen3.6-35b-a3b,0.34490000000000004,2026-04-14,Alibaba,China,,,0.05961612000000001,147.0,,https://htihle.github.io/weirdml.html,,0.00014262488975378608,rec8PK1T6HNd0I4pj
 qwen3-coder-next,0.344,2026-02-02,,,,,0.032830421568627456,201.0,,WeirdML Leaderboard,,0.00015170115908041672,recSrZj9sCvfB6GAm
 mistral-medium-2508,0.33130000000000004,2025-08-12,Mistral AI,France,,,0.040179830588235294,178.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00012017965528137121,recaGKXTNqQWwgcGX
-Inkling_high,0.3229,2026-07-15,Thinking Machines,United States of America,1.845e+24,6ND = 41e9 active parameters * 45e12 tokens = 1.845e+24 FLOP,0.12554279170588237,96.0,,https://htihle.github.io/weirdml.html,,0.00017455866904238094,recvwP0nt7dqhRuLF
+Inkling_high,0.3229,2026-07-15,Thinking Machines,United States of America,1.1e+25,6ND = 6 * 41e9 active parameters * 45e12 tokens = 1.1e25 FLOP,0.12554279170588237,96.0,,https://htihle.github.io/weirdml.html,,0.00017455866904238094,recvwP0nt7dqhRuLF
 claude-3-5-sonnet-20240620,0.3097,2024-06-20,Anthropic,United States of America,2.700000000000001e+25,"Blog post by Dario Amodei includes some info on 3.5 Sonnet compute: https://darioamodei.com/on-deepseek-and-export-controls
 ""Claude 3.5 Sonnet is a mid-sized model that cost a few $10M's to train (I won't give an exact number). Also, 3.5 Sonnet was not trained in any way that involved a larger or more expensive model (contrary to some rumors).""
 

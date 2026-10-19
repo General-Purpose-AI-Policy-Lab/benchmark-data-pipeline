@@ -450,7 +450,7 @@ open_llama_7b,0.76,2023-06-07,,,,,OpenLLaMA-7B,0,XGen-7B Technical Report,http:/
 RedPajama-INCITE-7B-Base,0.769,2023-05-04,,,,,Redpajama-7B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recfbMlV6oYreReFy
 gpt-neox-20b,0.767,2022-04-07,EleutherAI,United States of America,9.31627008e+22,Trained for 3 months on 96 A100s (according to correspondence with author). Let's say 0.4 utilization rate.,GPT-neox-20B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,rec8Sh8crarIde2aF
 opt-13b,0.757,2022-05-11,,,,,OPT-13B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,rec34MBtTjoOBqvsy
-gpt-j-6b,0.754,2021-08-05,"EleutherAI,LAION","Germany,United States of America",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recieMBRnl774Kp8o
+gpt-j-6b,0.754,2021-08-05,"EleutherAI,LAION","United States of America,Germany",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recieMBRnl774Kp8o
 dolly-v2-12b,0.754,2023-04-11,Databricks,United States of America,,,Dolly-v2-12B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recmpn9dENCquDkxR
 Cerebras-GPT-13B,0.735,2023-03-20,Cerebras Systems,United States of America,2.3e+22,"2.3e22, per table 2",Cerebras-GPT-13B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recNaQ21yNcdLdcSw
 stablelm-tuned-alpha-7b,0.658,2023-04-19,,,,,StableLM-alpha-7B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recSBbD5ut1zFgBlR

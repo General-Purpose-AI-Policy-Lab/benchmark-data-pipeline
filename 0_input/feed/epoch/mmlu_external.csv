@@ -256,8 +256,8 @@ gpt-4o-2024-08-06,0.843,2024-08-06,OpenAI,United States of America,,Training com
 gpt-4o-mini-2024-07-18,0.767,2024-07-18,OpenAI,United States of America,,"Training compute estimated to be 7.36001e+24 from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing
 
 90% CI [3.23e+24, 2.05e+25]",GPT-4o mini (2024-07-18),5,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,,rec66ukiUXgRuE5uX
-gpt-j-6b,0.251,2021-08-05,"EleutherAI,LAION","Germany,United States of America",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,5,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recSU7vpnDawA53bF
-gpt-j-6b,0.257,2021-08-05,"EleutherAI,LAION","Germany,United States of America",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recnPxCnkNQT6Bl8j
+gpt-j-6b,0.251,2021-08-05,"EleutherAI,LAION","United States of America,Germany",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,5,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recSU7vpnDawA53bF
+gpt-j-6b,0.257,2021-08-05,"EleutherAI,LAION","United States of America,Germany",1.5e+22,source: zero shot evaluation table in GitHub,GPT-J-6B,0,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,,recnPxCnkNQT6Bl8j
 ,0.336,,,,,,GPT-NeoX 20B,5,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,,recSr00Py8AW3SFO3
 Inflection-1,0.727,2023-06-22,Inflection AI,United States of America,1.0001e+24,"<= 2.5e24
 

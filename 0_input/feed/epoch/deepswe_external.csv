@@ -67,23 +67,23 @@ gemini-3.8-flash_medium,0.7101769911504425,0.831858407079646,mini-swe-agent,medi
 glm-5.3-flash_max,0.6339285714285714,0.8495575221238939,mini-swe-agent,max,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"6 * 18e9 active parameters * 30e12 tokens = 3.24e24 FLOP. 
 
 https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-token multimodal pre-training corpus, these changes let GLM-5.3-Flash produce more intelligence with less compute."", which is not definitive in saying that all 30T tokens were used exactly once; likely confidence.",glm-5-3-flash (max),0.04377970751693644,4,0.48196371245535713,72829.77008928571,122.890625,https://deepswe.datacurve.ai/,
-gpt-6-astra_xhigh,0.7411504424778761,0.8053097345132745,mini-swe-agent,xhigh,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_xhigh,0.7411504424778761,0.8053097345132745,mini-swe-agent,xhigh,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
-https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (xhigh),0.02865396174075141,4,6.52377356460177,29557.327433628318,28.754424778761063,https://deepswe.datacurve.ai/,
-gpt-6-astra_high,0.7323008849557522,0.8230088495575221,mini-swe-agent,high,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (xhigh),0.02865396174075141,4,4.429117203539823,29557.327433628318,28.754424778761063,https://deepswe.datacurve.ai/,
+gpt-6-astra_high,0.7323008849557522,0.8230088495575221,mini-swe-agent,high,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
-https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (high),0.03423496057873005,4,5.723721956194691,26505.853982300883,27.424778761061948,https://deepswe.datacurve.ai/,
-gpt-6-astra_max,0.7323008849557522,0.7964601769911505,mini-swe-agent,max,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (high),0.03423496057873005,4,3.9237237909292038,26505.853982300883,27.424778761061948,https://deepswe.datacurve.ai/,
+gpt-6-astra_max,0.7323008849557522,0.7964601769911505,mini-swe-agent,max,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
-https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (max),0.008303197562056526,4,12.369032401327434,61148.50663716814,28.45353982300885,https://deepswe.datacurve.ai/,
-gpt-6-astra_medium,0.7278761061946902,0.8230088495575221,mini-swe-agent,medium,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (max),0.008303197562056526,4,7.497827996681416,61148.50663716814,28.45353982300885,https://deepswe.datacurve.ai/,
+gpt-6-astra_medium,0.7278761061946902,0.8230088495575221,mini-swe-agent,medium,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
-https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (medium),0.025896490818318695,4,4.379527705752213,20361.809734513274,26.030973451327434,https://deepswe.datacurve.ai/,
-gpt-6-astra_low,0.6703539823008849,0.7964601769911505,mini-swe-agent,low,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (medium),0.025896490818318695,4,3.0754742975663714,20361.809734513274,26.030973451327434,https://deepswe.datacurve.ai/,
+gpt-6-astra_low,0.6703539823008849,0.7964601769911505,mini-swe-agent,low,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
-https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (low),0.013008610516858731,4,2.188762706637168,10579.53982300885,19.537610619469028,https://deepswe.datacurve.ai/,
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra (low),0.013008610516858731,4,1.595223439159292,10579.53982300885,19.537610619469028,https://deepswe.datacurve.ai/,

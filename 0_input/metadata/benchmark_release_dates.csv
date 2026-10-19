@@ -46,3 +46,12 @@ VisualToolBench,2025-10-14,https://arxiv.org/abs/2510.12712,"arXiv v1; HF datase
 WeirdML v2,2025-06-27,https://htihle.github.io/weirdml.html,"v2 is a new task set ('WeirdML v2 is now out', page added 2025-06-27); Epoch's 2025-01-16 is v1."
 WMDP Biology,2024-03-05,https://arxiv.org/abs/2403.03218,WMDP arXiv v1.
 WMDP Chemistry,2024-03-05,https://arxiv.org/abs/2403.03218,WMDP arXiv v1.
+CyScenarioBench (Anthropic),2025-12-05,https://www.irregular.com/publications/cyscenariobench,"The benchmark's launch by Irregular, as CyScenarioBench; these are Anthropic's runs of it (Epoch's October 2026 table). Not dated by Epoch."
+CAISI CTF-Archive,2025-09-30,https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks,"CAISI's evaluation of DeepSeek models (released 2025-09-30), its first report with these cyber series; the per-benchmark list is in the full report. Not dated by Epoch."
+CAISI CVE-Bench,2025-09-30,https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks,As CAISI CTF-Archive: CAISI's 2025 evaluations. Not dated by Epoch.
+CAISI Cybench,2025-09-30,https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks,As CAISI CTF-Archive: CAISI's 2025 evaluations. Not dated by Epoch.
+CAISI CTF-Archive-Diamond,2026-05-01,https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro,Introduced in CAISI's evaluation of DeepSeek V4 Pro (released 2026-05-01): 285 hard CTF challenges from ASU's pwn.college. Not dated by Epoch.
+CAISI ExploitGym Userspace,2026-09-17,https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities,CAISI's assessment of GLM-5.3 (released 2026-09-17). Not dated by Epoch.
+CAISI OSS-Fuzz,2026-09-17,https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities,CAISI's assessment of GLM-5.3 (released 2026-09-17). Not dated by Epoch.
+CAISI SEC-Bench Pro,2026-09-17,https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities,CAISI's assessment of GLM-5.3 (released 2026-09-17). Not dated by Epoch.
+SpireClimb,2026-10-14,https://epoch.ai/publications/ai-systems-are-improving-rapidly-at-slay-the-spire-and-its-sequel,Epoch's publication of the benchmark (2026-10-14).

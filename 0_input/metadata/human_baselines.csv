@@ -55,3 +55,4 @@ VPCT,Average Human,1.0,three volunteers,EpochAI
 WinoGrande,Committee of Average Humans,0.94,majority vote of crowd workers (MTurk),https://arxiv.org/pdf/1907.10641
 WMDP Biology,Domain Expert,0.605,In-domain PhD (RAND),https://www.rand.org/pubs/research_reports/RRA3797-1.html
 WMDP Chemistry,Domain Expert,0.433,In-domain PhD (RAND),https://www.rand.org/pubs/research_reports/RRA3797-1.html
+SpireClimb,Top Performer,0.9,"Mean of the top-human lines Epoch draws for the two settings (user, 2026-10-19): 85% on Slay the Spire 1 at Ascension 20 with the Heart (XecnaR sustains 80-95% depending on the character) and 95% on Slay the Spire 2 at Ascension 10 (a 53-win streak; community sites show hundreds of players above 80%). Measured win rates of top players, without the models' single-shot constraint; the benchmark's score is the mean of the two settings.",https://epoch.ai/publications/ai-systems-are-improving-rapidly-at-slay-the-spire-and-its-sequel

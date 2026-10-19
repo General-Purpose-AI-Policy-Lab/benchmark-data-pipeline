@@ -47,7 +47,7 @@ kimi-k2.6,0.9093000000000001,84.8833,4.8346,0.7333,2026-04-20,Moonshot,China,,,K
 o3-pro-2025-06-10_high,0.8693000000000001,78.2167,5.6839,0.8133,2025-06-10,OpenAI,United States of America,,,o3-pro,https://conceptualreasoning.ai/dtbench,
 o3-2025-04-16_high,0.848,74.6667,6.0759,0.84,2025-04-16,OpenAI,United States of America,,,o3,https://conceptualreasoning.ai/dtbench,
 grok-4.3_high,0.9067000000000001,84.45,4.8999,0.7733,2026-04-17,xAI,United States of America,,,Grok 4.3,https://conceptualreasoning.ai/dtbench,
-Inkling_xhigh,0.8747,79.1167,5.5859,0.5789,2026-07-15,Thinking Machines,United States of America,1.845e+24,6ND = 41e9 active parameters * 45e12 tokens = 1.845e+24 FLOP,Inkling,https://conceptualreasoning.ai/dtbench,
+Inkling_xhigh,0.8747,79.1167,5.5859,0.5789,2026-07-15,Thinking Machines,United States of America,1.1e+25,6ND = 6 * 41e9 active parameters * 45e12 tokens = 1.1e25 FLOP,Inkling,https://conceptualreasoning.ai/dtbench,
 gpt-5.4-mini-2026-03-17_xhigh,0.8,66.6667,6.7618,0.4533,2026-03-17,OpenAI,United States of America,,,GPT-5.4 mini,https://conceptualreasoning.ai/dtbench,
 claude-sonnet-4-5-20250929_unknown,0.8320000000000001,72.0,6.3046,0.7946,2025-09-29,Anthropic,United States of America,,,Claude Sonnet 4.5,https://conceptualreasoning.ai/dtbench,
 nemotron-3-ultra,0.9013,83.55,5.0306,0.7333,2026-06-04,Nvidia,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",Nemotron 3 Ultra,https://conceptualreasoning.ai/dtbench,
@@ -304,30 +304,30 @@ claude-fable-5-1_unknown,0.976,96.0,2.5806,0.8289,2026-09-01,Anthropic,United St
 claude-opus-5_xhigh,0.9787,96.45,2.45,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (xhigh),https://conceptualreasoning.ai/dtbench,
 claude-fable-5-1_xhigh,0.976,96.0,2.5806,,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (xhigh),https://conceptualreasoning.ai/dtbench,
 claude-opus-5_high,0.9787,96.45,2.45,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (high),https://conceptualreasoning.ai/dtbench,
-gpt-6-astra_xhigh,0.9733,95.55,2.7113,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_xhigh,0.9733,95.55,2.7113,,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (xhigh),https://conceptualreasoning.ai/dtbench,
 claude-fable-5-1_high,0.9653,94.2167,3.1033,,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (high),https://conceptualreasoning.ai/dtbench,
-gpt-6-astra_unknown,0.9707,95.1167,2.842,0.8158,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_unknown,0.9707,95.1167,2.842,0.8158,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,https://conceptualreasoning.ai/dtbench,
-gpt-6-astra_high,0.9653,94.2167,3.1033,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_high,0.9653,94.2167,3.1033,,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (high),https://conceptualreasoning.ai/dtbench,
-gpt-6-astra_medium,0.9707,95.1167,2.842,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_medium,0.9707,95.1167,2.842,,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (medium),https://conceptualreasoning.ai/dtbench,
 claude-opus-5_medium,0.9493,91.55,3.6913,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (medium),https://conceptualreasoning.ai/dtbench,
 claude-fable-5-1_low,0.9413,90.2167,3.9853,,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (low),https://conceptualreasoning.ai/dtbench,
 claude-fable-5_xhigh,0.9733,95.55,2.7113,,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (xhigh),https://conceptualreasoning.ai/dtbench,
 claude-opus-5_low,0.9307,88.45,4.2793,,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (low),https://conceptualreasoning.ai/dtbench,
-gpt-6-astra_low,0.9493,91.55,3.6913,,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_low,0.9493,91.55,3.6913,,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (low),https://conceptualreasoning.ai/dtbench,
 claude-fable-5_high,0.9653,94.2167,3.1033,,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (high),https://conceptualreasoning.ai/dtbench,
 claude-fable-5_medium,0.9573,92.8833,3.4299,,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (medium),https://conceptualreasoning.ai/dtbench,
@@ -367,3 +367,4 @@ gpt-5.6-luna_none,0.6925,48.75,7.8072,,2026-07-09,OpenAI,United States of Americ
 claude-opus-5-5_max,0.9893000000000001,98.2167,1.7313,0.9211,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,https://conceptualreasoning.ai/dtbench,
 gpt-6-sol_max,0.9733,95.55,2.7113,0.7763,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,https://conceptualreasoning.ai/dtbench,
 gpt-6-luna_max,0.9013,83.55,5.0306,0.64,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,https://conceptualreasoning.ai/dtbench,
+grok-4.7_xhigh,0.96,93.3333,3.2993,0.8267,2026-09-21,xAI,United States of America,,,Grok 4.7,https://conceptualreasoning.ai/dtbench,

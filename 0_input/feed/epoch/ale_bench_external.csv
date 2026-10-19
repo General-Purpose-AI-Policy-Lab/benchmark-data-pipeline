@@ -1,16 +1,19 @@
 Model version,Performance,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Cost,Notes,Total tokens (K),Input tokens (K),Output tokens (K),Rank,id
-gpt-6-astra_max,2951.32,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_max,2951.32,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra-max,2.86415,,60.1042,2.98,57.1242,17.98,recie6OeSzfrEhXOW
+gpt-6.1-sol_max,2743.75,2026-09-29,OpenAI,United States of America,,,gpt-6.1-sol-max,0.596828,,62.5487,2.98,59.5687,42.08,recbQjMjXINIX4xjc
 gpt-6-sol_max,2462.0,2026-09-22,OpenAI,United States of America,,,gpt-6-sol-max,0.843984,,87.3183,2.98,84.3383,61.83,receiDDkmha5O2EgZ
 gpt-5.6-sol_max,2176.88,2026-07-09,OpenAI,United States of America,,,gpt-5.6-sol-max,1.534078,,58.6964,8.6708,50.0256,98.33,recB9LSLRE0ygr7gb
 claude-opus-5_high,2164.57,2026-07-24,Anthropic,United States of America,,,claude-opus-5-high,1.890512,,78.9511,4.1632,74.7878,125.35,reczXRrSMMBAUjHxZ
+claude-opus-5-5_high,2147.38,2026-09-22,Anthropic,United States of America,,,claude-opus-5.5-high,0.271178,,16.8911,4.1652,12.7259,115.05,rec2XltGq6LqiHAqJ
 claude-fable-5-1_high,2143.2,2026-09-01,Anthropic,United States of America,,,claude-fable-5.1-high,2.294856,,49.2293,4.1652,45.0641,113.95,recoromAv2aFG1mQC
 claude-fable-5_high,2041.3,2026-06-09,Anthropic,United States of America,,,claude-fable-5-high,2.108822,,45.507,4.1632,41.3438,120.92,recOJYPyImXeBu5y6
 gpt-5.6-terra_max,1951.42,2026-07-09,OpenAI,United States of America,,,gpt-5.6-terra-max,1.254047,,86.4774,2.98,83.4974,155.97,recy6tGLt0oXl5Z3t
 gpt-5.5_xhigh,1942.97,2026-04-23,OpenAI,United States of America,,,gpt-5.5-xhigh,1.517132,,54.0908,3.9703,50.1206,174.53,recvu236lk6eJfew6
 claude-sonnet-5-5_high,1819.12,2026-09-28,Anthropic,United States of America,,,claude-sonnet-5.5-high,0.110921,,14.4243,4.1652,10.2591,222.05,recYjibuLhTTZDmIz
+muse-spark-1.3_xhigh,1688.35,2026-09-02,Meta AI,United States of America,,,muse-spark-1.3-xhigh,0.220853,,68.2232,22.1582,46.0651,257.02,recoUMQ4ZOtgdCB0E
 gpt-5.6-luna_max,1667.4,2026-07-09,OpenAI,United States of America,,,gpt-5.6-luna-max,0.359171,,85.1796,30.0081,55.1714,265.73,rechpIYckpxNmorqX
 gpt-5.3-codex_xhigh,1655.22,2026-02-05,OpenAI,United States of America,,,gpt-5.3-codex-xhigh,0.559265,,49.2862,10.4666,38.8195,260.93,recjPl07t1MvmNgDm
 gpt-5.4-2026-03-05_high,1607.0,2026-03-05,OpenAI,United States of America,,,gpt-5.4-high,0.612174,,45.4606,5.2245,40.2361,290.27,recJ9Hqsyml44GqRp
@@ -38,6 +41,8 @@ gpt-5.2-2025-12-11_high,1293.55,2025-12-11,OpenAI,United States of America,,,gpt
 gemini-3.8-flash_high,1269.72,2026-09-02,Google DeepMind,United States of America,,,gemini-3.8-flash-high,0.344275,,48.5117,3.2603,45.2513,418.12,recdGDUA9gtoZhnsC
 gpt-5.2-2025-12-11_medium,1249.83,2025-12-11,OpenAI,United States of America,,,gpt-5.2-medium,0.142947,,13.0739,2.98,10.094,447.05,recVnMSgaT9EDtGvh
 gpt-5.1-codex,1244.92,2025-11-12,OpenAI,United States of America,,,gpt-5.1-codex-high,0.512093,,54.0105,2.98,51.0305,459.32,recAh1GsKfoTx69bz
+mimo-v2.6-flash,1244.2,2026-09-21,Xiaomi Corp,China,,,mimo-v2.6-flash,0.03528,,142.75,27.2159,115.5341,457.38,recvIP49qkTEq798L
+mistral-large-4-0_unknown,1213.15,2026-10-06,Mistral AI,France,,,mistral-large-4,0.456946,,121.609,17.6214,103.9876,451.82,recyIQCyCKeiINnL2
 gpt-5.1-codex-max,1208.83,2025-11-19,OpenAI,United States of America,,,gpt-5.1-codex-max-high,0.253186,,28.1183,2.98,25.1383,472.6,rechIkCR6I2vgX5ia
 gpt-5.1-2025-11-13_high,1192.15,2025-11-13,OpenAI,United States of America,,"Almost certainly > 1e25
 ",gpt-5.1-thinking,0.315236,,34.3453,2.98,31.3653,495.35,recLNNj0GfqyDx4nk
@@ -48,6 +53,7 @@ gpt-5-2025-08-07_high,1162.45,2025-08-07,OpenAI,United States of America,6.6e+25
 
 https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",gpt-5-thinking,0.244948,,27.1275,2.98,24.1475,515.92,rec6WynYilo1cLLBN
 gemini-3.1-pro-preview,1160.6,2026-02-19,Google DeepMind,United States of America,,,gemini-3.1-pro-preview-high,0.388403,,35.0838,3.2603,31.8235,465.07,recMLdPe4oTagwHaL
+mimo-v2.6-pro,1158.1,2026-09-21,Xiaomi Corp,China,,,mimo-v2.6-pro,0.108379,,152.523,49.4499,103.0732,487.07,recj8xTSS8LtuRsA1
 grok-4-20,1150.28,2026-02-17,xAI,United States of America,,,grok-4.20-beta,0.13838,,25.6323,3.0132,22.619,495.3,recyOlTS8wLrTAP1n
 gpt-5.5_none,1127.58,2026-04-23,OpenAI,United States of America,,,gpt-5.5-none,0.073484,,5.1881,2.98,2.2082,495.07,rec9k7gkUezxdYAtu
 kimi-k2.6,1092.67,2026-04-20,Moonshot,China,,,kimi-k2.6,0.196861,,51.9138,2.927,48.9868,486.57,recgKppN84MLEgXWf
@@ -60,7 +66,7 @@ glm-5.2_max,1010.17,2026-06-16,Z.ai (Zhipu AI),China,,,glm-5.2-max,0.148957,,36.
 deepseek-v4-pro_high,1006.08,2026-04-24,DeepSeek,China,9.702e+24,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training,deepseek-v4-pro-high,0.148062,,45.3182,2.9562,42.3621,561.95,recRdiZQ9HF3Kug6B
 gpt-5.4-nano-2026-03-17_high,1004.52,2026-03-17,OpenAI,United States of America,,,gpt-5.4-nano-high,0.027084,,24.3781,2.98,21.3981,575.6,rec9SvDfW1FDfMZ6h
 claude-opus-4-6,996.5,2026-02-05,Anthropic,United States of America,,,claude-4.6-opus-no-thinking,0.061688,,5.1533,3.3572,1.7961,571.3,recYZMZozZDvmw4y5
-Inkling,946.0,2026-07-15,Thinking Machines,United States of America,1.845e+24,6ND = 41e9 active parameters * 45e12 tokens = 1.845e+24 FLOP,inkling-max,0.202548,,55.7165,7.2171,48.4994,601.9,rec9Usn4fwoVZrJbE
+Inkling,946.0,2026-07-15,Thinking Machines,United States of America,1.1e+25,6ND = 6 * 41e9 active parameters * 45e12 tokens = 1.1e25 FLOP,inkling-max,0.202548,,55.7165,7.2171,48.4994,601.9,rec9Usn4fwoVZrJbE
 grok-4.3_unknown,944.17,2026-04-17,xAI,United States of America,,,grok-4.3,0.055799,,24.0658,3.0132,21.0526,590.83,reczLlezoqIBH2cwe
 o3-2025-04-16_high,933.55,2025-04-16,OpenAI,United States of America,,,o3-high,0.103474,,15.2839,2.98,12.3039,594.5,recxPLRj9LORsZ4hq
 gemma-4-26b-a4b,927.17,2026-04-02,Google DeepMind,United States of America,,,gemma-4-26b-a4b-it,0.009725,,27.3503,4.5004,22.8499,592.62,recatyI2kjiCX3JZJ

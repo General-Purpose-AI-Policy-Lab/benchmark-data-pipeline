@@ -1,7 +1,15 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+muse-wonder-1.0_max,0.51,0.51,2026-10-12,Meta AI,United States of America,,,0.05024183937956913,,,2026-10-14T16:17:18.000Z,gmscEuzbtZeUeFUFZMZiAV
+mistral-large-4-0_high,0.17,0.17,2026-10-06,Mistral AI,France,,,0.03775251680686369,,,2026-10-13T22:01:32.000Z,LT9xLJnaU4UHsBQrvu3rbU
+gemini-4-argon_high,0.64,0.64,2026-09-30,Google DeepMind,United States of America,,,0.048241815132442176,,,2026-10-13T17:14:57.000Z,9ipFgNR5MDw7ustUsuSviu
+deepseek-v4.1-flash_max,0.43,0.43,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+",0.0497569851956243,,,2026-10-08T19:02:32.000Z,K3JABAsJCbXU5YrCPH2yVW
+claude-haiku-5-5_max,0.3,0.3,2026-10-07,Anthropic,United States of America,,,0.04605661864718382,,,2026-10-07T20:51:20.000Z,CKm7NWXfSePfcUycRK87cB
 gpt-6.1-sol_max,0.8,0.8,2026-09-29,OpenAI,United States of America,,,0.04020151261036849,,,2026-09-29T22:00:34.000Z,fQzkNRV69sKaJX7o9KKneQ
 claude-opus-5-5_max,0.71,0.71,2026-09-22,Anthropic,United States of America,,,0.04560480215720687,,,2026-09-29T17:34:54.000Z,fREi6AAmnfqUWkDqUhLLtw
 claude-sonnet-5-5_max,0.65,0.65,2026-09-28,Anthropic,United States of America,,,0.04793724854411022,,,2026-09-29T15:15:14.000Z,3PVdaSEYFJKgYUgHnF4DBu
+gpt-6-luna_max,0.07,0.07,2026-09-22,OpenAI,United States of America,,,0.02564323999762428,,,2026-09-22T22:14:05.000Z,bAERV8wdmoHMLz2K4bZCSK
+grok-4.7_xhigh,0.29,0.29,2026-09-21,xAI,United States of America,,,0.045604802157206865,,,2026-09-22T21:49:22.000Z,Hk8bjr4u6KGqVE8SrPFKLq
 gpt-6-sol_max,0.56,0.56,2026-09-22,OpenAI,United States of America,,,0.049888765156985884,,,2026-09-22T19:59:24.000Z,DnFTaE9qNsmBdYNqohhynY
 muse-spark-1.3_max,0.25,0.25,2026-09-02,Meta AI,United States of America,,,0.044640484731156636,,,2026-09-18T19:12:25.000Z,6Rcc2q3USiUNB6U44bpvGH
 muse-spark-1.3_xhigh,0.1414141414141414,0.1414141414141414,2026-09-02,Meta AI,United States of America,,,0.03519858850692775,,,2026-09-16T23:26:24.000Z,n6X597deBgzpbDSyxvhUAB
@@ -10,9 +18,9 @@ claude-fable-5-1_max,0.58,0.58,2026-09-01,Anthropic,United States of America,,,0
 glm-5.3_max,0.33,0.33,2026-08-14,Z.ai (Zhipu AI),China,,,0.04725815626252608,,,2026-08-30T23:33:33.000Z,UUq99Qhq3qizcoJo5vdhuK
 gpt-5.4-2026-03-05_none,0.16,0.16,2026-03-05,OpenAI,United States of America,,,0.03684529491774706,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/GtW2cWyAXZPCszLi63e4yJ.eval,2026-08-30T22:33:48.000Z,GtW2cWyAXZPCszLi63e4yJ
 gpt-5.6-luna_none,0.2,0.2,2026-07-09,OpenAI,United States of America,,,0.04020151261036849,,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/PBrQpAgRCXeUSNveEn4aDE.eval,2026-08-30T22:33:31.000Z,PBrQpAgRCXeUSNveEn4aDE
-gpt-6-astra_max,0.84,0.84,2026-09-03,OpenAI,United States of America,1.0001e+27,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_max,0.84,0.84,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
-This suggests around 1e27 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.036845294917747066,,,2026-08-30T14:57:43.000Z,FA7pM9hKdkgTXmGHptcno7
 kimi-k3_low,0.12,0.12,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
 

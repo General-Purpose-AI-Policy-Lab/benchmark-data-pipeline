@@ -1,4 +1,11 @@
 Model version,Scaffold,Score OPT@1,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Score OPT@10,Notes,Source,Source link,OPT@1 (hack-adjusted),OPT@10 (hack-adjusted),Evaluation date,id
+claude-fable-5-1_unknown,OpenHands,0.8824,2026-09-01,Anthropic,United States of America,,,,,https://gso-bench.github.io/index.html,,0.8725,,2026-09-27,recQ2XelNSf1hgTyB
+gpt-6-astra_unknown,OpenHands,0.7941,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",,,https://gso-bench.github.io/index.html,,0.7745000000000001,,2026-09-27,reciZmjMQUpEwWLdB
+claude-fable-5_unknown,OpenHands,0.7843000000000001,2026-06-09,Anthropic,United States of America,,,,,https://gso-bench.github.io/index.html,,0.7647,,2026-09-27,recynRgjlNkqf7SRD
+gpt-5.6-sol_unknown,OpenHands,0.7647,2026-07-09,OpenAI,United States of America,,,,,https://gso-bench.github.io/index.html,,0.7059000000000001,,2026-09-27,recrBBgZqqBgYOpXp
 claude-opus-4-8_unknown,OpenHands,0.4706,2026-05-28,Anthropic,United States of America,,,,,https://gso-bench.github.io/index.html,,0.4706,,2026-07-12,recD2WNrQUHIATHKH
 claude-opus-4-7_high,OpenHands,0.4412,2026-04-16,Anthropic,United States of America,,,,,https://gso-bench.github.io/index.html,,0.4216,,2026-04-27,reccHX8eA2pr1NUgv
 claude-opus-4-7,OpenHands,0.4412,2026-04-16,Anthropic,United States of America,,,,,GSO Leaderboard,,0.4216,,2026-04-27,recB6g5swe17tSdKR

@@ -55,3 +55,14 @@ qwen3.8-flash_xhigh,0.166,2026-08-26,Alibaba,China,,,Qwen 3.8 Flash (xHigh reaso
 claude-opus-5-5_max,0.306,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5 (Adaptive/Max),Anthropic,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,rec7dEXMmBbh7vcYv
 gpt-6-sol_max,0.264,2026-09-22,OpenAI,United States of America,,,GPT 6 Sol (Max reasoning),OpenAI,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recNioYpcVH6vDVRS
 gpt-6-luna_max,0.23,2026-09-22,OpenAI,United States of America,,,GPT 6 Luna (Max reasoning),OpenAI,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,rec1mcsu2XY89LcY7
+gpt-6-astra_max,0.342,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT 6 Astra (Max reasoning),OpenAI,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,receclu0CyBBVUHTZ
+grok-4.7_xhigh,0.228,2026-09-21,xAI,United States of America,,,Grok 4.7 (xHigh reasoning),Grok,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recMxIOts56Sl9JEB
+deepseek-v4.1-flash_max,0.198,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+",DeepSeek V4.1 Flash (Max reasoning),DeepSeek,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recEaIQoSO4PJp1wW
+gpt-6.1-sol_max,0.35000000000000003,2026-09-29,OpenAI,United States of America,,,GPT 6.1 Sol (Max reasoning),OpenAI,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recHHzUvSpGHKsoJK
+claude-sonnet-5-5_max,0.314,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5 (Adaptive/Max),Anthropic,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,rec0UVUbE2GVRELuC
+muse-wonder-1.0_max,0.308,2026-10-12,Meta AI,United States of America,,,Muse Wonder (Max reasoning),Meta,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recQYavqr4GkieYHV
+gemini-4-argon_high,0.284,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (High reasoning),Google,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recbmgyzrQsktiT3t

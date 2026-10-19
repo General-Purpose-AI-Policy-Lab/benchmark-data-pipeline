@@ -38,3 +38,4 @@ https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-t
 gemini-3.8-flash_high,0.76875,0.5625,gemini,2026-09-02,Google DeepMind,United States of America,,,gemini-3.8-flash (high),3212425,2.5981149,https://yhenon.github.io/surface-evolver-llm-eval/,
 deepseek-v4.1-flash_high,0.4625,0.3125,deepseek,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
 ",deepseek-v4.1-flash (high),3347576,2.1277077120000003,https://yhenon.github.io/surface-evolver-llm-eval/,
+mistral-large-4-0_unknown,0.28125,0.1875,mistral,2026-10-06,Mistral AI,France,,,mistral-large-4-0,5653545,6.0171848,https://yhenon.github.io/surface-evolver-llm-eval/,

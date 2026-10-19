@@ -58,3 +58,20 @@ o1-preview,o1-preview,,,2024-09-12,,,o1-preview has no effort setting
 o3,o3,,,2025-04-16,,,Epoch cyber ECI display name; no effort stated -> no effort stated
 o3-mini,o3-mini,,,2025-01-31,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
 o4-mini,o4-mini,,,2025-04-16,,,"Epoch cyber ECI display name; no effort stated -> no effort stated | aligned on the Epoch ZIP spelling, which has no effort suffix for this model (2026-09-07)"
+DeepSeek-V4-Pro,deepseek-v4-pro,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+GLM-5.2,glm-5.2,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+GPT-4o (Nov 2024),gpt-4o,,,2024-11-20,,,"Epoch cyber ECI: the November 2024 snapshot, dated 2024-11-20 by Epoch (refresh of 2026-10-19)"
+Kimi K3,kimi-k3,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+Claude Haiku 5.5,claude-haiku-5-5,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+Claude Mythos 5.1,claude-mythos-5-1,,,,,,"cyber-only test-taker in Epoch's table, like Claude Mythos 5; own identity (refresh of 2026-10-19)"
+Claude Opus 5,claude-opus-5,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+Claude Opus 5.5,claude-opus-5-5,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+Claude Sonnet 5,claude-sonnet-5,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+Claude Sonnet 5.5,claude-sonnet-5-5,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+DeepSeek-R1,DeepSeek-R1,,,,,,"CAISI's 2025 runs, the January 2025 release (the May one is named apart) (refresh of 2026-10-19)"
+DeepSeek-R1 (May 2025),DeepSeek-R1-0528,,,,,,"the May 2025 update, Epoch's DeepSeek-R1-0528 (refresh of 2026-10-19)"
+GLM-5.3,glm-5.3,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+GPT-5.4 mini,gpt-5.4-mini,,,2026-03-17,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19); the only snapshot
+GPT-6 Astra,gpt-6-astra,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19); in CAISI's September 2026 series the US model is Epoch's attribution
+Kimi K2 Thinking,kimi-k2-thinking,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
+gpt-oss-120b,gpt-oss-120b,,,,,,Epoch cyber ECI display name; no effort stated (refresh of 2026-10-19)
