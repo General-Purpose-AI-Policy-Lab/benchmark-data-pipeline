@@ -14,12 +14,20 @@ ecf25073-c379-5472-ab88-b3df79e8aa65,Aider Polyglot,Autonomous SWE,0.0,,public,2
 a0654732-4438-577a-8abd-3604d53b725c,Balrog,General Reasoning,0.0,,public,2024-11-20
 a2af9a81-5fb1-523b-903d-b86e11a99e83,BioLP-bench,Biology,0.0,,public,2024-08-26
 c46b5c6e-1933-5584-abcf-9515ed18baa9,BlueprintBench 2,Multimodal Understanding,0.0,,private,2026-05-04
+cf29d177-8b94-5388-81b0-4ab1ec50903c,CAISI CTF-Archive,Cyber,0.0,1.0,private,2025-09-30
+a21d6ef3-aef9-5e60-89d4-bee0bc41bf66,CAISI CTF-Archive-Diamond,Cyber,0.0,1.0,private,2026-05-01
+c024cab6-e7eb-5c6f-b8c7-7ee9eba9064f,CAISI CVE-Bench,Cyber,0.0,,public,2025-09-30
+cb799dbb-6fe0-5de6-aea1-2cf67f6aba7d,CAISI Cybench,Cyber,0.0,1.0,public,2025-09-30
+a6191137-ed38-5890-b7a0-7db8a0ccfdda,CAISI ExploitGym Userspace,Cyber,0.0,,private,2026-09-17
+debfab9d-4886-590e-94fb-d7c089d5a585,CAISI OSS-Fuzz,Cyber,0.0,,private,2026-09-17
+189afd10-4f81-5aa2-8741-dadcd04c09cc,CAISI SEC-Bench Pro,Cyber,0.0,,public,2026-09-17
 5f7a8239-6b78-56e8-be42-60554a83cfac,CL-bench,General Reasoning,0.0,,public,2026-02-03
 882761e6-2b60-562d-9e04-1866076fab8f,CL-bench Life,General Reasoning,0.0,,public,2026-04-29
 f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Cyber,0.0,,public,2026-03-13
 bcc82df3-ba50-5b07-886a-5445900945d5,CadEval,Multimodal Understanding,0.0,,public,2025-04-22
 437fedf2-e8d4-594c-904f-825dfe7e9e7a,CritPt,Domain Specific Questions,0.0,,semi_private,2025-09-30
 c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,CyScenarioBench,Cyber,0.0,,private,2025-12-05
+dd2fbbcd-4f62-58f6-ac99-16e6241e783f,CyScenarioBench (Anthropic),Cyber,0.0,,private,2025-12-05
 fd6abe3f-58db-5b9f-8cdd-ace121e13546,Cybench,Cyber,0.0,1.0,public,2024-08-15
 12091151-02cf-518c-bcda-4374a1bf0308,CyberGym,Cyber,0.0,,public,2025-06-03
 6faf1194-62e1-5748-a0b1-79e288b661cb,DTBench,General Reasoning,0.4,,public,2026-08-12
@@ -84,6 +92,7 @@ cc417b11-5486-5d0f-8a3c-21db2f51b772,OTIS Mock AIME 2024-2025,Mathematics,0.001,
 b2fc2970-a814-5b52-b3bf-859541eb947d,SWE-Bench Pro V2,Autonomous SWE,0.0,,public,2026-09-22
 c817025f-1cdd-50c3-afc9-985127f1a43b,SimpleBench,General Reasoning,0.167,,semi_private,2024-08-20
 989c9bdc-0071-5daa-b9d3-e29f15a8fd15,SimpleQA Verified,Domain Specific Questions,0.0,,public,2025-09-09
+c994e135-b4c4-5392-92cb-1dc5c44610c3,SpireClimb,Agentic Computer Use,0.0,1.0,dynamic,2026-10-14
 ff689821-ffdf-5bd8-b976-65dd53db24d4,Surface Evolver Bench,Autonomous SWE,0.0,,private,2026-06-19
 acddb832-1a34-5820-a2d3-05681c5161e3,Terminal Bench 2.0,Agentic Computer Use,0.0,,public,2025-11-07
 0d000f4a-0739-550a-a784-c6582ec2a427,The Agent Company,Agentic Computer Use,0.0,,public,2024-12-18

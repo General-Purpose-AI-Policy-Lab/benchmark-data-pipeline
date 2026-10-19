@@ -64,9 +64,11 @@ claude-mythos-5,0.8627773212818406,2026-06-09,Anthropic,AISI Cyber Ranges - The 
 claude-mythos-preview,0.7846025569760978,2026-04-07,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 claude-mythos-preview-early,0.6909394107837687,2026-04-06,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 claude-opus-4-5-20251101,0.34375,2025-11-24,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
-claude-opus-4-6,0.4875,2026-02-05,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-opus-4-6,0.525,2026-02-05,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 claude-opus-4-7,0.3479710950528071,2026-04-16,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
-claude-sonnet-4-5-20250929,0.29375,2025-09-29,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-sonnet-4-5-20250929,0.278125,2025-09-29,Anthropic,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+deepseek-v4-pro,0.25,2026-04-24,DeepSeek,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+glm-5.2,0.34375,2026-06-16,Z.ai (Zhipu AI),AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 gpt-4o-2024-05-13,0.053125,2024-05-13,OpenAI,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 gpt-5.1-codex-max,0.30625,2025-11-19,OpenAI,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 gpt-5.3-codex,0.34375,2026-02-05,OpenAI,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
@@ -74,31 +76,40 @@ gpt-5.4-2026-03-05,0.4282934963868816,2026-03-05,OpenAI,AISI Cyber Ranges - The 
 gpt-5.5,0.697331851028349,2026-04-23,OpenAI,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 gpt-5.5_cyber,0.7220678154530294,2026-05-07,OpenAI,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 gpt-5.6-sol,0.9087921117502056,2026-07-09,OpenAI,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+kimi-k3,0.53125,2026-07-16,Moonshot,AISI Cyber Ranges - The Last Ones,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
 Inkling_high,0.3379999999999999,2026-07-15,Thinking Machines,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 MiniMax-M3_high,0.377,2026-06-01,MiniMax,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-fable-5-1_high,0.5970000000000001,2026-09-01,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-fable-5-1_thinking,0.6859999999999999,2026-09-01,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-fable-5_none,0.636,2026-06-09,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+claude-haiku-5-5_max,0.561,2026-10-07,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-opus-4-6_max,0.4629999999999999,2026-02-05,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-opus-4-7_max,0.492,2026-04-16,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-opus-4-8_max,0.489,2026-05-28,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-opus-5-5_max,0.735,2026-09-22,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+claude-opus-5-5_medium,0.525,2026-09-22,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-opus-5_max,0.658,2026-07-24,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-sonnet-4-6_high,0.43,2026-02-17,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-sonnet-5-5_max,0.755,2026-09-28,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-sonnet-5-5_medium,0.446,2026-09-28,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-sonnet-5_thinking,0.545,2026-06-30,Anthropic,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+deepseek-v3.2,0.213,2025-12-01,DeepSeek,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 deepseek-v4-pro-0813_max,0.473,2026-08-13,DeepSeek,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+deepseek-v4.1-flash,0.395,2026-09-09,DeepSeek,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gemini-3.1-pro-preview_high,0.353,2026-02-19,Google DeepMind,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+gemini-3.5-flash-lite,0.293,2026-07-21,Google DeepMind,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gemini-3.5-flash_high,0.275,2026-05-19,Google DeepMind,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gemini-3.6-flash_high,0.469,2026-07-21,Google DeepMind,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gemini-3.7-flash_high,0.6779999999999999,2026-08-13,Google DeepMind,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gemini-3.8-flash_high,0.643,2026-09-02,Google DeepMind,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+gemini-4-argon,0.8240000000000001,2026-09-30,Google DeepMind,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 glm-5.1_xhigh,0.409,2026-04-07,Z.ai (Zhipu AI),APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+glm-5.2,0.452,2026-06-16,Z.ai (Zhipu AI),APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 glm-5.3-flash_max,0.528,2026-08-20,Z.ai (Zhipu AI),APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 glm-5.3_max,0.5660000000000001,2026-08-14,Z.ai (Zhipu AI),APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-5.4-2026-03-05_xhigh,0.524,2026-03-05,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-5.5_xhigh,0.551,2026-04-23,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+gpt-5.6-luna,0.43,2026-07-09,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-5.6-sol_promax,0.514,2026-07-09,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-5.6-terra_max,0.5820000000000001,2026-07-09,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-6-astra_max,0.647,2026-09-03,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
@@ -108,11 +119,18 @@ gpt-6.1-sol_max,0.6,2026-09-29,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progr
 gpt-oss-120b_high,0.044,2025-08-05,OpenAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 grok-4.5_high,0.562,2026-07-08,xAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 grok-4.6_xhigh,0.653,2026-08-12,xAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+grok-4.7,0.546,2026-09-21,xAI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 kimi-k2.7-code,0.376,2026-06-12,Moonshot,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 kimi-k3_max,0.506,2026-07-16,Moonshot,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+mimo-v2.6-pro,0.595,2026-09-21,Xiaomi Corp,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+muse-spark-1.1,0.318,2026-07-09,Meta AI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 muse-spark-1.2_xhigh,0.364,2026-08-05,Meta AI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+muse-spark-1.3_max,0.476,2026-09-02,Meta AI,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 muse-spark-1.3_xhigh,0.586,2026-09-02,Meta AI,APEX-Agents,,EpochAI,https://www.mercor.com/apex/apex-agents-leaderboard,epoch,Core AGI Progress,0.0,
+nemotron-3-ultra,0.227,2026-06-04,NVIDIA,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 qwen3.5-397b-a17b_high,0.249,2026-02-13,Alibaba,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+qwen3.8-27b,0.475,2026-08-14,Alibaba,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
+qwen3.8-max,0.633,2026-08-02,Alibaba,APEX-Agents,,EpochAI,,epoch,Core AGI Progress,0.0,
 Baichuan-2-13B-Base,0.38,2023-09-06,Baichuan,ARC AI2,,Qwen Technical Report,https://arxiv.org/abs/2309.16609,epoch,Domain Specific Questions,0.25,
 Baichuan-2-7B-Base,0.325,2023-09-20,Baichuan,ARC AI2,,Qwen Technical Report,https://arxiv.org/abs/2309.16609,epoch,Domain Specific Questions,0.25,
 Cerebras-GPT-13B,0.324,2023-03-20,Cerebras Systems,ARC AI2,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Domain Specific Questions,0.25,
@@ -234,7 +252,10 @@ claude-opus-4-8_high,0.92,2026-05-28,Anthropic,ARC-AGI,,https://arcprize.org/lea
 claude-opus-4-8_low,0.88,2026-05-28,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-8_max,0.925,2026-05-28,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-8_medium,0.915,2026-05-28,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-5-5_high,0.985,2026-09-22,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-5-5_low,0.885,2026-09-22,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5-5_max,0.975,2026-09-22,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-5-5_medium,0.975,2026-09-22,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5-5_xhigh,0.975,2026-09-22,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5_high,0.975,2026-07-24,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5_max,0.975,2026-07-24,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
@@ -259,6 +280,10 @@ deepseek-v4-pro-0813_high,0.8716666666666666,2026-08-13,DeepSeek,ARC-AGI,,https:
 deepseek-v4-pro-0813_low,0.905,2026-08-13,DeepSeek,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 deepseek-v4-pro-0813_max,0.9,2026-08-13,DeepSeek,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 deepseek-v4-pro-0813_none,0.13,2026-08-13,DeepSeek,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_high,0.885,2026-09-09,DeepSeek,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_low,0.905,2026-09-09,DeepSeek,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_max,0.945,2026-09-09,DeepSeek,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_none,0.0783333333333333,2026-09-09,DeepSeek,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-04-17_24K,0.323,2025-04-17,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_16K,0.3333,2025-05-20,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_1K,0.16,2025-05-20,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
@@ -289,8 +314,14 @@ gemini-3.6-flash_minimal,0.345,2026-07-21,Google DeepMind,ARC-AGI,,https://arcpr
 gemini-3.7-flash_high,0.955,2026-08-13,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gemini-3.7-flash_low,0.8516666666666666,2026-08-13,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gemini-3.7-flash_medium,0.9116666666666666,2026-08-13,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gemini-3.8-flash_high,0.985,2026-09-02,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gemini-3.8-flash_low,0.905,2026-09-02,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gemini-3.8-flash_medium,0.975,2026-09-02,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 glm-5,0.4467,2026-02-11,Z.ai (Zhipu AI),ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 glm-5.2,0.77,2026-06-16,Z.ai (Zhipu AI),ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+glm-5.3-flash_high,0.7183333333333335,2026-08-20,Z.ai (Zhipu AI),ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+glm-5.3-flash_low,0.4699999999999999,2026-08-20,Z.ai (Zhipu AI),ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+glm-5.3-flash_max,0.91,2026-08-20,Z.ai (Zhipu AI),ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gpt-4.1-2025-04-14,0.055,2025-04-14,OpenAI,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gpt-4.1-mini-2025-04-14,0.035,2025-04-14,OpenAI,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gpt-4.1-nano-2025-04-14,0.0,2025-04-14,OpenAI,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
@@ -373,6 +404,11 @@ gpt-6-sol_max,0.955,2026-09-22,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,
 gpt-6-sol_medium,0.8366666666666666,2026-09-22,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gpt-6-sol_none,0.2933333333333333,2026-09-22,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gpt-6-sol_xhigh,0.9266666666666666,2026-09-22,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_high,0.985,2026-09-29,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_low,0.935,2026-09-29,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_max,0.965,2026-09-29,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_medium,0.955,2026-09-29,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_xhigh,0.985,2026-09-29,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 grok-3,0.055,2025-04-09,xAI,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 grok-3-mini-beta_low,0.165,2025-04-09,xAI,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 grok-3-mini_low,0.165,2025-06-24,xAI,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -386,6 +422,10 @@ grok-4.6_high,0.87,2026-08-12,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epo
 grok-4.6_low,0.7483333333333334,2026-08-12,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 grok-4.6_medium,0.875,2026-08-12,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 grok-4.6_xhigh,0.87,2026-08-12,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_high,0.9016666666666666,2026-09-21,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_low,0.6333333333333333,2026-09-21,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_medium,0.9,2026-09-21,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_xhigh,0.895,2026-09-21,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 inkling-small_high,0.78,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 inkling-small_low,0.525,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 inkling-small_medium,0.67,2026-07-15,Thinking Machines,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
@@ -416,6 +456,10 @@ o3-pro-2025-06-10_medium,0.57,2025-06-10,OpenAI,ARC-AGI,,ARC Prize Leaderboard,h
 o4-mini-2025-04-16_high,0.5867,2025-04-16,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 o4-mini-2025-04-16_low,0.2133,2025-04-16,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 o4-mini-2025-04-16_medium,0.4183,2025-04-16,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_low,0.6916666666666665,2026-08-14,Alibaba,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_medium,0.6866666666666665,2026-08-14,Alibaba,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_none,0.34,2026-08-14,Alibaba,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_xhigh,0.875,2026-08-14,Alibaba,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 tiny-recursion-model,0.4,2025-10-06,Samsung SAIL Montréal,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 DeepSeek-R1,0.013,2025-01-20,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 DeepSeek-R1-0528,0.0112,2025-05-28,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -458,7 +502,10 @@ claude-opus-4-7_medium,0.675,2026-04-16,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core
 claude-opus-4-8_high,0.7208,2026-05-28,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-8_low,0.6222,2026-05-28,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-8_medium,0.7167,2026-05-28,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-5-5_high,0.9333333333333332,2026-09-22,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-5-5_low,0.7013888888888891,2026-09-22,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5-5_max,0.9166666666666666,2026-09-22,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-5-5_medium,0.875,2026-09-22,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5-5_xhigh,0.925,2026-09-22,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5_high,0.8833,2026-07-24,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-5_max,0.9042,2026-07-24,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -483,6 +530,10 @@ deepseek-v4-pro-0813_high,0.5972222222222221,2026-08-13,DeepSeek,ARC-AGI-2,,Epoc
 deepseek-v4-pro-0813_low,0.5625,2026-08-13,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 deepseek-v4-pro-0813_max,0.6125,2026-08-13,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 deepseek-v4-pro-0813_none,0.0083333333333333,2026-08-13,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_high,0.675,2026-09-09,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_low,0.6055555555555555,2026-09-09,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_max,0.7291666666666666,2026-09-09,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+deepseek-v4.1-flash_none,0.0125,2026-09-09,DeepSeek,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-1.5-pro-002,0.008,2024-09-24,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.0-flash-001,0.013,2025-02-05,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20,0.0169,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -515,8 +566,14 @@ gemini-3.6-flash_minimal,0.0263888888888888,2026-07-21,Google DeepMind,ARC-AGI-2
 gemini-3.7-flash_high,0.8458333333333333,2026-08-13,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-3.7-flash_low,0.5291666666666667,2026-08-13,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-3.7-flash_medium,0.6375,2026-08-13,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gemini-3.8-flash_high,0.8916666666666667,2026-09-02,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gemini-3.8-flash_low,0.775,2026-09-02,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gemini-3.8-flash_medium,0.8291666666666667,2026-09-02,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 glm-5,0.0486,2026-02-11,Z.ai (Zhipu AI),ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 glm-5.2,0.22775,2026-06-16,Z.ai (Zhipu AI),ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+glm-5.3-flash_high,0.5013888888888889,2026-08-20,Z.ai (Zhipu AI),ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+glm-5.3-flash_low,0.2791666666666667,2026-08-20,Z.ai (Zhipu AI),ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+glm-5.3-flash_max,0.6583333333333333,2026-08-20,Z.ai (Zhipu AI),ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gpt-4.1-2025-04-14,0.0042,2025-04-14,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gpt-4.1-mini-2025-04-14,0.0,2025-04-14,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gpt-4.1-nano-2025-04-14,0.0,2025-04-14,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -599,6 +656,11 @@ gpt-6-sol_max,0.8958333333333335,2026-09-22,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Cor
 gpt-6-sol_medium,0.5777777777777778,2026-09-22,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gpt-6-sol_none,0.0166666666666666,2026-09-22,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gpt-6-sol_xhigh,0.7805555555555556,2026-09-22,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_high,0.9166666666666666,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_low,0.7666666666666667,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_max,0.9416666666666668,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_medium,0.8666666666666667,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gpt-6.1-sol_xhigh,0.9166666666666666,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-3,0.0,2025-04-09,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-3-mini_low,0.0042,2025-06-24,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4-0709,0.15975,2025-07-09,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -611,6 +673,10 @@ grok-4.6_high,0.6513888888888889,2026-08-12,xAI,ARC-AGI-2,,EpochAI,,epoch,Core A
 grok-4.6_low,0.2763888888888889,2026-08-12,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4.6_medium,0.6125,2026-08-12,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4.6_xhigh,0.6708333333333333,2026-08-12,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_high,0.5833333333333334,2026-09-21,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_low,0.1666666666666666,2026-09-21,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_medium,0.5875,2026-09-21,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+grok-4.7_xhigh,0.6138888888888888,2026-09-21,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 inkling-small_high,0.3305555555555556,2026-07-15,Thinking Machines,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 inkling-small_low,0.0486111111111111,2026-07-15,Thinking Machines,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 inkling-small_medium,0.1361111111111111,2026-07-15,Thinking Machines,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -636,6 +702,10 @@ o3-pro-2025-06-10_medium,0.0194,2025-06-10,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core
 o4-mini-2025-04-16_high,0.0611,2025-04-16,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 o4-mini-2025-04-16_low,0.0167,2025-04-16,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 o4-mini-2025-04-16_medium,0.0236,2025-04-16,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_low,0.2277777777777778,2026-08-14,Alibaba,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_medium,0.1319444444444444,2026-08-14,Alibaba,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_none,0.0152777777777777,2026-08-14,Alibaba,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+qwen3.8-27b_xhigh,0.4236111111111111,2026-08-14,Alibaba,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 tiny-recursion-model,0.0625,2025-10-06,Samsung SAIL Montréal,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 DeepSeek-R1,0.569,2025-01-20,DeepSeek,Aider Polyglot,,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
 DeepSeek-R1-0528,0.7140000000000001,2025-05-28,DeepSeek,Aider Polyglot,,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
@@ -719,6 +789,7 @@ gemini-2.5-pro_thinking,0.469,2025-06-17,Google DeepMind,AudioMultiChallenge,,Sc
 gemini-3-pro-preview_thinking,0.5465,2025-11-18,Google DeepMind,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 gemini-3.1-flash-live-preview,0.36060000000000003,2026-03-26,Google DeepMind,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 gemini-3.8-flash_high,0.604,2026-09-02,Google DeepMind,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
+gemini-4-argon_high,0.5841,2026-09-30,Google DeepMind,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 gemma-3n-E4B-it,0.1549,2025-06-26,Google DeepMind,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 gpt-4o-audio-preview-2025-06-03,0.2544,2025-06-03,OpenAI,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 gpt-4o-mini-audio-preview-2024-12-17,0.1482,2024-12-17,OpenAI,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
@@ -728,6 +799,7 @@ gpt-realtime-2025-08-28,0.2345,2025-08-28,OpenAI,AudioMultiChallenge,,Scale SEAL
 gpt-realtime-2_xhigh,0.48450000000000004,2026-05-07,OpenAI,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 gpt-realtime-mini-2025-12-15,0.1659,2025-12-15,OpenAI,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 inkling-small,0.5487,2026-07-15,Thinking Machines,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
+launa-omni-1,0.5969,,Salesforce,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 tml-interaction-small,0.4336,,Thinking Machines,AudioMultiChallenge,,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc,seal,Multimodal Understanding,0.0,
 DeepSeek-R1,0.349,2025-01-20,DeepSeek,Balrog,,https://balrogai.com/,https://balrogai.com/,epoch,General Reasoning,0.0,
 DeepSeek-R1-Distill-Qwen-32B,0.195,2025-01-20,DeepSeek,Balrog,,https://balrogai.com/,https://balrogai.com/,epoch,General Reasoning,0.0,
@@ -806,16 +878,20 @@ o4-mini-2025-04-16_medium,0.39899999999999997,2025-04-16,OpenAI,BioLP-bench,,RAN
 claude-fable-5-1_thinking,0.4186550976138828,2026-09-01,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 claude-fable-5_thinking,0.3861171366594359,2026-06-09,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 claude-haiku-4-5-20251001_thinking,0.0,2025-10-15,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
+claude-haiku-5-5,0.3297180043383946,2026-10-07,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 claude-opus-4-7_thinking,0.245119305856833,2026-04-16,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 claude-opus-4-8_thinking,0.1453362255965291,2026-05-28,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
+claude-opus-5-5_thinking,0.5119305856832972,2026-09-22,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 claude-opus-5_thinking,0.3036876355748373,2026-07-24,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 claude-sonnet-4-6_thinking,0.0672451193058566,2026-02-17,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
+claude-sonnet-5-5,0.3926247288503253,2026-09-28,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 claude-sonnet-5_thinking,0.2494577006507592,2026-06-30,Anthropic,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gemini-3-flash-preview_high,0.0,2025-12-17,Google DeepMind,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gemini-3.1-pro-preview_high,0.2646420824295011,2026-02-19,Google DeepMind,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gemini-3.5-flash,0.336225596529284,2026-05-19,Google DeepMind,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gemini-3.6-flash,0.3123644251626898,2026-07-21,Google DeepMind,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gemini-3.8-flash,0.3861171366594359,2026-09-02,Google DeepMind,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
+gemini-4-argon,0.5444685466377441,2026-09-30,Google DeepMind,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gemini-robotics-er-1.6-preview,0.0,2026-04-14,Google DeepMind,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gpt-5.4-2026-03-05,0.2711496746203904,2026-03-05,OpenAI,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 gpt-5.5,0.3622559652928415,2026-04-23,OpenAI,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
@@ -829,8 +905,52 @@ grok-4-20_thinking,0.0,2026-02-17,xAI,BlueprintBench 2,,https://andonlabs.com/ev
 grok-4.3,0.0,2026-04-17,xAI,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 grok-4.5,0.2733188720173536,2026-07-08,xAI,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 grok-4.6,0.3318872017353577,2026-08-12,xAI,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
+grok-4.7,0.3253796095444684,2026-09-21,xAI,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 kimi-k2.6,0.0390455531453362,2026-04-20,Moonshot,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
 kimi-k3,0.2950108459869848,2026-07-16,Moonshot,BlueprintBench 2,,https://andonlabs.com/evals/blueprint-bench-2,,epoch,Multimodal Understanding,0.0,
+DeepSeek-R1,0.085,2025-01-20,DeepSeek,CAISI CTF-Archive,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+DeepSeek-R1-0528,0.265,2025-05-28,DeepSeek,CAISI CTF-Archive,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+DeepSeek-V3.1,0.282,2025-08-21,DeepSeek,CAISI CTF-Archive,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-opus-4-20250514,0.341,2025-05-22,Anthropic,CAISI CTF-Archive,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-5-2025-08-07,0.506,2025-08-07,OpenAI,CAISI CTF-Archive,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-5-mini-2025-08-07,0.381,2025-08-07,OpenAI,CAISI CTF-Archive,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-oss-120b,0.343,2025-08-05,OpenAI,CAISI CTF-Archive,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-mythos-preview,0.656,2026-04-07,Anthropic,CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-opus-4-6,0.456,2026-02-05,Anthropic,CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-opus-4-8,0.484,2026-05-28,Anthropic,CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+deepseek-v4-pro,0.317,2026-04-24,DeepSeek,CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+glm-5.2,0.393,2026-06-16,Z.ai (Zhipu AI),CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-5.4-2026-03-05,0.544,2026-03-05,OpenAI,CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-5.4-mini-2026-03-17,0.32,2026-03-17,OpenAI,CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-5.5,0.705,2026-04-23,OpenAI,CAISI CTF-Archive-Diamond,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+DeepSeek-R1,0.267,2025-01-20,DeepSeek,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+DeepSeek-R1-0528,0.36,2025-05-28,DeepSeek,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+DeepSeek-V3.1,0.367,2025-08-21,DeepSeek,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-opus-4-20250514,0.667,2025-05-22,Anthropic,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-5-2025-08-07,0.656,2025-08-07,OpenAI,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-5-mini-2025-08-07,0.567,2025-08-07,OpenAI,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-oss-120b,0.422,2025-08-05,OpenAI,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+kimi-k2-thinking,0.505,2025-11-06,Moonshot,CAISI CVE-Bench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+DeepSeek-R1,0.167,2025-01-20,DeepSeek,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+DeepSeek-R1-0528,0.355,2025-05-28,DeepSeek,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+DeepSeek-V3.1,0.4,2025-08-21,DeepSeek,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-opus-4-20250514,0.469,2025-05-22,Anthropic,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-5-2025-08-07,0.735,2025-08-07,OpenAI,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-5-mini-2025-08-07,0.515,2025-08-07,OpenAI,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+gpt-oss-120b,0.495,2025-08-05,OpenAI,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+kimi-k2-thinking,0.4,2025-11-06,Moonshot,CAISI Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
+claude-mythos-preview,0.096,2026-04-07,Anthropic,CAISI ExploitGym Userspace,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+glm-5.3,0.094,2026-08-14,Z.ai (Zhipu AI),CAISI ExploitGym Userspace,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-6-astra,0.444,2026-09-03,OpenAI,CAISI ExploitGym Userspace,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+kimi-k3,0.026,2026-07-16,Moonshot,CAISI ExploitGym Userspace,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-mythos-preview,0.067,2026-04-07,Anthropic,CAISI OSS-Fuzz,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+glm-5.3,0.077,2026-08-14,Z.ai (Zhipu AI),CAISI OSS-Fuzz,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-6-astra,0.232,2026-09-03,OpenAI,CAISI OSS-Fuzz,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+kimi-k3,0.024,2026-07-16,Moonshot,CAISI OSS-Fuzz,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-mythos-preview,0.607,2026-04-07,Anthropic,CAISI SEC-Bench Pro,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+glm-5.3,0.404,2026-08-14,Z.ai (Zhipu AI),CAISI SEC-Bench Pro,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-6-astra,0.902,2026-09-03,OpenAI,CAISI SEC-Bench Pro,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+kimi-k3,0.273,2026-07-16,Moonshot,CAISI SEC-Bench Pro,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 DeepSeek-V3.2-Exp_thinking,0.132,2025-09-29,DeepSeek,CL-bench,,EpochAI,,epoch,General Reasoning,0.0,
 MiniMax-M2.5,0.114,2026-02-12,MiniMax,CL-bench,,EpochAI,,epoch,General Reasoning,0.0,
 claude-opus-4-5-20251101_thinking,0.211,2025-11-24,Anthropic,CL-bench,,EpochAI,,epoch,General Reasoning,0.0,
@@ -920,10 +1040,18 @@ claude-fable-5-1_medium,0.291428571428571,2026-09-01,Anthropic,CritPt,,EpochAI,,
 claude-fable-5-1_xhigh,0.311428571428571,2026-09-01,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-fable-5_max,0.2857142857,2026-06-09,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-haiku-4-5-20251001_thinking,0.0,2025-10-15,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-haiku-5-5_high,0.185714285714286,2026-10-07,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-haiku-5-5_low,0.0914285714285714,2026-10-07,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-haiku-5-5_max,0.188571428571429,2026-10-07,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-haiku-5-5_medium,0.128571428571429,2026-10-07,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-haiku-5-5_xhigh,0.225714285714286,2026-10-07,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-opus-4-20250514_thinking,0.003,2025-05-22,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-opus-4-7_max,0.12,2026-04-16,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-opus-4-8_max,0.208571428571429,2026-05-28,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-opus-5-5_high,0.308571428571429,2026-09-22,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-opus-5-5_low,0.177142857142857,2026-09-22,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-opus-5-5_max,0.317142857142857,2026-09-22,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-opus-5-5_medium,0.277142857142857,2026-09-22,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-opus-5-5_xhigh,0.317142857142857,2026-09-22,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-opus-5_high,0.282857142857143,2026-07-24,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-opus-5_low,0.231428571428571,2026-07-24,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
@@ -939,16 +1067,21 @@ claude-sonnet-5-5_max,0.314285714285714,2026-09-28,Anthropic,CritPt,,EpochAI,,ep
 claude-sonnet-5-5_medium,0.168571428571429,2026-09-28,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-sonnet-5-5_xhigh,0.311428571428571,2026-09-28,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-sonnet-5_high,0.0114285714285714,2026-06-30,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-sonnet-5_low,0.0457142857142857,2026-06-30,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 claude-sonnet-5_max,0.168571428571429,2026-06-30,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-sonnet-5_medium,0.0857142857142857,2026-06-30,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+claude-sonnet-5_xhigh,0.154285714285714,2026-06-30,Anthropic,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 cogito-671b-v2.1,0.0,2025-11-19,Deep Cogito,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 command-a-plus-05-2026,0.0028571428571428,2026-05-20,"Cohere,Cohere Labs (formerly Cohere for AI)",CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 deepseek-v4-flash-0731_max,0.165714285714286,2026-07-31,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 deepseek-v4-flash_high,0.0342857142857143,2026-04-24,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 deepseek-v4-flash_max,0.0714285714285714,2026-04-24,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 deepseek-v4-pro-0813_max,0.18,2026-08-13,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+deepseek-v4-pro-0813_none,0.0,2026-08-13,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 deepseek-v4-pro_high,0.1,2026-04-24,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 deepseek-v4-pro_max,0.128571428571429,2026-04-24,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 deepseek-v4.1-flash_max,0.142857142857143,2026-09-09,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+deepseek-v4.1-flash_none,0.0028571428571428,2026-09-09,DeepSeek,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 devstral-small-2512,0.0,2025-12-09,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gemini-2.5-flash,0.011,2025-06-17,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gemini-2.5-pro,0.02,2025-06-17,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
@@ -965,6 +1098,7 @@ gemini-3.7-flash_medium,0.0942857142857143,2026-08-13,Google DeepMind,CritPt,,Ep
 gemini-3.8-flash_high,0.182857142857143,2026-09-02,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gemini-3.8-flash_low,0.04,2026-09-02,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gemini-3.8-flash_medium,0.122857142857143,2026-09-02,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+gemini-4-argon_high,0.271428571428571,2026-09-30,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gemma-3-12b-it,0.0,2025-03-12,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gemma-3-27b-it,0.0,2025-03-12,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gemma-4-26b-a4b_thinking,0.0,2026-04-02,Google DeepMind,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
@@ -975,6 +1109,7 @@ glm-5.1_thinking,0.0457142857142857,2026-04-07,Z.ai (Zhipu AI),CritPt,,EpochAI,,
 glm-5.2_max,0.208571428571429,2026-06-16,Z.ai (Zhipu AI),CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 glm-5.2_none,0.0314285714285714,2026-06-16,Z.ai (Zhipu AI),CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 glm-5.3-flash_max,0.154285714285714,2026-08-20,Z.ai (Zhipu AI),CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+glm-5.3_low,0.145714285714286,2026-08-14,Z.ai (Zhipu AI),CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 glm-5.3_max,0.191428571428571,2026-08-14,Z.ai (Zhipu AI),CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gpt-4.1-mini-2025-04-14,0.0,2025-04-14,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gpt-4.1-nano-2025-04-14,0.0,2025-04-14,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
@@ -1005,7 +1140,7 @@ gpt-5.6-sol_low,0.148571428571429,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domai
 gpt-5.6-sol_max,0.322857142857143,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gpt-5.6-sol_medium,0.228571428571429,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gpt-5.6-sol_none,0.0514285714285714,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
-gpt-5.6-sol_xhigh,0.286,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+gpt-5.6-sol_xhigh,0.285714285714286,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gpt-5.6-terra_high,0.228571428571429,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gpt-5.6-terra_low,0.0942857142857143,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 gpt-5.6-terra_max,0.3,2026-07-09,OpenAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
@@ -1046,6 +1181,8 @@ grok-4.6_high,0.171428571428571,2026-08-12,xAI,CritPt,,EpochAI,,epoch,Domain Spe
 grok-4.6_low,0.0571428571428571,2026-08-12,xAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 grok-4.6_medium,0.177142857142857,2026-08-12,xAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 grok-4.6_xhigh,0.197142857142857,2026-08-12,xAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+grok-4.7_high,0.18,2026-09-21,xAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+grok-4.7_low,0.134285714285714,2026-09-21,xAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 grok-4.7_xhigh,0.177142857142857,2026-09-21,xAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 grok-build-0.1,0.0914285714285714,2026-05-29,xAI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 inkling-small,0.0828571428571429,2026-07-15,Thinking Machines,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
@@ -1057,18 +1194,25 @@ kimi-k3_max,0.234,2026-07-16,Moonshot,CritPt,,EpochAI,,epoch,Domain Specific Que
 magistral-medium-2509,0.0028571428571428,2025-09-18,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 magistral-small-2509,0.0028571428571428,2025-09-18,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mercury-2,0.0084897959183673,2026-02-24,Inception Labs,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+mercury-2.5,0.0,2026-09-08,Inception Labs,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mimo-v2-flash_none,0.0,2025-12-16,Xiaomi Corp,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mimo-v2.5,0.0371428571428571,2026-04-23,Xiaomi Corp,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mimo-v2.5-pro_thinking,0.04,2026-04-23,Xiaomi Corp,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+mimo-v2.6-flash,0.12,2026-09-21,Xiaomi Corp,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+mimo-v2.6-pro,0.265714285714286,2026-09-21,Xiaomi Corp,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mistral-large-2512,0.0,2025-12-02,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+mistral-large-4-0,0.105714285714286,2026-10-06,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mistral-medium-2508,0.0,2025-08-12,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mistral-medium-2604_high,0.0,2026-04-28,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mistral-small-3.1-2503,0.0,2025-03-17,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 mistral-small-3.2-2506,0.0,2025-06-20,Mistral AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+muse-glimmer_high,0.0257142857142857,2026-08-10,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 muse-spark,0.11330612244898,2026-04-08,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
-muse-spark-1.1_xhigh,0.151,2026-07-09,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+muse-spark-1.1_xhigh,0.151428571428571,2026-07-09,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 muse-spark-1.2_xhigh,0.177142857142857,2026-08-05,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 muse-spark-1.3_max,0.248571428571429,2026-09-02,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+muse-spark-1.3_xhigh,0.26,2026-09-02,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
+muse-wonder-1.0_max,0.282857142857143,2026-10-12,Meta AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 nemotron-3-super,0.0314285714285714,2026-03-11,NVIDIA,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 nemotron-3-ultra,0.0314285714285714,2026-06-04,NVIDIA,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 nova-2.0-pro-preview_low,0.0,2025-12-02,Amazon,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
@@ -1100,16 +1244,22 @@ solar-pro-3,0.0,2026-01-27,Upstage,CritPt,,EpochAI,,epoch,Domain Specific Questi
 step-3.7-flash,0.0228571428571429,2026-05-29,StepFun,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 step-5-preview,0.208571428571429,2026-09-18,StepFun,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
 trinity-large-thinking,0.0085714285714285,2026-04-01,Arcee AI,CritPt,,EpochAI,,epoch,Domain Specific Questions,0.0,
-claude-mythos-5,0.367,2026-06-09,Anthropic,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
-claude-mythos-preview,0.292,2026-04-07,Anthropic,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
-claude-opus-4-8,0.166,2026-05-28,Anthropic,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 gemini-3-pro-preview_high,0.0,2025-11-18,Google DeepMind,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+glm-5.2,0.0,2026-06-16,Z.ai (Zhipu AI),CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 gpt-5.2-codex_xhigh,0.0,2025-12-18,OpenAI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 gpt-5.3-codex_xhigh,0.0,2026-02-05,OpenAI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 gpt-5.4-2026-03-05,0.09,2026-03-05,OpenAI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 gpt-5.5,0.26,2026-04-23,OpenAI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
-gpt-5.6-sol,0.28,2026-07-09,OpenAI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-5.6-sol,0.27,2026-07-09,OpenAI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+gpt-6-astra,0.59,2026-09-03,OpenAI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 muse-spark_thinking,0.0,2026-04-08,Meta AI,CyScenarioBench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-haiku-4-5-20251001,0.0,2025-10-15,Anthropic,CyScenarioBench (Anthropic),,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-haiku-5-5,0.033,2026-10-07,Anthropic,CyScenarioBench (Anthropic),,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-mythos-5-1,0.617,2026-09-01,Anthropic,CyScenarioBench (Anthropic),,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-opus-5,0.53,2026-07-24,Anthropic,CyScenarioBench (Anthropic),,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-opus-5-5,0.676,2026-09-22,Anthropic,CyScenarioBench (Anthropic),,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-sonnet-5,0.007,2026-06-30,Anthropic,CyScenarioBench (Anthropic),,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
+claude-sonnet-5-5,0.461,2026-09-28,Anthropic,CyScenarioBench (Anthropic),,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,
 Llama-3.1-405B-Instruct,0.075,2024-07-23,Meta AI,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
 Meta-Llama-3-70B-Instruct,0.05,2024-04-18,Meta AI,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
 Mixtral-8x22B-Instruct-v0.1,0.075,2024-04-17,Mistral AI,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
@@ -1309,6 +1459,7 @@ grok-4-fast_thinking,0.8267,2025-09-19,xAI,DTBench,,https://conceptualreasoning.
 grok-4.3_high,0.9067,2026-04-17,xAI,DTBench,,https://conceptualreasoning.ai/dtbench,,epoch,General Reasoning,0.4,
 grok-4.5_high,0.9653,2026-07-08,xAI,DTBench,,https://conceptualreasoning.ai/dtbench,,epoch,General Reasoning,0.4,
 grok-4.6_xhigh,0.9733,2026-08-12,xAI,DTBench,,https://conceptualreasoning.ai/dtbench,,epoch,General Reasoning,0.4,
+grok-4.7_xhigh,0.96,2026-09-21,xAI,DTBench,,https://conceptualreasoning.ai/dtbench,,epoch,General Reasoning,0.4,
 kimi-k2.6,0.9093,2026-04-20,Moonshot,DTBench,,https://conceptualreasoning.ai/dtbench,,epoch,General Reasoning,0.4,
 kimi-k3_max,0.912,2026-07-16,Moonshot,DTBench,,https://conceptualreasoning.ai/dtbench,,epoch,General Reasoning,0.4,
 magistral-small-2509,0.6131000000000001,2025-09-18,Mistral AI,DTBench,,https://conceptualreasoning.ai/dtbench,,epoch,General Reasoning,0.4,
@@ -1492,6 +1643,7 @@ muse-spark-1.3_high,0.622,2026-09-02,Meta AI,DrugDiscoveryBench,,Scale SEAL (dru
 qwen3.7-max_xhigh,0.293,2026-05-19,Alibaba,DrugDiscoveryBench,,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench,seal,Biology,0,
 claude-fable-5-1_max,0.5714285714285714,2026-09-01,Anthropic,EBR-bench,0.0602338601936834,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 claude-fable-5_max,0.395238,2026-06-09,Anthropic,EBR-bench,0.020141,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
+claude-haiku-5-5_max,0.438095238095238,2026-10-07,Anthropic,EBR-bench,0.0178174161274949,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 claude-opus-4-1-20250805_none,0.079365,2025-08-05,Anthropic,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 claude-opus-4-5-20251101_128K,0.1428571428571428,2025-11-24,Anthropic,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 claude-opus-4-6_max,0.126984,2026-02-05,Anthropic,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
@@ -1502,6 +1654,7 @@ claude-opus-5_max,0.4571428571428571,2026-07-24,Anthropic,EBR-bench,0.0356348322
 claude-sonnet-4-5-20250929_none,0.0238095238095238,2025-09-29,Anthropic,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 gemini-3.1-pro-preview_high,0.1428571428571428,2026-02-19,Google DeepMind,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 gemini-3.5-flash_high,0.0476190476190476,2026-05-19,Google DeepMind,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
+gemini-4-argon_high,0.6476190476190476,2026-09-30,Google DeepMind,EBR-bench,0.0490268101951761,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 glm-5.2_max,0.0952380952380952,2026-06-16,Z.ai (Zhipu AI),EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 gpt-5-2025-08-07_high,0.126984,2025-08-07,OpenAI,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 gpt-5.2-2025-12-11_xhigh,0.230159,2025-12-11,OpenAI,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
@@ -1513,6 +1666,7 @@ gpt-6-sol_max,0.5333333333333333,2026-09-22,OpenAI,EBR-bench,0.0461683795944412,
 gpt-6.1-sol_max,0.5428571428571429,2026-09-29,OpenAI,EBR-bench,0.0575383141599741,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 grok-4.6_xhigh,0.3047619047619047,2026-08-12,xAI,EBR-bench,0.0161873635352151,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 kimi-k2.6_thinking,0.0238095238095238,2026-04-20,Moonshot,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
+muse-wonder-1.0_max,0.3142857142857143,2026-10-12,Meta AI,EBR-bench,0.0415133232718159,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 qwen3.7-max_thinking,0.0952380952380952,2026-05-19,Alibaba,EBR-bench,,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0,1.0
 Llama-3.2-90B-Vision-Instruct,0.0038,2024-09-24,Meta AI,EnigmaEval,0.0034999999999999,https://labs.scale.com/leaderboard/enigma_eval,,epoch,General Reasoning,0.0,
 Llama-4-Maverick-17B-128E-Instruct,0.0058,2025-04-05,Meta AI,EnigmaEval,0.0043,https://labs.scale.com/leaderboard/enigma_eval,,epoch,General Reasoning,0.0,
@@ -1623,6 +1777,7 @@ Inkling_xhigh,0.14,2026-07-15,Thinking Machines,FrontierCode,,https://cognition.
 MiniMax-M3_none,0.147,2026-06-01,MiniMax,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 claude-fable-5-1_medium,0.5091,2026-09-01,Anthropic,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 claude-fable-5_thinking,0.5348,2026-06-09,Anthropic,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
+claude-haiku-5-5_max,0.4636,2026-10-07,Anthropic,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 claude-opus-4-6_thinking,0.2664,2026-02-05,Anthropic,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 claude-opus-4-7_thinking,0.3854,2026-04-16,Anthropic,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 claude-opus-4-8_thinking,0.465,2026-05-28,Anthropic,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
@@ -1634,9 +1789,11 @@ claude-sonnet-5_thinking,0.4273,2026-06-30,Anthropic,FrontierCode,,https://cogni
 deepseek-v4-flash-0731_high,0.188,2026-07-31,DeepSeek,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 deepseek-v4-pro-0813_high,0.2855,2026-08-13,DeepSeek,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 deepseek-v4-pro_none,0.1764,2026-04-24,DeepSeek,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
+deepseek-v4.1-flash_high,0.4387,2026-09-09,DeepSeek,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 gemini-3.6-flash_medium,0.3437,2026-07-21,Google DeepMind,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 gemini-3.7-flash_medium,0.4359,2026-08-13,Google DeepMind,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 gemini-3.8-flash_medium,0.4119,2026-09-02,Google DeepMind,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
+gemini-4-argon_medium,0.4755,2026-09-30,Google DeepMind,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 glm-5.2_none,0.245,2026-06-16,Z.ai (Zhipu AI),FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 glm-5.3-flash_max,0.3183,2026-08-20,Z.ai (Zhipu AI),FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 glm-5.3_max,0.4014,2026-08-14,Z.ai (Zhipu AI),FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
@@ -1651,8 +1808,10 @@ gpt-6-sol_max,0.4927,2026-09-22,OpenAI,FrontierCode,,https://cognition.com/front
 gpt-6.1-sol_medium,0.5023,2026-09-29,OpenAI,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 grok-4.5_high,0.4244,2026-07-08,xAI,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 grok-4.6_high,0.4801000000000001,2026-08-12,xAI,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
+grok-4.7,0.4759,2026-09-21,xAI,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 kimi-k2.7-code,0.3006,2026-06-12,Moonshot,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 kimi-k3_none,0.4417,2026-07-16,Moonshot,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
+mistral-large-4-0_high,0.3943,2026-10-06,Mistral AI,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 mistral-medium-2604_none,0.08,2026-04-28,Mistral AI,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 nemotron-3-ultra,0.1361,2026-06-04,NVIDIA,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 qwen3.7-plus_none,0.102,2026-06-02,Alibaba,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
@@ -1661,12 +1820,16 @@ swe-1.7,0.4199,2026-07-08,Cognition,FrontierCode,,https://cognition.com/frontier
 swe-2_max,0.5,2026-09-10,Cognition,FrontierCode,,https://cognition.com/frontiercode,,epoch,Autonomous SWE,0.0,
 claude-fable-5-1_max,0.0,2026-09-01,Anthropic,FrontierMath Erdos,0.0,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
 claude-fable-5_max,0.0,2026-06-09,Anthropic,FrontierMath Erdos,0.0,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
+claude-opus-5-5_max,0.0294,2026-09-22,Anthropic,FrontierMath Erdos,0.0206,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
+claude-sonnet-5-5_max,0.029,2026-09-28,Anthropic,FrontierMath Erdos,0.021,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
 gpt-5.5_xhigh,0.0,2026-04-23,OpenAI,FrontierMath Erdos,0.0,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
 gpt-5.6-sol_max,0.0,2026-07-09,OpenAI,FrontierMath Erdos,0.0,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
 gpt-6-astra_max,0.0294117647058823,2026-09-03,OpenAI,FrontierMath Erdos,0.0206414713705158,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
 Inkling_xhigh,0.048780487804878,2026-07-15,Thinking Machines,FrontierMath Tier 4 v2,0.034059122057973,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FjvJPoRYkPH9Sb5MX252oHp.eval,epoch_live,Mathematics,0.0,1.0
+Muse-Spark-Open-816B-A42B_xhigh,0.3170731707317073,2026-10-15,Meta AI,FrontierMath Tier 4 v2,0.0735761128243822,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 claude-fable-5-1_max,0.8780487804878049,2026-09-01,Anthropic,FrontierMath Tier 4 v2,0.0517395205746254,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 claude-fable-5_max,0.902,2026-06-09,Anthropic,FrontierMath Tier 4 v2,0.046,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FReDAtJGGfRtrEGGWf4Zbsd.eval,epoch_live,Mathematics,0.0,1.0
+claude-haiku-5-5_max,0.4634146341463415,2026-10-07,Anthropic,FrontierMath Tier 4 v2,0.078845023781681,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 claude-opus-4-1-20250805_32K,0.024390243902439,2025-08-05,Anthropic,FrontierMath Tier 4 v2,0.024390243902439,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F9zT72xRR6wZhiwraJTNPyz.eval,epoch_live,Mathematics,0.0,1.0
 claude-opus-4-5-20251101_32K,0.048780487804878,2025-11-24,Anthropic,FrontierMath Tier 4 v2,0.034059122057973,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fazk4theXxAsizmoi2HDD49.eval,epoch_live,Mathematics,0.0,1.0
 claude-opus-4-6_max,0.2682926829268293,2026-02-05,Anthropic,FrontierMath Tier 4 v2,0.0700556420309515,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F2hbbp8z6PhB7c2T33os9q5.eval,epoch_live,Mathematics,0.0,1.0
@@ -1680,6 +1843,7 @@ claude-sonnet-5_max,0.2926829268292683,2026-06-30,Anthropic,FrontierMath Tier 4 
 deepseek-v4-flash-0731_max,0.2439024390243902,2026-07-31,DeepSeek,FrontierMath Tier 4 v2,0.0678995654003661,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FWYs83xB6NwrkMNyQJtuMcQ.eval,epoch_live,Mathematics,0.0,1.0
 deepseek-v4-pro-0813_max,0.2682926829268293,2026-08-13,DeepSeek,FrontierMath Tier 4 v2,0.0700556420309515,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fa4uV8HMMBAcHXLVSmZfBgX.eval,epoch_live,Mathematics,0.0,1.0
 deepseek-v4-pro_max,0.024390243902439,2026-04-24,DeepSeek,FrontierMath Tier 4 v2,0.024390243902439,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FRAZ6VMfGtQSE8EvUZRRz4Q.eval,epoch_live,Mathematics,0.0,1.0
+deepseek-v4.1-flash_max,0.2682926829268293,2026-09-09,DeepSeek,FrontierMath Tier 4 v2,0.0700556420309515,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 gdm-ai-co-mathematician,0.756,2026-05-08,Google DeepMind,FrontierMath Tier 4 v2,0.067,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 gemini-2.5-pro_thinking,0.0,2025-06-17,Google DeepMind,FrontierMath Tier 4 v2,0.0,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F2z7kL9DpfvY44T9Wo99FYx.eval,epoch_live,Mathematics,0.0,1.0
 gemini-3-flash-preview_high,0.1707317073170731,2025-12-17,Google DeepMind,FrontierMath Tier 4 v2,0.0594941995982949,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FZczEhu69FQ9Cnns8NT6ew4.eval,epoch_live,Mathematics,0.0,1.0
@@ -1689,6 +1853,7 @@ gemini-3.5-flash_high,0.2682926829268293,2026-05-19,Google DeepMind,FrontierMath
 gemini-3.6-flash_high,0.2195121951219512,2026-07-21,Google DeepMind,FrontierMath Tier 4 v2,0.065445892024384,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FJCMjXU6FRiiLV3xvs9R2Xv.eval,epoch_live,Mathematics,0.0,1.0
 gemini-3.7-flash_high,0.3658536585365853,2026-08-13,Google DeepMind,FrontierMath Tier 4 v2,0.0761585121755902,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FKptKXK5nE2Ns2WbiaSSnbc.eval,epoch_live,Mathematics,0.0,1.0
 gemini-3.8-flash_high,0.2195121951219512,2026-09-02,Google DeepMind,FrontierMath Tier 4 v2,0.065445892024384,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
+gemini-4-argon_high,0.7804878048780488,2026-09-30,Google DeepMind,FrontierMath Tier 4 v2,0.065445892024384,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 glm-5.2_max,0.2926829268292683,2026-06-16,Z.ai (Zhipu AI),FrontierMath Tier 4 v2,0.0719408839207445,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FJebA8dYLVov6H49ZQSLXh5.eval,epoch_live,Mathematics,0.0,1.0
 glm-5.3-flash_max,0.1707317073170731,2026-08-20,Z.ai (Zhipu AI),FrontierMath Tier 4 v2,0.0594941995982949,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 glm-5.3_max,0.2926829268292683,2026-08-14,Z.ai (Zhipu AI),FrontierMath Tier 4 v2,0.0719408839207445,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
@@ -1722,20 +1887,25 @@ grok-4.20-0309-reasoning,0.1707317073170731,2026-02-17,xAI,FrontierMath Tier 4 v
 grok-4.3_high,0.1463414634146341,2026-04-17,xAI,FrontierMath Tier 4 v2,0.0558850694506809,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F3iRQkf5v7Wu7YuZhxa76Gg.eval,epoch_live,Mathematics,0.0,1.0
 grok-4.5_high,0.2439024390243902,2026-07-08,xAI,FrontierMath Tier 4 v2,0.0678995654003661,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 grok-4.6_xhigh,0.3170731707317073,2026-08-12,xAI,FrontierMath Tier 4 v2,0.0735761128243822,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fbg3JRdd33iWfvRoGSvyXXE.eval,epoch_live,Mathematics,0.0,1.0
+grok-4.7_xhigh,0.1707317073170731,2026-09-21,xAI,FrontierMath Tier 4 v2,0.0594941995982949,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 inkling-small_xhigh,0.1707317073170731,2026-07-15,Thinking Machines,FrontierMath Tier 4 v2,0.0594941995982949,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FDVD8G8DHNyzkowBzK7JvMt.eval,epoch_live,Mathematics,0.0,1.0
 kimi-k2.6_thinking,0.2564102564102564,2026-04-20,Moonshot,FrontierMath Tier 4 v2,0.0708341348016772,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FeVKA2eavdRAbSN6AnzyBxA.eval,epoch_live,Mathematics,0.0,1.0
 kimi-k2.7-code,0.1219512195121951,2026-06-12,Moonshot,FrontierMath Tier 4 v2,0.0517395205746254,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FUTVSgirxQpTgmTHbgE9EUk.eval,epoch_live,Mathematics,0.0,1.0
 kimi-k3_max,0.3902439024390244,2026-07-16,Moonshot,FrontierMath Tier 4 v2,0.0771287234187409,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FgZERSAQwxBAevQzBsWfUie.eval,epoch_live,Mathematics,0.0,1.0
+mistral-large-4-0_high,0.2682926829268293,2026-10-06,Mistral AI,FrontierMath Tier 4 v2,0.0700556420309515,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 muse-spark-1.3_max,0.4634146341463415,2026-09-02,Meta AI,FrontierMath Tier 4 v2,0.078845023781681,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 muse-spark-1.3_xhigh,0.4146341463414634,2026-09-02,Meta AI,FrontierMath Tier 4 v2,0.0778961923057137,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
+muse-wonder-1.0_max,0.7073170731707317,2026-10-12,Meta AI,FrontierMath Tier 4 v2,0.0719408839207445,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 o3-mini-2025-01-31_high,0.0,2025-01-31,OpenAI,FrontierMath Tier 4 v2,0.0,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FiR3Ut7aYEtz8dTYQFzq7rG.eval,epoch_live,Mathematics,0.0,1.0
 o4-mini-2025-04-16_high,0.048780487804878,2025-04-16,OpenAI,FrontierMath Tier 4 v2,0.034059122057973,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FTomkQucNryhFGkaUnUGeLR.eval,epoch_live,Mathematics,0.0,1.0
 qwen3.7-max_thinking,0.3414634146341463,2026-05-19,Alibaba,FrontierMath Tier 4 v2,0.0749776885314117,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FFHZCKbtfvpKGXU99vZFnXN.eval,epoch_live,Mathematics,0.0,1.0
 qwen3.8-max-0902_xhigh,0.3414634146341463,2026-09-01,Alibaba,FrontierMath Tier 4 v2,0.0749776885314117,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 qwen3.8-max_xhigh,0.4634146341463415,2026-08-02,Alibaba,FrontierMath Tier 4 v2,0.078845023781681,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FPBRdMZyz4L4CqPpXyLD2Lk.eval,epoch_live,Mathematics,0.0,1.0
 Inkling_xhigh,0.3333333333333333,2026-07-15,Thinking Machines,FrontierMath Tiers 1-3 v2,0.0279727119432229,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F6KvQvuMMX5zAuteUc6pFcW.eval,epoch_live,Mathematics,0.0,1.0
+Muse-Spark-Open-816B-A42B_xhigh,0.6982456140350877,2026-10-15,Meta AI,FrontierMath Tiers 1-3 v2,0.0272377816331515,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 claude-fable-5-1_max,0.9017543859649124,2026-09-01,Anthropic,FrontierMath Tiers 1-3 v2,0.0176620677890317,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 claude-fable-5_max,0.8701754385964913,2026-06-09,Anthropic,FrontierMath Tiers 1-3 v2,0.019944477920133,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FE28uZiJvrPgKtawbJpoZQ8.eval,epoch_live,Mathematics,0.0,1.0
+claude-haiku-5-5_max,0.7508771929824561,2026-10-07,Anthropic,FrontierMath Tiers 1-3 v2,0.0256644541023294,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 claude-opus-4-1-20250805_32K,0.1263157894736842,2025-08-05,Anthropic,FrontierMath Tiers 1-3 v2,0.0197127354633578,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F5eRkmXCURH2pRbhJoukfnC.eval,epoch_live,Mathematics,0.0,1.0
 claude-opus-4-5-20251101_32K,0.343859649122807,2025-11-24,Anthropic,FrontierMath Tiers 1-3 v2,0.0281857639890725,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FmS5EwCRZVpvUvJEehPUDZu.eval,epoch_live,Mathematics,0.0,1.0
 claude-opus-4-6_max,0.6596491228070176,2026-02-05,Anthropic,FrontierMath Tiers 1-3 v2,0.0281164678818522,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FkgJ2d6XbKj3dZutDcBYSKU.eval,epoch_live,Mathematics,0.0,1.0
@@ -1749,6 +1919,7 @@ claude-sonnet-5_max,0.656140350877193,2026-06-30,Anthropic,FrontierMath Tiers 1-
 deepseek-v4-flash-0731_max,0.5754385964912281,2026-07-31,DeepSeek,FrontierMath Tiers 1-3 v2,0.0293298997899438,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FmKhVMEicZeGjdvJdTRd7mK.eval,epoch_live,Mathematics,0.0,1.0
 deepseek-v4-pro-0813_max,0.6456140350877193,2026-08-13,DeepSeek,FrontierMath Tiers 1-3 v2,0.0283834752054356,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fb6yWmeFgsWeEiG9Qzs3NSf.eval,epoch_live,Mathematics,0.0,1.0
 deepseek-v4-pro_max,0.4526315789473684,2026-04-24,DeepSeek,FrontierMath Tiers 1-3 v2,0.029536098269922,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FKUar3FaFjzq5SMKrEhtn8e.eval,epoch_live,Mathematics,0.0,1.0
+deepseek-v4.1-flash_max,0.6736842105263158,2026-09-09,DeepSeek,FrontierMath Tiers 1-3 v2,0.0278219815703244,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 gemini-2.5-pro_thinking,0.2456140350877192,2025-06-17,Google DeepMind,FrontierMath Tiers 1-3 v2,0.0255425481026507,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FFkywQ2KS4AkLPzjSPmhHcS.eval,epoch_live,Mathematics,0.0,1.0
 gemini-3-flash-preview_high,0.512280701754386,2025-12-17,Google DeepMind,FrontierMath Tiers 1-3 v2,0.0296605908432467,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FEtgrDq6ei6kZe8K7QbXUe3.eval,epoch_live,Mathematics,0.0,1.0
 gemini-3.1-flash-lite_high,0.2771929824561403,2026-03-03,Google DeepMind,FrontierMath Tiers 1-3 v2,0.0265609207357012,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FMVZf59jt9uEoWG9w5W9apB.eval,epoch_live,Mathematics,0.0,1.0
@@ -1760,6 +1931,7 @@ gemini-3.5-flash_high,0.6280701754385964,2026-05-19,Google DeepMind,FrontierMath
 gemini-3.6-flash_high,0.5894736842105263,2026-07-21,Google DeepMind,FrontierMath Tiers 1-3 v2,0.029190634943914,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fnb9LnDeeQyvRCqsbsTANGD.eval,epoch_live,Mathematics,0.0,1.0
 gemini-3.7-flash_high,0.7157894736842105,2026-08-13,Google DeepMind,FrontierMath Tiers 1-3 v2,0.0267641566493646,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FaxMdgNDC8UYYLnZYLHZpF5.eval,epoch_live,Mathematics,0.0,1.0
 gemini-3.8-flash_high,0.6842105263157895,2026-09-02,Google DeepMind,FrontierMath Tiers 1-3 v2,0.027582557383453,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
+gemini-4-argon_high,0.8596491228070176,2026-09-30,Google DeepMind,FrontierMath Tiers 1-3 v2,0.0206114719581642,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 glm-5.1_none,0.2491228070175438,2026-04-07,Z.ai (Zhipu AI),FrontierMath Tiers 1-3 v2,0.0256644541023294,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F4hmmfwG9tgZJvKhL78nKzL.eval,epoch_live,Mathematics,0.0,1.0
 glm-5.1_thinking,0.3684210526315789,2026-04-07,Z.ai (Zhipu AI),FrontierMath Tiers 1-3 v2,0.0286237725371502,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FMhwme9odWJMzMjoYkW8r6B.eval,epoch_live,Mathematics,0.0,1.0
 glm-5.2_low,0.5473684210526316,2026-06-16,Z.ai (Zhipu AI),FrontierMath Tiers 1-3 v2,0.0295360982699221,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FUnKHyc2idtTmoTUGxGeNJV.eval,epoch_live,Mathematics,0.0,1.0
@@ -1809,12 +1981,15 @@ grok-4.20-0309-reasoning,0.4491228070175438,2026-02-17,xAI,FrontierMath Tiers 1-
 grok-4.3_high,0.4280701754385965,2026-04-17,xAI,FrontierMath Tiers 1-3 v2,0.0293609218790299,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FbdsZjrG4ayzP8NAJg5q586.eval,epoch_live,Mathematics,0.0,1.0
 grok-4.5_high,0.5719298245614035,2026-07-08,xAI,FrontierMath Tiers 1-3 v2,0.0293609218790299,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 grok-4.6_xhigh,0.6596491228070176,2026-08-12,xAI,FrontierMath Tiers 1-3 v2,0.0281164678818522,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FZb2AKwa942D7dBTTcebAba.eval,epoch_live,Mathematics,0.0,1.0
+grok-4.7_xhigh,0.5298245614035088,2026-09-21,xAI,FrontierMath Tiers 1-3 v2,0.0296167120419003,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 inkling-small_xhigh,0.4631578947368421,2026-07-15,Thinking Machines,FrontierMath Tiers 1-3 v2,0.029588888478746,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FB6bZbqickq8o2fQcgDmzMo.eval,epoch_live,Mathematics,0.0,1.0
 kimi-k2.6_thinking,0.5719298245614035,2026-04-20,Moonshot,FrontierMath Tiers 1-3 v2,0.0293609218790299,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FBxrNfyMffkVUq4n7U5eK3Q.eval,epoch_live,Mathematics,0.0,1.0
 kimi-k2.7-code,0.5403508771929825,2026-06-12,Moonshot,FrontierMath Tiers 1-3 v2,0.0295727681351475,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FX3RxRkt2pBUXYJjAQHsUo6.eval,epoch_live,Mathematics,0.0,1.0
 kimi-k3_max,0.721830985915493,2026-07-16,Moonshot,FrontierMath Tiers 1-3 v2,0.0266366079351126,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
+mistral-large-4-0_high,0.5859649122807018,2026-10-06,Mistral AI,FrontierMath Tiers 1-3 v2,0.0292277382394457,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 muse-spark-1.3_max,0.7403508771929824,2026-09-02,Meta AI,FrontierMath Tiers 1-3 v2,0.0260167508223855,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 muse-spark-1.3_xhigh,0.743859649122807,2026-09-02,Meta AI,FrontierMath Tiers 1-3 v2,0.0259015247477732,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
+muse-wonder-1.0_max,0.8210526315789474,2026-10-12,Meta AI,FrontierMath Tiers 1-3 v2,0.0227451595033274,Epoch AI internal evaluation,,epoch_live,Mathematics,0.0,1.0
 o1-2024-12-17_high,0.1473684210526315,2024-12-05,OpenAI,FrontierMath Tiers 1-3 v2,0.0210340911688524,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FNMJhDtxtyQJCHQ4EApr9LM.eval,epoch_live,Mathematics,0.0,1.0
 o1-2024-12-17_low,0.0842105263157894,2024-12-05,OpenAI,FrontierMath Tiers 1-3 v2,0.016478658153935,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FQnMPQZzDRHcTKZRaWYunaa.eval,epoch_live,Mathematics,0.0,1.0
 o1-2024-12-17_medium,0.1017543859649122,2024-12-05,OpenAI,FrontierMath Tiers 1-3 v2,0.0179396907212863,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F4RnNJhaFMGdLSFjoHHMR8k.eval,epoch_live,Mathematics,0.0,1.0
@@ -1849,11 +2024,14 @@ qwen3.8-max_xhigh,0.7473684210526316,2026-08-02,Alibaba,FrontierMath Tiers 1-3 v
 Inkling_xhigh,0.0411888647058823,2026-07-15,Thinking Machines,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 claude-fable-5-1_max,0.5629078999999999,2026-09-01,Anthropic,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 claude-fable-5_max,0.4696449352941177,2026-06-09,Anthropic,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
+claude-haiku-5-5_max,0.4376868294117648,2026-10-07,Anthropic,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 claude-opus-5-5_max,0.623309882352941,2026-09-22,Anthropic,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 claude-opus-5_max,0.5201176764705882,2026-07-24,Anthropic,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 claude-sonnet-5-5_max,0.618892994117647,2026-09-28,Anthropic,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 gemini-3.7-flash_high,0.2026059058823529,2026-08-13,Google DeepMind,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 gemini-3.8-flash_high,0.1962690294117646,2026-09-02,Google DeepMind,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
+gemini-4-argon_high,0.5496118588235293,2026-09-30,Google DeepMind,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
+glm-5.3-flash_max,0.1812520588235294,2026-08-20,Z.ai (Zhipu AI),FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 glm-5.3_max,0.3018186411764705,2026-08-14,Z.ai (Zhipu AI),FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 gpt-5.6-sol_max,0.3220246705882353,2026-07-09,OpenAI,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 gpt-6-astra_max,0.6550757455882352,2026-09-03,OpenAI,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
@@ -1861,9 +2039,12 @@ grok-4.6_xhigh,0.2528619588235294,2026-08-12,xAI,FrontierSWE v2,,https://www.fro
 grok-4.7_xhigh,0.2950476117647059,2026-09-21,xAI,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 kimi-k3_max,0.2586503205882353,2026-07-16,Moonshot,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 muse-spark-1.2_xhigh,0.1197025647058823,2026-08-05,Meta AI,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
+muse-spark-1.3_max,0.2580214823529412,2026-09-02,Meta AI,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
+qwen3.8-max-0902_xhigh,0.178096494117647,2026-09-01,Alibaba,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 qwen3.8-max_xhigh,0.1580935058823529,2026-08-02,Alibaba,FrontierSWE v2,,https://www.frontierswe.com/,,epoch,Autonomous SWE,0,
 claude-fable-5-1_max,0.7,2026-09-01,Anthropic,Furniture Assembly,0.0572436560519337,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 claude-fable-5_max,0.3583333333333333,2026-06-09,Anthropic,Furniture Assembly,0.0618587632541833,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
+claude-haiku-5-5_max,0.475,2026-10-07,Anthropic,Furniture Assembly,0.0644676154850455,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 claude-opus-4-5-20251101_64K,0.2833333333333333,2025-11-24,Anthropic,Furniture Assembly,0.0586653184231312,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 claude-opus-4-6_max,0.2833333333333333,2026-02-05,Anthropic,Furniture Assembly,0.0586653184231312,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 claude-opus-4-7_max,0.3333333333333333,2026-04-16,Anthropic,Furniture Assembly,0.0613716411932215,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
@@ -1871,10 +2052,12 @@ claude-opus-4-8_max,0.425,2026-05-28,Anthropic,Furniture Assembly,0.063806956388
 claude-opus-5-5_max,0.8333333333333334,2026-09-22,Anthropic,Furniture Assembly,0.0470404722166492,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 claude-opus-5_max,0.6083333333333333,2026-07-24,Anthropic,Furniture Assembly,0.0618587632541833,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 claude-sonnet-5-5_max,0.75,2026-09-28,Anthropic,Furniture Assembly,0.0551064711612148,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
+deepseek-v4.1-flash_max,0.3416666666666667,2026-09-09,DeepSeek,Furniture Assembly,0.0600043156012309,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 gemini-3.1-pro-preview_high,0.2666666666666666,2026-02-19,Google DeepMind,Furniture Assembly,0.0563316785101108,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 gemini-3.6-flash_high,0.2333333333333333,2026-07-21,Google DeepMind,Furniture Assembly,0.0537659011647741,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 gemini-3.7-flash_high,0.2666666666666666,2026-08-13,Google DeepMind,Furniture Assembly,0.0563316785101108,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 gemini-3.8-flash_high,0.3166666666666666,2026-09-02,Google DeepMind,Furniture Assembly,0.0593832076297605,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
+gemini-4-argon_high,0.725,2026-09-30,Google DeepMind,Furniture Assembly,0.0562794179194839,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 gpt-5.2-2025-12-11_xhigh,0.3833333333333333,2025-12-11,OpenAI,Furniture Assembly,0.0632976408494014,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 gpt-5.4-2026-03-05_xhigh,0.375,2026-03-05,OpenAI,Furniture Assembly,0.0624646792851135,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 gpt-5.5_xhigh,0.4416666666666666,2026-04-23,OpenAI,Furniture Assembly,0.0641014232840684,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
@@ -1890,6 +2073,8 @@ grok-4.6_xhigh,0.4,2026-08-12,xAI,Furniture Assembly,0.0626622188588656,Epoch AI
 grok-4.7_xhigh,0.2083333333333333,2026-09-21,xAI,Furniture Assembly,0.0521997286974066,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 kimi-k2.6_thinking,0.2166666666666666,2026-04-20,Moonshot,Furniture Assembly,0.0523010984246205,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 kimi-k3_max,0.3416666666666667,2026-07-16,Moonshot,Furniture Assembly,0.0611699340250194,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
+mistral-large-4-0_high,0.2083333333333333,2026-10-06,Mistral AI,Furniture Assembly,0.0521997286974066,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
+muse-wonder-1.0_max,0.5416666666666666,2026-10-12,Meta AI,Furniture Assembly,0.0643213887802023,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 qwen3.8-max-0902_xhigh,0.2,2026-09-01,Alibaba,Furniture Assembly,0.0520755643923295,Epoch AI internal evaluation,,epoch_live,Multimodal Understanding,0.3,
 MiniMax-M2.7,0.0,2026-03-18,MiniMax,GBAEval,,https://gbaeval.com/model/goose-minimax-m2-7,,epoch,Autonomous SWE,0.0,
 MiniMax-M3,0.009136320401503,2026-06-01,MiniMax,GBAEval,,https://gbaeval.com/model/goose-minimax-m3,,epoch,Autonomous SWE,0.0,
@@ -1923,6 +2108,8 @@ claude-opus-4-8_max,0.24,2026-05-28,Anthropic,GDP.pdf,,https://surgehq.ai/benchm
 claude-opus-5-5_max,0.306,2026-09-22,Anthropic,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 claude-opus-5_max,0.24,2026-07-24,Anthropic,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 claude-sonnet-4-6_max,0.18,2026-02-17,Anthropic,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
+claude-sonnet-5-5_max,0.314,2026-09-28,Anthropic,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
+deepseek-v4.1-flash_max,0.198,2026-09-09,DeepSeek,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gemini-3-flash-preview_high,0.1,2025-12-17,Google DeepMind,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gemini-3.1-pro-preview_high,0.17,2026-02-19,Google DeepMind,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gemini-3.5-flash-lite_high,0.1,2026-07-21,Google DeepMind,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
@@ -1932,22 +2119,27 @@ gemini-3.7-flash_high,0.238,2026-08-13,Google DeepMind,GDP.pdf,,https://surgehq.
 gemini-3.7-flash_medium,0.218,2026-08-13,Google DeepMind,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gemini-3.8-flash_high,0.2319999999999999,2026-09-02,Google DeepMind,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gemini-3.8-flash_medium,0.2339999999999999,2026-09-02,Google DeepMind,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
+gemini-4-argon_high,0.284,2026-09-30,Google DeepMind,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 glm-5.3-flash_max,0.14,2026-08-20,Z.ai (Zhipu AI),GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gpt-5.5_xhigh,0.26,2026-04-23,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gpt-5.6-luna_medium,0.227,2026-07-09,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gpt-5.6-sol_max,0.307,2026-07-09,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gpt-5.6-terra_medium,0.247,2026-07-09,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
+gpt-6-astra_max,0.342,2026-09-03,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gpt-6-luna_max,0.23,2026-09-22,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 gpt-6-sol_max,0.264,2026-09-22,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
+gpt-6.1-sol_max,0.35,2026-09-29,OpenAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 grok-4.3_high,0.08,2026-04-17,xAI,GDP.pdf,,Surge AI GDP.pdf leaderboard,https://surgehq.ai/leaderboards/gdp-pdf,epoch,Domain Specific Questions,0.0,
 grok-4.5_high,0.14,2026-07-08,xAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 grok-4.6_high,0.16,2026-08-12,xAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 grok-4.6_xhigh,0.172,2026-08-12,xAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
+grok-4.7_xhigh,0.228,2026-09-21,xAI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 kimi-k2.6_thinking,0.12,2026-04-20,Moonshot,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 kimi-k3_max,0.19,2026-07-16,Moonshot,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 muse-spark-1.1_medium,0.15,2026-07-09,Meta AI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 muse-spark-1.2_xhigh,0.16,2026-08-05,Meta AI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 muse-spark-1.3_xhigh,0.276,2026-09-02,Meta AI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
+muse-wonder-1.0_max,0.308,2026-10-12,Meta AI,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 nova-2.0-pro-preview_none,0.02,2025-12-02,Amazon,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 qwen3.8-flash_xhigh,0.166,2026-08-26,Alibaba,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
 qwen3.8-max_xhigh,0.2319999999999999,2026-08-02,Alibaba,GDP.pdf,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,epoch,Domain Specific Questions,0.0,
@@ -2077,6 +2269,7 @@ gemini-3.6-flash_low,0.8636363636363636,2026-07-21,Google DeepMind,GPQA Diamond,
 gemini-3.6-flash_minimal,0.8585858585858586,2026-07-21,Google DeepMind,GPQA Diamond,0.0248259097933433,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FaPmR8fV49N98a6NVKpASAf.eval,epoch_live,Domain Specific Questions,0.25,
 gemini-3.7-flash_high,0.9482323232323232,2026-08-13,Google DeepMind,GPQA Diamond,0.0134565252922462,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.25,
 gemini-3.8-flash_high,0.9539141414141414,2026-09-02,Google DeepMind,GPQA Diamond,0.0140113631821065,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.25,
+gemini-4-argon_high,0.9640151515151516,2026-09-30,Google DeepMind,GPQA Diamond,0.0119181295896026,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.25,
 gemma-2-27b-it,0.3648989898989899,2024-06-27,Google DeepMind,GPQA Diamond,0.0238978844286916,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FZUJxsJDpHnLXxNiDcvj22W.eval,epoch_live,Domain Specific Questions,0.25,
 gemma-2-9b-it,0.2746212121212121,2024-06-27,Google DeepMind,GPQA Diamond,0.0230324679547787,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FfQjoHKyUEPAuwdrBGfL8SG.eval,epoch_live,Domain Specific Questions,0.25,
 gemma-3-12b-it,0.394570707070707,2025-03-12,Google DeepMind,GPQA Diamond,0.025254327795483,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FKfQKr2ibCFMx5xBELoiM3Y.eval,epoch_live,Domain Specific Questions,0.25,
@@ -2170,6 +2363,7 @@ ministral-8b-2410,0.2714646464646464,2024-10-16,Mistral AI,GPQA Diamond,0.020863
 mistral-large-2402,0.3876262626262626,2024-02-26,Mistral AI,GPQA Diamond,0.0247765985354172,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FdDeREdDJ5bVyci3APZxzWb.eval,epoch_live,Domain Specific Questions,0.25,
 mistral-large-2407,0.4902146464646464,2024-07-24,Mistral AI,GPQA Diamond,0.0259188409886569,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FZQPNnicTuhuscJvni85PFY.eval,epoch_live,Domain Specific Questions,0.25,
 mistral-large-2411,0.5132575757575758,2024-11-18,Mistral AI,GPQA Diamond,0.026887818295509,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fn9gpXfUzo8SbWqvrG2q4xM.eval,epoch_live,Domain Specific Questions,0.25,
+mistral-large-4-0_high,0.8806818181818182,2026-10-06,Mistral AI,GPQA Diamond,0.0193281324752923,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.25,
 mistral-medium-2505,0.5953282828282829,2025-05-07,Mistral AI,GPQA Diamond,0.0282469722965464,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FFNMbfvEEm9PRnrJnrqk2PH.eval,epoch_live,Domain Specific Questions,0.25,
 mistral-small-3-2501,0.4728535353535353,2025-01-30,Mistral AI,GPQA Diamond,0.0278888802464704,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FYJPwhEJa6qQWB23HQjByxt.eval,epoch_live,Domain Specific Questions,0.25,
 mistral-small-3.1-2503,0.4747474747474747,2025-03-17,Mistral AI,GPQA Diamond,0.0276164951400122,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FS8bBDAbucsFceirHxeEDvu.eval,epoch_live,Domain Specific Questions,0.25,
@@ -2540,6 +2734,8 @@ Kimi-K2-Instruct,0.049,2025-07-12,Moonshot,GSO-Bench,,https://gso-bench.github.i
 Qwen3-Coder-480B-A35B-Instruct,0.049,2025-07-31,Alibaba,GSO-Bench,,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
 claude-3-5-sonnet-20241022,0.046,2024-10-22,Anthropic,GSO-Bench,,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
 claude-3-7-sonnet-20250219,0.038,2025-02-24,Anthropic,GSO-Bench,,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
+claude-fable-5-1_thinking,0.8824,2026-09-01,Anthropic,GSO-Bench,,https://gso-bench.github.io/index.html,,epoch,Autonomous SWE,0.0,
+claude-fable-5_thinking,0.7843000000000001,2026-06-09,Anthropic,GSO-Bench,,https://gso-bench.github.io/index.html,,epoch,Autonomous SWE,0.0,
 claude-opus-4-20250514_none,0.069,2025-05-22,Anthropic,GSO-Bench,,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
 claude-opus-4-20250514_thinking,0.0686,2025-05-22,Anthropic,GSO-Bench,,GSO Leaderboard,,epoch,Autonomous SWE,0.0,
 claude-opus-4-5-20251101_none,0.265,2025-11-24,Anthropic,GSO-Bench,,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
@@ -2563,6 +2759,8 @@ gpt-5.2-2025-12-11_high,0.2745,2025-12-11,OpenAI,GSO-Bench,,https://gso-bench.gi
 gpt-5.4-2026-03-05_high,0.2549,2026-03-05,OpenAI,GSO-Bench,,https://gso-bench.github.io/index.html,,epoch,Autonomous SWE,0.0,
 gpt-5.4-2026-03-05_xhigh,0.3137,2026-03-05,OpenAI,GSO-Bench,,https://gso-bench.github.io/index.html,,epoch,Autonomous SWE,0.0,
 gpt-5.5_xhigh,0.402,2026-04-23,OpenAI,GSO-Bench,,https://gso-bench.github.io/index.html,,epoch,Autonomous SWE,0.0,
+gpt-5.6-sol,0.7647,2026-07-09,OpenAI,GSO-Bench,,https://gso-bench.github.io/index.html,,epoch,Autonomous SWE,0.0,
+gpt-6-astra,0.7941,2026-09-03,OpenAI,GSO-Bench,,https://gso-bench.github.io/index.html,,epoch,Autonomous SWE,0.0,
 o3-2025-04-16_high,0.088,2025-04-16,OpenAI,GSO-Bench,,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
 o3-mini-2025-01-31_high,0.013,2025-01-31,OpenAI,GSO-Bench,,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
 o3-mini-2025-01-31_low,0.013,2025-01-31,OpenAI,GSO-Bench,,GSO Leaderboard,,epoch,Autonomous SWE,0.0,
@@ -2594,11 +2792,15 @@ gpt-5-2025-08-07_medium,0.81,2025-08-07,OpenAI,GeoBench,,GeoBench leaderboard,ht
 grok-4-0709,0.45,2025-07-09,xAI,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
 o1-2024-12-17_medium,0.8,2024-12-05,OpenAI,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
 o3-2025-04-16_medium,0.74,2025-04-16,OpenAI,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
+Inkling,0.11199999999999999,2026-07-15,Thinking Machines,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
+Muse-Spark-Open-816B-A42B,0.28,2026-10-15,Meta AI,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 claude-fable-5-1,0.513,2026-09-01,Anthropic,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 claude-opus-5,0.386,2026-07-24,Anthropic,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 claude-opus-5-5,0.55,2026-09-22,Anthropic,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
+claude-sonnet-5-5,0.375,2026-09-28,Anthropic,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 deepseek-v4-pro,0.134,2026-04-24,DeepSeek,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 gemini-3.8-flash,0.34299999999999997,2026-09-02,Google DeepMind,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
+gemini-4-argon,0.532,2026-09-30,Google DeepMind,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 glm-5.3,0.16399999999999998,2026-08-14,Z.ai (Zhipu AI),HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 gpt-5.6-sol,0.312,2026-07-09,OpenAI,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 gpt-6-astra,0.606,2026-09-03,OpenAI,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
@@ -2606,6 +2808,7 @@ gpt-6-sol,0.33799999999999997,2026-09-22,OpenAI,HLE Diamond,,Scale SEAL (hle-dia
 grok-4.7,0.23399999999999999,2026-09-21,xAI,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 kimi-k3,0.222,2026-07-16,Moonshot,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 muse-spark-1.3,0.254,2026-09-02,Meta AI,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
+muse-wonder-1.0,0.373,2026-10-12,Meta AI,HLE Diamond,,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond,seal,Domain Specific Questions,0.048,
 Baichuan-2-13B-Base,0.708,2023-09-06,Baichuan,HellaSwag,,Qwen Technical Report,http://arxiv.org/abs/2309.16609,epoch,Trivia & Commonsense QA,0.25,
 Baichuan-2-7B-Base,0.68,2023-09-20,Baichuan,HellaSwag,,Qwen Technical Report,http://arxiv.org/abs/2309.16609,epoch,Trivia & Commonsense QA,0.25,
 Cerebras-GPT-13B,0.594,2023-03-20,Cerebras Systems,HellaSwag,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.25,
@@ -3000,6 +3203,7 @@ grok-4-20,0.38659999999999994,2026-02-17,xAI,LMCA,,https://conceptualreasoning.a
 grok-4.3_high,0.3833,2026-04-17,xAI,LMCA,,https://conceptualreasoning.ai/lmca,,epoch,General Reasoning,0,
 grok-4.5_high,0.452,2026-07-08,xAI,LMCA,,https://conceptualreasoning.ai/lmca,,epoch,General Reasoning,0,
 grok-4.6_xhigh,0.48450000000000004,2026-08-12,xAI,LMCA,,https://conceptualreasoning.ai/lmca,,epoch,General Reasoning,0,
+grok-4.7_xhigh,0.4938,2026-09-21,xAI,LMCA,,https://conceptualreasoning.ai/lmca,,epoch,General Reasoning,0,
 kimi-k2.6,0.3726,2026-04-20,Moonshot,LMCA,,https://conceptualreasoning.ai/lmca,,epoch,General Reasoning,0,
 kimi-k3_max,0.5274,2026-07-16,Moonshot,LMCA,,https://conceptualreasoning.ai/lmca,,epoch,General Reasoning,0,
 mimo-v2.5-pro,0.295,2026-04-23,Xiaomi Corp,LMCA,,https://conceptualreasoning.ai/lmca,,epoch,General Reasoning,0,
@@ -3258,11 +3462,9 @@ gemini-3.1-pro-preview_high,0.77035,2026-02-19,Google DeepMind,METR Time Horizon
 gpt-3.5-turbo-instruct,0.214611,2023-09-18,OpenAI,METR Time Horizons,,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
 gpt-4-0125-preview,0.351726,2024-01-25,OpenAI,METR Time Horizons,,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
 gpt-4-0314,0.361067,2023-03-14,OpenAI,METR Time Horizons,,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
-gpt-4-0613,0.293044,2023-06-13,OpenAI,METR Time Horizons,,EpochAI,,epoch,Autonomous SWE,0.05,
 gpt-4-1106-preview,0.28905,2023-11-06,OpenAI,METR Time Horizons,,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
 gpt-4-turbo-2024-04-09,0.367357,2024-04-09,OpenAI,METR Time Horizons,,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
-gpt-4o-2024-08-06,0.338424,2024-08-06,OpenAI,METR Time Horizons,,EpochAI,,epoch,Autonomous SWE,0.05,
-gpt-4o-2024-11-20,0.407636,2024-11-20,OpenAI,METR Time Horizons,,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
+gpt-4o-2024-05-13,0.407636,2024-05-13,OpenAI,METR Time Horizons,,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
 gpt-5-2025-08-07_high,0.693697,2025-08-07,OpenAI,METR Time Horizons,,EpochAI,,epoch,Autonomous SWE,0.05,
 gpt-5-2025-08-07_medium,0.696053,2025-08-07,OpenAI,METR Time Horizons,,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
 gpt-5.1-codex-max,0.708301,2025-11-19,OpenAI,METR Time Horizons,,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/,epoch,Autonomous SWE,0.05,
@@ -3363,6 +3565,7 @@ claude-3-7-sonnet-20250219_none,0.901652186298248,2025-02-24,Anthropic,MMLU,0.00
 claude-3-haiku-20240307,0.738,2024-03-07,Anthropic,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
 claude-3-opus-20240229,0.846,2024-02-29,Anthropic,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
 claude-3-sonnet-20240229,0.759,2024-02-29,Anthropic,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
+claude-haiku-5-5,0.9094146133029483,2026-10-07,Anthropic,MMLU,0.0024220749100950893,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 claude-instant-1.1,0.734,2023-05-11,Anthropic,MMLU,,Model Card and Evaluations for Claude Models,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf,epoch,Domain Specific Questions,0.25,
 claude-instant-1.2,0.732,2023-08-09,Anthropic,MMLU,,Releasing Claude Instant 1.2,https://www.anthropic.com/news/releasing-claude-instant-1-2,epoch,Domain Specific Questions,0.25,
 claude-opus-4-1-20250805_none,0.9339225889229452,2025-08-05,Anthropic,MMLU,0.0020973002636838775,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
@@ -3396,6 +3599,7 @@ gemini-3.5-flash-lite,0.9125480700754878,2026-07-21,Google DeepMind,MMLU,0.00238
 gemini-3.6-flash,0.9417461900014243,2026-07-21,Google DeepMind,MMLU,0.001976544692154896,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 gemini-3.7-flash,0.9452357214072069,2026-08-13,Google DeepMind,MMLU,0.001919978138503506,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 gemini-3.8-flash,0.9441674975074775,2026-09-02,Google DeepMind,MMLU,0.0019375173727556477,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
+gemini-4-argon,0.9524996439253668,2026-09-30,Google DeepMind,MMLU,0.0017949748955075387,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 gemma-2-27b-it,0.757,2024-06-27,Google DeepMind,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
 gemma-2-9b-it,0.721,2024-06-27,Google DeepMind,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
 gemma-2b,0.423,2024-02-21,Google DeepMind,MMLU,,Gemma: Open Models Based on Gemini Research and Technology,https://arxiv.org/pdf/2403.08295,epoch,Domain Specific Questions,0.25,
@@ -3418,6 +3622,8 @@ gpt-4o-mini-2024-07-18,0.818,2024-07-18,OpenAI,MMLU,,Phi-4 Technical Report,http
 gpt-5-2025-08-07,0.934767127189859,2025-08-07,OpenAI,MMLU,0.002083831042747347,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 gpt-5.6-luna,0.9188861985472155,2026-07-09,OpenAI,MMLU,0.0023038583701666376,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 gpt-5.6-terra,0.9329867540236434,2026-07-09,OpenAI,MMLU,0.0021100638719209054,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
+gpt-6-sol,0.9393960974220197,2026-09-22,OpenAI,MMLU,0.0020135026560390546,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
+gpt-6.1-sol,0.9382566585956417,2026-09-29,OpenAI,MMLU,0.0020311099201047096,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 gpt-j-6b,0.257,2021-08-05,"EleutherAI,LAION",MMLU,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Domain Specific Questions,0.25,
 gpt-oss-120b_medium,0.8772966813844182,2025-08-05,OpenAI,MMLU,0.0027687193311316835,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 gpt-oss-20b,0.8221051132317334,2025-08-05,OpenAI,MMLU,0.0032271781666609184,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
@@ -3427,6 +3633,7 @@ grok-3,0.9010824668850592,2025-04-09,xAI,MMLU,0.0025193960464310714,Kaggle Open 
 grok-3-mini,0.8916108816407919,2025-06-24,xAI,MMLU,0.0026233609965016324,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 grok-4-0709,0.9164648910411622,2025-07-09,xAI,MMLU,0.0023349090749219385,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 grok-4.5,0.9453781512605042,2026-07-08,xAI,MMLU,0.0019176242516829463,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
+grok-4.6,0.9396809571286141,2026-08-12,xAI,MMLU,0.002009069539071641,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 internlm-7b,0.51,2023-07-05,Shanghai AI Laboratory,MMLU,,Qwen Technical Report,https://arxiv.org/pdf/2309.16609,epoch,Domain Specific Questions,0.25,
 internlm-chat-20b,0.574,2023-09-17,Shanghai AI Laboratory,MMLU,,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652,epoch,Domain Specific Questions,0.25,
 ministral-3b-2410,0.5760575416607321,2024-10-16,Mistral AI,MMLU,0.004170267616201122,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
@@ -3631,6 +3838,7 @@ Qwen3-235B-A22B-Instruct-2507,0.660904255319149,2025-07-21,Alibaba,MMLU-Pro,0.00
 claude-3-5-haiku-20241022,0.613031914893617,2024-10-22,Anthropic,MMLU-Pro,0.004440196852535918,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 claude-3-5-sonnet-20241022,0.7757646276595744,2024-10-22,Anthropic,MMLU-Pro,0.0038022455101636224,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 claude-3-7-sonnet-20250219_none,0.718500664893617,2025-02-24,Anthropic,MMLU-Pro,0.004099919993591888,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
+claude-haiku-5-5,0.8578789893617021,2026-10-07,Anthropic,MMLU-Pro,0.003183209830584528,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 claude-opus-4-1-20250805_none,0.8788970834730138,2025-08-05,Anthropic,MMLU-Pro,0.0029866319737434184,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 claude-opus-4-20250514_none,0.8686003989361702,2025-05-22,Anthropic,MMLU-Pro,0.0030798541014246937,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 claude-opus-4-8_none,0.8866356382978723,2026-05-28,Anthropic,MMLU-Pro,0.002890240440726583,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
@@ -3651,6 +3859,7 @@ gemini-3.5-flash-lite,0.8323636968085106,2026-07-21,Google DeepMind,MMLU-Pro,0.0
 gemini-3.6-flash,0.897938829787234,2026-07-21,Google DeepMind,MMLU-Pro,0.0027597945708403774,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gemini-3.7-flash,0.903091755319149,2026-08-13,Google DeepMind,MMLU-Pro,0.002696928360938476,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gemini-3.8-flash,0.9055851063829787,2026-09-02,Google DeepMind,MMLU-Pro,0.0026656799029281192,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
+gemini-4-argon,0.9319315159574468,2026-09-30,Google DeepMind,MMLU-Pro,0.002296085979907754,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gemma-3-12b-it,0.5805352393617021,2025-03-12,Google DeepMind,MMLU-Pro,0.004498680417916429,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gemma-3-27b-it,0.6621509308510638,2025-03-12,Google DeepMind,MMLU-Pro,0.004311843289109337,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gemma-3-4b-it,0.4109873670212766,2025-03-12,Google DeepMind,MMLU-Pro,0.004485384202528368,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
@@ -3663,6 +3872,8 @@ gpt-5-2025-08-07,0.87109375,2025-08-07,OpenAI,MMLU-Pro,0.0030548686678964288,Kag
 gpt-5.6-luna,0.8441655585106383,2026-07-09,OpenAI,MMLU-Pro,0.0033065009136973014,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gpt-5.6-sol,0.8439162234042553,2026-07-09,OpenAI,MMLU-Pro,0.0033086563219209358,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gpt-5.6-terra,0.8633643617021277,2026-07-09,OpenAI,MMLU-Pro,0.0031311376610397303,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
+gpt-6-sol,0.8805684840425532,2026-09-22,OpenAI,MMLU-Pro,0.002956406506323174,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
+gpt-6.1-sol,0.8943650265957447,2026-09-29,OpenAI,MMLU-Pro,0.0028021048109784646,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gpt-oss-120b_medium,0.784906914893617,2025-08-05,OpenAI,MMLU-Pro,0.003745807112882704,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 gpt-oss-20b,0.6710438829787234,2025-08-05,OpenAI,MMLU-Pro,0.004283192094496275,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
 granite-4.0-h-small,0.5737800315903234,2025-10-02,IBM,MMLU-Pro,0.004508861223544796,Kaggle Open Benchmarks (open-benchmarks/mmlu-pro),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro,kaggle,Domain Specific Questions,0.1,
@@ -3691,6 +3902,7 @@ gpt-6-astra_high,0.467,2026-09-03,OpenAI,MirrorCode,0.1186,Epoch AI internal eva
 DeepSeek-V3.1,0.461,2025-08-21,DeepSeek,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 claude-3-7-sonnet-20250219_thinking,0.5158,2025-02-24,Anthropic,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 claude-haiku-4-5-20251001_thinking,0.5049,2025-10-15,Anthropic,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
+claude-haiku-5-5,0.6767,2026-10-07,Anthropic,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 claude-opus-4-1-20250805_thinking,0.5720000000000001,2025-08-05,Anthropic,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 claude-opus-4-20250514_thinking,0.5861999999999999,2025-05-22,Anthropic,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 claude-opus-4-5-20251101_thinking,0.5897,2025-11-24,Anthropic,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
@@ -3709,6 +3921,7 @@ gpt-5-mini-2025-08-07_thinking,0.5899,2025-08-07,OpenAI,MultiChallenge,,Scale SE
 gpt-5.1-2025-11-13_none,0.5123,2025-11-12,OpenAI,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 gpt-5.1-2025-11-13_thinking,0.6341,2025-11-12,OpenAI,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 gpt-5.4-pro-2026-03-05,0.6923,2026-03-05,OpenAI,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
+gpt-6.1-sol,0.8195,2026-09-29,OpenAI,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 gpt-oss-120b_medium,0.4534,2025-08-05,OpenAI,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 kimi-k2-thinking,0.5542,2025-11-06,Moonshot,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
 kimi-k2.5_thinking,0.6139,2026-01-27,Moonshot,MultiChallenge,,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge,seal,Advanced Language and Writing,0.0,
@@ -3767,6 +3980,7 @@ MiniMax-M3_thinking,0.07,2026-06-01,MiniMax,Mystery Game Puzzles,0.0256432399976
 Qwen3-235B-A22B-Thinking-2507,0.09,2025-07-25,Alibaba,Mystery Game Puzzles,0.0287623491264661,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 claude-fable-5-1_max,0.58,2026-09-01,Anthropic,Mystery Game Puzzles,0.0496044963748858,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 claude-fable-5_max,0.52,2026-06-09,Anthropic,Mystery Game Puzzles,0.0502116731568678,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
+claude-haiku-5-5_max,0.3,2026-10-07,Anthropic,Mystery Game Puzzles,0.0460566186471838,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 claude-opus-4-1-20250805_24K,0.21,2025-08-05,Anthropic,Mystery Game Puzzles,0.0409360180740332,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 claude-opus-4-5-20251101_48K,0.22,2025-11-24,Anthropic,Mystery Game Puzzles,0.0416333199893226,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 claude-opus-4-6_low,0.07,2026-02-05,Anthropic,Mystery Game Puzzles,0.0256432399976242,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
@@ -3788,6 +4002,7 @@ claude-sonnet-5_none,0.16,2026-06-30,Anthropic,Mystery Game Puzzles,0.0368452949
 deepseek-v4-flash-0731_max,0.34,2026-07-31,DeepSeek,Mystery Game Puzzles,0.0476095228569523,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 deepseek-v4-pro-0813_max,0.43,2026-08-13,DeepSeek,Mystery Game Puzzles,0.0497569851956243,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 deepseek-v4-pro_none,0.17,2026-04-24,DeepSeek,Mystery Game Puzzles,0.0377525168068636,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
+deepseek-v4.1-flash_max,0.43,2026-09-09,DeepSeek,Mystery Game Puzzles,0.0497569851956243,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gemini-3-flash-preview_high,0.2,2025-12-17,Google DeepMind,Mystery Game Puzzles,0.0402015126103684,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gemini-3-flash-preview_low,0.26,2025-12-17,Google DeepMind,Mystery Game Puzzles,0.0440844002276808,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gemini-3-flash-preview_minimal,0.25,2025-12-17,Google DeepMind,Mystery Game Puzzles,0.0435194139889244,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
@@ -3803,6 +4018,7 @@ gemini-3.6-flash_low,0.23,2026-07-21,Google DeepMind,Mystery Game Puzzles,0.0422
 gemini-3.6-flash_minimal,0.25,2026-07-21,Google DeepMind,Mystery Game Puzzles,0.0435194139889244,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gemini-3.7-flash_high,0.37,2026-08-13,Google DeepMind,Mystery Game Puzzles,0.0485236587093909,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gemini-3.8-flash_high,0.47,2026-09-02,Google DeepMind,Mystery Game Puzzles,0.0501613558046591,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
+gemini-4-argon_high,0.64,2026-09-30,Google DeepMind,Mystery Game Puzzles,0.0482418151324421,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 glm-5.2_low,0.19,2026-06-16,Z.ai (Zhipu AI),Mystery Game Puzzles,0.0394277244403662,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 glm-5.2_medium,0.15,2026-06-16,Z.ai (Zhipu AI),Mystery Game Puzzles,0.0358870281282636,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 glm-5.2_minimal,0.18,2026-06-16,Z.ai (Zhipu AI),Mystery Game Puzzles,0.0386122919665369,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
@@ -3858,18 +4074,22 @@ gpt-5.6-terra_max,0.35,2026-07-09,OpenAI,Mystery Game Puzzles,0.0479372485441102
 gpt-5.6-terra_medium,0.1,2026-07-09,OpenAI,Mystery Game Puzzles,0.0301511344577763,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gpt-5.6-terra_none,0.14,2026-07-09,OpenAI,Mystery Game Puzzles,0.0348735088019777,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gpt-6-astra_max,0.84,2026-09-03,OpenAI,Mystery Game Puzzles,0.036845294917747,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
+gpt-6-luna_max,0.07,2026-09-22,OpenAI,Mystery Game Puzzles,0.0256432399976242,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gpt-6-sol_max,0.56,2026-09-22,OpenAI,Mystery Game Puzzles,0.0498887651569858,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gpt-6.1-sol_max,0.8,2026-09-29,OpenAI,Mystery Game Puzzles,0.0402015126103684,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gpt-oss-120b_high,0.0,2025-08-05,OpenAI,Mystery Game Puzzles,0.0,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 gpt-oss-120b_medium,0.02,2025-08-05,OpenAI,Mystery Game Puzzles,0.0140705294136289,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 grok-4.6_xhigh,0.34,2026-08-12,xAI,Mystery Game Puzzles,0.0476095228569523,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
+grok-4.7_xhigh,0.29,2026-09-21,xAI,Mystery Game Puzzles,0.0456048021572068,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 inkling-small_xhigh,0.06,2026-07-15,Thinking Machines,Mystery Game Puzzles,0.0238683256575942,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 kimi-k2.6_none,0.12,2026-04-20,Moonshot,Mystery Game Puzzles,0.032659863237109,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 kimi-k2.6_thinking,0.18,2026-04-20,Moonshot,Mystery Game Puzzles,0.0386122919665369,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 kimi-k3_low,0.12,2026-07-16,Moonshot,Mystery Game Puzzles,0.032659863237109,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 kimi-k3_max,0.26,2026-07-16,Moonshot,Mystery Game Puzzles,0.0440844002276808,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
+mistral-large-4-0_high,0.17,2026-10-06,Mistral AI,Mystery Game Puzzles,0.0377525168068636,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 muse-spark-1.3_max,0.25,2026-09-02,Meta AI,Mystery Game Puzzles,0.0446404847311566,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 muse-spark-1.3_xhigh,0.1414141414141414,2026-09-02,Meta AI,Mystery Game Puzzles,0.0351985885069277,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
+muse-wonder-1.0_max,0.51,2026-10-12,Meta AI,Mystery Game Puzzles,0.0502418393795691,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 nemotron-3-ultra,0.2,2026-06-04,NVIDIA,Mystery Game Puzzles,0.0402015126103684,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 o3-2025-04-16_high,0.29,2025-04-16,OpenAI,Mystery Game Puzzles,0.0456048021572068,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
 o3-2025-04-16_medium,0.23,2025-04-16,OpenAI,Mystery Game Puzzles,0.042295258468165,Epoch AI internal evaluation,,epoch_live,General Reasoning,0.0922,
@@ -3963,6 +4183,7 @@ Meta-Llama-3-8B-Instruct,0.0194444444444444,2024-04-18,Meta AI,OTIS Mock AIME 20
 MiniMax-M3_none,0.2666666666666666,2026-06-01,MiniMax,OTIS Mock AIME 2024-2025,0.0666666666666666,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F97t77hRrNae6Va8fBqBhPy.eval,epoch_live,Mathematics,0.001,
 MiniMax-M3_thinking,0.7111111111111111,2026-06-01,MiniMax,OTIS Mock AIME 2024-2025,0.0683294324254051,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F79ZP6iwoBaF5t9a5VRqPnw.eval,epoch_live,Mathematics,0.001,
 Mistral-7B-Instruct-v0.3,0.0027777777777777,2024-05-27,Mistral AI,OTIS Mock AIME 2024-2025,0.0027777777777777,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fj6Mo25oV9Y9jdGxCMHZfpU.eval,epoch_live,Mathematics,0.001,
+Muse-Spark-Open-816B-A42B_xhigh,0.9805555555555556,2026-10-15,Meta AI,OTIS Mock AIME 2024-2025,0.0125350238848392,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 QwQ-32B,0.5916666666666667,2025-03-05,Alibaba,OTIS Mock AIME 2024-2025,0.0634896396543116,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F2xMn6dbY9mw4pmkh8Tz9Gn.eval,epoch_live,Mathematics,0.001,
 Qwen3-235B-A22B-Thinking-2507,0.8666666666666667,2025-07-25,Alibaba,OTIS Mock AIME 2024-2025,0.0512470743190538,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FXWpHpVPCaVjcwPpdpXuuGH.eval,epoch_live,Mathematics,0.001,
 Qwen3-30B-A3B_none,0.2555555555555555,2025-04-29,Alibaba,OTIS Mock AIME 2024-2025,0.0520955372907475,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FZzbWv2QGVfg4o2DTX45nqV.eval,epoch_live,Mathematics,0.001,
@@ -3987,6 +4208,8 @@ claude-fable-5_low,0.9777777777777776,2026-06-09,Anthropic,OTIS Mock AIME 2024-2
 claude-fable-5_max,0.9972222222222222,2026-06-09,Anthropic,OTIS Mock AIME 2024-2025,0.0027777777777777,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 claude-haiku-4-5-20251001_32K,0.6666666666666666,2025-10-15,Anthropic,OTIS Mock AIME 2024-2025,0.0710669054518701,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FneZvEzLi6yeL9z5KjGef7H.eval,epoch_live,Mathematics,0.001,
 claude-haiku-4-5-20251001_none,0.3583333333333333,2025-10-15,Anthropic,OTIS Mock AIME 2024-2025,0.0623862601423218,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FWf2kwcXu8YXNgzDCxChtvj.eval,epoch_live,Mathematics,0.001,
+claude-haiku-5-5_high,0.9722222222222222,2026-10-07,Anthropic,OTIS Mock AIME 2024-2025,0.0131094417701185,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
+claude-haiku-5-5_xhigh,0.9888888888888888,2026-10-07,Anthropic,OTIS Mock AIME 2024-2025,0.0053628183286856,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 claude-opus-4-1-20250805_16K,0.6444444444444445,2025-08-05,Anthropic,OTIS Mock AIME 2024-2025,0.0721639236343101,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fkf9vy9sMjMBBswrX6NMzce.eval,epoch_live,Mathematics,0.001,
 claude-opus-4-1-20250805_27K,0.6888888888888889,2025-08-05,Anthropic,OTIS Mock AIME 2024-2025,0.0697920592732311,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FUH9RY8MCAotDgFocHKA4j6.eval,epoch_live,Mathematics,0.001,
 claude-opus-4-1-20250805_none,0.4,2025-08-05,Anthropic,OTIS Mock AIME 2024-2025,0.0738548945875996,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FRaiKuDSzUJYDVMxn4jfzNC.eval,epoch_live,Mathematics,0.001,
@@ -4023,6 +4246,7 @@ deepseek-v4-flash_none,0.4888888888888889,2026-04-24,DeepSeek,OTIS Mock AIME 202
 deepseek-v4-pro-0813_max,0.9861111111111112,2026-08-13,DeepSeek,OTIS Mock AIME 2024-2025,0.009909806500176,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 deepseek-v4-pro_high,0.9555555555555556,2026-04-24,DeepSeek,OTIS Mock AIME 2024-2025,0.0310677909075347,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FGLZkYFDFDENRiHyL68Nq43.eval,epoch_live,Mathematics,0.001,
 deepseek-v4-pro_none,0.4666666666666667,2026-04-24,DeepSeek,OTIS Mock AIME 2024-2025,0.0752101433090354,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F7bwsMdahVHrkaiN5x49Dk7.eval,epoch_live,Mathematics,0.001,
+deepseek-v4.1-flash_max,0.9833333333333332,2026-09-09,DeepSeek,OTIS Mock AIME 2024-2025,0.0064058842898817,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 gemini-1.0-pro-001,0.0111111111111111,2023-12-13,Google DeepMind,OTIS Mock AIME 2024-2025,0.0060540263104731,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FNpJvYQDcmwbGgS5MzZUPUg.eval,epoch_live,Mathematics,0.001,
 gemini-1.5-flash-001,0.0388888888888888,2024-05-23,Google DeepMind,OTIS Mock AIME 2024-2025,0.0143637264875207,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FU9GVBhYjRzU55YVjna5mMT.eval,epoch_live,Mathematics,0.001,
 gemini-1.5-flash-002,0.1625,2024-09-24,Google DeepMind,OTIS Mock AIME 2024-2025,0.0411137557161944,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FQdGZ2m52PWt3EkLPbcoRwz.eval,epoch_live,Mathematics,0.001,
@@ -4051,6 +4275,7 @@ gemini-3.6-flash_low,0.8222222222222222,2026-07-21,Google DeepMind,OTIS Mock AIM
 gemini-3.6-flash_minimal,0.8,2026-07-21,Google DeepMind,OTIS Mock AIME 2024-2025,0.0603022689155527,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FcF97JqHbFxxp7ePjYVK9HV.eval,epoch_live,Mathematics,0.001,
 gemini-3.7-flash_high,0.9722222222222222,2026-08-13,Google DeepMind,OTIS Mock AIME 2024-2025,0.0185867849461718,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 gemini-3.8-flash_high,0.9888888888888888,2026-09-02,Google DeepMind,OTIS Mock AIME 2024-2025,0.0087240074091538,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
+gemini-4-argon_high,1.0,2026-09-30,Google DeepMind,OTIS Mock AIME 2024-2025,0.0,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 gemma-2-27b-it,0.0138888888888888,2024-06-27,Google DeepMind,OTIS Mock AIME 2024-2025,0.0090786252587108,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FjD6rJdvfNPErKEz9qkpssj.eval,epoch_live,Mathematics,0.001,
 gemma-2-9b-it,0.0055555555555555,2024-06-27,Google DeepMind,OTIS Mock AIME 2024-2025,0.0038834738634418,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FWNE7cveVN8rsi7DmsFsFVy.eval,epoch_live,Mathematics,0.001,
 gemma-3-12b-it,0.1666666666666666,2025-03-12,Google DeepMind,OTIS Mock AIME 2024-2025,0.0424174778156649,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FCAyLyhDHZiMQBZDB3qd8tG.eval,epoch_live,Mathematics,0.001,
@@ -4139,6 +4364,7 @@ grok-4.3_high,0.9333333333333332,2026-04-17,xAI,OTIS Mock AIME 2024-2025,0.03041
 grok-4.5_high,0.9777777777777776,2026-07-08,xAI,OTIS Mock AIME 2024-2025,0.0127431458656971,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 grok-4.6_high,0.9777777777777776,2026-08-12,xAI,OTIS Mock AIME 2024-2025,0.0099627533053428,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 grok-4.6_xhigh,0.9916666666666668,2026-08-12,xAI,OTIS Mock AIME 2024-2025,0.0047006339568147,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
+grok-4.7_xhigh,0.9805555555555556,2026-09-21,xAI,OTIS Mock AIME 2024-2025,0.0142994863069263,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 kimi-k2-thinking,0.8305555555555556,2025-11-06,Moonshot,OTIS Mock AIME 2024-2025,0.0481926432580485,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F8BM7dCHaUZgcYJwZWiBhiQ.eval,epoch_live,Mathematics,0.001,
 kimi-k2.5_thinking,0.922,2026-01-27,Moonshot,OTIS Mock AIME 2024-2025,0.039,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FmbfZvrSNoXSJqCyD4VKqLe.eval,epoch_live,Mathematics,0.001,
 kimi-k2.6_thinking,0.9611111111111112,2026-04-20,Moonshot,OTIS Mock AIME 2024-2025,0.0237776361744107,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FBTeRdhgt6TFBj6QkGX2j6P.eval,epoch_live,Mathematics,0.001,
@@ -4150,12 +4376,14 @@ magistral-small-2506,0.3,2025-06-10,Mistral AI,OTIS Mock AIME 2024-2025,0.059246
 mistral-large-2402,0.0194444444444444,2024-02-26,Mistral AI,OTIS Mock AIME 2024-2025,0.009489457497216,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FZVHvk3GTPUNTgjc5w3vkhW.eval,epoch_live,Mathematics,0.001,
 mistral-large-2407,0.0847222222222222,2024-07-24,Mistral AI,OTIS Mock AIME 2024-2025,0.0247426427977093,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FbHLfPfZj8HgD9Gef75NtrM.eval,epoch_live,Mathematics,0.001,
 mistral-large-2411,0.0777777777777777,2024-11-18,Mistral AI,OTIS Mock AIME 2024-2025,0.0246627789501575,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FbeRGgJXTJggTi8PPEZNoZ5.eval,epoch_live,Mathematics,0.001,
+mistral-large-4-0_high,0.9833333333333332,2026-10-06,Mistral AI,OTIS Mock AIME 2024-2025,0.0064058842898817,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 mistral-medium-2505,0.3222222222222222,2025-05-07,Mistral AI,OTIS Mock AIME 2024-2025,0.0596561179848226,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FQWw65xeTn8x42SymMsVREN.eval,epoch_live,Mathematics,0.001,
 mistral-small-3-2501,0.0666666666666666,2025-01-30,Mistral AI,OTIS Mock AIME 2024-2025,0.0268271684994329,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FLEBmfabfasGXFwRwhN9j35.eval,epoch_live,Mathematics,0.001,
 mistral-small-3.1-2503,0.0583333333333333,2025-03-17,Mistral AI,OTIS Mock AIME 2024-2025,0.0226830377599695,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FJxqtHWrwCtYoQYBB3jVqB9.eval,epoch_live,Mathematics,0.001,
 mistral-small-3.2-2506,0.3027777777777777,2025-06-20,Mistral AI,OTIS Mock AIME 2024-2025,0.057774499712758,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FHyKzRUkV42yTmGrbYQvZxQ.eval,epoch_live,Mathematics,0.001,
 muse-spark,0.889,2026-04-08,Meta AI,OTIS Mock AIME 2024-2025,0.047,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 muse-spark-1.3_xhigh,0.9916666666666668,2026-09-02,Meta AI,OTIS Mock AIME 2024-2025,0.0061545745489666,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
+muse-wonder-1.0_max,0.9944444444444444,2026-10-12,Meta AI,OTIS Mock AIME 2024-2025,0.0038834738634418,Epoch AI internal evaluation,,epoch_live,Mathematics,0.001,
 nemotron-3-ultra,0.8666666666666667,2026-06-04,NVIDIA,OTIS Mock AIME 2024-2025,0.0512470743190538,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FWYTWr3Xk4qxymhMsm7vRQ2.eval,epoch_live,Mathematics,0.001,
 o1-2024-12-17_high,0.7333333333333333,2024-12-05,OpenAI,OTIS Mock AIME 2024-2025,0.0666666666666666,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FAEQDjKHZzrVUubU42ZUZwA.eval,epoch_live,Mathematics,0.001,
 o1-2024-12-17_low,0.5333333333333333,2024-12-05,OpenAI,OTIS Mock AIME 2024-2025,0.0752101433090354,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FJsAVnfoWmxCaChyiNU9VFi.eval,epoch_live,Mathematics,0.001,
@@ -4322,6 +4550,7 @@ MiniMax-M2.7,0.03,2026-03-18,MiniMax,ProofBench,0.01706,https://www.vals.ai/benc
 MiniMax-M3,0.18,2026-06-01,MiniMax,ProofBench,0.03943,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 claude-fable-5-1_max,1.0,2026-09-01,Anthropic,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 claude-fable-5_max,0.95,2026-06-09,Anthropic,ProofBench,0.0423,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+claude-haiku-5-5_max,0.89,2026-10-07,Anthropic,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 claude-opus-4-5-20251101_thinking,0.36,2025-11-24,Anthropic,ProofBench,0.048,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 claude-opus-4-6_max,0.5,2026-02-05,Anthropic,ProofBench,0.05,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 claude-opus-4-7_max,0.54,2026-04-16,Anthropic,ProofBench,0.04984,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
@@ -4345,6 +4574,7 @@ gemini-3.5-flash_high,0.31,2026-05-19,Google DeepMind,ProofBench,0.0455999999999
 gemini-3.6-flash_high,0.36,2026-07-21,Google DeepMind,ProofBench,0.04824,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 gemini-3.7-flash_high,0.58,2026-08-13,Google DeepMind,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 gemini-3.8-flash_high,0.48,2026-09-02,Google DeepMind,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+gemini-4-argon,0.99,2026-09-30,Google DeepMind,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 glm-4.7,0.06,2025-12-22,Z.ai (Zhipu AI),ProofBench,0.02375,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 glm-5.1,0.22222,2026-04-07,Z.ai (Zhipu AI),ProofBench,0.04178,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 glm-5.2_max,0.35,2026-06-16,Z.ai (Zhipu AI),ProofBench,0.0479399999999999,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
@@ -4381,28 +4611,37 @@ laguna-xs.2,0.0,2026-04-28,Poolside,ProofBench,0.0,https://www.vals.ai/benchmark
 mercury-2.5,0.03,2026-09-08,Inception Labs,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 mimo-v2.5,0.16,2026-04-23,Xiaomi Corp,ProofBench,0.03685,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 mimo-v2.5-pro,0.22,2026-04-23,Xiaomi Corp,ProofBench,0.04292,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+mimo-v2.6-flash,0.63,2026-09-21,Xiaomi Corp,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+mimo-v2.6-pro,0.7000000000000001,2026-09-21,Xiaomi Corp,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+mistral-large-4-0,0.1,2026-10-06,Mistral AI,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 mistral-medium-2604_high,0.09,2026-04-28,Mistral AI,ProofBench,0.03015,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 muse-spark,0.17,2026-04-08,Meta AI,ProofBench,0.0375599999999999,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 muse-spark-1.1_xhigh,0.39,2026-07-09,Meta AI,ProofBench,0.04902,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 muse-spark-1.2_xhigh,0.43,2026-08-05,Meta AI,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+muse-spark-1.3,0.55,2026-09-02,Meta AI,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+muse-spark-1.3_max,0.58,2026-09-02,Meta AI,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+muse-wonder-1.0,0.84,2026-10-12,Meta AI,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 nemotron-3-ultra,0.02,2026-06-04,NVIDIA,ProofBench,0.01407,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 qwen3.7-max,0.26,2026-05-19,Alibaba,ProofBench,0.04408,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 qwen3.8-27b_xhigh,0.16,2026-08-14,Alibaba,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 qwen3.8-max,0.58,2026-08-02,Alibaba,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
+step-5-preview,0.42,2026-09-18,StepFun,ProofBench,,https://www.vals.ai/benchmarks/proof_bench,,epoch,Mathematics,0.0,
 ChatGPT agent,0.0125,2025-07-17,OpenAI,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
 Manus 1.0,0.025,2025-03-06,Manus,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
 Manus 1.5,0.025009999999999998,2025-10-16,Manus,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
 Manus 1.6_max,0.0292,2025-12-15,Manus,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
-claude-fable-5,0.158,2026-06-09,Anthropic,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
+claude-fable-5,0.1583,2026-06-09,Anthropic,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
 claude-fable-5-1,0.17920000000000003,2026-09-01,Anthropic,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
+claude-fable-5_thinking,0.158,2026-06-09,Anthropic,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-opus-4-5-20251101_thinking,0.0375,2025-11-24,Anthropic,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
 claude-opus-4-6,0.0417,2026-02-05,Anthropic,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
 claude-opus-4-8,0.0833,2026-05-28,Anthropic,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
+claude-opus-5-5,0.2125,2026-09-22,Anthropic,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
 claude-sonnet-4-5-20250929_none,0.0208,2025-09-29,Anthropic,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
 gemini-2.5-pro-preview-06-05,0.0083,2025-06-05,Google DeepMind,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
 gemini-3-pro-preview_high,0.0125,2025-11-18,Google DeepMind,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
 gemini-3.7-flash,0.05,2026-08-13,Google DeepMind,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
-gemini-3.8-flash,0.0583,2026-09-02,Google DeepMind,Remote Labor Index,,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli,seal,Core AGI Progress,0.0,
+gemini-3.8-flash,0.0583,2026-09-02,Google DeepMind,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-5-2025-08-07,0.0167,2025-08-07,OpenAI,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-5.2-2025-12-11,0.0208,2025-12-11,OpenAI,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
 gpt-5.2-2025-12-11_medium,0.0250199999999999,2025-12-11,OpenAI,Remote Labor Index,,EpochAI,,epoch,Core AGI Progress,0.0,
@@ -4466,16 +4705,21 @@ kimi-k2.5_thinking,0.1994,2026-01-27,Moonshot,SWE Atlas,,Scale SEAL (sweatlas-qn
 muse-spark,0.27654999999999996,2026-04-08,Meta AI,SWE Atlas,,Scale SEAL (sweatlas-qna) / Scale SEAL (sweatlas-tw),https://labs.scale.com/leaderboard/sweatlas-qna https://labs.scale.com/leaderboard/sweatlas-tw,seal,Autonomous SWE,0,
 muse-spark-1.1_xhigh,0.4184,2026-07-09,Meta AI,SWE Atlas,,Scale SEAL (sweatlas-qna) / Scale SEAL (sweatlas-tw),https://labs.scale.com/leaderboard/sweatlas-qna https://labs.scale.com/leaderboard/sweatlas-tw,seal,Autonomous SWE,0,
 Inkling_xhigh,0.569,2026-07-15,Thinking Machines,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
+Muse-Spark-Open-816B-A42B_xhigh,0.8234999999999999,2026-10-15,Meta AI,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 claude-fable-5-1_high,0.922,2026-09-01,Anthropic,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 claude-haiku-4-5-20251001_xhigh,0.255,2025-10-15,Anthropic,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
+claude-haiku-5-5_high,0.5294,2026-10-07,Anthropic,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 claude-opus-5_xhigh,0.98,2026-07-24,Anthropic,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
+claude-sonnet-5-5_xhigh,0.7059000000000001,2026-09-28,Anthropic,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 claude-sonnet-5_xhigh,0.882,2026-06-30,Anthropic,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 gemini-3.8-flash_high,0.588,2026-09-02,Google DeepMind,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
+gemini-4-argon_high,0.9216,2026-09-30,Google DeepMind,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 glm-5.3_max,0.843,2026-08-14,Z.ai (Zhipu AI),SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 gpt-5.6-sol_xhigh,0.8240000000000001,2026-07-09,OpenAI,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 gpt-5.6-terra_xhigh,0.863,2026-07-09,OpenAI,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 gpt-6-astra_high,0.902,2026-09-03,OpenAI,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 kimi-k3_max,0.882,2026-07-16,Moonshot,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
+muse-wonder-1.0_xhigh,0.902,2026-10-12,Meta AI,SWE-Bench Pro V2,,Scale SEAL (swe_bench_pro_public_v2),https://labs.scale.com/leaderboard/swe_bench_pro_public_v2,seal,Autonomous SWE,0.0,
 DeepSeek-R1,0.309,2025-01-20,DeepSeek,SimpleBench,,SimpleBench Leaderboard,,epoch,General Reasoning,0.167,
 DeepSeek-R1-0528,0.408,2025-05-28,DeepSeek,SimpleBench,,SimpleBench Leaderboard,,epoch,General Reasoning,0.167,
 DeepSeek-V3,0.189,2024-12-26,DeepSeek,SimpleBench,,SimpleBench Leaderboard,,epoch,General Reasoning,0.167,
@@ -4567,12 +4811,15 @@ DeepSeek-V3,0.2738336713995943,2024-12-26,DeepSeek,SimpleQA Verified,0.015650922
 DeepSeek-V3.1,0.2426065162907268,2025-08-21,DeepSeek,SimpleQA Verified,0.013604433463530274,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 Inkling_xhigh,0.403,2026-07-15,Thinking Machines,SimpleQA Verified,0.0155187574190665,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FbpnzC6CCi3hWuKCfqX4KEY.eval,epoch_live,Domain Specific Questions,0.0,
 Mixtral-8x22B-Instruct-v0.1,0.1784424961320268,2024-04-17,Mistral AI,SimpleQA Verified,0.012050693641875613,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
+Muse-Spark-Open-816B-A42B_xhigh,0.566,2026-10-15,Meta AI,SimpleQA Verified,0.015680876566375,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 Qwen3-235B-A22B-Thinking-2507,0.5371642723297938,2025-07-25,Alibaba,SimpleQA Verified,0.017376746914103725,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 claude-3-opus-20240229,0.126,2024-02-29,Anthropic,SimpleQA Verified,0.0104992492224079,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FNxVp4VF8uQbL5S6hx6HFRB.eval,epoch_live,Domain Specific Questions,0.0,
 claude-fable-5-1_max,0.708,2026-09-01,Anthropic,SimpleQA Verified,0.0143855115634774,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 claude-fable-5_xhigh,0.707,2026-06-09,Anthropic,SimpleQA Verified,0.0143999429984412,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 claude-haiku-4-5-20251001_32K,0.126,2025-10-15,Anthropic,SimpleQA Verified,0.0104992492224079,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FVhBM9HgJ2RuSVwXriRXMVJ.eval,epoch_live,Domain Specific Questions,0.0,
 claude-haiku-4-5-20251001_none,0.132,2025-10-15,Anthropic,SimpleQA Verified,0.0107093739635279,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
+claude-haiku-5-5,0.23890339425587467,2026-10-07,Anthropic,SimpleQA Verified,0.01526557913306549,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
+claude-haiku-5-5_max,0.238,2026-10-07,Anthropic,SimpleQA Verified,0.013473586661967,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 claude-opus-4-1-20250805_none,0.3102493074792243,2025-08-05,Anthropic,SimpleQA Verified,0.016820504175354745,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 claude-opus-4-5-20251101_32K,0.457,2025-11-24,Anthropic,SimpleQA Verified,0.0157606915901365,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FCA5LW4phRnHSsZUGXEm8H6.eval,epoch_live,Domain Specific Questions,0.0,
 claude-opus-4-5-20251101_none,0.3900414937759336,2025-11-24,Anthropic,SimpleQA Verified,0.01696062036891658,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
@@ -4590,6 +4837,7 @@ claude-sonnet-4-5-20250929_thinking,0.2921195652173913,2025-09-29,Anthropic,Simp
 claude-sonnet-4-6_high,0.355,2026-02-17,Anthropic,SimpleQA Verified,0.0151394915437805,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 claude-sonnet-4-6_max,0.328,2026-02-17,Anthropic,SimpleQA Verified,0.0148538424872703,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FZs5fCvNzaz8LhqgwDSAztU.eval,epoch_live,Domain Specific Questions,0.0,
 claude-sonnet-4-6_none,0.3088391906283279,2026-02-17,Anthropic,SimpleQA Verified,0.015520314659753062,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
+claude-sonnet-5-5,0.4474835886214442,2026-09-28,Anthropic,SimpleQA Verified,0.01640381033978137,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 claude-sonnet-5-5_max,0.465,2026-09-28,Anthropic,SimpleQA Verified,0.01578049505003,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 claude-sonnet-5_max,0.337,2026-06-30,Anthropic,SimpleQA Verified,0.0149550879186534,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FLPo74T9L3CawnKX5LLUrSZ.eval,epoch_live,Domain Specific Questions,0.0,
 claude-sonnet-5_none,0.3206696716033483,2026-06-30,Anthropic,SimpleQA Verified,0.01669718138720878,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
@@ -4598,6 +4846,7 @@ codestral-2501,0.055613850996852,2025-01-13,Mistral AI,SimpleQA Verified,0.00789
 deepseek-v4-flash-0731_max,0.3363363363363363,2026-07-31,DeepSeek,SimpleQA Verified,0.0149553177248994,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FTqFmiGvqozt7TSZYmhgF8m.eval,epoch_live,Domain Specific Questions,0.0,
 deepseek-v4-pro-0813_max,0.5290581162324649,2026-08-13,DeepSeek,SimpleQA Verified,0.0158083946657065,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F2xfFf6KZAp2gUWYhHGkFgs.eval,epoch_live,Domain Specific Questions,0.0,
 deepseek-v4-pro_max,0.469939879759519,2026-04-24,DeepSeek,SimpleQA Verified,0.0158065153323553,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FSq9xqkVTmFvELpQy9KH5TM.eval,epoch_live,Domain Specific Questions,0.0,
+deepseek-v4.1-flash_max,0.429,2026-09-09,DeepSeek,SimpleQA Verified,0.0156589975478701,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 gemini-2.5-flash,0.2805429864253393,2025-06-17,Google DeepMind,SimpleQA Verified,0.014173576590528775,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gemini-3-flash-preview_high,0.668,2025-12-17,Google DeepMind,SimpleQA Verified,0.0148995972428115,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F7cc6cDCXjsPjtKt36bbeMR.eval,epoch_live,Domain Specific Questions,0.0,
 gemini-3-pro-preview_high,0.7210300429,2025-11-18,Google DeepMind,SimpleQA Verified,0.014760747668367347,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
@@ -4610,6 +4859,8 @@ gemini-3.7-flash,0.7319277108433735,2026-08-13,Google DeepMind,SimpleQA Verified
 gemini-3.7-flash_high,0.692,2026-08-13,Google DeepMind,SimpleQA Verified,0.0146064831273427,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F84ARuGyhQsjgh8umRmBvas.eval,epoch_live,Domain Specific Questions,0.0,
 gemini-3.8-flash,0.7458646616541352,2026-09-02,Google DeepMind,SimpleQA Verified,0.01399737151304771,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gemini-3.8-flash_high,0.697,2026-09-02,Google DeepMind,SimpleQA Verified,0.0145396837105351,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
+gemini-4-argon,0.7559555320275279,2026-09-30,Google DeepMind,SimpleQA Verified,0.013319943698224285,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
+gemini-4-argon_high,0.76,2026-09-30,Google DeepMind,SimpleQA Verified,0.0135123122589208,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 gemma-3-12b-it,0.0670335167583792,2025-03-12,Google DeepMind,SimpleQA Verified,0.008146164919194286,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gemma-3-27b-it,0.1071071071071071,2025-03-12,Google DeepMind,SimpleQA Verified,0.00970358113215255,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gemma-3-4b-it,0.046046046046046,2025-03-12,Google DeepMind,SimpleQA Verified,0.007134678041560051,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
@@ -4649,7 +4900,9 @@ gpt-5.6-terra_max,0.432,2026-07-09,OpenAI,SimpleQA Verified,0.0156723202373363,E
 gpt-6-astra,0.7580562659846546,2026-09-03,OpenAI,SimpleQA Verified,0.013120784955197692,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gpt-6-astra_max,0.756,2026-09-03,OpenAI,SimpleQA Verified,0.0135885484378813,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 gpt-6-luna_max,0.414,2026-09-22,OpenAI,SimpleQA Verified,0.0155835441041775,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
+gpt-6-sol,0.6436420722135008,2026-09-22,OpenAI,SimpleQA Verified,0.01535857793863228,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gpt-6-sol_max,0.607,2026-09-22,OpenAI,SimpleQA Verified,0.0154528246540815,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
+gpt-6.1-sol,0.7377049180327868,2026-09-29,OpenAI,SimpleQA Verified,0.014516714513737537,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gpt-6.1-sol_max,0.739,2026-09-29,OpenAI,SimpleQA Verified,0.0138950376779651,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 gpt-oss-120b_medium,0.131198347107438,2025-08-05,OpenAI,SimpleQA Verified,0.010541406645302703,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 gpt-oss-20b,0.0594503645541222,2025-08-05,OpenAI,SimpleQA Verified,0.008315897849622195,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
@@ -4663,8 +4916,11 @@ grok-4.20-0309-reasoning,0.302,2026-02-17,xAI,SimpleQA Verified,0.01452608023545
 grok-4.3_high,0.332,2026-04-17,xAI,SimpleQA Verified,0.0148995972428115,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FY39ZRp553ULpUDBV2XrBbc.eval,epoch_live,Domain Specific Questions,0.0,
 grok-4.5,0.5381443298969072,2026-07-08,xAI,SimpleQA Verified,0.016163037019172412,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 grok-4.5_high,0.483,2026-07-08,xAI,SimpleQA Verified,0.0158101537298332,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F7HWW3sjRstKzb9JpcnvLaV.eval,epoch_live,Domain Specific Questions,0.0,
+grok-4.6,0.5286160249739854,2026-08-12,xAI,SimpleQA Verified,0.015929938427242277,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 grok-4.6_high,0.493,2026-08-12,xAI,SimpleQA Verified,0.0158177495618435,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FTpHYtuPG6kYZFvMK7Z6Hqj.eval,epoch_live,Domain Specific Questions,0.0,
 grok-4.6_xhigh,0.489,2026-08-12,xAI,SimpleQA Verified,0.0158154711952925,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FdKCWFaoGCWJTnD5CPWQGru.eval,epoch_live,Domain Specific Questions,0.0,
+grok-4.7,0.5936794582392777,2026-09-21,xAI,SimpleQA Verified,0.016110478021560053,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
+grok-4.7_xhigh,0.56,2026-09-21,xAI,SimpleQA Verified,0.0157049879543617,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 inkling-small_xhigh,0.191,2026-07-15,Thinking Machines,SimpleQA Verified,0.0124367871121794,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FeJfbDKqeg9kNXFoxpeV7HG.eval,epoch_live,Domain Specific Questions,0.0,
 kimi-k2.5_thinking,0.343,2026-01-27,Moonshot,SimpleQA Verified,0.015019206922357,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FRbXXg4JEbTSBnzw3CMSHnD.eval,epoch_live,Domain Specific Questions,0.0,
 kimi-k2.6_thinking,0.349,2026-04-20,Moonshot,SimpleQA Verified,0.015080663991563,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
@@ -4673,6 +4929,7 @@ kimi-k3_max,0.506,2026-07-16,Moonshot,SimpleQA Verified,0.0158181608986068,Epoch
 ministral-3b-2410,0.0542797494780793,2024-10-16,Mistral AI,SimpleQA Verified,0.00789709895084643,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 ministral-8b-2410,0.0681699003670686,2024-10-16,Mistral AI,SimpleQA Verified,0.008520516100024796,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
 mistral-large-2411,0.222684703433923,2024-11-18,Mistral AI,SimpleQA Verified,0.013213411790491021,Kaggle Open Benchmarks (deepmind/simpleqa-verified),https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified,kaggle,Domain Specific Questions,0.0,
+mistral-large-4-0_high,0.2,2026-10-06,Mistral AI,SimpleQA Verified,0.0126554399433666,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 muse-spark-1.1,0.5778894472361809,2026-07-09,Meta AI,SimpleQA Verified,0.0156654290722388,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FbCdwpRXgZtvQLYC4wA9JXr.eval,epoch_live,Domain Specific Questions,0.0,
 muse-spark-1.2_xhigh,0.6030150753768844,2026-08-05,Meta AI,SimpleQA Verified,0.0155187915636064,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FmLLmVVvo6t23MM5yxq7ryW.eval,epoch_live,Domain Specific Questions,0.0,
 o1-2024-12-17_high,0.411,2024-12-05,OpenAI,SimpleQA Verified,0.0155666734185991,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FLQfu4ngArcgMEyQZxuR7r4.eval,epoch_live,Domain Specific Questions,0.0,
@@ -4691,6 +4948,13 @@ qwen3.6-plus_thinking,0.4414414414414414,2026-03-31,Alibaba,SimpleQA Verified,0.
 qwen3.7-max_thinking,0.5576730190571715,2026-05-19,Alibaba,SimpleQA Verified,0.0157373593971801,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FDMjUrG6eZEqwcQ4SqUoViu.eval,epoch_live,Domain Specific Questions,0.0,
 qwen3.8-max-0902_xhigh,0.473,2026-09-01,Alibaba,SimpleQA Verified,0.0157962185513027,Epoch AI internal evaluation,,epoch_live,Domain Specific Questions,0.0,
 qwen3.8-max_xhigh,0.458,2026-08-02,Alibaba,SimpleQA Verified,0.0157633906404835,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fbfftd5EzUK9yAekafEofvK.eval,epoch_live,Domain Specific Questions,0.0,
+claude-fable-5-1_max,0.02,2026-09-01,Anthropic,SpireClimb,0.0113898959490299,Epoch AI internal evaluation,,epoch_live,Agentic Computer Use,0.0,1.0
+claude-opus-5-5_max,0.0333333333333333,2026-09-22,Anthropic,SpireClimb,0.0144986278733613,Epoch AI internal evaluation,,epoch_live,Agentic Computer Use,0.0,1.0
+claude-sonnet-5-5_max,0.0133333333333333,2026-09-28,Anthropic,SpireClimb,0.0093641704217558,Epoch AI internal evaluation,,epoch_live,Agentic Computer Use,0.0,1.0
+gpt-6-astra_max,0.2566666666666666,2026-09-03,OpenAI,SpireClimb,0.0367923552687209,Epoch AI internal evaluation,,epoch_live,Agentic Computer Use,0.0,1.0
+gpt-6-luna_max,0.0,2026-09-22,OpenAI,SpireClimb,0.0,Epoch AI internal evaluation,,epoch_live,Agentic Computer Use,0.0,1.0
+gpt-6-sol_max,0.075,2026-09-22,OpenAI,SpireClimb,0.0214437598110693,Epoch AI internal evaluation,,epoch_live,Agentic Computer Use,0.0,1.0
+gpt-6.1-sol_max,0.2466666666666666,2026-09-29,OpenAI,SpireClimb,0.0371250104645805,Epoch AI internal evaluation,,epoch_live,Agentic Computer Use,0.0,1.0
 MiniMax-M3,0.5499999999999999,2026-06-01,MiniMax,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
 claude-fable-5_high,0.95,2026-06-09,Anthropic,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
 claude-opus-4-8_high,0.875,2026-05-28,Anthropic,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
@@ -4713,6 +4977,7 @@ grok-4.5_high,0.74375,2026-07-08,xAI,Surface Evolver Bench,,https://yhenon.githu
 kimi-k2.7-code,0.4875,2026-06-12,Moonshot,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
 kimi-k3,0.95,2026-07-16,Moonshot,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
 laguna-m.1,0.15625,2026-04-28,Poolside,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
+mistral-large-4-0,0.28125,2026-10-06,Mistral AI,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
 mistral-medium-2604_high,0.26875,2026-04-28,Mistral AI,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
 muse-spark-1.1_high,0.525,2026-07-09,Meta AI,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
 qwen3.6-35b-a3b,0.44375,2026-04-14,Alibaba,Surface Evolver Bench,,https://yhenon.github.io/surface-evolver-llm-eval/,,epoch,Autonomous SWE,0.0,
@@ -4773,7 +5038,7 @@ grok-code-fast-1,0.258426966292,2025-08-28,xAI,Terminal Bench 2.0,,https://www.t
 kimi-k2-thinking,0.357303370787,2025-11-06,Moonshot,Terminal Bench 2.0,,https://www.tbench.ai/leaderboard/terminal-bench/2.0,,epoch,Agentic Computer Use,0.0,
 kimi-k2.5_thinking,0.43202247191,2026-01-27,Moonshot,Terminal Bench 2.0,,https://www.tbench.ai/leaderboard/terminal-bench/2.0,,epoch,Agentic Computer Use,0.0,
 qwen3.5-9B,0.092134831461,2026-02-24,Alibaba,Terminal Bench 2.0,,https://www.tbench.ai/leaderboard/terminal-bench/2.0,,epoch,Agentic Computer Use,0.0,
-qwen3.6-35b-a3b,0.230337078652,2026-04-14,Alibaba,Terminal Bench 2.0,,https://www.tbench.ai/leaderboard/terminal-bench/2.0,,epoch,Agentic Computer Use,0.0,
+qwen3.6-35b-a3b,0.246254681648,2026-04-14,Alibaba,Terminal Bench 2.0,,https://www.tbench.ai/leaderboard/terminal-bench/2.0,,epoch,Agentic Computer Use,0.0,
 DeepSeek-V3.2-Exp,0.524,2025-09-29,DeepSeek,The Agent Company,,TheAgentCompany leaderboard,,epoch,Agentic Computer Use,0.0,
 Llama-3.1-405B-Instruct,0.141,2024-07-23,Meta AI,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
 Llama-3.1-70B-Instruct,0.128,2024-07-23,Meta AI,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
@@ -5139,6 +5404,7 @@ gemini-3.1-pro-preview_high,0.7206999999999999,2026-02-19,Google DeepMind,WeirdM
 gemini-3.5-flash-lite_high,0.39,2026-07-21,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gemini-3.5-flash_high,0.6264000000000001,2026-05-19,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gemini-3.6-flash_high,0.561,2026-07-21,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
+gemini-3.8-flash_high,0.8481000000000001,2026-09-02,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gemma-4-26b-a4b,0.3517,2026-04-02,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gemma-4-31b-it,0.5226,2026-04-02,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 glm-4.5_thinking,0.4058,2025-07-28,"Z.ai (Zhipu AI),Tsinghua University",WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
@@ -5226,10 +5492,11 @@ qwen3-coder-next,0.344,2026-02-02,Alibaba,WeirdML v2,,WeirdML Leaderboard,,epoch
 qwen3.5-27B,0.3953,2026-02-24,Alibaba,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 qwen3.6-35b-a3b,0.3449,2026-04-14,Alibaba,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 claude-fable-5-1_xhigh,0.2597021272727273,2026-09-01,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
-claude-fable-5_xhigh,0.1552890606060606,2026-06-09,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
-claude-opus-4-5-20251101_high,0.06517475,2025-11-24,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
+claude-fable-5_xhigh,0.1558693333333333,2026-06-09,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
+claude-opus-4-5-20251101_high,0.0651487651515151,2025-11-24,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 claude-opus-5-5_xhigh,0.3120028142857143,2026-09-22,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 claude-opus-5_xhigh,0.1901117537878787,2026-07-24,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
+claude-sonnet-5-5_xhigh,0.1994032034632034,2026-09-28,Anthropic,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 deepseek-v4.1-flash_high,0.0594633181818181,2026-09-09,DeepSeek,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gemini-3.8-flash_high,0.0737874909090909,2026-09-02,Google DeepMind,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gpt-5.6-luna_xhigh,0.0515795227272727,2026-07-09,OpenAI,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
@@ -5237,7 +5504,10 @@ gpt-5.6-sol_xhigh,0.1499222454545454,2026-07-09,OpenAI,WeirdML v3,,https://htihl
 gpt-6-astra_xhigh,0.4222023136363637,2026-09-03,OpenAI,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gpt-6-luna_xhigh,0.0787412424242424,2026-09-22,OpenAI,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 gpt-6-sol_xhigh,0.1973175666666666,2026-09-22,OpenAI,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
+gpt-6.1-sol_xhigh,0.3825364136363636,2026-09-29,OpenAI,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
+grok-4.7_xhigh,0.0861780969696969,2026-09-21,xAI,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 kimi-k3_high,0.0726886515151515,2026-07-16,Moonshot,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
+muse-spark-1.3_xhigh,0.0694986977272727,2026-09-02,Meta AI,WeirdML v3,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 Cerebras-GPT-13B,0.608,2023-03-20,Cerebras Systems,WinoGrande,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.5,
 Chinchilla (70B),0.749,2022-03-29,Google DeepMind,WinoGrande,,LLaMA: Open and Efficient Foundation Language Models,https://arxiv.org/pdf/2302.13971,epoch,Trivia & Commonsense QA,0.5,
 CodeQwen1.5-7B,0.598,2024-04-15,Alibaba,WinoGrande,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,epoch,Trivia & Commonsense QA,0.5,

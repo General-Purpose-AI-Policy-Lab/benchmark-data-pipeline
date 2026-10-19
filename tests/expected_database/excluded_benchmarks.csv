@@ -2,18 +2,21 @@ name,status,exclusion_criterion,records_dropped,note
 ALE-Bench,excluded,scale,0,"Epoch ale_bench_external.csv: competition points (~138 to 2041), not a proportion (criterion 1). File in FILE_SKIP."
 ANLI,excluded,frontier_coverage,15,"developer-reported scores from three papers, almost no frontier model of its period, nothing since 2024"
 AlgoTune,excluded,scale,0,"Epoch algotune_external.csv: harmonic-mean speed-up against a reference implementation, >= 1x; the 1 - 1/speedup rescaling puts it on a scale no other benchmark shares (criterion 1). File in FILE_SKIP."
+Anthropic Binary Exploitation,excluded,frontier_coverage,7,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv), October 2026 table. Anthropic's own report on 7 of its own models, with its own protocol. Excluded (user, 2026-10-19): one developer's models only."
+Anthropic ExploitBench,excluded,frontier_coverage,7,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv), October 2026 table. Anthropic's own report on 7 of its own models, with its own protocol. Excluded (user, 2026-10-19): one developer's models only."
+Anthropic ExploitGym,excluded,frontier_coverage,6,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv), October 2026 table. Anthropic's own report on 6 of its own models, with its own protocol. Excluded (user, 2026-10-19): one developer's models only."
 BBH,excluded,frontier_coverage,88,Excluded: Developer-reported numbers stopped end of 2024; one third of the frontier of its period covered.
 BTF3,excluded,scale,0,"Epoch btf3_external.csv: pooled Brier / RPS loss with no published chance baseline, the floor cannot be derived (criterion 1). File in FILE_SKIP."
 BoolQ,excluded,frontier_coverage,136,Excluded: Developer-reported numbers stopped in 2024; 45 % of the frontier of its period covered.
 CSQA2,excluded,frontier_coverage,6,"Excluded: six scores, 2019-2023, covering at most 1 of the 7 frontier models of its period (14 %, text-davinci-001 counted for GPT-3), below the third of BBH and the 45 % of BoolQ already excluded."
-Chess Puzzles,excluded,quality,225,"Excluded: long reasoning on these puzzles outruns the output cap of Epoch's runs at high effort, and the truncated runs leave most answers empty (Claude Opus 4.6 / 4.7, Sonnet 4.6 / 5 at max, Qwen3.5-9B / 35B-A3B in thinking mode); five of the twelve effort inversions found came from it, and in a Multiaxis K=4 fit it led a latent axis on its own."
-CursorBench,excluded,quality,54,successive 3.x versions not comparable; doubts about the benchmark since Cursor's acquisition
+Chess Puzzles,excluded,quality,153,"Excluded: long reasoning on these puzzles outruns the output cap of Epoch's runs at high effort, and the truncated runs leave most answers empty (Claude Opus 4.6 / 4.7, Sonnet 4.6 / 5 at max, Qwen3.5-9B / 35B-A3B in thinking mode); five of the twelve effort inversions found came from it, and in a Multiaxis K=4 fit it led a latent axis on its own."
+CursorBench,excluded,quality,72,successive 3.x versions not comparable; doubts about the benchmark since Cursor's acquisition
 ExploitGym,excluded,frontier_coverage,8,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv): 8 models, 2026-02-05 to 2026-07-09, mean score 0.13, 0% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance). Excluded: 8 models, 2026 only, one third of the frontier covered."
 ForecastBench,excluded,scale,82,Brier skill index whose ceiling is by construction far below 100 %: not a proportion of solved items
 FrontierMath Tier 4 v1,excluded,quality,72,"defective v1 problem set (errors in 42 % of items), superseded by v2"
 FrontierMath Tiers 1-3 v1,excluded,quality,101,"defective v1 problem set (errors in 42 % of items), superseded by v2"
-HLE,excluded,quality,54,"replaced by HLE Diamond, its cleaned and frozen 1,000-question subset"
-HiL-Bench,excluded,propensity,17,"measures the propensity to ask for help on under-specified tasks, not a capability (benchmark-forecasting, Sept 2026)"
+HLE,excluded,quality,56,"replaced by HLE Diamond, its cleaned and frozen 1,000-question subset"
+HiL-Bench,excluded,propensity,28,"measures the propensity to ask for help on under-specified tasks, not a capability (benchmark-forecasting, Sept 2026)"
 LAMBADA,excluded,deprecated,53,Excluded: legacy language-understanding series with no place in the forecasting categories.
 LiveBench,excluded,quality,54,"items rotate over time, so the series is not comparable across dates; no longer evaluated"
 MindCube,excluded,frontier_coverage,5,"5 test-takers, four of them 2024-era open 7B models within 0.03 of the chance floor; no frontier model"
@@ -22,18 +25,21 @@ OS World v1 (A11y tree),no_source,,0,no feed supplies this benchmark today (row 
 OS World v1 (Screenshot),no_source,,0,no feed supplies this benchmark today (row kept for its metadata)
 OpenAI CVE-Bench,excluded,frontier_coverage,6,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv): 6 models, 2025-08-07 to 2026-04-23, mean score 0.81, 33% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance). Excluded: 6 models from OpenAI's system cards only."
 OpenAI Cyber Ranges,excluded,frontier_coverage,5,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv): 5 models, 2025-11-19 to 2026-04-23, mean score 0.72, 20% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance). Excluded: 5 models from OpenAI's system cards only."
+OpenAI ExploitBench,excluded,frontier_coverage,4,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv), October 2026 table. OpenAI's own report on 4 of its own models, with its own protocol. Excluded (user, 2026-10-19): one developer's models only."
+OpenAI ExploitGym,excluded,frontier_coverage,5,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv), October 2026 table. OpenAI's own report on 5 of its own models, with its own protocol. Excluded (user, 2026-10-19): one developer's models only."
 OpenAI NYU CTF Professional (Original),excluded,deprecated,4,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv): 4 models, 2024-05-13 to 2025-04-16, mean score 0.32, 0% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance). Excluded: 4 models; superseded by the Refactored set."
 OpenAI NYU CTF Professional (Refactored),excluded,frontier_coverage,6,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv): 6 models, 2025-08-07 to 2026-04-23, mean score 0.81, 17% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance). Excluded: 6 models from OpenAI's system cards only."
+OpenAI SEC-Bench Pro,excluded,frontier_coverage,5,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv), October 2026 table. OpenAI's own report on 5 of its own models, with its own protocol. Excluded (user, 2026-10-19): one developer's models only."
 PRBench,excluded,quality,0,per-model mean of PRBench Finance and PRBench Legal (sibling_merges.csv) | excluded: its evaluation mode makes the results a poor reflection of model capabilities
-PRBench Finance,excluded,quality,35,excluded: its evaluation mode makes the results a poor reflection of model capabilities
-PRBench Legal,excluded,quality,39,excluded: its evaluation mode makes the results a poor reflection of model capabilities
+PRBench Finance,excluded,quality,38,excluded: its evaluation mode makes the results a poor reflection of model capabilities
+PRBench Legal,excluded,quality,42,excluded: its evaluation mode makes the results a poor reflection of model capabilities
 SCONE-Bench,excluded,frontier_coverage,11,"Epoch cyber ECI (0_input/feed/epoch_cyber, epoch.ai/data/cyber/processed_data_for_eci.csv): 11 models, 2024-04-18 to 2026-04-07, mean score 0.26, 9% of scores >= 0.9, 0% exact zeros. Epoch notes several cyber values were read off published plots (weaker provenance). Excluded: 11 models, one third of the frontier covered; score is a share of exploitable value rather than of tasks."
 SEAL Instruction Following,excluded,deprecated,19,"board marked deprecated by Scale, no longer updated"
 SWE-Bench Bash Only,no_source,,0,no feed supplies this benchmark today (row kept for its metadata)
 SWE-Bench Pro,excluded,quality,25,"benchmark quality judged insufficient (benchmark-forecasting, Sept 2026)"
 SWE-Bench Pro (Private),excluded,quality,25,"benchmark quality judged insufficient (benchmark-forecasting, Sept 2026)"
 SWE-Bench Verified,excluded,quality,35,"benchmark quality judged insufficient for the ranking to be informative (benchmark-forecasting, Sept 2026)"
-SciCode,excluded,quality,198,error level in problem statements and reference tests judged unmanageable
+SciCode,excluded,quality,225,error level in problem statements and reference tests judged unmanageable
 ScienceQA,excluded,frontier_coverage,26,"leaderboard dominated by academic models fine-tuned on the training split; 6 frontier models out of 97, all below the specialised ones"
 SimpleQA,no_source,,0,no feed supplies this benchmark today (row kept for its metadata)
 SpatialViz-Bench,excluded,frontier_coverage,8,"8 rows, 2024-01..2025-06 models only, no frontier release of its period"
