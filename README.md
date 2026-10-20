@@ -228,7 +228,7 @@ The build only needs `pandas`. Two successive builds must produce a **byte-ident
 
 ### Refresh the feeds
 
-`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report), and so do the lab's own runs (`gpai_runs`), whose hashes `refresh` records. Novelties are never ingested quietly: unknown files and tasks of the Epoch feeds and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files (new Kaggle or Scale boards are added to `KAGGLE_SPEC` / `SEAL_SPEC` by hand, see above). Provenance (URL, date, sha256): `0_input/feed/provenance.json`.
+`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report), and so do the lab's own runs (`gpai_runs`), whose hashes `refresh` records. Novelties are never ingested quietly: unknown files and tasks of the Epoch feeds and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files (new Kaggle or Scale boards are added to `KAGGLE_SPEC` / `SEAL_SPEC` by hand, see above). Provenance (URL, date, sha256): `0_input/feed/provenance.json`. Every new model, benchmark and human baseline then has to reach the consumers' curated tables too: the step-by-step checklist of a refresh, both repositories, and the audit that runs after the sync are in Multiaxis_ECI's [`.claude/skills/data-refresh/SKILL.md`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI/blob/main/.claude/skills/data-refresh/SKILL.md).
 
 ## License and sources
 
