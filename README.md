@@ -23,8 +23,8 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 evals/                      the lab's own runs: protocols, run / package commands (feed gpai_runs, evals/README.md)
 2_database/<YYYYMMDD>/      the tables of the build run that day (+ excluded_benchmarks.csv, model_names.csv, build_manifest.json)
 3_views/<YYYYMMDD>/         all_scores_flat.csv, dated_scores_flat.csv, human_baselines.csv, same run
-docs/                       decisions.md (decision log), decisions_pending.md (none open today), plan_fusion.md (merge plan, historical),
-                            reviews/ (score reviews), frontier_models.csv, release_dates_consistency.csv
+docs/                       decisions.md (decision log), reviews/ (score reviews), frontier_models.csv,
+                            release_dates_consistency.csv
 tests/                      unit tests, golden copies (tests/expected_database, tests/expected_views), parity goldens
 ```
 
@@ -238,4 +238,4 @@ The lab's own runs (`gpai_runs`) fall under the same license. Upstream scores ca
 
 ## Related repositories
 
-Formerly `eval-data-pipeline` (renamed 2026-09-04). This repository is the **successor of the internal data pipelines** of [`Multiaxis_ECI`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI) (a Bayesian re-creation of the Epoch Capabilities Index) and of [`benchmark-forecasting`](https://github.com/General-Purpose-AI-Policy-Lab/benchmark-forecasting) (forecasting benchmark saturation). Both now read its views; the history of the merge is in [`docs/plan_fusion.md`](docs/plan_fusion.md).
+Formerly `eval-data-pipeline` (renamed 2026-09-04). This repository is the **successor of the internal data pipelines** of [`Multiaxis_ECI`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI) (a Bayesian re-creation of the Epoch Capabilities Index) and of [`benchmark-forecasting`](https://github.com/General-Purpose-AI-Policy-Lab/benchmark-forecasting) (forecasting benchmark saturation). Both now read its views.
