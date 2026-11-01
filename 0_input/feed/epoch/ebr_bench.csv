@@ -1,4 +1,5 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-terra_max,0.780952380952381,0.780952380952381,2026-10-26,OpenAI,United States of America,,,0.05128728387747146,,,2026-10-26T20:01:15.000Z,65SHyNJX5oxVADzzjkssFK
 gemini-4-argon_high,0.6476190476190476,0.6476190476190476,2026-09-30,Google DeepMind,United States of America,,,0.04902681019517619,,,2026-10-13T17:16:18.000Z,mSJNKA7nCp2eZVqMo5nTUP
 muse-wonder-1.0_max,0.3142857142857143,0.3142857142857143,2026-10-12,Meta AI,United States of America,,,0.041513323271815936,,,2026-10-12T21:51:35.000Z,fMDaGtyboCNfTpP9aStwaU
 claude-haiku-5-5_max,0.43809523809523804,0.43809523809523804,2026-10-07,Anthropic,United States of America,,,0.017817416127494958,,,2026-10-09T00:00:53.000Z,FMiLkyqzaD56gA4uCCj9Qr

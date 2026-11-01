@@ -181,7 +181,7 @@ gemini-3.1-flash-lite,1254.27,2026-03-03,Google,United States of America,,,,1363
 qwen3.6-35b-a3b,1250.15,2026-04-14,Alibaba,China,,,,1535,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1268.05,1232.25,recOYbT19AfMLPU6Z
 gpt-5.1-codex-mini,1247.0,2025-11-12,OpenAI,United States of America,,,=+17/-17,1566,2026-01-05,WebDev Arena Leaderboard,https://web.lmarena.ai/leaderboard,,,,recPRratljctS351K
 qwen3.5-flash,1238.17,2026-02-25,Alibaba,China,,,,1270,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1258.29,1218.06,recXaGYNzvxoD25Gj
-trinity-large-thinking,1236.61,2026-04-01,Arcee AI,United States of America,,,,1303,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1257.12,1216.09,recOdmWvMBKCrAR2K
+trinity-large-thinking,1236.61,2026-04-01,Arcee AI,United States of America,,"Base model training compute was ~1.33e24 FLOP, we don't know enough to give a compute count for the additional parts here.",,1303,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1257.12,1216.09,recOdmWvMBKCrAR2K
 mistral-large-2512,1229.52,2025-12-02,Mistral AI,France,,,,812,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1255.47,1203.57,rec75ePp1KlTVhbON
 ,1226.0,,,,,,=+20/-20,1025,2026-01-05,WebDev Arena Leaderboard,https://web.lmarena.ai/leaderboard,,,,reclY6B2Wp2f59mld
 gemini-2.5-pro,1225.73,2025-06-17,Google DeepMind,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,=+13/-13,2667,2026-01-05,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1241.74,1209.73,recmBglMHLXb6m6s8

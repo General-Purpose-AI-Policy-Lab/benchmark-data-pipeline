@@ -1,5 +1,13 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
-claude-opus-5-5_max,0.774,0.774,2026-09-22,Anthropic,United States of America,,,0.0831,,,2026-09-22T16:42:00.000Z,mirrorcode-ml-2l-claude-opus-5-5
+gemini-3.7-flash_high,0.4111111111111111,0.4111111111111111,2026-08-13,Google DeepMind,United States of America,,,0.12157113738962926,,,2026-10-21T16:49:08.000Z,eeq6feqZLzfjfVsx4aeAWL
+grok-4.5_high,0.32222222222222224,0.32222222222222224,2026-07-08,xAI,United States of America,,,0.10723394129558436,,,2026-10-21T16:49:00.000Z,fiqzdAtVJVP9wdMT2QFeUn
+grok-4.6_xhigh,0.4111111111111111,0.4111111111111111,2026-08-12,xAI,United States of America,,,0.1101546131612538,,,2026-10-21T16:48:25.000Z,Hoz4Uioui4GNZaLD6fiAvD
+gpt-6-luna_max,0.26666666666666666,0.26666666666666666,2026-09-22,OpenAI,United States of America,,,0.09026709338484401,,,2026-10-21T16:48:12.000Z,WQ4gVVhGBfWoRkRwUvNYgs
+gpt-5-2025-08-07_high,0.044444444444444446,0.044444444444444446,2025-08-07,OpenAI,United States of America,6.6e+25,"Fairly speculative, possibly around 6e25 [CI: 2e25 to 2e26] FLOP. See document below for details
+
+https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",0.034375250520170986,,,2026-10-21T16:48:08.000Z,Th39ihgvLFnsDGMed7Q55b
+gemini-4-argon_high,0.5888888888888889,0.5888888888888889,2026-09-30,Google DeepMind,United States of America,,,0.1171381252539371,,,2026-10-14T10:00:34.000Z,h7xMzFUTMGSGqUSKUpxkUW
+claude-opus-5-5_high,0.7889,0.7889,2026-09-22,Anthropic,United States of America,,,0.0788,,,2026-09-22T16:42:00.000Z,mirrorcode-ml-2l-claude-opus-5-5
 claude-fable-5-1_high,0.733,0.733,2026-09-01,Anthropic,United States of America,,,0.0917,,,2026-09-10T13:19:30.449Z,mirrorcode-ml-2l-claude-fable-5-1
 gpt-6-astra_high,0.467,0.467,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 

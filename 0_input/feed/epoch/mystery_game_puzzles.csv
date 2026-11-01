@@ -1,6 +1,8 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-terra_max,0.74,0.74,2026-10-26,OpenAI,United States of America,,,0.04408440022768081,,,2026-10-26T20:00:37.000Z,Q4Sr4fBBypw9WQDkuk9RMN
+deepseek-v4.1-flash-1017_max,0.49,0.49,2026-10-17,DeepSeek,China,,A,0.05024183937956914,,,2026-10-19T22:39:00.000Z,GLNTwoU6njn58DbPF9cbxb
 muse-wonder-1.0_max,0.51,0.51,2026-10-12,Meta AI,United States of America,,,0.05024183937956913,,,2026-10-14T16:17:18.000Z,gmscEuzbtZeUeFUFZMZiAV
-mistral-large-4-0_high,0.17,0.17,2026-10-06,Mistral AI,France,,,0.03775251680686369,,,2026-10-13T22:01:32.000Z,LT9xLJnaU4UHsBQrvu3rbU
+mistral-large-4-0_high,0.17,0.17,2026-10-06,Mistral AI,France,,"""ML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe."", assumed GB200 for hardware field.",0.03775251680686369,,,2026-10-13T22:01:32.000Z,LT9xLJnaU4UHsBQrvu3rbU
 gemini-4-argon_high,0.64,0.64,2026-09-30,Google DeepMind,United States of America,,,0.048241815132442176,,,2026-10-13T17:14:57.000Z,9ipFgNR5MDw7ustUsuSviu
 deepseek-v4.1-flash_max,0.43,0.43,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
 ",0.0497569851956243,,,2026-10-08T19:02:32.000Z,K3JABAsJCbXU5YrCPH2yVW

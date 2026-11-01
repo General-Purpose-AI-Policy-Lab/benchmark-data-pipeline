@@ -8,7 +8,7 @@ kimi-k3_unknown,Claude Code,0.3196,2026-07-16,Moonshot,China,2.0001e+25,"Based o
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3,0.0026,reczFkgvLx23FFjG9
 glm-5.2_max,Claude Code,0.317,2026-06-16,Z.ai (Zhipu AI),China,,,GLM 5.2 (Max),0.021400000000000002,recFx69MKlTBBGigF
-claude-opus-4-7_xhigh,Claude Code,0.2856,2026-04-16,Anthropic,United States of America,,,Opus 4.7,0.0174,recbaD2sTNbt5xVFL
+claude-opus-4-7_xhigh,Claude Code,0.2856,2026-04-16,Anthropic,United States of America,,,Opus 4.7 (xHigh),0.0174,recbaD2sTNbt5xVFL
 gpt-5.5_xhigh,Codex CLI,0.2723,2026-04-23,OpenAI,United States of America,,,GPT 5.5 (xHigh),0.005600000000000001,recMSOXhMGW3VztFi
 grok-4.5_high,Cursor CLI,0.2345,2026-07-08,xAI,United States of America,,,Grok 4.5 (High),0.0009,rec4HQ0qLNJVhRyw9
 gemini-3.1-pro-preview,OpenCode,0.21989999999999998,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro,0.018000000000000002,recZWNED3JvA1VUDZ

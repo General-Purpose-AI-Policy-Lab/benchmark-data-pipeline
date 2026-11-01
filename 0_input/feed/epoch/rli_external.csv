@@ -5,8 +5,9 @@ gpt-6-astra_unknown,0.20829999999999999,2026-09-03,OpenAI,United States of Ameri
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT 6 Astra,,recgQnocVAluxtaGu
 claude-fable-5-1_unknown,0.17920000000000003,2026-09-01,Anthropic,United States of America,,,Fable 5.1,,recjGFecys5ECoyQg
+gemini-4-argon_unknown,0.17079999999999998,2026-09-30,Google DeepMind,United States of America,,,Gemini Argon 4,,recn7rYNMvwHrvYKu
 claude-fable-5,0.161,2026-06-09,Anthropic,United States of America,,,Fable-5,,recuSPVAbyN1m9xpA
-claude-fable-5_unknown,0.158,2026-06-09,Anthropic,United States of America,,,Fable-5,,recViBWyhB5Kow9VY
+claude-fable-5_unknown,0.1583,2026-06-09,Anthropic,United States of America,,,Fable 5,,recViBWyhB5Kow9VY
 claude-opus-4-8_unknown,0.0833,2026-05-28,Anthropic,United States of America,,,Opus 4.8,,reca1681E9WeV4Fcd
 gpt-5.5_unknown,0.0625,2026-04-23,OpenAI,United States of America,,,Codex GPT 5.5,,rec3Yv4ZA0c008npD
 gemini-3.8-flash_unknown,0.058300000000000005,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,,recZEtu0hO5eRfs1Y

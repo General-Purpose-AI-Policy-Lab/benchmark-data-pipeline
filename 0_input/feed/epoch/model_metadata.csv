@@ -13,6 +13,7 @@ model_version,model_group,date,display_name,organization,country,accessibility,t
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
+,,,,,,,
 /HFEndpoint/Llama 2-70B,Llama 2-70B,2023-07-18,,Meta AI,United States of America,Open weights (restricted use),8.1e+23
 accounts/fireworks/models/glm-4p6,GLM-4.6,2025-09-30,GLM-4.6 (Fireworks),"Z.ai (Zhipu AI),Tsinghua University",China,Open weights (unrestricted),4.42e+24
 accounts/fireworks/models/kimi-k2-thinking,Kimi K2 Thinking,2025-11-06,Kimi K2 Thinking (Fireworks),Moonshot,China,Open weights (restricted use),4.2e+24
@@ -31,6 +32,12 @@ Baichuan-2-13B-Base,Baichuan2-13B,2023-09-06,,Baichuan,China,Open weights (restr
 Baichuan-7B,Baichuan1-7B,2023-06-01,,Baichuan,China,Open weights (non-commercial),5.04e+22
 Baichuan-13B-Base,Baichuan 1-13B,2023-07-11,,Baichuan,China,Open weights (restricted use),9.36e+22
 Baichuan2-13B-Chat,Baichuan2-13B-Chat,2023-09-06,,,,,
+beam-1.0_high,Beam 1.0,2026-10-05,Beam 1.0 (high),Reflection,United States of America,Open weights (unrestricted),
+beam-1.0_low,Beam 1.0,2026-10-05,Beam 1.0 (low),Reflection,United States of America,Open weights (unrestricted),
+beam-1.0_max,Beam 1.0,2026-10-05,Beam 1.0 (max),Reflection,United States of America,Open weights (unrestricted),
+beam-1.0_medium,Beam 1.0,2026-10-05,Beam 1.0 (medium),Reflection,United States of America,Open weights (unrestricted),
+beam-1.0_unknown,Beam 1.0,2026-10-05,Beam 1.0 (unknown),Reflection,United States of America,Open weights (unrestricted),
+beam-1.0_xhigh,Beam 1.0,2026-10-05,Beam 1.0 (xhigh),Reflection,United States of America,Open weights (unrestricted),
 blip2-opt-2.7b,BLIP-2 (Q-Former),2023-02-06,,Salesforce Research,United States of America,Open weights (unrestricted),1.20000000001e+21
 bloom,BLOOM-176B,2022-07-06,,"Hugging Face,BigScience","United States of America,France",Open weights (restricted use),3.65664e+23
 ByteVideoLLM-14B,ByteVideoLLM-14B,2024-10-13,,,,,
@@ -105,6 +112,7 @@ claude-haiku-5-5_high,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (high),Anthro
 claude-haiku-5-5_low,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (low),Anthropic,United States of America,API access,
 claude-haiku-5-5_max,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (max),Anthropic,United States of America,API access,
 claude-haiku-5-5_medium,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (medium),Anthropic,United States of America,API access,
+claude-haiku-5-5_none,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (none),Anthropic,United States of America,API access,
 claude-haiku-5-5_unknown,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (unknown),Anthropic,United States of America,API access,
 claude-haiku-5-5_xhigh,Claude Haiku 5.5,2026-10-07,Claude Haiku 5.5 (xhigh),Anthropic,United States of America,API access,
 claude-instant-1.1,Claude Instant,2023-08-09,,Anthropic,United States of America,API access,
@@ -314,6 +322,12 @@ deepseek-v4.1-flash_low,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (low)
 deepseek-v4.1-flash_max,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (max),DeepSeek,China,Open weights (unrestricted),4.32e+24
 deepseek-v4.1-flash_none,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (none),DeepSeek,China,Open weights (unrestricted),4.32e+24
 deepseek-v4.1-flash_unknown,DeepSeek V4.1 Flash,2026-09-09,DeepSeek V4.1 Flash (unknown),DeepSeek,China,Open weights (unrestricted),4.32e+24
+deepseek-v4.1-flash-1017_high,DeepSeek V4.1 Flash 1017,2026-10-17,DeepSeek V4.1 Flash 1017 (high),DeepSeek,China,Open weights (unrestricted),
+deepseek-v4.1-flash-1017_low,DeepSeek V4.1 Flash 1017,2026-10-17,DeepSeek V4.1 Flash 1017 (low),DeepSeek,China,Open weights (unrestricted),
+deepseek-v4.1-flash-1017_max,DeepSeek V4.1 Flash 1017,2026-10-17,DeepSeek V4.1 Flash 1017 (max),DeepSeek,China,Open weights (unrestricted),
+deepseek-v4.1-flash-1017_medium,DeepSeek V4.1 Flash 1017,2026-10-17,DeepSeek V4.1 Flash 1017 (medium),DeepSeek,China,Open weights (unrestricted),
+deepseek-v4.1-flash-1017_none,DeepSeek V4.1 Flash 1017,2026-10-17,DeepSeek V4.1 Flash 1017 (none),DeepSeek,China,Open weights (unrestricted),
+deepseek-v4.1-flash-1017_unknown,DeepSeek V4.1 Flash 1017,2026-10-17,DeepSeek V4.1 Flash 1017 (unknown),DeepSeek,China,Open weights (unrestricted),
 deepseek/deepseek-v3.2,DeepSeek-V3.2,2025-12-01,DeepSeek-V3.2 (Thinking; Novita),DeepSeek,China,Open weights (unrestricted),4.2e+24
 devstral-small-2505,Devstral Small,2025-05-21,,"Mistral AI,All Hands AI","United States of America,France",Open weights (unrestricted),
 devstral-small-2512,Devstral Small 2,2025-12-09,Devstral Small 2,Mistral AI,France,Open weights (unrestricted),
@@ -425,6 +439,8 @@ gemini-4-argon_low,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (low),Google DeepMin
 gemini-4-argon_medium,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (medium),Google DeepMind,United States of America,Limited access,
 gemini-4-argon_minimal,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (minimal),Google DeepMind,United States of America,Limited access,
 gemini-4-argon_unknown,Gemini 4 Argon,2026-09-30,Gemini 4 Argon (unknown),Google DeepMind,United States of America,Limited access,
+gemini-4-carbon_high,Gemini 4 Carbon,2026-10-28,Gemini 4 Carbon (high),Google DeepMind,United States of America,Unreleased,
+gemini-4-carbon_unknown,Gemini 4 Carbon,2026-10-28,Gemini 4 Carbon (unknown),Google DeepMind,United States of America,Unreleased,
 gemini-exp-1206,Gemini 2.0 Flash (Dec 2024),2024-12-06,,"Google DeepMind,Google",United States of America,API access,
 gemini-robotics-er-1.5-preview,gemini-robotics-er-1.5-preview,2025-09-26,,,,,
 gemini-robotics-er-1.6-preview,Gemini Robotics-ER 1.6,2026-04-14,Gemini Robotics-ER 1.6 Preview,Google,United States of America,API access,
@@ -619,6 +635,7 @@ gpt-6-luna_medium,GPT-6 Luna,2026-09-22,GPT-6 Luna (medium),OpenAI,United States
 gpt-6-luna_none,GPT-6 Luna,2026-09-22,GPT-6 Luna (none),OpenAI,United States of America,API access,
 gpt-6-luna_unknown,GPT-6 Luna,2026-09-22,GPT-6 Luna (unknown thinking),OpenAI,United States of America,API access,
 gpt-6-luna_xhigh,GPT-6 Luna,2026-09-22,GPT-6 Luna (xhigh),OpenAI,United States of America,API access,
+gpt-6-luna-decisions,GPT-6 Luna Decisions,2026-09-22,GPT-6 Luna Decisions,OpenAI,United States of America,API access,
 gpt-6-sol_high,GPT-6 Sol,2026-09-22,GPT-6 Sol (high),OpenAI,United States of America,API access,
 gpt-6-sol_low,GPT-6 Sol,2026-09-22,GPT-6 Sol (low),OpenAI,United States of America,API access,
 gpt-6-sol_max,GPT-6 Sol,2026-09-22,GPT-6 Sol (max),OpenAI,United States of America,API access,
@@ -632,6 +649,13 @@ gpt-6.1-sol_max,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (max),OpenAI,United States of
 gpt-6.1-sol_medium,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (medium),OpenAI,United States of America,API access,
 gpt-6.1-sol_unknown,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (unknown thinking),OpenAI,United States of America,API access,
 gpt-6.1-sol_xhigh,GPT-6.1 Sol,2026-09-29,GPT-6.1 Sol (xhigh),OpenAI,United States of America,API access,
+gpt-6.1-terra_high,GPT-6.1 Terra,2026-10-26,GPT-6.1 Terra (high),OpenAI,United States of America,API access,
+gpt-6.1-terra_low,GPT-6.1 Terra,2026-10-26,GPT-6.1 Terra (low),OpenAI,United States of America,API access,
+gpt-6.1-terra_max,GPT-6.1 Terra,2026-10-26,GPT-6.1 Terra (max),OpenAI,United States of America,API access,
+gpt-6.1-terra_medium,GPT-6.1 Terra,2026-10-26,GPT-6.1 Terra (medium),OpenAI,United States of America,API access,
+gpt-6.1-terra_none,GPT-6.1 Terra,2026-10-26,GPT-6.1 Terra (none),OpenAI,United States of America,API access,
+gpt-6.1-terra_unknown,GPT-6.1 Terra,2026-10-26,GPT-6.1 Terra (unknown thinking),OpenAI,United States of America,API access,
+gpt-6.1-terra_xhigh,GPT-6.1 Terra,2026-10-26,GPT-6.1 Terra (xhigh),OpenAI,United States of America,API access,
 gpt-j-6b,GPT-J-6B,2021-08-05,,"EleutherAI,LAION","United States of America,Germany",Open weights (unrestricted),1.5e+22
 gpt-neo-2.7B,GPT-Neo-2.7B,2021-03-30,,EleutherAI,United States of America,Open weights (unrestricted),7.9e+21
 gpt-neox-20b,GPT-NeoX-20B,2022-04-07,,EleutherAI,United States of America,Open weights (unrestricted),9.31627008e+22
@@ -716,6 +740,7 @@ InternVL-Chat-ViT-6B-Vicuna-7B,InternVL-Chat-ViT-6B-Vicuna-7B,2023-12-25,,,,,
 InternVL-Chat-ViT-6B-Vicuna-13B,InternVL-Chat-ViT-6B-Vicuna-13B,2024-08-16,,,,,
 InternVL2_5-78B,InternVL2_5-78B,2024-12-06,,"Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University","China,Hong Kong",Open weights (restricted use),
 InternVL2-40B,InternVL2-40B,2024-07-08,,Shanghai AI Lab,China,Open weights (unrestricted),
+jev-1.14.0,Jev,2026-10-14,Jev 1.14,TypeSafe.ai,United States of America,API access,
 kangaroo,kangaroo,2024-11-13,,,,,
 Kimi-Dev-72B,Kimi Dev 72b,2025-06-16,,Moonshot,China,Open weights (unrestricted),
 kimi-k2-0711-preview,Kimi K2 (Jul 2025),2025-07-12,,Moonshot,China,Open weights (restricted use),2.976e+24
@@ -733,6 +758,10 @@ kimi-k3_high,Kimi K3,2026-07-16,Kimi K3 (high),Moonshot,China,Open weights (non-
 kimi-k3_low,Kimi K3,2026-07-16,Kimi K3 (low),Moonshot,China,Open weights (non-commercial),2.0001e+25
 kimi-k3_max,Kimi K3,2026-07-16,Kimi K3 (max),Moonshot,China,Open weights (non-commercial),2.0001e+25
 kimi-k3_unknown,Kimi K3,2026-07-16,Kimi K3 (unknown),Moonshot,China,Open weights (non-commercial),2.0001e+25
+kimi-k3.1-pro_high,Kimi K3.1 Pro,2026-10-23,Kimi K3.1 Pro (high),Moonshot,China,API access,
+kimi-k3.1-pro_low,Kimi K3.1 Pro,2026-10-23,Kimi K3.1 Pro (low),Moonshot,China,API access,
+kimi-k3.1-pro_max,Kimi K3.1 Pro,2026-10-23,Kimi K3.1 Pro (max),Moonshot,China,API access,
+kimi-k3.1-pro_unknown,Kimi K3.1 Pro,2026-10-23,Kimi K3.1 Pro (unknown),Moonshot,China,API access,
 laguna-m.1,Laguna M.1,2026-04-28,Laguna M.1,Poolside,United States of America,,
 laguna-xs.2,Laguna XS.2,2026-04-28,Laguna XS.2,Poolside,United States of America,Open weights (unrestricted),
 learnlm-1.5-pro-experimental,learnlm-1.5-pro-experimental,,,,,,
@@ -817,9 +846,9 @@ Mistral-7B-Instruct-v0.2,Mistral 7B v0.2,2023-12-11,,Mistral AI,France,Open weig
 Mistral-7B-Instruct-v0.3,Mistral 7B v0.3,2024-05-27,,Mistral AI,France,Open weights (unrestricted),
 Mistral-7B-v0.1,Mistral 7B v0.1,2023-09-27,,Mistral AI,France,Open weights (unrestricted),
 Mistral-7B-v0.3,Mistral 7B v0.3,2024-05-27,,Mistral AI,France,Open weights (unrestricted),
-mistral-large-4-0_high,Mistral Large 4,2026-10-06,Mistral Large 4 (high),Mistral AI,France,,
-mistral-large-4-0_none,Mistral Large 4,2026-10-06,Mistral Large 4 (none),Mistral AI,France,,
-mistral-large-4-0_unknown,Mistral Large 4,2026-10-06,Mistral Large 4 (unknown),Mistral AI,France,,
+mistral-large-4-0_high,Mistral Large 4,2026-10-06,Mistral Large 4 (high),Mistral AI,France,Open weights (restricted use),
+mistral-large-4-0_none,Mistral Large 4,2026-10-06,Mistral Large 4 (none),Mistral AI,France,Open weights (restricted use),
+mistral-large-4-0_unknown,Mistral Large 4,2026-10-06,Mistral Large 4 (unknown),Mistral AI,France,Open weights (restricted use),
 mistral-large-2402,Mistral Large,2024-02-26,,Mistral AI,France,API access,
 mistral-large-2407,Mistral Large 2 (Jul 2024),2024-07-24,,Mistral AI,France,Open weights (non-commercial),
 mistral-large-2411,Mistral Large 2 (Nov 2024),2024-11-18,,Mistral AI,France,Open weights (non-commercial),

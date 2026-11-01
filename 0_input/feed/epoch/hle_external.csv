@@ -4,14 +4,14 @@ gpt-6-astra_unknown,0.5479999999999999,2026-09-03,OpenAI,United States of Americ
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT 6 Astra,0.0194,39.0,,recbv6dU38s3cvqyO
 claude-fable-5-1_xhigh,0.465,2026-09-01,Anthropic,United States of America,,,Fable 5.1 (xhigh),0.02,20.0,,rec1P9SLLAtCSdTMk
-gemini-3.1-pro-preview,0.4644,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro Preview (thinking high),0.0196,51.0,,recuBCQLkHd2mOtrr
+gemini-3.1-pro-preview,0.4644,2026-02-19,Google DeepMind,United States of America,,,gemini-3.1-pro-preview (thinking high),0.0196,51.0,,recuBCQLkHd2mOtrr
 claude-sonnet-5-5_xhigh,0.4612,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 (xhigh),0.0195,,,recxGPs2ikoJ9KUyA
 gemini-3.8-flash_unknown,0.44520000000000004,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,0.0196,51.0,,recIqVer2D18rE192
-gpt-5.4-pro-2026-03-05_unknown,0.4432,2026-03-05,OpenAI,United States of America,,,GPT-5.4 Pro,0.0195,38.0,,recreMdBwgtJ8NoJL
+gpt-5.4-pro-2026-03-05_unknown,0.44320000000000004,2026-03-05,OpenAI,United States of America,,,gpt-5.4-pro-2026-03-05,0.0195,38.0,,recreMdBwgtJ8NoJL
 muse-spark,0.4056,2026-04-08,Meta AI,United States of America,,,Muse Spark,0.0192,50.0,,recvslFSn9YBYB4kI
 gemini-3-pro-preview,0.37520000000000003,2025-11-18,Google DeepMind,United States of America,,Almost certainly >1e25,gemini-3-pro-preview,0.019,57.0,,recXvAi7z6kYifmzb
 gpt-5.4-2026-03-05_xhigh,0.3624,2026-03-05,OpenAI,United States of America,,,gpt-5.4-2026-03-05 (xhigh thinking),0.0188,42.0,,reczymcIUNR10O9vo
-claude-opus-4-7_unknown,0.362,2026-04-16,Anthropic,United States of America,,,Claude Opus 4.7,0.0188,47.0,,recVgBx1IpXMKMIDN
+claude-opus-4-7_unknown,0.36200000000000004,2026-04-16,Anthropic,United States of America,,,claude-opus-4-7,0.0188,47.0,,recVgBx1IpXMKMIDN
 claude-opus-4-6_max,0.3444,2026-02-05,Anthropic,United States of America,,,claude-opus-4-6-thinking-max,0.018600000000000002,46.0,,recRaT3ySEJuEiBMU
 gpt-5-pro-2025-10-06_unknown,0.3164,2025-10-07,OpenAI,United States of America,,,gpt-5-pro-2025-10-06,0.0182,49.0,,recsQ0oM0i71F5lGd
 claude-haiku-5-5_unknown,0.3012,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5,0.0183,,,rectuouKismbEFle9

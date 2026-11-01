@@ -1,4 +1,5 @@
 Model version,Score,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,id
+gemini-4-carbon_unknown,16484.20666666667,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon,recgYseBc2iH5xCmj
 gpt-6-astra_unknown,15514.701666666668,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
@@ -12,6 +13,7 @@ grok-4.7_unknown,10536.831666666667,2026-09-21,xAI,United States of America,,,Gr
 gpt-5.6-sol_unknown,9619.367999999999,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol,rec7Hn7Mhf7zcb5Ks
 muse-wonder-1.0_unknown,9432.18,2026-10-12,Meta AI,United States of America,,,Muse Wonder,recmNq9KpI3nIDTWU
 claude-opus-5-5_unknown,9235.248333333331,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,recBWEIN3JLagof2u
+gpt-6.1-terra_unknown,9107.458333333334,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra,recjygL7zK33Q0cOC
 grok-4.6_unknown,9047.032500000001,2026-08-12,xAI,United States of America,,,Grok 4.6,recykaG8clpLwMQNZ
 glm-5.2_unknown,8313.778333333335,2026-06-16,Z.ai (Zhipu AI),China,,,GLM-5.2,recFnUWa6JKxlpxJK
 glm-5.3_unknown,8163.609999999998,2026-08-14,Z.ai (Zhipu AI),China,,,GLM-5.3,recneOkHK8PAgzy1Y
