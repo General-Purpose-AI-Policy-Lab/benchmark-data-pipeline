@@ -37,10 +37,10 @@ They also do post training similar to o3, which we assume adds at least 10% as m
 
 ",gpt-oss-120b (High),https://artificialanalysis.ai/evaluations/scicode,
 qwen3.6-35b-a3b,0.365740740740741,Alibaba,qwen3-6-35b-a3b,2026-04-14,Alibaba,China,,,Qwen3.6 35B A3B (Reasoning),https://artificialanalysis.ai/evaluations/scicode,
-gpt-oss-20b_high,0.34375,OpenAI,gpt-oss-20b,2025-08-05,OpenAI,United States of America,5.49e+23,"""The training run for gpt-oss-120b required 2.1
+gpt-oss-20b_high,0.388888888888889,OpenAI,gpt-oss-20b,2025-08-05,OpenAI,United States of America,5.49e+23,"""The training run for gpt-oss-120b required 2.1
 million H100-hours to complete, with gpt-oss-20b needing almost 10x fewer""
-assuming ""almost 10x fewer"" means ~9x fewer: 4.94e24/9 = 5.49e23",gpt-oss-20B (high),https://artificialanalysis.ai/evaluations/scicode,
-Llama-4-Maverick-17B-128E-Instruct,0.331018518518519,Meta,llama-4-maverick,2025-04-05,Meta AI,United States of America,2.244000000001e+24,"22T training tokens per model card:
+assuming ""almost 10x fewer"" means ~9x fewer: 4.94e24/9 = 5.49e23",gpt-oss-20b (High),https://artificialanalysis.ai/evaluations/scicode,
+Llama-4-Maverick-17B-128E-Instruct,0.31712962962963,Meta,llama-4-maverick,2025-04-05,Meta AI,United States of America,2.244000000001e+24,"22T training tokens per model card:
 
 https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md   
 
@@ -55,7 +55,7 @@ The model card also states that Llama 4 Maverick used 2.38M H100-hours.
 The blog post gives a figure of 390 TFLOPS/GPU, but this may have been the utilization rate for Behemoth, or all of the models together. Using this utilization, we have:
 Compute = 390 TFLOP/s * 2.38 million hours = 3.342e24 FLOP
 (This value is higher than the compute implied by parameters and tokens, and suggests utilization may have been lower for Maverick than for Behemoth.)",Llama 4 Maverick,https://artificialanalysis.ai/evaluations/scicode,
-Llama-4-Scout-17B-16E-Instruct,0.170138888888889,Meta,llama-4-scout,2025-04-05,Meta AI,United States of America,4.08e+24,"40T training tokens per model card:
+Llama-4-Scout-17B-16E-Instruct,0.212962962962963,Meta,llama-4-scout,2025-04-05,Meta AI,United States of America,4.08e+24,"40T training tokens per model card:
 
 https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md  
 
@@ -144,14 +144,14 @@ magistral-medium-2509,0.392361111111111,Mistral,magistral-medium-2509,2025-09-18
 mercury-2,0.38657407407407407,Inception,mercury-2,,Inception Labs,United States of America,,,Mercury 2,https://artificialanalysis.ai/evaluations/scicode,
 command-a-plus-05-2026,0.385416666666667,Cohere,command-a-plus,2026-05-20,"Cohere,Cohere Labs (formerly Cohere for AI)",Canada,,,Command A+,https://artificialanalysis.ai/evaluations/scicode,
 mistral-large-2512,0.365740740740741,Mistral,mistral-large-3,2025-12-02,Mistral AI,France,,,Mistral Large 3,https://artificialanalysis.ai/evaluations/scicode,
-trinity-large-thinking,0.361111111111111,Arcee AI,trinity-large-thinking,2026-04-01,Arcee AI,United States of America,,,Trinity Large Thinking,https://artificialanalysis.ai/evaluations/scicode,
+trinity-large-thinking,0.40625,Arcee AI,trinity-large-thinking,2026-04-01,Arcee AI,United States of America,,"Base model training compute was ~1.33e24 FLOP, we don't know enough to give a compute count for the additional parts here.",Trinity Large Thinking,https://artificialanalysis.ai/evaluations/scicode,
 nemotron-3-super,0.35995370370370405,NVIDIA,nvidia-nemotron-3-super-120b-a12b,2026-03-11,Nvidia,United States of America,,,NVIDIA Nemotron 3 Super 120B A12B (Reasoning),https://artificialanalysis.ai/evaluations/scicode,
 DeepSeek-V3,0.357638888888889,DeepSeek,deepseek-v3,2024-12-26,DeepSeek,China,3.3e+24,"6 × 37B × 14.8T = 3.29e24 pretraining FLOPs, 1e22 posttrainining FLOPs - see doc below
 
 https://docs.google.com/document/d/1C4zBvHh4UNnzaorwQSdG61zQJsBV9X3i3A70NeelxHY/edit?usp=sharing",DeepSeek V3 (Dec '24),https://artificialanalysis.ai/evaluations/scicode,
 magistral-small-2509,0.351851851851852,Mistral,magistral-small-2509,2025-09-18,Mistral AI,France,,,Magistral Small 1.2,https://artificialanalysis.ai/evaluations/scicode,
 mistral-medium-2508,0.32407407407407407,Mistral,mistral-medium-3-1,2025-08-12,Mistral AI,France,,,Mistral Medium 3.1,https://artificialanalysis.ai/evaluations/scicode,
-qwen3-coder-next,0.322916666666667,Alibaba,qwen3-coder-next,2026-02-02,,,,,Qwen3 Coder Next,https://artificialanalysis.ai/evaluations/scicode,
+qwen3-coder-next,0.362268518518519,Alibaba,qwen3-coder-next,2026-02-02,,,,,Qwen3 Coder Next,https://artificialanalysis.ai/evaluations/scicode,
 devstral-small-2512,0.288194444444444,Mistral,devstral-small-2,2025-12-09,Mistral AI,France,,,Devstral Small 2,https://artificialanalysis.ai/evaluations/scicode,
 nova-2.0-pro-preview_none,0.28125,Amazon,nova-2-0-pro,2025-12-02,Amazon,United States of America,,,Nova 2.0 Pro Preview (Non-reasoning),https://artificialanalysis.ai/evaluations/scicode,
 mistral-small-2503,0.277777777777778,Mistral,mistral-small-3-1,2025-03-17,Mistral AI,France,,At least 1.152e+24 FLOP (base model Mistral Small 3 training compute),Mistral Small 3.1,https://artificialanalysis.ai/evaluations/scicode,
@@ -217,15 +217,15 @@ openai/gpt-oss-120b_low,0.35995370370370405,OpenAI,gpt-oss-120b-low,2025-08-05,O
 They also do post training similar to o3, which we assume adds at least 10% as much compute, so we multiply this estimate by 1.1 to get 4.94e24
 
 ",gpt-oss-120b (low),https://artificialanalysis.ai/evaluations/scicode,
-claude-fable-5-1_max,0.630787037037037,Anthropic,claude-fable-5-1,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-fable-5-1_xhigh,0.608796296296296,Anthropic,claude-fable-5-1-xhigh,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-fable-5-1_max,0.630787037037037,Anthropic,claude-fable-5-1,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Max, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-fable-5-1_xhigh,0.608796296296296,Anthropic,claude-fable-5-1-xhigh,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Xhigh, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
 gemini-3.7-flash_medium,0.59837962962963,Google,gemini-3-7-flash-medium,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (Medium),https://artificialanalysis.ai/evaluations/scicode,
-claude-fable-5-1_high,0.576388888888889,Anthropic,claude-fable-5-1-high,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-fable-5-1_high,0.586805555555556,Anthropic,claude-fable-5-1-high,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (High, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
 gemini-3.7-flash_high,0.571759259259259,Google,gemini-3-7-flash,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (High),https://artificialanalysis.ai/evaluations/scicode,
 glm-5.3_max,0.590277777777778,Z AI,glm-5-3,2026-08-14,Z.ai (Zhipu AI),China,,,GLM-5.3 (Max),https://artificialanalysis.ai/evaluations/scicode,
 muse-spark-1.2_xhigh,0.574074074074074,Meta,muse-spark-1-2,2026-08-05,Meta AI,United States of America,,,Muse Spark 1.2 (Xhigh),https://artificialanalysis.ai/evaluations/scicode,
-claude-fable-5-1_low,0.556712962962963,Anthropic,claude-fable-5-1-low,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-fable-5-1_medium,0.553240740740741,Anthropic,claude-fable-5-1-medium,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-fable-5-1_low,0.56712962962963,Anthropic,claude-fable-5-1-low,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Low, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-fable-5-1_medium,0.563657407407407,Anthropic,claude-fable-5-1-medium,2026-09-01,Anthropic,United States of America,,,"Claude Fable 5.1 (Medium, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
 grok-4.6_medium,0.559027777777778,SpaceXAI,grok-4-6-medium,2026-08-12,xAI,United States of America,,,Grok 4.6 (Medium),https://artificialanalysis.ai/evaluations/scicode,
 gemini-3.8-flash_medium,0.550925925925926,Google,gemini-3-8-flash-medium,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (Medium),https://artificialanalysis.ai/evaluations/scicode,
 gemini-3.8-flash_low,0.549768518518518,Google,gemini-3-8-flash-low,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (Low),https://artificialanalysis.ai/evaluations/scicode,
@@ -235,12 +235,12 @@ gemini-3.7-flash_low,0.53587962962963,Google,gemini-3-7-flash-low,2026-08-13,Goo
 qwen3.8-max_unknown,0.528935185185185,Alibaba,qwen3-8-max,2026-08-02,Alibaba,China,,,Qwen3.8 Max,https://artificialanalysis.ai/evaluations/scicode,
 grok-4.6_xhigh,0.530092592592593,SpaceXAI,grok-4-6-xhigh,2026-08-12,xAI,United States of America,,,Grok 4.6 (Xhigh),https://artificialanalysis.ai/evaluations/scicode,
 deepseek-v4-pro_max,0.5,DeepSeek,deepseek-v4-pro-0424,2026-04-24,DeepSeek,China,9.702e+24,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training,"DeepSeek V4 Pro (Reasoning, Max Effort)",https://artificialanalysis.ai/evaluations/scicode,
-deepseek-v4-pro-0813_max,0.510416666666667,DeepSeek,deepseek-v4-pro,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",https://artificialanalysis.ai/evaluations/scicode,
+deepseek-v4-pro-0813_max,0.510416666666667,DeepSeek,deepseek-v4-pro,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (Max),https://artificialanalysis.ai/evaluations/scicode,
 grok-4.6_low,0.4942129629629631,SpaceXAI,grok-4-6-low,2026-08-12,xAI,United States of America,,,Grok 4.6 (Low),https://artificialanalysis.ai/evaluations/scicode,
 deepseek-v4-pro_high,0.46412037037037,DeepSeek,deepseek-v4-pro-0424-high,2026-04-24,DeepSeek,China,9.702e+24,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training,"DeepSeek V4 Pro (Reasoning, High Effort)",https://artificialanalysis.ai/evaluations/scicode,
 glm-5.3-flash_unknown,0.516203703703704,Z AI,glm-5-3-flash,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"6 * 18e9 active parameters * 30e12 tokens = 3.24e24 FLOP. 
 
-https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-token multimodal pre-training corpus, these changes let GLM-5.3-Flash produce more intelligence with less compute."", which is not definitive in saying that all 30T tokens were used exactly once; likely confidence.",GLM 5.3 Flash,https://artificialanalysis.ai/evaluations/scicode,
+https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-token multimodal pre-training corpus, these changes let GLM-5.3-Flash produce more intelligence with less compute."", which is not definitive in saying that all 30T tokens were used exactly once; likely confidence.",GLM-5.3-Flash,https://artificialanalysis.ai/evaluations/scicode,
 qwen3.8-27b_xhigh,0.466435185185185,Alibaba,qwen3-8-27b,2026-08-14,Alibaba,China,,,Qwen3.8 27B (Xhigh),https://artificialanalysis.ai/evaluations/scicode,
 qwen3.8-27b_low,0.4004629629629631,Alibaba,qwen3-8-27b-low,2026-08-14,Alibaba,China,,,Qwen3.8 27B (Low),https://artificialanalysis.ai/evaluations/scicode,
 qwen3.8-27b_medium,0.390046296296296,Alibaba,qwen3-8-27b-medium,2026-08-14,Alibaba,China,,,Qwen3.8 27B (Medium),https://artificialanalysis.ai/evaluations/scicode,
@@ -283,13 +283,13 @@ grok-4.7_xhigh,0.574074074074074,SpaceXAI,grok-4-7,2026-09-21,xAI,United States 
 qwen3.8-max-0902_unknown,0.520833333333333,Alibaba,qwen3-8-max,2026-09-01,Alibaba,China,,,Qwen3.8 Max (0902),https://artificialanalysis.ai/evaluations/scicode,
 deepseek-v4.1-flash_max,0.518518518518518,DeepSeek,deepseek-v4-1-flash,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
 ","DeepSeek V4.1 Flash (Reasoning, Max Effort)",https://artificialanalysis.ai/evaluations/scicode,
-claude-opus-5-5_max,0.668981481481482,Anthropic,claude-opus-5-5,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-opus-5-5_xhigh,0.650462962962963,Anthropic,claude-opus-5-5-xhigh,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-sonnet-5-5_max,0.609953703703704,Anthropic,claude-sonnet-5-5,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-sonnet-5-5_xhigh,0.572916666666667,,claude-sonnet-5-5-xhigh,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-sonnet-5-5_high,0.537037037037037,,claude-sonnet-5-5-high,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-sonnet-5-5_medium,0.528935185185185,,claude-sonnet-5-5-medium,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
-claude-sonnet-5-5_low,0.490740740740741,,claude-sonnet-5-5-low,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-opus-5-5_max,0.668981481481482,Anthropic,claude-opus-5-5,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Max, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-opus-5-5_xhigh,0.650462962962963,Anthropic,claude-opus-5-5-xhigh,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Xhigh, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-sonnet-5-5_max,0.609953703703704,Anthropic,claude-sonnet-5-5,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Max, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-sonnet-5-5_xhigh,0.572916666666667,Anthropic,claude-sonnet-5-5-xhigh,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Xhigh, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-sonnet-5-5_high,0.537037037037037,Anthropic,claude-sonnet-5-5-high,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (High, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-sonnet-5-5_medium,0.528935185185185,Anthropic,claude-sonnet-5-5-medium,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Medium, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+claude-sonnet-5-5_low,0.490740740740741,Anthropic,claude-sonnet-5-5-low,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Low, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
 gpt-6-sol_max,0.576388888888889,OpenAI,gpt-6-sol,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Max),https://artificialanalysis.ai/evaluations/scicode,
 gpt-6.1-sol_high,0.55787037037037,,gpt-6-1-sol-high,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (High),https://artificialanalysis.ai/evaluations/scicode,
 gpt-6.1-sol_xhigh,0.556712962962963,,gpt-6-1-sol-xhigh,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Xhigh),https://artificialanalysis.ai/evaluations/scicode,
@@ -330,8 +330,18 @@ deepseek-v4.1-flash_none,0.35532407407407407,,deepseek-v4-1-flash-non-reasoning,
 ",DeepSeek V4.1 Flash (Non-reasoning),https://artificialanalysis.ai/evaluations/scicode,
 muse-wonder-1.0_max,0.603009259259259,Meta,muse-wonder,2026-10-12,Meta AI,United States of America,,,Muse Wonder (Max),https://artificialanalysis.ai/evaluations/scicode,
 claude-haiku-5-5_max,0.549768518518518,Anthropic,claude-haiku-5-5,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Max),https://artificialanalysis.ai/evaluations/scicode,
-mistral-large-4-0_unknown,0.541666666666667,Mistral,mistral-large-4,2026-10-06,Mistral AI,France,,,Mistral Large 4 Preview,https://artificialanalysis.ai/evaluations/scicode,
+mistral-large-4-0_unknown,0.541666666666667,Mistral,mistral-large-4,2026-10-06,Mistral AI,France,,"""ML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe."", assumed GB200 for hardware field.",Mistral Large 4 Preview,https://artificialanalysis.ai/evaluations/scicode,
 claude-haiku-5-5_xhigh,0.517361111111111,,claude-haiku-5-5-xhigh,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Xhigh),https://artificialanalysis.ai/evaluations/scicode,
 claude-haiku-5-5_low,0.491898148148148,,claude-haiku-5-5-low,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Low),https://artificialanalysis.ai/evaluations/scicode,
 claude-haiku-5-5_medium,0.48958333333333304,,claude-haiku-5-5-medium,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Medium),https://artificialanalysis.ai/evaluations/scicode,
 claude-haiku-5-5_high,0.487268518518519,,claude-haiku-5-5-high,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (High),https://artificialanalysis.ai/evaluations/scicode,
+Muse-Spark-Open-816B-A42B_xhigh,0.584490740740741,Meta,muse-spark-open,2026-10-15,Meta AI,United States of America,,,Muse Spark Open (Xhigh),https://artificialanalysis.ai/evaluations/scicode,
+gemini-4-carbon_high,0.642361111111111,Google,gemini-4-carbon,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon (High),https://artificialanalysis.ai/evaluations/scicode,
+kimi-k3.1-pro_unknown,0.607638888888889,Kimi,kimi-k3-1-pro,2026-10-23,Moonshot,China,,,Kimi K3.1 Pro,https://artificialanalysis.ai/evaluations/scicode,
+deepseek-v4.1-flash-1017_max,0.559027777777778,DeepSeek,deepseek-v4-1-flash-1017,2026-10-17,DeepSeek,China,,A,DeepSeek V4.1 Flash 1017 (Max),https://artificialanalysis.ai/evaluations/scicode,
+gpt-6.1-terra_max,0.550925925925926,OpenAI,gpt-6-1-terra,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (Max),https://artificialanalysis.ai/evaluations/scicode,
+gpt-6.1-terra_xhigh,0.533564814814815,OpenAI,gpt-6-1-terra-xhigh,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (Xhigh),https://artificialanalysis.ai/evaluations/scicode,
+gpt-6.1-terra_low,0.524305555555556,OpenAI,gpt-6-1-terra-low,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (Low),https://artificialanalysis.ai/evaluations/scicode,
+gpt-6.1-terra_medium,0.516203703703704,OpenAI,gpt-6-1-terra-medium,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (Medium),https://artificialanalysis.ai/evaluations/scicode,
+gpt-6.1-terra_high,0.516203703703704,OpenAI,gpt-6-1-terra-high,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (High),https://artificialanalysis.ai/evaluations/scicode,
+gpt-6.1-terra_none,0.478009259259259,OpenAI,gpt-6-1-terra-non-reasoning,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (Non-reasoning),https://artificialanalysis.ai/evaluations/scicode,

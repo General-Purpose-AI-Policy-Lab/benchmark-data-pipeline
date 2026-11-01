@@ -29,7 +29,7 @@ gemini-3.5-flash_medium,0.58125,0.375,gemini,2026-05-19,Google DeepMind,United S
 claude-sonnet-5_medium,0.6,0.1875,claude,2026-06-30,Anthropic,United States of America,,,claude-sonnet-5 (medium),3783644,11.938944000000001,https://yhenon.github.io/surface-evolver-llm-eval/,
 mistral-medium-2604,0.26875,0.0625,mistral,2026-04-28,Mistral AI,France,,"Commentary from Mistral researcher - https://x.com/mertunsal2020/status/2049551864556143094?s=20 - says ""nowhere close to those flops"" in response to someone suggesting 2.3e25FLOPS was used",mistral-medium-3-5 (high),2760172,6.348204,https://yhenon.github.io/surface-evolver-llm-eval/,
 laguna-m.1,0.15625,0.0625,poolside,2026-04-28,Poolside,United States of America,,,laguna-m.1,3092659,0.4947199,https://yhenon.github.io/surface-evolver-llm-eval/,
-trinity-large-thinking,0.15625,0.0625,arcee,2026-04-01,Arcee AI,United States of America,,,trinity-large-thinking,2601726,1.24719325,https://yhenon.github.io/surface-evolver-llm-eval/,
+trinity-large-thinking,0.15625,0.0625,arcee,2026-04-01,Arcee AI,United States of America,,"Base model training compute was ~1.33e24 FLOP, we don't know enough to give a compute count for the additional parts here.",trinity-large-thinking,2601726,1.24719325,https://yhenon.github.io/surface-evolver-llm-eval/,
 muse-spark-1.1_high,0.525,0.375,meta,2026-07-09,Meta AI,United States of America,,,muse-spark-1.1 (high),3800825,2.49833875,https://yhenon.github.io/surface-evolver-llm-eval/,
 qwen3.8-27b_xhigh,0.45,0.1875,qwen,2026-08-14,Alibaba,China,,,qwen3.8-27b (xhigh),4703787,9.0487613,https://yhenon.github.io/surface-evolver-llm-eval/,
 glm-5.3-flash_max,0.525,0.1875,z-ai,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"6 * 18e9 active parameters * 30e12 tokens = 3.24e24 FLOP. 
@@ -38,4 +38,4 @@ https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-t
 gemini-3.8-flash_high,0.76875,0.5625,gemini,2026-09-02,Google DeepMind,United States of America,,,gemini-3.8-flash (high),3212425,2.5981149,https://yhenon.github.io/surface-evolver-llm-eval/,
 deepseek-v4.1-flash_high,0.4625,0.3125,deepseek,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
 ",deepseek-v4.1-flash (high),3347576,2.1277077120000003,https://yhenon.github.io/surface-evolver-llm-eval/,
-mistral-large-4-0_unknown,0.28125,0.1875,mistral,2026-10-06,Mistral AI,France,,,mistral-large-4-0,5653545,6.0171848,https://yhenon.github.io/surface-evolver-llm-eval/,
+mistral-large-4-0_unknown,0.28125,0.1875,mistral,2026-10-06,Mistral AI,France,,"""ML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe."", assumed GB200 for hardware field.",mistral-large-4-0,5653545,6.0171848,https://yhenon.github.io/surface-evolver-llm-eval/,

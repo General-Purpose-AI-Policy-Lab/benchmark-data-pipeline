@@ -1,7 +1,9 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.1-terra_max,0.926829268292683,0.926829268292683,2026-10-26,OpenAI,United States of America,,,0.04117547077105886,,,2026-10-26T20:00:37.000Z,W2qXKr9YjjCWcEdgvUw93P
+deepseek-v4.1-flash-1017_max,0.4634146341463415,0.4634146341463415,2026-10-17,DeepSeek,China,,A,0.07884502378168105,,,2026-10-19T22:39:00.000Z,jnCfi6VttQBv3t54B3xp9G
 Muse-Spark-Open-816B-A42B_xhigh,0.3170731707317073,0.3170731707317073,2026-10-15,Meta AI,United States of America,,,0.07357611282438223,,,2026-10-15T18:52:04.000Z,YifYkfNddMSuE8uBNdbvLi
 gemini-4-argon_high,0.7804878048780488,0.7804878048780488,2026-09-30,Google DeepMind,United States of America,,,0.06544589202438408,,,2026-10-13T17:14:57.000Z,6FQCa8tMipf2ncdgGgMaPc
-mistral-large-4-0_high,0.2682926829268293,0.2682926829268293,2026-10-06,Mistral AI,France,,,0.07005564203095158,,,2026-10-12T21:38:35.000Z,TzoNRjKto6wEuZ5PmQPAw8
+mistral-large-4-0_high,0.2682926829268293,0.2682926829268293,2026-10-06,Mistral AI,France,,"""ML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe."", assumed GB200 for hardware field.",0.07005564203095158,,,2026-10-12T21:38:35.000Z,TzoNRjKto6wEuZ5PmQPAw8
 muse-wonder-1.0_max,0.7073170731707317,0.7073170731707317,2026-10-12,Meta AI,United States of America,,,0.07194088392074452,,,2026-10-12T19:00:20.000Z,76KF9F9owpePuyHpP68mdZ
 deepseek-v4.1-flash_max,0.2682926829268293,0.2682926829268293,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
 ",0.07005564203095158,,,2026-10-08T19:02:32.000Z,KansJcyeGR4m7G4p8GupDn

@@ -7,21 +7,21 @@
     "url": "https://cybench.github.io/data/leaderboard.csv"
   },
   "0_input/feed/epoch (benchmark_data.zip)": {
-    "byte_size": 2401416,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "22e03e13247c0a8f4a92594eed4ba19c7805a1c2b30f44bff360da797e7fad93",
+    "byte_size": 2350269,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "8329e32fe2e7be06280738aaa83a3e3d5589c0fd1f2f87850f5bed6d56ecbf4b",
     "url": "https://epoch.ai/data/benchmark_data.zip"
   },
   "0_input/feed/epoch_cyber/cyber_benchmarks.csv": {
     "byte_size": 29804,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
     "sha256": "e96dd58a9d9a23a1963047e5e72510e9acdd46d8049cea52c7c44d620f3dcd96",
     "url": "https://epoch.ai/data/cyber/processed_data_for_eci.csv"
   },
   "0_input/feed/epoch_live/epoch_live_benchmarks.csv": {
-    "byte_size": 3764075,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "7a50ffc96c8241360d7ff5b9c20e3d8b4b07d0c07f2f0dfe86f8c690d91fb91d",
+    "byte_size": 3828413,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "946f2b2098a7721506fd90786a2040baa4e66f1050490b55975f9e683aaa4ea8",
     "url": "https://epoch.ai/data/benchmarks.csv"
   },
   "0_input/feed/gpai_runs/runs/20261014_claude-haiku-4-5-20251001_none_gpqa-biology/manifest.json": {
@@ -620,21 +620,21 @@
     "url": "https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/blob/main/0_input/feed/gpai_runs/scores.csv"
   },
   "0_input/feed/kaggle/deepmind_simpleqa-verified.json": {
-    "byte_size": 77898,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "7dd671d0d0fc02316f9ecd48cb34abc9089eb7ef5876396576de4d10ec02bea7",
+    "byte_size": 79311,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "f192c73fa90388e00de33925ab6a8efc3afd58c265def286eb1a39607cc2882c",
     "url": "https://www.kaggle.com/api/v1/benchmarks/deepmind/simpleqa-verified/leaderboard"
   },
   "0_input/feed/kaggle/open-benchmarks_mmlu-pro.json": {
-    "byte_size": 83753,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "b42a36cb8e167a2df0fd4d2c4aabdd2928cfd000aa708fd371f9effa0a3c212a",
+    "byte_size": 87899,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "2d36cc1d601107413f6e2ccc13b4d6e7c3f091233a546a55b5fc1b0968deab21",
     "url": "https://www.kaggle.com/api/v1/benchmarks/open-benchmarks/mmlu-pro/leaderboard"
   },
   "0_input/feed/kaggle/open-benchmarks_mmlu.json": {
-    "byte_size": 79168,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "702c66d01675a2d9e28630a5880f75284a94ffe60c3db27670ec9f9cc185adee",
+    "byte_size": 83292,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "1d96997bd6822ee3734282c58ba903dbc169f1a8897238ee3226b858650ddf4e",
     "url": "https://www.kaggle.com/api/v1/benchmarks/open-benchmarks/mmlu/leaderboard"
   },
   "0_input/feed/rand/rand_benchmark_scores.csv": {
@@ -645,129 +645,129 @@
     "url": "https://www.rand.org/pubs/research_reports/RRA3797-1.html"
   },
   "0_input/feed/seal/audiomc.html": {
-    "byte_size": 147563,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "649f328b04c6f30b62f0d0fb9464feef26baf95d940e01a7431a64fc01d5d97a",
+    "byte_size": 144094,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "0b4775d3ea13566e579ae27434c71432893c2c26cdf5ea53a5034c9f9602812b",
     "url": "https://labs.scale.com/leaderboard/audiomc"
   },
   "0_input/feed/seal/drugdiscoverybench.html": {
-    "byte_size": 131066,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "e3640c8d94203f6c88be2e8d75aab66fca890a21db6d1a85cf7c92ccc3e6e054",
+    "byte_size": 134241,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "e93267a5502664a56f4fbaa877427c5a733677cb17c53d9a1ecd9851c8734b8b",
     "url": "https://labs.scale.com/leaderboard/drugdiscoverybench"
   },
   "0_input/feed/seal/hil.html": {
-    "byte_size": 137634,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "9efb36be41c0a76be38747111f3ca6eea49f4ec2c4bb43a7c07dc7476d54e7ff",
+    "byte_size": 138497,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "1c81a247948a1db8cb5b9ae15edc5c71893b6411ae218297beb34355261c7872",
     "url": "https://labs.scale.com/leaderboard/hil"
   },
   "0_input/feed/seal/hle-diamond.html": {
-    "byte_size": 116264,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "70eb39a04411ee94b711e7bb246db9efb8b8ce65ad18707957624a36ab35c7f7",
+    "byte_size": 116914,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "93639efb17aa33129e7856b377014f89801d7370ca38f859a5290eca08e0ac69",
     "url": "https://labs.scale.com/leaderboard/hle-diamond"
   },
   "0_input/feed/seal/instruction_following.html": {
-    "byte_size": 116591,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "760f1afafa4c03cef7aaa3397520df69f5158fffc803dfdd7b63a056caef4942",
+    "byte_size": 119064,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "ece920b2f78da9b4988400d00415be064dd5120f1d91023f1db3d0741a762035",
     "url": "https://labs.scale.com/leaderboard/instruction_following"
   },
   "0_input/feed/seal/mcp_atlas.html": {
-    "byte_size": 205810,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "0799e56690e687b63f22854bc936077343844d800753ede0b512cade0bc34321",
+    "byte_size": 204942,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "1af1dbab099d1a22a35ceb7ad9f6b6a7e85054a8757d53a23507aaf81f7c3b49",
     "url": "https://labs.scale.com/leaderboard/mcp_atlas"
   },
   "0_input/feed/seal/multichallenge.html": {
-    "byte_size": 138475,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "9762a2b99cac4250c54adaed8b4fa37362b888189eedcd2d6561ae6460d81057",
+    "byte_size": 148317,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "b32553154f5738597f2f36cc311b16b4829b6b8e374aa6eec6ac7dfcc3adb9ae",
     "url": "https://labs.scale.com/leaderboard/multichallenge"
   },
   "0_input/feed/seal/multinrc.html": {
-    "byte_size": 163176,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "8b363add248317b697c6d9941bcd9ece07fcf4bd205eb654f4419a4c54bb6351",
+    "byte_size": 166600,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "f05c4aea5ab8f21bff3d272cb0b26a4b3868dbc270c0a6c94cc9a2ff24cc3d8a",
     "url": "https://labs.scale.com/leaderboard/multinrc"
   },
   "0_input/feed/seal/prbench-finance.html": {
-    "byte_size": 141212,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "f50b1d3f63379b90e377aaf1f36b094cdd700b851a1fd783588399531f8bbc7d",
+    "byte_size": 139781,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "15bf375c2a2158c01ece84abbc4d06bc14b36a42780b7d797364bb1b8686788b",
     "url": "https://labs.scale.com/leaderboard/prbench-finance"
   },
   "0_input/feed/seal/prbench-legal.html": {
-    "byte_size": 148516,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "2d78c6aafa42fa7e13bac9673f024bd1220f53c4a58d26aab12c3c89ef7b53d0",
+    "byte_size": 149052,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "8b6568ce32b502d96b752c9137783826e0f03db77cd1427c97f708e0cd11a82b",
     "url": "https://labs.scale.com/leaderboard/prbench-legal"
   },
   "0_input/feed/seal/rli.html": {
-    "byte_size": 117943,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "fba272bd4cbb07763084af4e1723fc59c96035f3f65f35f2bf0acfee4e8c3636",
+    "byte_size": 118213,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "b44f3f88333872551b3417c286d8ab6899550a1e195cacad16b0c929a74ee21c",
     "url": "https://labs.scale.com/leaderboard/rli"
   },
   "0_input/feed/seal/swe_bench_pro_private.html": {
-    "byte_size": 149579,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "2c060ff2a7efa0d4a569458c9ff89775219bd6887fbef67fa4b0b10fa6b52961",
+    "byte_size": 151980,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "cee1eee7d7e52b3ce17be4d246887788d4adc7e883392300d17fed2408829ccb",
     "url": "https://labs.scale.com/leaderboard/swe_bench_pro_private"
   },
   "0_input/feed/seal/swe_bench_pro_public.html": {
-    "byte_size": 149579,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "0fbfd8afa19f16288bd260102136a8e91813f733b2c9ebcb1e63112b652224ff",
+    "byte_size": 151980,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "f11128ec0891d9ac14ebd635871e6f828a592ff5ef48931fe365b5fb94f0d208",
     "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
   },
   "0_input/feed/seal/swe_bench_pro_public_v2.html": {
-    "byte_size": 145069,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "0a0083b7e9c93bdd3450c25c9c9ae28e804114377ac05248e9e6c22ebf5cad6f",
+    "byte_size": 144201,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "a725ac626cacd5891d225463ee482fef2a099f8d03266300f7413bb123b4cb2f",
     "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_v2"
   },
   "0_input/feed/seal/sweatlas-qna.html": {
-    "byte_size": 142545,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "67baaf9c2b5721c401ce1e213ed7579ce4a6d00fc70335a1b0f4f9a52367f355",
+    "byte_size": 141569,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "6652150f42dcb9fe231f4a01555ba99b72c17afbf08f0883e661624070cc1056",
     "url": "https://labs.scale.com/leaderboard/sweatlas-qna"
   },
   "0_input/feed/seal/sweatlas-refactoring.html": {
-    "byte_size": 151063,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "9680e8fc4c66a599c536126bb6542f253b455bddb6434ae453dcd3e049d4324c",
+    "byte_size": 150087,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "3190994327ef0df4f05855bfdf61c871b21f8f96aec8cf41047293a53e4f86b8",
     "url": "https://labs.scale.com/leaderboard/sweatlas-refactoring"
   },
   "0_input/feed/seal/sweatlas-tw.html": {
-    "byte_size": 160023,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "6ba973fb3cfc735f1e705da7a99e53ccbd7a4f4e372e3456174d51588f54eded",
+    "byte_size": 159029,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "04019f9c4c6bbd796eb5b41146c97833e30f205dcdc0e7517f6e145d129be3b1",
     "url": "https://labs.scale.com/leaderboard/sweatlas-tw"
   },
   "0_input/feed/seal/tool_use_enterprise.html": {
-    "byte_size": 173277,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "b5997ad569e5bf647b703517bf4ab60763d500bc32e2e73b6394022aebd2a4de",
+    "byte_size": 175696,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "f12b0356b39c038a7da7ac33087599b4e6beca9e42c6d039d7b2193b1c30ac3b",
     "url": "https://labs.scale.com/leaderboard/tool_use_enterprise"
   },
   "0_input/feed/seal/tutorbench.html": {
-    "byte_size": 132209,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "0726d389ec5ba2ab4c45d069be9eb4c1b4b09782a9b22f67d5bf07787ab3a85e",
+    "byte_size": 135633,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "f2937bc5a3fd148aba679b9590cd0d1b7c13ca10c4bc506eb4106b3dfaf6f107",
     "url": "https://labs.scale.com/leaderboard/tutorbench"
   },
   "0_input/feed/seal/visual_language_understanding.html": {
-    "byte_size": 228911,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "f0c79a992ffeafc4f1698a3e82d7a4c3b8e3dd1cefbd56be0c38bda86b854139",
+    "byte_size": 232227,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "4dfc772729d6faa197937ded03ee58852786e6f10001b9a9004d89fb73b8a0fb",
     "url": "https://labs.scale.com/leaderboard/visual_language_understanding"
   },
   "0_input/feed/seal/vtb.html": {
-    "byte_size": 113577,
-    "fetched_at": "2026-10-19T10:24:11.242175+00:00",
-    "sha256": "d1c754df30da5081d9ab565621d447933426cf26c175a4903c187236033fc105",
+    "byte_size": 117001,
+    "fetched_at": "2026-11-01T13:23:49.593390+00:00",
+    "sha256": "6f8461d7a326f9450a73d5dcfb40bc16b403056ca2141f6ab0e15b637d1ed2bd",
     "url": "https://labs.scale.com/leaderboard/vtb"
   }
 }

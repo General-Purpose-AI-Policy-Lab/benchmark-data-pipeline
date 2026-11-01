@@ -4,20 +4,27 @@ gpt-6-astra_max,2951.32,2026-09-03,OpenAI,United States of America,9.4e+26,"per 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",gpt-6-astra-max,2.86415,,60.1042,2.98,57.1242,17.98,recie6OeSzfrEhXOW
 gpt-6.1-sol_max,2743.75,2026-09-29,OpenAI,United States of America,,,gpt-6.1-sol-max,0.596828,,62.5487,2.98,59.5687,42.08,recbQjMjXINIX4xjc
+gpt-6.1-terra_max,2608.82,2026-10-26,OpenAI,United States of America,,,gpt-6.1-terra-max,0.413917,,85.7048,2.98,82.7248,61.27,recHSwa2wuj8rGCoD
 gpt-6-sol_max,2462.0,2026-09-22,OpenAI,United States of America,,,gpt-6-sol-max,0.843984,,87.3183,2.98,84.3383,61.83,receiDDkmha5O2EgZ
 gpt-5.6-sol_max,2176.88,2026-07-09,OpenAI,United States of America,,,gpt-5.6-sol-max,1.534078,,58.6964,8.6708,50.0256,98.33,recB9LSLRE0ygr7gb
 claude-opus-5_high,2164.57,2026-07-24,Anthropic,United States of America,,,claude-opus-5-high,1.890512,,78.9511,4.1632,74.7878,125.35,reczXRrSMMBAUjHxZ
 claude-opus-5-5_high,2147.38,2026-09-22,Anthropic,United States of America,,,claude-opus-5.5-high,0.271178,,16.8911,4.1652,12.7259,115.05,rec2XltGq6LqiHAqJ
 claude-fable-5-1_high,2143.2,2026-09-01,Anthropic,United States of America,,,claude-fable-5.1-high,2.294856,,49.2293,4.1652,45.0641,113.95,recoromAv2aFG1mQC
+gemini-4-argon_high,2100.1,2026-09-30,Google DeepMind,United States of America,,,gemini-4-argon-high,1.949743,,192.6231,113.2951,79.3281,219.28,rec1Zj9NnhZWnpeWx
 claude-fable-5_high,2041.3,2026-06-09,Anthropic,United States of America,,,claude-fable-5-high,2.108822,,45.507,4.1632,41.3438,120.92,recOJYPyImXeBu5y6
 gpt-5.6-terra_max,1951.42,2026-07-09,OpenAI,United States of America,,,gpt-5.6-terra-max,1.254047,,86.4774,2.98,83.4974,155.97,recy6tGLt0oXl5Z3t
 gpt-5.5_xhigh,1942.97,2026-04-23,OpenAI,United States of America,,,gpt-5.5-xhigh,1.517132,,54.0908,3.9703,50.1206,174.53,recvu236lk6eJfew6
+kimi-k3.1-pro_max,1932.75,2026-10-23,Moonshot,China,,,kimi-k3.1-pro-max,0.664453,,68.8948,3.0114,65.8834,178.97,recQfC5gdLA6UCLLC
 claude-sonnet-5-5_high,1819.12,2026-09-28,Anthropic,United States of America,,,claude-sonnet-5.5-high,0.110921,,14.4243,4.1652,10.2591,222.05,recYjibuLhTTZDmIz
+gemini-4-argon_low,1705.4,2026-09-30,Google DeepMind,United States of America,,,gemini-4-argon-low,0.170538,,11.8519,4.1563,7.6956,292.35,rechU0EZO7d9E7amZ
 muse-spark-1.3_xhigh,1688.35,2026-09-02,Meta AI,United States of America,,,muse-spark-1.3-xhigh,0.220853,,68.2232,22.1582,46.0651,257.02,recoUMQ4ZOtgdCB0E
 gpt-5.6-luna_max,1667.4,2026-07-09,OpenAI,United States of America,,,gpt-5.6-luna-max,0.359171,,85.1796,30.0081,55.1714,265.73,rechpIYckpxNmorqX
 gpt-5.3-codex_xhigh,1655.22,2026-02-05,OpenAI,United States of America,,,gpt-5.3-codex-xhigh,0.559265,,49.2862,10.4666,38.8195,260.93,recjPl07t1MvmNgDm
+deepseek-v4.1-flash-1017_max,1622.0,2026-10-17,DeepSeek,China,,A,deepseek-v4.1-flash-1017-max,0.100044,,85.6632,2.9822,82.681,281.02,recmrTBOqivIMzmGy
 gpt-5.4-2026-03-05_high,1607.0,2026-03-05,OpenAI,United States of America,,,gpt-5.4-high,0.612174,,45.4606,5.2245,40.2361,290.27,recJ9Hqsyml44GqRp
+Muse-Spark-Open-816B-A42B_xhigh,1590.12,2026-10-15,Meta AI,United States of America,,,muse-spark-open-xhigh,0.325474,,99.0726,30.8668,68.2057,292.9,recpfB5OsaYt2uwRy
 gpt-5.5_medium,1589.38,2026-04-23,OpenAI,United States of America,,,gpt-5.5-medium,0.328965,,13.7061,2.98,10.7261,277.35,rec8dhBUXYFTQ1qEi
+claude-haiku-5-5_high,1587.0,2026-10-07,Anthropic,United States of America,,,claude-haiku-5.5-high,0.02089,,45.1123,4.1652,40.947,298.75,recxv7Egql7NoCF6X
 gpt-6-luna_xhigh,1576.92,2026-09-22,OpenAI,United States of America,,,gpt-6-luna-xhigh,0.018045,,38.9844,2.98,36.0044,306.98,rec922KTi4fs6PkF3
 claude-opus-4-8_high,1563.83,2026-05-28,Anthropic,United States of America,,,claude-4.8-opus-high,0.963945,,41.8884,4.1632,37.7251,297.35,rec9PMFOTHSfxdEBy
 kimi-k3_max,1524.47,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
@@ -42,7 +49,7 @@ gemini-3.8-flash_high,1269.72,2026-09-02,Google DeepMind,United States of Americ
 gpt-5.2-2025-12-11_medium,1249.83,2025-12-11,OpenAI,United States of America,,,gpt-5.2-medium,0.142947,,13.0739,2.98,10.094,447.05,recVnMSgaT9EDtGvh
 gpt-5.1-codex,1244.92,2025-11-12,OpenAI,United States of America,,,gpt-5.1-codex-high,0.512093,,54.0105,2.98,51.0305,459.32,recAh1GsKfoTx69bz
 mimo-v2.6-flash,1244.2,2026-09-21,Xiaomi Corp,China,,,mimo-v2.6-flash,0.03528,,142.75,27.2159,115.5341,457.38,recvIP49qkTEq798L
-mistral-large-4-0_unknown,1213.15,2026-10-06,Mistral AI,France,,,mistral-large-4,0.456946,,121.609,17.6214,103.9876,451.82,recyIQCyCKeiINnL2
+mistral-large-4-0_unknown,1213.15,2026-10-06,Mistral AI,France,,"""ML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe."", assumed GB200 for hardware field.",mistral-large-4,0.456946,,121.609,17.6214,103.9876,451.82,recyIQCyCKeiINnL2
 gpt-5.1-codex-max,1208.83,2025-11-19,OpenAI,United States of America,,,gpt-5.1-codex-max-high,0.253186,,28.1183,2.98,25.1383,472.6,rechIkCR6I2vgX5ia
 gpt-5.1-2025-11-13_high,1192.15,2025-11-13,OpenAI,United States of America,,"Almost certainly > 1e25
 ",gpt-5.1-thinking,0.315236,,34.3453,2.98,31.3653,495.35,recLNNj0GfqyDx4nk

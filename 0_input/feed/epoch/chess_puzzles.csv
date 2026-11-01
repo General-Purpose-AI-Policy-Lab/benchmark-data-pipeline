@@ -1,5 +1,6 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
-mistral-large-4-0_high,0.33,0.33,2026-10-06,Mistral AI,France,,,0.04725815626252608,,,2026-10-15T22:52:59.000Z,eNdDCt2u6A8mPisK56SApU
+deepseek-v4.1-flash-1017_max,0.46,0.46,2026-10-17,DeepSeek,China,,A,0.05009082659620331,,,2026-10-19T22:39:00.000Z,4sRo7TxavQAsjaEALPZdDy
+mistral-large-4-0_high,0.33,0.33,2026-10-06,Mistral AI,France,,"""ML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe."", assumed GB200 for hardware field.",0.04725815626252608,,,2026-10-15T22:52:59.000Z,eNdDCt2u6A8mPisK56SApU
 gpt-6-astra_promax,0.76,0.76,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
