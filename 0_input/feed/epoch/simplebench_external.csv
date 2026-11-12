@@ -1,5 +1,21 @@
 Model version,Score (AVG@5),Release date,Organization,Country,Training compute (FLOP),Training compute notes,Source,Source link (site from table),Notes,id
-claude-fable-5_max,0.8190000000000001,2026-06-09,Anthropic,United States of America,,,SimpleBench Leaderboard,,,recLu3km4ejdL7kz3
+claude-fable-5-2_unknown,0.9490000000000001,2026-11-09,Anthropic,United States of America,,,https://simple-bench.com/,,,recN3mZP1yRX5gFSK
+gemini-4-carbon_unknown,0.9259999999999999,2026-10-28,Google DeepMind,United States of America,,,https://simple-bench.com/,,,recU9rQyUS6sy1xC5
+gemini-4-argon_unknown,0.917,2026-09-30,Google DeepMind,United States of America,,,https://simple-bench.com/,,,recH0IFVXmo0dBpeA
+claude-opus-5-5_unknown,0.8840000000000001,2026-09-22,Anthropic,United States of America,,,https://simple-bench.com/,,,recuBLiEEJqdQ4TYm
+claude-fable-5-1_unknown,0.866,2026-09-01,Anthropic,United States of America,,,https://simple-bench.com/,,,recbHeicSjfR8H2d0
+gpt-6-astra_promax,0.865,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",https://simple-bench.com/,,,recZjnX501int50tW
+gpt-6-astra_unknown,0.836,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",https://simple-bench.com/,,,recNtHgE8iZAPGIg4
+gpt-6.1-sol_unknown,0.8290000000000001,2026-09-29,OpenAI,United States of America,,,https://simple-bench.com/,,,recbu1fGNsVZBdma4
+gemini-3.8-flash_unknown,0.8240000000000001,2026-09-02,Google DeepMind,United States of America,,,https://simple-bench.com/,,,rec1s8NYuAgJjt2Am
+claude-fable-5_max,0.8190000000000001,2026-06-09,Anthropic,United States of America,,,https://simple-bench.com/,,,recLu3km4ejdL7kz3
+muse-spark-1.3_unknown,0.818,2026-09-02,Meta AI,United States of America,,,https://simple-bench.com/,,,reclm8RIH7ET2FdN3
 claude-opus-5_unknown,0.8059999999999999,2026-07-24,Anthropic,United States of America,,,https://lmcouncil.ai/benchmarks,,,recrn9TfQ9EAU0tm6
 gemini-3.1-pro-preview,0.7959999999999999,2026-02-19,Google DeepMind,United States of America,,,https://lmcouncil.ai/benchmarks,https://simple-bench.com/,,recgewVkDueXvkVnM
 gpt-5.5-pro_unknown,0.7690000000000001,2026-04-23,OpenAI,United States of America,,,https://lmcouncil.ai/benchmarks,https://lmcouncil.ai/benchmarks,,recCDyGH0xqsGV5P3
@@ -7,14 +23,21 @@ gpt-5.5-pro_high,0.7690000000000001,2026-04-23,OpenAI,United States of America,,
 gemini-3.5-flash_unknown,0.767,2026-05-19,Google DeepMind,United States of America,,,SimpleBench Leaderboard,,,recT00msMRRERjlhG
 gemini-3-pro-preview,0.7640000000000001,2025-11-18,Google DeepMind,United States of America,,Almost certainly >1e25,https://lmcouncil.ai/benchmarks,https://simple-bench.com/,,recyUT7yjrhcHvcWI
 grok-4.6_unknown,0.7590000000000001,2026-08-12,xAI,United States of America,,,https://lmcouncil.ai/benchmarks,,,reciU38L8LpB1VoOo
+claude-sonnet-5-5_unknown,0.7590000000000001,2026-09-28,Anthropic,United States of America,,,https://simple-bench.com/,,,recDdRgZsRDtXQXqb
 muse-spark-1.2,0.745,2026-08-05,Meta AI,United States of America,,,https://lmcouncil.ai/benchmarks,,,recS0SvkmpuX3aKKC
 gpt-5.4-pro-2026-03-05_unknown,0.741,2026-03-05,OpenAI,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,reck4FhiJDV2Du9GI
+gpt-6-sol_unknown,0.731,2026-09-22,OpenAI,United States of America,,,https://simple-bench.com/,,,reczB5oDcumqNeXcM
+muse-ember-1.0_unknown,0.7270000000000001,2026-11-09,Meta AI,United States of America,,,https://simple-bench.com/,,,recH7lwILVznjNnn8
+gpt-6.1-terra_unknown,0.7220000000000001,2026-10-26,OpenAI,United States of America,,,https://simple-bench.com/,,,rec3caEgN5SnJHg3a
 gpt-5.6-sol_proxhigh,0.7170000000000001,2026-07-09,OpenAI,United States of America,,,https://lmcouncil.ai/benchmarks,,,recLvVjubvjSAUEPo
 gpt-5.6-sol_prounknown,0.717,2026-07-09,OpenAI,United States of America,,,SimpleBench Leaderboard,,,recF9cVAXsbbbYZfc
 qwen3.7-max,0.7040000000000001,2026-05-19,Alibaba,China,,,SimpleBench Leaderboard,,,recoFFvBl4kIhe27W
 grok-4.5_unknown,0.7000000000000001,2026-07-08,xAI,United States of America,,,https://lmcouncil.ai/benchmarks,,,recvoyWD46brAhdsp
 gpt-5.5_unknown,0.6900000000000001,2026-04-23,OpenAI,United States of America,,,https://lmcouncil.ai/benchmarks,https://lmcouncil.ai/benchmarks,,recjiKXnBPSb5IusO
 claude-opus-4-6,0.6759999999999999,2026-02-05,Anthropic,United States of America,,,https://lmcouncil.ai/benchmarks,https://simple-bench.com/,,rec730nvcPbPg0QuS
+deepseek-v4.1-flash_unknown,0.667,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+",https://simple-bench.com/,,,recFdzAa8rldhig8G
+glm-5.3_unknown,0.662,2026-08-14,Z.ai (Zhipu AI),China,,,https://simple-bench.com/,,,recmRyRxUeQp4iohc
 claude-opus-4-8_unknown,0.648,2026-05-28,Anthropic,United States of America,,,https://lmcouncil.ai/benchmarks,,,rec6BxLe6yXuWZnUJ
 gpt-5.6-sol_unknown,0.648,2026-07-09,OpenAI,United States of America,,,SimpleBench Leaderboard,,,recYPLPHkE9223KxD
 gpt-5.6-sol_xhigh,0.648,2026-07-09,OpenAI,United States of America,,,https://lmcouncil.ai/benchmarks,,,reczyLGkripRzVWw8
@@ -39,6 +62,7 @@ grok-4-0709,0.605,2025-07-09,xAI,United States of America,5.0000000000001e+26,"W
 1.1 * (grok3/1.01) in the low case
 The geometric mean is (rounded to one sig fig): 5e26
 ",https://lmcouncil.ai/benchmarks,https://simple-bench.com/,,reccvzfzhvNO8LxS5
+qwen3.8-27b,0.6020000000000001,2026-08-14,Alibaba,China,,,https://simple-bench.com/,,,recGKd5aF4hPjHL72
 claude-opus-4-1-20250805,0.6,2025-08-05,Anthropic,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,recNq0JntySeETz1j
 claude-opus-4-1-20250805_unknown,0.6,2025-08-05,Anthropic,United States of America,,,SimpleBench Leaderboard,,,reclvi58OvdQ1U4f2
 claude-opus-4-20250514_12K,0.588,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,https://simple-bench.com/,,recCa8wyF9haBALeE
@@ -100,26 +124,22 @@ MiniMax-M3,0.45799999999999996,2026-06-01,MiniMax,China,,,https://lmcouncil.ai/b
 claude-sonnet-4-20250514_12K,0.455,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,https://simple-bench.com/,,recOF5ZoFqZHYxpwD
 claude-sonnet-4-20250514_unknown,0.455,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,,,recAkNOio9nZhF4CL
 claude-3-7-sonnet-20250219,0.449,2025-02-24,Anthropic,United States of America,3.35e+25,https://docs.google.com/spreadsheets/d/10bhwdVrfHI8tysVIz62ZxtvQ30L-HojYvmU18_b-WIM/edit?gid=0#gid=0,SimpleBench Leaderboard,https://simple-bench.com/,,rectGr4imJANQzE34
+nemotron-3-ultra,0.41700000000000004,2026-06-04,Nvidia,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",https://simple-bench.com/,,,recFhnsD5z9KcCyne
 o1-preview-2024-09-12,0.417,2024-09-12,OpenAI,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,rec5At0uBqsEuLVVH
 claude-3-5-sonnet-20241022,0.414,2024-10-22,Anthropic,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,rec55sHDKD0gxxg5R
-gemini-2.5-flash,0.412,2025-06-17,Google DeepMind,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,reciIN7KQ8EiMs6s9
-DeepSeek-R1-0528,0.408,2025-05-28,DeepSeek,China,4.020010000000001e+24,"Estimates by Ege Erdil in Gradient Updates:
-https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1
-""A dataset size of 14.8 trillion tokens is reasonable and in line with other models of this scale. Assuming that’s valid, the pretraining of this model would have required 6 * (37 billion) * (14.8 trillion) = 3e24 FLOP. If we assume DeepSeek’s training cluster consists of H800s with the PCIe form factor, then each should be capable of 1.5e15 FP8 per second, and the implied model FLOP utilization (MFU) of DeepSeek v3’s 55 day training run ends up being around 23%.""
-
-6 FLOP/token/param * 14.8T tokens * 37B active params = 3.29e24 FLOP (pretraining)
-1.2e23 FLOP (post-training)
-6.1e23 FLOP (fine-tuning)
-
-Total compute: 3.29e24 + 1.2e23 + 6.1e23 = 4.02e24",SimpleBench Leaderboard,https://simple-bench.com/,,rec345Y86bjDNWZmV
+gemini-2.5-flash,0.41200000000000003,2025-06-17,Google DeepMind,United States of America,,,https://simple-bench.com/,https://simple-bench.com/,,reciIN7KQ8EiMs6s9
+DeepSeek-R1-0528,0.408,2025-05-28,DeepSeek,China,3.3e+24,"Incremental update on DeepSeek-R1. Presumed to be similar in FLOP cost, if the additional training was post-training/RL instead of continued pre-trianing
+",https://simple-bench.com/,https://simple-bench.com/,,rec345Y86bjDNWZmV
 o1-2024-12-17_high,0.401,2024-12-17,OpenAI,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,rec6j46lH0wCisYVL
-DeepSeek-V3.1,0.4,2025-08-21,DeepSeek,China,3.594058e+24,"This was based on V3 which was trained on 14.8T tokens for a total of 14.8T + 840B = 15.64T pretraining tokens. Adding the FLOPs from continued pretraining onto our estimate for V3, which is 3.4e24 FLOPs, we get 3.4e24 + 1.9e23 = 3.59e24",SimpleBench Leaderboard,https://simple-bench.com/,,recAiu3FFJglQ0FdI
+DeepSeek-V3.1,0.4,2025-08-21,DeepSeek,China,3.594058e+24,"This was based on V3 which was trained on 14.8T tokens for a total of 14.8T + 840B = 15.64T pretraining tokens. Adding the FLOPs from continued pretraining onto our estimate for V3, which is 3.4e24 FLOPs, we get 3.4e24 + 1.9e23 = 3.59e24",https://simple-bench.com/,https://simple-bench.com/,,recAiu3FFJglQ0FdI
+kimi-k2-thinking,0.396,2025-11-06,Moonshot,China,4.2e+24,"Assuming the additional post-training contributed between 1% and 100% of Kimi K2's training compute (which we confidently estimate at 2.976e+24), we get a range of 3.0e24 to 6.0e24, and a geometric mean of 4.2e24.",https://simple-bench.com/,,,recMMGYvS1BurlTri
 o4-mini-2025-04-16_high,0.387,2025-04-16,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",SimpleBench Leaderboard,https://simple-bench.com/,,recodGIOZHwIsosFv
 o1-2024-12-17_medium,0.367,2024-12-17,OpenAI,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,recCGePx18ITu5c6O
 grok-3,0.361,2025-04-09,xAI,United States of America,3.5e+26,"Estimate based on a cluster of 80,000 H100s per the xai website and an estimated training time of approximately three months.
 
 Full estimate here: https://docs.google.com/document/d/1MIUFviULJ3YI_XjyzL8cwG0cBRANKNxVEB4DrUcFiNs/edit?usp=sharing",SimpleBench Leaderboard,https://simple-bench.com/,,recoLH9cFM9CmL37j
-qwen3.6-flash,0.352,2026-04-27,Alibaba,China,,,SimpleBench Leaderboard,,,recPZCSfWzjzM8LFv
+qwen3.6-flash,0.35200000000000004,2026-04-27,Alibaba,China,,,https://simple-bench.com/,,,recPZCSfWzjzM8LFv
+MiniMax-M2.1,0.34700000000000003,2025-12-23,MiniMax,China,,,https://simple-bench.com/,,,recDilca4r9lCPw9d
 gpt-4.5-preview-2025-02-27,0.345,2025-02-27,OpenAI,United States of America,3.8e+26,"Analysis of GPT-4.5's training cluster yields a median estimate of 187M H100-hours of training. The utilization assumptions we used for the Grok 3 estimate (maybe worth revisiting) were 20 to 40% under the H100 FP8 spec of 2000 teraflop/s. This leads to an estimate of 2.7e26 to 5.4e26 FLOP, or a geomean of 3.8e26
 
 Alternatively, using a plausible range of 20 to 50% utilization, given the possibility of FP8 training, yields a median estimate of ~2e25 FLOP. See notebook below for details.
@@ -131,7 +151,9 @@ This is consistent with OpenAI's statement that GPT-4.5 was a “new order of ma
 In the ""Pretraining GPT-4.5"" interview, they state they used multi-cluster training: https://youtu.be/6nJZopACRuQ?si=FFJC-gEmGPZjvoPM&t=617 ",SimpleBench Leaderboard,https://simple-bench.com/,,recNFMYJcGpWOttKB
 gemini-exp-1206,0.311,2024-12-06,"Google DeepMind,Google",United States of America,,"""We used Trillium TPUs to train the new Gemini 2.0, Google’s most capable AI model yet"" according to https://cloud.google.com/blog/products/compute/trillium-tpu-is-ga",SimpleBench Leaderboard,https://simple-bench.com/,,rechDCACKgdAKATMz
 qwen3-235b-a22b,0.31,2025-04-29,Alibaba,China,4.752e+24,6 FLOP / parameter / token * 22*10^9 active parameters * 36000000000000 tokens = 4.752e+24 FLOP,SimpleBench Leaderboard,https://simple-bench.com/,,recZifiu78SQWQAFX
-DeepSeek-R1,0.309,2025-01-20,DeepSeek,China,3.5e+24,"3.29e24 + 1.8e23 = 3.47e24, round to 3.5e24 due to lack of sigfigs",SimpleBench Leaderboard,https://simple-bench.com/,,recVHI1CZTBTCgTmM
+DeepSeek-R1,0.309,2025-01-20,DeepSeek,China,3.3e+24,"Base model is DeepSeek-V3/R1-Zero (3.3e24). Post-training RL FLOP is likely a small fraction (around 2e22 FLOP, or <1%) of base FLOP. https://joshbuild.substack.com/p/deepseek-r1-zeros-rl-training-used 
+
+this supersedes Ege Erdil's earlier estimate that R1's RL cost was around 20% of pre-training, using updated RL hyperparameters disclosed by DeepSeek. R1 used cold-start SFT data from R1-Zero (i.e. it was distilled from R1-Zero), plus additional RL training",SimpleBench Leaderboard,https://simple-bench.com/,,recVHI1CZTBTCgTmM
 gemini-2.0-flash-thinking-exp-01-21,0.307,2025-01-21,"Google DeepMind,Google",United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,Assuming later of two experimental versions,recuXcLAsfUz4Bx9u
 Llama-4-Maverick-17B-128E-Instruct,0.277,2025-04-05,Meta AI,United States of America,2.244000000001e+24,"22T training tokens per model card:
 
@@ -157,8 +179,9 @@ DeepSeek-V3-0324,0.272,2025-03-24,DeepSeek,China,3.3e+24,"6 × 37B × 14.8T = 3.
 https://docs.google.com/document/d/1C4zBvHh4UNnzaorwQSdG61zQJsBV9X3i3A70NeelxHY/edit?usp=sharing",SimpleBench Leaderboard,https://simple-bench.com/,,rec0QIxD9Dbi1PU3M
 gemini-1.5-pro-002,0.271,2024-09-24,Google DeepMind,United States of America,,Training compute imputed to be 1.58e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,SimpleBench Leaderboard,https://simple-bench.com/,,recJPOyD1j4nEFjGF
 gpt-4.1-2025-04-14,0.27,2025-04-14,OpenAI,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,https://simple-bench.com/,,recXeUQqhdaSXasO2
-Kimi-K2-Instruct,0.263,2025-07-12,Moonshot,China,2.976e+24,6 FLOP / parameter / token * 32 * 10^9 activated parameters * 15.5 * 10^12 tokens = 2.976e+24 FLOP,SimpleBench Leaderboard,https://simple-bench.com/,,recX4og5KAbGbOhwv
+Kimi-K2-Instruct,0.263,2025-07-12,Moonshot,China,2.976e+24,6 FLOP / parameter / token * 32 * 10^9 activated parameters * 15.5 * 10^12 tokens = 2.976e+24 FLOP,https://simple-bench.com/,https://simple-bench.com/,,recX4og5KAbGbOhwv
 gpt-4-turbo-2024-04-09,0.251,2024-04-09,OpenAI,United States of America,,Training compute estimated to be 2.2e25 FLOP using benchmark imputation. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,SimpleBench Leaderboard,https://simple-bench.com/,,reczQMtVDyVdqr3Fw
+MiniMax-M2,0.25,2025-10-27,MiniMax,China,,,https://simple-bench.com/,,,recxVHRLkXJD6GQI3
 claude-3-opus-20240229,0.235,2024-02-29,Anthropic,United States of America,,Training compute estimated to be 1.64e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,SimpleBench Leaderboard,https://simple-bench.com/,,reckWZi9nZmUCMK0d
 Llama-3.1-405B-Instruct,0.23,2024-07-23,Meta AI,United States of America,3.8e+25,"Stated in paper.
 
@@ -168,12 +191,13 @@ grok-2-1212,0.227,2024-12-12,xAI,United States of America,2.96e+25,Estimate base
 mistral-large-2407,0.225,2024-07-24,Mistral AI,France,,"[Editor's note: this record previously contained a training compute estimate of ~1e25 FLOP. This is better described as an upper bound instead. See note below for details]
 
 Details are sparse, but we can hazard a guess based on evidence about the training cluster they may have used, the scale up in compute they likely would have used relative to Mistral Large 1, and from the model's MMLU score. Extended reasoning given here: https://docs.google.com/document/d/1I2ZWBLFMpRZYcdMMUfKAGZFJrOJpduNDS9ZeVFIHnd8/edit?usp=sharing",SimpleBench Leaderboard,https://simple-bench.com/,,recqB8MS2LaGRGShV
-gpt-oss-120b,0.221,2025-08-05,OpenAI,United States of America,4.94e+24,"""The training run for gpt-oss-120b required 2.1 million H100-hours to complete""
+gpt-oss-120b,0.22100000000000003,2025-08-05,OpenAI,United States of America,4.94e+24,"""The training run for gpt-oss-120b required 2.1 million H100-hours to complete""
 (2.1e6 hours)*(1,979 H100 FLOP/s)*(30% utilization)*(60*60) = 4.49e24
 They also do post training similar to o3, which we assume adds at least 10% as much compute, so we multiply this estimate by 1.1 to get 4.94e24
 
-",SimpleBench Leaderboard,https://simple-bench.com/,,recFVmMzFAlgDScJC
+",https://simple-bench.com/,https://simple-bench.com/,,recFVmMzFAlgDScJC
 ,0.204,,,,,,SimpleBench Leaderboard,https://simple-bench.com/,mistral-large-3,rec8RsaWnZaNmUTZQ
+mistral-large-2512,0.204,2025-12-02,Mistral AI,France,,,https://simple-bench.com/,,,reco2Wi6RHNekW3kn
 Llama-3.3-70B-Instruct,0.199,2024-12-06,Meta AI,United States of America,6.8649768e+24,"6ND = 6 FLOP / parameter / token * 70*10^9 parameters * 15*10^12 tokens = 6.3e+24 FLOP
 
 7000000 GPU-hours * 3600 sec / hour * 989500000000000 FLOP / second * 0.3 [assumed utilization]= 7.48062e+24 FLOP

@@ -73,15 +73,8 @@ Full estimate here: https://docs.google.com/document/d/1MIUFviULJ3YI_XjyzL8cwG0c
 DeepSeek-V3-0324,55.1,2025-03-24,DeepSeek,China,3.3e+24,"6 × 37B × 14.8T = 3.29e24 pretraining FLOPs, 1e22 posttrainining FLOPs - see doc below
 
 https://docs.google.com/document/d/1C4zBvHh4UNnzaorwQSdG61zQJsBV9X3i3A70NeelxHY/edit?usp=sharing",99.6,diff,1.1164,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,290.0,2025-03-24,recuYSkwNLFezoACW
-DeepSeek-R1-0528,71.4,2025-05-28,DeepSeek,China,4.020010000000001e+24,"Estimates by Ege Erdil in Gradient Updates:
-https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1
-""A dataset size of 14.8 trillion tokens is reasonable and in line with other models of this scale. Assuming that’s valid, the pretraining of this model would have required 6 * (37 billion) * (14.8 trillion) = 3e24 FLOP. If we assume DeepSeek’s training cluster consists of H800s with the PCIe form factor, then each should be capable of 1.5e15 FP8 per second, and the implied model FLOP utilization (MFU) of DeepSeek v3’s 55 day training run ends up being around 23%.""
-
-6 FLOP/token/param * 14.8T tokens * 37B active params = 3.29e24 FLOP (pretraining)
-1.2e23 FLOP (post-training)
-6.1e23 FLOP (fine-tuning)
-
-Total compute: 3.29e24 + 1.2e23 + 6.1e23 = 4.02e24",94.6,diff,4.8016,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,716.6,2025-06-06,recRvk7ngoGy8aCj2
+DeepSeek-R1-0528,71.4,2025-05-28,DeepSeek,China,3.3e+24,"Incremental update on DeepSeek-R1. Presumed to be similar in FLOP cost, if the additional training was post-training/RL instead of continued pre-trianing
+",94.6,diff,4.8016,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,716.6,2025-06-06,recRvk7ngoGy8aCj2
 gemini-2.5-pro-exp-03-25,72.9,2025-03-25,Google DeepMind,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,97.3,diff-fenced,,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,,,recQlPsg6RDQbmeuu
 o4-mini-2025-04-16_high,72.0,2025-04-16,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",90.7,diff,19.6399,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,176.5,2025-04-16,recl9fv7t1P1NNdYa
 o3-2025-04-16_high,81.3,2025-04-16,OpenAI,United States of America,,,94.7,diff,21.2259,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,197.3,2025-06-25,recxVJrYlQfsAsfER
@@ -94,7 +87,9 @@ Qwen2.5-Coder-32B-Instruct,8.0,2024-11-21,Alibaba,China,1.0725e+24,"Assuming 1 e
 6ND = 6*32.5 parameters *10^9*5.5*10^12 tokens = 1.0725e+24",71.6,diff,,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,,,rec59tnsvtbsczej7
 claude-3-5-haiku-20241022,28.0,2024-10-22,Anthropic,United States of America,,,91.1,diff,6.0583,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,31.8,2024-12-21,rec9QQ4Xg51kvPPbz
 gemini-exp-1206,38.2,2024-12-06,"Google DeepMind,Google",United States of America,,"""We used Trillium TPUs to train the new Gemini 2.0, Google’s most capable AI model yet"" according to https://cloud.google.com/blog/products/compute/trillium-tpu-is-ga",98.2,whole,0.0,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,45.5,2024-12-22,recAV1zatcIxsAzWB
-DeepSeek-R1,56.9,2025-01-20,DeepSeek,China,3.5e+24,"3.29e24 + 1.8e23 = 3.47e24, round to 3.5e24 due to lack of sigfigs",96.9,diff,5.4193,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,113.7,2025-01-20,recAxfwG5ZWZpmiDr
+DeepSeek-R1,56.9,2025-01-20,DeepSeek,China,3.3e+24,"Base model is DeepSeek-V3/R1-Zero (3.3e24). Post-training RL FLOP is likely a small fraction (around 2e22 FLOP, or <1%) of base FLOP. https://joshbuild.substack.com/p/deepseek-r1-zeros-rl-training-used 
+
+this supersedes Ege Erdil's earlier estimate that R1's RL cost was around 20% of pre-training, using updated RL hyperparameters disclosed by DeepSeek. R1 used cold-start SFT data from R1-Zero (i.e. it was distilled from R1-Zero), plus additional RL training",96.9,diff,5.4193,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,113.7,2025-01-20,recAxfwG5ZWZpmiDr
 DeepSeek-V3,48.4,2024-12-26,DeepSeek,China,3.3e+24,"6 × 37B × 14.8T = 3.29e24 pretraining FLOPs, 1e22 posttrainining FLOPs - see doc below
 
 https://docs.google.com/document/d/1C4zBvHh4UNnzaorwQSdG61zQJsBV9X3i3A70NeelxHY/edit?usp=sharing",98.7,diff,0.001511111111,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,,,,recDTQzmlxzC9g2Xv

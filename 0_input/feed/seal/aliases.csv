@@ -373,3 +373,19 @@ inkling,Inkling,,,,,,SEAL slug (refresh of 2026-10-19); Epoch's spelling
 muse-spark-open,Muse-Spark-Open-816B-A42B,,,,,,SEAL slug (refresh of 2026-10-19); Epoch's spelling of the open-weights Muse Spark
 muse-wonder-1.0,muse-wonder-1.0,,,,,,SEAL slug (refresh of 2026-10-19); no effort stated
 salesforce-launa-omni-1,launa-omni-1,,,,,,"SEAL slug (refresh of 2026-10-19); Salesforce's model, new to the pipeline"
+claude-fable-5-2,claude-fable-5-2,,,,,,SEAL slug (refresh of 2026-11-12); no effort stated
+Fable 5.2,claude-fable-5-2,,,,,,SEAL display name without the Claude prefix (refresh of 2026-11-12); no effort stated
+Deepseek V4p1 Flash 1017,deepseek-v4.1-flash-1017,,,,,,"SEAL display name, p-spelling (refresh of 2026-11-12; version fireworks_ai/deepseek-v4p1-flash-1017); Epoch's deepseek-v4.1-flash-1017; no effort stated"
+deepseek-v4p1-flash-1017,deepseek-v4.1-flash-1017,,,,,,"SEAL slug, p-spelling (refresh of 2026-11-12); no effort stated"
+Deepseek V4p1 Flash 1017 (mini-swe-agent) xhigh,deepseek-v4.1-flash-1017,xhigh,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (refresh of 2026-11-12)
+Gemini 4 Argon,gemini-4-argon,,,,,,SEAL display name (refresh of 2026-11-12); no effort stated
+Gemini Argon 4,gemini-4-argon,,,,,,"SEAL display name, words swapped (Remote Labor Index, refresh of 2026-11-12); no effort stated"
+Gemini-4-Argon,gemini-4-argon,,,,,,"SEAL display name, hyphenated (MCP Atlas, refresh of 2026-11-12); no effort stated"
+gpt 6.1 Sol,gpt-6.1-sol,,,,,,"SEAL display name, lower-case variant of 'GPT 6.1 Sol' (MultiChallenge, refresh of 2026-11-12); no effort stated"
+GPT 6.1 Terra,gpt-6.1-terra,,,,,,SEAL display name (refresh of 2026-11-12); no effort stated
+gpt-6.1-terra,gpt-6.1-terra,,,,,,SEAL slug (refresh of 2026-11-12); no effort stated
+Inkling 2 Small,inkling-2-small,,,,,,SEAL display name (refresh of 2026-11-12); Epoch's inkling-2-small; no effort stated
+Kimi K3p1 Pro (mini-swe-agent) xhigh,kimi-k3.1-pro,xhigh,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort, p-spelling (refresh of 2026-11-12); Epoch's kimi-k3.1-pro"
+Minimax M3p1 Flash (mini-swe-agent) xhigh,MiniMax-M3.1-Flash,xhigh,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort, p-spelling (refresh of 2026-11-12; version fireworks_ai/minimax-m3p1-flash); new to the pipeline, named after Epoch's MiniMax-M3"
+Muse Spark Open,Muse-Spark-Open-816B-A42B,,,,,,SEAL display name (refresh of 2026-11-12); Epoch's spelling of the open-weights Muse Spark; no effort stated
+Deepseek V4.1 Flash,deepseek-v4.1-flash-1017,,,,,,"SEAL display name without a date (Remote Labor Index, entry created 2026-11-11): read as the 10-17 snapshot, which the boards updated at the same time name explicitly (fireworks_ai/deepseek-v4p1-flash-1017) (user, 2026-11-12); no effort stated"

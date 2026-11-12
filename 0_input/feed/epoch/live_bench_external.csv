@@ -8,7 +8,9 @@ QwQ-32B,71.96,2025-03-05,Alibaba,China,3.51e+24,"Assuming the same dataset size 
 6ND = 6 * 32500000000 parameters * 18 * 10^12 tokens =  3.51 × 10^24
 
 'Speculative' confidence",recExmZmqW7YXYwL6,83.5,72.23,77.82,65.03,51.35,81.83,LiveBench-2024-11-25,LiveBench Leaderboard,https://livebench.ai/#/,,qwq-32b
-DeepSeek-R1,71.57,2025-01-20,DeepSeek,China,3.5e+24,"3.29e24 + 1.8e23 = 3.47e24, round to 3.5e24 due to lack of sigfigs",recmEkG6ZjErNSgmY,83.17,66.74,80.71,69.78,48.53,80.51,LiveBench-2024-11-25,LiveBench Leaderboard,https://livebench.ai/#/,,deepseek-r1
+DeepSeek-R1,71.57,2025-01-20,DeepSeek,China,3.3e+24,"Base model is DeepSeek-V3/R1-Zero (3.3e24). Post-training RL FLOP is likely a small fraction (around 2e22 FLOP, or <1%) of base FLOP. https://joshbuild.substack.com/p/deepseek-r1-zeros-rl-training-used 
+
+this supersedes Ege Erdil's earlier estimate that R1's RL cost was around 20% of pre-training, using updated RL hyperparameters disclosed by DeepSeek. R1 used cold-start SFT data from R1-Zero (i.e. it was distilled from R1-Zero), plus additional RL training",recmEkG6ZjErNSgmY,83.17,66.74,80.71,69.78,48.53,80.51,LiveBench-2024-11-25,LiveBench Leaderboard,https://livebench.ai/#/,,deepseek-r1
 o3-mini-2025-01-31_medium,70.01,2025-01-31,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",recBLQVNF1SQxcRs5,86.33,65.38,72.37,66.56,46.26,83.16,LiveBench-2024-11-25,LiveBench Leaderboard,https://livebench.ai/#/,,o3-mini-2025-01-31-medium
 gpt-4.5-preview-2025-02-27,68.95,2025-02-27,OpenAI,United States of America,3.8e+26,"Analysis of GPT-4.5's training cluster yields a median estimate of 187M H100-hours of training. The utilization assumptions we used for the Grok 3 estimate (maybe worth revisiting) were 20 to 40% under the H100 FP8 spec of 2000 teraflop/s. This leads to an estimate of 2.7e26 to 5.4e26 FLOP, or a geomean of 3.8e26
 

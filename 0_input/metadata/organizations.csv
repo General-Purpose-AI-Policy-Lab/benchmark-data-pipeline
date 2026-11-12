@@ -407,7 +407,7 @@ nemotron-3-ultra,NVIDIA,US
 Nemotron-4 15B,NVIDIA,US
 nova-2.0-pro-preview,Amazon,US
 nova-premier,Amazon,US
-nvidia-nemotron-nano-9b-v2,,
+nvidia-nemotron-nano-9b-v2,NVIDIA,US
 NVILA-8B,"NVIDIA,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University","US,CN"
 o1,OpenAI,US
 o1-mini,OpenAI,US
@@ -582,3 +582,6 @@ yi-lightning,01.AI,CN
 qwen3.8-2.4t-a95b,Alibaba,CN
 claude-mythos-5-1,Anthropic,US
 launa-omni-1,Salesforce,US
+MiniMax-M3.1-Flash,MiniMax,CN
+deepseek-v4.1-flash-1017,DeepSeek,CN
+muse-ember-1.0,Meta AI,US

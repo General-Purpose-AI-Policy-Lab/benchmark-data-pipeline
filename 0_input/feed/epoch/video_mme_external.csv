@@ -45,7 +45,7 @@ claude-3-5-sonnet-20240620,0.6,2024-06-20,Anthropic,United States of America,2.7
 
 Using assumptions about GPU pricing, this lets us estimate compute. https://docs.google.com/spreadsheets/d/1-p-ab6t6dkUM6T7GwnFp85ePTMpZMW7LFY7fW2t8POs/",Claude 3.5 Sonnet,0.629,0.71,0.735,0.574,0.601,0.512,0.547,20.0,,Video-MME Leaderboard,https://video-mme.github.io/home_page.html#leaderboard,recjfbtBgqksInEwl
 claude-3-5-sonnet-20241022,0.6,2024-10-22,Anthropic,United States of America,,,Claude 3.5 Sonnet,0.629,0.71,0.735,0.574,0.601,0.512,0.547,20.0,,Video-MME Leaderboard,,recgtjJXzBCTKdKog
-gpt-4-1106-vision-preview,0.599,2023-11-06,OpenAI,United States of America,,,GPT-4VOpenAI,0.633,0.705,0.732,0.558,0.597,0.535,0.569,10.0,,Video-MME Leaderboard,https://video-mme.github.io/home_page.html#leaderboard,rec0rSn6Z7fJHJWM6
+gpt-4-1106-vision-preview,0.599,2023-11-06,OpenAI,United States of America,,,GPT-4V,0.633,0.705,0.7320000000000001,0.5579999999999999,0.5970000000000001,0.535,0.569,10.0,,https://video-mme.github.io/home_page.html#leaderboard,https://video-mme.github.io/home_page.html#leaderboard,rec0rSn6Z7fJHJWM6
 mPLUG-Owl3-7B-241101,0.593,2024-11-26,,,,,mPLUG-Owl3,0.681,0.7,0.728,0.577,0.669,0.501,0.645,128.0,,Video-MME Leaderboard,https://video-mme.github.io/home_page.html#leaderboard,recLqfawDPsiPdaVY
 TimeMarker,0.573,2024-11-27,,,,,TimeMarker,0.628,0.71,0.758,0.544,0.607,0.464,0.519,128.0,,Video-MME Leaderboard,https://video-mme.github.io/home_page.html#leaderboard,recd1Q3oRJQEjjQds
 VITA-1.5,0.561,2024-12-20,,,,,VITA 1.5,0.587,0.67,0.699,0.542,0.557,0.471,0.504,16.0,,Video-MME Leaderboard,https://video-mme.github.io/home_page.html#leaderboard,recLvOBE3RjvQPOLA

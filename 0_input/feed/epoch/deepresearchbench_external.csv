@@ -53,12 +53,5 @@ gemini-3.1-flash-lite_low,0.373,2026-03-03,Google,United States of America,,,,,h
 gemini-3.1-flash-lite,0.364,2026-03-03,Google,United States of America,,,,,https://evals.futuresearch.ai/#drb,,recOzFMcdH2YxAhUF
 gpt-5.4-mini-2026-03-17_low,0.363,2026-03-17,OpenAI,United States of America,,,,,https://evals.futuresearch.ai/#drb,,recFSLojghJGcBU6X
 gpt-5.4-2026-03-05_low,0.35100000000000003,2026-03-05,OpenAI,United States of America,,,,,https://evals.futuresearch.ai/#drb,,recJ7rkEreGH8afLs
-DeepSeek-R1-0528,0.351,2025-05-28,DeepSeek,China,4.020010000000001e+24,"Estimates by Ege Erdil in Gradient Updates:
-https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1
-""A dataset size of 14.8 trillion tokens is reasonable and in line with other models of this scale. Assuming that’s valid, the pretraining of this model would have required 6 * (37 billion) * (14.8 trillion) = 3e24 FLOP. If we assume DeepSeek’s training cluster consists of H800s with the PCIe form factor, then each should be capable of 1.5e15 FP8 per second, and the implied model FLOP utilization (MFU) of DeepSeek v3’s 55 day training run ends up being around 23%.""
-
-6 FLOP/token/param * 14.8T tokens * 37B active params = 3.29e24 FLOP (pretraining)
-1.2e23 FLOP (post-training)
-6.1e23 FLOP (fine-tuning)
-
-Total compute: 3.29e24 + 1.2e23 + 6.1e23 = 4.02e24",,,DeepResearchBench Leaderboard,https://drb.futuresearch.ai,rec8Lh9Jnh2v0o4mA
+DeepSeek-R1-0528,0.351,2025-05-28,DeepSeek,China,3.3e+24,"Incremental update on DeepSeek-R1. Presumed to be similar in FLOP cost, if the additional training was post-training/RL instead of continued pre-trianing
+",,,DeepResearchBench Leaderboard,https://drb.futuresearch.ai,rec8Lh9Jnh2v0o4mA

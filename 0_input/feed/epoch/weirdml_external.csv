@@ -151,15 +151,8 @@ gpt-oss-120b_medium,0.41880000000000006,2025-08-05,OpenAI,United States of Ameri
 They also do post training similar to o3, which we assume adds at least 10% as much compute, so we multiply this estimate by 1.1 to get 4.94e24
 
 ",0.011485011176470588,196.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.0001318182235022303,recwbp07k8ku0pbh5
-DeepSeek-R1-0528,0.41630000000000006,2025-05-28,DeepSeek,China,4.020010000000001e+24,"Estimates by Ege Erdil in Gradient Updates:
-https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1
-""A dataset size of 14.8 trillion tokens is reasonable and in line with other models of this scale. Assuming that’s valid, the pretraining of this model would have required 6 * (37 billion) * (14.8 trillion) = 3e24 FLOP. If we assume DeepSeek’s training cluster consists of H800s with the PCIe form factor, then each should be capable of 1.5e15 FP8 per second, and the implied model FLOP utilization (MFU) of DeepSeek v3’s 55 day training run ends up being around 23%.""
-
-6 FLOP/token/param * 14.8T tokens * 37B active params = 3.29e24 FLOP (pretraining)
-1.2e23 FLOP (post-training)
-6.1e23 FLOP (fine-tuning)
-
-Total compute: 3.29e24 + 1.2e23 + 6.1e23 = 4.02e24",0.07106829941176471,174.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00015420663260519693,recLmo6NcvCM4Ye7a
+DeepSeek-R1-0528,0.41630000000000006,2025-05-28,DeepSeek,China,3.3e+24,"Incremental update on DeepSeek-R1. Presumed to be similar in FLOP cost, if the additional training was post-training/RL instead of continued pre-trianing
+",0.07106829941176471,174.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00015420663260519693,recLmo6NcvCM4Ye7a
 Qwen3-Coder-480B-A35B-Instruct,0.4117,2025-07-31,Alibaba,China,1.575e+24,6 FLOP / parameter / token * 35 * 10^9 active parameters * 7.5 * 10^12 tokens = 1.575e+24 FLOP`,0.07259235294117648,174.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,9.552690607848418e-05,recA6D3LkM2OuG2TH
 Qwen3-235B-A22B-Thinking-2507,0.4104,2025-07-25,Alibaba,China,4.752e+24,6 FLOP / parameter / token * 22*10^9 active parameters * 36000000000000 tokens = 4.752e+24 FLOP,0.01989473141,127.0,,WeirdML Leaderboard,https://htihle.github.io/weirdml.html,,rec1XWGoYSV4OlC8J
 gemini-2.5-flash-preview-04-17 (16K thinking),0.40950000000000003,2025-04-17,Google DeepMind,United States of America,,,0.10585353676470587,184.0,,WeirdML Leaderboard,,0.0001555094264147071,recgBmYMNvK9ubOYp
@@ -209,7 +202,9 @@ gpt-oss-20b_medium,0.3683,2025-08-05,OpenAI,United States of America,5.49e+23,""
 million H100-hours to complete, with gpt-oss-20b needing almost 10x fewer""
 assuming ""almost 10x fewer"" means ~9x fewer: 4.94e24/9 = 5.49e23",0.0038062152941176477,155.5,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00013480181366483192,recfATNb3nYbAeRBC
 Kimi-K2-Instruct-0905,0.3668,2025-09-05,Moonshot,China,2.976e+24,6 FLOP / parameter / token * 32 * 10^9 activated parameters * 15.5 * 10^12 tokens = 2.976e+24 FLOP,0.04181978350515465,211.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00015131549735094337,rec5rZXinvvAnv0LQ
-DeepSeek-R1,0.3649,2025-01-20,DeepSeek,China,3.5e+24,"3.29e24 + 1.8e23 = 3.47e24, round to 3.5e24 due to lack of sigfigs",0.07850552000000001,121.5,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00010907363270026519,recWpIUcWCiiJjsuv
+DeepSeek-R1,0.3649,2025-01-20,DeepSeek,China,3.3e+24,"Base model is DeepSeek-V3/R1-Zero (3.3e24). Post-training RL FLOP is likely a small fraction (around 2e22 FLOP, or <1%) of base FLOP. https://joshbuild.substack.com/p/deepseek-r1-zeros-rl-training-used 
+
+this supersedes Ege Erdil's earlier estimate that R1's RL cost was around 20% of pre-training, using updated RL hyperparameters disclosed by DeepSeek. R1 used cold-start SFT data from R1-Zero (i.e. it was distilled from R1-Zero), plus additional RL training",0.07850552000000001,121.5,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00010907363270026519,recWpIUcWCiiJjsuv
 o1-mini-2024-09-12_medium,0.3632,2024-09-12,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",0.11127495238095236,156.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00014606121859779935,rec9nHByk40IO0MOR
 DeepSeek-V3-0324,0.3608,2025-03-24,DeepSeek,China,3.3e+24,"6 × 37B × 14.8T = 3.29e24 pretraining FLOPs, 1e22 posttrainining FLOPs - see doc below
 
