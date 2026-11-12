@@ -786,7 +786,7 @@
     "0_input/feed/seal/aliases.csv": "dbb3d8e8240f8cef481b0611c8b8c55df5060ad980d39c73ea6d1660d50e0ad1",
     "0_input/metadata/benchmark_release_dates.csv": "30f025864b1051f29f160c7c837a1aeb87c0e778307c4c219ef4c76575c8ab0a",
     "0_input/metadata/benchmarks.csv": "209c67bdc610c2dd9c04119044646175c3693f4ef6062e1702a1e67bce1ac78f",
-    "0_input/metadata/human_baselines.csv": "3a30fd3d403fb06e32f30a6bcb332086ccfe50518f84cc87d493248a78ff82da",
+    "0_input/metadata/human_baselines.csv": "42607e4d5f2fb3e5147dc4320b2343aa86dc01ca3f2a444ccec476412774acca",
     "0_input/metadata/organizations.csv": "c7f04c66891fc74ee1127d8f4f006a6bc3870eedc4f3e89a776358116444cda9",
     "0_input/metadata/release_dates.csv": "24aaecf06f4d51154fcbf2e56a3e8c2c3461a86e791e8aa95a3e5b7587710470",
     "0_input/metadata/score_corrections.csv": "1b26d1210c06316b7a88922d677db62b241f10243e7792167e5ea3a32e092f0d",
@@ -798,8 +798,13 @@
     "models.csv": 988,
     "benchmarks.csv": 107,
     "scores.csv": 5588,
-    "human_baselines.csv": 57,
+    "human_baselines.csv": 56,
     "model_names.csv": 1868,
     "excluded_benchmarks.csv": 49
+  },
+  "patched": {
+    "at": "2026-10-21T16:35:19+02:00",
+    "git_commit": "bd4c3c1",
+    "what": "human_baselines.csv (database and view) regenerated from the metadata of bd4c3c1: the SimpleQA Verified row withdrawn. Scores, models and benchmarks not rebuilt: the SEAL pages of the 2026-10-19 refresh are not on disk; the human tables do not depend on them."
   }
 }
