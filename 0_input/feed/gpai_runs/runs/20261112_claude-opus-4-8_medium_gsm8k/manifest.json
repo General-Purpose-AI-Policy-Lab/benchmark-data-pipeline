@@ -1,0 +1,98 @@
+{
+  "run_id": "20261112_claude-opus-4-8_medium_gsm8k",
+  "purpose": "Commonsense campaign (2026-11-12): no model released after 2024 had a score on OpenBookQA, ARC AI2, HellaSwag, PIQA, WinoGrande or GSM8K, the benchmarks that dominate the commonsense axis of the Multiaxis_ECI K=4 flagship. Claude models released from November 2025 to October 2026 are measured on them, one epoch, with promotional API credits expiring 2026-11-16.",
+  "operator": "GPAI Policy Lab (Claude Code session for J. Andreoletti)",
+  "audit": "Automated audit (2026-11-12): stop reasons, API refusals, cut answers, answers with no number; the wrong answers were read: each ends with an ANSWER line whose number differs from the target.",
+  "model": [
+    "claude-opus-4-8"
+  ],
+  "requested_model": "claude-opus-4-8",
+  "regime": "medium",
+  "request_params": {
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "adaptive"
+    },
+    "output_config": {
+      "effort": "medium"
+    },
+    "api": "Anthropic Messages API",
+    "other": "provider defaults (no temperature, top_p, system prompt)"
+  },
+  "protocol": {
+    "reference": "RAND RR-A3797-1 (Dev et al. 2025), chapter 2, appendices B and D",
+    "solver": "inspect_ai multiple_choice(), single-answer template, no CoT, no few-shot",
+    "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
+    "open_numeric": {
+      "benchmarks": [
+        "GSM8K"
+      ],
+      "template": "Solve the following math problem step by step. The last line of your response should be of the form \"ANSWER: $ANSWER\" (without quotes) where $ANSWER is the answer to the problem.\n\n{prompt}\n\nRemember to put your answer on its own line at the end in the form \"ANSWER: $ANSWER\" (without quotes) where $ANSWER is the answer to the problem, and you do not need to use a \\boxed command.\n\nReasoning:",
+      "solver": "inspect_evals gsm8k task, fewshot=0 (commit 50b8b19)",
+      "parser": "parse_number: inspect_ai match(numeric=True), commit 55e9344"
+    },
+    "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
+    "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "missing_imputation": {},
+    "truncated_calls": [],
+    "notes": {
+      "gsm8k": "Not one of RAND's benchmarks, and not multiple choice: the answer is a number. Test split of the main configuration (1,319), the prompt of inspect_evals' gsm8k task (commit 50b8b19: 'Solve the following math problem step by step', the answer on a last ANSWER line) with no few-shot example (the task's default is 10), so the model reasons in its visible answer whatever the thinking regime. Scored like Inspect's match(numeric=True): the last number of the completion against the number after '####' (score_inspect_strict); the score reads that number on the last ANSWER line when there is one, and takes the target when it is one of the numbers written there ('225 minutes (3 hours and 45 minutes)', '6th place', '2:00 PM')."
+    }
+  },
+  "datasets": {
+    "GSM8K": {
+      "loader": "gsm8k",
+      "subset": "main/test",
+      "n_items": 1319
+    }
+  },
+  "files": {
+    "openai/gsm8k/main/test-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/cc7b047b6e5bb11b4f1af84efc572db110a51b3c/main/test-00000-of-00001.parquet",
+      "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59"
+    }
+  },
+  "transcripts_password": "deserted-untie-orchid",
+  "n_samples": 1319,
+  "started": "2026-11-12T14:17:29+00:00",
+  "tokens": {
+    "input": 298998,
+    "output": 191603
+  },
+  "software": {
+    "script": "evals/rand_protocol.py",
+    "script_sha256": "c29d6e913065c2e7601d949b4f0dab6dfb69a43a27f2d29842906343823610c9",
+    "anthropic": "1.13.0",
+    "pandas": "3.0.6",
+    "python": "3.13.5"
+  },
+  "output_files": {
+    "samples.csv": "74828047d1d35b8d525d26c4a1b51af42fec923489be488cd0058c13ecba2c5d",
+    "transcripts.zip": "c07d26449caeb0091c465e7ffb93ff07e444840e89c0414b90a13fbfa749b047"
+  },
+  "results": {
+    "GSM8K": {
+      "score": 0.972707,
+      "stderr": 0.004488,
+      "n_items": 1319,
+      "n_epochs": 1,
+      "score_by_epoch": {
+        "0": 0.972707
+      },
+      "score_refusals_wrong": 0.972707,
+      "stop_reasons": {
+        "end_turn": 1319
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.951478,
+      "n_normalised": 28,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
+      "visible_reasoning_share": 1.0
+    }
+  },
+  "excluded_from_scores": {}
+}

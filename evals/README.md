@@ -52,6 +52,28 @@ chapter 2 and appendices B and D), so that a new row is on the same footing as R
   `high_school_biology` + `virology` (536) and `high_school_chemistry` (230), all three splits:
   only those match RAND's counts.
 
+**Commonsense benchmarks (campaign of 2026-11-12).** The same template, parser and shuffle also
+run OpenBookQA (test, 500), ARC AI2 (ARC-Challenge test, 1,172), HellaSwag (validation, 10,042),
+PIQA (validation, 1,838) and WinoGrande (xl validation, 1,267), on which no model released after
+2024 had a score; one epoch, since the sets are large. They are not RAND's benchmarks, and older
+rows of these benchmarks in other feeds were mostly measured few-shot or by log-likelihood, not
+with this template. GSM8K (test, 1,319), whose answer is a number, uses the prompt of
+inspect_evals' `gsm8k` task (commit `50b8b19`: "step by step", the answer on a last `ANSWER:`
+line) with no few-shot example, so the model reasons in its visible answer whatever the thinking
+regime. Its answer is read on the last `ANSWER:` line and counts when the target is one of the
+numbers written there (`225 minutes (3 hours and 45 minutes)`, `6th place`, `2:00 PM`);
+Inspect's `match(numeric=True)`, which takes the last number of the completion, stays in the
+manifest as `score_inspect_strict`. Reading the wrong answers of the strongest runs shows label
+noise on all six (wrong or ambiguous gold answers; on HellaSwag nearly all in its ActivityNet
+half): about 1 point of each score, so a practical ceiling near 0.98-0.99. The published gold
+labels are kept, as every other score of these benchmarks uses them.
+
+A call refused by the API's safety layer can be run again (`run --retry-refusals N`, up to N
+times each until it is answered; every attempt is kept in `<log>.superseded.jsonl`). In this
+campaign the refusals did not yield: the same questions were refused five more times in every
+run concerned (HellaSwag row 6425 for Sonnet 5.5 and Opus 5.5, WinoGrande rows 401 and 402 for
+Haiku 5.5 and Opus 4.8).
+
 Where the reproduction is less certain (kept in each manifest under `protocol.notes`): RAND wrote
 its own LAB-Bench formatting without publishing it (here the ideal answer plus the distractors,
 the protocol above the question for ProtocolQA), and it reports using Inspect's existing MMLU and

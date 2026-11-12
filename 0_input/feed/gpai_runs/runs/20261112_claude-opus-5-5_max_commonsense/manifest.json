@@ -1,0 +1,253 @@
+{
+  "run_id": "20261112_claude-opus-5-5_max_commonsense",
+  "purpose": "Commonsense campaign (2026-11-12): no model released after 2024 had a score on OpenBookQA, ARC AI2, HellaSwag, PIQA, WinoGrande or GSM8K, the benchmarks that dominate the commonsense axis of the Multiaxis_ECI K=4 flagship. Claude models released from November 2025 to October 2026 are measured on them, one epoch, with promotional API credits expiring 2026-11-16.",
+  "operator": "GPAI Policy Lab (Claude Code session for J. Andreoletti)",
+  "audit": "Automated audit of every cell (2026-11-12): stop reasons, API refusals, answers cut by max_tokens, unparsed answers; no API error. Every answer written with an explanation ends with an ANSWER line and is parsed from it. The 101 questions the four Sonnet 5.5 / Opus 5.5 runs miss with the same choice were read: many carry a wrong or ambiguous gold label (HellaSwag: 58 of 59 come from its ActivityNet half, where several endings are plausible); the published gold labels are kept. Calls refused by the API's safety layer or cut at max_tokens are missing, not wrong; refusals written in words and unparsed answers are scored wrong.",
+  "history": [
+    "The 62 calls cut at 16,000 tokens and the refused call were run again on 2026-11-12 at 32,000 tokens (run --retry-truncated --max-tokens 32000 --retry-refusals 5): 60 answered (34 correct), 2 cut again, HellaSwag row 6425 (category cyber) refused 5 more times; the superseded rows stay in the raw log's .superseded.jsonl."
+  ],
+  "model": [
+    "claude-opus-5-5"
+  ],
+  "requested_model": "claude-opus-5-5",
+  "regime": "max",
+  "request_params": {
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "adaptive"
+    },
+    "output_config": {
+      "effort": "max"
+    },
+    "api": "Anthropic Messages API",
+    "other": "provider defaults (no temperature, top_p, system prompt)"
+  },
+  "protocol": {
+    "reference": "RAND RR-A3797-1 (Dev et al. 2025), chapter 2, appendices B and D",
+    "solver": "inspect_ai multiple_choice(), single-answer template, no CoT, no few-shot",
+    "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
+    "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
+    "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "missing_imputation": {
+      "HellaSwag": {
+        "n_missing_calls": 3,
+        "n_missing_items": 3,
+        "methods": {
+          "rasch": 3
+        },
+        "mean_credit_missing": 0.8322,
+        "theta": 1.7856,
+        "accuracy_answered": 0.9721,
+        "reference_runs": [
+          "20261112_claude-haiku-5-5_max_commonsense",
+          "20261112_claude-haiku-5-5_medium_commonsense",
+          "20261112_claude-haiku-5-5_none_commonsense",
+          "20261112_claude-opus-4-5-20251101_none_commonsense",
+          "20261112_claude-opus-4-6_none_commonsense",
+          "20261112_claude-opus-5-5_medium_commonsense",
+          "20261112_claude-sonnet-5-5_high_commonsense",
+          "20261112_claude-sonnet-5-5_max_commonsense"
+        ]
+      }
+    },
+    "truncated_calls": [
+      {
+        "subset": "HellaSwag",
+        "record_id": "hellaswag-val-1257",
+        "epoch": 0,
+        "max_tokens": 32000
+      },
+      {
+        "subset": "HellaSwag",
+        "record_id": "hellaswag-val-7032",
+        "epoch": 0,
+        "max_tokens": 32000
+      }
+    ],
+    "notes": {
+      "arc": "Not one of RAND's benchmarks: the appendix-D template, parser and shuffle are applied to it as to the others. ARC-Challenge test split (1,172): the question and its three to five choices, relabelled A to E.",
+      "hellaswag": "Not one of RAND's benchmarks: the appendix-D template, parser and shuffle are applied to it as to the others. Validation split (10,042): 'Choose the most plausible continuation for the story.' above the context, the four endings as choices (the instruction of inspect_evals' task, placed in the question since no system prompt is sent).",
+      "openbookqa": "Not one of RAND's benchmarks: the appendix-D template, parser and shuffle are applied to it as to the others. The question stem and its four choices, test split of the main configuration (500), no supporting fact given.",
+      "piqa": "Not one of RAND's benchmarks: the appendix-D template, parser and shuffle are applied to it as to the others. Validation split (1,838): 'Choose the most appropriate solution to achieve the goal.' above 'Goal: ...', the two solutions as choices.",
+      "winogrande": "Not one of RAND's benchmarks: the appendix-D template, parser and shuffle are applied to it as to the others. winogrande_xl validation split (1,267): 'Choose the option that best replaces [BLANK] in the sentence.' above the sentence with its blank written [BLANK], the two options as choices."
+    }
+  },
+  "datasets": {
+    "ARC AI2": {
+      "loader": "arc",
+      "subset": "ARC-Challenge/test",
+      "n_items": 1172
+    },
+    "HellaSwag": {
+      "loader": "hellaswag",
+      "subset": "data/validation",
+      "n_items": 10042
+    },
+    "OpenBookQA": {
+      "loader": "openbookqa",
+      "subset": "main/test",
+      "n_items": 500
+    },
+    "PIQA": {
+      "loader": "piqa",
+      "subset": "piqa_validation",
+      "n_items": 1838
+    },
+    "WinoGrande": {
+      "loader": "winogrande",
+      "subset": "winogrande_xl/validation",
+      "n_items": 1267
+    }
+  },
+  "files": {
+    "Rowan/hellaswag/data/validation-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/data/validation-00000-of-00001.parquet",
+      "sha256": "899813071e1e95efafec90f856e1987d2150fa4d020fc005df6962c259f660cd"
+    },
+    "allenai/ai2_arc/ARC-Challenge/test-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Challenge/test-00000-of-00001.parquet",
+      "sha256": "62f03257e737aed263f55c6abf87c7bb0028a44a6bdd2a26eb1279eb42c1d1e9"
+    },
+    "allenai/openbookqa/main/test-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/allenai/openbookqa/resolve/388097ea7776314e93a529163e0fea805b8a6454/main/test-00000-of-00001.parquet",
+      "sha256": "cd5483e366daa230c1c87bbdc512d8b7229f14f6dd04d19fc8b1a3855aaaa8a3"
+    },
+    "allenai/winogrande/winogrande_xl/validation-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/allenai/winogrande/resolve/01e74176c63542e6b0bcb004dcdea22d94fb67b5/winogrande_xl/validation-00000-of-00001.parquet",
+      "sha256": "f9d914d1818c0aba98cabdf8af2bc4bd943c462b9c5e7062647e05c2ce3315d1"
+    },
+    "baber/piqa/piqa_validation.parquet": {
+      "url": "https://huggingface.co/datasets/baber/piqa/resolve/142f6d7367fd9877f0fb3b5734ea6a545f54cdd1/piqa_validation.parquet",
+      "sha256": "2b17ee1215b1ceb2ddabf4c90a05c5a8b833bef9d207960f57d111c43a2080f3"
+    }
+  },
+  "transcripts_password": "deserted-untie-orchid",
+  "n_samples": 14819,
+  "started": "2026-11-12T11:46:28+00:00",
+  "tokens": {
+    "input": 4265738,
+    "output": 5450350
+  },
+  "software": {
+    "script": "evals/rand_protocol.py",
+    "script_sha256": "c29d6e913065c2e7601d949b4f0dab6dfb69a43a27f2d29842906343823610c9",
+    "anthropic": "1.13.0",
+    "pandas": "3.0.6",
+    "python": "3.13.5"
+  },
+  "output_files": {
+    "samples.csv": "3b091851be538cc046ecd0ca5293e5bcd424d0e8e827ff0bf54aad43c5f8fcb1",
+    "transcripts.zip": "9b751d51556080284d8da39766945d85d0952362c297a151ae5b1eaec7454144"
+  },
+  "results": {
+    "ARC AI2": {
+      "score": 0.985495,
+      "stderr": 0.003494,
+      "n_items": 1172,
+      "n_epochs": 1,
+      "score_by_epoch": {
+        "0": 0.985495
+      },
+      "score_refusals_wrong": 0.985495,
+      "stop_reasons": {
+        "end_turn": 1172
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.985495,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
+      "visible_reasoning_share": 0.0
+    },
+    "HellaSwag": {
+      "score": 0.972067,
+      "stderr": 0.001644,
+      "n_items": 10042,
+      "n_epochs": 1,
+      "score_by_epoch": {
+        "0": 0.972067
+      },
+      "score_refusals_wrong": 0.971818,
+      "stop_reasons": {
+        "end_turn": 10039,
+        "max_tokens": 2,
+        "refusal": 1
+      },
+      "n_unparsed": 3,
+      "score_inspect_strict": 0.971818,
+      "n_normalised": 0,
+      "n_refusals": 1,
+      "refusal_share": 0.0001,
+      "n_truncated": 2,
+      "missing_share": 0.0003,
+      "visible_reasoning_share": 0.003
+    },
+    "OpenBookQA": {
+      "score": 0.996,
+      "stderr": 0.002826,
+      "n_items": 500,
+      "n_epochs": 1,
+      "score_by_epoch": {
+        "0": 0.996
+      },
+      "score_refusals_wrong": 0.996,
+      "stop_reasons": {
+        "end_turn": 500
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.996,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
+      "visible_reasoning_share": 0.0
+    },
+    "PIQA": {
+      "score": 0.98259,
+      "stderr": 0.003052,
+      "n_items": 1838,
+      "n_epochs": 1,
+      "score_by_epoch": {
+        "0": 0.98259
+      },
+      "score_refusals_wrong": 0.98259,
+      "stop_reasons": {
+        "end_turn": 1838
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.98259,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
+      "visible_reasoning_share": 0.004
+    },
+    "WinoGrande": {
+      "score": 0.980268,
+      "stderr": 0.003909,
+      "n_items": 1267,
+      "n_epochs": 1,
+      "score_by_epoch": {
+        "0": 0.980268
+      },
+      "score_refusals_wrong": 0.980268,
+      "stop_reasons": {
+        "end_turn": 1267
+      },
+      "n_unparsed": 0,
+      "score_inspect_strict": 0.980268,
+      "n_normalised": 0,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "n_truncated": 0,
+      "missing_share": 0.0,
+      "visible_reasoning_share": 0.005
+    }
+  },
+  "excluded_from_scores": {}
+}
