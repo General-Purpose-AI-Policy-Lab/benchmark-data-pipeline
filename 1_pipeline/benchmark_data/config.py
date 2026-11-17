@@ -116,11 +116,13 @@ RUN_VARIANTS = frozenset({"", "thinking"})
 # ("Claude Opus 4.6 (no thinking)"), so for these bases `_unknown` is variant `thinking` and the
 # bare name effort `none` (`identity.hybrid_mode`). Third-party rows of unknown mode (system cards,
 # agent harnesses) keep the bare name.
+# Claude Fable 5 and 5.1 and Claude Opus 5.5 are not in the list (user, 2026-11-17): their thinking
+# cannot be turned off, so a bare name is a run of unknown effort like `_unknown`, never a run
+# without thinking (their `_none` and `_thinking` identities were artefacts of this convention).
 CLAUDE_HYBRID_BASES = frozenset({
     "claude-3-7-sonnet", "claude-sonnet-4", "claude-opus-4", "claude-opus-4-1", "claude-sonnet-4-5",
     "claude-haiku-4-5", "claude-opus-4-5", "claude-opus-4-6", "claude-opus-4-7", "claude-opus-4-8",
-    "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5", "claude-opus-5-5", "claude-fable-5",
-    "claude-fable-5-1",
+    "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5",
 })
 
 # `status` values in benchmarks.csv. Only `included` rows reach the database.

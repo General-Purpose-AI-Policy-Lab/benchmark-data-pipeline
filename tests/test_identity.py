@@ -113,3 +113,15 @@ def test_machine_name_keeps_named_variants_apart():
     assert machine_name({**base, "variant": "chat"}) == "gpt-5-2025-08-07_chat"
     cyber = {**base, "base_model": "gpt-5.5", "snapshot": "", "variant": "Cyber"}
     assert machine_name(cyber) == "gpt-5.5_cyber"
+
+
+def test_models_whose_thinking_cannot_be_turned_off_are_not_hybrid():
+    """Claude Fable 5 / 5.1 and Claude Opus 5.5 always think: a bare name is not a run without
+    thinking, and `_unknown` is the bare identity like any other model's."""
+    from benchmark_data import config
+    from benchmark_data.identity import hybrid_mode
+    for base in ("claude-fable-5", "claude-fable-5-1", "claude-opus-5-5"):
+        assert base not in config.CLAUDE_HYBRID_BASES
+        assert hybrid_mode(base, config.CLAUDE_HYBRID_BASES) == ""
+        assert hybrid_mode(base + "_unknown", config.CLAUDE_HYBRID_BASES) == ""
+    assert hybrid_mode("claude-opus-5", config.CLAUDE_HYBRID_BASES) == "none"
