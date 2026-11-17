@@ -99,3 +99,4 @@ gemma-4-E4B-it,,,2026-04-02,https://huggingface.co/google/gemma-4-E4B-it/commits
 gemma-4-E2B-it,,,2026-04-02,https://huggingface.co/google/gemma-4-E2B-it/commits/main,Same launch and same sources as gemma-4-E4B-it. Checked on 2026-11-17.
 ministral-8b-2512,,,2025-12-02,https://mistral.ai/news/mistral-3,"Mistral 3 announcement with the Ministral 3 series (3B, 8B, 14B), 2025-12-02 (refresh of 2026-11-17)."
 ministral-3b-2512,,,2025-12-02,https://mistral.ai/news/mistral-3,Same announcement as ministral-8b-2512 (refresh of 2026-11-17).
+gemini-2.5-pro-preview-05-06,,,2025-05-06,https://ai.google.dev/gemini-api/docs/changelog,"Google's API changelog, May 6, 2025: ""Released gemini-2.5-pro-preview-05-06"". Needed since the ARC Prize 1K run filed by Epoch under the 06-05 preview was moved to this model (third pass): it kept the date of Epoch's row, 2025-06-05, while the model's other identities were dated 05-06 (review of the corrections, 2026-11-18)."
