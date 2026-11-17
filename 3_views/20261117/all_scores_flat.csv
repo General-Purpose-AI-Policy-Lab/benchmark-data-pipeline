@@ -200,6 +200,7 @@ claude-opus-5-5_max,0.985495,2026-09-22,Anthropic,ARC AI2,0.003494,GPAI Policy L
 claude-opus-5-5_medium,0.985495,2026-09-22,Anthropic,ARC AI2,0.003494,GPAI Policy Lab run 20261112_claude-opus-5-5_medium_commonsense (1 epochs x 1172 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_medium_commonsense,gpai_runs,Domain Specific Questions,0.25,
 claude-sonnet-5-5_high,0.982082,2026-09-28,Anthropic,ARC AI2,0.003877,GPAI Policy Lab run 20261112_claude-sonnet-5-5_high_commonsense (1 epochs x 1172 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_high_commonsense,gpai_runs,Domain Specific Questions,0.25,
 claude-sonnet-5-5_max,0.986332,2026-09-28,Anthropic,ARC AI2,0.003391,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 1172 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense,gpai_runs,Domain Specific Questions,0.25,
+davinci,0.532,2020-06-11,OpenAI,ARC AI2,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,epoch,Domain Specific Questions,0.25,
 deepseek-coder-1.3b-base,0.254,2023-11-02,"DeepSeek,Peking University",ARC AI2,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 deepseek-coder-33b-base,0.422,2023-11-02,"DeepSeek,Peking University",ARC AI2,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 deepseek-coder-6.7b-base,0.364,2023-11-02,"DeepSeek,Peking University",ARC AI2,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
@@ -210,6 +211,7 @@ falcon-7b,0.4786,2023-04-24,Technology Innovation Institute,ARC AI2,,Falcon2-11B
 gemma-2b,0.421,2024-02-21,Google DeepMind,ARC AI2,,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295,epoch,Domain Specific Questions,0.25,
 gemma-7b,0.783,2024-02-21,Google DeepMind,ARC AI2,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
 gpt-3.5-turbo-1106,0.874,2023-11-06,OpenAI,ARC AI2,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
+gpt-4-0314,0.963,2023-03-14,OpenAI,ARC AI2,,"GPT-4 Technical Report (arXiv 2303.08774), Table 2, AI2 Reasoning Challenge, 25-shot",https://arxiv.org/abs/2303.08774,board_rows,Domain Specific Questions,0.25,
 gpt-j-6b,0.363,2021-08-05,"EleutherAI,LAION",ARC AI2,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Domain Specific Questions,0.25,
 gpt-neox-20b,0.411,2022-04-07,EleutherAI,ARC AI2,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Domain Specific Questions,0.25,
 gpt2-xl,0.25,2019-11-05,OpenAI,ARC AI2,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Domain Specific Questions,0.25,
@@ -226,7 +228,6 @@ stablelm-tuned-alpha-7b,0.27,2023-04-19,Stability AI,ARC AI2,,XGen-7B Technical 
 starcoder2-15b,0.472,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",ARC AI2,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 starcoder2-3b,0.342,2024-02-22,"Hugging Face,ServiceNow,NVIDIA,BigCode",ARC AI2,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 starcoder2-7b,0.387,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",ARC AI2,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
-text-davinci-001,0.532,2022-01-27,OpenAI,ARC AI2,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,epoch,Domain Specific Questions,0.25,
 text-davinci-002,0.852,2022-03-15,OpenAI,ARC AI2,,GPT-4 Technical Report,http://arxiv.org/abs/2303.08774,epoch,Domain Specific Questions,0.25,
 vicuna-13b-v1.1,0.432,2023-04-12,LMSYS,ARC AI2,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Domain Specific Questions,0.25,
 xgen-7b-8k-base,0.412,2023-06-27,Salesforce,ARC AI2,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Domain Specific Questions,0.25,
@@ -283,7 +284,10 @@ claude-opus-4-5-20251101_32K,0.7583,2025-11-24,Anthropic,ARC-AGI,,https://arcpri
 claude-opus-4-5-20251101_64K,0.8,2025-11-24,Anthropic,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-5-20251101_8K,0.5867,2025-11-24,Anthropic,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-5-20251101_none,0.4,2025-11-24,Anthropic,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
-claude-opus-4-6_120K,0.94,2026-02-05,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_high,0.94,2026-02-05,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_low,0.86,2026-02-05,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_max,0.93,2026-02-05,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_medium,0.92,2026-02-05,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-7_high,0.935,2026-04-16,Anthropic,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-7_low,0.91,2026-04-16,Anthropic,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-7_max,0.92,2026-04-16,Anthropic,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -339,8 +343,9 @@ gemini-2.5-flash-preview-05-20_1K,0.16,2025-05-20,Google DeepMind,ARC-AGI,,ARC P
 gemini-2.5-flash-preview-05-20_24K,0.3233,2025-05-20,Google DeepMind,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_8K,0.2583,2025-05-20,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro-exp-03-25,0.33,2025-03-25,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
-gemini-2.5-pro-preview-06-05_1K,0.313,2025-06-05,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
+gemini-2.5-pro-preview-05-06_1K,0.313,2025-06-05,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_16K,0.41,2025-06-17,Google DeepMind,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gemini-2.5-pro_1K,0.16,2025-06-17,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_32K,0.37,2025-06-17,Google DeepMind,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_8K,0.295,2025-06-17,Google DeepMind,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-3-flash-preview_high,0.8467,2025-12-17,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
@@ -554,7 +559,10 @@ claude-opus-4-5-20251101_16K,0.2278,2025-11-24,Anthropic,ARC-AGI-2,,EpochAI,,epo
 claude-opus-4-5-20251101_64K,0.3764,2025-11-24,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-5-20251101_8K,0.1389,2025-11-24,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-5-20251101_none,0.0778,2025-11-24,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
-claude-opus-4-6_120K,0.6917,2026-02-05,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_high,0.6917,2026-02-05,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_low,0.6458,2026-02-05,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_max,0.6875,2026-02-05,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+claude-opus-4-6_medium,0.6625,2026-02-05,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-7_high,0.6833,2026-04-16,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-7_low,0.6208,2026-04-16,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 claude-opus-4-7_max,0.7583,2026-04-16,Anthropic,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -609,8 +617,9 @@ gemini-2.5-flash-preview-05-20_16K,0.0198,2025-05-20,Google DeepMind,ARC-AGI-2,,
 gemini-2.5-flash-preview-05-20_1K,0.0216,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_24K,0.0254,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_8K,0.0212,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
-gemini-2.5-pro-preview-06-05_1K,0.0,2025-06-05,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gemini-2.5-pro-preview-05-06_1K,0.0344,2025-06-05,Google DeepMind,ARC-AGI-2,,"ARC Prize leaderboard data (evaluations.json, read 2026-11-17; semi-private set)",https://arcprize.org/media/data/evaluations.json,board_rows,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_16K,0.0403,2025-06-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+gemini-2.5-pro_1K,0.0,2025-06-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_32K,0.0486,2025-06-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_8K,0.0292,2025-06-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-3-flash-preview_high,0.3361,2025-12-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -2874,7 +2883,7 @@ gpt-4-0613,0.8999,2023-06-13,OpenAI,GSM8K,,Baichuan 2: Open Large-scale Language
 gpt-4o-mini-2024-07-18,0.913,2024-07-18,OpenAI,GSM8K,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Mathematics,0.0,
 internlm-20b,0.629,2023-09-18,Shanghai AI Laboratory,GSM8K,,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652,epoch,Mathematics,0.0,
 internlm-7b,0.312,2023-07-05,Shanghai AI Laboratory,GSM8K,,Qwen Technical Report,https://arxiv.org/abs/2309.16609,epoch,Mathematics,0.0,
-internlm-chat-20b,0.157,2023-09-17,Shanghai AI Laboratory,GSM8K,,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652,epoch,Mathematics,0.0,
+internlm-chat-20b,0.434,2023-09-17,Shanghai AI Laboratory,GSM8K,,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652,epoch,Mathematics,0.0,
 mpt-30b,0.164,2023-06-22,MosaicML,GSM8K,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/gsm,epoch,Mathematics,0.0,
 mpt-30b-instruct,0.344,2023-06-22,MosaicML,GSM8K,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/gsm,epoch,Mathematics,0.0,
 mpt-7b,0.091,2023-05-05,MosaicML,GSM8K,,Qwen Technical Report,https://arxiv.org/abs/2309.16609,epoch,Mathematics,0.0,
@@ -2925,7 +2934,7 @@ o3-mini-2025-01-31_low,0.013,2025-01-31,OpenAI,GSO-Bench,,GSO Leaderboard,,epoch
 o4-mini-2025-04-16_high,0.036,2025-04-16,OpenAI,GSO-Bench,,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html,epoch,Autonomous SWE,0.0,
 Llama-4-Maverick-17B-128E-Instruct,0.52,2025-04-05,Meta AI,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
 Pixtral-12B-2409,0.37,2024-09-17,Mistral AI,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
-Qwen2.5-VL-72B-Instruct,0.62,2024-09-19,Alibaba,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
+Qwen2.5-VL-72B-Instruct,0.62,2025-01-27,Alibaba,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
 claude-3-5-haiku-20241022,0.34,2024-10-22,Anthropic,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
 claude-3-5-sonnet-20241022,0.62,2024-10-22,Anthropic,GeoBench,,GeoBench leaderboard,https://geobench.org/,epoch,Multimodal Understanding,0.0,
 claude-3-7-sonnet-20250219_15K,0.65,2025-02-24,Anthropic,GeoBench,,https://geobench.org/,https://geobench.org/,epoch,Multimodal Understanding,0.0,
@@ -3048,7 +3057,7 @@ claude-opus-5-5_medium,0.978489,2026-09-22,Anthropic,HellaSwag,0.001448,GPAI Pol
 claude-sonnet-5-5_high,0.960065,2026-09-28,Anthropic,HellaSwag,0.001954,GPAI Policy Lab run 20261112_claude-sonnet-5-5_high_commonsense (1 epochs x 10042 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_high_commonsense,gpai_runs,Trivia & Commonsense QA,0.25,
 claude-sonnet-5-5_max,0.957323,2026-09-28,Anthropic,HellaSwag,0.002014,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 10042 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense,gpai_runs,Trivia & Commonsense QA,0.25,
 curie,0.682,2020-06-11,OpenAI,HellaSwag,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,epoch,Trivia & Commonsense QA,0.25,
-davinci,0.775,2020-06-11,OpenAI,HellaSwag,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,epoch,Trivia & Commonsense QA,0.25,
+davinci,0.793,2020-06-11,OpenAI,HellaSwag,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,epoch,Trivia & Commonsense QA,0.25,
 dolly-v2-12b,0.708,2023-04-11,Databricks,HellaSwag,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.25,
 falcon-11b,0.8291,2024-05-09,Technology Innovation Institute,HellaSwag,,Falcon2-11B Technical Report,http://arxiv.org/abs/2407.14885,epoch,Trivia & Commonsense QA,0.25,
 falcon-180B,0.89,2023-09-06,Technology Innovation Institute,HellaSwag,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Trivia & Commonsense QA,0.25,
@@ -3075,7 +3084,6 @@ stablelm-tuned-alpha-7b,0.407,2023-04-19,Stability AI,HellaSwag,,XGen-7B Technic
 text-ada-001,0.429,2022-01-27,OpenAI,HellaSwag,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,epoch,Trivia & Commonsense QA,0.25,
 text-babbage-001,0.561,2022-01-27,OpenAI,HellaSwag,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,epoch,Trivia & Commonsense QA,0.25,
 text-curie-001,0.676,2022-01-27,OpenAI,HellaSwag,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,epoch,Trivia & Commonsense QA,0.25,
-text-davinci-001,0.793,2022-01-27,OpenAI,HellaSwag,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,epoch,Trivia & Commonsense QA,0.25,
 text-davinci-002,0.815,2022-03-15,OpenAI,HellaSwag,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag,epoch,Trivia & Commonsense QA,0.25,
 text-davinci-003,0.855,2022-11-28,OpenAI,HellaSwag,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Trivia & Commonsense QA,0.25,
 vicuna-13b-v1.1,0.578,2023-04-12,LMSYS,HellaSwag,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Trivia & Commonsense QA,0.25,
@@ -3759,6 +3767,7 @@ Qwen2.5-Coder-0.5B,0.42,2024-11-12,Alibaba,MMLU,,Qwen2.5-Coder Technical Report,
 Qwen2.5-Coder-1.5B,0.536,2024-09-18,Alibaba,MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 Qwen2.5-Coder-14B,0.752,2024-11-12,Alibaba,MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 Qwen2.5-Coder-32B,0.791,2024-11-12,Alibaba,MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
+Qwen2.5-Coder-3B,0.612,2024-11-12,Alibaba,MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 Qwen2.5-Coder-7B,0.68,2024-09-18,Alibaba,MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 Qwen3-235B-A22B-Instruct-2507,0.8891756272401433,2025-07-21,Alibaba,MMLU,0.002657763493966948,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 RedPajama-INCITE-7B-Base,0.263,2023-05-04,Together AI,MMLU,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Domain Specific Questions,0.25,
@@ -3794,6 +3803,7 @@ claude-opus-4-8_none,0.9300669420310497,2026-05-28,Anthropic,MMLU,0.002152166658
 claude-opus-5_high,0.9415787973781704,2026-07-24,Anthropic,MMLU,0.0019796295208822216,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 claude-sonnet-4-20250514_none,0.9139011536818116,2025-05-22,Anthropic,MMLU,0.0023671501923602043,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
 codestral-2501,0.6759008688221051,2025-01-13,Mistral AI,MMLU,0.003949644169903062,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
+davinci,0.439,2020-06-11,OpenAI,MMLU,,"Scaling Language Models: Methods, Analysis & Insights from Training Gopher",http://arxiv.org/abs/2112.11446,epoch,Domain Specific Questions,0.25,
 deepseek-coder-1.3b-base,0.258,2023-11-02,"DeepSeek,Peking University",MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 deepseek-coder-33b-base,0.394,2023-11-02,"DeepSeek,Peking University",MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 deepseek-coder-6.7b-base,0.364,2023-11-02,"DeepSeek,Peking University",MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
@@ -3886,7 +3896,6 @@ qwen2.5-7b-instruct,0.729,2024-09-19,Alibaba,MMLU,,Stanford CRFM Leaderboard,htt
 starcoder2-15b,0.641,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 starcoder2-3b,0.366,2024-02-22,"Hugging Face,ServiceNow,NVIDIA,BigCode",MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
 starcoder2-7b,0.388,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",MMLU,,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186,epoch,Domain Specific Questions,0.25,
-text-davinci-001,0.439,2022-01-27,OpenAI,MMLU,,"Scaling Language Models: Methods, Analysis & Insights from Training Gopher",http://arxiv.org/abs/2112.11446,epoch,Domain Specific Questions,0.25,
 text-davinci-002,0.7,2022-03-15,OpenAI,MMLU,,GPT-4 Technical Report,https://arxiv.org/pdf/2303.08774,epoch,Domain Specific Questions,0.25,
 xgen-7b-8k-base,0.363,2023-06-27,Salesforce,MMLU,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Domain Specific Questions,0.25,
 DeepSeek-R1,0.745,2025-01-20,DeepSeek,MMLU Biology,,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html,rand,Biology,0.25,
@@ -4412,7 +4421,7 @@ claude-opus-4-8_high,0.39,2026-05-28,Anthropic,OEIS Open Lite,0.0490207130000197
 gemini-3.5-flash_high,0.29,2026-05-19,Google DeepMind,OEIS Open Lite,0.0456048021572068,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
 gpt-5.5_medium,0.36,2026-04-23,OpenAI,OEIS Open Lite,0.0482418151324421,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
 gpt-5.6-sol_medium,0.43,2026-07-09,OpenAI,OEIS Open Lite,0.0495075751779462,Epoch AI internal evaluation,,epoch_live,Mathematics,0,
-Qwen2.5-VL-72B-Instruct,0.05,2024-09-19,Alibaba,OSWorld,,OS World Website,https://os-world.github.io/,epoch,Agentic Computer Use,0.0,
+Qwen2.5-VL-72B-Instruct,0.05,2025-01-27,Alibaba,OSWorld,,OS World Website,https://os-world.github.io/,epoch,Agentic Computer Use,0.0,
 claude-3-7-sonnet-20250219_none,0.358,2025-02-24,Anthropic,OSWorld,,OS World Website,https://os-world.github.io/,epoch,Agentic Computer Use,0.0,
 claude-fable-5,0.8596,2026-06-09,Anthropic,OSWorld,,"OSWorld-Verified leaderboard (os-world.github.io, read 2026-11-17; general model, 100 steps, single rollout)",https://os-world.github.io/,board_rows,Agentic Computer Use,0.0,
 claude-opus-4-5-20251101_64K,0.6629999999999999,2025-11-24,Anthropic,OSWorld,,Anthropic annoucement,https://www.anthropic.com/news/claude-opus-4-5,epoch,Agentic Computer Use,0.0,
@@ -4734,8 +4743,9 @@ Llama-2-7b,0.586,2023-07-18,Meta AI,OpenBookQA,,Llama 2: Open Foundation and Fin
 Meta-Llama-3-8B-Instruct,0.826,2024-04-18,Meta AI,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
 Mistral-7B-v0.1,0.798,2023-09-27,Mistral AI,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
 Mixtral-8x7B-v0.1,0.858,2023-12-11,Mistral AI,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
-PaLM 2-M,0.574,2023-05-17,Google DeepMind,OpenBookQA,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.25,
-PaLM 2-S,0.562,2023-05-17,Google DeepMind,OpenBookQA,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.25,
+PaLM 2-L,0.585,2023-05-17,Google DeepMind,OpenBookQA,,"PaLM 2 Technical Report (arXiv 2305.10403), Table 2, OpenBookQA, 1-shot",https://arxiv.org/abs/2305.10403,board_rows,Trivia & Commonsense QA,0.25,
+PaLM 2-M,0.562,2023-05-17,Google DeepMind,OpenBookQA,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.25,
+PaLM 2-S,0.574,2023-05-17,Google DeepMind,OpenBookQA,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.25,
 PaLM 540B,0.68,2022-04-04,Google Research,OpenBookQA,,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf,epoch,Trivia & Commonsense QA,0.25,
 PaLM 62B,0.504,2022-04-04,Google Research,OpenBookQA,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Trivia & Commonsense QA,0.25,
 Phi-3-medium-128k-instruct,0.874,2024-05-21,Microsoft,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
@@ -4754,6 +4764,7 @@ claude-opus-5-5_max,0.996,2026-09-22,Anthropic,OpenBookQA,0.002826,GPAI Policy L
 claude-opus-5-5_medium,0.988,2026-09-22,Anthropic,OpenBookQA,0.004874,GPAI Policy Lab run 20261112_claude-opus-5-5_medium_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_medium_commonsense,gpai_runs,Trivia & Commonsense QA,0.25,
 claude-sonnet-5-5_high,0.974,2026-09-28,Anthropic,OpenBookQA,0.007124,GPAI Policy Lab run 20261112_claude-sonnet-5-5_high_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_high_commonsense,gpai_runs,Trivia & Commonsense QA,0.25,
 claude-sonnet-5-5_max,0.986,2026-09-28,Anthropic,OpenBookQA,0.00526,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense,gpai_runs,Trivia & Commonsense QA,0.25,
+davinci,0.654,2020-06-11,OpenAI,OpenBookQA,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,epoch,Trivia & Commonsense QA,0.25,
 dolly-v2-12b,0.392,2023-04-11,Databricks,OpenBookQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.25,
 falcon-180B,0.642,2023-09-06,Technology Innovation Institute,OpenBookQA,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Trivia & Commonsense QA,0.25,
 falcon-40b,0.566,2023-03-15,Technology Innovation Institute,OpenBookQA,,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288,epoch,Trivia & Commonsense QA,0.25,
@@ -4772,7 +4783,6 @@ opt-13b,0.398,2022-05-11,Meta AI,OpenBookQA,,XGen-7B Technical Report,http://arx
 phi-1_5,0.372,2023-09-11,Microsoft,OpenBookQA,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Trivia & Commonsense QA,0.25,
 phi-2,0.736,2023-12-12,Microsoft,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
 stablelm-tuned-alpha-7b,0.324,2023-04-19,Stability AI,OpenBookQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.25,
-text-davinci-001,0.654,2022-01-27,OpenAI,OpenBookQA,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,epoch,Trivia & Commonsense QA,0.25,
 vicuna-13b-v1.1,0.33,2023-04-12,LMSYS,OpenBookQA,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Trivia & Commonsense QA,0.25,
 xgen-7b-8k-base,0.402,2023-06-27,Salesforce,OpenBookQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.25,
 Baichuan-2-13B-Base,0.781,2023-09-06,Baichuan,PIQA,,Qwen Technical Report,https://arxiv.org/abs/2309.16609,epoch,Trivia & Commonsense QA,0.5,
@@ -4820,11 +4830,12 @@ claude-opus-5-5_max,0.98259,2026-09-22,Anthropic,PIQA,0.003052,GPAI Policy Lab r
 claude-opus-5-5_medium,0.978237,2026-09-22,Anthropic,PIQA,0.003404,GPAI Policy Lab run 20261112_claude-opus-5-5_medium_commonsense (1 epochs x 1838 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_medium_commonsense,gpai_runs,Trivia & Commonsense QA,0.5,
 claude-sonnet-5-5_high,0.966268,2026-09-28,Anthropic,PIQA,0.004212,GPAI Policy Lab run 20261112_claude-sonnet-5-5_high_commonsense (1 epochs x 1838 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_high_commonsense,gpai_runs,Trivia & Commonsense QA,0.5,
 claude-sonnet-5-5_max,0.974429,2026-09-28,Anthropic,PIQA,0.003683,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 1838 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense,gpai_runs,Trivia & Commonsense QA,0.5,
+davinci,0.823,2020-06-11,OpenAI,PIQA,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,epoch,Trivia & Commonsense QA,0.5,
 dolly-v2-12b,0.754,2023-04-11,Databricks,PIQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.5,
 falcon-180B,0.849,2023-09-06,Technology Innovation Institute,PIQA,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Trivia & Commonsense QA,0.5,
 falcon-40b,0.83,2023-03-15,Technology Innovation Institute,PIQA,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Trivia & Commonsense QA,0.5,
 falcon-7b,0.803,2023-04-24,Technology Innovation Institute,PIQA,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Trivia & Commonsense QA,0.5,
-gemini-1.5-flash-002,0.875,2024-09-24,Google DeepMind,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
+gemini-1.5-flash-001,0.875,2024-05-23,Google DeepMind,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 gemma-2-9b,0.837,2024-06-27,Google DeepMind,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 gemma-2b,0.773,2024-02-21,Google DeepMind,PIQA,,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295,epoch,Trivia & Commonsense QA,0.5,
 gemma-7b,0.812,2024-02-21,Google DeepMind,PIQA,,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295,epoch,Trivia & Commonsense QA,0.5,
@@ -4841,7 +4852,6 @@ open_llama_7b,0.76,2023-06-07,OpenLM Research,PIQA,,XGen-7B Technical Report,htt
 opt-1.3b,0.69,2022-05-11,Meta AI,PIQA,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Trivia & Commonsense QA,0.5,
 opt-13b,0.757,2022-05-11,Meta AI,PIQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.5,
 stablelm-tuned-alpha-7b,0.658,2023-04-19,Stability AI,PIQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.5,
-text-davinci-001,0.823,2022-01-27,OpenAI,PIQA,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,epoch,Trivia & Commonsense QA,0.5,
 vicuna-13b-v1.1,0.774,2023-04-12,LMSYS,PIQA,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Trivia & Commonsense QA,0.5,
 xgen-7b-8k-base,0.755,2023-06-27,Salesforce,PIQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.5,
 claude-fable-5-1_max,0.4465,2026-09-01,Anthropic,PostTrainBench v1.1,,EpochAI,,epoch,Autonomous SWE,0.075,
@@ -5120,7 +5130,7 @@ gpt-6-sol,0.731,2026-09-22,OpenAI,SimpleBench,,https://simple-bench.com/,,epoch,
 gpt-6.1-sol,0.8290000000000001,2026-09-29,OpenAI,SimpleBench,,https://simple-bench.com/,,epoch,General Reasoning,0.167,
 gpt-6.1-terra,0.7220000000000001,2026-10-26,OpenAI,SimpleBench,,https://simple-bench.com/,,epoch,General Reasoning,0.167,
 gpt-oss-120b_medium,0.221,2025-08-05,OpenAI,SimpleBench,,https://simple-bench.com/,,epoch,General Reasoning,0.167,
-grok-2-1212,0.227,2024-12-12,xAI,SimpleBench,,SimpleBench Leaderboard,,epoch,General Reasoning,0.167,
+grok-2,0.227,2024-08-13,xAI,SimpleBench,,SimpleBench Leaderboard,,epoch,General Reasoning,0.167,
 grok-3,0.361,2025-04-09,xAI,SimpleBench,,SimpleBench Leaderboard,,epoch,General Reasoning,0.167,
 grok-4-0709,0.605,2025-07-09,xAI,SimpleBench,,https://lmcouncil.ai/benchmarks,,epoch,General Reasoning,0.167,
 grok-4-1-fast-reasoning,0.56,2025-11-19,xAI,SimpleBench,,SimpleBench Leaderboard,,epoch,General Reasoning,0.167,
@@ -5389,7 +5399,8 @@ qwen3.5-9B,0.092134831461,2026-02-24,Alibaba,Terminal Bench 2.0,,https://www.tbe
 qwen3.6-35b-a3b,0.246254681648,2026-04-14,Alibaba,Terminal Bench 2.0,,https://www.tbench.ai/leaderboard/terminal-bench/2.0,,epoch,Agentic Computer Use,0.0,
 DeepSeek-V3.2-Exp,0.524,2025-09-29,DeepSeek,The Agent Company,,TheAgentCompany leaderboard,,epoch,Agentic Computer Use,0.0,
 Llama-3.1-405B-Instruct,0.141,2024-07-23,Meta AI,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
-Llama-3.1-70B-Instruct,0.128,2024-07-23,Meta AI,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
+Llama-3.1-70B-Instruct,0.065,2024-07-23,Meta AI,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
+Llama-3.3-70B-Instruct,0.128,2024-12-06,Meta AI,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
 amazon.nova-pro-v1:0,0.057,2024-12-03,Amazon,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
 claude-3-5-sonnet-20241022,0.344,2024-10-22,Anthropic,The Agent Company,,TheAgentCompany experiment results github,,epoch,Agentic Computer Use,0.0,
 claude-3-7-sonnet-20250219_none,0.402,2025-02-24,Anthropic,The Agent Company,,TheAgentCompany leaderboard,,epoch,Agentic Computer Use,0.0,
@@ -5430,6 +5441,7 @@ claude-1.3,0.867,2023-04-18,Anthropic,TriviaQA,,Model Card and Evaluations for C
 claude-2.0,0.875,2023-07-11,Anthropic,TriviaQA,,Model Card and Evaluations for Claude Models,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf,epoch,Trivia & Commonsense QA,0.127,
 claude-instant-1.1,0.789,2023-05-11,Anthropic,TriviaQA,,Model Card and Evaluations for Claude Models,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf,epoch,Trivia & Commonsense QA,0.127,
 claude-instant-1.2,0.787,2023-08-09,Anthropic,TriviaQA,,Releasing Claude Instant 1.2,https://www.anthropic.com/news/releasing-claude-instant-1-2,epoch,Trivia & Commonsense QA,0.127,
+davinci,0.712,2020-06-11,OpenAI,TriviaQA,,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4,epoch,Trivia & Commonsense QA,0.127,
 falcon-40b,0.799,2023-03-15,Technology Innovation Institute,TriviaQA,,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288,epoch,Trivia & Commonsense QA,0.127,
 falcon-7b,0.646,2023-04-24,Technology Innovation Institute,TriviaQA,,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288,epoch,Trivia & Commonsense QA,0.127,
 gemma-2b,0.532,2024-02-21,Google DeepMind,TriviaQA,,Gemma: Open Models Based on Gemini Research and Technology,https://arxiv.org/pdf/2403.08295,epoch,Trivia & Commonsense QA,0.127,
@@ -5439,7 +5451,6 @@ gpt-4-0613,0.848,2023-06-13,OpenAI,TriviaQA,,PapersWithCode,https://paperswithco
 mpt-30b,0.736,2023-06-22,MosaicML,TriviaQA,,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288,epoch,Trivia & Commonsense QA,0.127,
 mpt-7b,0.616,2023-05-05,MosaicML,TriviaQA,,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288,epoch,Trivia & Commonsense QA,0.127,
 phi-2,0.452,2023-12-12,Microsoft,TriviaQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.127,
-text-davinci-001,0.712,2022-01-27,OpenAI,TriviaQA,,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4,epoch,Trivia & Commonsense QA,0.127,
 Llama-4-Maverick-17B-128E-Instruct,0.402,2025-04-05,Meta AI,TutorBench,,Scale SEAL (tutorbench),https://labs.scale.com/leaderboard/tutorbench,seal,Advanced Language and Writing,0.0,
 claude-3-7-sonnet-20250219_thinking,0.4645,2025-02-24,Anthropic,TutorBench,,Scale SEAL (tutorbench),https://labs.scale.com/leaderboard/tutorbench,seal,Advanced Language and Writing,0.0,
 claude-opus-4-1-20250805_none,0.474,2025-08-05,Anthropic,TutorBench,,Scale SEAL (tutorbench),https://labs.scale.com/leaderboard/tutorbench,seal,Advanced Language and Writing,0.0,
@@ -5909,6 +5920,7 @@ claude-opus-5-5_max,0.980268,2026-09-22,Anthropic,WinoGrande,0.003909,GPAI Polic
 claude-opus-5-5_medium,0.977111,2026-09-22,Anthropic,WinoGrande,0.004203,GPAI Policy Lab run 20261112_claude-opus-5-5_medium_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_medium_commonsense,gpai_runs,Trivia & Commonsense QA,0.5,
 claude-sonnet-5-5_high,0.947119,2026-09-28,Anthropic,WinoGrande,0.00629,GPAI Policy Lab run 20261112_claude-sonnet-5-5_high_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_high_commonsense,gpai_runs,Trivia & Commonsense QA,0.5,
 claude-sonnet-5-5_max,0.962904,2026-09-28,Anthropic,WinoGrande,0.005312,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense,gpai_runs,Trivia & Commonsense QA,0.5,
+davinci,0.777,2020-06-11,OpenAI,WinoGrande,,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4,epoch,Trivia & Commonsense QA,0.5,
 deepseek-coder-1.3b-base,0.533,2023-11-02,"DeepSeek,Peking University",WinoGrande,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,epoch,Trivia & Commonsense QA,0.5,
 deepseek-coder-33b-base,0.62,2023-11-02,"DeepSeek,Peking University",WinoGrande,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,epoch,Trivia & Commonsense QA,0.5,
 deepseek-coder-6.7b-base,0.576,2023-11-02,"DeepSeek,Peking University",WinoGrande,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,epoch,Trivia & Commonsense QA,0.5,
@@ -5936,7 +5948,6 @@ stablelm-tuned-alpha-7b,0.515,2023-04-19,Stability AI,WinoGrande,,XGen-7B Techni
 starcoder2-15b,0.643,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",WinoGrande,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,epoch,Trivia & Commonsense QA,0.5,
 starcoder2-3b,0.571,2024-02-22,"Hugging Face,ServiceNow,NVIDIA,BigCode",WinoGrande,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,epoch,Trivia & Commonsense QA,0.5,
 starcoder2-7b,0.571,2024-02-20,"Hugging Face,ServiceNow,NVIDIA,BigCode",WinoGrande,,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186,epoch,Trivia & Commonsense QA,0.5,
-text-davinci-001,0.777,2022-01-27,OpenAI,WinoGrande,,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4,epoch,Trivia & Commonsense QA,0.5,
 text-davinci-002,0.816,2022-03-15,OpenAI,WinoGrande,,GPT-4 technical report,https://arxiv.org/pdf/2303.08774,epoch,Trivia & Commonsense QA,0.5,
 vicuna-13b-v1.1,0.708,2023-04-12,LMSYS,WinoGrande,,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463,epoch,Trivia & Commonsense QA,0.5,
 xgen-7b-8k-base,0.649,2023-06-27,Salesforce,WinoGrande,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.5,

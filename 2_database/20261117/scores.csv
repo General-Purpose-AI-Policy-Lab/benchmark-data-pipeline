@@ -241,12 +241,13 @@ f774eb3f-8d0f-531c-8b88-23e84e3414be,09d827ed-6ae3-5b60-8641-66a733170178,0.3679
 190c9256-dd6b-58f3-a4ba-8a1b61734bec,0d000f4a-0739-550a-a784-c6582ec2a427,0.19,,,epoch,TheAgentCompany experiment results github,
 1aeaa8cc-8bca-5cc4-b5fd-20b0db35243a,0d000f4a-0739-550a-a784-c6582ec2a427,0.042,,,epoch,TheAgentCompany experiment results github,
 1c449230-2b68-53ba-8d2d-aa9a5d626314,0d000f4a-0739-550a-a784-c6582ec2a427,0.393,,,epoch,TheAgentCompany leaderboard,
-47074565-ab4c-5510-9867-172d77a733b5,0d000f4a-0739-550a-a784-c6582ec2a427,0.128,,,epoch,TheAgentCompany experiment results github,
+47074565-ab4c-5510-9867-172d77a733b5,0d000f4a-0739-550a-a784-c6582ec2a427,0.065,,,epoch,TheAgentCompany experiment results github,
 6cfe95c0-5e74-53e7-8639-a22305eb33c6,0d000f4a-0739-550a-a784-c6582ec2a427,0.057,,,epoch,TheAgentCompany experiment results github,
 70fc2cc7-dc79-5630-9dbc-d377d009f441,0d000f4a-0739-550a-a784-c6582ec2a427,0.402,,,epoch,TheAgentCompany leaderboard,
 8c1b440f-1bbf-5fd1-a8bb-d87867fc52ac,0d000f4a-0739-550a-a784-c6582ec2a427,0.141,,,epoch,TheAgentCompany experiment results github,
 9a7d9480-f1b5-512b-8aff-6b9ccfeef59e,0d000f4a-0739-550a-a784-c6582ec2a427,0.118,,,epoch,TheAgentCompany experiment results github,
 a30435c9-0f32-5bad-9e84-32acb0c8933f,0d000f4a-0739-550a-a784-c6582ec2a427,0.344,,,epoch,TheAgentCompany experiment results github,
+a85710df-0bb2-5fd2-863e-96dd590d7474,0d000f4a-0739-550a-a784-c6582ec2a427,0.128,,,epoch,TheAgentCompany experiment results github,
 c23d9bba-87f9-5a7b-a7e7-64bb3bae358b,0d000f4a-0739-550a-a784-c6582ec2a427,0.518,,,epoch,TheAgentCompany leaderboard,
 db210d2d-9fd6-5b51-b481-16d038c73444,0d000f4a-0739-550a-a784-c6582ec2a427,0.167,,,epoch,TheAgentCompany experiment results github,
 def8f283-1576-562c-81c8-3db93aa5a7c3,0d000f4a-0739-550a-a784-c6582ec2a427,0.432,,,epoch,TheAgentCompany leaderboard,
@@ -562,18 +563,19 @@ d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,33f864c2-1401-5e5f-aa5b-a79c8beee171,0.9426
 eb51562e-effb-5407-91ca-9fc4d497f59d,33f864c2-1401-5e5f-aa5b-a79c8beee171,0.7928133331541466,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 f87b6bf9-9171-5467-bcd6-ea744b4c1e38,33f864c2-1401-5e5f-aa5b-a79c8beee171,0.4338119861516152,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,33f864c2-1401-5e5f-aa5b-a79c8beee171,0.9538771266641964,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-09796b8f-e8d2-560a-8c41-de3dce02f98c,362fe089-970b-5a6d-b539-ab9245f63878,0.654,,,epoch,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905
 0b0211a2-6338-53bc-8e54-9f7f83babc21,362fe089-970b-5a6d-b539-ab9245f63878,0.504,,,epoch,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971
 13157481-63a6-59e7-88c0-d5fa446a2c08,362fe089-970b-5a6d-b539-ab9245f63878,0.33,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 211d87a3-a319-52a9-a65c-622f10f6cfe4,362fe089-970b-5a6d-b539-ab9245f63878,0.566,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 28b0b42b-a3e9-5983-97dc-59f029144d1a,362fe089-970b-5a6d-b539-ab9245f63878,0.642,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
 2a541527-675f-5356-b4ee-4f449eb5c8a4,362fe089-970b-5a6d-b539-ab9245f63878,0.602,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 2b4771da-53fc-56a4-82ca-0f1558911b94,362fe089-970b-5a6d-b539-ab9245f63878,0.382,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
+3b49d843-54e3-5df8-a65e-dfd2ebd824e9,362fe089-970b-5a6d-b539-ab9245f63878,0.585,,,board_rows,"PaLM 2 Technical Report (arXiv 2305.10403), Table 2, OpenBookQA, 1-shot",https://arxiv.org/abs/2305.10403
 423200c2-4e4c-51cc-bdc9-d7fba77d9d04,362fe089-970b-5a6d-b539-ab9245f63878,0.224,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 42af4551-0280-51ca-90fc-175670bdd1e5,362fe089-970b-5a6d-b539-ab9245f63878,0.358,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,362fe089-970b-5a6d-b539-ab9245f63878,0.39,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 49a8f0b6-4d32-5270-8f23-d77804c5555b,362fe089-970b-5a6d-b539-ab9245f63878,0.232,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 51ecf54c-193e-5223-ac0b-917993054698,362fe089-970b-5a6d-b539-ab9245f63878,0.962,0.008559,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-6_medium_openbookqa-arc (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-6_medium_openbookqa-arc
+54c85152-6635-5c5a-9132-83b8470c32ed,362fe089-970b-5a6d-b539-ab9245f63878,0.654,,,epoch,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905
 551a5400-1b6f-5e7d-9612-d083268c4832,362fe089-970b-5a6d-b539-ab9245f63878,0.68,,,epoch,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf
 579d34db-d5b0-59de-8ded-a1ed3d10ec4e,362fe089-970b-5a6d-b539-ab9245f63878,0.736,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 57aaae76-49e7-5b7f-bac8-90b0b43e3e1d,362fe089-970b-5a6d-b539-ab9245f63878,0.88,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -581,7 +583,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,33f864c2-1401-5e5f-aa5b-a79c8beee171,0.9538
 5df9f1ed-d840-5ac8-b9bf-544d0c4f711b,362fe089-970b-5a6d-b539-ab9245f63878,0.586,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 6c3045c9-e1f8-5798-bb99-091c9a4b5334,362fe089-970b-5a6d-b539-ab9245f63878,0.988,0.004874,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-5-5_medium_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_medium_commonsense
 6f7da00e-2269-518d-9c16-1739b3f681d0,362fe089-970b-5a6d-b539-ab9245f63878,0.388,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
-72ca208d-a0d3-5491-b2e2-0c61d7e200aa,362fe089-970b-5a6d-b539-ab9245f63878,0.574,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
+72ca208d-a0d3-5491-b2e2-0c61d7e200aa,362fe089-970b-5a6d-b539-ab9245f63878,0.562,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
 74e215b7-9abd-5028-8805-cfd17d748c10,362fe089-970b-5a6d-b539-ab9245f63878,0.832,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 769741fa-2ef7-5692-a69b-5d3170617006,362fe089-970b-5a6d-b539-ab9245f63878,0.602,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 7d6eca9e-c0dc-5065-af0e-8c5e4e718220,362fe089-970b-5a6d-b539-ab9245f63878,0.516,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
@@ -592,7 +594,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,33f864c2-1401-5e5f-aa5b-a79c8beee171,0.9538
 a147126b-5c8d-528d-a880-61412bdb9df5,362fe089-970b-5a6d-b539-ab9245f63878,0.962,0.008559,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-8_none_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-8_none_commonsense
 a1daf361-b5e6-5a18-a07c-5d24f089bf4b,362fe089-970b-5a6d-b539-ab9245f63878,0.986,0.00526,,gpai_runs,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense
 a202cc43-3e07-5f06-bd3a-85840cc73723,362fe089-970b-5a6d-b539-ab9245f63878,0.874,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
-a20f799b-f42f-5bbc-b785-7320d3276bc0,362fe089-970b-5a6d-b539-ab9245f63878,0.562,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
+a20f799b-f42f-5bbc-b785-7320d3276bc0,362fe089-970b-5a6d-b539-ab9245f63878,0.574,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
 a396877f-9252-5c93-9ff0-bcd0d28a8f4b,362fe089-970b-5a6d-b539-ab9245f63878,0.372,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 a679bdc5-4a86-5902-8851-5b3c9ae2024d,362fe089-970b-5a6d-b539-ab9245f63878,0.786,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 a6a70e05-2c01-5761-ae5d-e11578d4bfcd,362fe089-970b-5a6d-b539-ab9245f63878,0.958,0.00898,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-8_medium_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-8_medium_commonsense
@@ -1189,7 +1191,6 @@ f96576b8-987f-5e23-b19e-1658fab0b197,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0028
 fafc169e-80a1-50ce-8da7-9eec3539621a,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.245714285714286,,,epoch,EpochAI,
 0413d73c-7ab7-5a13-992e-0dfa97b70b2a,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.5452,,,epoch,INTELLECT-1 Technical Report,https://arxiv.org/abs/2412.01152
 06b1d506-8ef8-5630-9824-5ceb3ca9df60,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.364,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
-09796b8f-e8d2-560a-8c41-de3dce02f98c,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.532,,,epoch,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905
 0aaa33a7-68e9-55c7-beb3-7690c708a647,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.61,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 0b0211a2-6338-53bc-8e54-9f7f83babc21,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.525,,,epoch,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971
 13157481-63a6-59e7-88c0-d5fa446a2c08,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.432,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
@@ -1205,12 +1206,14 @@ fafc169e-80a1-50ce-8da7-9eec3539621a,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.2457
 30465aca-c070-5874-a70f-4f90c0185458,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.852,,,epoch,GPT-4 Technical Report,http://arxiv.org/abs/2303.08774
 3653a9c7-329a-5229-ba85-3bfdde8f258d,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.753,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 3b49d843-54e3-5df8-a65e-dfd2ebd824e9,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.692,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
+3f56cd83-649b-52da-9e6d-3cefe0f48b4d,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.963,,,board_rows,"GPT-4 Technical Report (arXiv 2303.08774), Table 2, AI2 Reasoning Challenge, 25-shot",https://arxiv.org/abs/2303.08774
 4216f328-a9a2-55a9-815d-dde8dcb69e73,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.953,,,epoch,DeepSeek-V3 Technical Report,http://arxiv.org/abs/2412.19437
 423200c2-4e4c-51cc-bdc9-d7fba77d9d04,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.25,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 42af4551-0280-51ca-90fc-175670bdd1e5,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.324,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.387,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 4ac9780c-6745-5877-9906-dfb8d06003e1,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.945,,,epoch,DeepSeek-V3 Technical Report,http://arxiv.org/abs/2412.19437
 51ecf54c-193e-5223-ac0b-917993054698,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.979522,0.004139,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-6_medium_openbookqa-arc (1 epochs x 1172 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-6_medium_openbookqa-arc
+54c85152-6635-5c5a-9132-83b8470c32ed,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.532,,,epoch,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905
 551a5400-1b6f-5e7d-9612-d083268c4832,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.852,,,epoch,GPT-4 Technical Report,http://arxiv.org/abs/2303.08774
 579d34db-d5b0-59de-8ded-a1ed3d10ec4e,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.759,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 57aaae76-49e7-5b7f-bac8-90b0b43e3e1d,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.907,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -1339,11 +1342,9 @@ f15989aa-56c0-5f11-9d65-d3267ad4f026,51129c7e-729d-5eb7-8759-d644d44f24af,0.255,
 f7caafe5-6c45-54fb-872f-880a2fb96069,51129c7e-729d-5eb7-8759-d644d44f24af,0.24609999999999999,,,seal,Scale SEAL (visual_language_understanding),https://labs.scale.com/leaderboard/visual_language_understanding
 f9d0bea8-4c49-5762-b85c-253ef349024b,51129c7e-729d-5eb7-8759-d644d44f24af,0.4607,,,seal,Scale SEAL (visual_language_understanding),https://labs.scale.com/leaderboard/visual_language_understanding
 fcf431b0-7ba1-574e-aea7-449bc578ba24,51129c7e-729d-5eb7-8759-d644d44f24af,0.4548,,,seal,Scale SEAL (visual_language_understanding),https://labs.scale.com/leaderboard/visual_language_understanding
-09796b8f-e8d2-560a-8c41-de3dce02f98c,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.823,,,epoch,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905
 0aaa33a7-68e9-55c7-beb3-7690c708a647,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.696,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 0b0211a2-6338-53bc-8e54-9f7f83babc21,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.805,,,epoch,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971
 13157481-63a6-59e7-88c0-d5fa446a2c08,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.774,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
-2100e63c-ec66-532d-bb4a-0443dfa8914f,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.875,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 211d87a3-a319-52a9-a65c-622f10f6cfe4,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.83,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
 221eb942-ffb1-5e7b-a004-600f2240047e,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.773,,,epoch,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295
 28b0b42b-a3e9-5983-97dc-59f029144d1a,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.849,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
@@ -1355,9 +1356,11 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,51129c7e-729d-5eb7-8759-d644d44f24af,0.4548
 423200c2-4e4c-51cc-bdc9-d7fba77d9d04,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.705,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 42af4551-0280-51ca-90fc-175670bdd1e5,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.735,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.76,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
+452e14b5-7e75-5c61-893c-4e31caf7b1c0,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.875,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 4967b8bf-c70b-5249-bb31-08771919d430,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.812,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 49a8f0b6-4d32-5270-8f23-d77804c5555b,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.729,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 4ac9780c-6745-5877-9906-dfb8d06003e1,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.826,,,epoch,DeepSeek-V3 Technical Report,http://arxiv.org/abs/2412.19437
+54c85152-6635-5c5a-9132-83b8470c32ed,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.823,,,epoch,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905
 551a5400-1b6f-5e7d-9612-d083268c4832,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.823,,,epoch,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971
 5df9f1ed-d840-5ac8-b9bf-544d0c4f711b,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.788,,,epoch,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295
 62196f6d-0cf3-5142-a66e-47efe1520383,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.833,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
@@ -1410,7 +1413,6 @@ f6521b57-572c-5c47-a59c-cdc9298174e0,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.769,
 fcf431b0-7ba1-574e-aea7-449bc578ba24,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.96518,0.004277,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-6_none_commonsense (1 epochs x 1838 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-6_none_commonsense
 00ee1f51-c93d-5ad1-84bd-fbabb3e305d7,534366c9-d667-5dcb-9778-e42e12abc813,0.682,,,epoch,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag
 0413d73c-7ab7-5a13-992e-0dfa97b70b2a,534366c9-d667-5dcb-9778-e42e12abc813,0.7142,,,epoch,INTELLECT-1 Technical Report,https://arxiv.org/abs/2412.01152
-09796b8f-e8d2-560a-8c41-de3dce02f98c,534366c9-d667-5dcb-9778-e42e12abc813,0.793,,,epoch,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990
 0aaa33a7-68e9-55c7-beb3-7690c708a647,534366c9-d667-5dcb-9778-e42e12abc813,0.57,,,epoch,Qwen Technical Report,http://arxiv.org/abs/2309.16609
 13157481-63a6-59e7-88c0-d5fa446a2c08,534366c9-d667-5dcb-9778-e42e12abc813,0.578,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 1686aeb2-f66c-5ceb-acbb-29424cf775b0,534366c9-d667-5dcb-9778-e42e12abc813,0.555,,,epoch,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag
@@ -1434,7 +1436,7 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.9651
 49a8f0b6-4d32-5270-8f23-d77804c5555b,534366c9-d667-5dcb-9778-e42e12abc813,0.427,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 49ee4896-9d17-5516-a2f1-0fed4ba6900d,534366c9-d667-5dcb-9778-e42e12abc813,0.745,,,epoch,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag
 4ac9780c-6745-5877-9906-dfb8d06003e1,534366c9-d667-5dcb-9778-e42e12abc813,0.848,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
-54c85152-6635-5c5a-9132-83b8470c32ed,534366c9-d667-5dcb-9778-e42e12abc813,0.775,,,epoch,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag
+54c85152-6635-5c5a-9132-83b8470c32ed,534366c9-d667-5dcb-9778-e42e12abc813,0.793,,,epoch,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990
 551a5400-1b6f-5e7d-9612-d083268c4832,534366c9-d667-5dcb-9778-e42e12abc813,0.838,,,epoch,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf
 579d34db-d5b0-59de-8ded-a1ed3d10ec4e,534366c9-d667-5dcb-9778-e42e12abc813,0.536,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 57aaae76-49e7-5b7f-bac8-90b0b43e3e1d,534366c9-d667-5dcb-9778-e42e12abc813,0.77,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -1499,7 +1501,6 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,534366c9-d667-5dcb-9778-e42e12abc813,0.9708
 04a694d8-9856-5570-ad47-97849831b6e2,572cb848-2b60-5b88-a730-597010b153de,0.9382566585956417,0.0020311099201047096,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 06b1d506-8ef8-5630-9824-5ceb3ca9df60,572cb848-2b60-5b88-a730-597010b153de,0.364,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,572cb848-2b60-5b88-a730-597010b153de,0.738,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
-09796b8f-e8d2-560a-8c41-de3dce02f98c,572cb848-2b60-5b88-a730-597010b153de,0.439,,,epoch,"Scaling Language Models: Methods, Analysis & Insights from Training Gopher",http://arxiv.org/abs/2112.11446
 0aaa33a7-68e9-55c7-beb3-7690c708a647,572cb848-2b60-5b88-a730-597010b153de,0.479,,,epoch,Qwen Technical Report,https://arxiv.org/pdf/2309.16609
 0b0211a2-6338-53bc-8e54-9f7f83babc21,572cb848-2b60-5b88-a730-597010b153de,0.537,,,epoch,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971
 0d79391a-c376-5ffe-b7bf-4b56d1bac816,572cb848-2b60-5b88-a730-597010b153de,0.778,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
@@ -1548,6 +1549,7 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,534366c9-d667-5dcb-9778-e42e12abc813,0.9708
 52cb2f61-b60e-51ca-9965-8f2f2a54ac83,572cb848-2b60-5b88-a730-597010b153de,0.8151260504201681,0.0032758784679566837,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 53d79bba-1f06-5f45-bac3-8ef88e9909a3,572cb848-2b60-5b88-a730-597010b153de,0.824,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
 5497bab7-7579-54c1-9408-7a90c63ef218,572cb848-2b60-5b88-a730-597010b153de,0.827,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
+54c85152-6635-5c5a-9132-83b8470c32ed,572cb848-2b60-5b88-a730-597010b153de,0.439,,,epoch,"Scaling Language Models: Methods, Analysis & Insights from Training Gopher",http://arxiv.org/abs/2112.11446
 551a5400-1b6f-5e7d-9612-d083268c4832,572cb848-2b60-5b88-a730-597010b153de,0.693,,,epoch,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971
 579d34db-d5b0-59de-8ded-a1ed3d10ec4e,572cb848-2b60-5b88-a730-597010b153de,0.584,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
 57aaae76-49e7-5b7f-bac8-90b0b43e3e1d,572cb848-2b60-5b88-a730-597010b153de,0.757,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -1651,6 +1653,7 @@ db210d2d-9fd6-5b51-b481-16d038c73444,572cb848-2b60-5b88-a730-597010b153de,0.881,
 de705bfb-0c9c-51e0-8dc5-ac35f72fd6ff,572cb848-2b60-5b88-a730-597010b153de,0.587,,,epoch,Qwen Technical Report,https://arxiv.org/pdf/2309.16609
 def8f283-1576-562c-81c8-3db93aa5a7c3,572cb848-2b60-5b88-a730-597010b153de,0.9139011536818116,0.0023671501923602043,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 dfdcd706-2b34-54ff-bb92-5930714047b9,572cb848-2b60-5b88-a730-597010b153de,0.714,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
+e0798bba-b6ab-53df-abc2-644c48d85063,572cb848-2b60-5b88-a730-597010b153de,0.612,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
 e0d02856-1db1-5660-8957-dd11bae9e534,572cb848-2b60-5b88-a730-597010b153de,0.9524996439253668,0.0017949748955075387,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 e10034d4-2293-57b9-8b9d-804085279068,572cb848-2b60-5b88-a730-597010b153de,0.5416,,,epoch,Baichuan 2: Open Large-scale Language Models,http://arxiv.org/abs/2309.10305
 e17e814c-ab10-5e4e-8cd3-a10831fc7461,572cb848-2b60-5b88-a730-597010b153de,0.688,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
@@ -2580,6 +2583,7 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 38391665-2a3d-5970-8ee2-58ae3a4ebed2,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.4597222222222222,,,epoch,EpochAI,
 3866e9da-f347-52e4-8594-d08878bb017a,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0083333333333333,,,epoch,EpochAI,
 3907a552-0ad6-5bc9-9d40-577793a07f37,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0212,,,epoch,EpochAI,
+39093013-7acf-596f-994a-a28edf391b1f,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0,,,epoch,EpochAI,
 3a6ddf43-bed3-527c-b659-5290a5e7a411,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0527777777777777,,,epoch,EpochAI,
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0298,,,epoch,EpochAI,
 3b26cf34-5603-56fb-945b-dcb93e294de5,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6513888888888889,,,epoch,EpochAI,
@@ -2608,6 +2612,7 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.013,,,epoch,EpochAI,
 5135b885-e763-5a0a-ad3b-e5bc9e3437fb,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0277777777777777,,,epoch,EpochAI,
 51741aba-80cc-5b59-aecf-1d4ce989ca10,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0278,,,epoch,EpochAI,
+51ecf54c-193e-5223-ac0b-917993054698,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6625,,,epoch,EpochAI,
 52f27ded-8d92-5090-b9f6-69396f19cb68,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5833333333333334,,,epoch,EpochAI,
 53d2d6c7-13cd-5f78-a0b1-a97d4e519d4e,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0653,,,epoch,EpochAI,
 5437dcc5-07b7-5696-bdad-83556ef7b98a,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6708,,,epoch,EpochAI,
@@ -2619,6 +2624,7 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 5c8224b6-688f-5970-bcd4-2e18e3c21845,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.1222222222222222,,,epoch,EpochAI,
 5d7701b6-0615-5e82-85a4-9788551b4ce2,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.375,,,epoch,EpochAI,
 5d812c04-74c7-52f8-9cfc-ce7e402800ed,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.1875,,,epoch,EpochAI,
+5d96b2aa-d1e7-5323-ae03-ea8c322892ce,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0344,,,board_rows,"ARC Prize leaderboard data (evaluations.json, read 2026-11-17; semi-private set)",https://arcprize.org/media/data/evaluations.json
 5e47af86-25cd-515c-ba72-0887760f9995,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5291,,,epoch,EpochAI,
 5e538b9d-bf72-57c4-b07d-61b64c1b5f31,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5972222222222221,,,epoch,EpochAI,
 5f204bba-10d4-5c16-ac74-564dd3016500,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.8958333333333335,,,epoch,EpochAI,
@@ -2627,6 +2633,7 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 619a9c7d-3b2e-5290-98d4-7fddddd4e68b,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5930555555555556,,,epoch,EpochAI,
 61d9fcff-f4ea-575c-8ea7-6dc309939c7a,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0167,,,epoch,EpochAI,
 62407803-2c75-5f0b-8e74-05e54bed9915,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0444,,,epoch,EpochAI,
+62d0a91b-1188-5944-b74e-14cb8e69c056,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6917,,,epoch,EpochAI,
 6394deb1-16b9-5b7f-a3bd-0f0c768f785a,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6833,,,epoch,EpochAI,
 63cc9c2e-1703-5fa1-9e84-3de5ded54f01,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.1764,,,epoch,EpochAI,
 64326be6-ba5d-5389-b56a-0ad585507195,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.475,,,epoch,EpochAI,
@@ -2684,7 +2691,6 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 8dce7ae9-4b3e-527e-a6ad-af42ebdd235c,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.925,,,epoch,EpochAI,
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.7395,,,epoch,EpochAI,
 90a060e2-e4f8-5e28-b07b-35bd70580164,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.7291666666666666,,,epoch,EpochAI,
-90ee5b11-621c-549e-9e84-0bc42a35e1a8,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0,,,epoch,EpochAI,
 90fb55a8-bd08-5dc4-bc0c-2533bc3081c7,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.1319,,,epoch,EpochAI,
 922cb4ee-b93d-509f-8d7a-f7cc81880715,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0169,,,epoch,EpochAI,
 92ac4a1d-4284-562a-aa21-9a66c1f94337,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5416,,,epoch,EpochAI,
@@ -2695,7 +2701,6 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 96edcc51-a125-5f22-8dd6-c4f487c0a795,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.675,,,epoch,EpochAI,
 98709b5f-ed78-59d9-adf5-1c37c990c7e2,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0042,,,epoch,EpochAI,
 98fa566f-573f-5185-bb33-b5e841613177,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.4194444444444444,,,epoch,EpochAI,
-9a2729d3-565c-58f2-bb17-8a47c9126f1c,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6917,,,epoch,EpochAI,
 9cb800c4-f52a-5b4a-90b2-13e7bb075200,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.1389,,,epoch,EpochAI,
 9d1a843b-0188-5431-8f7e-0187f70ab91b,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.4333,,,epoch,EpochAI,
 9de9f714-80a8-57f2-b164-bc4de7a81216,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0486111111111111,,,epoch,EpochAI,
@@ -2739,6 +2744,7 @@ c46458a4-eca4-572f-b854-a93df31d132f,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6375
 c494bab3-30c1-582d-a80c-d887518f453d,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.15975,,,epoch,EpochAI,
 c5a5c3df-a6a3-5969-bf49-b55592753bcc,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0263888888888888,,,epoch,EpochAI,
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0083,,,epoch,EpochAI,
+c73f037b-abe0-5d71-80fc-90f7344f17cd,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6458,,,epoch,EpochAI,
 c894775d-0033-5a87-b0ec-692a0381dcb8,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.9416666666666668,,,epoch,EpochAI,
 c89fe833-61e6-5bd8-a23d-c47f4cf1148d,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0,,,epoch,EpochAI,
 c928fb95-ec6c-51b3-89a3-399a087d731f,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0194,,,epoch,EpochAI,
@@ -2791,6 +2797,7 @@ f774eb3f-8d0f-531c-8b88-23e84e3414be,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6583
 f7efa9d9-75d3-54a6-bf88-46beb72569cd,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6888888888888888,,,epoch,EpochAI,
 f99a025b-f74b-5298-ab3a-63583d8c6a8e,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0486,,,epoch,EpochAI,
 f9b72039-4005-5c41-8e54-52795f854850,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0528,,,epoch,EpochAI,
+f9d0bea8-4c49-5762-b85c-253ef349024b,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6875,,,epoch,EpochAI,
 fb822e69-9563-5a18-952e-ae60ad877a95,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0583,,,epoch,EpochAI,
 fc88657c-e2e7-5b8a-9e77-87845fd09a28,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.008,,,epoch,EpochAI,
 1c922516-3585-503a-8965-2f65aaff0550,7c7f79ee-725b-5fb4-a64a-9137baa63df2,0.604,,,seal,Scale SEAL (audiomc),https://labs.scale.com/leaderboard/audiomc
@@ -3123,6 +3130,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417
 38391665-2a3d-5970-8ee2-58ae3a4ebed2,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.84,,,epoch,https://arcprize.org/leaderboard,
 3866e9da-f347-52e4-8594-d08878bb017a,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.13,,,epoch,https://arcprize.org/leaderboard,
 3907a552-0ad6-5bc9-9d40-577793a07f37,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.29,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
+39093013-7acf-596f-994a-a28edf391b1f,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.16,,,epoch,https://arcprize.org/leaderboard,
 3a6ddf43-bed3-527c-b659-5290a5e7a411,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.3233333333333333,,,epoch,https://arcprize.org/leaderboard,
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.5383,,,epoch,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard
 3b26cf34-5603-56fb-945b-dcb93e294de5,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.87,,,epoch,https://arcprize.org/leaderboard,
@@ -3151,6 +3159,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.158,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 5135b885-e763-5a0a-ad3b-e5bc9e3437fb,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.45,,,epoch,https://arcprize.org/leaderboard,
 51741aba-80cc-5b59-aecf-1d4ce989ca10,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.3733000000000001,,,epoch,EpochAI,
+51ecf54c-193e-5223-ac0b-917993054698,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.92,,,epoch,https://arcprize.org/leaderboard,
 52f27ded-8d92-5090-b9f6-69396f19cb68,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.9016666666666666,,,epoch,https://arcprize.org/leaderboard,
 53d2d6c7-13cd-5f78-a0b1-a97d4e519d4e,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.577,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 5437dcc5-07b7-5696-bdad-83556ef7b98a,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.92,,,epoch,https://arcprize.org/leaderboard,
@@ -3162,6 +3171,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417
 5c8224b6-688f-5970-bcd4-2e18e3c21845,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.585,,,epoch,https://arcprize.org/leaderboard,
 5d7701b6-0615-5e82-85a4-9788551b4ce2,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.77,,,epoch,https://arcprize.org/leaderboard,
 5d812c04-74c7-52f8-9cfc-ce7e402800ed,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.6017,,,epoch,https://arcprize.org/leaderboard,
+5d96b2aa-d1e7-5323-ae03-ea8c322892ce,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.313,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 5e47af86-25cd-515c-ba72-0887760f9995,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.862,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 5e538b9d-bf72-57c4-b07d-61b64c1b5f31,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.8716666666666666,,,epoch,https://arcprize.org/leaderboard,
 5f204bba-10d4-5c16-ac74-564dd3016500,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.975,,,epoch,https://arcprize.org/leaderboard,
@@ -3170,6 +3180,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417
 619a9c7d-3b2e-5290-98d4-7fddddd4e68b,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.8666666666666667,,,epoch,https://arcprize.org/leaderboard,
 61d9fcff-f4ea-575c-8ea7-6dc309939c7a,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.2133,,,epoch,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard
 62407803-2c75-5f0b-8e74-05e54bed9915,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.5433,,,epoch,EpochAI,
+62d0a91b-1188-5944-b74e-14cb8e69c056,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.94,,,epoch,https://arcprize.org/leaderboard,
 6394deb1-16b9-5b7f-a3bd-0f0c768f785a,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.935,,,epoch,EpochAI,
 63cc9c2e-1703-5fa1-9e84-3de5ded54f01,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.7283,,,epoch,https://arcprize.org/leaderboard,
 64326be6-ba5d-5389-b56a-0ad585507195,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.885,,,epoch,https://arcprize.org/leaderboard,
@@ -3233,7 +3244,6 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.9367,,,epoch,EpochAI,
 8fa0267b-7634-50a4-a79a-9c928a43102b,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.7583,,,epoch,https://arcprize.org/leaderboard,
 90a060e2-e4f8-5e28-b07b-35bd70580164,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.945,,,epoch,https://arcprize.org/leaderboard,
-90ee5b11-621c-549e-9e84-0bc42a35e1a8,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.313,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 90fb55a8-bd08-5dc4-bc0c-2533bc3081c7,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.58,,,epoch,https://arcprize.org/leaderboard,
 92ac4a1d-4284-562a-aa21-9a66c1f94337,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.8567,,,epoch,EpochAI,
 935de1ee-c0c0-59a6-afeb-a6e0c95046ed,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.4467,,,epoch,EpochAI,
@@ -3243,7 +3253,6 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417
 96edcc51-a125-5f22-8dd6-c4f487c0a795,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.9267,,,epoch,EpochAI,
 98709b5f-ed78-59d9-adf5-1c37c990c7e2,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.0583,,,epoch,EpochAI,
 98fa566f-573f-5185-bb33-b5e841613177,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.73,,,epoch,https://arcprize.org/leaderboard,
-9a2729d3-565c-58f2-bb17-8a47c9126f1c,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.94,,,epoch,https://arcprize.org/leaderboard,
 9cb800c4-f52a-5b4a-90b2-13e7bb075200,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.5867,,,epoch,EpochAI,
 9cf06ff3-483b-5582-95ad-b93bf1ee2f74,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.307,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 9d1a843b-0188-5431-8f7e-0187f70ab91b,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.7867000000000001,,,epoch,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard
@@ -3291,6 +3300,7 @@ c494bab3-30c1-582d-a80c-d887518f453d,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.6667
 c5a5c3df-a6a3-5969-bf49-b55592753bcc,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.345,,,epoch,https://arcprize.org/leaderboard,
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.14,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 c6e4ee19-fc37-542d-af17-012de06db533,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.0612,,,epoch,https://arcprize.org/leaderboard,
+c73f037b-abe0-5d71-80fc-90f7344f17cd,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.86,,,epoch,https://arcprize.org/leaderboard,
 c894775d-0033-5a87-b0ec-692a0381dcb8,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.985,,,epoch,https://arcprize.org/leaderboard,
 c89fe833-61e6-5bd8-a23d-c47f4cf1148d,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.145,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
 c928fb95-ec6c-51b3-89a3-399a087d731f,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.44,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
@@ -3344,6 +3354,7 @@ f774eb3f-8d0f-531c-8b88-23e84e3414be,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.91,,
 f7efa9d9-75d3-54a6-bf88-46beb72569cd,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.91,,,epoch,https://arcprize.org/leaderboard,
 f99a025b-f74b-5298-ab3a-63583d8c6a8e,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.6367,,,epoch,EpochAI,
 f9b72039-4005-5c41-8e54-52795f854850,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.485,,,epoch,EpochAI,
+f9d0bea8-4c49-5762-b85c-253ef349024b,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.93,,,epoch,https://arcprize.org/leaderboard,
 fb822e69-9563-5a18-952e-ae60ad877a95,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.31,,,epoch,EpochAI,
 07bc8271-6431-5b0d-b122-6fcc0d10aac3,94f1bc5b-4120-5601-9b02-8dbbfba29b6e,0.38,,,epoch,VPCT leaderboard,https://cbrower.dev/vpct
 1555223a-a795-5f50-93cc-fc0d4aa02f25,94f1bc5b-4120-5601-9b02-8dbbfba29b6e,0.3,,,epoch,VPCT leaderboard,https://cbrower.dev/vpct
@@ -3421,7 +3432,7 @@ eb51562e-effb-5407-91ca-9fc4d497f59d,94f1bc5b-4120-5601-9b02-8dbbfba29b6e,0.33,,
 5df9f1ed-d840-5ac8-b9bf-544d0c4f711b,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.167,,,epoch,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652
 6021526e-96c9-5a69-b4bb-a3364b585af7,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.911,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
 62196f6d-0cf3-5142-a66e-47efe1520383,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.696,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-6624f81d-62e6-5b33-9f1a-de9b7ca26060,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.157,,,epoch,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652
+6624f81d-62e6-5b33-9f1a-de9b7ca26060,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.434,,,epoch,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652
 68234935-1d21-54ea-9288-18a3ec1de754,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.809,,,epoch,Releasing Claude Instant 1.2,https://www.anthropic.com/news/releasing-claude-instant-1-2
 6980ca4a-8e28-576c-a327-178438350630,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.839,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
 6c3045c9-e1f8-5798-bb99-091c9a4b5334,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.984837,0.003366,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-5-5_medium_gsm8k (1 epochs x 1319 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_medium_gsm8k
@@ -4163,7 +4174,6 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,b7dc1dfb-6c74-5025-8e06-f2c52e3f1ddd,0.8490
 0413d73c-7ab7-5a13-992e-0dfa97b70b2a,b812b198-64a0-5b54-bdd2-018cbce4626b,0.6582,,,epoch,INTELLECT-1 Technical Report,https://arxiv.org/abs/2412.01152
 06b1d506-8ef8-5630-9824-5ceb3ca9df60,b812b198-64a0-5b54-bdd2-018cbce4626b,0.576,,,epoch,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,b812b198-64a0-5b54-bdd2-018cbce4626b,0.742,,,epoch,"The Claude 3 Model Family: Opus, Sonnet, Haiku",https://assets.anthropic.com/m/61e7d27f8c8f5919/original/Claude-3-Model-Card.pdf
-09796b8f-e8d2-560a-8c41-de3dce02f98c,b812b198-64a0-5b54-bdd2-018cbce4626b,0.777,,,epoch,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4
 0b0211a2-6338-53bc-8e54-9f7f83babc21,b812b198-64a0-5b54-bdd2-018cbce4626b,0.77,,,epoch,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf
 13157481-63a6-59e7-88c0-d5fa446a2c08,b812b198-64a0-5b54-bdd2-018cbce4626b,0.708,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 1ecd215f-37d1-5d9b-8a11-dc332bbebe33,b812b198-64a0-5b54-bdd2-018cbce4626b,0.729,,,epoch,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186
@@ -4182,6 +4192,7 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,b7dc1dfb-6c74-5025-8e06-f2c52e3f1ddd,0.8490
 42af4551-0280-51ca-90fc-175670bdd1e5,b812b198-64a0-5b54-bdd2-018cbce4626b,0.608,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,b812b198-64a0-5b54-bdd2-018cbce4626b,0.67,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 4ac9780c-6745-5877-9906-dfb8d06003e1,b812b198-64a0-5b54-bdd2-018cbce4626b,0.823,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
+54c85152-6635-5c5a-9132-83b8470c32ed,b812b198-64a0-5b54-bdd2-018cbce4626b,0.777,,,epoch,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4
 551a5400-1b6f-5e7d-9612-d083268c4832,b812b198-64a0-5b54-bdd2-018cbce4626b,0.851,,,epoch,GPT-4 Technical report,https://arxiv.org/pdf/2303.08774
 579d34db-d5b0-59de-8ded-a1ed3d10ec4e,b812b198-64a0-5b54-bdd2-018cbce4626b,0.547,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 57aaae76-49e7-5b7f-bac8-90b0b43e3e1d,b812b198-64a0-5b54-bdd2-018cbce4626b,0.815,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -4638,7 +4649,6 @@ e570dd31-b940-537b-80d0-f06e0f3aa6f9,bd4da3d5-8651-5b55-915f-3dafdc7078b9,1.0,,,
 f21f5726-030f-59c1-8627-181bbdcf8d24,bd4da3d5-8651-5b55-915f-3dafdc7078b9,0.918918918918919,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 f87b6bf9-9171-5467-bcd6-ea744b4c1e38,bd4da3d5-8651-5b55-915f-3dafdc7078b9,0.726027397260274,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 f9d0bea8-4c49-5762-b85c-253ef349024b,bd4da3d5-8651-5b55-915f-3dafdc7078b9,1.0,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-09796b8f-e8d2-560a-8c41-de3dce02f98c,be2c3adb-c271-55d1-8747-16d672997b80,0.712,,,epoch,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4
 211d87a3-a319-52a9-a65c-622f10f6cfe4,be2c3adb-c271-55d1-8747-16d672997b80,0.799,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 221eb942-ffb1-5e7b-a004-600f2240047e,be2c3adb-c271-55d1-8747-16d672997b80,0.532,,,epoch,Gemma: Open Models Based on Gemini Research and Technology,https://arxiv.org/pdf/2403.08295
 2a541527-675f-5356-b4ee-4f449eb5c8a4,be2c3adb-c271-55d1-8747-16d672997b80,0.86,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
@@ -4646,6 +4656,7 @@ f9d0bea8-4c49-5762-b85c-253ef349024b,bd4da3d5-8651-5b55-915f-3dafdc7078b9,1.0,,,
 4216f328-a9a2-55a9-815d-dde8dcb69e73,be2c3adb-c271-55d1-8747-16d672997b80,0.829,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 4ac9780c-6745-5877-9906-dfb8d06003e1,be2c3adb-c271-55d1-8747-16d672997b80,0.719,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 53d79bba-1f06-5f45-bac3-8ef88e9909a3,be2c3adb-c271-55d1-8747-16d672997b80,0.848,,,epoch,PapersWithCode,https://paperswithcode.com/sota/question-answering-on-triviaqa
+54c85152-6635-5c5a-9132-83b8470c32ed,be2c3adb-c271-55d1-8747-16d672997b80,0.712,,,epoch,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4
 551a5400-1b6f-5e7d-9612-d083268c4832,be2c3adb-c271-55d1-8747-16d672997b80,0.814,,,epoch,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf
 579d34db-d5b0-59de-8ded-a1ed3d10ec4e,be2c3adb-c271-55d1-8747-16d672997b80,0.452,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 57aaae76-49e7-5b7f-bac8-90b0b43e3e1d,be2c3adb-c271-55d1-8747-16d672997b80,0.581,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -4905,7 +4916,6 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,c78bf195-f477-5ab0-b096-a2977ceff4a4,0.4920
 4575ecfd-1307-5529-801c-828d7183d439,c817025f-1cdd-50c3-afc9-985127f1a43b,0.408,,,epoch,https://simple-bench.com/,
 481d5f25-a5dc-526d-bc09-df38fac19028,c817025f-1cdd-50c3-afc9-985127f1a43b,0.616,,,epoch,SimpleBench Leaderboard,
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,c817025f-1cdd-50c3-afc9-985127f1a43b,0.309,,,epoch,SimpleBench Leaderboard,
-515946bc-a14f-50af-b015-26a251ba217d,c817025f-1cdd-50c3-afc9-985127f1a43b,0.227,,,epoch,SimpleBench Leaderboard,
 63cc9c2e-1703-5fa1-9e84-3de5ded54f01,c817025f-1cdd-50c3-afc9-985127f1a43b,0.532,,,epoch,https://lmcouncil.ai/benchmarks,
 6f19902d-57ce-5960-b943-0538acb4c7ff,c817025f-1cdd-50c3-afc9-985127f1a43b,0.6900000000000001,,,epoch,https://lmcouncil.ai/benchmarks,
 7001e3dd-22dc-5af2-8ef6-3d9030ccc813,c817025f-1cdd-50c3-afc9-985127f1a43b,0.347,,,epoch,https://simple-bench.com/,
@@ -4967,6 +4977,7 @@ d2d37811-aa9a-523d-a76e-437c8491d960,c817025f-1cdd-50c3-afc9-985127f1a43b,0.63,,
 d451030c-63c6-5b8d-92be-ce8e50f33834,c817025f-1cdd-50c3-afc9-985127f1a43b,0.4,,,epoch,https://simple-bench.com/,
 db7812d0-db68-54b7-830d-aa9bb4deb81d,c817025f-1cdd-50c3-afc9-985127f1a43b,0.7170000000000001,,,epoch,https://lmcouncil.ai/benchmarks,
 e0d02856-1db1-5660-8957-dd11bae9e534,c817025f-1cdd-50c3-afc9-985127f1a43b,0.917,,,epoch,https://simple-bench.com/,
+ea5a129f-b956-540e-b394-ca05de0f7dbb,c817025f-1cdd-50c3-afc9-985127f1a43b,0.227,,,epoch,SimpleBench Leaderboard,
 eb51562e-effb-5407-91ca-9fc4d497f59d,c817025f-1cdd-50c3-afc9-985127f1a43b,0.275,,,epoch,SimpleBench Leaderboard,
 ec3df8c3-9c72-5e8e-a615-7e0607fdc095,c817025f-1cdd-50c3-afc9-985127f1a43b,0.579,,,epoch,https://lmcouncil.ai/benchmarks,
 f28c936a-3acf-57c1-96f1-6ebc1eaca363,c817025f-1cdd-50c3-afc9-985127f1a43b,0.221,,,epoch,https://simple-bench.com/,

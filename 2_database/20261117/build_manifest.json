@@ -1,13 +1,13 @@
 {
   "schema_version": "2.3",
-  "built_at": "2026-11-17T23:51:31+01:00",
-  "git_commit": "c1eb722d52fb61631e87f0377bb8c560faceacf6",
+  "built_at": "2026-11-18T00:05:06+01:00",
+  "git_commit": "8eb5214c73a4358547d5864ab448a4775d057ff5",
   "feeds": {
     "0_input/feed/board_rows/board_rows.csv": {
-      "byte_size": 2506,
+      "byte_size": 3472,
       "fetched_at": "by hand",
       "note": "rows no other feed carries, each with the day its board was read (read_on)",
-      "sha256": "d5a619e14d466086f9ddd69d1770a622daa820ce9e37aff30198ec9f92eda9db",
+      "sha256": "5d7d1f471f242516ff531f9f26097f23ecd01baabbb1488c907f12c586c699ec",
       "url": "the boards named in the file's source_url column"
     },
     "0_input/feed/cybench_site/cybench_leaderboard.csv": {
@@ -1247,7 +1247,7 @@
   "inputs_sha256": {
     "0_input/feed/board_rows/aliases.csv": "bfb9e1a53b16a09f93c357f0ff6e6bb88a2d89da66f07bcb34718b762efcd75f",
     "0_input/feed/cybench_site/aliases.csv": "aea3f28b66a77a961a80c52a4522c345ffe22ecedad4af170751d3b476814f1d",
-    "0_input/feed/epoch/aliases.csv": "8f079355ed05b94d054b6bf91e39430b3cd2f8eb178cc4e8005c34a02de5de75",
+    "0_input/feed/epoch/aliases.csv": "dbe07831453b00ea4d1fddd795a2f18a61964a146a77bae939dc680b9294fc5c",
     "0_input/feed/epoch_cyber/aliases.csv": "efdfb836394bcdd67071a230ec7ea15250eae97066b26d915bcb6ccf7b454bc3",
     "0_input/feed/epoch_live/aliases.csv": "83122b41e86092436123ad734f644665a5cd3cae04839138177987af33cd30ac",
     "0_input/feed/gpai_runs/aliases.csv": "bfb9e1a53b16a09f93c357f0ff6e6bb88a2d89da66f07bcb34718b762efcd75f",
@@ -1259,18 +1259,18 @@
     "0_input/metadata/human_baselines.csv": "42607e4d5f2fb3e5147dc4320b2343aa86dc01ca3f2a444ccec476412774acca",
     "0_input/metadata/model_exclusions.csv": "abd1c703d84954e9f3c6d38b36e8df2d024f91e34dd240d0868c79fef718f982",
     "0_input/metadata/organizations.csv": "3f90f0dec7e64ab180264685c34241743197acc6cf20eef2620b4c04411c9334",
-    "0_input/metadata/release_dates.csv": "6ee92fd48ab0929cd3498bbf2af74675fedcb28e997cb331025c0adc2cf45cb8",
+    "0_input/metadata/release_dates.csv": "e980c7a7206ac580e745a2d1a39bd80d89cb91362ac44b9d4069992d7ed37b7c",
     "0_input/metadata/score_corrections.csv": "c9935eb7b087ff50febde39f6dcc82cefddab6dabd57dfad6490fbae77aa7187",
     "0_input/metadata/score_drop_rules.csv": "946d586f9a24804386a1bffce87799796715485fa862e561fe231f43cbc63ce9",
-    "0_input/metadata/score_variant_fixes.csv": "e888631863d80a8b966d28412305112c2045eba39b6db701ce2b66bee8e49a55",
+    "0_input/metadata/score_variant_fixes.csv": "45b67568ad648ad7bef8afe48fe302a08d636901113fc7d5d70dad8399702425",
     "0_input/metadata/sibling_merges.csv": "fd85935b300c00a9eae14b6300e9ad0a48d4c25dfc3021a219c4dc2ad4af5bb6"
   },
   "rows": {
-    "models.csv": 1043,
+    "models.csv": 1042,
     "benchmarks.csv": 107,
-    "scores.csv": 6013,
+    "scores.csv": 6024,
     "human_baselines.csv": 56,
-    "model_names.csv": 2000,
+    "model_names.csv": 2015,
     "excluded_benchmarks.csv": 49
   }
 }
