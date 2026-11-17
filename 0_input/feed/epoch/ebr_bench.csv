@@ -1,6 +1,6 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
 claude-fable-5-2_max,0.9047619047619048,0.9047619047619048,2026-11-09,Anthropic,United States of America,,,0.015058465048420852,,,2026-11-06T01:40:26.000Z,QFjq6YZeSFeu74ZvTkdCei
-gemini-4-carbon_high,0.8761904761904763,0.8761904761904763,2026-10-28,Google DeepMind,United States of America,,,0.06834619092574916,,,2026-11-05T19:14:19.000Z,gakjGnDNepUzyuCVr3TwZT
+gemini-4-carbon_high,0.8761904761904763,0.8761904761904763,2026-11-10,Google DeepMind,United States of America,,,0.06834619092574916,,,2026-11-05T19:14:19.000Z,gakjGnDNepUzyuCVr3TwZT
 mistral-large-4-0-oss_high,0.18095238095238095,0.18095238095238095,2026-10-29,Mistral AI,France,1.24e+25,"From tech report: ""Mistral Large 4 was pretrained on 3,840 NVIDIA GB200 GPUs in a Mistral data center near Paris.
 Our internal training stack is built on PyTorch and CUDA. Pretraining took 45 days, or about 4.15 million GPU-hours, with a model FLOPs utilization (MFU) of 36% and a goodput of 94.1%. Webmeasure MFU against peak hardware BF16 FLOP/s, include matrix-multiplication and attention
 FLOPs.""
@@ -14,7 +14,7 @@ For post-training, RL involved 162.5 billion output tokens during rollouts for R
 
 MFU is reported against bf16 spec, but report mentions FP8 in the pretraining without clarifying the primary format.",0.03158690276528952,,,2026-11-02T14:05:31.000Z,Xhk47x2m6incQifzec3pqC
 gpt-6.1-terra_max,0.780952380952381,0.780952380952381,2026-10-26,OpenAI,United States of America,,,0.05128728387747146,,,2026-10-26T20:01:15.000Z,65SHyNJX5oxVADzzjkssFK
-gemini-4-argon_high,0.6476190476190476,0.6476190476190476,2026-09-30,Google DeepMind,United States of America,,,0.04902681019517619,,,2026-10-13T17:16:18.000Z,mSJNKA7nCp2eZVqMo5nTUP
+gemini-4-argon_high,0.6476190476190476,0.6476190476190476,2026-10-13,Google DeepMind,United States of America,,,0.04902681019517619,,,2026-10-13T17:16:18.000Z,mSJNKA7nCp2eZVqMo5nTUP
 muse-wonder-1.0_max,0.3142857142857143,0.3142857142857143,2026-10-12,Meta AI,United States of America,,,0.041513323271815936,,,2026-10-12T21:51:35.000Z,fMDaGtyboCNfTpP9aStwaU
 claude-haiku-5-5_max,0.43809523809523804,0.43809523809523804,2026-10-07,Anthropic,United States of America,,,0.017817416127494958,,,2026-10-09T00:00:53.000Z,FMiLkyqzaD56gA4uCCj9Qr
 gpt-6.1-sol_max,0.5428571428571429,0.5428571428571429,2026-09-29,OpenAI,United States of America,,,0.05753831415997416,,,2026-09-29T18:13:25.000Z,LRUWNzFDcScwkTYuZYdeiV

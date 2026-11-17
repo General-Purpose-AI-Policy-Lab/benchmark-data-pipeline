@@ -389,3 +389,15 @@ Kimi K3p1 Pro (mini-swe-agent) xhigh,kimi-k3.1-pro,xhigh,,,,mini-SWE-agent,"Scal
 Minimax M3p1 Flash (mini-swe-agent) xhigh,MiniMax-M3.1-Flash,xhigh,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort, p-spelling (refresh of 2026-11-12; version fireworks_ai/minimax-m3p1-flash); new to the pipeline, named after Epoch's MiniMax-M3"
 Muse Spark Open,Muse-Spark-Open-816B-A42B,,,,,,SEAL display name (refresh of 2026-11-12); Epoch's spelling of the open-weights Muse Spark; no effort stated
 Deepseek V4.1 Flash,deepseek-v4.1-flash-1017,,,,,,"SEAL display name without a date (Remote Labor Index, entry created 2026-11-11): read as the 10-17 snapshot, which the boards updated at the same time name explicitly (fireworks_ai/deepseek-v4p1-flash-1017) (user, 2026-11-12); no effort stated"
+Gemini 4 Carbon (mini-swe-agent) high,gemini-4-carbon,high,,,,mini-SWE-agent,Scale SEAL agentic board: model (harness) effort (refresh of 2026-11-17)
+Gemini 4 Hydrogen (mini-swe-agent) high,gemini-4-hydrogen,high,,,,mini-SWE-agent,"Scale SEAL agentic board: model (harness) effort (refresh of 2026-11-17); Gemini 4 Hydrogen, released 2026-11-12, named as in Epoch's model_metadata"
+muse-ember-1.0,muse-ember-1.0,,,,,,SEAL slug (refresh of 2026-11-17); no effort stated
+Nemotron 3.5 Bolt E4B (Thinking),nemotron-3.5-bolt-e4b,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; NVIDIA-Nemotron-3.5-Bolt-E4B-4GB, new to the pipeline"
+Gemma 4 E4B (Thinking),gemma-4-E4B-it,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; new to the pipeline, named like gemma-3n-E4B-it"
+Nemotron 3 Nano 4B (Thinking),nemotron-3-nano-4b,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; new to the pipeline"
+Gemma 4 E2B (Thinking),gemma-4-E2B-it,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; new to the pipeline"
+Qwen3.5-4B (Thinking),qwen3.5-4b,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; Epoch's qwen3.5-4b"
+Ministral 3 8B (Thinking),ministral-8b-2512,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; the December 2025 Ministral 3 generation (API id ministral-8b-2512), not the 2410 model"
+Ministral 3 3B (Thinking),ministral-3b-2512,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; the December 2025 Ministral 3 generation, not the 2410 model"
+Llama 3.1 8B,Llama-3.1-8B-Instruct,,,,,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); Epoch's Llama-3.1-8B-Instruct"
+Gemma 3 4B,gemma-3-4b-it,,,,,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); Epoch's gemma-3-4b-it"

@@ -4,7 +4,7 @@ gpt-6-astra_max,0.9500000000000001,2026-09-03,OpenAI,United States of America,9.
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Max),,,recqWVwwNamfxF1zu
 gpt-6.1-sol_max,0.9416666666666668,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Max),,,recEn87cPCL4zBDX9
-gemini-4-carbon_medium,0.9416666666666668,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon (Medium),,,recZSWZSa5latGBoC
+gemini-4-carbon_medium,0.9416666666666668,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon (Medium),,,recZSWZSa5latGBoC
 claude-fable-5-2_xhigh,0.9375,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2 (XHigh),,,rec1KOsH1k2VdO3Ot
 gpt-6-astra_xhigh,0.9333333333333333,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
@@ -22,11 +22,11 @@ gpt-6-astra_medium,0.9208333333333333,2026-09-03,OpenAI,United States of America
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Medium),,,recQLii7vQCYRgYaO
-gemini-4-carbon_high,0.9208333333333333,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon (High),,,recdUqhq4nVKx1P2I
+gemini-4-carbon_high,0.9208333333333333,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon (High),,,recdUqhq4nVKx1P2I
 claude-opus-5-5_max,0.9166666666666666,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5 (Max),,,reciGvWCfQIQzEmnO
 gpt-6.1-sol_xhigh,0.9166666666666666,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (XHigh),,,recA2qz6EjG8Yd9O7
 gpt-6.1-sol_high,0.9166666666666666,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (High),,,recPqdeFjOGTEXsBg
-gemini-4-argon_high,0.9125,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (High),,,rec9xEpWuQctZx5Yy
+gemini-4-argon_high,0.9125,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (High),,,rec9xEpWuQctZx5Yy
 claude-opus-5_max,0.9042,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (Max),,,recRyRMLEzUUt9Acr
 claude-fable-5-2_high,0.9041666666666668,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2 (High),,,rec4VebpHhxAVHMBc
 gpt-5.6-sol_xhigh,0.9,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (xHigh),1.04,,recjEDHJMdFvdEoxY
@@ -43,7 +43,7 @@ claude-opus-5_max,0.8833,2026-07-24,Anthropic,United States of America,,,Claude 
 claude-opus-5_high,0.8833,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (High),,,recB3Hc7Wjn7FZ2vt
 claude-fable-5_high,0.875,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (High),,,recoGNnJQf5s62aEC
 claude-opus-5-5_medium,0.875,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5 (Medium),,,recPthl3n22wvWvIU
-gemini-4-argon_medium,0.8708333333333333,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (Medium),,,recOA2kl6GfLzAubk
+gemini-4-argon_medium,0.8708333333333333,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (Medium),,,recOA2kl6GfLzAubk
 gpt-6.1-sol_medium,0.8666666666666667,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Medium),,,recYSQ5ByKpGp0LKP
 claude-fable-5-2_low,0.8666666666666667,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2 (Low),,,reccNmpb5USiC6Ri8
 claude-fable-5-1_medium,0.8625,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (Medium),,,recT6vtsKxK14oaiK
@@ -158,7 +158,7 @@ gemini-3.6-flash_medium,0.5041666666666667,2026-07-21,Google DeepMind,United Sta
 glm-5.3-flash_high,0.5013888888888889,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"6 * 18e9 active parameters * 30e12 tokens = 3.24e24 FLOP. 
 
 https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-token multimodal pre-training corpus, these changes let GLM-5.3-Flash produce more intelligence with less compute."", which is not definitive in saying that all 30T tokens were used exactly once; likely confidence.",GLM-5.3-Flash (High),,,recXM4pZFYPQu0P58
-gemini-4-carbon_low,0.49583333333333335,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon (Low),,,recQQeIYi5kMeezPE
+gemini-4-carbon_low,0.49583333333333335,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon (Low),,,recQQeIYi5kMeezPE
 gpt-5.6-luna_xhigh,0.4764,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (xHigh),0.54,,recUz4W8immjSHPf0
 gpt-5.6-luna_xhigh,0.4764,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (XHigh),,,rec5u9d3UJgddydsq
 Muse-Spark-Open-816B-A42B_high,0.47500000000000003,2026-10-15,Meta AI,United States of America,,,Muse Spark Open (High),,,reciN9YfqbtP1yXws
@@ -169,7 +169,7 @@ gemini-3-deep-think-preview,0.4514,2026-02-12,Google DeepMind,United States of A
 gpt-5.2-2025-12-11_high,0.4333,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (High),1.393,,recZgpSoatzOtn3rb
 gpt-5.6-sol_low,0.425,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (Low),0.32,,recYYBTJBos18GflF
 qwen3.8-27b_xhigh,0.4236111111111111,2026-08-14,Alibaba,China,,,Qwen3.8-27B (XHigh),,,recaJwwU0sNCfsH5d
-gemini-4-argon_low,0.4208333333333334,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (Low),,,rechhE5adomMk7wyX
+gemini-4-argon_low,0.4208333333333334,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (Low),,,rechhE5adomMk7wyX
 gpt-6-luna_xhigh,0.41944444444444445,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (XHigh),,,rec02FpVp3L8dwBgu
 inkling-small_xhigh,0.40138888888888885,2026-07-15,Thinking Machines,United States of America,,,Inkling Small (XHigh),,,recsPDzpQmPtMA77v
 gpt-5.2-pro-2025-12-11_medium,0.3847,2025-12-11,OpenAI,United States of America,,,GPT-5.2 Pro (Medium),8.9928,,recNfd2GOThl8JJsR
@@ -195,29 +195,25 @@ grok-4.6_low,0.2763888888888889,2026-08-12,xAI,United States of America,,,Grok 4
 Muse-Spark-Open-816B-A42B_medium,0.275,2026-10-15,Meta AI,United States of America,,,Muse Spark Open (Medium),,,rec3TfkvV51jpeJSr
 gpt-5.2-2025-12-11_medium,0.2667,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (Medium),0.7594,,recC0T6EG6UZ9vBNr
 claude-sonnet-5-5_low,0.24027777777777776,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5 (Low),,,recEbAfD1hPSWfxTP
-beam-1.0_xhigh,0.23472222222222222,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_xhigh,0.23472222222222222,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (XHigh),,,rec6ext6dkgRLfGFd
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (XHigh),,,rec6ext6dkgRLfGFd
 claude-opus-4-5-20251101_16K,0.2278,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,"Opus 4.5 (Thinking, 16K)",0.79,,rec75TsP1Xy1ROEez
 qwen3.8-27b_low,0.2277777777777778,2026-08-14,Alibaba,China,,,Qwen3.8-27B (Low),,,rec6bR67M9UBlhFO6
 glm-5.2_unknown,0.22775000000000004,2026-06-16,Z.ai (Zhipu AI),China,,,GLM-5.2,0.2501,,recMTvejGGEdgJHsM
-beam-1.0_high,0.2,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_high,0.2,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (High),,,rechROYywaNPBi7MT
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (High),,,rechROYywaNPBi7MT
 gpt-5.4-mini-2026-03-17_xhigh,0.189,2026-03-17,OpenAI,United States of America,,,GPT-5.4 Mini (xHigh),0.75,,recTo7b6iwUks0bgH
 gpt-5.4-mini-2026-03-17_xhigh,0.189,2026-03-17,OpenAI,United States of America,,,GPT-5.4 Mini (XHigh),,,recOyW5fmk9px98go
 gpt-5.6-terra_low,0.1875,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (Low),0.17,,recBmdT4RIrE6PjQC
@@ -269,16 +265,14 @@ claude-sonnet-4-5-20250929_8K,0.0694,2025-09-29,Anthropic,United States of Ameri
 o3-2025-04-16_high,0.0653,2025-04-16,OpenAI,United States of America,,,o3 (High),0.8339,,recuw1OMe7R6TbHZM
 gpt-5.1-2025-11-13_medium,0.0653,2025-11-13,OpenAI,United States of America,,"Almost certainly > 1e25
 ","GPT-5.1 (Thinking, Medium)",0.4206,,recNeyhzsD2NO7yJf
-beam-1.0_medium,0.0638888888888889,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_medium,0.0638888888888889,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (Medium),,,recZSHuEj5N8Hjl4J
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (Medium),,,recZSHuEj5N8Hjl4J
 tiny-recursion-model,0.0625,2025-10-06,,,,,Tiny Recursion Model (TRM),2.1,,rec8J2syeKkuAoziw
 o4-mini-2025-04-16_high,0.0611,2025-04-16,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",o4-mini (High),0.856,,recP5Py2i3sdybPd9
 claude-sonnet-4-20250514_16K,0.0593,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Sonnet 4 (Thinking 16K),0.4857,,recRLtrNpStDOz6At
@@ -313,16 +307,14 @@ o3-mini-2025-01-31_high,0.0299,2025-01-31,OpenAI,United States of America,,"We c
 o3-2025-04-16_medium,0.0298,2025-04-16,OpenAI,United States of America,,,o3 (Medium),0.4787,,reckVnQ5Dgul9PJ0n
 gemini-2.5-pro_8K,0.0292,2025-06-17,Google DeepMind,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Gemini 2.5 Pro (Thinking 8K),0.4439,,recpBihogJ0mcYOfS
 claude-haiku-4-5-20251001_16K,0.0278,2025-10-15,Anthropic,United States of America,,,Claude Haiku 4.5 (Thinking 16K),0.1392,,recm2RWPI31nRlRMe
-beam-1.0_low,0.027777777777777783,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_low,0.027777777777777783,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (Low),,,recHN8q6LmbeiXGPa
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (Low),,,recHN8q6LmbeiXGPa
 claude-haiku-5-5_low,0.027777777777777776,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Low),,,rec1rxzST2H3xPb5b
 gemini-3.6-flash_minimal,0.02638888888888889,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash (Minimal),,,reczuYhRHn1Q64mB2
 gpt-5-nano-2025-08-07_high,0.026100000000000005,2025-08-07,OpenAI,United States of America,,,GPT-5 Nano (High),0.0295,,recupFdrzUCkiIOJx

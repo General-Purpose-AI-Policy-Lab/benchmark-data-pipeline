@@ -137,6 +137,33 @@ def add_organizations(models: pandas.DataFrame, metadata_dir: Path = config.META
     return m.drop(columns="_merge").fillna({"organization": "", "country": ""}), leftovers
 
 
+def add_view_exclusions(models: pandas.DataFrame, metadata_dir: Path = config.METADATA_DIR):
+    """model_exclusions.csv -> `view_exclusion`: the criterion under which a model stays in the
+    database but out of the consumer views, empty for every other model.
+
+    Key: (base_model, variant), matched exactly, so that `gpt-5.6-sol` with variant `pro` is
+    excluded and `gpt-5.6-sol` itself is not. Returns the models and the usual two leftovers:
+    rules that match no model, and identities whose name looks like a parallel-compute setting
+    (`config.PARALLEL_COMPUTE_SUSPECT`, or variant `pro`) that no rule names.
+    """
+    m = models.copy()
+    variant = m["variant"].fillna("")
+    path = metadata_dir / config.MODEL_EXCLUSIONS_FILE
+    rules = (pandas.read_csv(path, dtype=str).fillna("") if path.exists()
+             else pandas.DataFrame(columns=["base_model", "variant", "criterion"]))
+    if rules.duplicated(["base_model", "variant"]).any():
+        raise ValueError(f"duplicated (base_model, variant) in {config.MODEL_EXCLUSIONS_FILE}")
+    if (rules["criterion"] == "").any():
+        raise ValueError(f"{config.MODEL_EXCLUSIONS_FILE}: a row without a criterion")
+    criterion = {(r.base_model, r.variant): r.criterion for r in rules.itertuples()}
+    keys = list(zip(m["base_model"], variant, strict=True))
+    m["view_exclusion"] = [criterion.get(k, "") for k in keys]
+    suspect = m["base_model"].str.contains(config.PARALLEL_COMPUTE_SUSPECT) | (variant == "pro")
+    label = "model_version" if "model_version" in m else "base_model"
+    unclassed = set(m.loc[suspect & (m["view_exclusion"] == ""), label])
+    return m, (set(criterion) - set(keys), unclassed)
+
+
 def add_epoch_dates_and_flop(models: pandas.DataFrame, meta_obs: list[dict]):
     """publication_date, training_flop: modal value of the Epoch observations per model.
 
@@ -363,6 +390,16 @@ def enrich(models: pandas.DataFrame, benchmarks: pandas.DataFrame, meta_obs: lis
     report_leftovers("release_dates.csv", *lo)
     models, lo = add_sibling_dates(models)
     report_leftovers("sibling dates", *lo)
+    models, (stale, unclassed) = add_view_exclusions(models, metadata_dir)
+    log.info("%s: %d model(s) kept out of the views (%s), %d rule(s) matching no model%s",
+             config.MODEL_EXCLUSIONS_FILE, int((models["view_exclusion"] != "").sum()),
+             {k: int(n) for k, n in models.loc[models["view_exclusion"] != "", "view_exclusion"]
+                                           .value_counts().items()},
+             len(stale), f": {sorted(stale)}" if stale else "")
+    if unclassed:
+        log.warning("%s: %d model(s) named like a parallel-compute setting and in no rule "
+                    "(class them: a rule, or leave them in): %s", config.MODEL_EXCLUSIONS_FILE,
+                    len(unclassed), sorted(unclassed))
     benchmarks, lo = add_benchmark_metadata(benchmarks, metadata_dir, merged_parts)
     report_leftovers("benchmarks.csv", *lo)
     benchmarks, lo = add_benchmark_release_dates(benchmarks, metadata_dir)

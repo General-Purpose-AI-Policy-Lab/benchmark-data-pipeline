@@ -10,7 +10,7 @@ claude-fable-5-1_max,1758.05,2026-09-01,Anthropic,United States of America,,,,30
 claude-sonnet-5-5_high,1698.82,2026-09-28,Anthropic,United States of America,,,,1205,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1717.81,1679.82,recToBiKpCTvPAk25
 gpt-6-sol_max,1689.33,2026-09-22,OpenAI,United States of America,,,,3197,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1701.14,1677.53,rec7T9l5XF7aKZFWM
 claude-opus-5_max,1686.99,2026-07-24,Anthropic,United States of America,,,,12087,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1694.48,1679.51,recNUvyfQc6Bik8Uv
-gemini-4-argon_high,1679.5,2026-09-30,Google DeepMind,United States of America,,,,2422,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1692.77,1666.24,recwdOhldUOnpwUJK
+gemini-4-argon_high,1679.5,2026-10-13,Google DeepMind,United States of America,,,,2422,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1692.77,1666.24,recwdOhldUOnpwUJK
 kimi-k3_max,1674.26,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",,4547,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1685.47,1663.05,recDg44iIUtAe2RhI
@@ -21,7 +21,8 @@ grok-4.7_xhigh,1637.52,2026-09-21,xAI,United States of America,,,,3216,,https://
 claude-fable-5_high,1627.98,2026-06-09,Anthropic,United States of America,,,,10081,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1635.44,1620.53,recldtI0Pj1ckCP0y
 claude-fable-5_unknown,1626.26,2026-06-09,Anthropic,United States of America,,,,8382,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1634.46,1618.06,recSi4QzdnavF3cTZ
 muse-spark-1.3_xhigh,1623.12,2026-09-02,Meta AI,United States of America,,,,2123,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1637.13,1609.11,recJf8XU8Ck0yrLX9
-mimo-v2.6-pro,1618.41,2026-09-21,Xiaomi Corp,China,,,,2734,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1630.66,1606.17,recTM8TiwWWDP1p7Z
+mimo-v2.6-pro,1618.41,2026-09-21,Xiaomi Corp,China,,"6 * 42e9 active parameters * 30e12 tokens = 7.56e24 FLOP, though this is only a lower bound because midtraining tokens aren't stated.
+",,2734,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1630.66,1606.17,recTM8TiwWWDP1p7Z
 grok-4.6_high,1617.64,2026-08-12,xAI,United States of America,,,,4282,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1627.79,1607.49,recD2YH5MiuyOD1HA
 gpt-5.6-sol_xhigh,1617.32,2026-07-09,OpenAI,United States of America,,,,11916,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1624.28,1610.36,recG5CUO9e2GOfiiz
 glm-5.3_max,1614.45,2026-08-14,Z.ai (Zhipu AI),China,,,,3725,,https://arena.ai/leaderboard,https://web.lmarena.ai/leaderboard,,1625.29,1603.61,recGUmCEUF1DKCZhV

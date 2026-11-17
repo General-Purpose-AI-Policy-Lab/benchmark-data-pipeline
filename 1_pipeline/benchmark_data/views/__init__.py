@@ -1,8 +1,9 @@
 """Consumer views: flat files in the schemas the modelling repositories read today.
 
-Views are derived from the four tables and never edited by hand. `all_scores_flat.csv` is every
-score in Multiaxis_ECI's `benchmarks_merged.csv` schema, `dated_scores_flat.csv` keeps the scores
-of dated models only (benchmark-forecasting's input), both with the benchmark floor as
+Views are derived from the four tables and never edited by hand. They leave out the models that
+`models.view_exclusion` names (`0_input/metadata/model_exclusions.csv`). `all_scores_flat.csv` is
+every other score in Multiaxis_ECI's `benchmarks_merged.csv` schema, `dated_scores_flat.csv` keeps
+the scores of dated models only (benchmark-forecasting's input), both with the benchmark floor as
 `lower_bound` and its known `ceiling`; `human_baselines.csv` is the shared baseline schema.
 """
 

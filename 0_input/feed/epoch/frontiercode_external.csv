@@ -13,7 +13,7 @@ swe-2_max,0.5,devin,max,2026-09-10,Cognition,United States of America,,,SWE-2,Me
 gpt-6-sol_max,0.4927,codex,max,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,Mean@5,https://cognition.com/frontiercode,
 grok-4.6_unknown,0.4801000000000001,grok-build,high,2026-08-12,xAI,United States of America,,,Grok 4.6,Mean@5,https://cognition.com/frontiercode,
 grok-4.7_unknown,0.4759,grok-build,high,2026-09-21,xAI,United States of America,,,Grok 4.7,Mean@5,https://cognition.com/frontiercode,
-gemini-4-argon_medium,0.4755,devin-cli,medium,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon,Mean@5,https://cognition.com/frontiercode,
+gemini-4-argon_medium,0.4755,devin-cli,medium,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon,Mean@5,https://cognition.com/frontiercode,
 gpt-5.6-sol_unknown,0.47490000000000004,codex,max,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol,Mean@5,https://cognition.com/frontiercode,
 claude-opus-4-8_unknown,0.465,claude-code,max,2026-05-28,Anthropic,United States of America,,,Claude Opus 4.8,Mean@5,https://cognition.com/frontiercode,
 claude-haiku-5-5_max,0.4636,claude-code,max,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5,Mean@5,https://cognition.com/frontiercode,

@@ -42,6 +42,13 @@ def test_all_scores_keeps_every_score_and_dated_scores_only_dated_ones():
     assert human["benchmark"].tolist() == ["Bench"]
 
 
+def test_models_with_a_view_exclusion_stay_out_of_every_view():
+    models = MODELS.assign(view_exclusion=["parallel_compute", ""])
+    views = build_views(models, BENCHMARKS, SCORES, HUMAN)
+    assert views["all_scores_flat.csv"]["model_version"].tolist() == ["ghost-1"]
+    assert views["dated_scores_flat.csv"].empty, "the excluded model was the only dated one"
+
+
 @pytest.mark.parametrize("name", [
     "gpt-4o-2024-08-06", "claude-opus-4-20250514", "claude-3-7-sonnet-20250219_16K",
     "o1-2024-12-17_medium", "kimi-k2-thinking", "gemini-2.5-flash_thinking", "grok-2",

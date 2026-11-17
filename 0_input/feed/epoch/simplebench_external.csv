@@ -1,7 +1,7 @@
 Model version,Score (AVG@5),Release date,Organization,Country,Training compute (FLOP),Training compute notes,Source,Source link (site from table),Notes,id
 claude-fable-5-2_unknown,0.9490000000000001,2026-11-09,Anthropic,United States of America,,,https://simple-bench.com/,,,recN3mZP1yRX5gFSK
-gemini-4-carbon_unknown,0.9259999999999999,2026-10-28,Google DeepMind,United States of America,,,https://simple-bench.com/,,,recU9rQyUS6sy1xC5
-gemini-4-argon_unknown,0.917,2026-09-30,Google DeepMind,United States of America,,,https://simple-bench.com/,,,recH0IFVXmo0dBpeA
+gemini-4-carbon_unknown,0.9259999999999999,2026-11-10,Google DeepMind,United States of America,,,https://simple-bench.com/,,,recU9rQyUS6sy1xC5
+gemini-4-argon_unknown,0.917,2026-10-13,Google DeepMind,United States of America,,,https://simple-bench.com/,,,recH0IFVXmo0dBpeA
 claude-opus-5-5_unknown,0.8840000000000001,2026-09-22,Anthropic,United States of America,,,https://simple-bench.com/,,,recuBLiEEJqdQ4TYm
 claude-fable-5-1_unknown,0.866,2026-09-01,Anthropic,United States of America,,,https://simple-bench.com/,,,recbHeicSjfR8H2d0
 gpt-6-astra_promax,0.865,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).

@@ -11,7 +11,8 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 ```
 0_input/feed/<source>/      one source's raw data + its aliases.csv (one per source, never shared)
 0_input/metadata/           benchmarks.csv, organizations.csv, sibling_merges.csv, release_dates.csv, benchmark_release_dates.csv,
-                            human_baselines.csv, score_corrections.csv, score_drop_rules.csv, score_variant_fixes.csv
+                            human_baselines.csv, score_corrections.csv, score_drop_rules.csv, score_variant_fixes.csv,
+                            model_exclusions.csv
 1_pipeline/benchmark_data/  the package: python -m benchmark_data {refresh,build,check,parity}
   identity.py               machine-name grammar, aliases, uuid5
   sources/<feed>.py         one module per feed: its _SPEC / _SKIP dictionaries and translate()
@@ -42,10 +43,13 @@ Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal ev
 | `model_version` | the machine name consumers key on (see "Consumer views") |
 | `base_model`, `reasoning_level`, `reasoning_tokens`, `snapshot`, `variant` | **identity** — part of the ID |
 | `organization`, `country`, `publication_date`, `training_flop` | **metadata** — NOT part of the ID |
+| `view_exclusion` | empty for nearly every model; otherwise the criterion under which the model stays in the database but out of the consumer views (see "Models kept out of the views") |
 
 Adding a metadata column changes no ID. Correcting an identity column changes one. `country` is ISO 3166-1 alpha-2 (`US`, `CN`, `FR`, ...; several as `US,CN`).
 
 `publication_date` comes, in order, from the modal Epoch `Release date` of the model, from Epoch's `model_metadata.csv` for models the score files leave undated, from `0_input/metadata/release_dates.csv` where a date was researched (key `base_model, snapshot, variant`; each row carries its source; it wins over both Epoch sources), and finally from dated siblings (same `base_model` and `snapshot`, differing only by reasoning level or run variant). `organization`, `country` and `training_flop` come from `0_input/metadata/organizations.csv` (key `base_model`) and the modal FLOP of the score files, then from Epoch's `model_metadata.csv` where those are blank (country names mapped to ISO through `config.EPOCH_COUNTRY_ISO`, Google's spellings unified as `Google DeepMind`); where both have a value and disagree, ours is kept and the build logs the difference. Convention: the first day the model was publicly usable or downloadable on any surface (consumer app, API or weights), in the developer's local date; a preview restricted to invited partners does not count. When the same model reached a consumer app before its API snapshot, the consumer date wins (o1: 2024-12-05, not the 12-17 snapshot). Exception: Claude Mythos Preview keeps its announcement date although it was invitation-only.
+
+**Models kept out of the views.** `0_input/metadata/model_exclusions.csv` lists identities, by `(base_model, variant)`, whose scores stay in `scores.csv` but reach neither `all_scores_flat.csv` nor `dated_scores_flat.csv`, each with its criterion, source and note. One criterion today, `parallel_compute`: a setting that answers with many runs of one model in parallel, or with far more compute per answer, so that its score is not that of the model the consumers compare (OpenAI's Pro line, from o1-pro to the `pro` variants of GPT-5.6 Sol and GPT-6 Astra, and Gemini 3 Deep Think; user decision of 2026-11-17, see `docs/decisions.md`). Systems that wrap one model in an agentic scaffold (ChatGPT agent, Manus) stay. The key is exact, so `gpt-5.6-sol` with variant `pro` is out and `gpt-5.6-sol` is in. The build reports rules that match no model and, so that a new release is classed by hand, every identity whose name looks like such a setting (`config.PARALLEL_COMPUTE_SUSPECT`, or variant `pro`) that no rule names.
 
 ### benchmarks.csv
 
@@ -78,7 +82,7 @@ Derived from the four tables at every build, never edited by hand:
 
 | file | schema | rows |
 |---|---|---|
-| `all_scores_flat.csv` | `model_version, score, release_date, organization, benchmark, stderr, source, source_url, feed, category, lower_bound, ceiling` (Multiaxis_ECI's `benchmarks_merged.csv` columns, plus the source link, the feed, the benchmark's floor and known ceiling) | every score |
+| `all_scores_flat.csv` | `model_version, score, release_date, organization, benchmark, stderr, source, source_url, feed, category, lower_bound, ceiling` (Multiaxis_ECI's `benchmarks_merged.csv` columns, plus the source link, the feed, the benchmark's floor and known ceiling) | every score of the models the views carry (`view_exclusion` empty) |
 | `dated_scores_flat.csv` | the same columns (benchmark-forecasting's input) | scores of dated models only |
 | `human_baselines.csv` | `benchmark, group, score, note, source` | every baseline |
 
@@ -95,6 +99,7 @@ Derived from the four tables at every build, never edited by hand:
 | 2.0 | uuid5 identities, four tables, harness on scores, benchmark scope at ingestion (2026-09-04) |
 | 2.1 | `models.model_version`, `benchmarks.ceiling`, `scores.source_label` / `source_url`, consumer views in `3_views/` (2026-09-07) |
 | 2.2 | `benchmarks.release_date` (2026-10-01) |
+| 2.3 | `models.view_exclusion`; the views leave out the models it names (2026-11-17) |
 
 ## Conventions (non-negotiable)
 

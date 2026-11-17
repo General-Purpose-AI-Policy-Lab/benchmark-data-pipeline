@@ -1,11 +1,11 @@
 Model version,Score,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,id
-gemini-4-carbon_unknown,16484.20666666667,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon,recgYseBc2iH5xCmj
+gemini-4-carbon_unknown,16484.20666666667,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon,recgYseBc2iH5xCmj
 gpt-6-astra_unknown,15514.701666666668,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,recIHrj7IZwngZzmG
 gpt-6-sol_unknown,14427.848333333333,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,recOsfANgIuve4p8J
-gemini-4-argon_unknown,13718.158333333333,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon,recnHKJey4BfNPh1f
+gemini-4-argon_unknown,13718.158333333333,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon,recnHKJey4BfNPh1f
 gpt-6.1-sol_unknown,12860.61166666667,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol,recwytVhJOXdwlMmd
 claude-opus-5_unknown,11181.87333333333,2026-07-24,Anthropic,United States of America,,,Claude Opus 5,rec7OZVF0EN5vImL0
 claude-sonnet-5-5_unknown,11165.27833333333,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5,recuISzHM54q0s0VU

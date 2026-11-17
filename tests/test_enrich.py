@@ -10,6 +10,7 @@ from benchmark_data.steps.enrich import (
     add_epoch_model_metadata_dates,
     add_manual_dates,
     add_sibling_dates,
+    add_view_exclusions,
     load_epoch_benchmark_dates,
     load_epoch_model_metadata,
 )
@@ -139,3 +140,50 @@ def test_every_included_benchmark_has_a_release_date_with_a_source():
     included = set(meta.loc[meta["status"] == config.STATUS_INCLUDED, "name"])
     merged_parts = set(pandas.read_csv(config.METADATA_DIR / config.SIBLING_MERGES_FILE)["part"])
     assert included - merged_parts - dated == set()
+
+
+def _exclusions(tmp_path, rows):
+    header = "base_model,variant,criterion,source_url,note\n"
+    (tmp_path / config.MODEL_EXCLUSIONS_FILE).write_text(header + "".join(r + "\n" for r in rows))
+    return tmp_path
+
+
+def test_view_exclusion_matches_base_model_and_variant_exactly(tmp_path):
+    """`gpt-x` with variant `pro` is excluded, `gpt-x` itself and its other variants are not; a
+    rule with an empty variant takes every effort of a base model whose identities have none."""
+    models = pandas.DataFrame({
+        "model_id": list("abcde"),
+        "base_model": ["gpt-x", "gpt-x", "gpt-x", "o9-pro", "o9-pro"],
+        "reasoning_level": ["max", "max", "", "high", ""],
+        "variant": ["", "pro", "thinking", "", ""],
+        "model_version": ["gpt-x_max", "gpt-x_promax", "gpt-x_thinking", "o9-pro_high", "o9-pro"],
+    })
+    out, (stale, unclassed) = add_view_exclusions(models, _exclusions(tmp_path, [
+        "gpt-x,pro,parallel_compute,https://x,", "o9-pro,,parallel_compute,https://x,",
+        "ghost,,parallel_compute,https://x,"]))
+    assert out["view_exclusion"].tolist() == ["", "parallel_compute", "", "parallel_compute",
+                                              "parallel_compute"]
+    assert stale == {("ghost", "")} and unclassed == set()
+
+
+def test_models_named_like_a_parallel_compute_setting_are_reported(tmp_path):
+    models = pandas.DataFrame({
+        "model_id": list("abcd"),
+        "base_model": ["gpt-9-pro", "gemini-9-deep-think", "gemini-9-pro", "gpt-9"],
+        "variant": ["", "", "", "pro"],
+        "model_version": ["gpt-9-pro_high", "gemini-9-deep-think", "gemini-9-pro", "gpt-9_promax"],
+    })
+    out, (stale, unclassed) = add_view_exclusions(models, _exclusions(tmp_path, []))
+    assert (out["view_exclusion"] == "").all() and stale == set()
+    assert unclassed == {"gpt-9-pro_high", "gemini-9-deep-think", "gpt-9_promax"}, \
+        "a tier name such as Gemini Pro is not a suspect"
+
+
+def test_no_exclusion_file_excludes_nothing(tmp_path):
+    out, _ = add_view_exclusions(MODELS, tmp_path)
+    assert (out["view_exclusion"] == "").all()
+
+
+def test_an_exclusion_without_a_criterion_stops_the_build(tmp_path):
+    with pytest.raises(ValueError, match="criterion"):
+        add_view_exclusions(MODELS, _exclusions(tmp_path, ["gpt-x,,,https://x,"]))

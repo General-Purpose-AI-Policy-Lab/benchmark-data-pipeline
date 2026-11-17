@@ -1,4 +1,5 @@
-"""`3_views/all_scores_flat.csv`: one row per (model_version, benchmark), every score.
+"""`3_views/all_scores_flat.csv`: one row per (model_version, benchmark), every score of the
+models the views carry (those with an empty `view_exclusion`).
 
 Multiaxis_ECI's `benchmarks_merged.csv` schema, plus `source_url`, the feed, and the benchmark's
 floor (`lower_bound`) and known ceiling (`ceiling`, empty when none is established). `source` is
@@ -13,11 +14,14 @@ from benchmark_data import config
 
 def join_scores(models: pandas.DataFrame, benchmarks: pandas.DataFrame,
                 scores: pandas.DataFrame) -> pandas.DataFrame:
-    """Scores with their model and benchmark columns; consumer names for the shared columns."""
+    """Scores with their model and benchmark columns; consumer names for the shared columns.
+    The scores of models with a `view_exclusion` are left out of every view."""
     bench = benchmarks.rename(columns={"name": "benchmark", "floor": "lower_bound",
                                        "release_date": "benchmark_release_date"})
     out = (scores.merge(models, on="model_id", how="left")
                  .merge(bench, on="benchmark_id", how="left"))
+    if "view_exclusion" in out:  # models that stay in the database only (model_exclusions.csv)
+        out = out[out["view_exclusion"].fillna("") == ""]
     return out.rename(columns={"publication_date": "release_date"})
 
 

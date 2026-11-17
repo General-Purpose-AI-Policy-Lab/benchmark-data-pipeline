@@ -138,10 +138,27 @@ def test_seal_entries_picks_the_labelled_table():
     assert seal.seal_entries(html, "Board Other") == []
 
 
+def test_seal_entries_reads_several_labelled_tables_together():
+    """A board split into variants (AudioMultiChallenge's text and audio tables) is their union;
+    one missing label empties it, so a renamed table is seen and never half-read."""
+    text = [{"model": "a", "score": 50}, {"model": "b", "score": 40}]
+    audio = [{"model": "c", "score": 30}]
+    payload = json.dumps({"variants": [
+        {"key": "text", "label": "Text Output", "entries": text},
+        {"key": "audio", "label": "Audio Output", "entries": audio}]})
+    html = ('<html><script>self.__next_f.push([1,"' + payload.replace('"', '\\"')
+            + '"])</script></html>')
+    assert [json.loads(x) for x in seal.table_labels(html)] == ["Text Output", "Audio Output"]
+    assert seal.seal_entries(html) == text                    # the largest table by default
+    assert seal.seal_entries(html, ("Text Output", "Audio Output")) == text + audio
+    assert seal.seal_entries(html, ("Text Output", "Renamed")) == []
+
+
 def test_seal_translate_scales_scores_and_skips_unknown_boards(tmp_path, caplog):
     d = tmp_path / "seal"
     d.mkdir()
-    slug, bench = next(iter(seal.SEAL_SPEC.items()))
+    # a board read from its single table (those of SEAL_TABLE need their labelled tables)
+    slug, bench = next((k, v) for k, v in seal.SEAL_SPEC.items() if k not in seal.SEAL_TABLE)
     (d / f"{slug}.html").write_text(_seal_page([{"model": "Opus X", "score": 42.5},
                                                 {"model": "No score", "score": None}]))
     (d / "unknown_board.html").write_text(_seal_page([{"model": "Z", "score": 1}]))

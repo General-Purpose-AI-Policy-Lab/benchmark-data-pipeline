@@ -585,3 +585,14 @@ launa-omni-1,Salesforce,US
 MiniMax-M3.1-Flash,MiniMax,CN
 deepseek-v4.1-flash-1017,DeepSeek,CN
 muse-ember-1.0,Meta AI,US
+nemotron-3.5-bolt-e4b,NVIDIA,US
+nemotron-3-nano-4b,NVIDIA,US
+gemma-4-E4B-it,Google DeepMind,US
+gemma-4-E2B-it,Google DeepMind,US
+ministral-8b-2512,Mistral AI,FR
+ministral-3b-2512,Mistral AI,FR
+qwen3-1.7b,Alibaba,CN
+qwen3-14b,Alibaba,CN
+qwen3-4b,Alibaba,CN
+qwen3-8b,Alibaba,CN
+qwen3.5-4b,Alibaba,CN

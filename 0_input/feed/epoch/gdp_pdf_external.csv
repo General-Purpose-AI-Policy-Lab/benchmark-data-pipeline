@@ -65,4 +65,4 @@ deepseek-v4.1-flash_max,0.198,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training)
 gpt-6.1-sol_max,0.35000000000000003,2026-09-29,OpenAI,United States of America,,,GPT 6.1 Sol (Max reasoning),OpenAI,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recHHzUvSpGHKsoJK
 claude-sonnet-5-5_max,0.314,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5 (Adaptive/Max),Anthropic,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,rec0UVUbE2GVRELuC
 muse-wonder-1.0_max,0.308,2026-10-12,Meta AI,United States of America,,,Muse Wonder (Max reasoning),Meta,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recQYavqr4GkieYHV
-gemini-4-argon_high,0.284,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (High reasoning),Google,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recbmgyzrQsktiT3t
+gemini-4-argon_high,0.284,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (High reasoning),Google,,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf,,recbmgyzrQsktiT3t

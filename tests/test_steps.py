@@ -13,7 +13,8 @@ from benchmark_data.views import build_views
 MODELS = pandas.DataFrame({"model_id": ["m1"], "base_model": ["x"], "reasoning_level": [""],
                            "reasoning_tokens": [""], "snapshot": [""], "variant": [""],
                            "model_version": ["x"], "organization": ["O"], "country": ["US"],
-                           "publication_date": ["2025-01-01"], "training_flop": [""]})
+                           "publication_date": ["2025-01-01"], "training_flop": [""],
+                           "view_exclusion": [""]})
 BENCH = pandas.DataFrame({"benchmark_id": ["b1"], "name": ["B"], "category": ["C"], "floor": [0.0],
                           "ceiling": [""], "access": ["public"],
                           "release_date": ["2024-01-01"]})

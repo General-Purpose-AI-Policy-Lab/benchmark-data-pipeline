@@ -1,5 +1,5 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
-claude-fable-5-2_max,0.21666666666666667,0.21666666666666667,2026-11-09,Anthropic,United States of America,,,0.05363439040648223,,,2026-11-06T15:26:00.818Z,steambench-sts1-a20h-a52f0d1907ea187b
+claude-fable-5-2_max,0.13333333333333333,0.13333333333333333,2026-11-09,Anthropic,United States of America,,,0.044255719836307654,,,2026-11-06T15:26:00.818Z,steambench-sts1-a20h-a52f0d1907ea187b
 gpt-6-sol_max,0.05,0.05,2026-09-22,OpenAI,United States of America,,,0.028374015326751195,,,2026-11-05T15:14:53.647Z,steambench-sts1-a20h-831fe00153e0f0b1
 claude-fable-5-1_max,0.0,0.0,2026-09-01,Anthropic,United States of America,,,0.0,,,2026-11-05T15:14:53.017Z,steambench-sts1-a20h-2057a494867d184c
 claude-sonnet-5-5_max,0.0,0.0,2026-09-28,Anthropic,United States of America,,,0.0,,,2026-11-05T15:14:37.615Z,steambench-sts1-a20h-e8f930bf4d4f1a14

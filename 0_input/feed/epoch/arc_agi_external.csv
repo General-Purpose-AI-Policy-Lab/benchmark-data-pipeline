@@ -13,10 +13,10 @@ claude-opus-5-5_high,0.985,2026-09-22,Anthropic,United States of America,,,Claud
 gpt-6.1-sol_xhigh,0.985,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (XHigh),,https://arcprize.org/leaderboard,,,recMW30wY6ZEg280e
 gpt-6.1-sol_high,0.985,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (High),,https://arcprize.org/leaderboard,,,recaJC1yARFk9jQsG
 gemini-3.8-flash_high,0.985,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (High),,https://arcprize.org/leaderboard,,,recUS52JUahz03XaX
-gemini-4-argon_medium,0.985,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (Medium),,https://arcprize.org/leaderboard,,,recE0CZhrJwWrmDM5
-gemini-4-argon_high,0.985,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (High),,https://arcprize.org/leaderboard,,,recguygHYW2l1K4Gz
+gemini-4-argon_medium,0.985,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (Medium),,https://arcprize.org/leaderboard,,,recE0CZhrJwWrmDM5
+gemini-4-argon_high,0.985,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (High),,https://arcprize.org/leaderboard,,,recguygHYW2l1K4Gz
 claude-fable-5-2_xhigh,0.985,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2 (XHigh),,https://arcprize.org/leaderboard,,,rec9xXHJBtfLXV7Rm
-gemini-4-carbon_medium,0.985,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon (Medium),,https://arcprize.org/leaderboard,,,recbFDEBFtELUJG2Z
+gemini-4-carbon_medium,0.985,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon (Medium),,https://arcprize.org/leaderboard,,,recbFDEBFtELUJG2Z
 gemini-3.1-pro-preview,0.98,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro (Preview),0.5223,ARC Prize Leaderboard,https://arcprize.org/leaderboard,,recVzc3uOYbFmIWtV
 gpt-5.6-sol_xhigh,0.975,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (xHigh),0.4,https://arcprize.org/leaderboard,,,recrNPlnXllOt0Hvg
 claude-opus-5_max,0.975,2026-07-24,Anthropic,United States of America,,,Claude Opus 5 (High),,https://arcprize.org/leaderboard,,,recSq1VCkt6IwLBGs
@@ -39,7 +39,7 @@ gemini-3.8-flash_medium,0.975,2026-09-02,Google DeepMind,United States of Americ
 claude-fable-5-2_max,0.975,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2 (Max),,https://arcprize.org/leaderboard,,,recdyHFzqbQ5r1U7o
 claude-fable-5-2_medium,0.975,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2 (Medium),,https://arcprize.org/leaderboard,,,recLHViTF7CVGh2Qm
 claude-fable-5-2_high,0.975,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2 (High),,https://arcprize.org/leaderboard,,,recxAnhBWNNgfzekL
-gemini-4-carbon_high,0.975,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon (High),,https://arcprize.org/leaderboard,,,reckSpVRX0QX6WSPD
+gemini-4-carbon_high,0.975,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon (High),,https://arcprize.org/leaderboard,,,reckSpVRX0QX6WSPD
 gpt-5.6-sol_high,0.97,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (High),0.3,https://arcprize.org/leaderboard,,,recCdwY3IG6HNCGGJ
 gpt-5.5-pro_high,0.965,2026-04-23,OpenAI,United States of America,,,GPT-5.5 Pro (High),4.53,https://arcprize.org/leaderboard,,,recl8K2yYdGuM18Vy
 gpt-5.6-sol_max,0.965,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (Max),0.54,https://arcprize.org/leaderboard,,,recQ2TSIxubhoK4nZ
@@ -165,7 +165,7 @@ This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (None),,https://arcprize.org/leaderboard,,,recIdwsWZBFa80dKN
 gpt-5.2-pro-2025-12-11_high,0.8567,2025-12-11,OpenAI,United States of America,,,GPT-5.2 Pro (High),5.8694,,,,recKYn0z5TIlRsr82
 grok-4.5_high,0.8567,2026-07-08,xAI,United States of America,,,Grok 4.5 (High),0.33,https://arcprize.org/leaderboard,,,recmSEXUPS7bh0iUI
-gemini-4-carbon_low,0.855,2026-10-28,Google DeepMind,United States of America,,,Gemini 4 Carbon (Low),,https://arcprize.org/leaderboard,,,rec0IyrbM3uN10GSI
+gemini-4-carbon_low,0.855,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon (Low),,https://arcprize.org/leaderboard,,,rec0IyrbM3uN10GSI
 gemini-3.7-flash_low,0.8516666666666666,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash (Low),,https://arcprize.org/leaderboard,,,recIL73XKtvNVD7Om
 gemini-3-flash-preview,0.8467,2025-12-17,Google DeepMind,United States of America,,,Gemini 3 Flash Preview (High),0.1743,ARC Prize Leaderboard,https://arcprize.org/leaderboard,,recc51QLAwOR4KjmP
 inkling-small_xhigh,0.84,2026-07-15,Thinking Machines,United States of America,,,Inkling Small (XHigh),,https://arcprize.org/leaderboard,,,rec19KlLfCM7UpqBJ
@@ -187,7 +187,7 @@ glm-5.2_unknown,0.77,2026-06-16,Z.ai (Zhipu AI),China,,,GLM-5.2,0.1916,https://a
 gpt-5.6-terra_medium,0.77,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (Medium),0.13,https://arcprize.org/leaderboard,,,rec2gOLjWGIo3EDZc
 gpt-5.6-luna_high,0.765,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna (High),0.13,https://arcprize.org/leaderboard,,,recZ2UaRzTx3PmoSP
 gemini-3.6-flash_low,0.765,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash (Low),,https://arcprize.org/leaderboard,,,recC6P2Ozh3zZKLqc
-gemini-4-argon_low,0.765,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (Low),,https://arcprize.org/leaderboard,,,recpkijjheBxEhBoY
+gemini-4-argon_low,0.765,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (Low),,https://arcprize.org/leaderboard,,,recpkijjheBxEhBoY
 gpt-5.5_low,0.7617,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (Low),0.2,https://arcprize.org/leaderboard,,,rec7WJ0gbABZ60vSH
 claude-opus-4-5-20251101_32K,0.7583,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,"Opus 4.5 (Thinking, 32K)",,https://arcprize.org/leaderboard,,,recQaSIdYDM01Js2n
 claude-opus-4-5-20251101_32K,0.758,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Opus 4.5 (32k thinking),0.95,ARC Prize Leaderboard,https://arcprize.org/leaderboard,,recn5WFdr0nWTOt7b
@@ -195,16 +195,14 @@ claude-opus-4-5-20251101_32K,0.758,2025-11-24,Anthropic,United States of America
 gemini-3-pro-preview,0.75,2025-11-18,Google DeepMind,United States of America,,Almost certainly >1e25,Gemini 3 Pro,0.4926,ARC Prize Leaderboard,https://arcprize.org/leaderboard,,recJT3M7RL0TgeABi
 grok-4.6_low,0.7483333333333334,2026-08-12,xAI,United States of America,,,Grok 4.6 (Low),,https://arcprize.org/leaderboard,,,recFcvwZPnbu9Wk1z
 gpt-5.6-sol_low,0.745,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (Low),0.17,https://arcprize.org/leaderboard,,,recFnbBRcRFSkkzd1
-beam-1.0_xhigh,0.74,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_xhigh,0.74,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (XHigh),,https://arcprize.org/leaderboard,,,recofsNJjBkM3nej6
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (XHigh),,https://arcprize.org/leaderboard,,,recofsNJjBkM3nej6
 gpt-6-luna_xhigh,0.73,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (XHigh),,https://arcprize.org/leaderboard,,,recezdwwug8BWPqxw
 gpt-5.1-2025-11-13_high,0.7283,2025-11-13,OpenAI,United States of America,,"Almost certainly > 1e25
 ","GPT-5.1 (Thinking, High)",,https://arcprize.org/leaderboard,,,recGheKChbMIg5rp8
@@ -223,16 +221,14 @@ claude-sonnet-5-5_medium,0.7000000000000001,2026-09-28,Anthropic,United States o
 qwen3.8-27b_low,0.6916666666666665,2026-08-14,Alibaba,China,,,Qwen3.8-27B (Low),,https://arcprize.org/leaderboard,,,reckBty9F3wXHROL2
 qwen3.8-27b_medium,0.6866666666666665,2026-08-14,Alibaba,China,,,Qwen3.8-27B (Medium),,https://arcprize.org/leaderboard,,,recWKN7wHP9ggifO4
 gpt-5.4-2026-03-05_low,0.6817000000000001,2026-03-05,OpenAI,United States of America,,,GPT-5.4 (Low),0.15,,,,recmvkkmWAsDklsPA
-beam-1.0_high,0.6766666666666666,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_high,0.6766666666666666,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (High),,https://arcprize.org/leaderboard,,,recTvl3IejyaivWi0
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (High),,https://arcprize.org/leaderboard,,,recTvl3IejyaivWi0
 inkling-small_medium,0.67,2026-07-15,Thinking Machines,United States of America,,,Inkling Small (Medium),,https://arcprize.org/leaderboard,,,recqGEDOjI6CKQgg0
 claude-sonnet-5-5_low,0.67,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5 (Low),,https://arcprize.org/leaderboard,,,recJfzfmmzTM6kuEO
 grok-4-0709,0.6667000000000001,2025-07-09,xAI,United States of America,5.0000000000001e+26,"We think that RL relative to pre-compute is between our estimate for o3 (10% of pre-training) and the 100% implied by this slide in the launch ( https://archive.is/f0vJU ). Assuming the same pre-training as Grok 3 (also implied by that slide, and much more consistent) and that Grok 3 used a tenth as much RL, we get:
@@ -286,16 +282,14 @@ gpt-5-2025-08-07_medium,0.5617,2025-08-07,OpenAI,United States of America,6.6e+2
 
 https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",GPT-5 (Medium),0.3301,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,,recfuBzPqyWo5BEjp
 gpt-5.2-2025-12-11_low,0.5567,2025-12-11,OpenAI,United States of America,,,GPT-5.2 (Low),0.1657,,,,rectoL9U5nR5I823g
-beam-1.0_medium,0.5566666666666666,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_medium,0.5566666666666666,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (Medium),,https://arcprize.org/leaderboard,,,recPGmhOziQ7sVoSO
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (Medium),,https://arcprize.org/leaderboard,,,recPGmhOziQ7sVoSO
 gpt-5-mini-2025-08-07_high,0.5433,2025-08-07,OpenAI,United States of America,,,GPT-5 Mini (High),0.116,,,,recYLj0L3xmejkpDR
 o3-2025-04-16_medium,0.5383,2025-04-16,OpenAI,United States of America,,,o3 (Medium),0.2882,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,,reczsOK58YJa6GAAz
 gemini-3.5-flash-lite_high,0.535,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.5 Flash-Lite (High),,https://arcprize.org/leaderboard,,,rec3MeJ4tl0mWlnxT
@@ -312,16 +306,14 @@ glm-5.3-flash_low,0.4699999999999999,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"
 
 https://docs.z.ai/guides/vlm/glm-5.3-flash says ""Combined with our latest 30T-token multimodal pre-training corpus, these changes let GLM-5.3-Flash produce more intelligence with less compute."", which is not definitive in saying that all 30T tokens were used exactly once; likely confidence.",GLM-5.3-Flash (Low),,https://arcprize.org/leaderboard,,,rec9UZOsyeu6hmc6q
 claude-sonnet-4-5-20250929_8K,0.465,2025-09-29,Anthropic,United States of America,,,Claude Sonnet 4.5 (Thinking 8K),0.1776,,,,recm8p4NdctHUJDq3
-beam-1.0_low,0.45,2026-10-05,Reflection,United States of America,,"Pre-training 
+beam-1.0_low,0.45,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
 
 ""Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs.""
 
 RL
- ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""
-
-Assuming an average context length of 128k tokens, ",Beam 1.0 (Low),,https://arcprize.org/leaderboard,,,reca1iDdShyLJmdMn
+ ""To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens.""",Beam 1.0 (Low),,https://arcprize.org/leaderboard,,,reca1iDdShyLJmdMn
 glm-5,0.44670000000000004,2026-02-11,Z.ai (Zhipu AI),China,6.84e+24,6 * 40B parameters * 28.5e12 tokens = 6.84e24 FLOP estimated,GLM-5,0.17,,,,reczebBHCblQzBn5N
 o3-pro-2025-06-10_low,0.4433000000000001,2025-06-10,OpenAI,United States of America,,,o3-Pro (Low),1.6382,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,,rec2DTU08MgXm0hds
 gpt-5-2025-08-07_low,0.44,2025-08-07,OpenAI,United States of America,6.6e+25,"Fairly speculative, possibly around 6e25 [CI: 2e25 to 2e26] FLOP. See document below for details

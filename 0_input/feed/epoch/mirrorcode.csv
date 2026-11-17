@@ -1,5 +1,18 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+mistral-large-4-0_high,0.4,0.4,2026-10-06,Mistral AI,France,1.24e+25,"From tech report: ""Mistral Large 4 was pretrained on 3,840 NVIDIA GB200 GPUs in a Mistral data center near Paris.
+Our internal training stack is built on PyTorch and CUDA. Pretraining took 45 days, or about 4.15 million GPU-hours, with a model FLOPs utilization (MFU) of 36% and a goodput of 94.1%. Webmeasure MFU against peak hardware BF16 FLOP/s, include matrix-multiplication and attention
+FLOPs.""
+
+GB200 is 2500 TFLOP/s BF16 peak, so 36% MFU and 94.1% goodput is 32.9% overall utilization. 
+3840 * 45 * 24*3600 * 0.329 * 2500 trillion = 1.23e25 FLOP pretraining.
+
+This suggests roughly 40T training tokens, using 6ND: 1.23e25 = 6* 52 billion * D.
+
+For post-training, RL involved 162.5 billion output tokens during rollouts for RL, so RL FLOP was <1% of pre-training. SFT and mid-training tokens were not disclosed.
+
+MFU is reported against bf16 spec, but report mentions FP8 in the pretraining without clarifying the primary format.",0.10640841753710711,,,2026-11-02T14:08:00.000Z,Pgm9qFj5jAHDSsFt5bgvSa
 claude-fable-5_max,0.7,0.7,2026-06-09,Anthropic,United States of America,,,0.10440053112638316,,,2026-10-30T18:27:32.000Z,5z3kmMLG4o5sSC6R7Ny4BS
+claude-opus-4-7_max,0.43333333333333335,0.43333333333333335,2026-04-16,Anthropic,United States of America,,,0.0959497222838566,,,2026-10-30T18:26:58.000Z,exn3JadCGHYhNqvo6oRXRD
 claude-opus-5-5_max,0.9555555555555556,0.9555555555555556,2026-09-22,Anthropic,United States of America,,,0.025545201491160446,,,2026-10-30T18:25:28.000Z,M2dkPVSr5EVDErXzKnSecn
 gpt-6.1-terra_max,0.7666666666666667,0.7666666666666667,2026-10-26,OpenAI,United States of America,,,0.09315175080076958,,,2026-10-30T11:34:52.000Z,QTeGw8iACPtPrzw9JCLEfR
 gpt-6-sol_max,0.4888888888888889,0.4888888888888889,2026-09-22,OpenAI,United States of America,,,0.11205944504585896,,,2026-10-29T18:04:31.000Z,TQ4LXFJtzphWHf9brvHq5i
@@ -22,18 +35,6 @@ claude-haiku-5-5_max,0.7888888888888889,0.7888888888888889,2026-10-07,Anthropic,
 gemini-3.6-flash_high,0.23333333333333334,0.23333333333333334,2026-07-21,Google DeepMind,United States of America,,,0.09315175080076958,,,2026-10-21T16:48:28.000Z,ftpz5JnywQdGtFDCHyjMt4
 grok-4.6_xhigh,0.4111111111111111,0.4111111111111111,2026-08-12,xAI,United States of America,,,0.1101546131612538,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FHoz4Uioui4GNZaLD6fiAvD.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/Hoz4Uioui4GNZaLD6fiAvD.eval,2026-10-21T16:48:25.000Z,Hoz4Uioui4GNZaLD6fiAvD
 claude-opus-4-6_max,0.3333333333333333,0.3333333333333333,2026-02-05,Anthropic,United States of America,,,0.10026420125303973,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FQ8sNp4aYrjtYQgVS3BRDTd.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/Q8sNp4aYrjtYQgVS3BRDTd.eval,2026-10-21T16:48:25.000Z,Q8sNp4aYrjtYQgVS3BRDTd
-mistral-large-4-0_high,0.2777777777777778,0.2777777777777778,2026-10-06,Mistral AI,France,1.24e+25,"From tech report: ""Mistral Large 4 was pretrained on 3,840 NVIDIA GB200 GPUs in a Mistral data center near Paris.
-Our internal training stack is built on PyTorch and CUDA. Pretraining took 45 days, or about 4.15 million GPU-hours, with a model FLOPs utilization (MFU) of 36% and a goodput of 94.1%. Webmeasure MFU against peak hardware BF16 FLOP/s, include matrix-multiplication and attention
-FLOPs.""
-
-GB200 is 2500 TFLOP/s BF16 peak, so 36% MFU and 94.1% goodput is 32.9% overall utilization. 
-3840 * 45 * 24*3600 * 0.329 * 2500 trillion = 1.23e25 FLOP pretraining.
-
-This suggests roughly 40T training tokens, using 6ND: 1.23e25 = 6* 52 billion * D.
-
-For post-training, RL involved 162.5 billion output tokens during rollouts for RL, so RL FLOP was <1% of pre-training. SFT and mid-training tokens were not disclosed.
-
-MFU is reported against bf16 spec, but report mentions FP8 in the pretraining without clarifying the primary format.",0.0885907699198465,,,2026-10-21T16:48:20.000Z,5kYFmmvF8XSX6hFMwhSxB4
 claude-sonnet-5_max,0.6333333333333333,0.6333333333333333,2026-06-30,Anthropic,United States of America,,,0.10690449676496976,,,2026-10-21T16:48:19.000Z,DVxFHRdAdTpXLCiFZMJnYY
 gpt-6-luna_max,0.26666666666666666,0.26666666666666666,2026-09-22,OpenAI,United States of America,,,0.09026709338484401,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FWQ4gVVhGBfWoRkRwUvNYgs.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/WQ4gVVhGBfWoRkRwUvNYgs.eval,2026-10-21T16:48:12.000Z,WQ4gVVhGBfWoRkRwUvNYgs
 gpt-5-2025-08-07_high,0.044444444444444446,0.044444444444444446,2025-08-07,OpenAI,United States of America,6.6e+25,"Fairly speculative, possibly around 6e25 [CI: 2e25 to 2e26] FLOP. See document below for details
@@ -46,7 +47,7 @@ gpt-5.6-terra_max,0.4111111111111111,0.4111111111111111,2026-07-09,OpenAI,United
 claude-opus-5_max,0.8777777777777778,0.8777777777777778,2026-07-24,Anthropic,United States of America,,,0.07176288606639566,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FmNbPPJ3qiGSKnpqRsbxeKv.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/mNbPPJ3qiGSKnpqRsbxeKv.eval,2026-10-20T20:32:21.000Z,mNbPPJ3qiGSKnpqRsbxeKv
 deepseek-v4-pro-0813_max,0.3333333333333333,0.3333333333333333,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,0.10026420125303973,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F4sSMLxWLPihKZSUFVUjwTh.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/4sSMLxWLPihKZSUFVUjwTh.eval,2026-10-20T20:32:20.000Z,4sSMLxWLPihKZSUFVUjwTh
 muse-wonder-1.0_max,0.45555555555555555,0.45555555555555555,2026-10-12,Meta AI,United States of America,,,0.10599324460188285,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F4SF6nvuJows76zkypDWF3b.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/4SF6nvuJows76zkypDWF3b.eval,2026-10-14T15:05:06.000Z,4SF6nvuJows76zkypDWF3b
-gemini-4-argon_high,0.5888888888888889,0.5888888888888889,2026-09-30,Google DeepMind,United States of America,,,0.1171381252539371,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fh7xMzFUTMGSGqUSKUpxkUW.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/h7xMzFUTMGSGqUSKUpxkUW.eval,2026-10-14T10:00:34.000Z,h7xMzFUTMGSGqUSKUpxkUW
+gemini-4-argon_high,0.5888888888888889,0.5888888888888889,2026-10-13,Google DeepMind,United States of America,,,0.1171381252539371,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fh7xMzFUTMGSGqUSKUpxkUW.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/h7xMzFUTMGSGqUSKUpxkUW.eval,2026-10-14T10:00:34.000Z,h7xMzFUTMGSGqUSKUpxkUW
 gpt-6.1-sol_max,0.6111111111111112,0.6111111111111112,2026-09-29,OpenAI,United States of America,,,0.11346708571848581,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FjGPEpcBgJ4gakLdxgAqbR8.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/jGPEpcBgJ4gakLdxgAqbR8.eval,2026-10-05T18:36:30.000Z,jGPEpcBgJ4gakLdxgAqbR8
 claude-sonnet-5-5_max,0.9777777777777777,0.9777777777777777,2026-09-28,Anthropic,United States of America,,,0.015141892085983264,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FUTD5SC5v2BgiwNauF9YrFo.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/UTD5SC5v2BgiwNauF9YrFo.eval,2026-10-05T09:05:15.000Z,UTD5SC5v2BgiwNauF9YrFo
 claude-opus-5-5_high,0.7889,0.7889,2026-09-22,Anthropic,United States of America,,,0.0788,,,2026-09-22T16:42:00.000Z,mirrorcode-ml-2l-claude-opus-5-5

@@ -23,6 +23,7 @@ SPLITTABLE = {"epoch": True, "epoch_live": True, "epoch_cyber": False, "cybench_
 MODEL_COLS = [
     "model_id", "base_model", "reasoning_level", "reasoning_tokens", "snapshot", "variant",
     "model_version", "organization", "country", "publication_date", "training_flop",
+    "view_exclusion",
 ]
 BENCH_COLS = ["benchmark_id", "name", "category", "floor", "ceiling", "access", "release_date"]
 SCORE_COLS = ["model_id", "benchmark_id", "score", "stderr", "harness", "feed", "source_label",
@@ -66,6 +67,12 @@ HUMAN_BASELINES_FILE = "human_baselines.csv"  # benchmark, group, score, note, s
 SCORE_CORRECTIONS_FILE = "score_corrections.csv"  # a feed value replaced by the published one
 SCORE_DROP_RULES_FILE = "score_drop_rules.csv"  # run types whose scores are dropped wholesale
 SCORE_VARIANT_FIXES_FILE = "score_variant_fixes.csv"  # a score moved to its effort, or dropped
+MODEL_EXCLUSIONS_FILE = "model_exclusions.csv"  # (base_model, variant) kept out of the views
+
+# Names that look like a parallel-compute setting of a model (OpenAI's Pro line, Gemini Deep
+# Think, xAI's Heavy): an identity matching this with no row in model_exclusions.csv is reported
+# by the build, so that a new one is classed by hand, never by this pattern.
+PARALLEL_COMPUTE_SUSPECT = r"(?i)^(?:o\d+-pro|gpt-[\d.]+-pro)(?:-|$)|deep-?think|-heavy(?:-|$)"
 
 # Human reference groups, from the least to the most demanding along each branch (Multiaxis_ECI's
 # HUMAN_ORDER): value = the group it dominates, None = a root.
