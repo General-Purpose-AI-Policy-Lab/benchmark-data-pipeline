@@ -103,7 +103,6 @@ eb4fb400-c4be-55ff-a0bb-49113df198c6,060ceebd-37df-5852-832b-00bf08be0810,0.046,
 3ea09ff0-a28e-5168-a661-2f9801c6a586,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.2,0.0402015126103684,,epoch_live,Epoch AI internal evaluation,
 40de7350-1962-5868-b516-5aa074b95815,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.58,0.0496044963748858,,epoch_live,Epoch AI internal evaluation,
 42346a5d-f7fa-56e6-981c-3c19f5efacce,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.06,0.0238683256575942,,epoch_live,Epoch AI internal evaluation,
-4290c4e4-50d9-570f-a3d8-1f15ba1fe085,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.16,0.036845294917747,,epoch_live,Epoch AI internal evaluation,
 42a48c78-2cbc-541e-97d1-70f560282a44,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.28,0.0451260859854212,,epoch_live,Epoch AI internal evaluation,
 42fb9bca-152f-5150-8042-a4053ed83c2c,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.12,0.032659863237109,,epoch_live,Epoch AI internal evaluation,
 4353d92d-b418-58a9-8dc3-a3ec8eb88387,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.14,0.0348735088019777,,epoch_live,Epoch AI internal evaluation,
@@ -180,6 +179,7 @@ b35da3fc-cf68-5251-9b87-93fd08a6347d,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.09,0
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.59,0.049431107042371,,epoch_live,Epoch AI internal evaluation,
 bbd463a7-4c62-522c-9684-ace6f8f6fec4,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.08,0.027265992434429,,epoch_live,Epoch AI internal evaluation,
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.23,0.042295258468165,,epoch_live,Epoch AI internal evaluation,
+bde0df97-257e-5185-b67a-18b51cffb082,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.16,0.036845294917747,,epoch_live,Epoch AI internal evaluation,
 bfd896ae-8b2b-52d7-8bd8-3eede5d82c7f,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.43,0.0497569851956243,,epoch_live,Epoch AI internal evaluation,
 c2c8cb8b-a221-5b54-82e3-3858421e8284,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.73,0.0446196043338473,,epoch_live,Epoch AI internal evaluation,
 c5a5c3df-a6a3-5969-bf49-b55592753bcc,07cea571-1802-51ec-ab0b-9b7cf0fbd149,0.25,0.0435194139889244,,epoch_live,Epoch AI internal evaluation,
@@ -723,7 +723,9 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,3a8fb029-97d6-5977-902a-41682ddb2ef5,0.5104
 fc88657c-e2e7-5b8a-9e77-87845fd09a28,3a8fb029-97d6-5977-902a-41682ddb2ef5,0.7039274924471299,0.0101748934155157,,epoch_live,Epoch AI internal evaluation,
 fde65c8e-7992-52fe-854f-0439e4245541,3a8fb029-97d6-5977-902a-41682ddb2ef5,0.0359705438066465,0.0026669434464957,,epoch_live,Epoch AI internal evaluation,
 fed155d2-f6ea-5e34-99da-0f5a37e6ab09,3a8fb029-97d6-5977-902a-41682ddb2ef5,0.1163141993957704,0.0055439459138513,,epoch_live,Epoch AI internal evaluation,
+00e80d9f-c1ad-5289-a122-674783c481c1,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.93,,,board_rows,"GeoBench leaderboard (geobench.org, read 2026-11-17; map acw-02-25-25, country accuracy, run of 2026-11-13)",https://geobench.org/
 07bc8271-6431-5b0d-b122-6fcc0d10aac3,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.73,,,epoch,GeoBench leaderboard,https://geobench.org/
+07d7bc8b-bf75-5f7d-aa9e-af6a5fec6477,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.95,,,board_rows,"GeoBench leaderboard (geobench.org, read 2026-11-17; map acw-02-25-25, country accuracy, run of 2026-11-13)",https://geobench.org/
 0f650a33-dc38-52de-9f1c-a3bff1f0fde4,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.86,,,epoch,https://geobench.org/,
 12d3d541-0737-514e-9413-19ccf2d4eadd,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.7000000000000001,,,epoch,https://geobench.org/,
 154be41d-0aa6-50cf-8676-2e6559f6ba27,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.49,,,epoch,GeoBench leaderboard,https://geobench.org/
@@ -747,6 +749,7 @@ fed155d2-f6ea-5e34-99da-0f5a37e6ab09,3a8fb029-97d6-5977-902a-41682ddb2ef5,0.1163
 7410d386-29ee-5d20-89ca-12baf77706fc,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.81,,,epoch,https://geobench.org/,
 744a4413-480f-5cd1-a82e-de29142c9b0e,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.72,,,epoch,GeoBench leaderboard,https://geobench.org/
 7c37a985-d0af-5754-964c-572841204b2c,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.78,,,epoch,https://geobench.org/,
+80946e7a-54df-57e0-b07f-e7ddcb992085,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.76,,,board_rows,"GeoBench leaderboard (geobench.org, read 2026-11-17; map acw-02-25-25, country accuracy, run of 2026-11-13)",https://geobench.org/
 838e81ab-35da-504e-b566-0d714556aca1,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.88,,,epoch,https://geobench.org/,
 83b8b126-33dd-5471-b70a-cc65cd2d4e1f,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.7755,,,epoch,https://geobench.org/,
 85718c2a-4aea-5b1d-8377-e52a1e078ff8,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.64,,,epoch,GeoBench leaderboard,https://geobench.org/
@@ -755,7 +758,9 @@ fed155d2-f6ea-5e34-99da-0f5a37e6ab09,3a8fb029-97d6-5977-902a-41682ddb2ef5,0.1163
 8fa0267b-7634-50a4-a79a-9c928a43102b,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.75,,,epoch,https://geobench.org/,
 922cb4ee-b93d-509f-8d7a-f7cc81880715,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.76,,,epoch,https://geobench.org/,https://geobench.org/
 9cf06ff3-483b-5582-95ad-b93bf1ee2f74,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.8,,,epoch,GeoBench leaderboard,https://geobench.org/
+9e043540-7469-5c81-b963-4c61d5d7f10c,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.82,,,board_rows,"GeoBench leaderboard (geobench.org, read 2026-11-17; map acw-02-25-25, country accuracy, run of 2026-11-13)",https://geobench.org/
 9e6781e8-0021-54e4-bf15-41071ac8b1c3,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.61,,,epoch,https://geobench.org/,
+a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.91,,,board_rows,"GeoBench leaderboard (geobench.org, read 2026-11-17; map acw-02-25-25, country accuracy, run of 2026-11-13)",https://geobench.org/
 a30435c9-0f32-5bad-9e84-32acb0c8933f,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.62,,,epoch,GeoBench leaderboard,https://geobench.org/
 a5a1118c-c262-5a1e-843c-aa5723fa223a,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.86,,,epoch,https://geobench.org/,
 ab599934-758d-5c9b-a2d5-be23ea38cf4d,3ecbd533-f135-5b46-bf5c-d21ded89b961,0.34,,,epoch,GeoBench leaderboard,https://geobench.org/
@@ -4245,15 +4250,19 @@ f603f731-bd9b-51e6-b40b-0e4569091392,b812b198-64a0-5b54-bdd2-018cbce4626b,0.701,
 f6521b57-572c-5c47-a59c-cdc9298174e0,b812b198-64a0-5b54-bdd2-018cbce4626b,0.638,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 fcf431b0-7ba1-574e-aea7-449bc578ba24,b812b198-64a0-5b54-bdd2-018cbce4626b,0.917916,0.007715,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-6_none_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-6_none_commonsense
 fe118602-7980-5b85-bbd9-4feb9e7eb9ca,b812b198-64a0-5b54-bdd2-018cbce4626b,0.571,,,epoch,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186
+315f1a07-56b2-5fcb-9bdb-f28716a16d02,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.8339,,,board_rows,"OSWorld-Verified leaderboard (os-world.github.io, read 2026-11-17; general model, 100 steps, single rollout)",https://os-world.github.io/
 3ae3be7a-98cf-500b-b96a-8f2cc42cb508,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.23,,,epoch,OS World Website,https://os-world.github.io/
 4353d92d-b418-58a9-8dc3-a3ec8eb88387,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.721,,,epoch,OS World Website,https://os-world.github.io/
 70fc2cc7-dc79-5630-9dbc-d377d009f441,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.358,,,epoch,OS World Website,https://os-world.github.io/
 77407fc7-1edd-5eb6-a368-378062280c17,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.633,,,epoch,OS World Website,https://os-world.github.io/
+9a4c32e0-2da4-5bca-93f2-103393146aaf,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.7306,,,board_rows,"OSWorld-Verified leaderboard (os-world.github.io, read 2026-11-17; general model, 100 steps, single rollout)",https://os-world.github.io/
 b30dd13c-0391-5ba5-b1c0-119e706da158,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.313,,,epoch,OS World Website,https://os-world.github.io/
 b339ecb6-520a-580e-9039-ba8d35bbb996,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.629,,,epoch,OS World Website,https://os-world.github.io/
+cb9c41f2-b5a0-5530-aadd-97b691c0ce17,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.733,,,board_rows,"OSWorld-Verified leaderboard (os-world.github.io, read 2026-11-17; general model, 100 steps, single rollout)",https://os-world.github.io/
 def8f283-1576-562c-81c8-3db93aa5a7c3,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.439,,,epoch,OS World Website,https://os-world.github.io/
 e104c548-30ab-5db6-bb31-72054db06899,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.05,,,epoch,OS World Website,https://os-world.github.io/
 eb97f810-3ca3-5772-9880-52ac7417232f,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.6629999999999999,,,epoch,Anthropic annoucement,https://www.anthropic.com/news/claude-opus-4-5
+f49a7465-1957-5bb1-a54d-6d8088830b0b,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.8596,,,board_rows,"OSWorld-Verified leaderboard (os-world.github.io, read 2026-11-17; general model, 100 steps, single rollout)",https://os-world.github.io/
 00be3a52-982c-51f7-b61e-c39d52e400c5,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.337,,,epoch,https://conceptualreasoning.ai/lmca,
 00f9354b-eca0-5e02-8d5c-27a065b4dbda,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.3848,,,epoch,https://conceptualreasoning.ai/lmca,
 01824fbe-7334-5bdd-9b37-16e0f25d2ac8,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.4545,,,epoch,https://conceptualreasoning.ai/lmca,

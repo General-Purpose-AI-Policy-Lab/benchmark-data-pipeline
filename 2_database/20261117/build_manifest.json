@@ -1,8 +1,15 @@
 {
   "schema_version": "2.3",
-  "built_at": "2026-11-17T23:43:01+01:00",
-  "git_commit": "fae59d2724cbebb33362d08e49ab02db86b9f182",
+  "built_at": "2026-11-17T23:51:31+01:00",
+  "git_commit": "c1eb722d52fb61631e87f0377bb8c560faceacf6",
   "feeds": {
+    "0_input/feed/board_rows/board_rows.csv": {
+      "byte_size": 2506,
+      "fetched_at": "by hand",
+      "note": "rows no other feed carries, each with the day its board was read (read_on)",
+      "sha256": "d5a619e14d466086f9ddd69d1770a622daa820ce9e37aff30198ec9f92eda9db",
+      "url": "the boards named in the file's source_url column"
+    },
     "0_input/feed/cybench_site/cybench_leaderboard.csv": {
       "byte_size": 1179,
       "fetched_at": "2026-09-07",
@@ -1238,6 +1245,7 @@
     }
   },
   "inputs_sha256": {
+    "0_input/feed/board_rows/aliases.csv": "bfb9e1a53b16a09f93c357f0ff6e6bb88a2d89da66f07bcb34718b762efcd75f",
     "0_input/feed/cybench_site/aliases.csv": "aea3f28b66a77a961a80c52a4522c345ffe22ecedad4af170751d3b476814f1d",
     "0_input/feed/epoch/aliases.csv": "8f079355ed05b94d054b6bf91e39430b3cd2f8eb178cc4e8005c34a02de5de75",
     "0_input/feed/epoch_cyber/aliases.csv": "efdfb836394bcdd67071a230ec7ea15250eae97066b26d915bcb6ccf7b454bc3",
@@ -1254,15 +1262,15 @@
     "0_input/metadata/release_dates.csv": "6ee92fd48ab0929cd3498bbf2af74675fedcb28e997cb331025c0adc2cf45cb8",
     "0_input/metadata/score_corrections.csv": "c9935eb7b087ff50febde39f6dcc82cefddab6dabd57dfad6490fbae77aa7187",
     "0_input/metadata/score_drop_rules.csv": "946d586f9a24804386a1bffce87799796715485fa862e561fe231f43cbc63ce9",
-    "0_input/metadata/score_variant_fixes.csv": "b7a4f7b42fd0bdc5524563507d6e8c917ce532c021016b1a2feeff307ac56721",
+    "0_input/metadata/score_variant_fixes.csv": "e888631863d80a8b966d28412305112c2045eba39b6db701ce2b66bee8e49a55",
     "0_input/metadata/sibling_merges.csv": "fd85935b300c00a9eae14b6300e9ad0a48d4c25dfc3021a219c4dc2ad4af5bb6"
   },
   "rows": {
     "models.csv": 1043,
     "benchmarks.csv": 107,
-    "scores.csv": 6004,
+    "scores.csv": 6013,
     "human_baselines.csv": 56,
-    "model_names.csv": 1991,
+    "model_names.csv": 2000,
     "excluded_benchmarks.csv": 49
   }
 }
