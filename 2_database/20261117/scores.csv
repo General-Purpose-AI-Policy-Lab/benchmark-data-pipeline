@@ -36,11 +36,11 @@ c46458a4-eca4-572f-b854-a93df31d132f,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.218,
 c9d1b5c5-bb9f-5deb-9413-5c2011161c1a,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.21,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
 cb05d92b-9bca-5520-bf88-fe3ee03737a5,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.14,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
 ce4f4002-94c1-5357-8350-cb316c9972f4,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.166,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
-d40640b2-c4d7-56cb-8a90-7cac352a3c9c,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.3,,,epoch,Surge AI GDP.pdf leaderboard,https://surgehq.ai/leaderboards/gdp-pdf
 e128116f-96f9-5f94-b845-206a14cc599f,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.238,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
 e570dd31-b940-537b-80d0-f06e0f3aa6f9,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.26,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
 eb4fb400-c4be-55ff-a0bb-49113df198c6,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.12,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
 ef6e7801-9304-5c13-b031-de20797f0046,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.172,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
+f49a7465-1957-5bb1-a54d-6d8088830b0b,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.3,,,epoch,Surge AI GDP.pdf leaderboard,https://surgehq.ai/leaderboards/gdp-pdf
 f5511fa3-1e3c-5e08-95be-0bfc96e5ab7c,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.02,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
 f774eb3f-8d0f-531c-8b88-23e84e3414be,002296d5-5ab0-56d5-8956-1571ecc1fb2d,0.14,,,epoch,https://surgehq.ai/benchmarks/gdp-pdf,https://surgehq.ai/benchmarks/gdp-pdf
 07d72422-dde1-5c96-9e9b-5c36c32d02fe,01f73b15-9be9-5fde-9b2a-50ff741f4743,0.0,0.0,,epoch_live,Epoch AI internal evaluation,
@@ -971,10 +971,10 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,427d006e-4a22-5966-97bb-4d8d01712700,0.8106
 3b26cf34-5603-56fb-945b-dcb93e294de5,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.171428571428571,,,epoch,EpochAI,
 3e8db570-8e49-53dd-8854-ff87af2c6824,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0,,,epoch,EpochAI,
 3ea09ff0-a28e-5168-a661-2f9801c6a586,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0314285714285714,,,epoch,EpochAI,
+3fc45ddd-de2f-529c-b131-f9ca7c31057c,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0114285714285714,,,epoch,EpochAI,
 40de7350-1962-5868-b516-5aa074b95815,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.297142857142857,,,epoch,EpochAI,
 40f9c7c6-1749-53f0-bbe7-d269ae154743,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0114285714285714,,,epoch,EpochAI,
 4216f328-a9a2-55a9-815d-dde8dcb69e73,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0,,,epoch,EpochAI,
-4290c4e4-50d9-570f-a3d8-1f15ba1fe085,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0114285714285714,,,epoch,EpochAI,
 42a48c78-2cbc-541e-97d1-70f560282a44,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.08,,,epoch,EpochAI,
 42fb9bca-152f-5150-8042-a4053ed83c2c,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.0485714285714286,,,epoch,EpochAI,
 436ebe2b-8951-5777-854f-5530da237753,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.02,,,epoch,EpochAI,
@@ -1696,10 +1696,10 @@ a46eba5c-fc2f-53d8-b5c4-b47f5f27c910,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.0040
 a66eaeab-c898-5ee8-baa5-a5c01352eb57,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.7959852171423216,,,epoch,https://gbaeval.com/model/claude-opus-5,
 a8994e7b-220b-5ad3-b2e8-9c64c1ec7d0b,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.0001721823188174,,,epoch,https://gbaeval.com/model/goose-glm-5-2,
 c0426f38-5a35-58e3-872c-e8ce5dc6218d,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.0791725771495411,,,epoch,https://gbaeval.com/model/goose-muse-spark-1-1,
-d40640b2-c4d7-56cb-8a90-7cac352a3c9c,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.7447198828312318,,,epoch,https://gbaeval.com/model/claude-fable-5,
 db38174a-55d2-537a-824c-5d3ade16f6bb,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.0,,,epoch,https://gbaeval.com/model/goose-minimax-m2-7,
 e786d6a8-c139-5f33-86ee-2485b6552d92,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.6526299757455419,,,epoch,https://gbaeval.com/model/claude-sonnet-5,
 ec3df8c3-9c72-5e8e-a615-7e0607fdc095,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.0085265631089688,,,epoch,https://gbaeval.com/model/goose-kimi-k2-7,
+f49a7465-1957-5bb1-a54d-6d8088830b0b,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.7447198828312318,,,epoch,https://gbaeval.com/model/claude-fable-5,
 fa570698-4ac3-5bcc-8af8-59e381ff8d0c,5a9a1867-e08c-518d-b86b-522ac5fb71a4,0.0,,,epoch,https://gbaeval.com/model/goose-glm-5-1,
 0467e0f7-4248-522e-9509-dad2d9fc1b10,5f7a8239-6b78-56e8-be42-60554a83cfac,0.178,,,epoch,EpochAI,
 12a86b28-183b-576b-945c-7e451907290f,5f7a8239-6b78-56e8-be42-60554a83cfac,0.203,,,epoch,EpochAI,
@@ -2723,7 +2723,6 @@ b4677557-9503-5cef-93b3-601751435538,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0205
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.9042,,,epoch,EpochAI,
 b7578544-e049-5b72-953a-d85ff2df281f,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.4236111111111111,,,epoch,EpochAI,
 b80b6f82-158d-56f4-8f2f-4c5019f1d639,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.6861111111111113,,,epoch,EpochAI,
-b8d7bbbf-bfb4-5daa-ac90-340ac1818169,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.7708,,,epoch,EpochAI,
 b8e03aab-47dd-530c-866d-a613893f5711,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0403,,,epoch,EpochAI,
 b98621f9-93bd-5c66-8639-82c8f71a8701,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5013888888888889,,,epoch,EpochAI,
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0986,,,epoch,EpochAI,
@@ -2836,13 +2835,13 @@ f21f5726-030f-59c1-8627-181bbdcf8d24,7c7f79ee-725b-5fb4-a64a-9137baa63df2,0.469,
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.036,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 8c326c89-4162-59d3-83a2-15321cc6785e,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.013,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.3137,,OpenHands,epoch,https://gso-bench.github.io/index.html,
-8f6c0f48-eb1d-5a48-a59e-4c6cb0777591,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.8824,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 96edcc51-a125-5f22-8dd6-c4f487c0a795,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.2549,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 9986c95c-85d7-5f41-a5a2-c6b1e9ef4a8a,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.2647,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 9d1a843b-0188-5431-8f7e-0187f70ab91b,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.2745,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 a016ca21-a2b9-5eb7-b151-44798d75ea29,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.0686,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 a30435c9-0f32-5bad-9e84-32acb0c8933f,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.046,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 a47ab0fe-3885-5b4e-a41a-4e31abcf3181,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.1471,,OpenHands,epoch,https://gso-bench.github.io/index.html,
+af434d5f-3215-5aee-854a-de70850a350c,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.8824,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 b339ecb6-520a-580e-9039-ba8d35bbb996,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.147,,OpenHands,epoch,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.0686,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.7941,,OpenHands,epoch,https://gso-bench.github.io/index.html,
@@ -2850,11 +2849,11 @@ c89fe833-61e6-5bd8-a23d-c47f4cf1148d,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.013,
 c96748f7-b664-5d23-a325-d981784525bb,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.049,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 cd313130-5b35-580c-850f-0a72de4c400c,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.265,,OpenHands,epoch,GSO Leaderboard,https://gso-bench.github.io/leaderboard.html
 cf394de9-03a9-55f7-a129-bfdf60f6c55a,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.0294,,OpenHands,epoch,https://gso-bench.github.io/index.html,
-d40640b2-c4d7-56cb-8a90-7cac352a3c9c,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.7843000000000001,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 db210d2d-9fd6-5b51-b481-16d038c73444,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.0,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 e570dd31-b940-537b-80d0-f06e0f3aa6f9,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.402,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 e57cc68a-2419-5486-87ac-d2aa72b2185c,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.0392,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 e786d6a8-c139-5f33-86ee-2485b6552d92,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.3725,,OpenHands,epoch,https://gso-bench.github.io/index.html,
+f49a7465-1957-5bb1-a54d-6d8088830b0b,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.7843000000000001,,OpenHands,epoch,https://gso-bench.github.io/index.html,
 f9fbf084-47df-59c1-98ad-bbb6b0b04481,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.049,,OpenHands,epoch,https://gso-bench.github.io/index.html,https://gso-bench.github.io/leaderboard.html
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,7d94cfcc-2638-5f55-bd3f-d0f1c0b1a2e7,0.3333,,OpenHands,epoch,GSO Leaderboard,
 061556c4-d8bb-56dc-ba43-c7fa68d5f3b7,8140cfc5-bf49-5de7-8608-a1c4a8fbe0a8,0.531,,,epoch,Fiction.live leaderboard,https://fiction.live/stories/Fiction-liveBench-Mar-14-2025/oQdzQvKHw8JyXbN87/home
@@ -3049,8 +3048,8 @@ fed155d2-f6ea-5e34-99da-0f5a37e6ab09,8f8cc8b9-f1e6-5902-9ac8-13a86e4bd747,0.2189
 7d9a20a3-ca5f-5c24-a57b-a57372d827f1,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0833,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
 9986c95c-85d7-5f41-a5a2-c6b1e9ef4a8a,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0375,,,epoch,EpochAI,
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0167,,,epoch,EpochAI,
-a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.2125,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
-af434d5f-3215-5aee-854a-de70850a350c,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.17920000000000003,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
+a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.2125,,,epoch,EpochAI,
+af434d5f-3215-5aee-854a-de70850a350c,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.1792,,,epoch,EpochAI,
 b1f33637-9283-53b5-98dc-ca8126e490f4,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0958,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
 b339ecb6-520a-580e-9039-ba8d35bbb996,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0208,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
 ba957efc-2644-5bbe-88af-465c5d1e112e,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.025,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
@@ -3058,7 +3057,7 @@ c61bc40a-403f-5ca2-8886-38dedb2c83ee,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.2082
 d9db8db0-f824-522e-8bea-9ed429770439,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.025,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
 e0d02856-1db1-5660-8957-dd11bae9e534,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.1707999999999999,,,epoch,EpochAI,
 edca8122-7122-5338-80f8-feebec9d1484,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0125,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
-f49a7465-1957-5bb1-a54d-6d8088830b0b,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.1583,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
+f49a7465-1957-5bb1-a54d-6d8088830b0b,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.1583,,,epoch,EpochAI,
 f73d0376-df40-52a9-88bd-e4ff240f2643,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.05,,,epoch,EpochAI,
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417,,,seal,Scale SEAL (rli),https://labs.scale.com/leaderboard/rli
 00f9354b-eca0-5e02-8d5c-27a065b4dbda,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.5933,,,epoch,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard
@@ -3911,7 +3910,6 @@ a8ebd9d0-bfc1-5d30-a256-cbd06e15e86f,a0654732-4438-577a-8abd-3604d53b725c,0.312,
 ab599934-758d-5c9b-a2d5-be23ea38cf4d,a0654732-4438-577a-8abd-3604d53b725c,0.193,,,epoch,https://balrogai.com/,https://balrogai.com/
 b32fb225-1781-5336-80b6-9506ad9e2452,a0654732-4438-577a-8abd-3604d53b725c,0.295,,,epoch,https://balrogai.com/,https://balrogai.com/
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,a0654732-4438-577a-8abd-3604d53b725c,0.634,,,epoch,https://balrogai.com/,https://balrogai.com/
-b8d7bbbf-bfb4-5daa-ac90-340ac1818169,a0654732-4438-577a-8abd-3604d53b725c,0.569,,,epoch,Balrog Leaderboard,https://balrogai.com/
 c494bab3-30c1-582d-a80c-d887518f453d,a0654732-4438-577a-8abd-3604d53b725c,0.436,,,epoch,https://balrogai.com/,https://balrogai.com/
 cd313130-5b35-580c-850f-0a72de4c400c,a0654732-4438-577a-8abd-3604d53b725c,0.435,,,epoch,Balrog Leaderboard,https://balrogai.com/
 e2659ca7-25c5-5160-9c2f-9d65b08083f0,a0654732-4438-577a-8abd-3604d53b725c,0.1009999999999999,,,epoch,https://balrogai.com/,https://balrogai.com/
@@ -4049,13 +4047,12 @@ fed155d2-f6ea-5e34-99da-0f5a37e6ab09,a8fd9ad1-db96-57e2-a752-534e7d399429,0.55,,
 33a8eb2d-e110-5dbb-a96c-37442011bef0,acddb832-1a34-5820-a2d3-05681c5161e3,0.379775280899,,Terminus 2,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 3535a73f-153a-5c53-b82e-991ef3a8389a,acddb832-1a34-5820-a2d3-05681c5161e3,0.034,,Mini-SWE-Agent,epoch,Terminal-Bench v2 Leaderboard,
 3b66e402-349a-5045-adf4-71340cd15333,acddb832-1a34-5820-a2d3-05681c5161e3,0.7842696629210001,,SageAgent,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
-3daa088c-0460-52bb-9885-f0a9488ce842,acddb832-1a34-5820-a2d3-05681c5161e3,0.475842696629,,Terminus 2,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 4353d92d-b418-58a9-8dc3-a3ec8eb88387,acddb832-1a34-5820-a2d3-05681c5161e3,0.534,,Simplai Agent,epoch,EpochAI,
 45f58c79-68eb-5ac2-956b-d0cc2989131d,acddb832-1a34-5820-a2d3-05681c5161e3,0.319,,Codex CLI,epoch,Terminal-Bench v2 Leaderboard,
 53d2d6c7-13cd-5f78-a0b1-a97d4e519d4e,acddb832-1a34-5820-a2d3-05681c5161e3,0.476,,Terminus 2,epoch,Terminal-Bench v2 Leaderboard,
 5653ca20-cca4-54a0-90d7-2a596e7dabcf,acddb832-1a34-5820-a2d3-05681c5161e3,0.496,,Codex CLI,epoch,Terminal-Bench v2 Leaderboard,
 6850cfcb-e6a3-5af4-af60-5dc27a6c10d4,acddb832-1a34-5820-a2d3-05681c5161e3,0.649,,Droid,epoch,Terminal-Bench v2 Leaderboard,
-68d306f4-b122-5f89-9d4a-63530ced57ca,acddb832-1a34-5820-a2d3-05681c5161e3,0.6494382022470001,,Droid,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
+68d306f4-b122-5f89-9d4a-63530ced57ca,acddb832-1a34-5820-a2d3-05681c5161e3,0.606741573034,,Mux,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 6f19902d-57ce-5960-b943-0538acb4c7ff,acddb832-1a34-5820-a2d3-05681c5161e3,0.847191011236,,NexAU-AHE,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 7001e3dd-22dc-5af2-8ef6-3d9030ccc813,acddb832-1a34-5820-a2d3-05681c5161e3,0.366292134831,,Crux,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 77407fc7-1edd-5eb6-a368-378062280c17,acddb832-1a34-5820-a2d3-05681c5161e3,0.43202247191,,Terminus 2,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
@@ -4067,7 +4064,6 @@ fed155d2-f6ea-5e34-99da-0f5a37e6ab09,a8fd9ad1-db96-57e2-a752-534e7d399429,0.55,,
 935de1ee-c0c0-59a6-afeb-a6e0c95046ed,acddb832-1a34-5820-a2d3-05681c5161e3,0.524157303371,,Terminus 2,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 954c29d4-0620-548b-b332-0267ea627b5d,acddb832-1a34-5820-a2d3-05681c5161e3,0.24531835206,,Terminus 2,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 9986c95c-85d7-5f41-a5a2-c6b1e9ef4a8a,acddb832-1a34-5820-a2d3-05681c5161e3,0.631460674157,,Droid,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
-9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,acddb832-1a34-5820-a2d3-05681c5161e3,0.49606741573,,Codex CLI,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 9fd43f8e-dea3-5eec-b580-34a45a75da5f,acddb832-1a34-5820-a2d3-05681c5161e3,0.591,,Letta Code,epoch,Terminal-Bench v2 Leaderboard,
 a1aba5df-ad83-5100-9a6d-8317b89935aa,acddb832-1a34-5820-a2d3-05681c5161e3,0.8022471910110001,,WOZCODE,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
 a47ab0fe-3885-5b4e-a41a-4e31abcf3181,acddb832-1a34-5820-a2d3-05681c5161e3,0.465168539326,,CAMEL-AI,epoch,https://www.tbench.ai/leaderboard/terminal-bench/2.0,
@@ -4400,7 +4396,6 @@ e104c548-30ab-5db6-bb31-72054db06899,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.05,,
 8cff9f72-eb66-5eaa-b6d6-88f3d11e190d,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5106,,,epoch,https://conceptualreasoning.ai/lmca,
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5196999999999999,,,epoch,https://conceptualreasoning.ai/lmca,
 8f35794d-e2d5-550d-b3e5-0ea5b9e0bcdf,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1547,,,epoch,https://conceptualreasoning.ai/lmca,
-8f6c0f48-eb1d-5a48-a59e-4c6cb0777591,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6546,,,epoch,https://conceptualreasoning.ai/lmca,
 914f6797-105d-59dd-99f4-7466458efac6,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.41200000000000003,,,epoch,https://conceptualreasoning.ai/lmca,
 97aa1ac4-ae24-5231-8aba-6c6af1212874,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2396,,,epoch,https://conceptualreasoning.ai/lmca,
 99007e0e-dc55-5a09-9a99-20bddeb5d60c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2606,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4422,6 +4417,7 @@ a85710df-0bb2-5fd2-863e-96dd590d7474,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1752
 a94d7bf7-0244-536b-bd58-d1143c4088ac,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6293,,,epoch,https://conceptualreasoning.ai/lmca,
 aa171667-405f-5abd-ba45-085ecbe4dddb,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0978,,,epoch,https://conceptualreasoning.ai/lmca,
 ad080eb8-573c-579d-9744-07e44f7af21c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.48810000000000003,,,epoch,https://conceptualreasoning.ai/lmca,
+af434d5f-3215-5aee-854a-de70850a350c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6546,,,epoch,https://conceptualreasoning.ai/lmca,
 b08e24f9-06f1-5ef8-978a-bfc267b8915d,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2214,,,epoch,https://conceptualreasoning.ai/lmca,
 b098a367-9a28-5df9-9e51-3110e10b52c3,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.4715,,,epoch,https://conceptualreasoning.ai/lmca,
 b22997e4-5610-5a24-8354-c760155cfa57,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0278,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4776,24 +4772,24 @@ e1926c8a-2a11-516f-a551-5c624888ea56,c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,0.0,,,
 838e81ab-35da-504e-b566-0d714556aca1,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.0,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 8a84c43a-d5a6-564f-a98b-1e56e24b7828,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.1453362255965291,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 8b894406-85fc-569b-82c0-de42e84375f8,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.336225596529284,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
-8f6c0f48-eb1d-5a48-a59e-4c6cb0777591,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.4186550976138828,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 9a4c32e0-2da4-5bca-93f2-103393146aaf,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.0390455531453362,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 9c3cfb92-d076-5cbf-bc5f-f1777ab1d1f9,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.2255965292841648,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 9e043540-7469-5c81-b963-4c61d5d7f10c,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3297180043383946,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 9e6781e8-0021-54e4-bf15-41071ac8b1c3,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3253796095444684,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 a1aba5df-ad83-5100-9a6d-8317b89935aa,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.245119305856833,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
+a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.5119305856832972,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 a66eaeab-c898-5ee8-baa5-a5c01352eb57,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3036876355748373,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
+af434d5f-3215-5aee-854a-de70850a350c,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.4186550976138828,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 afbb8215-68a5-5c99-bac7-ebc009196c4d,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.0,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 c04ed4ab-9cda-56a2-9056-c3f5d0d19f05,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3080260303687636,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 c57b1628-af77-5632-b985-b99dcaae6dce,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.4208242950108459,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 c593d704-7f66-587a-8100-ef60d2428716,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3123644251626898,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.4967462039045553,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 cb8fdec5-c706-5ab2-8ef6-966f84289dc1,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3318872017353577,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
-d40640b2-c4d7-56cb-8a90-7cac352a3c9c,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3861171366594359,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 e0d02856-1db1-5660-8957-dd11bae9e534,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.5444685466377441,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 e786d6a8-c139-5f33-86ee-2485b6552d92,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.2494577006507592,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 ebf598e4-4b99-569d-ae6d-5b3100d978ca,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.0,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
-f7602df7-a39d-5ec0-bc7b-915aaeda0dcd,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.5119305856832972,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
+f49a7465-1957-5bb1-a54d-6d8088830b0b,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.3861171366594359,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 f884deaf-f093-54f6-929a-580bfc5eabeb,c46b5c6e-1933-5584-abcf-9515ed18baa9,0.5856832971800434,,,epoch,https://andonlabs.com/evals/blueprint-bench-2,
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,c6cec6f2-a484-5b21-9596-7fde61cebfda,0.152,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
 194e96b4-d28a-520b-89fb-9aaf9af3e8d1,c6cec6f2-a484-5b21-9596-7fde61cebfda,0.281,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
@@ -4942,7 +4938,6 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,c78bf195-f477-5ab0-b096-a2977ceff4a4,0.4920
 8c326c89-4162-59d3-83a2-15321cc6785e,c817025f-1cdd-50c3-afc9-985127f1a43b,0.228,,,epoch,SimpleBench Leaderboard,
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,c817025f-1cdd-50c3-afc9-985127f1a43b,0.345,,,epoch,SimpleBench Leaderboard,
 8f35794d-e2d5-550d-b3e5-0ea5b9e0bcdf,c817025f-1cdd-50c3-afc9-985127f1a43b,0.272,,,epoch,SimpleBench Leaderboard,
-8f6c0f48-eb1d-5a48-a59e-4c6cb0777591,c817025f-1cdd-50c3-afc9-985127f1a43b,0.866,,,epoch,https://simple-bench.com/,
 935de1ee-c0c0-59a6-afeb-a6e0c95046ed,c817025f-1cdd-50c3-afc9-985127f1a43b,0.532,,,epoch,SimpleBench Leaderboard,
 97f2b236-7a8f-5f7a-bab9-a58276d102fa,c817025f-1cdd-50c3-afc9-985127f1a43b,0.611,,,epoch,https://lmcouncil.ai/benchmarks,
 9cf06ff3-483b-5582-95ad-b93bf1ee2f74,c817025f-1cdd-50c3-afc9-985127f1a43b,0.367,,,epoch,SimpleBench Leaderboard,
@@ -4950,6 +4945,7 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,c78bf195-f477-5ab0-b096-a2977ceff4a4,0.4920
 9d1a843b-0188-5431-8f7e-0187f70ab91b,c817025f-1cdd-50c3-afc9-985127f1a43b,0.458,,,epoch,SimpleBench Leaderboard,
 9de7f20b-93b2-55d8-a1a9-ba660fd2da3d,c817025f-1cdd-50c3-afc9-985127f1a43b,0.526,,,epoch,SimpleBench Leaderboard,
 a1aba5df-ad83-5100-9a6d-8317b89935aa,c817025f-1cdd-50c3-afc9-985127f1a43b,0.617,,,epoch,https://lmcouncil.ai/benchmarks,
+a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,c817025f-1cdd-50c3-afc9-985127f1a43b,0.8840000000000001,,,epoch,https://simple-bench.com/,
 a30435c9-0f32-5bad-9e84-32acb0c8933f,c817025f-1cdd-50c3-afc9-985127f1a43b,0.414,,,epoch,SimpleBench Leaderboard,
 a46eba5c-fc2f-53d8-b5c4-b47f5f27c910,c817025f-1cdd-50c3-afc9-985127f1a43b,0.7040000000000001,,,epoch,SimpleBench Leaderboard,
 a5a1118c-c262-5a1e-843c-aa5723fa223a,c817025f-1cdd-50c3-afc9-985127f1a43b,0.818,,,epoch,https://simple-bench.com/,
@@ -4958,6 +4954,7 @@ a85710df-0bb2-5fd2-863e-96dd590d7474,c817025f-1cdd-50c3-afc9-985127f1a43b,0.199,
 a8994e7b-220b-5ad3-b2e8-9c64c1ec7d0b,c817025f-1cdd-50c3-afc9-985127f1a43b,0.588,,,epoch,https://lmcouncil.ai/benchmarks,
 aa171667-405f-5abd-ba45-085ecbe4dddb,c817025f-1cdd-50c3-afc9-985127f1a43b,0.251,,,epoch,SimpleBench Leaderboard,
 ab486689-31ad-5a12-af5e-f2d41119770e,c817025f-1cdd-50c3-afc9-985127f1a43b,0.477,,,epoch,SimpleBench Leaderboard,
+af434d5f-3215-5aee-854a-de70850a350c,c817025f-1cdd-50c3-afc9-985127f1a43b,0.866,,,epoch,https://simple-bench.com/,
 af9ac6b1-d23a-579e-9879-53a27d79f8c9,c817025f-1cdd-50c3-afc9-985127f1a43b,0.7690000000000001,,,epoch,SimpleBench Leaderboard,
 b32fb225-1781-5336-80b6-9506ad9e2452,c817025f-1cdd-50c3-afc9-985127f1a43b,0.361,,,epoch,SimpleBench Leaderboard,
 b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,c817025f-1cdd-50c3-afc9-985127f1a43b,0.396,,,epoch,https://simple-bench.com/,
@@ -4981,7 +4978,6 @@ f28c936a-3acf-57c1-96f1-6ebc1eaca363,c817025f-1cdd-50c3-afc9-985127f1a43b,0.221,
 f58ed103-2670-5d10-a6da-5774627db5a3,c817025f-1cdd-50c3-afc9-985127f1a43b,0.4629999999999999,,,epoch,https://lmcouncil.ai/benchmarks,
 f68b0e59-157b-5116-9755-81edb45f60bd,c817025f-1cdd-50c3-afc9-985127f1a43b,0.401,,,epoch,SimpleBench Leaderboard,
 f75d784a-f32d-5bee-bb36-eb83735454b8,c817025f-1cdd-50c3-afc9-985127f1a43b,0.174,,,epoch,SimpleBench Leaderboard,
-f7602df7-a39d-5ec0-bc7b-915aaeda0dcd,c817025f-1cdd-50c3-afc9-985127f1a43b,0.8840000000000001,,,epoch,https://simple-bench.com/,
 f884deaf-f093-54f6-929a-580bfc5eabeb,c817025f-1cdd-50c3-afc9-985127f1a43b,0.926,,,epoch,https://simple-bench.com/,
 f9fbf084-47df-59c1-98ad-bbb6b0b04481,c817025f-1cdd-50c3-afc9-985127f1a43b,0.263,,,epoch,https://simple-bench.com/,
 fa570698-4ac3-5bcc-8af8-59e381ff8d0c,c817025f-1cdd-50c3-afc9-985127f1a43b,0.551,,,epoch,SimpleBench Leaderboard,
@@ -5619,11 +5615,11 @@ bbd463a7-4c62-522c-9684-ace6f8f6fec4,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.147,
 bda27011-9a8a-57c1-a6d5-a06ac6714ff5,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.5091,,claude-code,epoch,https://cognition.com/frontiercode,
 c46458a4-eca4-572f-b854-a93df31d132f,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.4359,,devin-cli,epoch,https://cognition.com/frontiercode,
 d2b66162-2f5e-5f61-9a9c-71af455a4091,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.245,,mini-swe-agent,epoch,https://cognition.com/frontiercode,
-d40640b2-c4d7-56cb-8a90-7cac352a3c9c,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.5348,,claude-code,epoch,https://cognition.com/frontiercode,
 dfff67f5-f4e9-5ea6-b9d8-03ac04e5b014,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.188,,devin-cli,epoch,https://cognition.com/frontiercode,
 e570dd31-b940-537b-80d0-f06e0f3aa6f9,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.4296,,codex,epoch,https://cognition.com/frontiercode,
 e786d6a8-c139-5f33-86ee-2485b6552d92,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.4273,,claude-code,epoch,https://cognition.com/frontiercode,
 ec3df8c3-9c72-5e8e-a615-7e0607fdc095,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.3006,,mini-swe-agent,epoch,https://cognition.com/frontiercode,
+f49a7465-1957-5bb1-a54d-6d8088830b0b,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.5348,,claude-code,epoch,https://cognition.com/frontiercode,
 f76e65a4-12f5-5e94-ba04-bb341c289bc3,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.102,,mini-swe-agent,epoch,https://cognition.com/frontiercode,
 f774eb3f-8d0f-531c-8b88-23e84e3414be,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.3183,,devin-cli,epoch,https://cognition.com/frontiercode,
 fbab4124-9b4e-59bf-bf32-880eb7a8a6b2,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.0939,,devin-cli,epoch,https://cognition.com/frontiercode,
