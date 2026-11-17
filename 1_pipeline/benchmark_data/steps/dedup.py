@@ -67,3 +67,19 @@ def drop_bare_copies(scores: pandas.DataFrame, models: pandas.DataFrame):
                   & (pairs["rank"] < pairs["rank_o"])]
     hit = pairs["index"].unique()
     return scores.drop(index=hit), scores.loc[hit]
+
+
+def superseded_board_rows(scores: pandas.DataFrame, models: pandas.DataFrame) -> pandas.DataFrame:
+    """Rows of the hand-transcribed `board_rows` feed whose model has a score on the same
+    benchmark from another feed, one row per pair.
+
+    Such a board row has probably been picked up upstream since it was transcribed, under the same
+    label (the copy then falls as an exact duplicate) or another one (one run under two
+    identities, which nothing downstream would catch). The match is on the base model alone, so
+    it also returns honest neighbours (another effort of the same model): the reader decides.
+    """
+    base = models.set_index("model_id")["base_model"]
+    d = scores[["model_id", "benchmark_id", "score", "feed"]].assign(
+        base_model=scores["model_id"].map(base))
+    mine, others = d[d["feed"] == "board_rows"], d[d["feed"] != "board_rows"]
+    return mine.merge(others, on=["benchmark_id", "base_model"], suffixes=("", "_other"))

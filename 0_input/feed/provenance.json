@@ -1,4 +1,11 @@
 {
+  "0_input/feed/board_rows/board_rows.csv": {
+    "byte_size": 2506,
+    "fetched_at": "by hand",
+    "note": "rows no other feed carries, each with the day its board was read (read_on)",
+    "sha256": "d5a619e14d466086f9ddd69d1770a622daa820ce9e37aff30198ec9f92eda9db",
+    "url": "the boards named in the file's source_url column"
+  },
   "0_input/feed/cybench_site/cybench_leaderboard.csv": {
     "byte_size": 1179,
     "fetched_at": "2026-09-07",

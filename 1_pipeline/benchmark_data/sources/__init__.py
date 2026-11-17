@@ -9,6 +9,7 @@ empty, with the header), and entries in `config.SOURCE_ORDER` / `config.SPLITTAB
 """
 
 from benchmark_data.sources import (
+    board_rows,
     cybench_site,
     epoch_cyber,
     epoch_live,
@@ -28,6 +29,7 @@ TRANSLATE = {
     "kaggle": kaggle.translate,
     "rand": rand.translate,
     "seal": seal.translate,
+    "board_rows": board_rows.translate,
     "gpai_runs": gpai_runs.translate,
 }
 

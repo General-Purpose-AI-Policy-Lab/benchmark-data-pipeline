@@ -212,3 +212,30 @@ def test_geobench_runs_refusing_too_many_images_are_left_out():
     names = {str(r.raw_name) for r in geo}
     assert FILE_REFUSAL["geobench_external.csv"] == ("ACW Refusal", 0.05)
     assert "o3-2025-04-16_medium" in names and "o3-2025-04-16_high" not in names
+
+
+def test_board_rows_yields_one_record_per_row_and_refuses_an_incomplete_one(tmp_path):
+    from benchmark_data.sources import board_rows
+    d = tmp_path / "board_rows"
+    d.mkdir()
+    row = {"benchmark": "OSWorld", "model": "model-a_high", "score": "0.5", "board_name": "Model A",
+           "source_label": "a board, read 2026-11-17", "source_url": "https://example.org/",
+           "read_on": "2026-11-17", "note": ""}
+    pandas.DataFrame([row]).to_csv(d / board_rows.FILE, index=False)
+    [r] = list(board_rows.translate(tmp_path))
+    assert (r.raw_name, r.benchmark, r.score, r.source_url) == (
+        "model-a_high", "OSWorld", 0.5, "https://example.org/")
+    assert r.mode == "" and r.effort == ""   # nothing but what the name says
+    pandas.DataFrame([{**row, "read_on": ""}]).to_csv(d / board_rows.FILE, index=False)
+    with pytest.raises(ValueError, match="lack one of"):
+        list(board_rows.translate(tmp_path))
+    pandas.DataFrame([row]).drop(columns="note").to_csv(d / board_rows.FILE, index=False)
+    with pytest.raises(ValueError, match="expected columns"):
+        list(board_rows.translate(tmp_path))
+
+
+def test_the_committed_board_rows_parse():
+    from benchmark_data import config
+    from benchmark_data.sources import board_rows
+    recs = list(board_rows.translate(config.FEED_DIR))
+    assert recs and all(0 <= r.score <= 1 for r in recs)

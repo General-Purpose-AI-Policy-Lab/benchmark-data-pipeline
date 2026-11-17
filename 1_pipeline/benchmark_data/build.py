@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas
 
 from benchmark_data import config, runs
-from benchmark_data.steps.dedup import dedup, drop_bare_copies
+from benchmark_data.steps.dedup import dedup, drop_bare_copies, superseded_board_rows
 from benchmark_data.steps.enrich import enrich
 from benchmark_data.steps.export import (
     build_manifest,
@@ -37,6 +37,20 @@ def _log_disagreements(dups: pandas.DataFrame, models: pandas.DataFrame,
                      benchmark=lambda d: d["benchmark_id"].map(b))
              [["model", "benchmark", "n", "score_min", "score_max", "spread", "feeds"]])
     log.info("disagreements (first 12):\n%s", table.to_string(index=False))
+
+
+def _log_superseded_board_rows(scores: pandas.DataFrame, models: pandas.DataFrame,
+                               benchmarks: pandas.DataFrame) -> None:
+    """Hand-transcribed board rows that another feed now seems to carry: to retire by hand."""
+    pairs = superseded_board_rows(scores, models)
+    if not len(pairs):
+        return
+    name = benchmarks.set_index("benchmark_id")["name"]
+    lines = [f"  {name[p.benchmark_id]}: {p.base_model} {p.score:.4f} (board_rows)"
+             f" vs {p.score_other:.4f} ({p.feed_other})" for p in pairs.itertuples()]
+    log.warning("board_rows: %d row(s) whose model now has a score on the same benchmark in "
+                "another feed; retire the row from board_rows.csv if it is the same run:\n%s",
+                len(lines), "\n".join(lines))
 
 
 def _log_below_floor(scores: pandas.DataFrame, benchmarks: pandas.DataFrame) -> None:
@@ -94,6 +108,7 @@ def build(feed_dir: Path = config.FEED_DIR, metadata_dir: Path = config.METADATA
     log.info("scores before %s -> after %s (%s exact duplicates + %s disagreements)",
              f"{len(scores):,}", f"{len(deduped):,}", f"{n_exact:,}", f"{n_disagree:,}")
     _log_disagreements(dups, models, benchmarks)
+    _log_superseded_board_rows(scores, models, benchmarks)
     deduped, copies = drop_bare_copies(deduped, models)
     deduped = deduped.drop(columns="effort_by_convention")
     names_of = models.set_index("model_id")

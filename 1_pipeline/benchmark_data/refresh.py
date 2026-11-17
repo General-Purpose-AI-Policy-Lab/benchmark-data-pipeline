@@ -104,6 +104,15 @@ class Refresher:
             "byte_size": path.stat().st_size}
         log.info("cybench_site: not refreshed (frozen snapshot of 2026-09-07)")
 
+    def board_rows(self) -> None:
+        path = self.feed_dir / "board_rows/board_rows.csv"
+        self.provenance["0_input/feed/board_rows/board_rows.csv"] = {
+            "url": "the boards named in the file's source_url column", "fetched_at": "by hand",
+            "note": "rows no other feed carries, each with the day its board was read (read_on)",
+            "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+            "byte_size": path.stat().st_size}
+        log.info("board_rows: not refreshed (rows transcribed by hand)")
+
     def rand(self) -> None:
         path = self.feed_dir / "rand/rand_benchmark_scores.csv"
         self.provenance["0_input/feed/rand/rand_benchmark_scores.csv"] = {
@@ -142,5 +151,6 @@ def refresh(feed_dir: Path = config.FEED_DIR) -> None:
     r.kaggle()
     r.seal()
     r.rand()
+    r.board_rows()
     r.gpai_runs()
     r.write_provenance()

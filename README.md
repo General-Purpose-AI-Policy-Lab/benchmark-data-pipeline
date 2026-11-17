@@ -29,7 +29,7 @@ docs/                       decisions.md (decision log), reviews/ (score reviews
 tests/                      unit tests, golden copies (tests/expected_database, tests/expected_views), parity goldens
 ```
 
-Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (21 HTML pages), `gpai_runs` (the lab's own runs: one `scores.csv`, and per run a manifest, per-question samples and a password-protected transcript archive, see [`evals/README.md`](evals/README.md)). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
+Feeds: `epoch` (the CSV files of Epoch's ZIP), `epoch_live` (Epoch's internal evaluations), `epoch_cyber` (the long table behind Epoch's cyber capabilities index), `cybench_site` (Cybench's own leaderboard, frozen snapshot), `kaggle` (3 leaderboard JSON files), `rand` (1 CSV), `seal` (21 HTML pages), `board_rows` (rows of public boards no other feed carries, transcribed by hand, see below), `gpai_runs` (the lab's own runs: one `scores.csv`, and per run a manifest, per-question samples and a password-protected transcript archive, see [`evals/README.md`](evals/README.md)). Local snapshot, refreshed by `refresh` (see "Run"); dates and sha256 in `0_input/feed/provenance.json`.
 
 **SEAL pages are not versioned.** Scale AI publishes its leaderboards under no open license, so `0_input/feed/seal/*.html` is gitignored (see `NOTICE.md`). On a fresh clone run `python -m benchmark_data refresh` **before** the build; otherwise the build stops with an explicit message. Everything else about the SEAL feed (aliases, sha256, derived scores in `2_database/`) stays tracked.
 
@@ -139,6 +139,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 | `kaggle` | `modelVersionSlug` | pure machine name, `-default` stripped, never an effort | grammar + `aliases.csv` for lower-case spellings of Epoch names |
 | `rand` | `Model` | free display names (`Amazon Nova 1.0 Lite`) | full enumeration in `aliases.csv` |
 | `seal` | `model` (JSON in the HTML) | five incompatible encodings, plus `model (harness) effort` on the agentic boards | full enumeration in `aliases.csv` (with `harness`) |
+| `board_rows` | `model` | machine names written by hand, with only the settings the board states (`board_name` keeps the board's spelling) | grammar; `aliases.csv` empty |
 | `gpai_runs` | `model` | the pipeline's own machine names (`claude-sonnet-5_none`), regime always explicit | grammar; `aliases.csv` empty |
 
 ### Machine-name grammar (`identity.split_name`)
@@ -167,6 +168,10 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 2. Edit `0_input/feed/<feed>/aliases.csv`. Columns: `raw_name,base_model,reasoning_level,reasoning_tokens,snapshot,variant,harness,note`. `raw_name` is the exact raw string (after stripping trailing `*`/`†` and whitespace).
 3. Empty `base_model` = **deliberate DROP** (no alias file uses it today; the mechanism stays). Put the reason in `note`.
 4. `python -m benchmark_data build`. The alias always wins over the grammar, with one nuance on Epoch: an effort read from the displayed `Name` may complete an identity the alias left empty.
+
+### Add a board row by hand
+
+A row a public board shows and no feed carries (Epoch relays most boards with a delay, and no longer follows some) goes into `0_input/feed/board_rows/board_rows.csv`: the benchmark's canonical name, the model as a machine name carrying only the settings the board states (a bare name when it states none), the score as a proportion, the board's own spelling of the model, a source label saying which table, metric and run settings were read, the URL, the day the board was read, and a note. The benchmark, metric and settings must be those of the rows the other feeds already carry for that benchmark. Then `python -m benchmark_data build --date <run>` and a line in `docs/decisions.md`. When another feed starts carrying a score of the same model on the same benchmark, the build warns (`board_rows: ... retire the row`): if it is the same run, delete the row here, so that one run is not counted under two labels.
 
 ### Add a source (e.g. MazeBench)
 
@@ -233,7 +238,7 @@ The build only needs `pandas`. Two successive builds must produce a **byte-ident
 
 ### Refresh the feeds
 
-`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report), and so do the lab's own runs (`gpai_runs`), whose hashes `refresh` records. Novelties are never ingested quietly: unknown files and tasks of the Epoch feeds and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files (new Kaggle or Scale boards are added to `KAGGLE_SPEC` / `SEAL_SPEC` by hand, see above). Provenance (URL, date, sha256): `0_input/feed/provenance.json`. Every new model, benchmark and human baseline then has to reach the consumers' curated tables too: the step-by-step checklist of a refresh, both repositories, and the audit that runs after the sync are in Multiaxis_ECI's [`.claude/skills/data-refresh/SKILL.md`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI/blob/main/.claude/skills/data-refresh/SKILL.md).
+`python -m benchmark_data refresh` rewrites `0_input/feed/`, then `build`. RAND stays frozen (Dev et al. 2025 report), and so do the lab's own runs (`gpai_runs`) and the hand-transcribed board rows (`board_rows`), whose hashes `refresh` records. Novelties are never ingested quietly: unknown files and tasks of the Epoch feeds and unresolved names show up in the build log, to be curated in the `*_SPEC` dictionaries and the `aliases.csv` files (new Kaggle or Scale boards are added to `KAGGLE_SPEC` / `SEAL_SPEC` by hand, see above). Provenance (URL, date, sha256): `0_input/feed/provenance.json`. Every new model, benchmark and human baseline then has to reach the consumers' curated tables too: the step-by-step checklist of a refresh, both repositories, and the audit that runs after the sync are in Multiaxis_ECI's [`.claude/skills/data-refresh/SKILL.md`](https://github.com/General-Purpose-AI-Policy-Lab/Multiaxis_ECI/blob/main/.claude/skills/data-refresh/SKILL.md).
 
 ## License and sources
 

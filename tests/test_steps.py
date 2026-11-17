@@ -108,3 +108,18 @@ def test_parity_buckets_split_lost_pairs_by_cause():
     assert res["new"]["model_version"].tolist() == ["f"]
     assert res["score_changed"]["model_version"].tolist() == ["e"]
     assert res["date_changed"]["model_version"].tolist() == ["a"]
+
+
+def test_board_rows_now_carried_by_another_feed_are_reported():
+    from benchmark_data.steps.dedup import superseded_board_rows
+    models = pandas.DataFrame({"model_id": ["a", "a_high", "b"], "base_model": ["A", "A", "B"]})
+    scores = pandas.DataFrame({
+        "model_id": ["a", "a_high", "b", "b"],
+        "benchmark_id": ["x", "x", "x", "y"],
+        "score": [0.5, 0.5, 0.7, 0.2],
+        "feed": ["board_rows", "epoch", "board_rows", "epoch"]})
+    pairs = superseded_board_rows(scores, models)
+    # A's board row meets Epoch's row of the same model on the same benchmark, under another
+    # label; B has a score elsewhere on another benchmark only.
+    assert pairs[["model_id", "model_id_other", "feed_other"]].values.tolist() == [
+        ["a", "a_high", "epoch"]]
