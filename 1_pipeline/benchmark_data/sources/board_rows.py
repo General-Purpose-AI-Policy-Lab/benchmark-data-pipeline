@@ -1,7 +1,8 @@
-"""Rows of public boards that no other feed carries, transcribed by hand.
+"""Rows of public boards, or of a paper's table, that no other feed carries, transcribed by hand.
 
-Epoch relays most boards with a delay and stops following some: a row a board shows and Epoch's
-files lack is written in `board_rows.csv`, with the day the board was read. `model` is a machine
+Epoch relays most boards with a delay and stops following some, and its files leave a few rows of
+papers without a model: a row a source shows and no feed carries is written in `board_rows.csv`,
+with the day the source was read. `model` is a machine
 name (the grammar of `identity.split_name`) carrying only the settings the board states, a bare
 name when it states none; `board_name` keeps the board's own spelling. The benchmark, the metric
 and the run settings must be the ones of the rows the other feeds already carry for that

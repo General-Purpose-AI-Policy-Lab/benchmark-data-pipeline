@@ -1,9 +1,9 @@
 {
   "0_input/feed/board_rows/board_rows.csv": {
-    "byte_size": 2506,
+    "byte_size": 3472,
     "fetched_at": "by hand",
     "note": "rows no other feed carries, each with the day its board was read (read_on)",
-    "sha256": "d5a619e14d466086f9ddd69d1770a622daa820ce9e37aff30198ec9f92eda9db",
+    "sha256": "5d7d1f471f242516ff531f9f26097f23ecd01baabbb1488c907f12c586c699ec",
     "url": "the boards named in the file's source_url column"
   },
   "0_input/feed/cybench_site/cybench_leaderboard.csv": {

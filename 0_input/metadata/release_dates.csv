@@ -27,6 +27,7 @@ grok-4-1-fast-reasoning,,,2025-11-19,https://docs.x.ai/developers/release-notes,
 grok-4-1-fast-non-reasoning,,,2025-11-19,https://docs.x.ai/developers/release-notes,API release 2025-11-19 (Grok 4.1 itself: 11-17).
 Qwen-14B,,,2023-09-25,https://github.com/QwenLM/Qwen,"README news: 2023.9.25, Qwen-14B and Qwen-14B-Chat released on ModelScope and Hugging Face. Epoch: 09-28."
 Qwen-14B-Chat,,,2023-09-25,https://github.com/QwenLM/Qwen,"README news: 2023.9.25, Qwen-14B and Qwen-14B-Chat released on ModelScope and Hugging Face. Epoch: 09-24."
+Qwen2.5-VL-72B-Instruct,,,2025-01-27,https://huggingface.co/api/models/Qwen/Qwen2.5-VL-72B-Instruct,"Hugging Face repository created 2025-01-27 (GeoBench's own table says released 2025-01-26). Epoch's model table maps this name to Qwen2.5-72B, the text model of 2024-09-19, four months earlier (2026-11-18)."
 Qwen2-VL-72B-Instruct,,,2024-08-29,https://qwenlm.github.io/blog/qwen2-vl/,Announced 2024-08-29 with the 72B model served through the API; weights published 2024-09-17/18.
 Yi-34B-Chat,,,2023-11-23,https://huggingface.co/01-ai/Yi-34B-Chat,01.AI news: chat models opened to the public 2023-11-23 (base Yi-34B: 11-02). Epoch: 11-22 / 11-02.
 mimo-v2-flash,,,2025-12-16,https://mimo.mi.com/docs/en-US/updates/model,Xiaomi release notes.
