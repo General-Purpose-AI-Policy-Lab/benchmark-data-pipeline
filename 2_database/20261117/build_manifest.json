@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3",
-  "built_at": "2026-11-17T12:14:29+01:00",
-  "git_commit": "afeb41471454431341bb2dd73aa464d1754512d0",
+  "built_at": "2026-11-17T12:23:12+01:00",
+  "git_commit": "ce853fc929ac524b4da7d1658ad828e63ff33712",
   "feeds": {
     "0_input/feed/cybench_site/cybench_leaderboard.csv": {
       "byte_size": 1179,
@@ -1251,18 +1251,18 @@
     "0_input/metadata/human_baselines.csv": "42607e4d5f2fb3e5147dc4320b2343aa86dc01ca3f2a444ccec476412774acca",
     "0_input/metadata/model_exclusions.csv": "abd1c703d84954e9f3c6d38b36e8df2d024f91e34dd240d0868c79fef718f982",
     "0_input/metadata/organizations.csv": "5403ab5ae6ec118ec2eaf229144552e707d535a1adbcf5aa8c78faad7721b426",
-    "0_input/metadata/release_dates.csv": "e09835752f39b50ded854f86dc384d0724dae9212a170a2f842ffc3c422be1ae",
-    "0_input/metadata/score_corrections.csv": "fe53c0c2837823cd7db9c739c19d23ff67f87cb84f7556e3e9197f5612bbbe18",
-    "0_input/metadata/score_drop_rules.csv": "3060f3a5cb1991963014061e63da5795572e3859b86c8ad12e0ccdc817fbebc0",
-    "0_input/metadata/score_variant_fixes.csv": "9974755eb495f88b7433919c01e79e5bb9ec27b076570f037f12262a00e5c8a0",
+    "0_input/metadata/release_dates.csv": "3a979aab4324288df3a8a6ffc53225453f731b1ada43f7b129dbdef75b3ede5d",
+    "0_input/metadata/score_corrections.csv": "c9935eb7b087ff50febde39f6dcc82cefddab6dabd57dfad6490fbae77aa7187",
+    "0_input/metadata/score_drop_rules.csv": "946d586f9a24804386a1bffce87799796715485fa862e561fe231f43cbc63ce9",
+    "0_input/metadata/score_variant_fixes.csv": "743aa9941a61aea9727e2dbf6e60e972e98234c7ffc57a7e071b6f1627d6026c",
     "0_input/metadata/sibling_merges.csv": "fd85935b300c00a9eae14b6300e9ad0a48d4c25dfc3021a219c4dc2ad4af5bb6"
   },
   "rows": {
-    "models.csv": 1050,
+    "models.csv": 1051,
     "benchmarks.csv": 107,
-    "scores.csv": 6032,
+    "scores.csv": 6031,
     "human_baselines.csv": 56,
-    "model_names.csv": 1979,
+    "model_names.csv": 1986,
     "excluded_benchmarks.csv": 49
   }
 }
