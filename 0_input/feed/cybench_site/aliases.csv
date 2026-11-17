@@ -15,11 +15,11 @@ OpenAI o3-mini,o3-mini,medium,,2025-01-31,,,"as Epoch: o3-mini-2025-01-31_medium
 OpenAI o1-mini,o1-mini,medium,,2024-09-12,,,"as Epoch: o1-mini-2024-09-12_medium (HAL run, adjusted -2.5 pts by the site)"
 GPT-4.5-preview,gpt-4.5-preview,,,2025-02-27,,,as Epoch
 Claude 3.7 Sonnet,claude-3-7-sonnet,,,2025-02-19,,,as Epoch
-GPT-4o,gpt-4o,,,2024-11-20,,,as Epoch: gpt-4o-2024-11-20
+GPT-4o,gpt-4o,,,2024-05-13,,,"the Cybench paper names openai/gpt-4o-2024-05-13 (arXiv 2408.08926); Epoch's November 2024 snapshot was an assumption (2026-11-17)"
 OpenAI o1-preview,o1-preview,,,2024-09-12,,,as Epoch
 Claude 3 Opus,claude-3-opus,,,2024-02-29,,,as Epoch
 Claude 3.5 Sonnet,claude-3-5-sonnet,,,2024-06-20,,,as Epoch
 Mixtral 8x22b Instruct,Mixtral-8x22B-Instruct-v0.1,,,,,,as Epoch
-Gemini 1.5 Pro,gemini-1.5-pro-001-feb24,,,,,,as Epoch (the Cybench paper's 2024 run)
+Gemini 1.5 Pro,gemini-1.5-pro-001,,,,,,"the Cybench paper names google/gemini-1.5-pro-001 (arXiv 2408.08926), not the February 2024 preview (2026-11-17)"
 Llama 3 70b Chat,Meta-Llama-3-70B-Instruct,,,,,,as Epoch
 Llama 3.1 405B Instruct,Llama-3.1-405B-Instruct,,,,,,as Epoch

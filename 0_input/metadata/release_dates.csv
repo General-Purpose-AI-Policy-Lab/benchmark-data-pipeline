@@ -64,6 +64,7 @@ T5-Small,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and check
 T5-Base,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and checkpoints released 2019-10-23 (Epoch dates T5-3B / 11B the same day)."
 T5-Large,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and checkpoints released 2019-10-23 (Epoch dates T5-3B / 11B the same day)."
 Voxtral-Small-24B-2507,,,2025-07-15,https://mistral.ai/news/voxtral,Voxtral announced and weights released 2025-07-15.
+gemini-2.5-flash,,,2025-06-17,https://ai.google.dev/gemini-api/docs/changelog,"Gemini API changelog, June 17, 2025: ""Released gemini-2.5-flash, our first stable 2.5 Flash model"". Written down so that a run moved to this model from a preview row keeps the stable release's date (2026-11-17)."
 gemini-2.5-flash,2025-04,,2025-04-17,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-04-17 (Scale board label 'April 2025').
 gemini-2.5-flash,2025-05,,2025-05-20,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-05-20 (Scale board label 'Preview (May 2025)').
 gemini-3.1-flash-live-preview,,,2026-03-26,https://ai.google.dev/gemini-api/docs/changelog,Gemini API changelog 2026-03-26.
