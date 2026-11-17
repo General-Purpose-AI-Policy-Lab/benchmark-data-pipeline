@@ -1207,7 +1207,6 @@ fafc169e-80a1-50ce-8da7-9eec3539621a,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.2457
 3653a9c7-329a-5229-ba85-3bfdde8f258d,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.753,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 3b49d843-54e3-5df8-a65e-dfd2ebd824e9,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.692,,,epoch,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867
 3f56cd83-649b-52da-9e6d-3cefe0f48b4d,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.963,,,board_rows,"GPT-4 Technical Report (arXiv 2303.08774), Table 2, AI2 Reasoning Challenge, 25-shot",https://arxiv.org/abs/2303.08774
-4216f328-a9a2-55a9-815d-dde8dcb69e73,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.953,,,epoch,DeepSeek-V3 Technical Report,http://arxiv.org/abs/2412.19437
 423200c2-4e4c-51cc-bdc9-d7fba77d9d04,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.25,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 42af4551-0280-51ca-90fc-175670bdd1e5,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.324,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.387,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
@@ -1239,6 +1238,7 @@ fafc169e-80a1-50ce-8da7-9eec3539621a,437fedf2-e8d4-594c-904f-825dfe7e9e7a,0.2457
 90083386-cc59-54db-b14f-5aa5c679828a,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.532,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 916a78df-d4b1-511e-8a37-9c5d37fd4c4c,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.422,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
 94efe9e3-1371-5593-9cfa-575bd2dd5d0e,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.27,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
+9878f29b-f301-5fbd-898f-69262e050757,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.953,,,epoch,DeepSeek-V3 Technical Report,http://arxiv.org/abs/2412.19437
 9cd75978-07bf-535e-893d-3ee9082e75b1,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.946246,0.006591,,gpai_runs,GPAI Policy Lab run 20261112_claude-haiku-5-5_none_commonsense (1 epochs x 1172 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_none_commonsense
 a147126b-5c8d-528d-a880-61412bdb9df5,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.979522,0.004139,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-8_none_commonsense (1 epochs x 1172 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-8_none_commonsense
 a1daf361-b5e6-5a18-a07c-5d24f089bf4b,4e5a6307-247f-5f51-ac4e-aeaa4f34f979,0.986332,0.003391,,gpai_runs,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 1172 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense
@@ -1429,7 +1429,6 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.9651
 39453e91-c716-5830-91a2-1e6f775d6dae,534366c9-d667-5dcb-9778-e42e12abc813,0.676,,,epoch,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag
 3b49d843-54e3-5df8-a65e-dfd2ebd824e9,534366c9-d667-5dcb-9778-e42e12abc813,0.868,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
 3f56cd83-649b-52da-9e6d-3cefe0f48b4d,534366c9-d667-5dcb-9778-e42e12abc813,0.953,,,epoch,GPT-4 Technical Report,http://arxiv.org/abs/2303.08774
-4216f328-a9a2-55a9-815d-dde8dcb69e73,534366c9-d667-5dcb-9778-e42e12abc813,0.889,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 423200c2-4e4c-51cc-bdc9-d7fba77d9d04,534366c9-d667-5dcb-9778-e42e12abc813,0.4,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 42af4551-0280-51ca-90fc-175670bdd1e5,534366c9-d667-5dcb-9778-e42e12abc813,0.594,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,534366c9-d667-5dcb-9778-e42e12abc813,0.718,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
@@ -1461,6 +1460,7 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.9651
 8a83e82a-0f12-53c7-afff-759fa6ede2f8,534366c9-d667-5dcb-9778-e42e12abc813,0.972067,0.001644,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-5-5_max_commonsense (1 epochs x 10042 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_max_commonsense
 8cff9f72-eb66-5eaa-b6d6-88f3d11e190d,534366c9-d667-5dcb-9778-e42e12abc813,0.897343,0.003014,,gpai_runs,GPAI Policy Lab run 20261112_claude-haiku-5-5_max_commonsense (1 epochs x 10042 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_max_commonsense
 94efe9e3-1371-5593-9cfa-575bd2dd5d0e,534366c9-d667-5dcb-9778-e42e12abc813,0.407,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
+9878f29b-f301-5fbd-898f-69262e050757,534366c9-d667-5dcb-9778-e42e12abc813,0.889,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 9cd75978-07bf-535e-893d-3ee9082e75b1,534366c9-d667-5dcb-9778-e42e12abc813,0.887771,0.00315,,gpai_runs,GPAI Policy Lab run 20261112_claude-haiku-5-5_none_commonsense (1 epochs x 10042 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_none_commonsense
 a147126b-5c8d-528d-a880-61412bdb9df5,534366c9-d667-5dcb-9778-e42e12abc813,0.957976,0.002002,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-8_none_commonsense (1 epochs x 10042 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-8_none_commonsense
 a1daf361-b5e6-5a18-a07c-5d24f089bf4b,534366c9-d667-5dcb-9778-e42e12abc813,0.957323,0.002014,,gpai_runs,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 10042 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense
@@ -1532,6 +1532,7 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,534366c9-d667-5dcb-9778-e42e12abc813,0.9708
 3653a9c7-329a-5229-ba85-3bfdde8f258d,572cb848-2b60-5b88-a730-597010b153de,0.45,,,epoch,Qwen Technical Report,https://arxiv.org/pdf/2309.16609
 36dffa4f-7102-505c-bc25-e1b8c38be478,572cb848-2b60-5b88-a730-597010b153de,0.9417461900014243,0.001976544692154896,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 39bbc212-b924-545f-af28-a227674747c1,572cb848-2b60-5b88-a730-597010b153de,0.9393960974220197,0.0020135026560390546,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
+3dc1b26c-e055-58bd-914a-038c53203446,572cb848-2b60-5b88-a730-597010b153de,0.796,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
 3f56cd83-649b-52da-9e6d-3cefe0f48b4d,572cb848-2b60-5b88-a730-597010b153de,0.864,,,epoch,GPT-4 Technical Report,https://arxiv.org/pdf/2303.08774
 4216f328-a9a2-55a9-815d-dde8dcb69e73,572cb848-2b60-5b88-a730-597010b153de,0.8951004130465746,0.002585831985427449,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 42af4551-0280-51ca-90fc-175670bdd1e5,572cb848-2b60-5b88-a730-597010b153de,0.262,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
@@ -1595,6 +1596,7 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,534366c9-d667-5dcb-9778-e42e12abc813,0.9708
 95b716a4-ffb8-5772-b6bd-497b4b6ed751,572cb848-2b60-5b88-a730-597010b153de,0.91917105825381,0.0023001658558818366,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 97c03db3-6ec6-5a22-be7f-6f631f241e63,572cb848-2b60-5b88-a730-597010b153de,0.793,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
 97ebca52-d1b5-5737-b4c3-2c6b041d48d9,572cb848-2b60-5b88-a730-597010b153de,0.7748896168636946,0.0035244813732935713,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
+9878f29b-f301-5fbd-898f-69262e050757,572cb848-2b60-5b88-a730-597010b153de,0.871,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 9a31f1f8-985f-5d6e-ab3f-cc7c9746d708,572cb848-2b60-5b88-a730-597010b153de,0.934767127189859,0.002083831042747347,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 9a7d9480-f1b5-512b-8aff-6b9ccfeef59e,572cb848-2b60-5b88-a730-597010b153de,0.853,,,epoch,Phi-4 Technical Report,http://arxiv.org/abs/2412.08905
 9c3cfb92-d076-5cbf-bc5f-f1777ab1d1f9,572cb848-2b60-5b88-a730-597010b153de,0.9188861985472155,0.0023038583701666376,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
@@ -2180,7 +2182,6 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.3295
 0467e0f7-4248-522e-9509-dad2d9fc1b10,6faf1194-62e1-5748-a0b1-79e288b661cb,0.848,,,epoch,https://conceptualreasoning.ai/dtbench,
 064d6bba-cf57-5cd0-b569-ab2110036c8c,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9787,,,epoch,https://conceptualreasoning.ai/dtbench,
 07d72422-dde1-5c96-9e9b-5c36c32d02fe,6faf1194-62e1-5748-a0b1-79e288b661cb,0.96,,,epoch,https://conceptualreasoning.ai/dtbench,
-07d7bc8b-bf75-5f7d-aa9e-af6a5fec6477,6faf1194-62e1-5748-a0b1-79e288b661cb,0.992,,,epoch,https://conceptualreasoning.ai/dtbench,
 07ef50ba-5709-5983-8cd1-bdcab048bc41,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9733,,,epoch,https://conceptualreasoning.ai/dtbench,
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5013000000000001,,,epoch,https://conceptualreasoning.ai/dtbench,
 0b291629-dac5-53e9-bb5f-24c9c54b8c80,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9493,,,epoch,https://conceptualreasoning.ai/dtbench,
@@ -2227,6 +2228,7 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.3295
 391836ae-8a87-5e69-8a84-2015a38bad88,6faf1194-62e1-5748-a0b1-79e288b661cb,0.88,,,epoch,https://conceptualreasoning.ai/dtbench,
 3ea09ff0-a28e-5168-a661-2f9801c6a586,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9013,,,epoch,https://conceptualreasoning.ai/dtbench,
 407b7e6c-8991-5dbb-b3ef-d0f99f71d096,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8267,,,epoch,https://conceptualreasoning.ai/dtbench,
+40de7350-1962-5868-b516-5aa074b95815,6faf1194-62e1-5748-a0b1-79e288b661cb,0.976,,,epoch,https://conceptualreasoning.ai/dtbench,
 4216f328-a9a2-55a9-815d-dde8dcb69e73,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6267,,,epoch,https://conceptualreasoning.ai/dtbench,
 4290c4e4-50d9-570f-a3d8-1f15ba1fe085,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8453,,,epoch,https://conceptualreasoning.ai/dtbench,
 42fb9bca-152f-5150-8042-a4053ed83c2c,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8320000000000001,,,epoch,https://conceptualreasoning.ai/dtbench,
@@ -2314,10 +2316,12 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.3295
 8c1b440f-1bbf-5fd1-a8bb-d87867fc52ac,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6138,,,epoch,https://conceptualreasoning.ai/dtbench,
 8c326c89-4162-59d3-83a2-15321cc6785e,6faf1194-62e1-5748-a0b1-79e288b661cb,0.688,,,epoch,https://conceptualreasoning.ai/dtbench,
 8cff9f72-eb66-5eaa-b6d6-88f3d11e190d,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9499,,,epoch,https://conceptualreasoning.ai/dtbench,
+8dce7ae9-4b3e-527e-a6ad-af42ebdd235c,6faf1194-62e1-5748-a0b1-79e288b661cb,0.992,,,epoch,https://conceptualreasoning.ai/dtbench,
 8dd7d776-4252-5efd-8a20-6ca333ad8768,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6131000000000001,,,epoch,https://conceptualreasoning.ai/dtbench,
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,6faf1194-62e1-5748-a0b1-79e288b661cb,0.944,,,epoch,https://conceptualreasoning.ai/dtbench,
 8f35794d-e2d5-550d-b3e5-0ea5b9e0bcdf,6faf1194-62e1-5748-a0b1-79e288b661cb,0.648,,,epoch,https://conceptualreasoning.ai/dtbench,
 914f6797-105d-59dd-99f4-7466458efac6,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9067,,,epoch,https://conceptualreasoning.ai/dtbench,
+93baf650-3a21-52e9-88ea-229bb04924d6,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5173,,,epoch,https://conceptualreasoning.ai/dtbench,
 97aa1ac4-ae24-5231-8aba-6c6af1212874,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8107,,,epoch,https://conceptualreasoning.ai/dtbench,
 97ebca52-d1b5-5737-b4c3-2c6b041d48d9,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5514,,,epoch,https://conceptualreasoning.ai/dtbench,
 986b644b-f6a6-52d4-9d5c-5ca0dc5a0692,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5864,,,epoch,https://conceptualreasoning.ai/dtbench,
@@ -2386,6 +2390,7 @@ d78d0734-95a3-57d1-876c-cd11b66e9b27,6faf1194-62e1-5748-a0b1-79e288b661cb,0.4961
 d7fc6eac-b749-56f3-ad44-0523249219bf,6faf1194-62e1-5748-a0b1-79e288b661cb,0.4224,,,epoch,https://conceptualreasoning.ai/dtbench,
 dda26396-a581-575a-9a48-3f78a568b501,6faf1194-62e1-5748-a0b1-79e288b661cb,0.48,,,epoch,https://conceptualreasoning.ai/dtbench,
 def63ae0-e298-5355-914e-f526556f360f,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9493,,,epoch,https://conceptualreasoning.ai/dtbench,
+dfdcd706-2b34-54ff-bb92-5930714047b9,6faf1194-62e1-5748-a0b1-79e288b661cb,0.4853,,,epoch,https://conceptualreasoning.ai/dtbench,
 e049e475-ed35-5e2c-acd0-8e19a3ceea46,6faf1194-62e1-5748-a0b1-79e288b661cb,0.7387,,,epoch,https://conceptualreasoning.ai/dtbench,
 e128116f-96f9-5f94-b845-206a14cc599f,6faf1194-62e1-5748-a0b1-79e288b661cb,0.968,,,epoch,https://conceptualreasoning.ai/dtbench,
 e17e814c-ab10-5e4e-8cd3-a10831fc7461,6faf1194-62e1-5748-a0b1-79e288b661cb,0.4393,,,epoch,https://conceptualreasoning.ai/dtbench,
@@ -2402,7 +2407,6 @@ eb51562e-effb-5407-91ca-9fc4d497f59d,6faf1194-62e1-5748-a0b1-79e288b661cb,0.6777
 eeca198f-e209-5cbc-9332-e554b980a9d7,6faf1194-62e1-5748-a0b1-79e288b661cb,0.7706999999999999,,,epoch,https://conceptualreasoning.ai/dtbench,
 ef6e7801-9304-5c13-b031-de20797f0046,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9733,,,epoch,https://conceptualreasoning.ai/dtbench,
 f2dd083e-c0a2-5331-abe9-e11c8294f84b,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8133,,,epoch,https://conceptualreasoning.ai/dtbench,
-f436b4dd-088f-573e-86e2-cef2647e208a,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5173,,,epoch,https://conceptualreasoning.ai/dtbench,
 f5a0bda3-faae-5e5d-81d8-02447eaf70eb,6faf1194-62e1-5748-a0b1-79e288b661cb,0.9413,,,epoch,https://conceptualreasoning.ai/dtbench,
 f68b0e59-157b-5116-9755-81edb45f60bd,6faf1194-62e1-5748-a0b1-79e288b661cb,0.7467,,,epoch,https://conceptualreasoning.ai/dtbench,
 f75d784a-f32d-5bee-bb36-eb83735454b8,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5493,,,epoch,https://conceptualreasoning.ai/dtbench,
@@ -2412,7 +2416,6 @@ f9b72039-4005-5c41-8e54-52795f854850,6faf1194-62e1-5748-a0b1-79e288b661cb,0.8267
 f9d0bea8-4c49-5762-b85c-253ef349024b,6faf1194-62e1-5748-a0b1-79e288b661cb,0.912,,,epoch,https://conceptualreasoning.ai/dtbench,
 fb0e91a9-efb4-54a6-8e06-f651ee939f56,6faf1194-62e1-5748-a0b1-79e288b661cb,0.944,,,epoch,https://conceptualreasoning.ai/dtbench,
 fc88657c-e2e7-5b8a-9e77-87845fd09a28,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5898,,,epoch,https://conceptualreasoning.ai/dtbench,
-fed155d2-f6ea-5e34-99da-0f5a37e6ab09,6faf1194-62e1-5748-a0b1-79e288b661cb,0.4853,,,epoch,https://conceptualreasoning.ai/dtbench,
 ffff309d-3f77-5e99-abc8-9072219aeb80,6faf1194-62e1-5748-a0b1-79e288b661cb,0.5004,,,epoch,https://conceptualreasoning.ai/dtbench,
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,78580765-1aab-5a92-ace1-f4c6ac680e0c,0.28,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
 143a5aec-9f98-55c5-b07f-a36915e8d63e,78580765-1aab-5a92-ace1-f4c6ac680e0c,0.758065,0.036552,,gpai_runs,GPAI Policy Lab run 20261014_claude-sonnet-5_medium_gpqa (4 epochs x 93 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261014_claude-sonnet-5_medium_gpqa
@@ -4187,7 +4190,6 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,b7dc1dfb-6c74-5025-8e06-f2c52e3f1ddd,0.8490
 30465aca-c070-5874-a70f-4f90c0185458,b812b198-64a0-5b54-bdd2-018cbce4626b,0.816,,,epoch,GPT-4 technical report,https://arxiv.org/pdf/2303.08774
 3b49d843-54e3-5df8-a65e-dfd2ebd824e9,b812b198-64a0-5b54-bdd2-018cbce4626b,0.83,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
 3f56cd83-649b-52da-9e6d-3cefe0f48b4d,b812b198-64a0-5b54-bdd2-018cbce4626b,0.875,,,epoch,GPT-4 technical report,https://arxiv.org/pdf/2303.08774
-4216f328-a9a2-55a9-815d-dde8dcb69e73,b812b198-64a0-5b54-bdd2-018cbce4626b,0.852,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 423200c2-4e4c-51cc-bdc9-d7fba77d9d04,b812b198-64a0-5b54-bdd2-018cbce4626b,0.583,,,epoch,EpochAI,
 42af4551-0280-51ca-90fc-175670bdd1e5,b812b198-64a0-5b54-bdd2-018cbce4626b,0.608,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,b812b198-64a0-5b54-bdd2-018cbce4626b,0.67,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
@@ -4205,7 +4207,7 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,b7dc1dfb-6c74-5025-8e06-f2c52e3f1ddd,0.8490
 6f7da00e-2269-518d-9c16-1739b3f681d0,b812b198-64a0-5b54-bdd2-018cbce4626b,0.661,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 71e373fe-05c4-55d4-b69d-218517e6315a,b812b198-64a0-5b54-bdd2-018cbce4626b,0.768,,,epoch,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186
 72ca208d-a0d3-5491-b2e2-0c61d7e200aa,b812b198-64a0-5b54-bdd2-018cbce4626b,0.792,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
-73c1debc-e12f-5d1a-acbc-06b1ce8d63b8,b812b198-64a0-5b54-bdd2-018cbce4626b,0.892,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
+73c1debc-e12f-5d1a-acbc-06b1ce8d63b8,b812b198-64a0-5b54-bdd2-018cbce4626b,0.852,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/abs/2412.19437
 74e215b7-9abd-5028-8805-cfd17d748c10,b812b198-64a0-5b54-bdd2-018cbce4626b,0.708,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 7563a4cf-26e5-529b-82db-ac7ef2bb6b84,b812b198-64a0-5b54-bdd2-018cbce4626b,0.571,,,epoch,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186
 769741fa-2ef7-5692-a69b-5d3170617006,b812b198-64a0-5b54-bdd2-018cbce4626b,0.802,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,https://arxiv.org/pdf/2307.09288
@@ -4220,6 +4222,7 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,b7dc1dfb-6c74-5025-8e06-f2c52e3f1ddd,0.8490
 8cff9f72-eb66-5eaa-b6d6-88f3d11e190d,b812b198-64a0-5b54-bdd2-018cbce4626b,0.942329,0.006549,,gpai_runs,GPAI Policy Lab run 20261112_claude-haiku-5-5_max_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_max_commonsense
 916a78df-d4b1-511e-8a37-9c5d37fd4c4c,b812b198-64a0-5b54-bdd2-018cbce4626b,0.62,,,epoch,Qwen2.5-Coder Technical Report,https://arxiv.org/pdf/2409.12186
 94efe9e3-1371-5593-9cfa-575bd2dd5d0e,b812b198-64a0-5b54-bdd2-018cbce4626b,0.515,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
+9878f29b-f301-5fbd-898f-69262e050757,b812b198-64a0-5b54-bdd2-018cbce4626b,0.849,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/abs/2412.19437
 9cd75978-07bf-535e-893d-3ee9082e75b1,b812b198-64a0-5b54-bdd2-018cbce4626b,0.73165,0.012453,,gpai_runs,GPAI Policy Lab run 20261112_claude-haiku-5-5_none_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_none_commonsense
 a147126b-5c8d-528d-a880-61412bdb9df5,b812b198-64a0-5b54-bdd2-018cbce4626b,0.894084,0.008643,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-4-8_none_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-4-8_none_commonsense
 a1daf361-b5e6-5a18-a07c-5d24f089bf4b,b812b198-64a0-5b54-bdd2-018cbce4626b,0.962904,0.005312,,gpai_runs,GPAI Policy Lab run 20261112_claude-sonnet-5-5_max_commonsense (1 epochs x 1267 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-sonnet-5-5_max_commonsense
@@ -4280,7 +4283,6 @@ f49a7465-1957-5bb1-a54d-6d8088830b0b,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.8596
 0467e0f7-4248-522e-9509-dad2d9fc1b10,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.397,,,epoch,https://conceptualreasoning.ai/lmca,
 064d6bba-cf57-5cd0-b569-ab2110036c8c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6445000000000001,,,epoch,https://conceptualreasoning.ai/lmca,
 07d72422-dde1-5c96-9e9b-5c36c32d02fe,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.4938,,,epoch,https://conceptualreasoning.ai/lmca,
-07d7bc8b-bf75-5f7d-aa9e-af6a5fec6477,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.7008,,,epoch,https://conceptualreasoning.ai/lmca,
 07ef50ba-5709-5983-8cd1-bdcab048bc41,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5908,,,epoch,https://conceptualreasoning.ai/lmca,
 08d9de29-5d5d-5567-94f6-ea33f45ad73e,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.08839999999999999,,,epoch,https://conceptualreasoning.ai/lmca,
 0b291629-dac5-53e9-bb5f-24c9c54b8c80,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5115999999999999,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4322,6 +4324,7 @@ f49a7465-1957-5bb1-a54d-6d8088830b0b,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.8596
 391836ae-8a87-5e69-8a84-2015a38bad88,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.41359999999999997,,,epoch,https://conceptualreasoning.ai/lmca,
 3ea09ff0-a28e-5168-a661-2f9801c6a586,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.369,,,epoch,https://conceptualreasoning.ai/lmca,
 407b7e6c-8991-5dbb-b3ef-d0f99f71d096,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2429,,,epoch,https://conceptualreasoning.ai/lmca,
+40de7350-1962-5868-b516-5aa074b95815,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6546,,,epoch,https://conceptualreasoning.ai/lmca,
 4216f328-a9a2-55a9-815d-dde8dcb69e73,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1524,,,epoch,https://conceptualreasoning.ai/lmca,
 4290c4e4-50d9-570f-a3d8-1f15ba1fe085,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5002,,,epoch,https://conceptualreasoning.ai/lmca,
 42fb9bca-152f-5150-8042-a4053ed83c2c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.4425,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4400,9 +4403,11 @@ f49a7465-1957-5bb1-a54d-6d8088830b0b,b9ebbe3a-3aea-5306-a334-d3cf42d1db31,0.8596
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.265,,,epoch,https://conceptualreasoning.ai/lmca,
 8c326c89-4162-59d3-83a2-15321cc6785e,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.18969999999999998,,,epoch,https://conceptualreasoning.ai/lmca,
 8cff9f72-eb66-5eaa-b6d6-88f3d11e190d,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5106,,,epoch,https://conceptualreasoning.ai/lmca,
+8dce7ae9-4b3e-527e-a6ad-af42ebdd235c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.7008,,,epoch,https://conceptualreasoning.ai/lmca,
 8f302dbd-50ab-5d2a-8c46-6275d59d8c90,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5196999999999999,,,epoch,https://conceptualreasoning.ai/lmca,
 8f35794d-e2d5-550d-b3e5-0ea5b9e0bcdf,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1547,,,epoch,https://conceptualreasoning.ai/lmca,
 914f6797-105d-59dd-99f4-7466458efac6,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.41200000000000003,,,epoch,https://conceptualreasoning.ai/lmca,
+93baf650-3a21-52e9-88ea-229bb04924d6,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0548,,,epoch,https://conceptualreasoning.ai/lmca,
 97aa1ac4-ae24-5231-8aba-6c6af1212874,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2396,,,epoch,https://conceptualreasoning.ai/lmca,
 99007e0e-dc55-5a09-9a99-20bddeb5d60c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2606,,,epoch,https://conceptualreasoning.ai/lmca,
 9a4c32e0-2da4-5bca-93f2-103393146aaf,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.3726,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4423,7 +4428,6 @@ a85710df-0bb2-5fd2-863e-96dd590d7474,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1752
 a94d7bf7-0244-536b-bd58-d1143c4088ac,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6293,,,epoch,https://conceptualreasoning.ai/lmca,
 aa171667-405f-5abd-ba45-085ecbe4dddb,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0978,,,epoch,https://conceptualreasoning.ai/lmca,
 ad080eb8-573c-579d-9744-07e44f7af21c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.48810000000000003,,,epoch,https://conceptualreasoning.ai/lmca,
-af434d5f-3215-5aee-854a-de70850a350c,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6546,,,epoch,https://conceptualreasoning.ai/lmca,
 b08e24f9-06f1-5ef8-978a-bfc267b8915d,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2214,,,epoch,https://conceptualreasoning.ai/lmca,
 b098a367-9a28-5df9-9e51-3110e10b52c3,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.4715,,,epoch,https://conceptualreasoning.ai/lmca,
 b22997e4-5610-5a24-8354-c760155cfa57,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0278,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4455,6 +4459,7 @@ d39f5588-912e-5ef9-a178-f9b576f5e6ba,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.3500
 d531bc5f-8094-533a-bddb-ac7c79d5c309,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.456,,,epoch,https://conceptualreasoning.ai/lmca,
 dda26396-a581-575a-9a48-3f78a568b501,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.071,,,epoch,https://conceptualreasoning.ai/lmca,
 def63ae0-e298-5355-914e-f526556f360f,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6219,,,epoch,https://conceptualreasoning.ai/lmca,
+dfdcd706-2b34-54ff-bb92-5930714047b9,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0965,,,epoch,https://conceptualreasoning.ai/lmca,
 e049e475-ed35-5e2c-acd0-8e19a3ceea46,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.297,,,epoch,https://conceptualreasoning.ai/lmca,
 e128116f-96f9-5f94-b845-206a14cc599f,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5038,,,epoch,https://conceptualreasoning.ai/lmca,
 e2c64e9a-5cb0-574e-b9a8-fd821ebf973a,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.41729999999999995,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4468,7 +4473,6 @@ ea546c0b-46fd-52aa-acba-794c9d0f3a13,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.4709
 eeca198f-e209-5cbc-9332-e554b980a9d7,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.29,,,epoch,https://conceptualreasoning.ai/lmca,
 ef6e7801-9304-5c13-b031-de20797f0046,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.48450000000000004,,,epoch,https://conceptualreasoning.ai/lmca,
 f2dd083e-c0a2-5331-abe9-e11c8294f84b,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2858,,,epoch,https://conceptualreasoning.ai/lmca,
-f436b4dd-088f-573e-86e2-cef2647e208a,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0548,,,epoch,https://conceptualreasoning.ai/lmca,
 f5a0bda3-faae-5e5d-81d8-02447eaf70eb,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6593000000000001,,,epoch,https://conceptualreasoning.ai/lmca,
 f68b0e59-157b-5116-9755-81edb45f60bd,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.2227,,,epoch,https://conceptualreasoning.ai/lmca,
 f75d784a-f32d-5bee-bb36-eb83735454b8,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0501,,,epoch,https://conceptualreasoning.ai/lmca,
@@ -4476,7 +4480,6 @@ f7630d8d-79cf-5ae8-96bc-cfe216958e0e,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.6292
 f87b6bf9-9171-5467-bcd6-ea744b4c1e38,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.1659,,,epoch,https://conceptualreasoning.ai/lmca,
 f9d0bea8-4c49-5762-b85c-253ef349024b,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.5576,,,epoch,https://conceptualreasoning.ai/lmca,
 fb0e91a9-efb4-54a6-8e06-f651ee939f56,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.4991,,,epoch,https://conceptualreasoning.ai/lmca,
-fed155d2-f6ea-5e34-99da-0f5a37e6ab09,ba5e3179-81c3-5388-ad9a-15f32e677ecf,0.0965,,,epoch,https://conceptualreasoning.ai/lmca,
 0467e0f7-4248-522e-9509-dad2d9fc1b10,bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,0.8992248062015504,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 2ec3284c-3b30-584c-a20e-179382033fae,bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,0.8682170542635659,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 30465aca-c070-5874-a70f-4f90c0185458,bb413e20-4afc-5bb3-b3aa-cd3d1d4f5a42,0.6046511627906976,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
@@ -4653,7 +4656,6 @@ f9d0bea8-4c49-5762-b85c-253ef349024b,bd4da3d5-8651-5b55-915f-3dafdc7078b9,1.0,,,
 221eb942-ffb1-5e7b-a004-600f2240047e,be2c3adb-c271-55d1-8747-16d672997b80,0.532,,,epoch,Gemma: Open Models Based on Gemini Research and Technology,https://arxiv.org/pdf/2403.08295
 2a541527-675f-5356-b4ee-4f449eb5c8a4,be2c3adb-c271-55d1-8747-16d672997b80,0.86,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 3b49d843-54e3-5df8-a65e-dfd2ebd824e9,be2c3adb-c271-55d1-8747-16d672997b80,0.861,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
-4216f328-a9a2-55a9-815d-dde8dcb69e73,be2c3adb-c271-55d1-8747-16d672997b80,0.829,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 4ac9780c-6745-5877-9906-dfb8d06003e1,be2c3adb-c271-55d1-8747-16d672997b80,0.719,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 53d79bba-1f06-5f45-bac3-8ef88e9909a3,be2c3adb-c271-55d1-8747-16d672997b80,0.848,,,epoch,PapersWithCode,https://paperswithcode.com/sota/question-answering-on-triviaqa
 54c85152-6635-5c5a-9132-83b8470c32ed,be2c3adb-c271-55d1-8747-16d672997b80,0.712,,,epoch,Language Models are Few-Shot Learners,https://arxiv.org/pdf/2005.14165v4
@@ -4670,6 +4672,7 @@ f9d0bea8-4c49-5762-b85c-253ef349024b,bd4da3d5-8651-5b55-915f-3dafdc7078b9,1.0,,,
 77ac7ac5-1b70-5d48-9e7b-c430bbc7bb98,be2c3adb-c271-55d1-8747-16d672997b80,0.8,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 7c63d6d4-ecf8-533d-b53c-18f11f73b005,be2c3adb-c271-55d1-8747-16d672997b80,0.572,,,epoch,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971
 7d6eca9e-c0dc-5065-af0e-8c5e4e718220,be2c3adb-c271-55d1-8747-16d672997b80,0.646,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
+9878f29b-f301-5fbd-898f-69262e050757,be2c3adb-c271-55d1-8747-16d672997b80,0.829,,,epoch,DeepSeek-V3 Technical Report,https://arxiv.org/pdf/2412.19437
 a202cc43-3e07-5f06-bd3a-85840cc73723,be2c3adb-c271-55d1-8747-16d672997b80,0.739,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 a20f799b-f42f-5bbc-b785-7320d3276bc0,be2c3adb-c271-55d1-8747-16d672997b80,0.752,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
 a4f8025e-fc35-586f-a361-2ae32162be1c,be2c3adb-c271-55d1-8747-16d672997b80,0.875,,,epoch,Model Card and Evaluations for Claude Models,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf
