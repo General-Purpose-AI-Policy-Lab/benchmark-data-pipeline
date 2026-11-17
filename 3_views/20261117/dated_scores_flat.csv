@@ -167,7 +167,7 @@ PaLM 2-L,0.692,2023-05-17,Google DeepMind,ARC AI2,,The Falcon Series of Open Lan
 PaLM 2-M,0.649,2023-05-17,Google DeepMind,ARC AI2,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Domain Specific Questions,0.25,
 PaLM 2-S,0.596,2023-05-17,Google DeepMind,ARC AI2,,The Falcon Series of Open Language Models,http://arxiv.org/abs/2311.16867,epoch,Domain Specific Questions,0.25,
 PaLM 540B,0.852,2022-04-04,Google Research,ARC AI2,,GPT-4 Technical Report,http://arxiv.org/abs/2303.08774,epoch,Domain Specific Questions,0.25,
-PaLM 62B,0.525,2022-04-04,Google DeepMind,ARC AI2,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Domain Specific Questions,0.25,
+PaLM 62B,0.525,2022-04-04,Google Research,ARC AI2,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Domain Specific Questions,0.25,
 Phi-3-medium-128k-instruct,0.916,2024-05-21,Microsoft,ARC AI2,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
 Phi-3-mini-4k-instruct,0.849,2024-04-23,Microsoft,ARC AI2,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
 Phi-3-small-8k-instruct,0.907,2024-05-21,Microsoft,ARC AI2,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
@@ -458,7 +458,6 @@ gpt-6.1-sol_medium,0.955,2026-09-29,OpenAI,ARC-AGI,,https://arcprize.org/leaderb
 gpt-6.1-sol_xhigh,0.985,2026-09-29,OpenAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 grok-3,0.055,2025-04-09,xAI,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 grok-3-mini-beta_low,0.165,2025-04-09,xAI,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
-grok-3-mini_low,0.165,2025-06-24,xAI,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4-0709,0.6667000000000001,2025-07-09,xAI,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4-20_thinking,0.895,2026-02-17,xAI,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 grok-4-fast_thinking,0.485,2025-09-19,xAI,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -729,7 +728,7 @@ gpt-6.1-sol_max,0.9416666666666668,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,C
 gpt-6.1-sol_medium,0.8666666666666667,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gpt-6.1-sol_xhigh,0.9166666666666666,2026-09-29,OpenAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-3,0.0,2025-04-09,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
-grok-3-mini_low,0.0042,2025-06-24,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
+grok-3-mini-beta_low,0.0042,2025-04-09,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4-0709,0.15975,2025-07-09,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4-20_thinking,0.6514,2026-02-17,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 grok-4-fast_thinking,0.0528,2025-09-19,xAI,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -780,11 +779,9 @@ DeepSeek-V3-0324,0.551,2025-03-24,DeepSeek,Aider Polyglot,,https://aider.chat/do
 DeepSeek-V3.2-Exp_none,0.7020000000000001,2025-09-29,DeepSeek,Aider Polyglot,,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
 DeepSeek-V3.2-Exp_thinking,0.742,2025-09-29,DeepSeek,Aider Polyglot,,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
 Kimi-K2-Instruct,0.591,2025-07-12,Moonshot,Aider Polyglot,,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
-Kimi-K2-Instruct-0905,0.591,2025-09-05,Moonshot,Aider Polyglot,,https://aider.chat/docs/leaderboards/,,epoch,Autonomous SWE,0.0,
 Llama-4-Maverick-17B-128E-Instruct,0.156,2025-04-05,Meta AI,Aider Polyglot,,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
 QwQ-32B,0.209,2025-03-05,Alibaba,Aider Polyglot,,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
 Qwen2.5-Coder-32B-Instruct,0.16399999999999998,2024-11-12,Alibaba,Aider Polyglot,,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
-Qwen3-235B-A22B-Instruct-2507,0.596,2025-07-21,Alibaba,Aider Polyglot,,https://aider.chat/docs/leaderboards/,,epoch,Autonomous SWE,0.0,
 Qwen3-32B_thinking,0.4,2025-04-29,Alibaba,Aider Polyglot,,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
 c4ai-command-a-03-2025,0.12,2025-03-13,Cohere,Aider Polyglot,,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
 claude-3-5-haiku-20241022,0.28,2024-10-22,Anthropic,Aider Polyglot,,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,epoch,Autonomous SWE,0.0,
@@ -1372,11 +1369,9 @@ claude-opus-4-6,0.93,2026-02-05,Anthropic,Cybench,,Epoch AI cyber ECI (values pa
 claude-opus-4-7_none,0.96,2026-04-16,Anthropic,Cybench,,"Cybench leaderboard (cybench.github.io, snapshot 2026-09-07; 35/40 tasks)",https://cybench.github.io/,cybench_site,Cyber,0.0,1.0
 claude-sonnet-4-20250514,0.35,2025-05-22,Anthropic,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
 claude-sonnet-4-5-20250929,0.6,2025-09-29,Anthropic,Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
-gemini-1.5-pro-001,0.075,2024-05-14,Google DeepMind,Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
-gemini-1.5-pro-001-feb24,0.075,2024-02-15,Google DeepMind,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
+gemini-1.5-pro-001,0.075,2024-05-14,Google DeepMind,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
 gpt-4.5-preview-2025-02-27,0.175,2025-02-27,OpenAI,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
-gpt-4o-2024-05-13,0.125,2024-05-13,OpenAI,Cybench,,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv,epoch_cyber,Cyber,0.0,1.0
-gpt-4o-2024-11-20,0.125,2024-11-20,OpenAI,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
+gpt-4o-2024-05-13,0.125,2024-05-13,OpenAI,Cybench,,Cybench leaderboard,https://cybench.github.io/,epoch,Cyber,0.0,1.0
 grok-4-0709,0.43,2025-07-09,xAI,Cybench,,Grok 4 Model Card,https://data.x.ai/2025-08-20-grok-4-model-card.pdf,epoch,Cyber,0.0,1.0
 grok-4-1_thinking,0.39,2025-11-17,xAI,Cybench,,Grok 4.1 Model Card,https://data.x.ai/2025-11-17-grok-4-1-model-card.pdf,epoch,Cyber,0.0,1.0
 grok-4-fast_thinking,0.3,2025-09-19,xAI,Cybench,,Grok 4 Fast Model Card,https://data.x.ai/2025-09-19-grok-4-fast-model-card.pdf,epoch,Cyber,0.0,1.0
@@ -2812,13 +2807,12 @@ Llama-2-70b-chat,0.587,2023-07-18,Meta AI,GSM8K,,Yi: Open Foundation Models by 0
 Llama-2-70b-hf,0.696,2023-07-18,Meta AI,GSM8K,,Mixtral of Experts,http://arxiv.org/abs/2401.04088,epoch,Mathematics,0.0,
 Llama-2-7b,0.167,2023-07-18,Meta AI,GSM8K,,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652,epoch,Mathematics,0.0,
 Llama-3.1-8B-Instruct,0.824,2024-07-23,Meta AI,GSM8K,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Mathematics,0.0,
-Mistral-7B-Instruct-v0.2,0.354,2023-12-11,Mistral AI,GSM8K,,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295,epoch,Mathematics,0.0,
 Mistral-7B-v0.1,0.544,2023-09-27,Mistral AI,GSM8K,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Mathematics,0.0,
 Mistral-Nemo-Base-2407,0.842,2024-07-18,Mistral AI,GSM8K,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Mathematics,0.0,
 Mixtral-8x7B-v0.1,0.744,2023-12-11,Mistral AI,GSM8K,,Mixtral of Experts,http://arxiv.org/abs/2401.04088,epoch,Mathematics,0.0,
 Nemotron-4 15B,0.46,2024-02-26,NVIDIA,GSM8K,,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819,epoch,Mathematics,0.0,
 PaLM 540B,0.565,2022-04-04,Google Research,GSM8K,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Mathematics,0.0,
-PaLM 62B,0.33,2022-04-04,Google DeepMind,GSM8K,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Mathematics,0.0,
+PaLM 62B,0.33,2022-04-04,Google Research,GSM8K,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Mathematics,0.0,
 Phi-3.5-MoE-instruct,0.887,2024-08-17,Microsoft,GSM8K,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Mathematics,0.0,
 Phi-3.5-mini-instruct,0.862,2024-08-16,Microsoft,GSM8K,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Mathematics,0.0,
 Qwen-14B,0.613,2023-09-25,Alibaba,GSM8K,,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652,epoch,Mathematics,0.0,
@@ -3736,7 +3730,6 @@ Llama-3.2-90B-Vision-Instruct,0.803,2024-09-24,Meta AI,MMLU,,Stanford CRFM Leade
 Llama-3.3-70B-Instruct,0.863,2024-12-06,Meta AI,MMLU,,Phi-4 Technical Report,http://arxiv.org/abs/2412.08905,epoch,Domain Specific Questions,0.25,
 Meta-Llama-3-70B-Instruct,0.793,2024-04-18,Meta AI,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
 Meta-Llama-3-8B-Instruct,0.688,2024-04-18,Meta AI,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
-Mistral-7B-Instruct-v0.2,0.625,2023-12-11,Mistral AI,MMLU,,Gemma: Open Models Based on Gemini Research and Technology,https://arxiv.org/pdf/2403.08295,epoch,Domain Specific Questions,0.25,
 Mistral-7B-Instruct-v0.3,0.599,2024-05-27,Mistral AI,MMLU,,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,epoch,Domain Specific Questions,0.25,
 Mistral-7B-v0.1,0.625,2023-09-27,Mistral AI,MMLU,,Mixtral of Experts,https://arxiv.org/pdf/2401.04088,epoch,Domain Specific Questions,0.25,
 Mixtral-8x22B-Instruct-v0.1,0.7748896168636946,2024-04-17,Mistral AI,MMLU,0.0035244813732935713,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu,kaggle,Domain Specific Questions,0.25,
@@ -3744,7 +3737,7 @@ Mixtral-8x22B-v0.1,0.778,2024-04-17,Mistral AI,MMLU,,Stanford CRFM Leaderboard,h
 Mixtral-8x7B-v0.1,0.706,2023-12-11,Mistral AI,MMLU,,Mixtral of Experts,https://arxiv.org/pdf/2401.04088,epoch,Domain Specific Questions,0.25,
 Nemotron-4 15B,0.587,2024-02-26,NVIDIA,MMLU,,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819,epoch,Domain Specific Questions,0.25,
 PaLM 540B,0.693,2022-04-04,Google Research,MMLU,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Domain Specific Questions,0.25,
-PaLM 62B,0.537,2022-04-04,Google DeepMind,MMLU,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Domain Specific Questions,0.25,
+PaLM 62B,0.537,2022-04-04,Google Research,MMLU,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Domain Specific Questions,0.25,
 Phi-3-medium-128k-instruct,0.78,2024-05-21,Microsoft,MMLU,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
 Phi-3-mini-4k-instruct,0.688,2024-04-23,Microsoft,MMLU,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
 Phi-3-small-8k-instruct,0.757,2024-05-21,Microsoft,MMLU,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Domain Specific Questions,0.25,
@@ -4732,9 +4725,9 @@ Mixtral-8x7B-v0.1,0.858,2023-12-11,Mistral AI,OpenBookQA,,Phi-3 Technical Report
 PaLM 2-M,0.574,2023-05-17,Google DeepMind,OpenBookQA,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.25,
 PaLM 2-S,0.562,2023-05-17,Google DeepMind,OpenBookQA,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.25,
 PaLM 540B,0.68,2022-04-04,Google Research,OpenBookQA,,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf,epoch,Trivia & Commonsense QA,0.25,
-PaLM 62B,0.504,2022-04-04,Google DeepMind,OpenBookQA,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Trivia & Commonsense QA,0.25,
+PaLM 62B,0.504,2022-04-04,Google Research,OpenBookQA,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Trivia & Commonsense QA,0.25,
 Phi-3-medium-128k-instruct,0.874,2024-05-21,Microsoft,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
-Phi-3-mini-4k-instruct,0.88,2024-04-23,Microsoft,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
+Phi-3-mini-4k-instruct,0.832,2024-04-23,Microsoft,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
 Phi-3-small-8k-instruct,0.88,2024-05-21,Microsoft,OpenBookQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.25,
 RedPajama-INCITE-7B-Base,0.4,2023-05-04,Together AI,OpenBookQA,,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450,epoch,Trivia & Commonsense QA,0.25,
 claude-haiku-5-5_max,0.956,2026-10-07,Anthropic,OpenBookQA,0.009181,GPAI Policy Lab run 20261112_claude-haiku-5-5_max_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_max_commonsense,gpai_runs,Trivia & Commonsense QA,0.25,
@@ -4789,14 +4782,12 @@ Llama-2-7b,0.788,2023-07-18,Meta AI,PIQA,,Gemma: Open Models Based on Gemini Res
 Llama-3.1-405B,0.859,2024-07-23,Meta AI,PIQA,,DeepSeek-V3 Technical Report,http://arxiv.org/abs/2412.19437,epoch,Trivia & Commonsense QA,0.5,
 Llama-3.1-8B-Instruct,0.812,2024-07-23,Meta AI,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 Megatron-Turing NLG 530B,0.8319,2021-10-11,"Microsoft,NVIDIA",PIQA,,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990,epoch,Trivia & Commonsense QA,0.5,
-Mistral-7B-Instruct-v0.1,0.822,2023-09-27,Mistral AI,PIQA,,Mixtral of Experts,http://arxiv.org/abs/2401.04088,epoch,Trivia & Commonsense QA,0.5,
-Mistral-7B-Instruct-v0.2,0.822,2023-12-11,Mistral AI,PIQA,,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295,epoch,Trivia & Commonsense QA,0.5,
 Mistral-7B-v0.1,0.83,2023-09-27,Mistral AI,PIQA,,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819,epoch,Trivia & Commonsense QA,0.5,
 Mistral-Nemo-Base-2407,0.835,2024-07-18,Mistral AI,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 Mixtral-8x7B-v0.1,0.836,2023-12-11,Mistral AI,PIQA,,Mixtral of Experts,http://arxiv.org/abs/2401.04088,epoch,Trivia & Commonsense QA,0.5,
 Nemotron-4 15B,0.824,2024-02-26,NVIDIA,PIQA,,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819,epoch,Trivia & Commonsense QA,0.5,
 PaLM 540B,0.823,2022-04-04,Google Research,PIQA,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Trivia & Commonsense QA,0.5,
-PaLM 62B,0.805,2022-04-04,Google DeepMind,PIQA,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Trivia & Commonsense QA,0.5,
+PaLM 62B,0.805,2022-04-04,Google Research,PIQA,,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,epoch,Trivia & Commonsense QA,0.5,
 Phi-3.5-MoE-instruct,0.886,2024-08-17,Microsoft,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 Phi-3.5-mini-instruct,0.81,2024-08-16,Microsoft,PIQA,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 Qwen-14B,0.799,2023-09-25,Alibaba,PIQA,,Qwen Technical Report,https://arxiv.org/abs/2309.16609,epoch,Trivia & Commonsense QA,0.5,
@@ -5730,10 +5721,8 @@ gemini-1.5-flash-002,0.2487,2024-09-24,Google DeepMind,WeirdML v2,,https://htihl
 gemini-1.5-pro-002,0.222,2024-09-24,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 gemini-2.0-flash-001,0.2577,2025-02-05,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 gemini-2.5-flash-lite-preview-06-17_16K,0.3522,2025-06-17,Google DeepMind,WeirdML v2,,WeirdML Leaderboard,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
-gemini-2.5-flash-lite-preview-06-17_thinking,0.3522,2025-06-17,Google DeepMind,WeirdML v2,,WeirdML Leaderboard,,epoch,Autonomous SWE,0.0,
-gemini-2.5-flash-preview-04-17_16K,0.4095,2025-04-17,Google DeepMind,WeirdML v2,,WeirdML Leaderboard,,epoch,Autonomous SWE,0.0,
-gemini-2.5-flash-preview-05-20_16K,0.4095,2025-05-20,Google DeepMind,WeirdML v2,,WeirdML Leaderboard,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 gemini-2.5-flash-preview-09-2025_16k,0.4191,2025-09-25,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
+gemini-2.5-flash_16K,0.4095,2025-06-17,Google DeepMind,WeirdML v2,,WeirdML Leaderboard,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 gemini-2.5-pro_16K,0.5403,2025-06-17,Google DeepMind,WeirdML v2,,WeirdML Leaderboard,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 gemini-3-flash-preview_high,0.616,2025-12-17,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 gemini-3-pro-preview_high,0.6993,2025-11-18,Google DeepMind,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
@@ -5793,7 +5782,6 @@ gpt-oss-20b_medium,0.3683,2025-08-05,OpenAI,WeirdML v2,,https://htihle.github.io
 grok-2-1212,0.2224,2024-12-12,xAI,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 grok-3,0.3724,2025-04-09,xAI,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 grok-3-mini-beta_high,0.4258,2025-04-09,xAI,WeirdML v2,,WeirdML Leaderboard,,epoch,Autonomous SWE,0.0,
-grok-3-mini_high,0.4258,2025-06-24,xAI,WeirdML v2,,WeirdML Leaderboard,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 grok-4-0709,0.4573,2025-07-09,xAI,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
 grok-4-20,0.5226,2026-02-17,xAI,WeirdML v2,,https://htihle.github.io/weirdml.html,,epoch,Autonomous SWE,0.0,
 grok-4-fast_thinking,0.4286,2025-09-19,xAI,WeirdML v2,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,epoch,Autonomous SWE,0.0,
@@ -5881,7 +5869,7 @@ PaLM 2-L,0.83,2023-05-17,Google DeepMind,WinoGrande,,PaLM 2 Technical Report,htt
 PaLM 2-M,0.792,2023-05-17,Google DeepMind,WinoGrande,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.5,
 PaLM 2-S,0.779,2023-05-17,Google DeepMind,WinoGrande,,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403,epoch,Trivia & Commonsense QA,0.5,
 PaLM 540B,0.851,2022-04-04,Google Research,WinoGrande,,GPT-4 Technical report,https://arxiv.org/pdf/2303.08774,epoch,Trivia & Commonsense QA,0.5,
-PaLM 62B,0.77,2022-04-04,Google DeepMind,WinoGrande,,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf,epoch,Trivia & Commonsense QA,0.5,
+PaLM 62B,0.77,2022-04-04,Google Research,WinoGrande,,PaLM: Scaling Language Modeling with Pathways,https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf,epoch,Trivia & Commonsense QA,0.5,
 Phi-3-medium-128k-instruct,0.815,2024-05-21,Microsoft,WinoGrande,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 Phi-3-mini-4k-instruct,0.708,2024-04-23,Microsoft,WinoGrande,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,
 Phi-3-small-8k-instruct,0.815,2024-05-21,Microsoft,WinoGrande,,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219,epoch,Trivia & Commonsense QA,0.5,

@@ -582,7 +582,7 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,33f864c2-1401-5e5f-aa5b-a79c8beee171,0.9538
 6c3045c9-e1f8-5798-bb99-091c9a4b5334,362fe089-970b-5a6d-b539-ab9245f63878,0.988,0.004874,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-5-5_medium_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_medium_commonsense
 6f7da00e-2269-518d-9c16-1739b3f681d0,362fe089-970b-5a6d-b539-ab9245f63878,0.388,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 72ca208d-a0d3-5491-b2e2-0c61d7e200aa,362fe089-970b-5a6d-b539-ab9245f63878,0.574,,,epoch,PaLM 2 Technical Report,https://arxiv.org/pdf/2305.10403
-74e215b7-9abd-5028-8805-cfd17d748c10,362fe089-970b-5a6d-b539-ab9245f63878,0.88,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
+74e215b7-9abd-5028-8805-cfd17d748c10,362fe089-970b-5a6d-b539-ab9245f63878,0.832,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
 769741fa-2ef7-5692-a69b-5d3170617006,362fe089-970b-5a6d-b539-ab9245f63878,0.602,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 7d6eca9e-c0dc-5065-af0e-8c5e4e718220,362fe089-970b-5a6d-b539-ab9245f63878,0.516,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 8a83e82a-0f12-53c7-afff-759fa6ede2f8,362fe089-970b-5a6d-b539-ab9245f63878,0.996,0.002826,,gpai_runs,GPAI Policy Lab run 20261112_claude-opus-5-5_max_commonsense (1 epochs x 500 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-opus-5-5_max_commonsense
@@ -1347,7 +1347,6 @@ fcf431b0-7ba1-574e-aea7-449bc578ba24,51129c7e-729d-5eb7-8759-d644d44f24af,0.4548
 2c17c085-249a-56ec-b886-a1c2b456a218,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.799,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 2dfd6c03-49bb-592a-9b38-2c254be4c818,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.779,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 3653a9c7-329a-5229-ba85-3bfdde8f258d,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.779,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
-42227df4-a5c8-58d8-8cd4-933079afb034,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.822,,,epoch,Mixtral of Experts,http://arxiv.org/abs/2401.04088
 423200c2-4e4c-51cc-bdc9-d7fba77d9d04,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.705,,,epoch,Textbooks Are All You Need II: phi-1.5 technical report,http://arxiv.org/abs/2309.05463
 42af4551-0280-51ca-90fc-175670bdd1e5,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.735,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
 42b8c4ef-474f-5b1c-aefc-b54117396379,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.76,,,epoch,XGen-7B Technical Report,http://arxiv.org/abs/2309.03450
@@ -1394,7 +1393,6 @@ d1cddd5b-d929-547c-b7ec-cf18ff66c0a2,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.69,,
 d1e6c05f-f389-50eb-928a-7451aa92dcb9,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.824,,,epoch,Nemotron-4 15B Technical Report,http://arxiv.org/abs/2402.16819
 d531bc5f-8094-533a-bddb-ac7c79d5c309,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.947769,0.005191,,gpai_runs,GPAI Policy Lab run 20261112_claude-haiku-5-5_medium_commonsense (1 epochs x 1838 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_medium_commonsense
 d62a85e2-0be1-5a76-b9ca-4b66d16f204a,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.8319,,,epoch,"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",https://arxiv.org/pdf/2201.11990
-dd145c0d-450b-556b-b300-bb4e554772a8,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.822,,,epoch,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295
 de705bfb-0c9c-51e0-8dc5-ac35f72fd6ff,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.823,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
 e7aa6b50-5cd3-5072-bb80-400e22f05047,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.819,,,epoch,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288
 e9f714f0-3d2f-5740-bccc-48efc09e72b2,52dbd75e-8f17-5888-a0de-00593c63a0a0,0.81,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -1646,7 +1644,6 @@ d451030c-63c6-5b8d-92be-ce8e50f33834,572cb848-2b60-5b88-a730-597010b153de,0.8961
 d7fc6eac-b749-56f3-ad44-0523249219bf,572cb848-2b60-5b88-a730-597010b153de,0.509,,,epoch,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652
 d8ffd28a-2781-5ba3-9285-1a855318578f,572cb848-2b60-5b88-a730-597010b153de,0.744,,,epoch,Stanford CRFM Leaderboard,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu
 db210d2d-9fd6-5b51-b481-16d038c73444,572cb848-2b60-5b88-a730-597010b153de,0.881,,,epoch,Phi-4 Technical Report,http://arxiv.org/abs/2412.08905
-dd145c0d-450b-556b-b300-bb4e554772a8,572cb848-2b60-5b88-a730-597010b153de,0.625,,,epoch,Gemma: Open Models Based on Gemini Research and Technology,https://arxiv.org/pdf/2403.08295
 de705bfb-0c9c-51e0-8dc5-ac35f72fd6ff,572cb848-2b60-5b88-a730-597010b153de,0.587,,,epoch,Qwen Technical Report,https://arxiv.org/pdf/2309.16609
 def8f283-1576-562c-81c8-3db93aa5a7c3,572cb848-2b60-5b88-a730-597010b153de,0.9139011536818116,0.0023671501923602043,Kaggle Open Benchmarks,kaggle,Kaggle Open Benchmarks (open-benchmarks/mmlu),https://www.kaggle.com/benchmarks/open-benchmarks/mmlu
 dfdcd706-2b34-54ff-bb92-5930714047b9,572cb848-2b60-5b88-a730-597010b153de,0.714,,,epoch,Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone,http://arxiv.org/abs/2404.14219
@@ -2630,7 +2627,6 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 64326be6-ba5d-5389-b56a-0ad585507195,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.475,,,epoch,EpochAI,
 65249d2d-fadd-58c8-b559-1ffa3367ebf2,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.2278,,,epoch,EpochAI,
 6525d03f-1974-5cc0-a63b-28545e91d9e9,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0403,,,epoch,EpochAI,
-65dc01e4-af09-5b51-9b20-4785835cd37c,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0042,,,epoch,EpochAI,
 662980f9-93c5-5540-b67f-12f5e574576e,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5833,,,epoch,EpochAI,
 669bacc2-e976-53f7-b85f-560cad080400,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.5264,,,epoch,EpochAI,
 67c91be9-2700-5057-be83-3214ac0e3d10,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0,,,epoch,EpochAI,
@@ -2646,6 +2642,7 @@ f9fbf084-47df-59c1-98ad-bbb6b0b04481,78996834-fd04-50cd-abf8-ff2d1165b2e9,0.8560
 6f0135a8-449b-536b-9b27-5c24dd7d317d,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.2402777777777777,,,epoch,EpochAI,
 70fc2cc7-dc79-5630-9dbc-d377d009f441,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0,,,epoch,EpochAI,
 714d0db5-0da1-5474-a61a-75d12b959ea6,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0972,,,epoch,EpochAI,
+721bbe8a-5ed6-5848-a852-712276466af3,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0042,,,epoch,EpochAI,
 744a4413-480f-5cd1-a82e-de29142c9b0e,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.0042,,,epoch,EpochAI,
 7463e790-65c7-57fc-aef8-1882d6bbad53,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.7417,,,epoch,EpochAI,
 74b2f207-0a21-5fb9-aa99-66f6698f5df4,7a6e13ad-e103-582e-a62b-99d79b81dc75,0.3305555555555556,,,epoch,EpochAI,
@@ -3173,7 +3170,6 @@ ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,8fc2ca29-9cf9-5b32-8ab5-0b871ab0bd5e,0.0417
 64326be6-ba5d-5389-b56a-0ad585507195,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.885,,,epoch,https://arcprize.org/leaderboard,
 65249d2d-fadd-58c8-b559-1ffa3367ebf2,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.72,,,epoch,EpochAI,
 6525d03f-1974-5cc0-a63b-28545e91d9e9,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.4767,,,epoch,EpochAI,
-65dc01e4-af09-5b51-9b20-4785835cd37c,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.165,,,epoch,EpochAI,
 662980f9-93c5-5540-b67f-12f5e574576e,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.86,,,epoch,EpochAI,
 669bacc2-e976-53f7-b85f-560cad080400,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.8567,,,epoch,https://arcprize.org/leaderboard,
 67c91be9-2700-5057-be83-3214ac0e3d10,9170a9aa-dc41-50f4-a90c-5b8bce0c2467,0.0,,,epoch,ARC Prize Leaderboard,https://arcprize.org/leaderboard
@@ -3467,7 +3463,6 @@ d1e6c05f-f389-50eb-928a-7451aa92dcb9,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.46,,
 d531bc5f-8094-533a-bddb-ac7c79d5c309,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.962851,0.00521,,gpai_runs,GPAI Policy Lab run 20261112_claude-haiku-5-5_medium_gsm8k (1 epochs x 1319 questions),https://github.com/General-Purpose-AI-Policy-Lab/benchmark-data-pipeline/tree/main/0_input/feed/gpai_runs/runs/20261112_claude-haiku-5-5_medium_gsm8k
 d7fc6eac-b749-56f3-ad44-0523249219bf,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.369,,,epoch,Yi: Open Foundation Models by 01.AI,http://arxiv.org/abs/2403.04652
 d9d0856f-6261-5163-8980-f24d016f9ad4,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.876,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
-dd145c0d-450b-556b-b300-bb4e554772a8,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.354,,,epoch,Gemma: Open Models Based on Gemini Research and Technology,http://arxiv.org/abs/2403.08295
 de705bfb-0c9c-51e0-8dc5-ac35f72fd6ff,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.441,,,epoch,Mixtral of Experts,http://arxiv.org/abs/2401.04088
 e0798bba-b6ab-53df-abc2-644c48d85063,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.757,,,epoch,Qwen2.5-Coder Technical Report,http://arxiv.org/abs/2409.12186
 e10034d4-2293-57b9-8b9d-804085279068,9591d2c4-f6bc-5607-bb7a-ae64d6377bd8,0.246,,,epoch,Qwen Technical Report,https://arxiv.org/abs/2309.16609
@@ -5356,17 +5351,15 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,cc417b11-5486-5d0f-8a3c-21db2f51b772,0.0458
 4967b8bf-c70b-5249-bb31-08771919d430,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.0173,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 4da8fd41-ac04-528d-8f29-7944a162802a,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.7540000000000001,,,epoch,https://htihle.github.io/weirdml.html,
 4f423e9a-035f-588f-b024-6639ef5e6ba2,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4093,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
-4f83d073-ae61-5ed2-b4b1-acfbf9494fee,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3522,,,epoch,WeirdML Leaderboard,
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3649,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 515946bc-a14f-50af-b015-26a251ba217d,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.2224,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 51741aba-80cc-5b59-aecf-1d4ce989ca10,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4415,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 53d79bba-1f06-5f45-bac3-8ef88e9909a3,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.1236,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
-54251d76-0b4a-5dc8-8966-d4e16a8de22c,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4095,,,epoch,WeirdML Leaderboard,
-5426f180-31ee-52c2-a895-874face75b00,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4258,,,epoch,WeirdML Leaderboard,https://htihle.github.io/weirdml.html
 5437dcc5-07b7-5696-bdad-83556ef7b98a,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.7827,,,epoch,https://htihle.github.io/weirdml.html,
 58087feb-7aad-55c5-909b-2952b7193168,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4611,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 584b52be-979f-57fa-913e-6b441231758c,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.0706,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 5987a369-9c0b-5e25-9dac-76a0754390d8,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.344,,,epoch,WeirdML Leaderboard,
+5af320a3-72d9-5d49-b003-11672add8f1d,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4095,,,epoch,WeirdML Leaderboard,https://htihle.github.io/weirdml.html
 5c614787-146a-5875-a5ff-a1d131b17b84,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.3948,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 5e47af86-25cd-515c-ba72-0887760f9995,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.7219,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 5f814b02-4f72-53eb-ac31-1d029df413c6,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.6715000000000001,,,epoch,https://htihle.github.io/weirdml.html,
@@ -5390,7 +5383,6 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,cc417b11-5486-5d0f-8a3c-21db2f51b772,0.0458
 77407fc7-1edd-5eb6-a368-378062280c17,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.456,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 77fdc744-f384-5db9-b25f-d3660900be2b,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4771,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 782280fe-92fa-5caa-9aa3-91d71a699e89,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.7206999999999999,,,epoch,https://htihle.github.io/weirdml.html,
-7a88d3f2-f42f-561e-ae23-6b78af048292,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4095,,,epoch,WeirdML Leaderboard,https://htihle.github.io/weirdml.html
 7e3e2e05-0e00-5211-bc69-9b211248f244,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4756,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
 8080474a-c234-5a76-a82e-8d9513f316ad,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4653,,,epoch,https://htihle.github.io/weirdml.html,
 838e81ab-35da-504e-b566-0d714556aca1,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.616,,,epoch,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html
@@ -5413,7 +5405,6 @@ ffff309d-3f77-5e99-abc8-9072219aeb80,cc417b11-5486-5d0f-8a3c-21db2f51b772,0.0458
 99007e0e-dc55-5a09-9a99-20bddeb5d60c,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4371,,,epoch,https://htihle.github.io/weirdml.html,
 9a4c32e0-2da4-5bca-93f2-103393146aaf,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.5586,,,epoch,https://htihle.github.io/weirdml.html,
 9a7d9480-f1b5-512b-8aff-6b9ccfeef59e,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.1597,,,epoch,WeirdML Leaderboard,
-9d9e3552-557a-5e4c-858d-ed5917c39bee,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.5744,,,epoch,https://htihle.github.io/weirdml.html,
 9de7f20b-93b2-55d8-a1a9-ba660fd2da3d,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.4673,,,epoch,WeirdML Leaderboard,
 9e1dad88-f2f2-5c0e-a0da-4dcce21575e1,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.7640000000000001,,,epoch,https://htihle.github.io/weirdml.html,
 9e66552e-f4ec-5b3c-be9d-3037cfb94d5f,ce4b877c-a9d5-595b-a14a-ec9edab40b95,0.8634000000000001,,,epoch,https://htihle.github.io/weirdml.html,
@@ -5804,11 +5795,9 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,ecb27e9b-d4d1-5564-b301-e32b44b2ac4a,0.63,,
 67c91be9-2700-5057-be83-3214ac0e3d10,ecf25073-c379-5472-ab88-b3df79e8aa65,0.08900000000000001,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 6c4e3de5-44ab-5714-906b-60135fe3007c,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7020000000000001,,,epoch,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 70fc2cc7-dc79-5630-9dbc-d377d009f441,ecf25073-c379-5472-ab88-b3df79e8aa65,0.604,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
-7129df24-6643-5169-b1c1-2d2d9bb33309,ecf25073-c379-5472-ab88-b3df79e8aa65,0.591,,,epoch,https://aider.chat/docs/leaderboards/,
 721bbe8a-5ed6-5848-a852-712276466af3,ecf25073-c379-5472-ab88-b3df79e8aa65,0.34700000000000003,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 7410d386-29ee-5d20-89ca-12baf77706fc,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7909999999999999,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 744a4413-480f-5cd1-a82e-de29142c9b0e,ecf25073-c379-5472-ab88-b3df79e8aa65,0.524,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
-7512466c-9c9d-549d-b07e-afcf94cc7a39,ecf25073-c379-5472-ab88-b3df79e8aa65,0.596,,,epoch,https://aider.chat/docs/leaderboards/,
 7c1cabfe-0f9f-5341-8a4d-e1e02e55eae9,ecf25073-c379-5472-ab88-b3df79e8aa65,0.382,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 7c37a985-d0af-5754-964c-572841204b2c,ecf25073-c379-5472-ab88-b3df79e8aa65,0.7290000000000001,,,epoch,Aider LLM Leaderboards,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
 7f60d8dd-eb07-5b95-b85d-ffb99201d593,ecf25073-c379-5472-ab88-b3df79e8aa65,0.4,,,epoch,https://aider.chat/docs/leaderboards/,https://aider.chat/docs/leaderboards/#polyglot-leaderboard
@@ -5922,7 +5911,6 @@ ee56a33c-9ea1-57c7-a419-33a650636eba,f7699f86-75b2-5577-b099-db5d196f5d1f,0.3602
 3d1b7395-02a1-5d64-93f5-2773fa3dc247,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.225,,,epoch,Cybench leaderboard,https://cybench.github.io/
 4828bc75-19ad-5982-972d-46dec8d97f9a,fd6abe3f-58db-5b9f-8cdd-ace121e13546,1.0,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 51f8a52b-96a1-51ce-bacc-56a855cf0164,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.2,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-5497bab7-7579-54c1-9408-7a90c63ef218,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.075,,,epoch,Cybench leaderboard,https://cybench.github.io/
 5dee249b-019f-5f65-83e1-5009325d080f,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.35,,,epoch,Cybench leaderboard,https://cybench.github.io/
 65358498-733e-5bde-b04c-37aab5a87744,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.39,,,epoch,Grok 4.1 Model Card,https://data.x.ai/2025-11-17-grok-4-1-model-card.pdf
 7e3e2e05-0e00-5211-bc69-9b211248f244,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.1,,,epoch,Cybench leaderboard,https://cybench.github.io/
@@ -5932,14 +5920,13 @@ ee56a33c-9ea1-57c7-a419-33a650636eba,f7699f86-75b2-5577-b099-db5d196f5d1f,0.3602
 97ebca52-d1b5-5737-b4c3-2c6b041d48d9,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.075,,,epoch,Cybench leaderboard,https://cybench.github.io/
 9e1dad88-f2f2-5c0e-a0da-4dcce21575e1,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.96,,,cybench_site,"Cybench leaderboard (cybench.github.io, snapshot 2026-09-07; 35/40 tasks)",https://cybench.github.io/
 b1d1428d-820f-524f-a0da-2c9175c36337,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.05,,,epoch,Cybench leaderboard,https://cybench.github.io/
-baac4101-72fc-5e5a-998e-f7b1489319bf,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.075,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
+baac4101-72fc-5e5a-998e-f7b1489319bf,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.075,,,epoch,Cybench leaderboard,https://cybench.github.io/
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.38,,,epoch,Cybench leaderboard,https://cybench.github.io/
 c494bab3-30c1-582d-a80c-d887518f453d,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.43,,,epoch,Grok 4 Model Card,https://data.x.ai/2025-08-20-grok-4-model-card.pdf
 c64cdec4-c2d0-5f27-9dc9-a43c40da41af,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.1,,,epoch,Cybench leaderboard,https://cybench.github.io/
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.6,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-db210d2d-9fd6-5b51-b481-16d038c73444,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.125,,,epoch,Cybench leaderboard,https://cybench.github.io/
 eb51562e-effb-5407-91ca-9fc4d497f59d,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.175,,,epoch,Cybench leaderboard,https://cybench.github.io/
-f87b6bf9-9171-5467-bcd6-ea744b4c1e38,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.125,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
+f87b6bf9-9171-5467-bcd6-ea744b4c1e38,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.125,,,epoch,Cybench leaderboard,https://cybench.github.io/
 f9b72039-4005-5c41-8e54-52795f854850,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.3,,,epoch,Grok 4 Fast Model Card,https://data.x.ai/2025-09-19-grok-4-fast-model-card.pdf
 ffb31a23-5e91-5766-ad31-d8c0f8d8bf47,fd6abe3f-58db-5b9f-8cdd-ace121e13546,0.93,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 1aeaa8cc-8bca-5cc4-b5fd-20b0db35243a,fe3d622c-b492-5fed-b44d-6653768aabd3,0.298999,,,epoch,METR - Measuring AI Ability to Complete Long Tasks,https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
