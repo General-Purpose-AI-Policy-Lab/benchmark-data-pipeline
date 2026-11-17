@@ -343,7 +343,7 @@ gemini-2.5-flash-preview-05-20_1K,0.16,2025-05-20,Google DeepMind,ARC-AGI,,ARC P
 gemini-2.5-flash-preview-05-20_24K,0.3233,2025-05-20,Google DeepMind,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_8K,0.2583,2025-05-20,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro-exp-03-25,0.33,2025-03-25,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
-gemini-2.5-pro-preview-05-06_1K,0.313,2025-06-05,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
+gemini-2.5-pro-preview-05-06_1K,0.313,2025-05-06,Google DeepMind,ARC-AGI,,ARC Prize Leaderboard,https://arcprize.org/leaderboard,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_16K,0.41,2025-06-17,Google DeepMind,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_1K,0.16,2025-06-17,Google DeepMind,ARC-AGI,,https://arcprize.org/leaderboard,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_32K,0.37,2025-06-17,Google DeepMind,ARC-AGI,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
@@ -617,7 +617,7 @@ gemini-2.5-flash-preview-05-20_16K,0.0198,2025-05-20,Google DeepMind,ARC-AGI-2,,
 gemini-2.5-flash-preview-05-20_1K,0.0216,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_24K,0.0254,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-flash-preview-05-20_8K,0.0212,2025-05-20,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
-gemini-2.5-pro-preview-05-06_1K,0.0344,2025-06-05,Google DeepMind,ARC-AGI-2,,"ARC Prize leaderboard data (evaluations.json, read 2026-11-17; semi-private set)",https://arcprize.org/media/data/evaluations.json,board_rows,Core AGI Progress,0.0,1.0
+gemini-2.5-pro-preview-05-06_1K,0.0344,2025-05-06,Google DeepMind,ARC-AGI-2,,"ARC Prize leaderboard data (evaluations.json, read 2026-11-17; semi-private set)",https://arcprize.org/media/data/evaluations.json,board_rows,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_16K,0.0403,2025-06-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_1K,0.0,2025-06-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
 gemini-2.5-pro_32K,0.0486,2025-06-17,Google DeepMind,ARC-AGI-2,,EpochAI,,epoch,Core AGI Progress,0.0,1.0
