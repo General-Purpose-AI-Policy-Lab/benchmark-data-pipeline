@@ -360,7 +360,7 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,21b0d275-4fae-5a11-8245-350a5d2153b6,0.4170
 40de7350-1962-5868-b516-5aa074b95815,2229982b-d7fb-5b45-baab-ee30f496af94,0.9333333333333332,0.0391713100928668,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fj3QzF2QVnNghvyFneqEuiu.eval
 4448d84f-be9f-5480-8495-5d4295b752a6,2229982b-d7fb-5b45-baab-ee30f496af94,0.6,0.1181873680570557,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FFGZUtmNQZpZtk8ft5uCJkA.eval
 46ad9ecd-563b-557b-bb83-dcf597ed21d0,2229982b-d7fb-5b45-baab-ee30f496af94,0.7889,0.0788,,epoch_live,Epoch AI internal evaluation,
-5b50b528-2d29-515d-8bec-5bf7de0d0996,2229982b-d7fb-5b45-baab-ee30f496af94,0.2777777777777778,0.0885907699198465,,epoch_live,Epoch AI internal evaluation,
+5b50b528-2d29-515d-8bec-5bf7de0d0996,2229982b-d7fb-5b45-baab-ee30f496af94,0.4,0.1064084175371071,,epoch_live,Epoch AI internal evaluation,
 5e47af86-25cd-515c-ba72-0887760f9995,2229982b-d7fb-5b45-baab-ee30f496af94,0.3222222222222222,0.0995581065432807,,epoch_live,Epoch AI internal evaluation,
 619a9c7d-3b2e-5290-98d4-7fddddd4e68b,2229982b-d7fb-5b45-baab-ee30f496af94,0.2666666666666666,0.090267093384844,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FWQ4gVVhGBfWoRkRwUvNYgs.eval
 6394deb1-16b9-5b7f-a3bd-0f0c768f785a,2229982b-d7fb-5b45-baab-ee30f496af94,0.3111111111111111,0.0903647322380335,,epoch_live,Epoch AI internal evaluation,
@@ -384,6 +384,7 @@ a1daf361-b5e6-5a18-a07c-5d24f089bf4b,2229982b-d7fb-5b45-baab-ee30f496af94,0.9777
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,2229982b-d7fb-5b45-baab-ee30f496af94,0.8777777777777778,0.0717628860663956,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FmNbPPJ3qiGSKnpqRsbxeKv.eval
 bd8c2c09-1ff7-5eb7-88af-af27ff485507,2229982b-d7fb-5b45-baab-ee30f496af94,0.0444444444444444,0.0343752505201709,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FTh39ihgvLFnsDGMed7Q55b.eval
 bfd896ae-8b2b-52d7-8bd8-3eede5d82c7f,2229982b-d7fb-5b45-baab-ee30f496af94,0.3333333333333333,0.1002642012530397,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F4sSMLxWLPihKZSUFVUjwTh.eval
+c9d1b5c5-bb9f-5deb-9413-5c2011161c1a,2229982b-d7fb-5b45-baab-ee30f496af94,0.4333333333333333,0.0959497222838566,,epoch_live,Epoch AI internal evaluation,
 cb05d92b-9bca-5520-bf88-fe3ee03737a5,2229982b-d7fb-5b45-baab-ee30f496af94,0.2333333333333333,0.0931517508007695,,epoch_live,Epoch AI internal evaluation,
 cd6165a8-2737-5cf9-9152-383786cb1248,2229982b-d7fb-5b45-baab-ee30f496af94,0.4777777777777778,0.1026973086960114,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FWPxarSzywRZJNbqmd4gMDK.eval
 d22e3096-119a-5570-a80b-7ae772ff4179,2229982b-d7fb-5b45-baab-ee30f496af94,0.3666666666666666,0.1152407188472168,,epoch_live,Epoch AI internal evaluation,
@@ -464,15 +465,20 @@ bf8299bc-1700-5c37-a53a-813a27bc5273,31c7cb66-4b47-5d6e-917d-632a6af5c129,0.2597
 d277afba-d017-5da4-bd1a-e5f586364319,31c7cb66-4b47-5d6e-917d-632a6af5c129,0.0754440272727272,,,epoch,https://htihle.github.io/weirdml.html,
 ed6f0090-459a-5d4c-92c4-0b5615491995,31c7cb66-4b47-5d6e-917d-632a6af5c129,0.3825364136363636,,,epoch,https://htihle.github.io/weirdml.html,
 00f9354b-eca0-5e02-8d5c-27a065b4dbda,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.624,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+024e151c-af33-5adf-8f79-08e8dc5e0325,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.38670000000000004,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 0467e0f7-4248-522e-9509-dad2d9fc1b10,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5661999999999999,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 04a694d8-9856-5570-ad47-97849831b6e2,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.8195,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+0e0dd03a-7256-5793-9669-6a9a6eca3a1a,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.25129999999999997,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 190c9256-dd6b-58f3-a4ba-8a1b61734bec,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.3635,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 1cfcfb62-f81b-5a86-8e39-d7304226940d,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.6567000000000001,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 239914c4-2ef7-588b-8182-326dabf082cb,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.4122,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 2444bc78-7324-564b-b07e-00fe689ede74,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.6341,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 254c0c5e-e2d0-5e80-87a2-89141b707607,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5049,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 33a8eb2d-e110-5dbb-a96c-37442011bef0,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5720000000000001,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+4967b8bf-c70b-5249-bb31-08771919d430,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.2371,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+53ccdee8-a380-54f8-966f-fefdff6457f0,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.2568,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 57d1f5f1-a7b0-574a-8206-94212337f244,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.6319,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+5d8a9862-07b0-549b-a174-b0ca399f7a72,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5603,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 6847be80-1aba-53a9-b573-5bf4e3ac3d41,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.6923,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 744a4413-480f-5cd1-a82e-de29142c9b0e,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.3943,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 77407fc7-1edd-5eb6-a368-378062280c17,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.6139,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
@@ -486,6 +492,7 @@ ed6f0090-459a-5d4c-92c4-0b5615491995,31c7cb66-4b47-5d6e-917d-632a6af5c129,0.3825
 a016ca21-a2b9-5eb7-b151-44798d75ea29,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5861999999999999,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 a47ab0fe-3885-5b4e-a41a-4e31abcf3181,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5532,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 b1f33637-9283-53b5-98dc-ca8126e490f4,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.7490000000000001,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+b22997e4-5610-5a24-8354-c760155cfa57,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.2275,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 b7a6eb8d-27f7-5ea7-9ddd-ce70879bfb88,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5542,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 c0426f38-5a35-58e3-872c-e8ce5dc6218d,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.753,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 c57b1628-af77-5632-b985-b99dcaae6dce,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.742,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
@@ -495,9 +502,12 @@ d451030c-63c6-5b8d-92be-ce8e50f33834,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.461,
 d74cdcff-da5a-5bfe-96d2-d916960474d3,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.6061,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 e0d02856-1db1-5660-8957-dd11bae9e534,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.787,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 e57cc68a-2419-5486-87ac-d2aa72b2185c,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5362,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+e9c42eaf-7303-56dd-a303-53fcec263b69,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.2778,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+ee3f4400-90c2-53ea-9feb-1aa4d01393f9,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.43229999999999996,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 eeca198f-e209-5cbc-9332-e554b980a9d7,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5710999999999999,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 f28c936a-3acf-57c1-96f1-6ebc1eaca363,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.4534,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 f9d0bea8-4c49-5762-b85c-253ef349024b,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.3715,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
+fa1cfc8f-ccd8-554f-926d-1be99b2b4895,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.35979999999999995,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 fcf431b0-7ba1-574e-aea7-449bc578ba24,32fc225b-d9c1-530a-98c8-8177c5ea21d6,0.5602,,,seal,Scale SEAL (multichallenge),https://labs.scale.com/leaderboard/multichallenge
 064d6bba-cf57-5cd0-b569-ab2110036c8c,3371c7e1-83ec-5fa4-8361-907b7da1cd4c,0.858,,,seal,Scale SEAL (mcp_atlas),https://labs.scale.com/leaderboard/mcp_atlas
 11fa2262-1e64-5e53-b0db-6ed4d1de3c0d,3371c7e1-83ec-5fa4-8361-907b7da1cd4c,0.823,,,seal,Scale SEAL (mcp_atlas),https://labs.scale.com/leaderboard/mcp_atlas
@@ -1926,6 +1936,7 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,64d870fa-e324-5c5a-a234-abb8b2fad313,0.748,
 2aac3477-1bb4-549b-9849-fc268c1b9fa6,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.8333333333333334,0.0265522078282152,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Fchbh6XstiqtUa5W9zuyfjS.eval
 2b8a72dc-6791-5686-a53e-4609964fc31e,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.3547979797979798,0.0229148599051117,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F6jkd5nJzspGZJtvZynZZTD.eval
 2ec3284c-3b30-584c-a20e-179382033fae,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.7626262626262627,0.0303137105381989,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FCtxFusPxCraL3EeRJu2c5k.eval
+2f004284-f9c4-5ca9-8138-b4c6a80b2ee8,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.9387626262626264,0.0168583211025662,refusal fallback,epoch_live,Epoch AI internal evaluation,
 30fc97b2-d356-59ed-b282-a86797decc72,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.8484848484848485,0.0255456504266036,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FaYgDc2iSDpmHkQfu7YjCHc.eval
 314a22cb-f963-51f4-b969-5f82c4c67bee,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.7474747474747475,0.0309540554703658,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FLaBuzZExRqocD4FET6yx26.eval
 318e1057-09ba-5729-9d62-91d8ff8dc165,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.7424242424242424,0.0311562695196468,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F7aAKcnsCXoSumfAu8mr2un.eval
@@ -2034,10 +2045,12 @@ f87b6bf9-9171-5467-bcd6-ea744b4c1e38,64d870fa-e324-5c5a-a234-abb8b2fad313,0.748,
 89230621-4acd-5ed8-bc5c-74780f1cebb9,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.8333333333333334,0.0237490166626365,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F6phXzd4aCbnBUSQmBsaywa.eval
 8973adc7-3e2e-5413-af9d-f2b551e19e72,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.898,0.022,,epoch_live,Epoch AI internal evaluation,
 8a47a985-bf46-569c-b30d-0e71fdaf5fdd,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.5574494949494949,0.0297346521917906,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2Ff6pnAATjxmrFJS353EjQKi.eval
+8a83e82a-0f12-53c7-afff-759fa6ede2f8,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.9406565656565656,0.015208024992156,refusal fallback,epoch_live,Epoch AI internal evaluation,
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.7960858585858586,0.0240347640961219,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F9Sgsz5XCjscuZkexf7MX9c.eval
 8c1b440f-1bbf-5fd1-a8bb-d87867fc52ac,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.5091540404040404,0.0258619927027706,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FS5QYXSvQBRSbUbXSnAGbMm.eval
 8c326c89-4162-59d3-83a2-15321cc6785e,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.7702020202020202,0.0258553326988784,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FMzsTvCEEfEpzn4WvxYdJkX.eval
 8d476f3b-4b92-5bcd-b637-a223b98de9b7,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.6868686868686869,0.0330420508781365,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FdodibSv7pk8GtqeMy4YLQg.eval
+8dce7ae9-4b3e-527e-a6ad-af42ebdd235c,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.9602272727272728,0.0131389311742377,refusal fallback,epoch_live,Epoch AI internal evaluation,
 8eff84b1-5cc4-58c4-9311-ab9689eda07f,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.4469696969696969,0.0286309467819037,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F8UqaLobhmNJLuPGTTpeaCw.eval
 8f35794d-e2d5-550d-b3e5-0ea5b9e0bcdf,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.6761363636363636,0.02683630252503,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FVjfLwKbT6kTprYsMGcz2YT.eval
 8fa0267b-7634-50a4-a79a-9c928a43102b,682f4533-6ba7-5ef3-9081-3f41ff7ab54c,0.860479797979798,0.0206869596713939,,epoch_live,Epoch AI internal evaluation,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FKwwo3UFcPDk6iLAeSeeRaa.eval
@@ -3641,6 +3654,7 @@ ff993430-54a6-5e9c-9611-289a0ea1956f,989c9bdc-0071-5daa-b9d3-e29f15a8fd15,0.2535
 315f1a07-56b2-5fcb-9bdb-f28716a16d02,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.386,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
 39bbc212-b924-545f-af28-a227674747c1,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.33799999999999997,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
 5680f719-6af7-56ac-9fa8-561357fbfe14,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.312,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
+7b5de276-676c-51ff-8917-8b2ea1216da0,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.22,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
 9e6781e8-0021-54e4-bf15-41071ac8b1c3,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.23399999999999999,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
 a2ae597a-c421-5a6f-9e00-2aa1a9d49c7e,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.55,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
 a5a1118c-c262-5a1e-843c-aa5723fa223a,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.254,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
@@ -3652,6 +3666,7 @@ c61bc40a-403f-5ca2-8886-38dedb2c83ee,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.606,
 cc40cf96-f510-5760-915e-8e79e6fee976,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.134,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
 ce5c0d3a-81d2-5c59-be20-80c6b2dd7238,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.28,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
 e0d02856-1db1-5660-8957-dd11bae9e534,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.532,,,seal,Scale SEAL (hle-diamond),https://labs.scale.com/leaderboard/hle-diamond
+29d1b9d4-d839-504c-99f7-3e0958103500,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.691,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 4313af9a-f79b-5e93-a527-e80de0473264,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.622,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 4448d84f-be9f-5480-8495-5d4295b752a6,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.687,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 478028ef-b9e3-510d-9c64-c708e9855b98,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.293,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
@@ -3669,6 +3684,7 @@ e0d02856-1db1-5660-8957-dd11bae9e534,9933af01-a7db-544e-9e82-a1a7f7c1b291,0.532,
 b098a367-9a28-5df9-9e51-3110e10b52c3,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.5,,Gemini CLI,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 b55f5b09-702b-5a5e-861f-d05900fabec5,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.228,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 b6f978a6-fd4f-581e-ace3-a860f8d75aeb,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.537,,Claude Code,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
+c2c8cb8b-a221-5b54-82e3-3858421e8284,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.715,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 e570dd31-b940-537b-80d0-f06e0f3aa6f9,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.516,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 f413b3df-0de3-51bf-a254-6042043bd2af,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.353,,mini-SWE-agent,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
 f9d0bea8-4c49-5762-b85c-253ef349024b,9a094cc5-e3b6-5ec4-97d2-39d925d59b1e,0.27699999999999997,,Claude Code,seal,Scale SEAL (drugdiscoverybench),https://labs.scale.com/leaderboard/drugdiscoverybench
@@ -5020,7 +5036,7 @@ fe2cfe5f-5e97-53fd-b978-553ae1b37ff9,c99400ad-fa21-5da5-9e3f-4295cbd6afef,0.4629
 4448d84f-be9f-5480-8495-5d4295b752a6,c994e135-b4c4-5392-92cb-1dc5c44610c3,0.3399999999999999,0.0413132515163421,,epoch_live,Epoch AI internal evaluation,
 619a9c7d-3b2e-5290-98d4-7fddddd4e68b,c994e135-b4c4-5392-92cb-1dc5c44610c3,0.0,0.0,,epoch_live,Epoch AI internal evaluation,
 8a83e82a-0f12-53c7-afff-759fa6ede2f8,c994e135-b4c4-5392-92cb-1dc5c44610c3,0.0583333333333333,0.0202850042309802,,epoch_live,Epoch AI internal evaluation,
-8dce7ae9-4b3e-527e-a6ad-af42ebdd235c,c994e135-b4c4-5392-92cb-1dc5c44610c3,0.1961711711711711,0.0348582759062508,,epoch_live,Epoch AI internal evaluation,
+8dce7ae9-4b3e-527e-a6ad-af42ebdd235c,c994e135-b4c4-5392-92cb-1dc5c44610c3,0.1533333333333333,0.031204587301253,,epoch_live,Epoch AI internal evaluation,
 a1daf361-b5e6-5a18-a07c-5d24f089bf4b,c994e135-b4c4-5392-92cb-1dc5c44610c3,0.0133333333333333,0.0093641704217558,,epoch_live,Epoch AI internal evaluation,
 4575ecfd-1307-5529-801c-828d7183d439,cb799dbb-6fe0-5de6-aea1-2cf67f6aba7d,0.355,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 50fbaf82-80e5-59a8-9d83-cb6e7c702263,cb799dbb-6fe0-5de6-aea1-2cf67f6aba7d,0.167,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
