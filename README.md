@@ -128,7 +128,7 @@ Benchmark names follow Epoch's `benchmark_metadata.csv` when Epoch publishes the
 
 ## Naming conventions, per source
 
-**Hybrid Claude models** (`config.CLAUDE_HYBRID_BASES`, 3.7 Sonnet to Opus 5; not Fable 5, Fable 5.1 or Opus 5.5, whose thinking cannot be turned off) run with or without extended thinking, and the sources write the two modes apart: in Epoch, its live feed and Kaggle the bare name is the run without thinking (effort `none`; Epoch's own labels say "no thinking") and `_unknown` a thinking run of unknown budget (`thinking`). Rows of unknown mode (system cards, agent harnesses, SEAL's 2026 models) keep the bare name (`identity.hybrid_mode`).
+**Hybrid Claude models** (`config.CLAUDE_HYBRID_BASES`, 3.7 Sonnet to Opus 4.8 and Sonnet 4.6; not the Claude 5 models, which think unless told not to, or cannot be told) run with or without extended thinking, and the sources write the two modes apart: in Epoch, its live feed and Kaggle the bare name is the run without thinking (effort `none`; Epoch's own labels say "no thinking") and `_unknown` a thinking run of unknown budget (`thinking`). Rows of unknown mode (system cards, agent harnesses, SEAL's 2026 models) keep the bare name (`identity.hybrid_mode`).
 
 | Source | Field | Format | Strategy |
 |---|---|---|---|

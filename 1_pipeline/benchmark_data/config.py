@@ -119,10 +119,15 @@ RUN_VARIANTS = frozenset({"", "thinking"})
 # Claude Fable 5 and 5.1 and Claude Opus 5.5 are not in the list (user, 2026-11-17): their thinking
 # cannot be turned off, so a bare name is a run of unknown effort like `_unknown`, never a run
 # without thinking (their `_none` and `_thinking` identities were artefacts of this convention).
+# Claude Sonnet 5 and Claude Opus 5 are not in it either (2026-11-17): they think when a request
+# carries no `thinking` field (Anthropic's thinking documentation), and an Epoch log of its bare
+# `claude-opus-5` run shows Inspect's `reasoning_effort: "none"` sent as exactly that, with a
+# thinking block in the answer. A bare name is no evidence of a run without thinking from Claude 5
+# on; the runs that are (the lab's own, WeirdML's "no thinking" row) say so and are labelled.
 CLAUDE_HYBRID_BASES = frozenset({
     "claude-3-7-sonnet", "claude-sonnet-4", "claude-opus-4", "claude-opus-4-1", "claude-sonnet-4-5",
     "claude-haiku-4-5", "claude-opus-4-5", "claude-opus-4-6", "claude-opus-4-7", "claude-opus-4-8",
-    "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5",
+    "claude-sonnet-4-6",
 })
 
 # `status` values in benchmarks.csv. Only `included` rows reach the database.

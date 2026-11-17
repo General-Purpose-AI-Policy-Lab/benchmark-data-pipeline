@@ -124,4 +124,15 @@ def test_models_whose_thinking_cannot_be_turned_off_are_not_hybrid():
         assert base not in config.CLAUDE_HYBRID_BASES
         assert hybrid_mode(base, config.CLAUDE_HYBRID_BASES) == ""
         assert hybrid_mode(base + "_unknown", config.CLAUDE_HYBRID_BASES) == ""
-    assert hybrid_mode("claude-opus-5", config.CLAUDE_HYBRID_BASES) == "none"
+    assert hybrid_mode("claude-opus-4-8", config.CLAUDE_HYBRID_BASES) == "none"
+
+
+def test_models_that_think_by_default_are_not_hybrid():
+    """Claude Sonnet 5 and Claude Opus 5 think when a request carries no `thinking` field: a bare
+    name is not a run without thinking for them either."""
+    from benchmark_data import config
+    from benchmark_data.identity import hybrid_mode
+    for base in ("claude-sonnet-5", "claude-opus-5"):
+        assert base not in config.CLAUDE_HYBRID_BASES
+        assert hybrid_mode(base, config.CLAUDE_HYBRID_BASES) == ""
+        assert hybrid_mode(base + "_unknown", config.CLAUDE_HYBRID_BASES) == ""

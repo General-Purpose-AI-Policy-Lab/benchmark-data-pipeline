@@ -64,6 +64,7 @@ T5-Small,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and check
 T5-Base,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and checkpoints released 2019-10-23 (Epoch dates T5-3B / 11B the same day)."
 T5-Large,,,2019-10-23,https://arxiv.org/abs/1910.10683,"T5 paper, code and checkpoints released 2019-10-23 (Epoch dates T5-3B / 11B the same day)."
 Voxtral-Small-24B-2507,,,2025-07-15,https://mistral.ai/news/voxtral,Voxtral announced and weights released 2025-07-15.
+grok-3-mini,,,2025-04-09,https://web.archive.org/web/20250410123654/https://docs.x.ai/docs/models,"On xAI's API with Grok 3 (as grok-3-mini-beta, alias grok-3-mini: model page archived 2025-04-10). 2025-04-09 is Epoch's date for the beta name and for grok-3; Epoch dates the name grok-3-mini 2025-06-24, which would give one model two dates (2026-11-17)."
 gemini-2.5-flash,,,2025-06-17,https://ai.google.dev/gemini-api/docs/changelog,"Gemini API changelog, June 17, 2025: ""Released gemini-2.5-flash, our first stable 2.5 Flash model"". Written down so that a run moved to this model from a preview row keeps the stable release's date (2026-11-17)."
 gemini-2.5-flash,2025-04,,2025-04-17,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-04-17 (Scale board label 'April 2025').
 gemini-2.5-flash,2025-05,,2025-05-20,https://ai.google.dev/gemini-api/docs/changelog,gemini-2.5-flash-preview-05-20 (Scale board label 'Preview (May 2025)').
