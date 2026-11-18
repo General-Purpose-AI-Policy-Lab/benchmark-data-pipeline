@@ -707,7 +707,7 @@ model_id,feed,raw_name,n_records
 6198360b-50b9-5e09-bcb6-ca51097257b2,seal,Gemini 2.0 Flash Thinking Experimental,1
 619a9c7d-3b2e-5290-98d4-7fddddd4e68b,epoch,gpt-6-luna_max,8
 619a9c7d-3b2e-5290-98d4-7fddddd4e68b,epoch,gpt-6-luna_unknown,1
-619a9c7d-3b2e-5290-98d4-7fddddd4e68b,epoch_live,gpt-6-luna_max,8
+619a9c7d-3b2e-5290-98d4-7fddddd4e68b,epoch_live,gpt-6-luna_max,9
 61d9fcff-f4ea-575c-8ea7-6dc309939c7a,epoch,o4-mini-2025-04-16_low,2
 61d9fcff-f4ea-575c-8ea7-6dc309939c7a,epoch_live,o4-mini-2025-04-16_low,4
 62196f6d-0cf3-5142-a66e-47efe1520383,epoch,StableBeluga2,5
@@ -1069,7 +1069,7 @@ model_id,feed,raw_name,n_records
 8b913c5a-1801-55b7-96bd-6f6910c8350b,epoch,claude-fable-5-1_low,5
 8b9419f5-3eca-5dc4-9e7f-ee51db004f72,epoch,gpt-5.6-luna_max,8
 8b9419f5-3eca-5dc4-9e7f-ee51db004f72,epoch,gpt-5.6-luna_unknown,2
-8b9419f5-3eca-5dc4-9e7f-ee51db004f72,epoch_live,gpt-5.6-luna_max,7
+8b9419f5-3eca-5dc4-9e7f-ee51db004f72,epoch_live,gpt-5.6-luna_max,8
 8ba596db-a2f2-5acf-a190-55cdfdeaacd7,epoch,mimo-v2.6-pro,3
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,epoch,o4-mini-2025-04-16_high,11
 8bbeb26e-4de4-5385-a54f-10ebe3e46349,epoch_live,o4-mini-2025-04-16_high,7

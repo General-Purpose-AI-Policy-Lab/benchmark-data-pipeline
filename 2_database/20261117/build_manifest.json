@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3",
-  "built_at": "2026-11-18T10:21:40+01:00",
-  "git_commit": "c669c40b97f302c3674b50b279219d815ccbfa64",
+  "built_at": "2026-11-18T10:28:36+01:00",
+  "git_commit": "247b22c6f080159e2685aa004062ec11dd829718",
   "feeds": {
     "0_input/feed/board_rows/board_rows.csv": {
       "byte_size": 3472,
@@ -1261,15 +1261,15 @@
     "0_input/metadata/organizations.csv": "3f90f0dec7e64ab180264685c34241743197acc6cf20eef2620b4c04411c9334",
     "0_input/metadata/release_dates.csv": "2f4a25e14324bf1fd6a4f8262797b7a3f6868491a2fc5da630901cec4f34c114",
     "0_input/metadata/score_corrections.csv": "1f0e70d93f626c16d181c0e89c9190dd8e835e5170ebd39f85fab84e0f2a3eb7",
-    "0_input/metadata/score_drop_kept.csv": "654889aa8ce218732e5872a6f1485ab154ec406053cf7f989f5e3f53840e75d0",
-    "0_input/metadata/score_drop_rules.csv": "fed3efd5086e7cd5c2cfb796d6d2a2aa7bf90855c562b8ac7dfdde3dd97c680f",
+    "0_input/metadata/score_drop_kept.csv": "66a8f8c959c3ad5bc3f577e02a8261a5cb42a9b556d04b7bb5dec696b5720ed4",
+    "0_input/metadata/score_drop_rules.csv": "266e7bc8591860a5b5e8b89e0e9eadaef32e28d64f5c595abe1dd2094ab0d45c",
     "0_input/metadata/score_variant_fixes.csv": "168e0e14ca59b54225737f5e0edcff754059cf85438e07f4201e72069a54252e",
     "0_input/metadata/sibling_merges.csv": "fd85935b300c00a9eae14b6300e9ad0a48d4c25dfc3021a219c4dc2ad4af5bb6"
   },
   "rows": {
     "models.csv": 1043,
     "benchmarks.csv": 107,
-    "scores.csv": 6040,
+    "scores.csv": 6042,
     "human_baselines.csv": 56,
     "model_names.csv": 2018,
     "excluded_benchmarks.csv": 49
