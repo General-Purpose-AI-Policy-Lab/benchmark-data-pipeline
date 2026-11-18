@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3",
-  "built_at": "2026-11-18T10:39:04+01:00",
-  "git_commit": "194042e24375ee624f160750dfa007d79f4a5706",
+  "built_at": "2026-11-18T10:39:37+01:00",
+  "git_commit": "19c8dbb37d8899154c337902571d740eb7151d97",
   "feeds": {
     "0_input/feed/board_rows/board_rows.csv": {
       "byte_size": 3472,
@@ -1254,7 +1254,7 @@
     "0_input/feed/kaggle/aliases.csv": "390d06d870014f3826015c688c1d9bc33b355f0fbaed31d39d480ce4a93edf0d",
     "0_input/feed/rand/aliases.csv": "4f341eebe565f13bf09755234ac72913e74804b0bbaad0ef17e596db2d1c00f0",
     "0_input/feed/seal/aliases.csv": "dac0e901e1c839e5ce74744d3af945565288c19339e345798d849fea9946b6fe",
-    "0_input/metadata/benchmark_release_dates.csv": "30f025864b1051f29f160c7c837a1aeb87c0e778307c4c219ef4c76575c8ab0a",
+    "0_input/metadata/benchmark_release_dates.csv": "b32773c837e69e05b90b68714a540dda97c310b5eddce1c5a495f7c4561d3842",
     "0_input/metadata/benchmarks.csv": "6fefac9a43c2104158f7fd5ac2d2b14a31a6a3420d708ec47621cc675e1fd5b4",
     "0_input/metadata/human_baselines.csv": "42607e4d5f2fb3e5147dc4320b2343aa86dc01ca3f2a444ccec476412774acca",
     "0_input/metadata/model_exclusions.csv": "abd1c703d84954e9f3c6d38b36e8df2d024f91e34dd240d0868c79fef718f982",
