@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3",
-  "built_at": "2026-11-18T10:39:37+01:00",
-  "git_commit": "19c8dbb37d8899154c337902571d740eb7151d97",
+  "built_at": "2026-11-18T10:39:57+01:00",
+  "git_commit": "628c515868975814f7bf4ed6752c141adbf49f10",
   "feeds": {
     "0_input/feed/board_rows/board_rows.csv": {
       "byte_size": 3472,
