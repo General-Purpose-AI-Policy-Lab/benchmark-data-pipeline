@@ -1,0 +1,144 @@
+{
+  "run_id": "20261118_claude-opus-5-5_max_triviaqa",
+  "purpose": "TriviaQA (closed book) on Claude models released since late 2025: the benchmark's last published frontier score dated from July 2023 (campaign of 2026-11-18, asked by the user after the forecasting model's asymptote for TriviaQA came out unconstrained).",
+  "operator": "GPAI Policy Lab (Claude Code session, API key of the lab)",
+  "audit": "Automated audit of every run (2026-11-18): stop reasons, API refusals, answers cut by max_tokens, unparsed answers, answers without an ANSWER line, answers of more than 12 words. The 49 questions the four Sonnet 5.5 / Opus 5.5 runs at medium effort or above all miss were read: about half are right answers the rule does not accept, because the reference is longer than the answer ('blades club' for 'Blades', 'maurice ravel' where the forename is asked) or writes a number in words; about ten have a reference that is no longer true (New Zealand's head of state and prime minister, 'two' presidents impeached, the last Briton to win the Nobel Prize for Literature); the rest are real errors or debatable references. The published references are kept, so the practical ceiling is about 0.97-0.98. Calls refused by the API's safety layer or cut at max_tokens are missing, not wrong.",
+  "history": [
+    "The 9 calls cut at 16,000 tokens were run again on 2026-11-18 at 32,000 tokens (run --retry-truncated --max-tokens 32000): 7 answered, 2 cut again; the superseded rows stay in the raw log's .superseded.jsonl."
+  ],
+  "model": [
+    "claude-opus-5-5"
+  ],
+  "requested_model": "claude-opus-5-5",
+  "regime": "max",
+  "request_params": {
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "adaptive"
+    },
+    "output_config": {
+      "effort": "max"
+    },
+    "api": "Anthropic Messages API",
+    "other": "provider defaults (no temperature, top_p, system prompt)"
+  },
+  "protocol": {
+    "reference": "RAND RR-A3797-1 (Dev et al. 2025), chapter 2, appendices B and D",
+    "solver": "inspect_ai multiple_choice(), single-answer template, no CoT, no few-shot",
+    "template": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of {letters}.\n\n{question}\n\n{choices}",
+    "open_text": {
+      "benchmarks": [
+        "TriviaQA"
+      ],
+      "template": "Answer the following trivia question. The entire content of your response should be of the following format: 'ANSWER: $ANSWER' (without quotes) where $ANSWER is the answer to the question, as short as possible: a name, a number or a few words, with no explanation.\n\n{question}",
+      "parser": "parse_text: an alias of the question contained in the answer line, after normalize_answer() of TriviaQA's official evaluation script; exact match is score_inspect_strict"
+    },
+    "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
+    "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
+    "scoring": "unparseable answers incorrect; a refused call earns the credit the model is expected to earn on that question (impute_missing: its own score on the question in other epochs, else a Rasch model, item difficulties from the other published runs); score = mean credit over questions and epochs; stderr = sd of per-question means / sqrt(n_items), imputation uncertainty not included. RAND's refusal = wrong is results.<bench>.score_refusals_wrong",
+    "missing_imputation": {
+      "TriviaQA": {
+        "n_missing_calls": 2,
+        "n_missing_items": 2,
+        "methods": {
+          "rasch": 2
+        },
+        "mean_credit_missing": 0.6982,
+        "theta": 1.9374,
+        "accuracy_answered": 0.967,
+        "reference_runs": [
+          "20261118_claude-haiku-4-5-20251001_none_triviaqa",
+          "20261118_claude-haiku-5-5_max_triviaqa",
+          "20261118_claude-haiku-5-5_medium_triviaqa",
+          "20261118_claude-haiku-5-5_none_triviaqa",
+          "20261118_claude-opus-4-5-20251101_none_triviaqa",
+          "20261118_claude-opus-4-6_medium_triviaqa",
+          "20261118_claude-opus-4-6_none_triviaqa",
+          "20261118_claude-opus-4-7_none_triviaqa",
+          "20261118_claude-opus-4-8_medium_triviaqa",
+          "20261118_claude-opus-4-8_none_triviaqa",
+          "20261118_claude-opus-5-5_low_triviaqa",
+          "20261118_claude-opus-5-5_medium_triviaqa",
+          "20261118_claude-opus-5_none_triviaqa",
+          "20261118_claude-sonnet-4-6_none_triviaqa",
+          "20261118_claude-sonnet-5-5_high_triviaqa",
+          "20261118_claude-sonnet-5-5_max_triviaqa",
+          "20261118_claude-sonnet-5_none_triviaqa"
+        ]
+      }
+    },
+    "truncated_calls": [
+      {
+        "subset": "TriviaQA",
+        "record_id": "bb_1283",
+        "epoch": 0,
+        "max_tokens": 32000
+      },
+      {
+        "subset": "TriviaQA",
+        "record_id": "odql_7466",
+        "epoch": 0,
+        "max_tokens": 32000
+      }
+    ],
+    "notes": {
+      "triviaqa": "Not one of RAND's benchmarks, and not multiple choice: a free-text answer, no document given (closed book). A fixed random draw of 2,000 of the 7,993 questions of the validation split of rc.wikipedia.nocontext (random.Random(TRIVIAQA_DRAW).sample over the sorted question ids), the 'Wiki validation subset' of the filtered dev set on which the Llama 2 paper (arXiv 2307.09288, table 22) reports exact match; GPT-3 and PaLM used the unfiltered test set, whose server is closed (LLaMA paper, appendix A). Zero-shot with an answer-format instruction, where the published rows are 0- to 64-shot completions. Scored by exact match after the normalisation of TriviaQA's official script (lower case; underscores, punctuation and the articles a / an / the removed; whitespace collapsed) against the question's normalised aliases (score_inspect_strict, the metric of the published rows). The score accepts an answer that contains an alias as whole words (user, 2026-11-18): the aliases are short ('crawford', 'colorado') and a chat model answers in full ('Joan Crawford', 'Colorado River'), which costs about 10 points of exact match at every level on the pilot (Claude Opus 5.5 at max effort: 0.88 against 0.98). The answer is read on the last ANSWER line, the last line when there is none, and an answer of more than 12 words is not searched for an alias."
+    }
+  },
+  "datasets": {
+    "TriviaQA": {
+      "loader": "triviaqa",
+      "subset": "rc.wikipedia.nocontext/validation",
+      "n_items": 2000
+    }
+  },
+  "files": {
+    "mandarjoshi/trivia_qa/rc.wikipedia.nocontext/validation-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/mandarjoshi/trivia_qa/resolve/0f7faf33a3908546c6fd5b73a660e0f8ff173c2f/rc.wikipedia.nocontext/validation-00000-of-00001.parquet",
+      "sha256": "75dd279ece9bcfc7a70366f145e6d94e35d07c6613ef982844119b92375e5791"
+    }
+  },
+  "transcripts_password": "deserted-untie-orchid",
+  "n_samples": 2000,
+  "started": "2026-11-18T16:22:17+00:00",
+  "tokens": {
+    "input": 239481,
+    "output": 509006
+  },
+  "software": {
+    "script": "evals/rand_protocol.py",
+    "script_sha256": "2c26a0763f9a0ac9c1ad071b491dcf204c165769827b5be16447535b711c07aa",
+    "anthropic": "1.13.0",
+    "pandas": "3.0.6",
+    "python": "3.13.5"
+  },
+  "output_files": {
+    "samples.csv": "07d244b5ec88355d7d507a007c28940ef85d868384c65a73ad059383c2aeed43",
+    "transcripts.zip": "bf1fe7740a9c4ceacd111ce7fb80042be140cb06aeb0cf9890551f1ed0d23361"
+  },
+  "results": {
+    "TriviaQA": {
+      "score": 0.966698,
+      "stderr": 0.004,
+      "n_items": 2000,
+      "n_epochs": 1,
+      "score_by_epoch": {
+        "0": 0.966698
+      },
+      "score_refusals_wrong": 0.966,
+      "stop_reasons": {
+        "end_turn": 1998,
+        "max_tokens": 2
+      },
+      "n_unparsed": 2,
+      "score_inspect_strict": 0.881,
+      "n_normalised": 170,
+      "n_refusals": 0,
+      "refusal_share": 0.0,
+      "n_truncated": 2,
+      "missing_share": 0.001,
+      "visible_reasoning_share": 0.001
+    }
+  },
+  "excluded_from_scores": {}
+}
