@@ -171,8 +171,9 @@ claude-sonnet-5-5_max,HellaSwag,0.957323,0.002014,10042,1,20261112_claude-sonnet
 claude-sonnet-5-5_max,OpenBookQA,0.986,0.00526,500,1,20261112_claude-sonnet-5-5_max_commonsense
 claude-sonnet-5-5_max,PIQA,0.974429,0.003683,1838,1,20261112_claude-sonnet-5-5_max_commonsense
 claude-sonnet-5-5_max,WinoGrande,0.962904,0.005312,1267,1,20261112_claude-sonnet-5-5_max_commonsense
+claude-fable-5-2_low,TriviaQA,0.9665,0.004025,2000,1,20261118_claude-fable-5-2_low_triviaqa
 claude-haiku-4-5-20251001_none,TriviaQA,0.878,0.00732,2000,1,20261118_claude-haiku-4-5-20251001_none_triviaqa
-claude-haiku-5-5_max,TriviaQA,0.934278,0.005468,2000,1,20261118_claude-haiku-5-5_max_triviaqa
+claude-haiku-5-5_max,TriviaQA,0.934341,0.005464,2000,1,20261118_claude-haiku-5-5_max_triviaqa
 claude-haiku-5-5_medium,TriviaQA,0.909,0.006433,2000,1,20261118_claude-haiku-5-5_medium_triviaqa
 claude-haiku-5-5_none,TriviaQA,0.8785,0.007307,2000,1,20261118_claude-haiku-5-5_none_triviaqa
 claude-opus-4-5-20251101_none,TriviaQA,0.9375,0.005414,2000,1,20261118_claude-opus-4-5-20251101_none_triviaqa
@@ -182,10 +183,10 @@ claude-opus-4-7_none,TriviaQA,0.9375,0.005414,2000,1,20261118_claude-opus-4-7_no
 claude-opus-4-8_medium,TriviaQA,0.939,0.005353,2000,1,20261118_claude-opus-4-8_medium_triviaqa
 claude-opus-4-8_none,TriviaQA,0.9375,0.005414,2000,1,20261118_claude-opus-4-8_none_triviaqa
 claude-opus-5-5_low,TriviaQA,0.9635,0.004194,2000,1,20261118_claude-opus-5-5_low_triviaqa
-claude-opus-5-5_max,TriviaQA,0.966698,0.004,2000,1,20261118_claude-opus-5-5_max_triviaqa
+claude-opus-5-5_max,TriviaQA,0.966696,0.004,2000,1,20261118_claude-opus-5-5_max_triviaqa
 claude-opus-5-5_medium,TriviaQA,0.962,0.004276,2000,1,20261118_claude-opus-5-5_medium_triviaqa
-claude-opus-5_none,TriviaQA,0.950523,0.004842,2000,1,20261118_claude-opus-5_none_triviaqa
+claude-opus-5_none,TriviaQA,0.950513,0.004843,2000,1,20261118_claude-opus-5_none_triviaqa
 claude-sonnet-4-6_none,TriviaQA,0.9405,0.005291,2000,1,20261118_claude-sonnet-4-6_none_triviaqa
 claude-sonnet-5-5_high,TriviaQA,0.9465,0.005033,2000,1,20261118_claude-sonnet-5-5_high_triviaqa
-claude-sonnet-5-5_max,TriviaQA,0.955371,0.004603,2000,1,20261118_claude-sonnet-5-5_max_triviaqa
+claude-sonnet-5-5_max,TriviaQA,0.955345,0.004604,2000,1,20261118_claude-sonnet-5-5_max_triviaqa
 claude-sonnet-5_none,TriviaQA,0.9215,0.006016,2000,1,20261118_claude-sonnet-5_none_triviaqa

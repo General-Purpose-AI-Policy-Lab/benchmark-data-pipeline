@@ -43,10 +43,11 @@
         "methods": {
           "rasch": 3
         },
-        "mean_credit_missing": 0.5809,
-        "theta": 1.3246,
+        "mean_credit_missing": 0.5636,
+        "theta": 1.2571,
         "accuracy_answered": 0.9559,
         "reference_runs": [
+          "20261118_claude-fable-5-2_low_triviaqa",
           "20261118_claude-haiku-4-5-20251001_none_triviaqa",
           "20261118_claude-haiku-5-5_max_triviaqa",
           "20261118_claude-haiku-5-5_medium_triviaqa",
@@ -119,17 +120,17 @@
     "python": "3.13.5"
   },
   "output_files": {
-    "samples.csv": "2f498905c478ada8304fa537c1dd2797888b4ec520b67224a43d2c3b409a0602",
-    "transcripts.zip": "c464c5e41d06a16ec35d12511e7b0c79a3f69efac8ca14fd7819737b0d146217"
+    "samples.csv": "4941801e2db5dba69ce44ec741fec19df3aa43c87020e719d460ba007af57248",
+    "transcripts.zip": "27c8550fb1684dd2d3745bd115861bababaf62c46e2254aeea7bd5dcac84960f"
   },
   "results": {
     "TriviaQA": {
-      "score": 0.955371,
-      "stderr": 0.004603,
+      "score": 0.955345,
+      "stderr": 0.004604,
       "n_items": 2000,
       "n_epochs": 1,
       "score_by_epoch": {
-        "0": 0.955371
+        "0": 0.955345
       },
       "score_refusals_wrong": 0.9545,
       "stop_reasons": {

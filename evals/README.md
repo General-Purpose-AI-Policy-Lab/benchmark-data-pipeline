@@ -68,7 +68,7 @@ noise on all six (wrong or ambiguous gold answers; on HellaSwag nearly all in it
 half): about 1 point of each score, so a practical ceiling near 0.98-0.99. The published gold
 labels are kept, as every other score of these benchmarks uses them.
 
-**TriviaQA (campaign of 2026-11-18, 18 runs).** Closed-book TriviaQA, whose last
+**TriviaQA (campaign of 2026-11-18, 19 runs).** Closed-book TriviaQA, whose last
 published frontier score dates from July 2023, has a protocol of its own (`TRIVIAQA_TEMPLATE`,
 `parse_text`): a fixed random draw of 2,000 of the 7,993 questions of the validation split of
 `rc.wikipedia.nocontext`, the "Wiki validation subset" of the filtered dev set on which the Llama 2
@@ -82,8 +82,8 @@ model answers in full ("Joan Crawford", "Colorado River", "King George III"): on
 effort 0.87 against 0.98, Haiku 5.5 without thinking 0.77 against 0.84), where the few-shot
 examples of the published rows taught their completion models the short form. An answer of more
 than 12 words is not searched for an alias: it hedges between candidates or explains.
-Eighteen runs, one epoch: Claude Haiku 4.5 and 5.5, Sonnet 4.6, 5 and 5.5, Opus 4.5 to 5.5, without
-thinking where the API allows it, with a few efforts beside (0.878 to 0.967; exact match 0.81 to
+Nineteen runs, one epoch: Claude Haiku 4.5 and 5.5, Sonnet 4.6, 5 and 5.5, Opus 4.5 to 5.5 and Fable
+5.2, without thinking where the API allows it, with a few efforts beside (0.878 to 0.967; exact match 0.81 to
 0.91). Thinking adds little except on Haiku 5.5. Claude Sonnet 4.5 is no longer served (404). The
 questions the four strongest runs all miss put the practical ceiling near 0.97-0.98: references
 longer than the answer, number words, references no longer true.
