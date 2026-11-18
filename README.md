@@ -11,8 +11,8 @@ This repository makes it a reproducible pass. Every source keeps its own alias d
 ```
 0_input/feed/<source>/      one source's raw data + its aliases.csv (one per source, never shared)
 0_input/metadata/           benchmarks.csv, organizations.csv, sibling_merges.csv, release_dates.csv, benchmark_release_dates.csv,
-                            human_baselines.csv, score_corrections.csv, score_drop_rules.csv, score_variant_fixes.csv,
-                            model_exclusions.csv
+                            human_baselines.csv, score_corrections.csv, score_drop_rules.csv, score_drop_kept.csv,
+                            score_variant_fixes.csv, model_exclusions.csv
 1_pipeline/benchmark_data/  the package: python -m benchmark_data {refresh,build,check,parity}
   identity.py               machine-name grammar, aliases, uuid5
   sources/<feed>.py         one module per feed: its _SPEC / _SKIP dictionaries and translate()
@@ -190,6 +190,8 @@ Add a row to `0_input/metadata/score_corrections.csv` (`feed`, `benchmark`, the 
 ### Drop a type of run
 
 A row in `0_input/metadata/score_drop_rules.csv` (`rule`, `feeds`, `benchmark`, `raw_name_regex`, `keep_at_or_above`, `note`) drops every matching run scoring below the bar, for a whole class of runs known to be truncated or misconfigured (e.g. maximum-effort runs cut off by the harness's token limit). It applies after `score_corrections.csv`.
+
+A run a rule covers comes back when its log has been read and shows a complete run (no empty or cut answer among the wrong ones): one row in `0_input/metadata/score_drop_kept.csv` (`feeds`, `benchmark`, the run's name as the rule reads it, the `score` of the run read, the log's URL, a note saying what the log shows and who read it). The score pins the run, so another run under the same name is still dropped; the build reports a row no rule covers any more or whose score has moved.
 
 ### Move a score to the effort its run used
 

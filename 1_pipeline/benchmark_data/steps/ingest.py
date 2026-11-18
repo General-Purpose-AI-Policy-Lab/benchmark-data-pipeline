@@ -261,13 +261,38 @@ def load_score_drop_rules(metadata_dir: Path = config.METADATA_DIR) -> list:
     return [r._replace(raw_name_regex=re.compile(r.raw_name_regex)) for r in table.itertuples()]
 
 
-def _dropped_by_rule(rec: Record, feed: str, rules: list, hits: Counter) -> bool:
-    """Whether a drop rule covers `rec` (counted in `hits` under the rule's name)."""
+def load_score_drop_kept(metadata_dir: Path = config.METADATA_DIR) -> dict:
+    """Rows of score_drop_kept.csv: runs a drop rule covers whose log was read and shows a complete
+    run (no empty or cut answer among the wrong ones). They keep their score. A row names its feeds
+    (`|`-separated), the benchmark, the run's name as the rules read it, and the score of the run
+    read, which pins it: another run under the same name is still dropped.
+    Returns (benchmark, name) -> [(feeds, score), ...]."""
+    path = metadata_dir / config.SCORE_DROP_KEPT_FILE
+    if not path.exists():
+        return {}
+    table = pandas.read_csv(path, dtype={"feeds": str, "benchmark": str, "raw_name": str})
+    kept: dict = {}
+    for r in table.itertuples():
+        kept.setdefault((r.benchmark, r.raw_name), []).append(
+            (frozenset(r.feeds.split("|")), float(r.score)))
+    return kept
+
+
+def _dropped_by_rule(rec: Record, feed: str, rules: list, hits: Counter,
+                     kept: dict | None = None, kept_hits: set | None = None) -> bool:
+    """Whether a drop rule covers `rec` (counted in `hits` under the rule's name). A run listed
+    in `kept` (score_drop_kept.csv) is not dropped: its (benchmark, name, score) goes to
+    `kept_hits`."""
     name = str(rec.raw_name) + (f"_{rec.effort}" if rec.effort else "")
     for r in rules:
         if (feed in r.feeds.split("|") and rec.benchmark == r.benchmark
                 and r.raw_name_regex.search(name)
                 and (pandas.isna(r.keep_at_or_above) or float(rec.score) < r.keep_at_or_above)):
+            for feeds, score in (kept or {}).get((rec.benchmark, name), ()):
+                if feed in feeds and abs(float(rec.score) - score) <= 1e-6:
+                    if kept_hits is not None:
+                        kept_hits.add((rec.benchmark, name, score))
+                    return False
             hits[r.rule] += 1
             return True
     return False
@@ -290,12 +315,14 @@ def ingest(feed_dir: Path = config.FEED_DIR,
     unknown_benchmarks: set[str] = set()
     corrections, applied = load_score_corrections(metadata_dir), set()
     drop_rules, rule_hits = load_score_drop_rules(metadata_dir), Counter()
+    drop_kept, kept_hits = load_score_drop_kept(metadata_dir), set()
     fixes, fixed = load_score_variant_fixes(metadata_dir), set()
     for feed in config.SOURCE_ORDER:
         log.info("%s:", feed)
         for rec in TRANSLATE[feed](feed_dir):
             rec = _corrected(rec, feed, corrections, applied)
-            if rec is None or _dropped_by_rule(rec, feed, drop_rules, rule_hits):
+            if rec is None or _dropped_by_rule(rec, feed, drop_rules, rule_hits,
+                                               drop_kept, kept_hits):
                 continue
             if rec.benchmark not in status:
                 unknown_benchmarks.add(rec.benchmark)
@@ -324,6 +351,14 @@ def ingest(feed_dir: Path = config.FEED_DIR,
     log.info("%s: %d score(s) fixed", config.SCORE_VARIANT_FIXES_FILE, len(fixed))
     log.info("%s: %d score(s) dropped by rule: %s", config.SCORE_DROP_RULES_FILE,
              sum(rule_hits.values()), dict(rule_hits) or "none")
+    stale_kept = sorted({(b, n, s) for (b, n), rows in drop_kept.items() for _, s in rows}
+                        - kept_hits)
+    if stale_kept:
+        log.warning("%s: %d row(s) not used, no rule covers the run any more or its score has "
+                    "moved (review them): %s", config.SCORE_DROP_KEPT_FILE, len(stale_kept),
+                    stale_kept)
+    log.info("%s: %d run(s) read complete and kept against a rule", config.SCORE_DROP_KEPT_FILE,
+             len(kept_hits))
     if result.excluded:
         log.info("excluded benchmarks (records dropped): %s", dict(result.excluded))
     if result.completed:
