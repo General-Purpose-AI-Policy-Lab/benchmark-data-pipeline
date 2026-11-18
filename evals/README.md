@@ -72,14 +72,15 @@ labels are kept, as every other score of these benchmarks uses them.
 published frontier score dates from July 2023, has a protocol of its own (`TRIVIAQA_TEMPLATE`,
 `parse_text`): the validation split of `rc.wikipedia.nocontext` (7,993 questions), the "Wiki
 validation subset" of the filtered dev set on which the Llama 2 paper reports the series' best
-score; zero-shot, the answer on an `ANSWER:` line; exact match after the normalisation of
-TriviaQA's official script against the question's aliases. A pilot (Claude Haiku 5.5 and Opus
-5.5, 100 to 200 questions) shows what exact match costs a chat model: the aliases are short
-("crawford", "colorado", "george") and a fuller correct answer ("Joan Crawford", "Colorado
-River", "King George III") misses them, about 10 points at every level (Opus 5.5 at max effort:
-0.88 by exact match, 0.98 with an alias contained in the answer). The published rows are few-shot
-completions, whose examples teach the short form. Which rule the score uses is to be decided
-before any run is packaged.
+score; zero-shot, the answer on an `ANSWER:` line, normalised as TriviaQA's official script does.
+The score accepts an answer that contains one of the question's aliases as whole words (user,
+2026-11-18); exact match, the metric of the published rows, stays in the manifest as
+`score_inspect_strict`. The aliases are short ("crawford", "colorado", "george") and a chat
+model answers in full ("Joan Crawford", "Colorado River", "King George III"): on the pilot
+(first 100 questions) exact match costs about 10 points at every level (Claude Opus 5.5 at max
+effort 0.87 against 0.98, Haiku 5.5 without thinking 0.77 against 0.84), where the few-shot
+examples of the published rows taught their completion models the short form. An answer of more
+than 12 words is not searched for an alias: it hedges between candidates or explains.
 
 A call refused by the API's safety layer can be run again (`run --retry-refusals N`, up to N
 times each until it is answered; every attempt is kept in `<log>.superseded.jsonl`). In this

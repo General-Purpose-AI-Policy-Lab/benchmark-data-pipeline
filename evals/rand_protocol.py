@@ -205,9 +205,14 @@ PROTOCOL_NOTES = {
                 "0- to 64-shot completions. Scored by exact match after the normalisation of "
                 "TriviaQA's official script (lower case; underscores, punctuation and the "
                 "articles a / an / the removed; whitespace collapsed) against the question's "
-                "normalised aliases. The answer is read on the last ANSWER line "
-                "(score_inspect_strict: that line as written); the score also drops a trailing "
-                "parenthesis and, when no ANSWER line exists, reads the last line.",
+                "normalised aliases (score_inspect_strict, the metric of the published rows). "
+                "The score accepts an answer that contains an alias as whole words (user, "
+                "2026-11-18): the aliases are short ('crawford', 'colorado') and a chat model "
+                "answers in full ('Joan Crawford', 'Colorado River'), which costs about 10 "
+                "points of exact match at every level on the pilot (Claude Opus 5.5 at max "
+                "effort: 0.88 against 0.98). The answer is read on the last ANSWER line, the "
+                "last line when there is none, and an answer of more than 12 words is not "
+                "searched for an alias.",
 }
 
 # Benchmarks whose reproduction is off RAND's scale: run and published, left out of scores.csv.
@@ -328,15 +333,23 @@ def normalize_text(s: str) -> str:
     return " ".join(re.sub(r"\b(a|an|the)\b", " ", s).split())
 
 
+MAX_ANSWER_WORDS = 12
+
+
 def parse_text(completion: str, aliases: list[str], strict: bool = False,
                target: str | None = None) -> str | None:
-    """The free-text answer of a completion, normalised; `target` when it is one of the
-    question's `aliases` (already normalised), so that a correct answer reads as the target.
+    """The free-text answer of a completion, normalised; `target` when the answer is accepted,
+    so that a correct answer reads as the target.
 
-    The answer is what follows the last `ANSWER:` on its line. `strict` takes that text as it
-    is and reads nothing when there is no such line. Otherwise markdown emphasis and quotes
-    around the answer are dropped, a trailing parenthesis too when the text before it is an
-    alias ("Turkey (Anatolia)"), and without an ANSWER line the last non-empty line is read."""
+    The answer is what follows the last `ANSWER:` on its line. `strict` is exact match, the
+    metric of the published rows: that text, normalised, must be one of the question's `aliases`
+    (already normalised), and nothing is read when there is no such line. Otherwise the answer
+    is accepted when it contains an alias as whole words (user, 2026-11-18): the aliases are
+    short ("crawford", "colorado", "61") and a chat model answers in full ("Joan Crawford",
+    "Colorado River", "Highway 61"), which the few-shot examples of the published rows steered
+    their completion models away from. An answer of more than MAX_ANSWER_WORDS words is not
+    searched: it hedges between candidates or explains, and naming the right one in passing is
+    not an answer. Without an ANSWER line the last non-empty line is read."""
     m = re.findall(r"(?im)^.*?ANSWER\s*:[ \t]*(.*)$", completion)
     if m:
         raw = m[-1]
@@ -347,15 +360,13 @@ def parse_text(completion: str, aliases: list[str], strict: bool = False,
         if not lines:
             return None
         raw = lines[-1]
-    if not strict:
-        raw = raw.strip().strip("*_`\"'\u201c\u201d\u2018\u2019 ").replace("$", "")
     found = normalize_text(raw)
-    if found not in aliases and not strict:
-        short = normalize_text(re.sub(r"\s*\([^()]*\)\s*$", "", raw))
-        if short in aliases:
-            found = short
     if found in aliases:
         return target
+    if not strict and len(found.split()) <= MAX_ANSWER_WORDS:
+        padded = f" {found} "
+        if any(f" {a} " in padded for a in aliases):
+            return target
     return found or None
 
 
@@ -931,9 +942,10 @@ def package(args) -> None:
                                  "parser": "parse_number: inspect_ai match(numeric=True), "
                                            "commit 55e9344"}} if "gsm8k" in kinds else {}),
             **({"open_text": {"benchmarks": ["TriviaQA"], "template": TRIVIAQA_TEMPLATE,
-                              "parser": "parse_text: exact match against the question's "
-                                        "aliases after normalize_answer() of TriviaQA's "
-                                        "official evaluation script"}}
+                              "parser": "parse_text: an alias of the question contained in "
+                                        "the answer line, after normalize_answer() of "
+                                        "TriviaQA's official evaluation script; exact match "
+                                        "is score_inspect_strict"}}
                if "triviaqa" in kinds else {}),
             "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
             "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
