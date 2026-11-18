@@ -228,10 +228,6 @@ cd313130-5b35-580c-850f-0a72de4c400c,12091151-02cf-518c-bcda-4374a1bf0308,0.506,
 cdaa556e-ea33-5b62-aa45-35218efff90b,12091151-02cf-518c-bcda-4374a1bf0308,0.838,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 d1ea2b51-bfc6-5fd2-8764-6d21f08fb2a6,12091151-02cf-518c-bcda-4374a1bf0308,0.289,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://www.anthropic.com/claude-sonnet-4-5-system-card
 fcf431b0-7ba1-574e-aea7-449bc578ba24,12091151-02cf-518c-bcda-4374a1bf0308,0.74,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-238554ce-9fb9-517a-aeca-84288b659a60,189afd10-4f81-5aa2-8741-dadcd04c09cc,0.273,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-4828bc75-19ad-5982-972d-46dec8d97f9a,189afd10-4f81-5aa2-8741-dadcd04c09cc,0.607,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-bced6b45-0c46-5e65-87ec-084e31c8395b,189afd10-4f81-5aa2-8741-dadcd04c09cc,0.404,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-c61bc40a-403f-5ca2-8886-38dedb2c83ee,189afd10-4f81-5aa2-8741-dadcd04c09cc,0.902,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 0110ae22-80d3-5180-8053-aa251d0f5a4e,20b11c15-b9b8-553c-8115-d7b33508d624,0.6007,,,seal,Scale SEAL (tool_use_enterprise),https://labs.scale.com/leaderboard/tool_use_enterprise
 12d3d541-0737-514e-9413-19ccf2d4eadd,20b11c15-b9b8-553c-8115-d7b33508d624,0.6319,,,seal,Scale SEAL (tool_use_enterprise),https://labs.scale.com/leaderboard/tool_use_enterprise
 190c9256-dd6b-58f3-a4ba-8a1b61734bec,20b11c15-b9b8-553c-8115-d7b33508d624,0.556,,,seal,Scale SEAL (tool_use_enterprise),https://labs.scale.com/leaderboard/tool_use_enterprise
@@ -3979,10 +3975,6 @@ ea5a129f-b956-540e-b394-ca05de0f7dbb,a2af9a81-5fb1-523b-903d-b86e11a99e83,0.1190
 eb51562e-effb-5407-91ca-9fc4d497f59d,a2af9a81-5fb1-523b-903d-b86e11a99e83,0.061,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
 f15989aa-56c0-5f11-9d65-d3267ad4f026,a2af9a81-5fb1-523b-903d-b86e11a99e83,0.026000000000000002,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
 f87b6bf9-9171-5467-bcd6-ea744b4c1e38,a2af9a81-5fb1-523b-903d-b86e11a99e83,0.171,,,rand,RAND RR-A3797-1 (Dev et al. 2025),https://www.rand.org/pubs/research_reports/RRA3797-1.html
-238554ce-9fb9-517a-aeca-84288b659a60,a6191137-ed38-5890-b7a0-7db8a0ccfdda,0.026,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-4828bc75-19ad-5982-972d-46dec8d97f9a,a6191137-ed38-5890-b7a0-7db8a0ccfdda,0.096,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-bced6b45-0c46-5e65-87ec-084e31c8395b,a6191137-ed38-5890-b7a0-7db8a0ccfdda,0.094,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-c61bc40a-403f-5ca2-8886-38dedb2c83ee,a6191137-ed38-5890-b7a0-7db8a0ccfdda,0.444,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 0467e0f7-4248-522e-9509-dad2d9fc1b10,a89d5362-adf2-5155-b445-8ce4d0a6fe5d,0.5209,,,seal,Scale SEAL (tutorbench),https://labs.scale.com/leaderboard/tutorbench
 1cfcfb62-f81b-5a86-8e39-d7304226940d,a89d5362-adf2-5155-b445-8ce4d0a6fe5d,0.536706,,,seal,Scale SEAL (tutorbench),https://labs.scale.com/leaderboard/tutorbench
 1f85e0a1-f915-595d-9f09-5943bd435fe6,a89d5362-adf2-5155-b445-8ce4d0a6fe5d,0.4546,,,seal,Scale SEAL (tutorbench),https://labs.scale.com/leaderboard/tutorbench
@@ -5645,10 +5637,6 @@ f49a7465-1957-5bb1-a54d-6d8088830b0b,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.5348
 f76e65a4-12f5-5e94-ba04-bb341c289bc3,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.102,,mini-swe-agent,epoch,https://cognition.com/frontiercode,
 f774eb3f-8d0f-531c-8b88-23e84e3414be,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.3183,,devin-cli,epoch,https://cognition.com/frontiercode,
 fbab4124-9b4e-59bf-bf32-880eb7a8a6b2,d80bc08d-49f5-5867-80e2-b07ba03ce16d,0.0939,,devin-cli,epoch,https://cognition.com/frontiercode,
-238554ce-9fb9-517a-aeca-84288b659a60,debfab9d-4886-590e-94fb-d7c089d5a585,0.024,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-4828bc75-19ad-5982-972d-46dec8d97f9a,debfab9d-4886-590e-94fb-d7c089d5a585,0.067,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-bced6b45-0c46-5e65-87ec-084e31c8395b,debfab9d-4886-590e-94fb-d7c089d5a585,0.077,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
-c61bc40a-403f-5ca2-8886-38dedb2c83ee,debfab9d-4886-590e-94fb-d7c089d5a585,0.232,,,epoch_cyber,Epoch AI cyber ECI (values partly read off published plots),https://epoch.ai/data/cyber/processed_data_for_eci.csv
 254c0c5e-e2d0-5e80-87a2-89141b707607,df6a846e-5c07-59a0-bee6-d44b438b8235,0.134,,,epoch,EpochAI,
 33be4070-e5b8-558b-b876-fd8ad377ad1a,df6a846e-5c07-59a0-bee6-d44b438b8235,0.236,,,epoch,EpochAI,
 4353d92d-b418-58a9-8dc3-a3ec8eb88387,df6a846e-5c07-59a0-bee6-d44b438b8235,0.227,,,epoch,EpochAI,

@@ -255,7 +255,7 @@ model_id,feed,raw_name,n_records
 221eb942-ffb1-5e7b-a004-600f2240047e,epoch,gemma-2b,7
 226cc003-cea3-52af-8a76-60aeccd137f2,epoch,gpt-5.4-nano-2026-03-17_xhigh,7
 238554ce-9fb9-517a-aeca-84288b659a60,epoch,kimi-k3_unknown,4
-238554ce-9fb9-517a-aeca-84288b659a60,epoch_cyber,Kimi K3,4
+238554ce-9fb9-517a-aeca-84288b659a60,epoch_cyber,Kimi K3,1
 238554ce-9fb9-517a-aeca-84288b659a60,seal,kimi-k3,1
 239914c4-2ef7-588b-8182-326dabf082cb,epoch,Qwen3-235B-A22B,2
 239914c4-2ef7-588b-8182-326dabf082cb,epoch,qwen3-235b-a22b,2
@@ -520,7 +520,7 @@ model_id,feed,raw_name,n_records
 481d5f25-a5dc-526d-bc09-df38fac19028,epoch,gpt-5-pro-2025-10-06_unknown,1
 481d5f25-a5dc-526d-bc09-df38fac19028,epoch_live,gpt-5-pro-2025-10-06_high,2
 4828bc75-19ad-5982-972d-46dec8d97f9a,cybench_site,Claude Mythos Preview,1
-4828bc75-19ad-5982-972d-46dec8d97f9a,epoch_cyber,Claude Mythos Preview (April),8
+4828bc75-19ad-5982-972d-46dec8d97f9a,epoch_cyber,Claude Mythos Preview (April),5
 48f21826-7a16-5393-834a-3024bbc49a16,epoch,gpt-6.1-sol_low,3
 493dcd8f-66e6-5397-a54f-2c64a83f1c48,epoch_live,glm-4.7-flash,1
 49493f1b-b7ee-5348-9d4c-b075ad3b04a8,epoch,gpt-6.1-sol_medium,4
@@ -1515,7 +1515,6 @@ bbd463a7-4c62-522c-9684-ace6f8f6fec4,epoch,MiniMax-M3,1
 bbd463a7-4c62-522c-9684-ace6f8f6fec4,epoch_live,MiniMax-M3_none,3
 bc7607d7-fc31-5ff5-8c6d-97295c6a3ad1,epoch,Qwen3-32B,2
 bced6b45-0c46-5e65-87ec-084e31c8395b,epoch,glm-5.3_unknown,3
-bced6b45-0c46-5e65-87ec-084e31c8395b,epoch_cyber,GLM-5.3,3
 bced6b45-0c46-5e65-87ec-084e31c8395b,seal,GLM 5.3,1
 bced6b45-0c46-5e65-87ec-084e31c8395b,seal,glm-5.3,1
 bcf7840d-ba7f-5091-8aa2-8b537890fa74,cybench_site,Claude Opus 4,1
@@ -1580,7 +1579,7 @@ c5ee24bd-546e-5a83-bed1-ec83d183d4e7,seal,Claude-3.7-Sonnet-thinking,1
 c5ee24bd-546e-5a83-bed1-ec83d183d4e7,seal,claude-3-7-sonnet-thinking,1
 c5ee24bd-546e-5a83-bed1-ec83d183d4e7,seal,claude-37-sonnet-thinking,1
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,epoch,gpt-6-astra_unknown,5
-c61bc40a-403f-5ca2-8886-38dedb2c83ee,epoch_cyber,GPT-6 Astra,4
+c61bc40a-403f-5ca2-8886-38dedb2c83ee,epoch_cyber,GPT-6 Astra,1
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,kaggle,gpt-6-astra,3
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,seal,GPT 6 Astra,1
 c61bc40a-403f-5ca2-8886-38dedb2c83ee,seal,gpt-6-astra,1
