@@ -70,9 +70,10 @@ labels are kept, as every other score of these benchmarks uses them.
 
 **TriviaQA (prepared 2026-11-18, no run published yet).** Closed-book TriviaQA, whose last
 published frontier score dates from July 2023, has a protocol of its own (`TRIVIAQA_TEMPLATE`,
-`parse_text`): the validation split of `rc.wikipedia.nocontext` (7,993 questions), the "Wiki
-validation subset" of the filtered dev set on which the Llama 2 paper reports the series' best
-score; zero-shot, the answer on an `ANSWER:` line, normalised as TriviaQA's official script does.
+`parse_text`): a fixed random draw of 2,000 of the 7,993 questions of the validation split of
+`rc.wikipedia.nocontext`, the "Wiki validation subset" of the filtered dev set on which the Llama 2
+paper reports the series' best score (user, 2026-11-18: a quarter of the cost, about 0.7 point of
+standard error); zero-shot, the answer on an `ANSWER:` line, normalised as TriviaQA's official script does.
 The score accepts an answer that contains one of the question's aliases as whole words (user,
 2026-11-18); exact match, the metric of the published rows, stays in the manifest as
 `score_inspect_strict`. The aliases are short ("crawford", "colorado", "george") and a chat

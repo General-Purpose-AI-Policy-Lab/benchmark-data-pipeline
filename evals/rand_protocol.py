@@ -156,8 +156,10 @@ BENCHMARKS = {
     "WinoGrande": ("winogrande", "winogrande_xl/validation", 1267),
     "GSM8K": ("gsm8k", "main/test", 1319),
     # Closed-book TriviaQA: the Wikipedia half of the filtered validation set, the subset of the
-    # Llama 2 paper's table, which holds the series' best published score.
-    "TriviaQA": ("triviaqa", "rc.wikipedia.nocontext/validation", 7993),
+    # Llama 2 paper's table, which holds the series' best published score; a fixed random draw of
+    # 2,000 of its 7,993 questions (user, 2026-11-18: a quarter of the cost, about 0.7 point of
+    # standard error on a score near 0.9).
+    "TriviaQA": ("triviaqa", "rc.wikipedia.nocontext/validation", 2000),
 }
 # Where the reproduction of RAND's setup is less certain than the template: kept in the manifest.
 PROTOCOL_NOTES = {
@@ -197,8 +199,10 @@ PROTOCOL_NOTES = {
              "it is one of the numbers written there ('225 minutes (3 hours and 45 "
              "minutes)', '6th place', '2:00 PM').",
     "triviaqa": "Not one of RAND's benchmarks, and not multiple choice: a free-text answer, no "
-                "document given (closed book). Validation split of rc.wikipedia.nocontext (7,993 "
-                "questions), the 'Wiki validation subset' of the filtered dev set on which the "
+                "document given (closed book). A fixed random draw of 2,000 of the 7,993 questions "
+                "of the validation split of rc.wikipedia.nocontext (random.Random(TRIVIAQA_DRAW)"
+                ".sample over the sorted question ids), the 'Wiki validation subset' of the "
+                "filtered dev set on which the "
                 "Llama 2 paper (arXiv 2307.09288, table 22) reports exact match; GPT-3 and PaLM "
                 "used the unfiltered test set, whose server is closed (LLaMA paper, appendix "
                 "A). Zero-shot with an answer-format instruction, where the published rows are "
@@ -246,6 +250,10 @@ TRIVIAQA_TEMPLATE = (
     "question, as short as possible: a name, a number or a few words, with no explanation.\n\n"
     "{question}"
 )
+# The questions of the TriviaQA split, and the seed of the fixed draw that is run (the draw is
+# over the sorted question ids, so it does not depend on the file's order).
+TRIVIAQA_FULL = 7993
+TRIVIAQA_DRAW = "TriviaQA rc.wikipedia.nocontext validation, 2000 of 7993"
 LETTERS = "ABCDEFGHIJ"
 MAX_TOKENS = 16000
 # Calls with no answer to score: refusals by the API's safety layer, and answers cut by their
@@ -540,6 +548,11 @@ def load(bench: str) -> tuple[list[dict], list[str]]:
             items.append(dict(record_id=str(r["question_id"]), question=r["question"],
                               answer=normalize_text(str(a["value"])) or aliases[0],
                               aliases=aliases))
+        if len(items) != TRIVIAQA_FULL:
+            raise SystemExit(f"{bench}: {len(items)} questions in the file, not {TRIVIAQA_FULL}")
+        ids = sorted(it["record_id"] for it in items)
+        keep = set(random.Random(TRIVIAQA_DRAW).sample(ids, n))
+        items = [it for it in items if it["record_id"] in keep]
     if len(items) != n:
         raise SystemExit(f"{bench}: {len(items)} questions, {n} expected")
     return items, canaries
