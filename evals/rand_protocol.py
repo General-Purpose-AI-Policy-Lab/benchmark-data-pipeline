@@ -41,6 +41,7 @@ import math
 import platform
 import random
 import re
+import string
 import subprocess
 import sys
 import tempfile
@@ -70,6 +71,7 @@ REV = {"allenai/openbookqa": "388097ea7776314e93a529163e0fea805b8a6454",
        "baber/piqa": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1",
        "allenai/winogrande": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
        "openai/gsm8k": "cc7b047b6e5bb11b4f1af84efc572db110a51b3c",  # inspect_evals' pin
+       "mandarjoshi/trivia_qa": "0f7faf33a3908546c6fd5b73a660e0f8ff173c2f",
        "cais/wmdp": "7125571f22f032c56415e7980f48d877dd830ff8",
        "futurehouse/lab-bench": "5c77cec648430f30611808808861eb86f81d5eaa",
        "cais/mmlu": "c30699e8356da336a370243923dbaf21066bb9fe",
@@ -103,6 +105,8 @@ FILES = {
         "f9d914d1818c0aba98cabdf8af2bc4bd943c462b9c5e7062647e05c2ce3315d1",
     "openai/gsm8k/main/test-00000-of-00001.parquet":
         "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+    "mandarjoshi/trivia_qa/rc.wikipedia.nocontext/validation-00000-of-00001.parquet":
+        "75dd279ece9bcfc7a70366f145e6d94e35d07c6613ef982844119b92375e5791",
     **{f"cais/mmlu/{s}/{split}-00000-of-00001.parquet": h for s, split, h in [
         ("high_school_biology", "dev",
          "4ae1c2d737b60977c22645093846ee6b9642c84480fde8ea39d8654630682aa4"),
@@ -151,6 +155,9 @@ BENCHMARKS = {
     "PIQA": ("piqa", "piqa_validation", 1838),
     "WinoGrande": ("winogrande", "winogrande_xl/validation", 1267),
     "GSM8K": ("gsm8k", "main/test", 1319),
+    # Closed-book TriviaQA: the Wikipedia half of the filtered validation set, the subset of the
+    # Llama 2 paper's table, which holds the series' best published score.
+    "TriviaQA": ("triviaqa", "rc.wikipedia.nocontext/validation", 7993),
 }
 # Where the reproduction of RAND's setup is less certain than the template: kept in the manifest.
 PROTOCOL_NOTES = {
@@ -189,6 +196,18 @@ PROTOCOL_NOTES = {
              "number on the last ANSWER line when there is one, and takes the target when "
              "it is one of the numbers written there ('225 minutes (3 hours and 45 "
              "minutes)', '6th place', '2:00 PM').",
+    "triviaqa": "Not one of RAND's benchmarks, and not multiple choice: a free-text answer, no "
+                "document given (closed book). Validation split of rc.wikipedia.nocontext (7,993 "
+                "questions), the 'Wiki validation subset' of the filtered dev set on which the "
+                "Llama 2 paper (arXiv 2307.09288, table 22) reports exact match; GPT-3 and PaLM "
+                "used the unfiltered test set, whose server is closed (LLaMA paper, appendix "
+                "A). Zero-shot with an answer-format instruction, where the published rows are "
+                "0- to 64-shot completions. Scored by exact match after the normalisation of "
+                "TriviaQA's official script (lower case; underscores, punctuation and the "
+                "articles a / an / the removed; whitespace collapsed) against the question's "
+                "normalised aliases. The answer is read on the last ANSWER line "
+                "(score_inspect_strict: that line as written); the score also drops a trailing "
+                "parenthesis and, when no ANSWER line exists, reads the last line.",
 }
 
 # Benchmarks whose reproduction is off RAND's scale: run and published, left out of scores.csv.
@@ -213,6 +232,14 @@ GSM8K_TEMPLATE = (
     'Remember to put your answer on its own line at the end in the form "ANSWER: $ANSWER" '
     "(without quotes) where $ANSWER is the answer to the problem, and you do not need to use a "
     "\\boxed command.\n\nReasoning:"
+)
+# Closed-book question answering (TriviaQA): no Inspect task to copy, so the wording follows the
+# two templates above.
+TRIVIAQA_TEMPLATE = (
+    "Answer the following trivia question. The entire content of your response should be of the "
+    "following format: 'ANSWER: $ANSWER' (without quotes) where $ANSWER is the answer to the "
+    "question, as short as possible: a name, a number or a few words, with no explanation.\n\n"
+    "{question}"
 )
 LETTERS = "ABCDEFGHIJ"
 MAX_TOKENS = 16000
@@ -292,13 +319,56 @@ def parse_number(completion: str, strict: bool = False, target: str | None = Non
     return None
 
 
+def normalize_text(s: str) -> str:
+    """normalize_answer() of TriviaQA's official evaluation script (mandarjoshi90/triviaqa,
+    evaluation/triviaqa_evaluation.py): lower case, underscores and punctuation to spaces,
+    articles removed, whitespace collapsed."""
+    exclude = set(string.punctuation + "\u2018\u2019\u00b4`")
+    s = "".join(ch if ch not in exclude else " " for ch in s.replace("_", " ").lower())
+    return " ".join(re.sub(r"\b(a|an|the)\b", " ", s).split())
+
+
+def parse_text(completion: str, aliases: list[str], strict: bool = False,
+               target: str | None = None) -> str | None:
+    """The free-text answer of a completion, normalised; `target` when it is one of the
+    question's `aliases` (already normalised), so that a correct answer reads as the target.
+
+    The answer is what follows the last `ANSWER:` on its line. `strict` takes that text as it
+    is and reads nothing when there is no such line. Otherwise markdown emphasis and quotes
+    around the answer are dropped, a trailing parenthesis too when the text before it is an
+    alias ("Turkey (Anatolia)"), and without an ANSWER line the last non-empty line is read."""
+    m = re.findall(r"(?im)^.*?ANSWER\s*:[ \t]*(.*)$", completion)
+    if m:
+        raw = m[-1]
+    elif strict:
+        return None
+    else:
+        lines = [ln for ln in completion.splitlines() if ln.strip()]
+        if not lines:
+            return None
+        raw = lines[-1]
+    if not strict:
+        raw = raw.strip().strip("*_`\"'\u201c\u201d\u2018\u2019 ").replace("$", "")
+    found = normalize_text(raw)
+    if found not in aliases and not strict:
+        short = normalize_text(re.sub(r"\s*\([^()]*\)\s*$", "", raw))
+        if short in aliases:
+            found = short
+    if found in aliases:
+        return target
+    return found or None
+
+
 def parse(completion: str, n_choices: int, strict: bool = False,
-          target: str | None = None) -> str | None:
-    """The answer read from a completion: a letter among `n_choices`, or, for an open numeric
+          target: str | None = None, aliases: list[str] | None = None) -> str | None:
+    """The answer read from a completion: a letter among `n_choices`; for an open numeric
     question (no choices), a number (`target` only says which number of the answer line to
-    report, see parse_number)."""
+    report, see parse_number); for a free-text question (`aliases` given), `target` when the
+    answer is one of them, else the normalised answer (see parse_text)."""
     if n_choices:
         return parse_answer(completion, n_choices, strict)
+    if aliases is not None:
+        return parse_text(completion, aliases, strict, target)
     return parse_number(completion, strict, target)
 
 
@@ -364,6 +434,7 @@ COMMONSENSE_FILES = {
     "piqa": "baber/piqa/piqa_validation.parquet",
     "winogrande": "allenai/winogrande/winogrande_xl/validation-00000-of-00001.parquet",
     "gsm8k": "openai/gsm8k/main/test-00000-of-00001.parquet",
+    "triviaqa": "mandarjoshi/trivia_qa/rc.wikipedia.nocontext/validation-00000-of-00001.parquet",
 }
 
 
@@ -449,6 +520,15 @@ def load(bench: str) -> tuple[list[dict], list[str]]:
         for i, r in enumerate(_parquet(COMMONSENSE_FILES[kind]).to_dict("records")):
             items.append(dict(record_id=f"gsm8k-test-{i}", question=r["question"],
                               number=r["answer"].split("####")[-1].strip()))
+    elif kind == "triviaqa":   # a free-text answer: no choices, the accepted aliases normalised
+        for r in _parquet(COMMONSENSE_FILES[kind]).to_dict("records"):
+            a = r["answer"]
+            aliases = sorted({normalize_text(str(x)) for x in
+                              [a["value"], *a["aliases"], *a["normalized_aliases"]]} - {""})
+            # The reference answer, or the first alias when it normalises to nothing.
+            items.append(dict(record_id=str(r["question_id"]), question=r["question"],
+                              answer=normalize_text(str(a["value"])) or aliases[0],
+                              aliases=aliases))
     if len(items) != n:
         raise SystemExit(f"{bench}: {len(items)} questions, {n} expected")
     return items, canaries
@@ -456,10 +536,13 @@ def load(bench: str) -> tuple[list[dict], list[str]]:
 
 def prompt_for(item: dict, epoch: int) -> tuple[str, str, int]:
     """The prompt with shuffled choices, the letter of the correct answer, the number of choices;
-    for an open numeric question, its prompt, the number expected and 0."""
+    for an open numeric question, its prompt, the number expected and 0; for a free-text
+    question, its prompt, the normalised reference answer and 0."""
     if "number" in item:
         return (GSM8K_TEMPLATE.format(prompt=str(item["question"]).strip()),
                 parse_number(item["number"], strict=True), 0)
+    if "aliases" in item:
+        return TRIVIAQA_TEMPLATE.format(question=str(item["question"]).strip()), item["answer"], 0
     k = len(item["choices"])
     order = list(range(k))
     random.Random(f"{item['record_id']}|{epoch}").shuffle(order)
@@ -552,7 +635,8 @@ def run(args) -> None:
             c.type == "refusal" for o in resp.output if o.type == "message" for c in o.content)
         stop = ("refusal" if refused else "max_tokens" if reason == "max_output_tokens"
                 else "end_turn" if resp.status == "completed" else str(resp.status))
-        answer = None if refused else parse(completion, k, target=target)
+        answer = None if refused else parse(completion, k, target=target,
+                                            aliases=item.get("aliases"))
         return dict(subset=item["subset"], record_id=item["record_id"], epoch=epoch,
                     requested_model=args.model, regime=args.regime, model=resp.model,
                     target=target, answer=answer, correct=answer == target, stop_reason=stop,
@@ -578,7 +662,8 @@ def run(args) -> None:
             request_id = resp._request_id
         completion = "".join(b.text for b in resp.content if b.type == "text")
         refused = resp.stop_reason == "refusal"
-        answer = None if refused else parse(completion, k, target=target)
+        answer = None if refused else parse(completion, k, target=target,
+                                            aliases=item.get("aliases"))
         return dict(subset=item["subset"], record_id=item["record_id"], epoch=epoch,
                     requested_model=args.model, regime=args.regime, model=resp.model,
                     target=target, answer=answer, correct=answer == target,
@@ -786,15 +871,16 @@ def package(args) -> None:
     run_dir = FEED / "runs" / args.run_id
     run_dir.mkdir(parents=True, exist_ok=True)
     samples = []
-    n_choices = {(b, it["record_id"]): len(it.get("choices", ()))
-                 for b in benches for it in load(b)[0]}
+    loaded = {(b, it["record_id"]): it for b in benches for it in load(b)[0]}
+    n_choices = {key: len(it.get("choices", ())) for key, it in loaded.items()}
     for r in sorted(raw, key=lambda r: (r["subset"], r["record_id"], r["epoch"])):
         c = r["completion"]
         whole = not r.get("completion_truncated")  # a log kept only the first characters
         if whole and r["stop_reason"] != "refusal":  # parsed again: one parser for every log
             k = n_choices[(r["subset"], r["record_id"])]
-            r = {**r, "answer": parse(c, k, target=r["target"]),
-                 "answer_strict": parse(c, k, True)}
+            al = loaded[(r["subset"], r["record_id"])].get("aliases")
+            r = {**r, "answer": parse(c, k, target=r["target"], aliases=al),
+                 "answer_strict": parse(c, k, True, target=r["target"], aliases=al)}
         else:
             r = {**r, "answer_strict": r["answer"]}
         r["correct"], r["correct_strict"] = (r["answer"] == r["target"],
@@ -844,6 +930,11 @@ def package(args) -> None:
                                  "solver": "inspect_evals gsm8k task, fewshot=0 (commit 50b8b19)",
                                  "parser": "parse_number: inspect_ai match(numeric=True), "
                                            "commit 55e9344"}} if "gsm8k" in kinds else {}),
+            **({"open_text": {"benchmarks": ["TriviaQA"], "template": TRIVIAQA_TEMPLATE,
+                              "parser": "parse_text: exact match against the question's "
+                                        "aliases after normalize_answer() of TriviaQA's "
+                                        "official evaluation script"}}
+               if "triviaqa" in kinds else {}),
             "parser": "inspect_ai parse_answers() single-answer branch, commit ccdc03f",
             "shuffle": "random.Random(f'{record_id}|{epoch}').shuffle over the choices",
             "scoring": "unparseable answers incorrect; a refused call earns the credit the "
