@@ -41,3 +41,4 @@ gemini-4-carbon_unknown,0.5856832971800434,0.809,2026-11-10,Google DeepMind,Unit
 gpt-6.1-terra_unknown,0.4208242950108459,0.733,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra,0.004,https://andonlabs.com/evals/blueprint-bench-2,
 gpt-6.1-sol_unknown,0.43167028199566154,0.738,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol,0.008,https://andonlabs.com/evals/blueprint-bench-2,
 muse-wonder-1.0_unknown,0.31670281995661614,0.685,2026-10-12,Meta AI,United States of America,,,Muse Wonder,0.011,https://andonlabs.com/evals/blueprint-bench-2,
+claude-fable-5-2_unknown,0.5661605206073753,0.8,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2,0.011,https://andonlabs.com/evals/blueprint-bench-2,

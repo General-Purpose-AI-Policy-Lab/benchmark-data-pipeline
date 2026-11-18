@@ -45,7 +45,7 @@ FILE_SPEC = {
     'frontiercode_external.csv':          ('FrontierCode', 'Main score', 1.0),
     'frontierswe_external.csv':           ('FrontierSWE v2', 'Score', 1.0),
     'gbaeval_external.csv':               ('GBAEval', 'Overall score', 1.0),
-    'gdp_pdf_external.csv':               ('GDP.pdf', 'GDP.pdf score', 1.0),
+    'gdp_pdf_external.csv':               ('GDP.pdf v1.1', 'GDP.pdf score', 1.0),
     'gdpval_external.csv':                ('GDPval', 'Win + tie rate (%)', 1.0),
     'geobench_external.csv':              ('GeoBench', 'ACW Country %', 1.0),
     'gsm8k_external.csv':                 ('GSM8K', 'EM', 1.0),

@@ -77,6 +77,7 @@ kimi-k3_max,0.234,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models suc
 
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3,,recQkvzVLQfVkOHT4
 claude-opus-5_low,0.231428571428571,2026-07-24,Anthropic,United States of America,,,"Claude Opus 5 (Adaptive Reasoning, Low Effort)",,reckQnoYBUwhFIUoh
+gemini-4-argon_medium,0.231428571428571,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (Medium),,recylz8NzP5LJfPFT
 gpt-5.6-terra_high,0.228571428571429,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra (High),,rec5NRGXYI5SJra1r
 gpt-5.6-sol_medium,0.228571428571429,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol (Medium),,recBeh9GpOB82lJDU
 claude-haiku-5-5_xhigh,0.225714285714286,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Xhigh),,recBvV1GipGKHNyKH
@@ -97,6 +98,7 @@ glm-5.3_max,0.191428571428571,2026-08-14,Z.ai (Zhipu AI),China,,,GLM-5.3 (Max),,
 claude-haiku-5-5_max,0.188571428571429,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Max),,recW9LZskaNg7hjRz
 gpt-5.5_medium,0.18571428571428603,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (Medium),,rec9tobYSj0aIDyTz
 claude-haiku-5-5_high,0.18571428571428603,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (High),,rec0BoOLNB0KlFYZ7
+deepseek-v4-pro-0813_high,0.18571428571428603,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (High),,recX6P4kca9TnpTgM
 gemini-3.8-flash_high,0.182857142857143,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (High),,recKtVPT8wSqnhvJT
 deepseek-v4-pro-0813_max,0.18,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (Max),,recAmxzNixBWcVrYv
 grok-4.7_high,0.18,2026-09-21,xAI,United States of America,,,Grok 4.7 (High),,rec308gC8B3oEudLd

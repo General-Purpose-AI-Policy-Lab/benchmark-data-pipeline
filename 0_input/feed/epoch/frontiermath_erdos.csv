@@ -1,5 +1,6 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
 gemini-4-carbon_high,0.0294,0.0294,2026-11-10,Google DeepMind,United States of America,,,0.0206,,,2026-11-07T03:14:00.000Z,dQsbXWwGRriSS42sDsjQw6
+gpt-6.2-astra_max,0.10294117647058823,0.10294117647058823,2026-11-17,OpenAI,United States of America,,,0.03712509925760679,,,2026-10-28T19:06:00.000Z,b68p-ep-01-hownocyynwpj07cl
 gemini-4-argon_high,0.014705882352941176,0.014705882352941176,2026-10-13,Google DeepMind,United States of America,,,0.014705882352941176,,,2026-10-20T17:29:42.000Z,bloom68-nhb6jkzaqrdr7pf8
 claude-sonnet-5-5_max,0.029,0.029,2026-09-28,Anthropic,United States of America,,,0.021,,,2026-10-08T13:40:19.965Z,bloom68-0ov6a268920re3sz
 gpt-6.1-sol_max,0.04411764705882353,0.04411764705882353,2026-09-29,OpenAI,United States of America,,,0.02508828598537234,,,2026-10-01T20:26:05.000Z,bloom68-alv3junt54xqrybd

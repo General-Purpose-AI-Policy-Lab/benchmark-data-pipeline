@@ -13,6 +13,7 @@ This suggests roughly 40T training tokens, using 6ND: 1.23e25 = 6* 52 billion * 
 For post-training, RL involved 162.5 billion output tokens during rollouts for RL, so RL FLOP was <1% of pre-training. SFT and mid-training tokens were not disclosed.
 
 MFU is reported against bf16 spec, but report mentions FP8 in the pretraining without clarifying the primary format.",0.03158690276528952,,,2026-11-02T14:05:31.000Z,Xhk47x2m6incQifzec3pqC
+gpt-6.2-astra_max,0.9238095238095237,0.9238095238095237,2026-11-17,OpenAI,United States of America,,,0.0490268101951762,,,2026-10-27T19:09:20.000Z,oXYpYLShvXTC3GT2GWfJ2z
 gpt-6.1-terra_max,0.780952380952381,0.780952380952381,2026-10-26,OpenAI,United States of America,,,0.05128728387747146,,,2026-10-26T20:01:15.000Z,65SHyNJX5oxVADzzjkssFK
 gemini-4-argon_high,0.6476190476190476,0.6476190476190476,2026-10-13,Google DeepMind,United States of America,,,0.04902681019517619,,,2026-10-13T17:16:18.000Z,mSJNKA7nCp2eZVqMo5nTUP
 muse-wonder-1.0_max,0.3142857142857143,0.3142857142857143,2026-10-12,Meta AI,United States of America,,,0.041513323271815936,,,2026-10-12T21:51:35.000Z,fMDaGtyboCNfTpP9aStwaU

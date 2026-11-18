@@ -3,10 +3,10 @@ gpt-6-astra_promax,0.9357,2026-09-03,OpenAI,United States of America,9.4e+26,"pe
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",29.305755666666663,520.5,,https://htihle.github.io/weirdml.html,,2.6473963528335825e-05,recEy3l0e3fb7Ia3k
-gpt-6-astra_max,0.9328000000000001,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+gpt-6-astra_max,0.9326000000000001,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
-https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",7.748507900000001,485.0,,https://htihle.github.io/weirdml.html,,1.5446475430902452e-05,rec133XekkfngA36k
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",7.7485079,485.0,,https://htihle.github.io/weirdml.html,,1.4042876073298196e-05,rec133XekkfngA36k
 claude-fable-5-1_max,0.929,2026-09-01,Anthropic,United States of America,,,11.686583529411763,251.0,,https://htihle.github.io/weirdml.html,,1.280965433748779e-05,recrm7c71JFig2bUs
 gpt-6-astra_high,0.9287000000000001,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
@@ -38,14 +38,14 @@ claude-opus-4-7_high,0.7644,2026-04-16,Anthropic,United States of America,,,1.82
 claude-opus-4-7,0.7640000000000001,2026-04-16,Anthropic,United States of America,,,0.6895180000000002,158.0,,https://htihle.github.io/weirdml.html,,0.00017246892139005817,recuoBayQAlGA5M8a
 claude-opus-4-7_unknown,0.764,2026-04-16,Anthropic,United States of America,,,0.6895,158.0,,WeirdML Leaderboard,,,recIyMQSWffJ5JAmX
 claude-opus-4-8_medium,0.7604000000000001,2026-05-28,Anthropic,United States of America,,,0.8472938235294117,103.0,,https://htihle.github.io/weirdml.html,,0.0001646215855604908,reciU71sdJ0Xc773s
-claude-opus-4-7_max,0.7545000000000001,2026-04-16,Anthropic,United States of America,,,7.952621764705882,174.0,,https://htihle.github.io/weirdml.html,,0.0002512541407541041,recExT6mKHp0IGQ4Q
+claude-opus-4-7_max,0.7549,2026-04-16,Anthropic,United States of America,,,7.99403696969697,173.0,,https://htihle.github.io/weirdml.html,,0.0002418695642554239,recExT6mKHp0IGQ4Q
 glm-5.3_max,0.7540000000000001,2026-08-14,Z.ai (Zhipu AI),China,,,0.5351449411428572,243.5,,https://htihle.github.io/weirdml.html,,0.0001665915023174048,rec1RsAHf189UoIIA
 gpt-5.2-2025-12-11_xhigh,0.7219,2025-12-11,OpenAI,United States of America,,,2.0473807117647063,393.5,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00019191659635557604,recBg3iB5UB07x2hT
 gemini-3.1-pro-preview,0.7206999999999999,2026-02-19,Google DeepMind,United States of America,,,1.3601870235294122,212.0,,https://htihle.github.io/weirdml.html,,0.00017632957273620633,recGmSE5Oa6sPNY3I
 claude-opus-4-8_none,0.7045,2026-05-28,Anthropic,United States of America,,,0.4752000990099009,102.0,,https://htihle.github.io/weirdml.html,,0.00013620999100200573,rectzf70zaXWJLj63
 glm-5.2_max,0.7012,2026-06-16,Z.ai (Zhipu AI),China,,,0.5072874972,200.0,,https://htihle.github.io/weirdml.html,,0.00016924669523230864,recSQFD35vSn14YQh
 gemini-3-pro-preview,0.6993,2025-11-18,Google DeepMind,United States of America,,Almost certainly >1e25,0.5257711076923077,230.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00012658927784506301,recMwExVNzQFOuRPy
-claude-sonnet-5_high,0.6878000000000001,2026-06-30,Anthropic,United States of America,,,0.895463294117647,233.0,,https://htihle.github.io/weirdml.html,,0.00017696329549524788,recwWCD4jlF5lW7rt
+claude-sonnet-5_high,0.6898000000000001,2026-06-30,Anthropic,United States of America,,,0.8989897142857144,233.0,,https://htihle.github.io/weirdml.html,,0.0001814737504428963,recwWCD4jlF5lW7rt
 glm-5.2_high,0.6731,2026-06-16,Z.ai (Zhipu AI),China,,,0.28333104480874316,178.0,,https://htihle.github.io/weirdml.html,,0.00014915387714757675,reccjeovOo5ppZ5Fh
 grok-4.6_high,0.6729,2026-08-12,xAI,United States of America,,,0.33483234117647054,205.0,,https://htihle.github.io/weirdml.html,,0.0001783973695549794,recjPHayQp5hGuMXS
 gpt-5.5_none,0.6715000000000001,2026-04-23,OpenAI,United States of America,,,0.5389514705882353,202.0,,https://htihle.github.io/weirdml.html,,0.00017253756008593507,recB9k0CpkaxiR6xD
@@ -66,8 +66,8 @@ gpt-5-2025-08-07_high,0.6070000000000001,2025-08-07,OpenAI,United States of Amer
 
 https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",0.5931804044117648,328.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00016777026323197355,rec4qZr44BtF62vqq
 gpt-5-pro-2025-10-06_high,0.6039,2025-10-07,OpenAI,United States of America,,,7.647644117647059,369.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.0002475,recX2OmQjv53BIY3l
+muse-spark-1.2_xhigh,0.6038,2026-08-05,Meta AI,United States of America,,,0.38010874811320755,272.0,,https://htihle.github.io/weirdml.html,,0.00021356638973130945,recPAu5qSXms7oxpX
 gpt-5.4-mini-2026-03-17_high,0.603,2026-03-17,OpenAI,United States of America,,,1.2910174676470587,503.0,,https://htihle.github.io/weirdml.html,,0.0001686737161666318,recX7Ablwb2UkN5s3
-muse-spark-1.2_xhigh,0.603,2026-08-05,Meta AI,United States of America,,,0.38010874811320755,272.0,,https://htihle.github.io/weirdml.html,,0.00022385111686989455,recPAu5qSXms7oxpX
 o3-pro-2025-06-10_high,0.5821000000000001,2025-06-10,OpenAI,United States of America,,,2.540382702702703,148.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00019073618306924184,recrKJicVBBBp5oLq
 gpt-5.4-2026-03-05_none,0.5744,2026-03-05,OpenAI,United States of America,,,0.26790913235294117,292.0,,WeirdML Leaderboard,,0.0001493713713906097,reczzKMLHOv2ZMWkk
 gpt-5.4-pro-2026-03-05_none,0.5744,2026-03-05,OpenAI,United States of America,,,0.26790913235294117,292.0,,https://htihle.github.io/weirdml.html,,0.0001493713713906097,recShobEBXmUWOQsU
@@ -91,7 +91,7 @@ grok-4.3_unknown,0.4989,2026-04-17,xAI,United States of America,,,0.090319935483
 gpt-5.2-2025-12-11_none,0.49600000000000005,2025-12-11,OpenAI,United States of America,,,0.21462569999999997,230.0,,WeirdML Leaderboard,,0.00014542225995169673,rec2TRMqFG2udu8Rz
 gpt-5.2-2025-12-11_low,0.496,2025-12-11,OpenAI,United States of America,,,0.215,230.0,,WeirdML Leaderboard,https://htihle.github.io/weirdml.html,,reclZgTEmoOmWH7fs
 gpt-5.4-nano-2026-03-17_high,0.49229999999999996,2026-03-17,OpenAI,United States of America,,,0.047747187745098035,279.0,,https://htihle.github.io/weirdml.html,,0.0001592769681566432,rectXu0v9GEDSKcu7
-deepseek-v4-pro_max,0.489,2026-04-24,DeepSeek,China,9.702e+24,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training,0.34030045166666667,272.0,,https://htihle.github.io/weirdml.html,,0.00017538854527333745,recfRm5fINdrqgGIA
+deepseek-v4-pro_max,0.48610000000000003,2026-04-24,DeepSeek,China,9.702e+24,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training,0.08525027975903615,273.0,,https://htihle.github.io/weirdml.html,,0.00017782458708796059,recfRm5fINdrqgGIA
 gpt-oss-120b_high,0.4817,2025-08-05,OpenAI,United States of America,4.94e+24,"""The training run for gpt-oss-120b required 2.1 million H100-hours to complete""
 (2.1e6 hours)*(1,979 H100 FLOP/s)*(30% utilization)*(60*60) = 4.49e24
 They also do post training similar to o3, which we assume adds at least 10% as much compute, so we multiply this estimate by 1.1 to get 4.94e24
@@ -136,9 +136,9 @@ claude-haiku-4-5-20251001,0.454,2025-10-15,Anthropic,United States of America,,,
 claude-haiku-4-5-20251001_16K,0.4415,2025-10-15,Anthropic,United States of America,,,0.12278560784313723,162.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00010276696227397038,recde5VLEdMBKj0Gz
 claude-sonnet-4-20250514,0.4388,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,0.30805649999999996,218.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00014137609333575993,recKsN4DgMnrJJqHR
 deepseek-v4-flash_high,0.4376,2026-04-24,DeepSeek,China,2.496e+24,6 * 13e9 active parameters * 32e12 tokens = 2.496E24 for pre-training,0.007279538164705883,170.0,,https://htihle.github.io/weirdml.html,,9.118142469320882e-05,recKxCdGxVPD9xKOh
+o3-mini-2025-01-31_high,0.4375,2025-01-31,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",0.17459703511904762,157.5,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00014848941115647228,recb7bIHY4oRuegzM
 claude-opus-4-20250514_16K,0.4372,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,1.7352728823529409,233.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00014096613593228162,recQV87PGo9MozwhO
 mistral-medium-2604,0.43710000000000004,2026-04-28,Mistral AI,France,,"Commentary from Mistral researcher - https://x.com/mertunsal2020/status/2049551864556143094?s=20 - says ""nowhere close to those flops"" in response to someone suggesting 2.3e25FLOPS was used",0.278465325,104.0,,https://htihle.github.io/weirdml.html,,0.00010624798303565262,recfqFx05Y465G4nA
-o3-mini-2025-01-31_high,0.43700000000000006,2025-01-31,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",0.17446746058823528,158.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00015164624724508388,recb7bIHY4oRuegzM
 nemotron-3-ultra,0.43450000000000005,2026-06-04,Nvidia,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",0.0772020119760479,232.0,,https://htihle.github.io/weirdml.html,,8.448567640489385e-05,recgNfeirwt2to5GK
 mercury-2,0.43200000000000005,,Inception Labs,United States of America,,,0.02977649828431373,201.0,,https://htihle.github.io/weirdml.html,,0.00012700550676006744,recLpCV9prcxoluoO
 grok-4-fast,0.4286,2025-09-19,xAI,United States of America,,,0.012726230392156862,147.0,,https://htihle.github.io/weirdml.html,https://htihle.github.io/weirdml.html,0.00015484043858714642,recgozq9bI4nBC6MI

@@ -9,6 +9,7 @@ claude-sonnet-5-5_max,proximus,0.618892994117647,0.7169,0.5093,0.810999999999999
 gemini-4-carbon_high,proximus,0.6119949235294118,0.6668999999999999,0.5617,0.7681,0.3815,0.5920000000000001,61.93,12.58,Mean@5,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon,,,,,https://www.frontierswe.com/,
 claude-fable-5-1_max,proximus,0.5629078999999999,0.6665000000000001,0.4447,0.7322,0.4314,0.5135000000000001,138.55,11.62,Mean@5,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1,,,,,https://www.frontierswe.com/,"FrontierSWE V2 (mean@5 across 34 tasks, proximus harness, max reasoning effort). Site footnote: Claude Opus 5 used as fallback for tasks blocked by content filters."
 gemini-4-argon_high,proximus,0.5496118588235293,0.643,0.44450000000000006,0.7445999999999999,0.3504,0.4767,129.36,10.56,Mean@5,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon,,,,,https://www.frontierswe.com/,
+gemini-4-hydrogen_high,proximus,0.5311297705882353,0.6125,0.4534,0.6823,0.33159999999999995,0.48490000000000005,61.79,11.38,Mean@5,2026-11-12,Google DeepMind,United States of America,,,Gemini 4 Hydrogen,,,,,https://www.frontierswe.com/,
 claude-opus-5_max,proximus,0.5201176764705882,0.6065,0.3912,0.7053,0.3779,0.42490000000000006,196.71,16.07,Mean@5,2026-07-24,Anthropic,United States of America,,,Claude Opus 5,,,,,https://www.frontierswe.com/,
 claude-fable-5_max,proximus,0.4696449352941177,0.6177,0.33899999999999997,0.6369,0.3369,0.4045,301.28,15.82,Mean@5,2026-06-09,Anthropic,United States of America,,,Claude Fable 5,,,,,https://www.frontierswe.com/,
 claude-haiku-5-5_max,proximus,0.4376868294117648,0.5275,0.34490000000000004,0.5432,0.2872,0.37460000000000004,20.55,12.42,Mean@5,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5,,,,,https://www.frontierswe.com/,
@@ -20,6 +21,12 @@ kimi-k3_max,proximus,0.25865032058823534,0.3755,0.1387,0.2989,0.1882,0.210500000
 K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3,,,,,https://www.frontierswe.com/,
 muse-spark-1.3_max,proximus,0.2580214823529412,0.4092,0.1259,0.2878,0.1705,0.2212,243.34,16.97,Mean@5,2026-09-02,Meta AI,United States of America,,,Muse Spark 1.3,,,,,https://www.frontierswe.com/,
 grok-4.6_xhigh,proximus,0.25286195882352946,0.3729,0.1286,0.2457,0.1638,0.2521,243.43,13.76,Mean@5,2026-08-12,xAI,United States of America,,,Grok 4.6,,,,,https://www.frontierswe.com/,
+inkling-2-small_xhigh,proximus,0.25069580588235296,0.3716,0.1315,0.3017,0.1703,0.18539999999999998,11.84,13.96,Mean@5,2026-11-05,Thinking Machines,United States of America,2.13418e+23,"Pre-training: 
+12554000000000 tokens * 17e9 active parameters = 2.13418e+23 FLOP.
+
+
+
+Hardware quantity is at least 2048, which was the count used for the RL run.",Inkling 2 Small,,,,,https://www.frontierswe.com/,
 gemini-3.7-flash_high,proximus,0.20260590588235297,0.3123,0.1028,0.24850000000000003,0.1502,0.1431,34.14,7.88,Mean@5,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash,,,,,https://www.frontierswe.com/,
 gemini-3.8-flash_high,proximus,0.19626902941176463,0.3164,0.0951,0.2304,0.14880000000000002,0.16469999999999999,38.75,7.28,Mean@5,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,,,,,https://www.frontierswe.com/,
 glm-5.3-flash_max,proximus,0.18125205882352943,0.2845,0.0861,0.195,0.1584,0.1329,11.03,16.39,Mean@5,2026-08-20,Z.ai (Zhipu AI),China,3.24e+24,"6 * 18e9 active parameters * 30e12 tokens = 3.24e24 FLOP. 

@@ -2,8 +2,10 @@ Model version,Pass@1 score,Release date,Organization,Country,Training compute (F
 gemini-4-carbon_unknown,0.8420000000000001,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon,4.3,0.904,3.1,,recR6uYlGNAlAslmV
 gemini-4-argon_unknown,0.8240000000000001,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon,4.3,0.8740000000000001,3.3,,recythOL2ifqR8nCk
 claude-fable-5-2_unknown,0.8009999999999999,2026-11-09,Anthropic,United States of America,,,Fable 5.2,4.7,0.876,3.5,,recmFuByjziezsQSg
+gemini-4-hydrogen_unknown,0.78,2026-11-12,Google DeepMind,United States of America,,,Gemini 4 Hydrogen,4.8,0.84,4.0,,recfzAt5lQ5OslWod
 claude-sonnet-5-5_max,0.755,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 [claude-sonnet-5-5],4.7,0.8370000000000001,3.6,,recwsmBXqLEgJjkrE
 claude-opus-5-5_max,0.735,2026-09-22,Anthropic,United States of America,,,Opus 5.5 [claude-opus-5-5],4.9,0.813,4.0,,rec6TErVzXnuNRUoV
+grok-4.7_unknown,0.7000000000000001,2026-09-21,xAI,United States of America,,,Grok 4.7,5.1,0.804,4.0,,recMu2uHBeJH8IVe8
 deepseek-v4.1-flash-1017_max,0.698,2026-10-17,DeepSeek,China,,A,DeepSeek-V4.1-Flash-1017,4.9,0.794,3.9,,rec4h0kAzxLz00RFT
 claude-fable-5-1_unknown,0.6859999999999999,2026-09-01,Anthropic,United States of America,,,Fable 5.1 [claude-fable-5.1],4.9,0.7709999999999999,4.3,,reciHu2R0cgIa9tz3
 gpt-6.1-terra_max,0.6829999999999999,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra,5.2,0.793,4.1,,recbZ5jYnCHQNhXed
@@ -28,7 +30,6 @@ glm-5.3_unknown,0.5660000000000001,2026-08-14,Z.ai (Zhipu AI),China,,,GLM-5.3,5.
 grok-4.5_unknown,0.562,2026-07-08,xAI,United States of America,,,Grok 4.5,5.4,0.705,4.3,,rececsj9bbRs6VG4W
 claude-haiku-5-5_max,0.561,2026-10-07,Anthropic,United States of America,,,Haiku 5.5,5.2,0.6829999999999999,4.4,,recuIVFmW80Eh5kgM
 gpt-5.5_unknown,0.551,2026-04-23,OpenAI,United States of America,,,GPT-5.5,5.5,0.703,4.4,,recAtyT31eNSS0yck
-grok-4.7_unknown,0.546,2026-09-21,xAI,United States of America,,,Grok 4.7,5.1,0.687,4.2,,recMu2uHBeJH8IVe8
 claude-sonnet-5_unknown,0.545,2026-06-30,Anthropic,United States of America,,,Sonnet 5,5.5,0.674,4.5,,recDITjv4rt440qU6
 mimo-v2.6-pro,0.544,2026-09-21,Xiaomi Corp,China,,"6 * 42e9 active parameters * 30e12 tokens = 7.56e24 FLOP, though this is only a lower bound because midtraining tokens aren't stated.
 ",MiMo V2.6 Pro,5.2,0.653,4.6,,recXC689WvlAiyNVG
@@ -68,7 +69,12 @@ muse-spark-1.3_max,0.47600000000000003,2026-09-02,Meta AI,United States of Ameri
 qwen3.8-27b,0.47500000000000003,2026-08-14,Alibaba,China,,,Qwen 3.8 27B,4.9,0.622,4.3,,recfGdLMX8buaQjoL
 deepseek-v4-pro-0813_unknown,0.473,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek-V4-Pro-0813,5.6,0.623,4.9,,recZWJ893wBDvmzR7
 gemini-3.6-flash_unknown,0.469,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash,5.2,0.634,4.4,,recrKr7XmbXXZO8qD
-inkling-2-small_unknown,0.46799999999999997,2026-11-05,Thinking Machines,United States of America,,,Inkling 2 Small,5.1,0.609,4.4,,rec6D5ti8hKJGhrEb
+inkling-2-small_unknown,0.46799999999999997,2026-11-05,Thinking Machines,United States of America,2.13418e+23,"Pre-training: 
+12554000000000 tokens * 17e9 active parameters = 2.13418e+23 FLOP.
+
+
+
+Hardware quantity is at least 2048, which was the count used for the RL run.",Inkling 2 Small,5.1,0.609,4.4,,rec6D5ti8hKJGhrEb
 claude-opus-4-6_max,0.46299999999999997,2026-02-05,Anthropic,United States of America,,,Opus 4.6,5.5,0.618,4.8,,recfKa2RdTGFZh3gQ
 muse-spark-1.2,0.454,2026-08-05,Meta AI,United States of America,,,Muse Spark 1.2,5.0,0.598,4.5,,recu1kljfh6r4IOhx
 glm-5.2_unknown,0.452,2026-06-16,Z.ai (Zhipu AI),China,,,GLM-5.2,5.7,0.611,4.9,,rec7GciBovlZrZmaF

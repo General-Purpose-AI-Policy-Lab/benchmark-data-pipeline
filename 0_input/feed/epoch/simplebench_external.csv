@@ -65,6 +65,7 @@ The geometric mean is (rounded to one sig fig): 5e26
 qwen3.8-27b,0.6020000000000001,2026-08-14,Alibaba,China,,,https://simple-bench.com/,,,recGKd5aF4hPjHL72
 claude-opus-4-1-20250805,0.6,2025-08-05,Anthropic,United States of America,,,SimpleBench Leaderboard,https://simple-bench.com/,,recNq0JntySeETz1j
 claude-opus-4-1-20250805_unknown,0.6,2025-08-05,Anthropic,United States of America,,,SimpleBench Leaderboard,,,reclvi58OvdQ1U4f2
+claude-haiku-5-5_unknown,0.5920000000000001,2026-10-07,Anthropic,United States of America,,,https://simple-bench.com/,,,recbjTXQAMLGxBngi
 claude-opus-4-20250514_12K,0.588,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,https://simple-bench.com/,,recCa8wyF9haBALeE
 claude-opus-4-20250514_unknown,0.588,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,SimpleBench Leaderboard,,,recpufOkYTK86bXJp
 glm-5.2_unknown,0.588,2026-06-16,Z.ai (Zhipu AI),China,,,https://lmcouncil.ai/benchmarks,,,recJoicmmdxhXOEIM

@@ -4,6 +4,7 @@ gpt-6-astra_unknown,15514.701666666668,2026-09-03,OpenAI,United States of Americ
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,recIHrj7IZwngZzmG
+gemini-4-hydrogen_unknown,14549.489999999998,2026-11-12,Google DeepMind,United States of America,,,Gemini 4 Hydrogen,rec9FYcovEQE4d9OS
 gpt-6-sol_unknown,14427.848333333333,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,recOsfANgIuve4p8J
 gemini-4-argon_unknown,13718.158333333333,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon,recnHKJey4BfNPh1f
 gpt-6.1-sol_unknown,12860.61166666667,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol,recwytVhJOXdwlMmd
@@ -11,6 +12,7 @@ claude-opus-5_unknown,11181.87333333333,2026-07-24,Anthropic,United States of Am
 claude-sonnet-5-5_unknown,11165.27833333333,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5,recuISzHM54q0s0VU
 claude-opus-4-7_unknown,10936.763333333334,2026-04-16,Anthropic,United States of America,,,Claude Opus 4.7,rec63xBZ1e3RaKLVW
 grok-4.7_unknown,10536.831666666667,2026-09-21,xAI,United States of America,,,Grok 4.7,recqlIgpcwFxxpDZ8
+claude-fable-5-2_unknown,9628.479999999998,2026-11-09,Anthropic,United States of America,,,Claude Fable 5.2,recufBxFt0pNEX01A
 gpt-5.6-sol_unknown,9619.367999999999,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol,rec7Hn7Mhf7zcb5Ks
 muse-wonder-1.0_unknown,9432.18,2026-10-12,Meta AI,United States of America,,,Muse Wonder,recmNq9KpI3nIDTWU
 claude-opus-5-5_unknown,9235.248333333331,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,recBWEIN3JLagof2u

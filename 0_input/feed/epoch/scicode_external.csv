@@ -359,7 +359,12 @@ gpt-6.1-terra_low,0.524305555555556,OpenAI,gpt-6-1-terra-low,2026-10-26,OpenAI,U
 gpt-6.1-terra_medium,0.516203703703704,OpenAI,gpt-6-1-terra-medium,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (Medium),https://artificialanalysis.ai/evaluations/scicode,
 gpt-6.1-terra_high,0.516203703703704,OpenAI,gpt-6-1-terra-high,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (High),https://artificialanalysis.ai/evaluations/scicode,
 gpt-6.1-terra_none,0.478009259259259,OpenAI,gpt-6-1-terra-non-reasoning,2026-10-26,OpenAI,United States of America,,,GPT-6.1 Terra (Non-reasoning),https://artificialanalysis.ai/evaluations/scicode,
-inkling-2-small_unknown,0.523148148148148,Thinking Machines,inkling-2-small,2026-11-05,Thinking Machines,United States of America,,,Inkling 2 Small,https://artificialanalysis.ai/evaluations/scicode,
+inkling-2-small_unknown,0.523148148148148,Thinking Machines,inkling-2-small,2026-11-05,Thinking Machines,United States of America,2.13418e+23,"Pre-training: 
+12554000000000 tokens * 17e9 active parameters = 2.13418e+23 FLOP.
+
+
+
+Hardware quantity is at least 2048, which was the count used for the RL run.",Inkling 2 Small,https://artificialanalysis.ai/evaluations/scicode,
 beam-1.0_unknown,0.48495370370370405,Reflection,reflection-beam,2026-10-05,Reflection,United States of America,3.2844e+24,"Pre-training 
 
 by 6ND: 6 * 23e9 active parameters * 23.8e12 tokens = 3.28e24 FLOP.
@@ -374,3 +379,5 @@ claude-fable-5-2_xhigh,0.65625,Anthropic,claude-fable-5-2-xhigh,2026-11-09,Anthr
 claude-fable-5-2_medium,0.597222222222222,Anthropic,claude-fable-5-2-medium,2026-11-09,Anthropic,United States of America,,,"Claude Fable 5.2 (Medium, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
 claude-fable-5-2_high,0.594907407407407,Anthropic,claude-fable-5-2-high,2026-11-09,Anthropic,United States of America,,,"Claude Fable 5.2 (High, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
 claude-fable-5-2_low,0.577546296296296,Anthropic,claude-fable-5-2-low,2026-11-09,Anthropic,United States of America,,,"Claude Fable 5.2 (Low, Default Fallback)",https://artificialanalysis.ai/evaluations/scicode,
+gemini-4-argon_medium,0.58912037037037,Google,gemini-4-argon-medium,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (Medium),https://artificialanalysis.ai/evaluations/scicode,
+deepseek-v4-pro-0813_high,0.517361111111111,DeepSeek,deepseek-v4-pro-high,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (High),https://artificialanalysis.ai/evaluations/scicode,

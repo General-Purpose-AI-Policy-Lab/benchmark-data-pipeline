@@ -1,4 +1,5 @@
 Model version,mean_score,Best score (across scorers),Release date,Organization,Country,Training compute (FLOP),Training compute notes,stderr,Log viewer,Logs,Started at,id
+gpt-6.2-astra_max,0.41333333333333333,0.41333333333333333,2026-11-17,OpenAI,United States of America,,,0.04226185076557612,,,2026-11-06T21:22:35.126Z,steambench-sts1-a20h-903b39e902c5fe40+steambench-sts2-a10-005f10eec2725d11
 claude-fable-5-2_max,0.15333333333333332,0.15333333333333332,2026-11-09,Anthropic,United States of America,,,0.031204587301253042,,,2026-11-06T15:34:21.862Z,steambench-sts1-a20h-a52f0d1907ea187b+steambench-sts2-a10-24ea6d93d1eae707
 gpt-6-sol_max,0.09166666666666667,0.09166666666666667,2026-09-22,OpenAI,United States of America,,,0.024324094573715753,,,2026-11-05T15:14:53.647Z,steambench-sts1-a20h-831fe00153e0f0b1+steambench-sts2-a10-edacf7bb0ae31edf
 claude-fable-5-1_max,0.02,0.02,2026-09-01,Anthropic,United States of America,,,0.011389895949029987,,,2026-11-05T15:14:53.017Z,steambench-sts1-a20h-2057a494867d184c+steambench-sts2-a10-413d1cc930f6d4c6

@@ -23,6 +23,7 @@ gpt-6-astra_max,0.6,0.6,2026-09-03,OpenAI,United States of America,9.4e+26,"per 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",0.11818736805705578,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FFGZUtmNQZpZtk8ft5uCJkA.eval,https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/FGZUtmNQZpZtk8ft5uCJkA.eval,2026-10-29T18:04:06.000Z,FGZUtmNQZpZtk8ft5uCJkA
 gpt-5.5_xhigh,0.23333333333333334,0.23333333333333334,2026-04-23,OpenAI,United States of America,,,0.10131411680782823,,,2026-10-29T18:03:57.000Z,Tmy5qo2ScNoA2bapbEG7HP
+gpt-6.2-astra_max,0.6777777777777778,0.6777777777777778,2026-11-17,OpenAI,United States of America,,,0.11668556158405784,,,2026-10-27T22:34:15.000Z,R7MHmgZqxmYVVTvzpjvc5k
 gpt-5.2-2025-12-11_xhigh,0.32222222222222224,0.32222222222222224,2025-12-11,OpenAI,United States of America,,,0.09955810654328077,,,2026-10-21T16:49:58.000Z,MtySoyHFRZQcrHpzg89ic9
 glm-5.2_max,0.36666666666666664,0.36666666666666664,2026-06-16,Z.ai (Zhipu AI),China,,,0.11524071884721684,,,2026-10-21T16:49:47.000Z,V3sVnMNiy35HcCtBBuwK4J
 deepseek-v4.1-flash_max,0.6444444444444445,0.6444444444444445,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP

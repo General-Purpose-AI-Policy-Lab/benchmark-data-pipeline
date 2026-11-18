@@ -52,7 +52,12 @@ https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-
 gpt-6.1-sol_max,0.965,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Max),,https://arcprize.org/leaderboard,,,recXdSM65dkne27Oz
 claude-sonnet-5-5_max,0.965,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5 (Max),,https://arcprize.org/leaderboard,,,reciXbOKaf1TyHNnH
 claude-sonnet-5-5_xhigh,0.965,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5 (XHigh),,https://arcprize.org/leaderboard,,,recuY51ujbKuqjEOd
-inkling-2-small_xhigh,0.965,2026-11-05,Thinking Machines,United States of America,,,Inkling 2 Small (XHigh),,https://arcprize.org/leaderboard,,,recW8Oi5PyiBstjGX
+inkling-2-small_xhigh,0.965,2026-11-05,Thinking Machines,United States of America,2.13418e+23,"Pre-training: 
+12554000000000 tokens * 17e9 active parameters = 2.13418e+23 FLOP.
+
+
+
+Hardware quantity is at least 2048, which was the count used for the RL run.",Inkling 2 Small (XHigh),,https://arcprize.org/leaderboard,,,recW8Oi5PyiBstjGX
 ,0.96,,,,,,Gemini 3 Deep Think (2/26),13.62,,,,recTh8A2nzouwtoS4
 gemini-3-deep-think-preview,0.96,2026-02-12,Google DeepMind,United States of America,,,Gemini 3 Deep Think (2/26),,https://arcprize.org/leaderboard,,,recB6y5fhltz222iF
 claude-fable-5-1_high,0.96,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (High),,https://arcprize.org/leaderboard,,,rec6sj6eIQNzR0HJq

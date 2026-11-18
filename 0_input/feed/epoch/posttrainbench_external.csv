@@ -1,10 +1,12 @@
 Model version,Scaffold,Average (%),Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Average SD (%),id
 claude-fable-5-1_max,Claude Code,0.4465,2026-09-01,Anthropic,United States of America,,,Fable 5.1 (Max),,rec1kqTNNvACEHSJR
+claude-fable-5-2_max,Claude Code,0.4464,2026-11-09,Anthropic,United States of America,,,Fable 5.2 (Max),,recHPSXIQt8doB4k3
 claude-opus-5-5_max,Claude Code,0.438,2026-09-22,Anthropic,United States of America,,,Opus 5.5 (Max),,reclah1CJ5EejhuPm
 gpt-6-astra_max,Codex CLI,0.41880000000000006,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
 
 This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
 https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT 6 (Astra) (Max),,receLNeWeSFudcutj
+gemini-4-carbon_high,OpenCode,0.4098,2026-11-10,Google DeepMind,United States of America,,,Gemini 4 Carbon (High),,recKJp9pNzRLNjPDt
 gemini-4-argon_high,OpenCode,0.4044,2026-10-13,Google DeepMind,United States of America,,,Gemini 4 Argon (High),,recy0GqmfRc5Z14ye
 gpt-6.1-sol_max,Codex CLI,0.3879,2026-09-29,OpenAI,United States of America,,,GPT 6.1 (Sol) (Max),,recJmRif9M9c55oXO
 claude-fable-5_max,Claude Code,0.37270000000000003,2026-06-09,Anthropic,United States of America,,,Fable 5 (Max),0.0174,recP6ZrDsWrdqbEmt

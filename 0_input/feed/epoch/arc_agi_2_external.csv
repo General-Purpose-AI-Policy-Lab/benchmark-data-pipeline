@@ -66,7 +66,12 @@ gpt-5.5_high,0.8333,2026-04-23,OpenAI,United States of America,,,GPT-5.5 (High),
 gpt-5.4-pro-2026-03-05_xhigh,0.8333,2026-03-05,OpenAI,United States of America,,,GPT-5.4 Pro (XHigh),,,recoggJGwWvf6rzzm
 gemini-3.8-flash_medium,0.8291666666666667,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash (Medium),,,recSQW22neBgoxnk8
 claude-fable-5_medium,0.8250000000000001,2026-06-09,Anthropic,United States of America,,,Claude Fable 5 (Medium),,,recOj0wdwD2kU9r8l
-inkling-2-small_xhigh,0.8166666666666668,2026-11-05,Thinking Machines,United States of America,,,Inkling 2 Small (XHigh),,,recYWcludiINkAj6d
+inkling-2-small_xhigh,0.8166666666666668,2026-11-05,Thinking Machines,United States of America,2.13418e+23,"Pre-training: 
+12554000000000 tokens * 17e9 active parameters = 2.13418e+23 FLOP.
+
+
+
+Hardware quantity is at least 2048, which was the count used for the RL run.",Inkling 2 Small (XHigh),,,recYWcludiINkAj6d
 claude-fable-5-1_low,0.7833333333333333,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1 (Low),,,recgGXbNz9PP5hyy2
 gpt-6-sol_xhigh,0.7805555555555556,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (XHigh),,,recaxpOe7WYYOhEHv
 deepseek-v4.1-flash-1017_max,0.7805555555555556,2026-10-17,DeepSeek,China,,A,DeepSeek V4.1 Flash 1017 (Max),,,rec9NCKuywR6qBoJK

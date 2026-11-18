@@ -401,3 +401,4 @@ Ministral 3 8B (Thinking),ministral-8b-2512,,,,thinking,,"Scale SEAL MultiChalle
 Ministral 3 3B (Thinking),ministral-3b-2512,,,,thinking,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); thinking enabled, effort unknown; the December 2025 Ministral 3 generation, not the 2410 model"
 Llama 3.1 8B,Llama-3.1-8B-Instruct,,,,,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); Epoch's Llama-3.1-8B-Instruct"
 Gemma 3 4B,gemma-3-4b-it,,,,,,"Scale SEAL MultiChallenge, small-model table (refresh of 2026-11-17); Epoch's gemma-3-4b-it"
+salesforce-sov-omni-1,launa-omni-1,,,,,,"SEAL's new display name for the same row of AudioMultiChallenge (refresh of 2026-11-18): same score 59.69, and the page data still gives version salesforce-launa-omni-1"
