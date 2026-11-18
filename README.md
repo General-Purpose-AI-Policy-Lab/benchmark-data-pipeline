@@ -191,7 +191,7 @@ Add a row to `0_input/metadata/score_corrections.csv` (`feed`, `benchmark`, the 
 
 A row in `0_input/metadata/score_drop_rules.csv` (`rule`, `feeds`, `benchmark`, `raw_name_regex`, `keep_at_or_above`, `note`) drops every matching run scoring below the bar, for a whole class of runs known to be truncated or misconfigured (e.g. maximum-effort runs cut off by the harness's token limit). It applies after `score_corrections.csv`.
 
-A run a rule covers comes back when its log has been read and shows a complete run (no empty or cut answer among the wrong ones): one row in `0_input/metadata/score_drop_kept.csv` (`feeds`, `benchmark`, the run's name as the rule reads it, the `score` of the run read, the log's URL, a note saying what the log shows and who read it). The score pins the run, so another run under the same name is still dropped; the build reports a row no rule covers any more or whose score has moved.
+A run a rule covers comes back when its log has been read and shows a complete run (no empty or cut answer among the wrong ones, or so few that they cost about half a point at most, the user deciding those): one row in `0_input/metadata/score_drop_kept.csv` (`feeds`, `benchmark`, the run's name as the rule reads it, the `score` of the run read, the log's URL, a note saying what the log shows and who read it). The score pins the run, so another run under the same name is still dropped; the build reports a row no rule covers any more or whose score has moved.
 
 ### Move a score to the effort its run used
 

@@ -263,7 +263,7 @@ def load_score_drop_rules(metadata_dir: Path = config.METADATA_DIR) -> list:
 
 def load_score_drop_kept(metadata_dir: Path = config.METADATA_DIR) -> dict:
     """Rows of score_drop_kept.csv: runs a drop rule covers whose log was read and shows a complete
-    run (no empty or cut answer among the wrong ones). They keep their score. A row names its feeds
+    run (no empty or cut answer among the wrong ones, or a handful the user accepted). They keep their score. A row names its feeds
     (`|`-separated), the benchmark, the run's name as the rules read it, and the score of the run
     read, which pins it: another run under the same name is still dropped.
     Returns (benchmark, name) -> [(feeds, score), ...]."""
