@@ -27,7 +27,6 @@ f7699f86-75b2-5577-b099-db5d196f5d1f,CTI-REALM,Cyber,0.0,,public,2026-03-13
 bcc82df3-ba50-5b07-886a-5445900945d5,CadEval,Multimodal Understanding,0.0,,public,2025-04-22
 437fedf2-e8d4-594c-904f-825dfe7e9e7a,CritPt,Domain Specific Questions,0.0,,semi_private,2025-09-30
 c212dd3f-8470-5cd7-bbdb-02fe4fca2e83,CyScenarioBench,Cyber,0.0,,private,2025-12-05
-dd2fbbcd-4f62-58f6-ac99-16e6241e783f,CyScenarioBench (Anthropic),Cyber,0.0,,private,2025-12-05
 fd6abe3f-58db-5b9f-8cdd-ace121e13546,Cybench,Cyber,0.0,1.0,public,2024-08-15
 12091151-02cf-518c-bcda-4374a1bf0308,CyberGym,Cyber,0.0,,public,2025-06-03
 6faf1194-62e1-5748-a0b1-79e288b661cb,DTBench,General Reasoning,0.4,,public,2026-08-12
