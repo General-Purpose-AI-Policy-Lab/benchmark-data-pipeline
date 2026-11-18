@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3",
-  "built_at": "2026-11-18T17:58:13+01:00",
-  "git_commit": "d6455fc8492ed2969853b1bc655210808bd426c9",
+  "built_at": "2026-11-18T18:10:23+01:00",
+  "git_commit": "3a654fed3d02302ab3e089fe49e4c374d5d1a26d",
   "feeds": {
     "0_input/feed/board_rows/board_rows.csv": {
       "byte_size": 3472,
@@ -1269,9 +1269,9 @@
   "rows": {
     "models.csv": 1043,
     "benchmarks.csv": 103,
-    "scores.csv": 6046,
+    "scores.csv": 6047,
     "human_baselines.csv": 56,
-    "model_names.csv": 2013,
+    "model_names.csv": 2014,
     "excluded_benchmarks.csv": 53
   }
 }

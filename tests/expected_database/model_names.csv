@@ -135,6 +135,7 @@ model_id,feed,raw_name,n_records
 12d3d541-0737-514e-9413-19ccf2d4eadd,epoch_live,gemini-2.0-flash-thinking-exp-01-21,2
 12d3d541-0737-514e-9413-19ccf2d4eadd,seal,Gemini 2.0 Flash Thinking Experimental (January 2025),1
 12d915fc-116c-58ab-a560-b5afee665475,epoch,claude-fable-5-2_low,5
+12d915fc-116c-58ab-a560-b5afee665475,gpai_runs,claude-fable-5-2_low,1
 12f17606-8492-5140-8837-a1de1f2a9211,epoch,mistral-medium-2508,4
 13157481-63a6-59e7-88c0-d5fa446a2c08,epoch,vicuna-13b-v1.1,6
 1334f70e-1ab7-592a-8c7b-7ce3e692e1fb,epoch,gpt-5.6-luna_none,3
